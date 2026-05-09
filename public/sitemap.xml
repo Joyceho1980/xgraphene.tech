@@ -75,4 +75,29 @@
     <priority>0.7</priority>
     <changefreq>yearly</changefreq>
   </url>
+  
+  <!-- 新闻页 -->
+  <url>
+    <loc>https://xgraphene.tech/news</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://xgraphene.tech/news/industry-standard-setting-2026</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://xgraphene.tech/news/depression-therapy-clinical-trial-2026</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://xgraphene.tech/news/academician-zheng-new-research-2026</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>
