@@ -1,0 +1,7 @@
+[build]
+  base = "."
+  command = "vite build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
