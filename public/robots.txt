@@ -1,0 +1,12 @@
+# Robots.txt for xgraphene.tech
+# 允许所有搜索引擎爬取
+
+User-agent: *
+Allow: /
+
+# Sitemap位置
+Sitemap: https://xgraphene.tech/sitemap.xml
+
+# 禁止爬取的路径（如有需要可添加）
+# Disallow: /admin/
+# Disallow: /api/
