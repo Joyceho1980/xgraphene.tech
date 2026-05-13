@@ -4,11 +4,11 @@ import { Menu, X } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const navItems = [
-  { path: '/', label: 'HOME' },
-  { path: '/authority', label: 'AUTHORITY' },
-  { path: '/systems', label: 'SYSTEMS' },
-  { path: '/intelligence', label: 'INTELLIGENCE' },
-  { path: '/partnership', label: 'PARTNERSHIP' },
+  { path: '/', label: 'ORIGIN' },
+  { path: '/authority', label: 'WISDOM' },
+  { path: '/systems', label: 'PRESENCE' },
+  { path: '/resonance', label: 'RESONANCE' },
+  { path: '/partnership', label: 'SYNERGY' },
 ]
 
 export default function Navbar() {

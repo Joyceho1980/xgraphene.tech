@@ -4,7 +4,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import Systems from './pages/Systems'
 import Authority from './pages/Authority'
-import Intelligence from './pages/Intelligence'
+import Resonance from './pages/Resonance'
 import Partnership from './pages/Partnership'
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/systems" element={<Systems />} />
           <Route path="/authority" element={<Authority />} />
-          <Route path="/intelligence" element={<Intelligence />} />
+          <Route path="/resonance" element={<Resonance />} />
           <Route path="/partnership" element={<Partnership />} />
         </Routes>
       </main>
