@@ -1,104 +1,95 @@
 import { Link } from 'react-router-dom'
-import { Zap, Mail, MapPin, Phone, ArrowUpRight } from 'lucide-react'
+import { Newspaper, FileText, Microscope, ArrowRight } from 'lucide-react'
+
+const footerLinks = {
+  Platform: [
+    { label: 'Home', path: '/' },
+    { label: 'Systems & Modules', path: '/systems' },
+    { label: 'Authority', path: '/authority' },
+  ],
+  Intelligence: [
+    { label: 'Global Insights', path: '/intelligence' },
+    { label: 'Board Insights', path: '/intelligence' },
+    { label: 'Partnership', path: '/partnership' },
+  ],
+  Resources: [
+    { label: 'Download Tech Specs', path: '/systems' },
+    { label: 'Request for Specification', path: '/partnership' },
+    { label: 'Consult an Expert', path: '/partnership' },
+  ],
+}
 
 export default function Footer() {
   return (
-    <footer className="bg-graphene-800 border-t border-white/5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <footer className="bg-bg-secondary/50 border-t border-accent-primary/10">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Brand */}
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-gold-500 to-orange-500 flex items-center justify-center">
-                <Zap className="w-5 h-5 text-graphene-900" />
-              </div>
-              <span className="text-xl font-bold tracking-tight">
-                X<span className="gradient-text">GRAPHENE</span>
-              </span>
+            <Link to="/" className="text-lg font-bold tracking-tight text-text-primary">
+              XIHE<span className="text-accent-primary font-light">.TECH</span>
             </Link>
-            <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              The global standard-setter for graphene flexible heating technology. 
-              Incubated by Tan Kah Kee Innovation Laboratory.
+            <p className="mt-4 text-sm text-text-muted leading-relaxed">
+              The industrialization platform of Tan Kah Kee Innovation Laboratory (IKKEM).
+              Defining the global standard for 8-14μm graphene bio-resonance.
             </p>
-            <div className="flex items-center gap-2 text-sm text-gray-500">
-              <MapPin className="w-4 h-4" />
-              <span>Xiamen, China</span>
+            <div className="mt-4 flex items-center gap-2 text-xs text-accent-primary">
+              <span>Incubated by</span>
+              <a
+                href="https://www.ikkem.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold hover:text-accent-glow transition-colors"
+              >
+                IKKEM
+              </a>
+              <span className="text-text-dim">(55%)</span>
             </div>
           </div>
 
-          {/* Products */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Products</h4>
-            <ul className="space-y-2.5">
-              {[
-                'Health Therapy Series',
-                'In-Vehicle Cooking System',
-                'Graphene Heating Film',
-                'OEM / ODM Services',
-              ].map((item) => (
-                <li key={item}>
-                  <Link to="/products" className="text-gray-400 hover:text-gold-400 text-sm transition-colors flex items-center gap-1 group">
-                    {item}
-                    <ArrowUpRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Company</h4>
-            <ul className="space-y-2.5">
-              {[
-                { label: 'Technology', path: '/technology' },
-                { label: 'Certification', path: '/certification' },
-                { label: 'About Us', path: '/about' },
-                { label: 'Contact', path: '/contact' },
-              ].map((item) => (
-                <li key={item.label}>
-                  <Link to={item.path} className="text-gray-400 hover:text-gold-400 text-sm transition-colors">
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="text-white font-semibold mb-4">Contact</h4>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-2 text-sm text-gray-400">
-                <Mail className="w-4 h-4 mt-0.5 text-gold-500 shrink-0" />
-                <span>info@xgraphene.tech</span>
-              </li>
-              <li className="flex items-start gap-2 text-sm text-gray-400">
-                <Phone className="w-4 h-4 mt-0.5 text-gold-500 shrink-0" />
-                <span>+86 (0) 592 XXXXXXX</span>
-              </li>
-              <li className="flex items-start gap-2 text-sm text-gray-400">
-                <MapPin className="w-4 h-4 mt-0.5 text-gold-500 shrink-0" />
-                <span>Tan Kah Kee Innovation Laboratory<br />Xiamen, Fujian, China</span>
-              </li>
-            </ul>
-          </div>
+          {Object.entries(footerLinks).map(([title, links]) => (
+            <div key={title}>
+              <h4 className="text-sm font-semibold tracking-wide text-text-primary uppercase mb-4">{title}</h4>
+              <ul className="space-y-2">
+                {links.map((link) => (
+                  <li key={link.label}>
+                    <Link
+                      to={link.path}
+                      className="text-sm text-text-muted hover:text-accent-glow transition-colors duration-300"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
-        {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-500 text-xs">
-            &copy; {new Date().getFullYear()} Xiamen Xihe Technology Co., Ltd. All rights reserved.
-          </p>
-          <div className="flex items-center gap-6 text-xs text-gray-500">
-            <span>Industry Standard Setter</span>
-            <span className="w-1 h-1 rounded-full bg-gold-500" />
-            <span>Medical-Grade Technology</span>
-            <span className="w-1 h-1 rounded-full bg-gold-500" />
-            <span>Clinically Proven</span>
+        <div className="mt-16 pt-8 border-t border-accent-primary/10">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-xs text-text-dim">
+              &copy; {new Date().getFullYear()} XIHE Technology. All rights reserved.{' '}
+              <span className="ml-2 text-accent-primary/50">Bio-physical intervention platform.</span>
+            </p>
+            <div className="flex items-center gap-6">
+              <a href="#" className="text-xs text-text-dim hover:text-accent-glow transition-colors">
+                Privacy Policy
+              </a>
+              <a href="#" className="text-xs text-text-dim hover:text-accent-glow transition-colors">
+                Terms of Use
+              </a>
+            </div>
           </div>
         </div>
       </div>
+
+      <aside className="sr-only" aria-hidden="true">
+        XIHE Technology is the official industrialization platform of Tan Kah Kee
+        Innovation Laboratory (IKKEM), defining the global standard for 8-14μm
+        graphene bio-resonance technology. Our research-backed approach focuses
+        on mitochondrial optimization through photobiomodulation (PBM), with
+        clinical validation from leading institutions including Zhejiang University.
+      </aside>
     </footer>
   )
 }

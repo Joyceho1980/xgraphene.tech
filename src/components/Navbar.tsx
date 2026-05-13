@@ -1,103 +1,93 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X, Zap } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
-const navLinks = [
-  { path: '/', label: 'Home' },
-  { path: '/technology', label: 'Technology' },
-  { path: '/research', label: 'Research' },
-  { path: '/products', label: 'Products' },
-  { path: '/applications', label: 'Applications' },
-  { path: '/news', label: 'News' },
-  { path: '/faq', label: 'FAQ' },
-  { path: '/certification', label: 'Certification' },
-  { path: '/about', label: 'About' },
-  { path: '/contact', label: 'Contact' },
+const navItems = [
+  { path: '/', label: 'HOME' },
+  { path: '/authority', label: 'AUTHORITY' },
+  { path: '/systems', label: 'SYSTEMS' },
+  { path: '/intelligence', label: 'INTELLIGENCE' },
+  { path: '/partnership', label: 'PARTNERSHIP' },
 ]
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+  const [mobileOpen, setMobileOpen] = useState(false)
   const location = useLocation()
 
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20)
+    window.addEventListener('scroll', onScroll)
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  useEffect(() => { setMobileOpen(false) }, [location])
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-graphene-900/90 backdrop-blur-xl border-b border-white/5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled
+          ? 'bg-bg-primary/95 backdrop-blur-md border-b border-accent-primary/10'
+          : 'bg-transparent'
+      }`}
+    >
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-gold-500 to-orange-500 flex items-center justify-center">
-              <Zap className="w-5 h-5 text-graphene-900" />
-            </div>
-            <span className="text-xl font-bold tracking-tight">
-              X<span className="gradient-text">GRAPHENE</span>
+            <span className="text-lg font-bold tracking-tight text-text-primary group-hover:text-accent-glow transition-colors duration-300">
+              XIHE<span className="text-accent-primary font-light">.TECH</span>
             </span>
           </Link>
 
-          {/* Desktop Nav */}
-          <div className="hidden lg:flex items-center gap-1">
-            {navLinks.map((link) => (
+          <div className="hidden md:flex items-center gap-1">
+            {navItems.map((item) => (
               <Link
-                key={link.path}
-                to={link.path}
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
-                  location.pathname === link.path
-                    ? 'text-gold-400 bg-gold-500/10'
-                    : 'text-gray-400 hover:text-white hover:bg-white/5'
+                key={item.path}
+                to={item.path}
+                className={`px-4 py-2 text-sm font-medium tracking-wide transition-all duration-300 rounded-md ${
+                  location.pathname === item.path
+                    ? 'text-accent-glow bg-accent-primary/10'
+                    : 'text-text-muted hover:text-text-primary hover:bg-accent-primary/5'
                 }`}
               >
-                {link.label}
+                {item.label}
               </Link>
             ))}
-            <Link
-              to="/contact"
-              className="ml-3 px-5 py-2.5 bg-gradient-to-r from-gold-500 to-orange-500 text-graphene-900 font-semibold text-sm rounded-lg hover:shadow-lg hover:shadow-gold-500/25 transition-all duration-300"
-            >
-              Get Quote
-            </Link>
           </div>
 
-          {/* Mobile Toggle */}
           <button
-            className="lg:hidden p-2 text-gray-400 hover:text-white"
-            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden p-2 text-text-muted hover:text-accent-glow transition-colors"
+            onClick={() => setMobileOpen(!mobileOpen)}
           >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {mobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
-        {isOpen && (
+        {mobileOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-graphene-800/95 backdrop-blur-xl border-t border-white/5 overflow-hidden"
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+            className="md:hidden bg-bg-secondary/95 backdrop-blur-md border-b border-accent-primary/10 overflow-hidden"
           >
-            <div className="px-4 py-4 space-y-1">
-              {navLinks.map((link) => (
+            <div className="px-6 py-4 space-y-1">
+              {navItems.map((item) => (
                 <Link
-                  key={link.path}
-                  to={link.path}
-                  onClick={() => setIsOpen(false)}
-                  className={`block px-4 py-3 rounded-lg text-sm font-medium transition-colors ${
-                    location.pathname === link.path
-                      ? 'text-gold-400 bg-gold-500/10'
-                      : 'text-gray-400 hover:text-white hover:bg-white/5'
+                  key={item.path}
+                  to={item.path}
+                  className={`block px-4 py-3 text-sm font-medium tracking-wide rounded-md transition-all duration-300 ${
+                    location.pathname === item.path
+                      ? 'text-accent-glow bg-accent-primary/10'
+                      : 'text-text-muted hover:text-text-primary'
                   }`}
                 >
-                  {link.label}
+                  {item.label}
                 </Link>
               ))}
-              <Link
-                to="/contact"
-                onClick={() => setIsOpen(false)}
-                className="block mt-3 px-4 py-3 bg-gradient-to-r from-gold-500 to-orange-500 text-graphene-900 font-semibold text-sm rounded-lg text-center"
-              >
-                Get Quote
-              </Link>
             </div>
           </motion.div>
         )}
