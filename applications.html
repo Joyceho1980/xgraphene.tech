@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applications | XIHE Graphene Bio-Energy in Practice</title>
+    <link rel="icon" type="image/svg+xml" href="PICTURE/XIHE_ICON.svg">
+    <meta name="description" content="XIHE applications across medical, wellness, sports recovery, and home care. See how 9.4μm far-infrared resonance technology is deployed in real-world settings.">
+    <meta name="keywords" content="XIHE Applications, Far-Infrared Therapy, Clinical Resonance, Sports Recovery, Wellness Technology, Cellular Homeostasis, Medical Graphene">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Applications | XIHE Graphene Bio-Energy in Practice">
+    <meta property="og:description" content="XIHE applications across medical, wellness, sports recovery, and home care. See how 9.4μm far-infrared resonance technology is deployed in real-world settings.">
+    <meta property="og:image" content="https://xgraphene.tech/PICTURE/xihe-og.jpg">
+    <meta property="og:url" content="https://xgraphene.tech/applications/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Applications | XIHE Graphene Bio-Energy in Practice">
+    <meta name="twitter:description" content="XIHE applications across medical, wellness, sports recovery, and home care. See how 9.4μm far-infrared resonance technology is deployed in real-world settings.">
+    <link rel="canonical" href="https://xgraphene.tech/applications/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Urbanist:wght@200;300;400;500&family=Playfair+Display:wght@300;400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #FAF8F5;
+            --bg-warm: #FAF8F5;
+            --bg-dark: #1A1D24;
+            --text-primary: #1A1D24;
+            --text-secondary: #475569;
+            --text-muted: #888888;
+            --accent-gold: #C5A059;
+            --border-color: #E5E5E7;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 70px;
+            background: #1A3348;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10%;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-family: 'Urbanist', sans-serif;
+            font-size: 28px;
+            font-weight: 300;
+            letter-spacing: 0.15em;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .logo span { color: var(--accent-gold); }
+
+        .nav-links { display: flex; gap: 40px; }
+
+        .nav-links a {
+            font-size: 11px;
+            color: #E0E6ED;
+            text-decoration: none;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+            position: relative;
+            padding-bottom: 4px;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: #C5A059;
+            transform: scaleX(0);
+            transform-origin: right center;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            transform: scaleX(1);
+            transform-origin: left center;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: #C5A059;
+        }
+
+        .section-label {
+            font-family: 'Urbanist', sans-serif;
+            font-size: 10px;
+            letter-spacing: 4px;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 16px;
+        }
+
+        .xihe-footer {
+            padding: 40px 10%;
+            background: #1A3348;
+            text-align: center;
+            border-top: 2px solid #C5A059;
+        }
+        .xihe-footer p { font-size: 13px; color: #E0E6ED; }
+    
+
+/* XIHE Button System — Ghost → Solid on Hover */
+.xihe-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 11px;
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent !important;
+    color: #1A365D !important;
+    border: 1px solid #D4AF37 !important;
+    border-radius: 50px !important;
+    cursor: pointer;
+    transition: all 0.4s ease !important;
+    font-weight: 500;
+}
+.xihe-btn:hover {
+    background: #1A365D !important;
+    color: #FFFFFF !important;
+    border-color: #1A365D !important;
+    box-shadow: 0 4px 12px rgba(26, 54, 93, 0.2);
+}
+.xihe-btn-sm {
+    display: inline-block;
+    padding: 10px 24px;
+    font-size: 10px;
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent !important;
+    color: #1A365D !important;
+    border: 1px solid #D4AF37 !important;
+    border-radius: 50px !important;
+    cursor: pointer;
+    transition: all 0.4s ease !important;
+    font-weight: 500;
+}
+.xihe-btn-sm:hover {
+    background: #1A365D !important;
+    color: #FFFFFF !important;
+    border-color: #1A365D !important;
+    box-shadow: 0 4px 12px rgba(26, 54, 93, 0.2);
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <a href="index.html" class="logo"><img src="PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" style="height: 44px; width: auto; display: block;"></a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="ABOUT/AboutOrigin.html">About</a>
+        <a href="SCIENCE/Technology.html">Science</a>
+        <a href="applications.html" class="active">Applications</a>
+        <a href="PRODUCTS/ProductPage.html">Products</a>
+        <a href="NEWS/index.html">Journal</a>
+        <a href="CONTACT/index.html">Contact</a>
+    </div>
+</nav>
+
+<!-- ============================================ -->
+<!-- SECTION 1: Hero -->
+<!-- ============================================ -->
+<section style="padding: 140px 10% 100px; background: linear-gradient(135deg, rgba(26,29,36,0.82) 0%, rgba(45,55,72,0.65) 50%, rgba(26,29,36,0.82) 100%), url('application%20hero.jpg') center/cover no-repeat; min-height: 55vh; display: flex; align-items: center;">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; width: 100%;">
+        <div style="text-align: left;">
+            <p style="font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 4px; color: var(--accent-gold); text-transform: uppercase; margin-bottom: 24px;">
+                From Laboratory to Life
+            </p>
+            <h1 style="font-family: 'Urbanist', sans-serif; font-size: 72px; font-weight: 200; color: #FFFFFF; letter-spacing: 3px; margin-bottom: 32px; line-height: 1.1;">
+                Resonance,<br>In Practice.
+            </h1>
+            <p style="font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 3px; color: rgba(255,255,255,0.65); text-transform: uppercase; margin-bottom: 24px;">
+                Engineering for Life. Precision for Health.
+            </p>
+            <p style="font-size: 14px; font-weight: 400; color: rgba(255,255,255,0.65); letter-spacing: 1px; line-height: 1.6; border-left: 1px solid rgba(197,160,89,0.4); padding-left: 14px;">
+                Four domains where XIHE's 9.4&mu;m far-infrared resonance technology transforms biological potential into measurable outcomes.
+            </p>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; width: 100%; max-width: 480px;">
+                <div style="text-align: center; padding: 28px 16px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 36px; font-weight: 200; color: var(--accent-gold); letter-spacing: 3px;">4</p>
+                    <p style="font-size: 10px; letter-spacing: 2px; color: rgba(255,255,255,0.7); text-transform: uppercase;">Application Domains</p>
+                </div>
+                <div style="text-align: center; padding: 28px 16px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 36px; font-weight: 200; color: var(--accent-gold); letter-spacing: 3px;">50+</p>
+                    <p style="font-size: 10px; letter-spacing: 2px; color: rgba(255,255,255,0.7); text-transform: uppercase;">Clinical Partners</p>
+                </div>
+                <div style="text-align: center; padding: 28px 16px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 36px; font-weight: 200; color: var(--accent-gold); letter-spacing: 3px;">78.3%</p>
+                    <p style="font-size: 10px; letter-spacing: 2px; color: rgba(255,255,255,0.7); text-transform: uppercase;">Clinical Efficacy</p>
+                </div>
+                <div style="text-align: center; padding: 28px 16px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 36px; font-weight: 200; color: var(--accent-gold); letter-spacing: 3px;">99%</p>
+                    <p style="font-size: 10px; letter-spacing: 2px; color: rgba(255,255,255,0.7); text-transform: uppercase;">Conversion Efficiency</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 2: Medical & Clinical -->
+<!-- ============================================ -->
+<section style="padding: 120px 10%; background: #FAF8F5; border-top: 1px solid #E5E5E7;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <h2 style="font-family: 'Urbanist', sans-serif; font-size: 42px; font-weight: 200; color: #1A1D24; letter-spacing: 3px; margin-bottom: 16px; text-align: center;">
+            Medical & Clinical
+        </h2>
+        <div style="width: 60px; height: 1px; background: #C5A059; margin: 0 auto 16px;"></div>
+        <p style="font-size: 16px; color: #888; font-style: italic; margin-bottom: 60px; text-align: center;">
+            Supporting recovery environments in hospitals, rehabilitation centers, and long-term care facilities.
+        </p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+            <div>
+                <div style="margin-bottom: 40px;">
+                    <h3 style="font-size: 20px; font-weight: 400; color: #1A1D24; margin-bottom: 16px; letter-spacing: 0.5px;">Post-Surgical Recovery</h3>
+                    <p style="font-size: 15px; color: #475569; line-height: 1.8;">XIHE's 9.4&mu;m far-infrared resonance accelerates tissue repair by enhancing microcirculation and ATP production at the cellular level, reducing recovery time for post-operative patients.</p>
+                </div>
+                <div style="margin-bottom: 40px;">
+                    <h3 style="font-size: 20px; font-weight: 400; color: #1A1D24; margin-bottom: 16px; letter-spacing: 0.5px;">Chronic Pain Management</h3>
+                    <p style="font-size: 15px; color: #475569; line-height: 1.8;">Deep tissue resonance penetrates 3-5cm beneath the epidermis, providing non-invasive relief for musculoskeletal pain, arthritis, and inflammation without pharmaceutical side effects.</p>
+                </div>
+                <div style="margin-bottom: 40px;">
+                    <h3 style="font-size: 20px; font-weight: 400; color: #1A1D24; margin-bottom: 16px; letter-spacing: 0.5px;">Rehabilitation Centers</h3>
+                    <p style="font-size: 15px; color: #475569; line-height: 1.8;">Integrated into physiotherapy protocols to prepare tissues before exercise and accelerate recovery afterward. Clinically validated by Peking University Third Hospital at 78.3% efficacy.</p>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <div style="width: 100%; max-width: 360px; margin: 0 auto; padding: 32px 28px; background: #1A3348; border: 1px solid rgba(255,255,255,0.1); text-align: center;">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: #C5A059; text-transform: uppercase; margin-bottom: 16px;">Clinical Evidence</p>
+                    <div style="border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 20px; margin-bottom: 20px;">
+                        <p style="font-size: 13px; color: #8899AA; margin-bottom: 4px;">Efficacy Rate</p>
+                        <p style="font-family: 'Urbanist', sans-serif; font-size: 32px; font-weight: 200; color: #C5A059; letter-spacing: 3px;">78.3%</p>
+                    </div>
+                    <div style="border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 20px; margin-bottom: 20px;">
+                        <p style="font-size: 13px; color: #8899AA; margin-bottom: 4px;">Penetration Depth</p>
+                        <p style="font-family: 'Urbanist', sans-serif; font-size: 32px; font-weight: 200; color: #C5A059; letter-spacing: 3px;">3-5 cm</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 13px; color: #8899AA; margin-bottom: 4px;">Patient Satisfaction</p>
+                        <p style="font-family: 'Urbanist', sans-serif; font-size: 32px; font-weight: 200; color: #C5A059; letter-spacing: 3px;">92%</p>
+                    </div>
+                </div>
+                <p style="font-size: 12px; color: #888; margin-top: 20px; font-style: italic;">Based on clinical data from partner hospitals, patient outcomes, and in-depth user feedback across 50+ facilities.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 3: Wellness & Longevity -->
+<!-- ============================================ -->
+<section style="padding: 120px 10%; background: #FFFFFF; border-top: 1px solid #E5E5E7;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <h2 style="font-family: 'Urbanist', sans-serif; font-size: 42px; font-weight: 200; color: #1A1D24; letter-spacing: 3px; margin-bottom: 16px; text-align: center;">
+            Wellness & Longevity
+        </h2>
+        <div style="width: 60px; height: 1px; background: #C5A059; margin: 0 auto 16px;"></div>
+        <p style="font-size: 16px; color: #888; font-style: italic; margin-bottom: 60px; text-align: center;">
+            Daily cellular maintenance for longevity clinics, wellness centers, and anti-aging protocols.
+        </p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+            <div style="order: 2;">
+                <div style="margin-bottom: 40px;">
+                    <h3 style="font-size: 20px; font-weight: 400; color: #1A1D24; margin-bottom: 16px; letter-spacing: 0.5px;">Cellular Anti-Aging</h3>
+                    <p style="font-size: 15px; color: #475569; line-height: 1.8;">Mitochondrial health is the foundation of biological age. XIHE's resonance reactivates ATP synthesis, slowing the energetic decline associated with aging at the cellular level.</p>
+                </div>
+                <div style="margin-bottom: 40px;">
+                    <h3 style="font-size: 20px; font-weight: 400; color: #1A1D24; margin-bottom: 16px; letter-spacing: 0.5px;">Deep Detoxification</h3>
+                    <p style="font-size: 15px; color: #475569; line-height: 1.8;">The 9.4&mu;m wavelength induces micro-vibrations in cellular water lattices, promoting lymphatic circulation and the natural elimination of metabolic waste products.</p>
+                </div>
+                <div style="margin-bottom: 40px;">
+                    <h3 style="font-size: 20px; font-weight: 400; color: #1A1D24; margin-bottom: 16px; letter-spacing: 0.5px;">Longevity Maintenance</h3>
+                    <p style="font-size: 15px; color: #475569; line-height: 1.8;">Regular resonance sessions maintain baseline cellular homeostasis, supporting the body's innate repair mechanisms and reducing systemic oxidative stress.</p>
+                </div>
+            </div>
+            <div style="order: 1; text-align: center;">
+                <div style="width: 100%; max-width: 360px; margin: 0 auto; padding: 32px 28px; background: #1A3348; border: 1px solid rgba(255,255,255,0.1); text-align: center;">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: #C5A059; text-transform: uppercase; margin-bottom: 16px;">Synergistic Protocols</p>
+                    <div style="border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 20px; margin-bottom: 20px;">
+                        <p style="font-size: 13px; color: #8899AA; margin-bottom: 8px;">CoQ10 + XIHE Resonance</p>
+                        <p style="font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.6;">CoQ10 fuels the mitochondria. XIHE activates it. Combined efficacy gain: <strong style="color: #C5A059;">+30%</strong></p>
+                    </div>
+                    <div style="border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 20px; margin-bottom: 20px;">
+                        <p style="font-size: 13px; color: #8899AA; margin-bottom: 8px;">NAD+ / NMN + Resonance</p>
+                        <p style="font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.6;">NAD+ accelerates repair. XIHE energizes the repair machinery for <strong style="color: #C5A059;">enhanced bioavailability</strong>.</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 13px; color: #8899AA; margin-bottom: 8px;">HBOT + Resonance</p>
+                        <p style="font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.6;">Hyperbaric oxygen delivers oxygen. XIHE clears the cellular pathways for <strong style="color: #C5A059;">maximal absorption</strong>.</p>
+                    </div>
+                </div>
+                <p style="font-size: 12px; color: #888; margin-top: 20px; font-style: italic;">Complementary protocols validated through clinical research and wellness center implementations.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 4: Sports & Rehabilitation -->
+<!-- ============================================ -->
+<section style="padding: 120px 10%; background: #FAF8F5; border-top: 1px solid #E5E5E7;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <h2 style="font-family: 'Urbanist', sans-serif; font-size: 42px; font-weight: 200; color: #1A1D24; letter-spacing: 3px; margin-bottom: 16px; text-align: center;">
+            Sports & Rehabilitation
+        </h2>
+        <div style="width: 60px; height: 1px; background: #C5A059; margin: 0 auto 16px;"></div>
+        <p style="font-size: 16px; color: #888; font-style: italic; margin-bottom: 60px; text-align: center;">
+            Accelerating recovery for athletes and active individuals — from elite performance to everyday fitness.
+        </p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+            <div>
+                <div style="margin-bottom: 40px;">
+                    <h3 style="font-size: 20px; font-weight: 400; color: #1A1D24; margin-bottom: 16px; letter-spacing: 0.5px;">Muscle Recovery</h3>
+                    <p style="font-size: 15px; color: #475569; line-height: 1.8;">Post-exercise resonance therapy reduces muscle soreness by 48 hours. The 9.4&mu;m wavelength clears lactate buildup and accelerates micro-tear repair at the cellular level.</p>
+                </div>
+                <div style="margin-bottom: 40px;">
+                    <h3 style="font-size: 20px; font-weight: 400; color: #1A1D24; margin-bottom: 16px; letter-spacing: 0.5px;">Injury Rehabilitation</h3>
+                    <p style="font-size: 15px; color: #475569; line-height: 1.8;">Deep tissue penetration reaches injured muscles, tendons, and ligaments that surface therapies cannot. Supports physiotherapy protocols with non-invasive cellular regeneration.</p>
+                </div>
+                <div style="margin-bottom: 40px;">
+                    <h3 style="font-size: 20px; font-weight: 400; color: #1A1D24; margin-bottom: 16px; letter-spacing: 0.5px;">Performance Optimization</h3>
+                    <p style="font-size: 15px; color: #475569; line-height: 1.8;">Pre-training resonance sessions prime cellular energy systems, enhancing mitochondrial output and improving endurance during high-intensity performance.</p>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <div style="width: 100%; max-width: 360px; margin: 0 auto; padding: 32px 28px; border: 1px solid rgba(255,255,255,0.1); text-align: center; background: #1A3348;">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: #8899AA; text-transform: uppercase; margin-bottom: 16px;">Recovery Timeline</p>
+                    <div style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.08);">
+                        <p style="font-size: 11px; color: #8899AA; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;">Without XIHE</p>
+                        <p style="font-family: 'Urbanist', sans-serif; font-size: 28px; font-weight: 200; color: #6A7B8C; letter-spacing: 3px;">72 hrs</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 11px; color: var(--accent-gold); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;">With XIHE Resonance</p>
+                        <p style="font-family: 'Urbanist', sans-serif; font-size: 28px; font-weight: 200; color: var(--accent-gold); letter-spacing: 3px;">24 hrs</p>
+                        <p style="font-size: 12px; color: #8899AA; margin-top: 8px;">67% faster recovery</p>
+                    </div>
+                </div>
+                <p style="font-size: 12px; color: #888; margin-top: 20px; font-style: italic;">Data based on clinical observation across 200+ athlete recovery sessions</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 5: Home & Personal Care -->
+<!-- ============================================ -->
+<section style="padding: 120px 10%; background: #FFFFFF; border-top: 1px solid #E5E5E7;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <h2 style="font-family: 'Urbanist', sans-serif; font-size: 42px; font-weight: 200; color: #1A1D24; letter-spacing: 3px; margin-bottom: 16px; text-align: center;">
+            Home & Personal Care
+        </h2>
+        <div style="width: 60px; height: 1px; background: #C5A059; margin: 0 auto 16px;"></div>
+        <p style="font-size: 16px; color: #888; font-style: italic; margin-bottom: 60px; text-align: center;">
+            Bringing professional-grade resonance technology into daily life for sustained wellness.
+        </p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+            <div style="order: 2;">
+                <div style="margin-bottom: 40px;">
+                    <h3 style="font-size: 20px; font-weight: 400; color: #1A1D24; margin-bottom: 16px; letter-spacing: 0.5px;">Sleep Optimization</h3>
+                    <p style="font-size: 15px; color: #475569; line-height: 1.8;">The Neural Resilience graphene eye mask delivers 9.4&mu;m resonance to the cranial region, promoting &alpha;-wave activity and deep sleep induction. Clinically measured: 27% improvement in sleep quality.</p>
+                </div>
+                <div style="margin-bottom: 40px;">
+                    <h3 style="font-size: 20px; font-weight: 400; color: #1A1D24; margin-bottom: 16px; letter-spacing: 0.5px;">Cognitive Enhancement</h3>
+                    <p style="font-size: 15px; color: #475569; line-height: 1.8;">Daily resonance sessions support cerebral blood flow and mitochondrial function in neural tissues. Users report improved focus, mental clarity, and cognitive endurance.</p>
+                </div>
+                <div style="margin-bottom: 40px;">
+                    <h3 style="font-size: 20px; font-weight: 400; color: #1A1D24; margin-bottom: 16px; letter-spacing: 0.5px;">Daily Vitality</h3>
+                    <p style="font-size: 15px; color: #475569; line-height: 1.8;">From the XIHE CAPSULE for full-body resonance to portable mats for targeted care, each product is designed for seamless integration into daily wellness routines.</p>
+                </div>
+            </div>
+            <div style="order: 1; text-align: center;">
+                <div style="width: 100%; max-width: 426px; margin: 0 auto; padding: 32px 28px; background: #1A3348; border: 1px solid rgba(255,255,255,0.1); text-align: center;">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: #C5A059; text-transform: uppercase; margin-bottom: 16px;">Product Integration</p>
+                    <div style="border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 20px; margin-bottom: 20px;">
+                        <p style="font-size: 13px; color: #8899AA; margin-bottom: 8px;">For Full-Body Resonance</p>
+                        <p style="font-size: 15px; color: #E0E6ED; font-weight: 500;">XIHE CAPSULE</p>
+                        <p style="font-size: 13px; color: rgba(255,255,255,0.6);">30-min daily session</p>
+                    </div>
+                    <div style="border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 20px; margin-bottom: 20px;">
+                        <p style="font-size: 13px; color: #8899AA; margin-bottom: 8px;">For Cognitive Care</p>
+                        <p style="font-size: 15px; color: #E0E6ED; font-weight: 500;">Neural Resilience</p>
+                        <p style="font-size: 13px; color: rgba(255,255,255,0.6);">Eye mask + Neural Helmet</p>
+                    </div>
+                    <div>
+                        <p style="font-size: 13px; color: #8899AA; margin-bottom: 8px;">For Targeted Therapy</p>
+                        <p style="font-size: 15px; color: #E0E6ED; font-weight: 500;">Portable Series</p>
+                        <p style="font-size: 13px; color: rgba(255,255,255,0.6);">Mat · Knee · Lumbar · Cervical</p>
+                    </div>
+                </div>
+                <p style="font-size: 12px; color: #888; margin-top: 20px; font-style: italic;">All products validated through clinical testing and real-world user feedback across multiple application scenarios.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 6: CTA -->
+<!-- ============================================ -->
+<section style="padding: 120px 10%; background: #FAF8F5; border-top: 1px solid #E5E5E7; text-align: center;">
+    <div style="max-width: 700px; margin: 0 auto;">
+        <h2 style="font-family: 'Urbanist', sans-serif; font-size: 42px; font-weight: 200; color: var(--text-primary); letter-spacing: 3px; margin-bottom: 20px; text-align: center;">
+            Ready to Bring Resonance<br>into Your Practice?
+        </h2>
+        <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 40px;">
+            Partner with XIHE to integrate medical-grade <a href="PRODUCTS/ProductPage.html" style="color: var(--accent-gold); text-decoration: none;">graphene resonance technology</a> into your clinical, wellness, or sports recovery facility.
+        </p>
+        <div style="display: flex; gap: 24px; justify-content: center;">
+            <a href="PRODUCTS/ProductPage.html" class="xihe-btn">Browse Resonance Products</a>
+            <a href="CONTACT/index.html" class="xihe-btn">Request Partnership</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="xihe-footer">
+    <p>XIHE GLOBAL &copy; 2026 &mdash; Resonance Engineered. Life Restored.</p>
+</section>
+
+</body>
+</html>

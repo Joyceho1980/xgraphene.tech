@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resonance Mechanism | XIHE Science</title>
+    <link rel="icon" type="image/svg+xml" href="../PICTURE/XIHE_ICON.svg">
+    <meta name="description" content="XIHE's 9.4μm far-infrared resonance mechanism: from photon to cellular recovery. Deep tissue penetration, CcO activation, ATP surge.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Resonance Mechanism | XIHE Science">
+    <meta property="og:description" content="XIHE's 9.4μm far-infrared resonance mechanism: from photon to cellular recovery. Deep tissue penetration, CcO activation, ATP surge.">
+    <meta property="og:image" content="https://xgraphene.tech/PICTURE/xihe-og.jpg">
+    <meta property="og:url" content="https://xgraphene.tech/science/mechanism">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Resonance Mechanism | XIHE Science">
+    <meta name="twitter:description" content="XIHE's 9.4μm far-infrared resonance mechanism: from photon to cellular recovery. Deep tissue penetration, CcO activation, ATP surge.">
+    <link rel="canonical" href="https://xgraphene.tech/science/mechanism">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Urbanist:wght@200;300;400;500&family=Playfair+Display:wght@300&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #FAF8F5;
+            --bg-dark: #1A1D24;
+            --text-primary: #1A1D24;
+            --text-secondary: #475569;
+            --text-muted: #888888;
+            --accent-gold: #C5A059;
+            --border-color: #E5E5E7;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        nav {
+            position: fixed; top: 0; left: 0; right: 0; height: 70px;
+            background: #1A3348;
+            display: flex; align-items: center;
+            justify-content: space-between;
+            padding: 0 10%; z-index: 1000;
+        }
+        .logo {
+            font-family: 'Urbanist', sans-serif;
+            font-size: 28px; font-weight: 300;
+            letter-spacing: 0.15em;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .logo span { color: var(--accent-gold); }
+        .nav-links { display: flex; gap: 40px; }
+        .nav-links a {
+            font-size: 11px; color: #E0E6ED;
+            text-decoration: none; letter-spacing: 1px;
+            text-transform: uppercase; transition: color 0.3s;
+            position: relative;
+            padding-bottom: 4px;
+        }
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: #C5A059;
+            transform: scaleX(0);
+            transform-origin: right center;
+            transition: transform 0.3s ease;
+        }
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            transform: scaleX(1);
+            transform-origin: left center;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+    color: #C5A059;
+}
+
+        /* ========== HERO ========== */
+        /* ========== HERO ========== */
+        .hero-section {
+            min-height: 55vh;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 28px;
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-tag {
+            font-family: 'Urbanist', sans-serif;
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 4px;
+            color: #FFFFFF;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 16px;
+        }
+        .hero-title {
+            font-family: 'Urbanist', sans-serif;
+            font-size: 44px;
+            font-weight: 200;
+            color: #FFFFFF;
+            letter-spacing: 3px;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+        .hero-title span {
+            font-weight: 300;
+            color: rgba(255,255,255,0.7);
+            font-size: 34px;
+            display: block;
+            margin-top: 8px;
+        }
+        .hero-tagline {
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            letter-spacing: 2px;
+            color: rgba(255,255,255,0.85);
+            text-transform: none;
+        }
+        .hero-cat-links {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            position: sticky;
+            top: 70px;
+            z-index: 50;
+            margin-top: 24px;
+            padding: 12px 0;
+            flex-shrink: 0;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        .hero-cat-links::-webkit-scrollbar { display: none; }
+        .hero-cat-links a {
+            font-family: 'Urbanist', sans-serif;
+            font-size: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 10px 28px;
+            background: #1A3348;
+            border: 1px solid rgba(255,255,255,0.25);
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            position: relative;
+            scroll-snap-align: start;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+        .hero-cat-links a:hover {
+            border-color: rgba(255,255,255,0.6);
+            color: #FFFFFF;
+            transform: translateY(-2px);
+        }
+        .hero-cat-links a.active {
+            color: #FFFFFF;
+            background: #1A3348;
+            border-color: #FFFFFF;
+        }
+        .hero-cat-links a::after {
+            content: attr(data-hint);
+            position: absolute;
+            bottom: -16px;
+            left: 50%;
+            transform: translateX(-50%) translateY(4px);
+            font-family: 'Inter', sans-serif;
+            font-size: 7px;
+            letter-spacing: 1px;
+            color: rgba(255,255,255,0.25);
+            white-space: nowrap;
+            opacity: 0;
+            transition: all 0.3s ease;
+            pointer-events: none;
+            font-weight: 300;
+        }
+        .hero-cat-links a:hover::after {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+        .cat-dot {
+            display: none;
+        }
+
+        .section-label {
+            font-family: 'Urbanist', sans-serif;
+            font-size: 10px; letter-spacing: 4px;
+            color: var(--accent-gold);
+            text-transform: uppercase; display: block;
+            margin-bottom: 16px;
+        }
+
+        .xihe-footer {
+            padding: 40px 10%; background: #1A3348;
+            text-align: center;
+            border-top: 2px solid #C5A059;
+        }
+        .xihe-footer p { font-size: 13px; color: #E0E6ED; }
+
+        @media (max-width: 600px) {
+            .hero-cat-links { justify-content: flex-start; gap: 6px; padding: 12px 10%; }
+            .hero-cat-links a { font-size: 9px; letter-spacing: 1px; padding: 6px 12px; }
+        }
+    
+
+/* XIHE Button System — Ghost → Solid on Hover */
+.xihe-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 11px;
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent !important;
+    color: #1A365D !important;
+    border: 1px solid #D4AF37 !important;
+    border-radius: 50px !important;
+    cursor: pointer;
+    transition: all 0.4s ease !important;
+    font-weight: 500;
+}
+.xihe-btn:hover {
+    background: #1A365D !important;
+    color: #FFFFFF !important;
+    border-color: #1A365D !important;
+    box-shadow: 0 4px 12px rgba(26, 54, 93, 0.2);
+}
+.xihe-btn-sm {
+    display: inline-block;
+    padding: 10px 24px;
+    font-size: 10px;
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent !important;
+    color: #1A365D !important;
+    border: 1px solid #D4AF37 !important;
+    border-radius: 50px !important;
+    cursor: pointer;
+    transition: all 0.4s ease !important;
+    font-weight: 500;
+}
+.xihe-btn-sm:hover {
+    background: #1A365D !important;
+    color: #FFFFFF !important;
+    border-color: #1A365D !important;
+    box-shadow: 0 4px 12px rgba(26, 54, 93, 0.2);
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="../index.html" class="logo"><img src="../PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" style="height: 44px; width: auto; display: block;"></a>
+    <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../ABOUT/AboutOrigin.html">About</a>
+        <a href="Technology.html" class="active">Science</a>
+        <a href="../applications.html">Applications</a>
+        <a href="../PRODUCTS/ProductPage.html">Products</a>
+        <a href="../NEWS/index.html">Journal</a>
+        <a href="../CONTACT/index.html">Contact</a>
+    </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section class="hero-section" style="background: linear-gradient(135deg, rgba(40,42,48,0.8) 0%, rgba(40,42,48,0.4) 100%), url('MECHANISM HERO.jpg'); background-size: cover; background-position: center;">
+    <div style="flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; padding: 70px 10% 0;">
+        <div style="max-width: 800px; padding: 0 20px;">
+            <span class="hero-tag">The Currency of Life. Recharged.</span>
+            <h1 class="hero-title">
+                The Energy of Life,<br>
+                <span>Amplified.</span>
+            </h1>
+            <p class="hero-tagline" style="background: rgba(0,0,0,0.5); padding: 12px 20px; border-radius: 8px; display: inline-block; max-width: 700px;">XIHE graphene far-infrared catalyzes ATP synthesis — the universal currency of cellular energy — igniting the body's innate capacity for repair.</p>
+        </div>
+    </div>
+    <div class="hero-cat-links" style="flex-shrink: 0; position: static;">
+        <a href="Technology.html" data-hint="Integrated Matrix">TECHNOLOGY</a>
+        <span class="cat-dot">·</span>
+        <a href="Mechanism.html" class="active" data-hint="Cellular Mechanism">MECHANISM</a>
+        <span class="cat-dot">·</span>
+        <a href="Evidence.html" data-hint="Clinical Data">EVIDENCE</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 2: Deep Tissue Resonance -->
+<!-- ============================================ -->
+<section id="deep-tissue" style="padding: 120px 10%; background: #FFFFFF; border-top: 1px solid #E5E5E7;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        <div style="display: grid; grid-template-columns: 180px 1fr; gap: 60px;">
+            <!-- Sidebar -->
+            <div style="position: sticky; top: 150px; align-self: start;">
+                <div style="border-left: 1px solid #E5E5E7; padding-left: 16px;">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: var(--accent-gold); text-transform: uppercase; margin-bottom: 20px;">On this page</p>
+                    <div style="display: flex; flex-direction: column; gap: 10px;">
+                        <a href="#deep-tissue" style="font-size: 12px; color: var(--accent-gold); text-decoration: none; font-weight: 500; letter-spacing: 0.5px; line-height: 1.4;">Deep Tissue</a>
+                        <a href="#bio-logic" style="font-size: 12px; color: #888; text-decoration: none; letter-spacing: 0.5px; line-height: 1.4;">Bio-Logic</a>
+                        <a href="#therapeutic-pillars" style="font-size: 12px; color: #888; text-decoration: none; letter-spacing: 0.5px; line-height: 1.4;">Therapeutic Pillars</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Content -->
+            <div>
+                <div style="text-align: center; margin-bottom: 60px;">
+                    <span class="section-label">Biological Response</span>
+                    <h2 style="font-family: 'Urbanist', sans-serif; font-size: 40px; font-weight: 200; color: #1A1D24; letter-spacing: 3px; margin-bottom: 16px; text-align: center;">
+                        Deep Tissue Resonance
+                    </h2>
+                    <p style="font-size: 15px; color: #888; font-style: italic;">
+                        Far-Infrared Penetration &amp; Cellular Activation
+                    </p>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+                    <div>
+                        <img src="../xihe-deep-tissue-penetration-visualization.jpg"
+                             alt="XIHE graphene far-infrared technology penetrates 3-5cm deep tissue"
+                             style="width: 100%; height: auto; object-fit: contain; border: 1px solid #E5E5E7; background: #FAF8F5; border-radius: 18px;">
+                        <div style="border-left: 3px solid #C5A059; padding-left: 24px; margin-top: 140px;">
+                            <p style="font-family: 'Urbanist', sans-serif; font-size: 15px; color: #C5A059; font-weight: 300; letter-spacing: 2px; margin: 0; line-height: 1.8;">
+                                Surface warmth is not the goal.<br>
+                                Cellular activation is.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <p style="line-height: 1.9; color: #C5A059; margin-bottom: 28px; font-size: 17px; font-weight: 500;">
+                            We bypass surface heating and resonate directly with your cells.
+                        </p>
+                        <p style="line-height: 1.9; color: #475569; margin-bottom: 28px; font-size: 16px;">
+                            While conventional <strong style="color: #1A1D24;">graphene heating films</strong> merely warm the skin surface, XIHE's high-emissivity far-infrared technology penetrates <strong style="color: #1A1D24;">3–5 cm beneath the epidermis</strong>—activating cellular metabolism without triggering thermal stress on surface tissue.
+                        </p>
+                        <p style="line-height: 1.9; color: #475569; margin-bottom: 28px; font-size: 16px;">
+                            Powered by <a href="Technology.html" style="color: var(--accent-gold); text-decoration: none;"><strong style="color: #1A1D24;">XIHE's proprietary integrated matrix engineering</strong></a>—developed at our Jiageng Innovation Lab facility—our far-infrared energy is transmitted, not trapped, delivering true <span style="color: #C5A059; font-weight: 500;">biological resonance</span> to the cells that need it most.
+                        </p>
+                        <p style="line-height: 1.9; color: #1A1D24; font-size: 16px; margin-bottom: 32px;">
+                            This is why XIHE products deliver a unique sensation: <span style="color: #C5A059;">&ldquo;gentle on the surface, warm from within&rdquo;</span>—a fundamental departure from heating that burns the skin while failing to reach deep tissue.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 3: The Bio-Logic -->
+<!-- ============================================ -->
+<section id="bio-logic" style="padding: 120px 10%; background: #FAF8F5; border-top: 1px solid #E5E5E7;">
+    <div style="max-width: 1400px; margin: 0 auto;">
+        <div style="text-align: center; margin-bottom: 80px;">
+            <span class="section-label">The Bio-Logic</span>
+            <h2 style="font-family: 'Urbanist', sans-serif; font-size: 40px; font-weight: 200; color: #1A1D24; letter-spacing: 3px; margin-bottom: 16px; text-align: center;">
+                How Resonance Becomes Life
+            </h2>
+            <p style="font-size: 15px; color: #888; font-style: italic;">
+                The Complete Mechanism Chain — from Photon to Cellular Recovery
+            </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; margin-bottom: 80px;">
+
+            <!-- Level 1 -->
+            <div style="text-align: center; padding: 40px 30px; background: #FAF8F5; border-radius: 18px; transition: transform 0.4s ease, box-shadow 0.4s ease; cursor: default;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.06)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+                <div style="width: 100%; margin-bottom: 24px; background: #FFFFFF; aspect-ratio: 16/9; overflow: hidden; border-radius: 12px;">
+                    <img src="../xihe-wave-auditory-resonance-water.jpg"
+                         alt="XIHE 9.4μm far-infrared resonance transforms stagnant cellular fluid into flowing living water"
+                         style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h3 style="font-family: 'Urbanist', sans-serif; font-size: 18px; color: #1A1D24; margin-bottom: 16px; font-weight: 400;">From Dead Water to Living Water</h3>
+                <p style="font-size: 14px; color: #475569; line-height: 1.7;">
+                    9.4μm resonance disperses water clusters, transforming <strong style="color: #1A1D24;">stagnant cellular fluid</strong> into <strong style="color: #1A1D24;">flowing, living water</strong>.
+                </p>
+                <p style="font-size: 13px; color: #C5A059; font-style: italic; margin-top: 20px;">
+                        "Dead water becomes a stream in your body."
+                    </p>
+            </div>
+
+            <!-- Level 2 -->
+            <div style="text-align: center; padding: 40px 30px; background: #FAF8F5; border-radius: 18px; transition: transform 0.4s ease, box-shadow 0.4s ease; cursor: default;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.06)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+                <div style="width: 100%; margin-bottom: 24px; background: #FFFFFF; aspect-ratio: 16/9; overflow: hidden; border-radius: 12px;">
+                    <img src="../xihe-match-cytochrome-c-oxidase-activation.jpg"
+                         alt="XIHE far-infrared photons activate Cytochrome c Oxidase (CcO) in mitochondria"
+                         style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h3 style="font-family: 'Urbanist', sans-serif; font-size: 18px; color: #1A1D24; margin-bottom: 16px; font-weight: 400;">Photon Ignition</h3>
+                <p style="font-size: 14px; color: #475569; line-height: 1.7;">
+                    Far-infrared <strong style="color: #1A1D24;">photons</strong> penetrate tissue and are absorbed by <strong style="color: #1A1D24;">Cytochrome c Oxidase (CcO)</strong> — the spark plug of mitochondrial energy production.
+                </p>
+                <p style="font-size: 13px; color: #C5A059; font-style: italic; margin-top: 20px;">
+                        "Supplements are the wood. Photons are the match."
+                    </p>
+            </div>
+
+            <!-- Level 3 -->
+            <div style="text-align: center; padding: 40px 30px; background: #FAF8F5; border-radius: 18px; transition: transform 0.4s ease, box-shadow 0.4s ease; cursor: default;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.06)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+                <div style="width: 100%; margin-bottom: 24px; background: #FFFFFF; aspect-ratio: 16/9; overflow: hidden; border-radius: 12px;">
+                    <img src="../xihe-currency-atp-surge.jpg"
+                         alt="XIHE triggers ATP surge - accelerating ATP synthesis in mitochondria"
+                         style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h3 style="font-family: 'Urbanist', sans-serif; font-size: 18px; color: #1A1D24; margin-bottom: 16px; font-weight: 400;">ATP Surge</h3>
+                <p style="font-size: 14px; color: #475569; line-height: 1.7;">
+                    CcO activation accelerates the electron transport chain, triggering a surge in <strong style="color: #1A1D24;">ATP synthesis</strong> — the universal currency of life.
+                </p>
+                <p style="font-size: 13px; color: #C5A059; font-style: italic; margin-top: 20px;">
+                        "Every repair, every defense, requires ATP payment."
+                    </p>
+            </div>
+
+            <!-- Level 4 -->
+            <div style="text-align: center; padding: 40px 30px; background: #FAF8F5; border-radius: 18px; transition: transform 0.4s ease, box-shadow 0.4s ease; cursor: default;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.06)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+                <div style="width: 100%; margin-bottom: 24px; background: #FFFFFF; aspect-ratio: 16/9; overflow: hidden; border-radius: 12px;">
+                    <img src="../xihe-action-recovery-regeneration.jpg"
+                         alt="XIHE ATP powers recovery and regeneration - Na/K pumps, AMPK pathways, and T-cell immune response"
+                         style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <h3 style="font-family: 'Urbanist', sans-serif; font-size: 18px; color: #1A1D24; margin-bottom: 16px; font-weight: 400;">Recovery & Regeneration</h3>
+                <p style="font-size: 14px; color: #475569; line-height: 1.7;">
+                    Abundant ATP powers <strong style="color: #1A1D24;">Na⁺/K⁺ pumps</strong>, activates <strong style="color: #1A1D24;">AMPK pathways</strong>, and fuels T-cell immune response.
+                </p>
+                <p style="font-size: 13px; color: #C5A059; font-style: italic; margin-top: 20px;">
+                        "Pain relief. Metabolic burn. Immune surge."
+                    </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SECTION 4: Three Therapeutic Pillars -->
+<!-- ============================================ -->
+<section id="therapeutic-pillars" style="padding: 120px 10%; background: #FFFFFF; border-top: 1px solid #E5E5E7;">
+    <div style="max-width: 1000px; margin: 0 auto;">
+                <h3 style="font-family: 'Urbanist', sans-serif; font-size: 34px; color: #1A1D24; margin-bottom: 48px; text-align: center; font-weight: 200; letter-spacing: 3px;">
+                    From ATP to Three Therapeutic Pillars
+                </h3>
+            <div style="width: 100%; margin-bottom: 48px; background: #FFFFFF; border-radius: 18px; overflow: hidden;">
+                <img src="../xihe-pillars-from-atp-to-three-therapeutic-pillars.jpg"
+                     alt="XIHE ATP powers three therapeutic pillars - pain relief, metabolic activation, and immune enhancement"
+                     style="width: 100%; height: auto; display: block;">
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
+                <div style="padding: 32px; background: #FFFFFF; border-radius: 18px; transition: transform 0.4s ease, box-shadow 0.4s ease; cursor: default;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.06)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+                    <div style="font-size: 11px; color: #C5A059; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px;">Pain Relief</div>
+                    <p style="font-size: 14px; color: #475569; line-height: 1.7;">
+                        ATP fuels <strong style="color: #1A1D24;">Na⁺/K⁺ pumps</strong> → stabilizes neural membrane potential → naturally <span style="color: #C5A059; font-weight: 500;">closes pain signals</span>.
+                    </p>
+                </div>
+                <div style="padding: 32px; background: #FFFFFF; border-radius: 18px; transition: transform 0.4s ease, box-shadow 0.4s ease; cursor: default;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.06)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+                    <div style="font-size: 11px; color: #C5A059; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px;">Metabolic Activation</div>
+                    <p style="font-size: 14px; color: #475569; line-height: 1.7;">
+                        ATP surge activates <strong style="color: #1A1D24;">AMPK pathway</strong> → triggers fat metabolism → <span style="color: #C5A059; font-weight: 500;">burns triglycerides like physical ignition</span>.
+                    </p>
+                </div>
+                <div style="padding: 32px; background: #FFFFFF; border-radius: 18px; transition: transform 0.4s ease, box-shadow 0.4s ease; cursor: default;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.06)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+                    <div style="font-size: 11px; color: #C5A059; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px;">Immune Enhancement</div>
+                    <p style="font-size: 14px; color: #475569; line-height: 1.7;">
+                        ATP powers <strong style="color: #1A1D24;">T-cells</strong> → enhances surveillance & elimination of foreign agents → <span style="color: #C5A059; font-weight: 500;">strengthens immune defense</span>.
+                    </p>
+            </div>
+        </div>
+
+        <!-- Closing quote -->
+        <div style="max-width: 800px; margin: 0 auto 60px; padding: 40px 48px; background: #FAF8F5; border-left: 3px solid #C5A059; border-radius: 18px; transition: transform 0.4s ease, box-shadow 0.4s ease; cursor: default;" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.06)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
+            <p style="font-family: 'Urbanist', sans-serif; font-size: 20px; color: #1A1D24; line-height: 1.9; font-weight: 300; letter-spacing: 2px; margin: 0;">
+                We don't cure you.<br>
+                We simply restore your cells' dignity —<br>
+                <span style="color: #C5A059;">that primal energy which allows life<br>to reorganize chaos into order.</span>
+            </p>
+        </div>
+
+        <!-- Scientific References -->
+        <div style="max-width: 1000px; margin: 0 auto; padding: 30px; background: #FFFFFF; border-radius: 18px;">
+            <div style="font-size: 11px; color: #888; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px;">
+                Mechanism Chain References
+            </div>
+            <div style="font-size: 13px; color: #666; line-height: 1.8;">
+                <strong>References:</strong> Far-infrared-water resonance (<em>Int J Mol Sci</em>, 2020); Cytochrome c Oxidase activation (<em>Photochem Photobiol</em>, 2017); ATP synthesis acceleration (<em>J Biophotonics</em>, 2017); Na⁺/K⁺ pump & AMPK pathway activation (<em>BMC Cancer</em>, 2025); T-cell immune enhancement (<em>Cell Mol Immunol</em>, 2025). <a href="Evidence.html" style="color: var(--accent-gold); text-decoration: none;">Complete reference library</a> available from XIHE B2B Division.
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Product Link CTA -->
+<section style="padding: 80px 10%; background: #FFFFFF; border-top: 1px solid #E5E5E7; text-align: center;">
+    <div style="max-width: 600px; margin: 0 auto;">
+        <span style="font-family: 'Urbanist', sans-serif; font-size: 10px; letter-spacing: 4px; color: var(--accent-gold); text-transform: uppercase; display: block; margin-bottom: 16px;">
+            Mechanism in Practice
+        </span>
+        <h2 style="font-family: 'Urbanist', sans-serif; font-size: 28px; font-weight: 200; color: var(--text-primary); letter-spacing: 2px; margin-bottom: 20px; text-align: center;">
+            Experience the Resonance<br>Mechanism in XIHE Products
+        </h2>
+        <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 32px;">
+            Discover how XIHE's proprietary graphene far-infrared technology is integrated into full-body capsules, cabins, portable devices, and medical-grade heating solutions.
+        </p>
+        <a href="../PRODUCTS/ProductPage.html" class="xihe-btn">View Resonance Products →</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="xihe-footer">
+    <p>&copy; 2024 XIHE Technology. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

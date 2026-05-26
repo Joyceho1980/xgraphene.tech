@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XIHE Journal — Resonance Essays & Breakthroughs</title>
+    <link rel="icon" type="image/svg+xml" href="../PICTURE/XIHE_ICON.svg">
+    <meta name="description" content="Explore XIHE Journal: where Eastern wisdom meets resonance science. Philosophy, psychology, nature theory, and the latest graphene technology breakthroughs.">
+    <meta name="keywords" content="XIHE Journal, Resonance Philosophy, Eastern Wisdom, Frequency Psychology, Graphene Research, Far-Infrared Technology, Nature Theory">
+    <!-- Open Graph -->
+    <meta property="og:title" content="XIHE Journal — Resonance Essays & Breakthroughs">
+    <meta property="og:description" content="Explore XIHE Journal: where Eastern wisdom meets resonance science. Philosophy, psychology, nature theory, and the latest graphene technology breakthroughs.">
+    <meta property="og:image" content="https://xgraphene.tech/PICTURE/xihe-og.jpg">
+    <meta property="og:url" content="https://xgraphene.tech/journal/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="XIHE Journal — Resonance Essays & Breakthroughs">
+    <meta name="twitter:description" content="Explore XIHE Journal: where Eastern wisdom meets resonance science. Philosophy, psychology, nature theory, and the latest graphene technology breakthroughs.">
+    <link rel="canonical" href="https://xgraphene.tech/journal/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Urbanist:wght@200;300;400;500&family=Playfair+Display:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #FAF8F5;
+            --bg-dark: #1A1D24;
+            --text-primary: #1A1D24;
+            --text-secondary: #475569;
+            --text-muted: #888888;
+            --accent-gold: #C5A059;
+            --border-color: #E5E5E7;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 70px;
+            background: #1A3348;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10%;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-family: 'Urbanist', sans-serif;
+            font-size: 28px;
+            font-weight: 300;
+            letter-spacing: 0.15em;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        .logo span { color: var(--accent-gold); }
+
+        .nav-links { display: flex; gap: 40px; }
+
+        .nav-links a {
+            font-size: 11px;
+            color: #E0E6ED;
+            text-decoration: none;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+            position: relative;
+            padding-bottom: 4px;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: #C5A059;
+            transform: scaleX(0);
+            transform-origin: right center;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            transform: scaleX(1);
+            transform-origin: left center;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+    color: #C5A059;
+}
+
+        .section-label {
+            font-family: 'Urbanist', sans-serif;
+            font-size: 10px;
+            letter-spacing: 4px;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 16px;
+        }
+
+        .xihe-footer {
+            padding: 40px 10%;
+            background: #1A3348;
+            text-align: center;
+            border-top: 2px solid #C5A059;
+        }
+        .xihe-footer p { font-size: 13px; color: #E0E6ED; }
+
+        .tab-btn {
+            padding: 10px 24px;
+            background: transparent;
+            color: var(--text-secondary);
+            font-size: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: 'Inter', sans-serif;
+            border-bottom: 1px solid transparent;
+        }
+
+        .tab-btn:hover { color: var(--accent-gold); }
+        .tab-btn.active {
+            color: var(--accent-gold);
+            border-bottom-color: var(--accent-gold);
+        }
+
+        /* ========== HERO ========== */
+        .hero-section {
+            min-height: 55vh;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 28px;
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-cat-links {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            position: sticky;
+            top: 70px;
+            z-index: 50;
+            margin-top: 24px;
+            padding: 12px 0;
+            flex-shrink: 0;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        .hero-cat-links::-webkit-scrollbar { display: none; }
+        .hero-cat-links a {
+            font-family: 'Urbanist', sans-serif;
+            font-size: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #D4AF37;
+            text-decoration: none;
+            padding: 10px 28px;
+            background: transparent;
+            border: 1px solid rgba(212,175,55,0.25);
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            position: relative;
+            scroll-snap-align: start;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+        .hero-cat-links a:hover {
+            border-color: rgba(212,175,55,0.6);
+            color: #D4AF37;
+            transform: translateY(-2px);
+        }
+        .hero-cat-links a.active {
+            color: #D4AF37;
+            background: #1A365D;
+            border-color: #D4AF37;
+        }
+        .hero-cat-links a::after {
+            content: attr(data-hint);
+            position: absolute;
+            bottom: -16px;
+            left: 50%;
+            transform: translateX(-50%) translateY(4px);
+            font-family: 'Inter', sans-serif;
+            font-size: 7px;
+            letter-spacing: 1px;
+            color: rgba(255,255,255,0.25);
+            white-space: nowrap;
+            opacity: 0;
+            transition: all 0.3s ease;
+            pointer-events: none;
+            font-weight: 300;
+        }
+        .hero-cat-links a:hover::after {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+        .cat-dot { display: none; }
+        @media (max-width: 600px) {
+            .hero-cat-links { justify-content: flex-start; gap: 6px; padding: 12px 10%; }
+            .hero-cat-links a { font-size: 9px; letter-spacing: 1px; padding: 6px 12px; }
+        }
+    
+
+/* XIHE Button System — Ghost → Solid on Hover */
+.xihe-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 11px;
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent !important;
+    color: #1A365D !important;
+    border: 1px solid #D4AF37 !important;
+    border-radius: 50px !important;
+    cursor: pointer;
+    transition: all 0.4s ease !important;
+    font-weight: 500;
+}
+.xihe-btn:hover {
+    background: #1A365D !important;
+    color: #FFFFFF !important;
+    border-color: #1A365D !important;
+    box-shadow: 0 4px 12px rgba(26, 54, 93, 0.2);
+}
+.xihe-btn-sm {
+    display: inline-block;
+    padding: 10px 24px;
+    font-size: 10px;
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent !important;
+    color: #1A365D !important;
+    border: 1px solid #D4AF37 !important;
+    border-radius: 50px !important;
+    cursor: pointer;
+    transition: all 0.4s ease !important;
+    font-weight: 500;
+}
+.xihe-btn-sm:hover {
+    background: #1A365D !important;
+    color: #FFFFFF !important;
+    border-color: #1A365D !important;
+    box-shadow: 0 4px 12px rgba(26, 54, 93, 0.2);
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <a href="../index.html" class="logo"><img src="../PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" style="height: 44px; width: auto; display: block;"></a>
+    <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../ABOUT/AboutOrigin.html">About</a>
+        <a href="../SCIENCE/Technology.html">Science</a>
+        <a href="../applications.html">Applications</a>
+        <a href="../PRODUCTS/ProductPage.html">Products</a>
+        <a href="index.html" class="active">Journal</a>
+        <a href="../CONTACT/index.html">Contact</a>
+    </div>
+</nav>
+
+<!-- ============================================ -->
+<!-- HERO -->
+<!-- ============================================ -->
+<section class="hero-section" style="background: linear-gradient(135deg, rgba(26,29,36,0.82) 0%, rgba(45,55,72,0.70) 50%, rgba(26,29,36,0.82) 100%), url('../JOUNAL%20HERO.png'); background-size: cover; background-position: center;">
+    <div style="flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; padding: 70px 10% 0;">
+        <div style="max-width: 800px; padding: 0 20px;">
+            <p style="font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 4px; color: var(--accent-gold); text-transform: uppercase; margin-bottom: 16px;">
+                XIHE Journal
+            </p>
+            <h1 style="font-family: 'Urbanist', sans-serif; font-size: 60px; font-weight: 200; color: #FFFFFF; letter-spacing: 3px; margin-bottom: 16px; line-height: 1.15;">
+                Where Wisdom<br><span style="color: var(--accent-gold);">Meets Resonance</span>
+            </h1>
+            <p style="font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 3px; color: rgba(255,255,255,0.65); text-transform: uppercase; margin-bottom: 20px; max-width: 560px; margin-left: auto; margin-right: auto;">
+                Engineering for Life. Precision for Health.
+            </p>
+            <p style="font-size: 15px; font-weight: 400; color: rgba(255,255,255,0.65); max-width: 560px; letter-spacing: 0.5px; line-height: 1.8; border-left: 1px solid rgba(197,160,89,0.4); padding-left: 16px; text-align: left; margin: 0 auto;">
+                Reflections on frequency, nature, and the body-mind connection — alongside the latest from XIHE's laboratories and partnerships.
+            </p>
+        </div>
+    </div>
+    <div class="hero-cat-links" style="flex-shrink: 0; position: static;">
+        <a href="javascript:void(0)" class="active" data-hint="Resonance Essays" onclick="filterJournal('essay', this)">ESSAYS</a>
+        <span class="cat-dot">·</span>
+        <a href="javascript:void(0)" data-hint="Science" onclick="filterJournal('science', this)">SCIENCE</a>
+        <span class="cat-dot">·</span>
+        <a href="javascript:void(0)" data-hint="Company News" onclick="filterJournal('news', this)">NEWS</a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- CONTENT -->
+<!-- ============================================ -->
+<section style="padding: 80px 10% 100px; background: #FFFFFF;">
+    <div style="max-width: 1000px; margin: 0 auto;">
+
+        <!-- Tab Switcher moved to hero navigation above -->
+
+        <!-- ============================================ -->
+        <!-- FEATURED ESSAY -->
+        <!-- ============================================ -->
+        <div class="post" data-category="essay" style="padding: 40px; background: #FAF8F5; border: 1px solid var(--border-color); margin-bottom: 50px; position: relative;">
+            <span style="display: inline-block; padding: 4px 14px; background: var(--accent-gold); color: #FFFFFF; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px;">Featured Essay</span>
+            <div style="display: grid; grid-template-columns: 1fr 1.8fr; gap: 50px; align-items: start;">
+                <div>
+                    <p style="font-size: 12px; color: var(--text-muted); letter-spacing: 1px; margin-bottom: 8px;">May 25, 2026 · 8 min read</p>
+                    <div style="width: 100%; aspect-ratio: 16/9; background: #E5E5E7; display: flex; align-items: center; justify-content: center; color: var(--text-muted); font-size: 12px;">
+                        <img src="../PICTURE/images/WATER RIPPLE.jpg" alt="Water ripple resonance — nature's fundamental frequency mirrored in XIHE's 9.4μm far-infrared technology" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+                <div>
+                    <h2 style="font-size: 28px; font-weight: 400; color: var(--text-primary); letter-spacing: -0.3px; line-height: 1.3; margin-bottom: 16px;">
+                        The Frequency of Life: A Psychologist's Reflection on Water, Waves, and Why 9.4μm Exists
+                    </h2>
+                    <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 20px; font-style: italic;">
+                        "Ancient Taoists spoke of Wu Wei — effortless action. Modern physics speaks of resonance — energy transfer at a system's natural frequency. They were describing the same truth, separated only by language."
+                    </p>
+                    <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 16px;">
+                        As both a psychologist and a student of Eastern nature philosophy, I have always been drawn to a single question: why does the human body respond so precisely to specific frequencies? The answer, I believe, lies not in the laboratory alone — but in a wisdom that humanity has always carried, yet forgotten how to name...
+                    </p>
+                    <a href="../SCIENCE/Mechanism.html" style="font-size: 11px; color: var(--accent-gold); letter-spacing: 2px; text-transform: uppercase; text-decoration: none; transition: opacity 0.3s;">Continue Reading →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- ESSAY 02 -->
+        <!-- ============================================ -->
+        <article class="post" data-category="essay" style="padding: 40px 0; border-bottom: 1px solid var(--border-color); display: grid; grid-template-columns: 1fr 2fr; gap: 50px; align-items: start;">
+            <div>
+                <p style="font-size: 12px; color: var(--text-muted); letter-spacing: 1px; margin-bottom: 8px;">May 15, 2026 · 6 min read</p>
+                <span style="display: inline-block; padding: 4px 12px; background: rgba(197,160,89,0.1); color: var(--accent-gold); font-size: 9px; letter-spacing: 2px; text-transform: uppercase;">Resonance Essay</span>
+            </div>
+            <div>
+                <a href="../SCIENCE/Technology.html" style="text-decoration: none; color: inherit;">
+                    <h2 style="font-size: 22px; font-weight: 400; color: var(--text-primary); margin-bottom: 12px; letter-spacing: -0.3px;">5–15μm Is Not a Coincidence: How Nature Speaks Through Wavelength</h2>
+                    <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 12px;">
+                        The far-infrared band that sustains life on Earth is the same band that <a href="../SCIENCE/Technology.html" style="color: var(--accent-gold); text-decoration: none;">XIHE engineered</a>. In Taoist cosmology, this is the space between Yin and Yang — the subtle realm where Qi flows. In physics, it is 8–14μm. The two languages converge on one truth: nature communicates through frequency.
+                    </p>
+                    <span style="font-size: 11px; color: var(--accent-gold); letter-spacing: 2px; text-transform: uppercase;">Read Essay →</span>
+                </a>
+            </div>
+        </article>
+
+        <!-- ============================================ -->
+        <!-- ESSAY 03 -->
+        <!-- ============================================ -->
+        <article class="post" data-category="essay" style="padding: 40px 0; border-bottom: 1px solid var(--border-color); display: grid; grid-template-columns: 1fr 2fr; gap: 50px; align-items: start;">
+            <div>
+                <p style="font-size: 12px; color: var(--text-muted); letter-spacing: 1px; margin-bottom: 8px;">April 30, 2026 · 5 min read</p>
+                <span style="display: inline-block; padding: 4px 12px; background: rgba(197,160,89,0.1); color: var(--accent-gold); font-size: 9px; letter-spacing: 2px; text-transform: uppercase;">Resonance Essay</span>
+            </div>
+            <div>
+                <a href="../SCIENCE/Mechanism.html" style="text-decoration: none; color: inherit;">
+                    <h2 style="font-size: 22px; font-weight: 400; color: var(--text-primary); margin-bottom: 12px; letter-spacing: -0.3px;">Water Has Memory, Cells Have Rhythm: The Psychology of Resonance</h2>
+                    <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 12px;">
+                        In clinical psychology, we speak of "embodied cognition" — the idea that the mind is not confined to the brain but distributed throughout the body's fluid matrix. When we restore coherence to cellular water through 9.4μm resonance, we are not just healing tissue. We are restoring psychological harmony.
+                    </p>
+                    <span style="font-size: 11px; color: var(--accent-gold); letter-spacing: 2px; text-transform: uppercase;">Read Essay →</span>
+                </a>
+            </div>
+        </article>
+
+        <!-- ============================================ -->
+        <!-- ESSAY 04 -->
+        <!-- ============================================ -->
+        <article class="post" data-category="essay" style="padding: 40px 0; border-bottom: 1px solid var(--border-color); display: grid; grid-template-columns: 1fr 2fr; gap: 50px; align-items: start;">
+            <div>
+                <p style="font-size: 12px; color: var(--text-muted); letter-spacing: 1px; margin-bottom: 8px;">April 12, 2026 · 7 min read</p>
+                <span style="display: inline-block; padding: 4px 12px; background: rgba(197,160,89,0.1); color: var(--accent-gold); font-size: 9px; letter-spacing: 2px; text-transform: uppercase;">Resonance Essay</span>
+            </div>
+            <div>
+                <a href="../ABOUT/AboutPhilosophy.html" style="text-decoration: none; color: inherit;">
+                    <h2 style="font-size: 22px; font-weight: 400; color: var(--text-primary); margin-bottom: 12px; letter-spacing: -0.3px;">Wu Wei and the Art of Cellular Resonance: Doing Nothing, Healing Everything</h2>
+                    <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 12px;">
+                        The Taoist principle of Wu Wei is often translated as "effortless action." But what does effortlessness mean at the cellular level? XIHE's graphene resonance requires no effort from the body — no heat stress, no aggressive stimuli, no metabolic cost. It simply meets the cell at its natural frequency, and the cell remembers how to heal itself.
+                    </p>
+                    <span style="font-size: 11px; color: var(--accent-gold); letter-spacing: 2px; text-transform: uppercase;">Read Essay →</span>
+                </a>
+            </div>
+        </article>
+
+        <!-- ============================================ -->
+        <!-- SCIENCE: PKU Clinical Trial -->
+        <!-- ============================================ -->
+        <article class="post" data-category="science" style="padding: 40px 0; border-bottom: 1px solid var(--border-color); display: grid; grid-template-columns: 1fr 2fr; gap: 50px; align-items: start;">
+            <div>
+                <p style="font-size: 12px; color: var(--text-muted); letter-spacing: 1px; margin-bottom: 8px;">May 20, 2026</p>
+                <span style="display: inline-block; padding: 4px 12px; background: rgba(197,160,89,0.1); color: var(--accent-gold); font-size: 9px; letter-spacing: 2px; text-transform: uppercase;">Science</span>
+            </div>
+            <div>
+                <a href="../SCIENCE/Evidence.html" style="text-decoration: none; color: inherit;">
+                    <h2 style="font-size: 22px; font-weight: 400; color: var(--text-primary); margin-bottom: 12px; letter-spacing: -0.3px;">Peking University Third Hospital Validates 78.3% Efficacy of XIHE Far-Infrared Therapy</h2>
+                    <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 12px;">Comprehensive clinical trial confirms XIHE's 9.4μm resonance technology significantly improves microcirculation and pain reduction in patients with chronic musculoskeletal conditions.</p>
+                    <span style="font-size: 11px; color: var(--accent-gold); letter-spacing: 2px; text-transform: uppercase;">Read More →</span>
+                </a>
+            </div>
+        </article>
+
+        <!-- SCIENCE: ATP Study -->
+        <article class="post" data-category="science" style="padding: 40px 0; border-bottom: 1px solid var(--border-color); display: grid; grid-template-columns: 1fr 2fr; gap: 50px; align-items: start;">
+            <div>
+                <p style="font-size: 12px; color: var(--text-muted); letter-spacing: 1px; margin-bottom: 8px;">January 22, 2026</p>
+                <span style="display: inline-block; padding: 4px 12px; background: rgba(197,160,89,0.1); color: var(--accent-gold); font-size: 9px; letter-spacing: 2px; text-transform: uppercase;">Science</span>
+            </div>
+            <div>
+                <a href="../SCIENCE/Evidence.html" style="text-decoration: none; color: inherit;">
+                    <h2 style="font-size: 22px; font-weight: 400; color: var(--text-primary); margin-bottom: 12px; letter-spacing: -0.3px;">New Study Reveals 9.4μm Far-Infrared Resonance Reactivates ATP Synthesis in Human Fibroblasts</h2>
+                    <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 12px;">Peer-reviewed paper in International Journal of Molecular Sciences demonstrates XIHE's core mechanism: precise wavelength resonance restores mitochondrial function in energy-depleted cells.</p>
+                    <span style="font-size: 11px; color: var(--accent-gold); letter-spacing: 2px; text-transform: uppercase;">Read More →</span>
+                </a>
+            </div>
+        </article>
+
+        <!-- COMPANY: IKKEM Partnership -->
+        <article class="post" data-category="news" style="padding: 40px 0; border-bottom: 1px solid var(--border-color); display: grid; grid-template-columns: 1fr 2fr; gap: 50px; align-items: start;">
+            <div>
+                <p style="font-size: 12px; color: var(--text-muted); letter-spacing: 1px; margin-bottom: 8px;">April 28, 2026</p>
+                <span style="display: inline-block; padding: 4px 12px; background: rgba(197,160,89,0.1); color: var(--accent-gold); font-size: 9px; letter-spacing: 2px; text-transform: uppercase;">Company News</span>
+            </div>
+            <div>
+                <a href="../SCIENCE/Technology.html" style="text-decoration: none; color: inherit;">
+                    <h2 style="font-size: 22px; font-weight: 400; color: var(--text-primary); margin-bottom: 12px; letter-spacing: -0.3px;">XIHE & IKKEM Deepen Joint-Equity Collaboration for Next-Generation Graphene Medical Materials</h2>
+                    <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 12px;">Jiageng Innovation Laboratory expands its 55% stake partnership with XIHE, launching a dedicated research track for graphene-based biomedical resonance applications.</p>
+                    <span style="font-size: 11px; color: var(--accent-gold); letter-spacing: 2px; text-transform: uppercase;">Read More →</span>
+                </a>
+            </div>
+        </article>
+
+        <!-- COMPANY: Neural Helmet Launch -->
+        <article class="post" data-category="news" style="padding: 40px 0; border-bottom: 1px solid var(--border-color); display: grid; grid-template-columns: 1fr 2fr; gap: 50px; align-items: start;">
+            <div>
+                <p style="font-size: 12px; color: var(--text-muted); letter-spacing: 1px; margin-bottom: 8px;">March 15, 2026</p>
+                <span style="display: inline-block; padding: 4px 12px; background: rgba(197,160,89,0.1); color: var(--accent-gold); font-size: 9px; letter-spacing: 2px; text-transform: uppercase;">Company News</span>
+            </div>
+            <div>
+                <a href="../PRODUCTS/PORTABLES/NeuralResilience.html" style="text-decoration: none; color: inherit;">
+                    <h2 style="font-size: 22px; font-weight: 400; color: var(--text-primary); margin-bottom: 12px; letter-spacing: -0.3px;">Introducing Neural Helmet: XIHE's Next-Generation Cognitive Resonance Platform</h2>
+                    <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 12px;">Design prototype unveiled — a wearable graphene resonance device targeting cognitive enhancement, α-wave synchronization, and deep neural recovery.</p>
+                    <span style="font-size: 11px; color: var(--accent-gold); letter-spacing: 2px; text-transform: uppercase;">Read More →</span>
+                </a>
+            </div>
+        </article>
+
+        <!-- COMPANY: National Standard -->
+        <article class="post" data-category="news" style="padding: 40px 0; border-bottom: 1px solid var(--border-color); display: grid; grid-template-columns: 1fr 2fr; gap: 50px; align-items: start;">
+            <div>
+                <p style="font-size: 12px; color: var(--text-muted); letter-spacing: 1px; margin-bottom: 8px;">February 08, 2026</p>
+                <span style="display: inline-block; padding: 4px 12px; background: rgba(197,160,89,0.1); color: var(--accent-gold); font-size: 9px; letter-spacing: 2px; text-transform: uppercase;">Company News</span>
+            </div>
+            <div>
+                <a href="../PRODUCTS/FILM/GrapheneFilm.html" style="text-decoration: none; color: inherit;">
+                    <h2 style="font-size: 22px; font-weight: 400; color: var(--text-primary); margin-bottom: 12px; letter-spacing: -0.3px;">XIHE Named Lead Drafter of China's Graphene Flexible Electrothermal Film National Standard</h2>
+                    <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 12px;">Standard 2024-0923T-YB sets the benchmark for China's graphene electrothermal film industry, with XIHE defining technical specifications for medical-grade resonance materials.</p>
+                    <span style="font-size: 11px; color: var(--accent-gold); letter-spacing: 2px; text-transform: uppercase;">Read More →</span>
+                </a>
+            </div>
+        </article>
+
+        <!-- Load More -->
+        <div style="text-align: center; margin-top: 60px;">
+            <a href="../NEWS/index.html" class="xihe-btn">Load More Articles</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!-- SUBSCRIBE -->
+<!-- ============================================ -->
+<section style="padding: 100px 10%; background: #FAF8F5; text-align: center;">
+    <div style="max-width: 550px; margin: 0 auto;">
+        <span class="section-label">Stay Connected</span>
+        <h2 style="font-family: 'Urbanist', sans-serif; font-size: 30px; font-weight: 200; color: var(--text-primary); letter-spacing: 3px; margin-bottom: 16px;">
+            Subscribe to the Journal
+        </h2>
+        <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 28px;">
+            Receive quarterly essays on resonance philosophy, clinical research updates, and product announcements.
+        </p>
+        <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+            <input type="email" placeholder="Your email address" style="padding: 14px 20px; border: 1px solid var(--border-color); background: #FFFFFF; font-size: 14px; min-width: 280px; outline: none; font-family: 'Inter', sans-serif;">
+            <button class="xihe-btn">Subscribe</button>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="xihe-footer">
+    <p>XIHE GLOBAL &copy; 2026 &mdash; Resonance Engineered. Life Restored.</p>
+</section>
+
+<script>
+function filterJournal(category, el) {
+    const posts = document.querySelectorAll('.post');
+    const links = document.querySelectorAll('.hero-cat-links a');
+    links.forEach(l => l.classList.remove('active'));
+    if (el) el.classList.add('active');
+
+    posts.forEach(post => {
+        if (category === 'all' || post.dataset.category === category) {
+            post.style.display = '';
+        } else {
+            post.style.display = 'none';
+        }
+    });
+}
+// Default: show essays on load
+document.addEventListener('DOMContentLoaded', function() {
+    filterJournal('essay', document.querySelector('.hero-cat-links a.active'));
+});
+</script>
+
+</body>
+</html>

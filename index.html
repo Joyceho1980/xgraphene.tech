@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XIHE GLOBAL — Returning Technology to the Frequency of Life</title>
+    <link rel="icon" type="image/svg+xml" href="PICTURE/XIHE_ICON.svg">
+<meta name="description" content="XIHE engineers precise biophysical resonance technology. 9.4μm far-infrared wavelength, 0.98 emissivity, powered by IKKEM and Academician Zheng Nanfeng's team.">
+<meta name="keywords" content="XIHE, Far-Infrared Technology, 9.4μm Wavelength, 0.98 Emissivity, IKKEM, Academician Zheng Nanfeng, Cellular Resonance, Medical Graphene">
+    <!-- Open Graph -->
+    <meta property="og:title" content="XIHE GLOBAL — Returning Technology to the Frequency of Life">
+    <meta property="og:description" content="XIHE engineers precise biophysical resonance technology. 9.4μm far-infrared wavelength, 0.98 emissivity, powered by IKKEM and Academician Zheng Nanfeng's team.">
+    <meta property="og:image" content="https://xgraphene.tech/PICTURE/xihe-og.jpg">
+    <meta property="og:url" content="https://xgraphene.tech/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="XIHE GLOBAL — Returning Technology to the Frequency of Life">
+    <meta name="twitter:description" content="XIHE engineers precise biophysical resonance technology. 9.4μm far-infrared wavelength, 0.98 emissivity, powered by IKKEM and Academician Zheng Nanfeng's team.">
+    <link rel="canonical" href="https://xgraphene.tech/">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "XIHE Technology",
+        "url": "https://xgraphene.tech/",
+        "description": "XIHE engineers precise biophysical resonance technology. 9.4μm far-infrared wavelength, 0.98 emissivity, powered by IKKEM and Academician Zheng Nanfeng's team.",
+        "foundingDate": "2023",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Xiamen",
+            "addressCountry": "CN"
+        }
+    }
+    </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Urbanist:wght@200;300;400;500&family=Playfair+Display:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root {
+    --bg-dark: #0C0F14;
+    --bg-cream: #FAF8F5;
+    --text-primary: #1A1D24;
+    --text-secondary: #475569;
+    --text-white: #FFFFFF;
+    --accent-gold: #D4A853;
+    --border-color: #E5E5E7;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background-color: var(--bg-cream);
+    color: var(--text-secondary);
+    line-height: 1.65;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 400;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background: #1A3348;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+.logo span { color: var(--accent-gold); }
+
+.nav-links { display: flex; gap: 40px; }
+
+.nav-links a {
+    font-size: 11px;
+    color: #E0E6ED;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #C5A059;
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition: transform 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    transform: scaleX(1);
+    transform-origin: left center;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #C5A059;
+}
+
+/* =============================================
+   SECTION 1 — HERO (Dark + Video)
+   ============================================= */
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 55vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    background-color: var(--bg-dark);
+    padding: 70px 0 0 8vw;
+}
+
+.hero-video {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(4px) brightness(0.5);
+    transform: scale(1.05);
+}
+
+@keyframes hero-fade-in {
+    0% { opacity: 0; transform: translateY(16px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.45) 0%,
+        rgba(0,0,0,0.20) 40%,
+        rgba(0,0,0,0) 70%
+    );
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.hero-glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-left: 2px solid var(--accent-gold);
+    padding: 40px 36px;
+    max-width: 620px;
+    animation: hero-fade-in 1.4s ease-out 0.5s both;
+}
+
+.brand-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 16px;
+    gap: 4px;
+}
+
+.brand-name {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.8);
+}
+
+.brand-collab {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.65);
+}
+
+.hero-title {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 36px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    text-shadow: 0 4px 30px rgba(0,0,0,0.4);
+    color: var(--text-white);
+}
+
+@media (min-width: 768px) {
+    .hero-title { font-size: 44px; }
+}
+
+@media (min-width: 1024px) {
+    .hero-title { font-size: 52px; }
+}
+
+.hero-tagline {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.spec-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-family: monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.65);
+    padding: 8px 16px;
+    border: 1px solid rgba(255,255,255,0.08);
+    background: rgba(0,0,0,0.03);
+    border-radius: 2px;
+    backdrop-filter: blur(4px);
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.spec-bar .separator { color: rgba(255,255,255,0.35); font-weight: 300; }
+
+.spec-bar .data-gold {
+    color: var(--accent-gold);
+    font-weight: 500;
+}
+
+.data-gold {
+    color: var(--accent-gold);
+    font-weight: 500;
+}
+
+.hero-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Hero buttons: permanently solid navy for visibility on dark background */
+.hero-cta .xihe-btn-sm {
+    background: #1A365D !important;
+    color: #FFFFFF !important;
+    border-color: #1A365D !important;
+}
+.hero-cta .xihe-btn-sm:hover {
+    background: #1A365D !important;
+    color: #D4AF37 !important;
+    border-color: #1A365D !important;
+    box-shadow: 0 0 15px rgba(212,175,55,0.3);
+}
+
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    z-index: 2;
+}
+
+.scroll-text {
+    font-size: 8px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    font-weight: 400;
+}
+
+.scroll-line {
+    width: 1px;
+    height: 24px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.4), transparent);
+}
+
+/* =============================================
+   SECTION 2 — THREE TRUTHS
+   ============================================= */
+.truths-section {
+    padding: 140px 0;
+    background: var(--bg-cream);
+}
+
+.truths-section .container {
+    max-width: 1100px;
+}
+
+.section-tag {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--accent-gold);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.truths-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 80px;
+    margin-top: 60px;
+}
+
+@media (min-width: 768px) {
+    .truths-grid { gap: 100px; }
+}
+
+.truth-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(26, 54, 93, 0.08);
+}
+
+.truths-grid .truth-item:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+@media (min-width: 900px) {
+    .truth-item {
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+    }
+    .truth-item:nth-child(even) > div:first-child { order: 2; }
+    .truth-item:nth-child(even) > .truth-text { order: 1; }
+}
+
+.truth-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+    display: block;
+}
+
+.truth-image-wrap {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.truth-image-wrap::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        repeating-linear-gradient(
+            90deg,
+            transparent 0px,
+            rgba(197, 160, 89, 0.03) 1px,
+            transparent 2px,
+            transparent 18px,
+            rgba(197, 160, 89, 0.02) 19px,
+            transparent 20px
+        ),
+        repeating-linear-gradient(
+            0deg,
+            transparent 0px,
+            rgba(197, 160, 89, 0.025) 1px,
+            transparent 3px,
+            transparent 23px,
+            rgba(197, 160, 89, 0.015) 24px,
+            transparent 26px
+        );
+}
+
+.truth-number {
+    font-size: 48px;
+    font-weight: 200;
+    color: rgba(212, 168, 83, 0.25);
+    font-family: monospace;
+    line-height: 1;
+    margin-bottom: 16px;
+}
+
+.truth-headline {
+    font-size: 28px;
+    font-weight: 400;
+    color: var(--text-primary);
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .truth-headline { font-size: 34px; }
+}
+
+.truth-headline .gold {
+    color: var(--accent-gold);
+    font-weight: 500;
+}
+
+.truth-headline .uppercase {
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.truth-body {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--text-secondary);
+    max-width: 480px;
+}
+
+.truth-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.truth-text .xihe-btn-sm {
+    margin-top: 24px;
+    align-self: center;
+}
+
+.truth-divider {
+    width: 40px;
+    height: 1px;
+    background: var(--accent-gold);
+    margin: 24px 0;
+}
+
+/* =============================================
+   SECTION 3 — PRODUCT LINES
+   ============================================= */
+.products-section {
+    padding: 120px 0;
+    background: white;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+@media (min-width: 768px) {
+    .product-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.product-card {
+    background: var(--bg-cream);
+    border-radius: 18px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: block;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.product-card-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+}
+
+.product-card-body {
+    padding: 28px 24px;
+    text-align: center;
+}
+
+.product-card-tag {
+    font-size: 11px;
+    font-weight: 500;
+    font-family: monospace;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--accent-gold);
+    margin-bottom: 8px;
+}
+
+.product-card-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.product-card-desc {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.product-card-arrow {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 8px 16px;
+    font-size: 11px;
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #1A365D;
+    border: 1px solid #D4AF37;
+    border-radius: 50px;
+    background: transparent;
+    transition: all 0.4s ease;
+}
+.product-card:hover .product-card-arrow {
+    background: #1A365D;
+    color: #FFFFFF;
+    border-color: #1A365D;
+}
+
+/* =============================================
+   SECTION 4 — CREDIBILITY
+   ============================================= */
+.credibility-section {
+    padding: 120px 0;
+    background: var(--bg-cream);
+}
+
+.credibility-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.credibility-title {
+    font-size: 40px;
+    font-weight: 300;
+    color: var(--text-primary);
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+}
+
+@media (min-width: 768px) {
+    .credibility-title { font-size: 48px; }
+}
+
+.credibility-title span {
+    font-weight: 300;
+    color: var(--text-secondary);
+}
+
+.credibility-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+@media (min-width: 768px) {
+    .credibility-grid { grid-template-columns: repeat(3, 1fr); gap: 40px; }
+}
+
+.credibility-card {
+    background: white;
+    border-radius: 18px;
+    padding: 48px 40px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.credibility-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+}
+
+.credibility-card .card-number {
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.credibility-card .card-unit {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--accent-gold);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.credibility-card .card-label {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* =============================================
+   SECTION 5 — CTA
+   ============================================= */
+.cta-section {
+    padding: 120px 0;
+    background: #FAF8F5;
+    border-top: 1px solid #E5E5E7;
+    text-align: center;
+}
+
+.cta-title {
+    font-size: 36px;
+    font-weight: 300;
+    color: var(--text-primary);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+    .cta-title { font-size: 48px; }
+}
+
+.cta-title .highlight { color: var(--accent-gold); }
+
+.cta-description {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (max-width: 768px) {
+    .container { padding: 0 24px; }
+    .hero { padding: 70px 0 0 5vw; }
+    .brand-header { margin-bottom: 12px; }
+    .hero-glass { padding: 24px 20px; }
+    .hero-title { font-size: 28px; }
+    .spec-bar { margin-top: 16px; padding: 8px 12px; gap: 8px; }
+    .truths-section { padding: 80px 0; }
+    .truth-headline { font-size: 24px; }
+    .truths-grid { gap: 60px; }
+    .products-section { padding: 80px 0; }
+    .credibility-section { padding: 80px 0; }
+    .credibility-title { font-size: 32px; }
+    .credibility-grid { gap: 24px; }
+    .cta-section { padding: 80px 0; }
+    .cta-title { font-size: 28px; }
+}
+
+
+/* XIHE Button System — Ghost → Solid on Hover */
+.xihe-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 11px;
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent !important;
+    color: #1A365D !important;
+    border: 1px solid #D4AF37 !important;
+    border-radius: 50px !important;
+    cursor: pointer;
+    transition: all 0.4s ease !important;
+    font-weight: 500;
+}
+.xihe-btn:hover {
+    background: #1A365D !important;
+    color: #FFFFFF !important;
+    border-color: #1A365D !important;
+    box-shadow: 0 4px 12px rgba(26, 54, 93, 0.2);
+}
+.xihe-btn-sm {
+    display: inline-block;
+    padding: 10px 24px;
+    font-size: 10px;
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent !important;
+    color: #1A365D !important;
+    border: 1px solid #D4AF37 !important;
+    border-radius: 50px !important;
+    cursor: pointer;
+    transition: all 0.4s ease !important;
+    font-weight: 500;
+}
+.xihe-btn-sm:hover {
+    background: #1A365D !important;
+    color: #FFFFFF !important;
+    border-color: #1A365D !important;
+    box-shadow: 0 4px 12px rgba(26, 54, 93, 0.2);
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <a href="index.html" class="logo"><img src="PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" style="height: 44px; width: auto; display: block;"></a>
+    <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="ABOUT/AboutOrigin.html">About</a>
+        <a href="SCIENCE/Technology.html">Science</a>
+        <a href="applications.html">Applications</a>
+        <a href="PRODUCTS/ProductPage.html">Products</a>
+        <a href="NEWS/index.html">Journal</a>
+        <a href="CONTACT/index.html">Contact</a>
+    </div>
+</nav>
+
+<!-- ============================================
+     SECTION 1 — HERO
+     ============================================ -->
+<section class="hero">
+    <video class="hero-video" autoplay loop muted playsinline poster="HOME/hero-bg.mp4">
+        <source src="HOME/hero-bg.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <div class="hero-glass">
+            <div class="brand-header">
+                <span class="brand-name">XIHE</span>
+                <span class="brand-collab">Powered by Jiageng Innovation Laboratory (IKKEM)</span>
+            </div>
+
+            <h1 class="hero-title">
+                Returning Technology<br>
+                to the <span class="gold">frequency</span> of life.
+            </h1>
+
+            <p class="hero-tagline">Engineering for Life. Precision for Health.</p>
+        </div>
+
+        <div class="spec-bar">
+            <span><span class="data-gold">9.4&mu;m</span> Peak Wavelength</span>
+            <span class="separator">|</span>
+            <span><span class="data-gold">0.98</span> Emissivity</span>
+            <span class="separator">|</span>
+            <span>Laboratory Verified</span>
+        </div>
+
+        <div class="hero-cta">
+            <a href="CONTACT/index.html" class="xihe-btn-sm">Apply for Clinical Partnership</a>
+            <a href="SCIENCE/Technology.html" class="xihe-btn-sm">Discover the Science →</a>
+        </div>
+    </div>
+
+    <div class="scroll-indicator">
+        <span class="scroll-text">Scroll to Explore</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<!-- ============================================
+     SECTION 2 — THREE TRUTHS
+     ============================================ -->
+<section class="truths-section">
+    <div class="container">
+        <span class="section-tag">Foundational Truths</span>
+
+        <div class="truths-grid">
+
+            <!-- Truth 01 -->
+            <div class="truth-item">
+                <div>
+                    <div class="truth-image-wrap">
+                        <img class="truth-image" src="PICTURE/images/WATER RIPPLE.jpg" alt="Water ripple — nature's fundamental frequency">
+                    </div>
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 10px; letter-spacing: 2px; color: var(--accent-gold); text-align: center; margin-top: 12px; text-transform: uppercase;">Homo-Resonance · Water–Graphene Interface</p>
+                </div>
+                <div class="truth-text">
+                    <h2 class="truth-headline">
+                        Nature speaks<br>in <span class="gold">frequencies</span>.<br>
+                        <span style="font-size: 20px; font-weight: 300; color: var(--text-secondary);">We listen.</span>
+                    </h2>
+                    <div class="truth-divider"></div>
+                    <p class="truth-body">
+                        Everything in nature carries a signature wave&mdash;stars, cells, and the water that sustains us. XIHE Graphene is engineered to mirror this natural language. When our technology meets the body, it is not a forced absorption; it is <em>homo-resonance</em>&mdash;a gentle, profound alignment that restores the body&rsquo;s most fundamental biological conversation. <strong style="color: var(--text-primary); font-weight: 500;">We provide the resonance; the body provides the healing.</strong>
+                    </p>
+                    <a href="SCIENCE/Technology.html" class="xihe-btn-sm">Discover Graphene Resonance →</a>
+                </div>
+            </div>
+
+            <!-- Truth 02 -->
+            <div class="truth-item">
+                <div>
+                    <div class="truth-image-wrap">
+                        <img class="truth-image" src="PICTURE/images/5-15 WAVE LENGTH.jpg" alt="5-15μm wavelength spectrum visualization">
+                    </div>
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 10px; letter-spacing: 2px; color: var(--accent-gold); text-align: center; margin-top: 12px; text-transform: uppercase;">5–15μm · Peak 9.4μm</p>
+                </div>
+                <div class="truth-text">
+                    <h2 class="truth-headline">
+                        <span class="gold">5&ndash;15&mu;m</span><br>
+                        is <span class="gold">life&rsquo;s spectrum</span>.
+                    </h2>
+                    <div class="truth-divider"></div>
+                    <p class="truth-body">
+                        Human tissue absorbs far-infrared precisely within this window. XIHE's graphene emission peaks at <span class="data-gold">9.4&mu;m</span> — the exact wavelength where water molecules and cellular structures achieve maximum resonance. For clinics, this means <span class="data-gold">measurable</span> improvements in microcirculation, tissue oxygenation, and cellular repair kinetics — not superficial warmth, but quantifiable biophysical response.
+                    </p>
+                    <a href="applications.html" class="xihe-btn-sm">See Clinical Applications →</a>
+                </div>
+            </div>
+
+            <!-- Truth 03 -->
+            <div class="truth-item">
+                <div>
+                    <div class="truth-image-wrap">
+                        <img class="truth-image" src="PICTURE/images/CHARGING CELL.jpg" alt="Cellular energy — mitochondrial resonance visualization" style="filter: brightness(1.18) saturate(1.12);">
+                    </div>
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 10px; letter-spacing: 2px; color: var(--accent-gold); text-align: center; margin-top: 12px; text-transform: uppercase;">Mitochondrial Resonance · ATP Synthesis</p>
+                </div>
+                <div class="truth-text">
+                    <h2 class="truth-headline">
+                        <span class="gold">Precision</span> that powers <span class="gold">life</span>.
+                    </h2>
+                    <div class="truth-divider"></div>
+                    <p class="truth-body">
+                        Mitochondrial health is the rhythm of life itself. XIHE&rsquo;s graphene technology is not designed merely to heat; it is engineered to communicate. By calibrating our resonance to a precise <span class="data-gold">9.4&mu;m</span> peak, we facilitate a biophysical interaction that supports ATP resynthesis at the cellular level. We believe that technology should not just provide comfort&mdash;it should facilitate the body&rsquo;s innate, natural capacity to heal. <strong style="color: var(--text-primary); font-weight: 500;">This is the harmony of science and life.</strong>
+                    </p>
+                    <a href="PRODUCTS/ProductPage.html" class="xihe-btn-sm">View Resonance Products →</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     SECTION 2.5 — ABOUT / BRAND
+     ============================================ -->
+<section style="padding: 100px 0; background: #FFFFFF; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container" style="text-align: center;">
+        <span class="section-tag">About XIHE</span>
+        <h2 style="font-family: 'Urbanist', sans-serif; font-size: 36px; font-weight: 200; color: var(--text-primary); letter-spacing: 3px; line-height: 1.2; margin-bottom: 16px;">
+            Engineering for Life.<br>
+            <span style="color: var(--accent-gold);">Precision for Health.</span>
+        </h2>
+        <p style="font-size: 15px; color: var(--text-secondary); font-weight: 400; max-width: 600px; margin: 0 auto 40px; line-height: 1.8;">
+            XIHE is powered by the Jiageng Innovation Laboratory (IKKEM) and led by Academician Zheng Nanfeng. We are the Lead Drafting Unit for the Graphene Flexible Electrothermal Film National Industry Standard &mdash; translating sovereign scientific assets into cellular vitality solutions.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
+            <a href="ABOUT/AboutOrigin.html" class="xihe-btn-sm">Our Origin →</a>
+            <a href="ABOUT/AboutMission.html" class="xihe-btn-sm">Our Mission →</a>
+            <a href="ABOUT/AboutPhilosophy.html" class="xihe-btn-sm">Our Philosophy →</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     SECTION 3 — PRODUCT LINES
+     ============================================ -->
+<section class="products-section">
+    <div class="container">
+        <span class="section-tag">Our Technology</span>
+
+        <div class="product-grid">
+
+            <a href="PRODUCTS/CAPSULE/capsule-b2b.html" class="product-card">
+                <img class="product-card-image" src="PRODUCTS/CAPSULE/xihe-capsule-hero.jpg" alt="XIHE CAPSULE — 6-in-1 graphene photon energy capsule for full-body cellular restoration">
+                <div class="product-card-body">
+                    <div class="product-card-tag">Full-Body Solution</div>
+                    <div class="product-card-title">XIHE CAPSULE</div>
+                    <div class="product-card-desc">Full-body far-infrared resonance cabin designed for deep cellular recovery and systemic wellness.</div>
+                    <div class="product-card-arrow">Explore →</div>
+                </div>
+            </a>
+
+            <a href="PRODUCTS/PORTABLES/NeuralResilience.html" class="product-card">
+                <img class="product-card-image" src="PRODUCTS/PORTABLES/xihe-neural-helmet.jpg" alt="XIHE Neural Resilience — graphene-powered neural helmet and eye mask for cognitive enhancement">
+                <div class="product-card-body">
+                    <div class="product-card-tag">Portable Solution</div>
+                    <div class="product-card-title">Neural Resilience</div>
+                    <div class="product-card-desc">Graphene neural helmet and eye mask for cognitive enhancement and deep sleep induction.</div>
+                    <div class="product-card-arrow">Explore →</div>
+                </div>
+            </a>
+
+            <a href="PRODUCTS/FILM/GrapheneFilm.html" class="product-card">
+                <img class="product-card-image" src="PRODUCTS/FILM/hero-graphene.jpg" alt="XIHE Graphene Film — medical-grade graphene heating module with ≥0.88 emissivity">
+                <div class="product-card-body">
+                    <div class="product-card-tag">Core Material</div>
+                    <div class="product-card-title">Graphene Film</div>
+                    <div class="product-card-desc">Medical-standard graphene heating module — the core resonance engine behind every XIHE application.</div>
+                    <div class="product-card-arrow">Explore →</div>
+                </div>
+            </a>
+
+            <a href="PRODUCTS/CABIN/cabin.html" class="product-card">
+                <img class="product-card-image" src="PRODUCTS/CABIN/cabin-transparent.png" alt="XIHE CABIN — modular far-infrared photon resonance chamber for clinics and wellness centers">
+                <div class="product-card-body">
+                    <div class="product-card-tag">Modular Solution</div>
+                    <div class="product-card-title">XIHE CABIN</div>
+                    <div class="product-card-desc">Modular far-infrared cabin system — configurable for clinical, spa, and wellness center deployments.</div>
+                    <div class="product-card-arrow">Explore →</div>
+                </div>
+            </a>
+
+            <a href="PRODUCTS/PORTABLES/VisceralVitality.html" class="product-card">
+                <img class="product-card-image" src="PRODUCTS/PORTABLES/xihe-portable-360-thermal-matrix.png" alt="XIHE Visceral Vitality — graphene far-infrared waist pad for visceral organ health and metabolic support">
+                <div class="product-card-body">
+                    <div class="product-card-tag">Portable Solution</div>
+                    <div class="product-card-title">Visceral Vitality</div>
+                    <div class="product-card-desc">Targeted far-infrared resonance for visceral organ health — liver, kidney, and digestive system support.</div>
+                    <div class="product-card-arrow">Explore →</div>
+                </div>
+            </a>
+
+            <a href="PRODUCTS/PORTABLES/DeepRecovery.html" class="product-card">
+                <img class="product-card-image" src="PRODUCTS/PORTABLES/xihe-portable-kinetic-lumbar-belt.png" alt="XIHE Deep Recovery — graphene far-infrared wearable therapy system for spine and joint recovery">
+                <div class="product-card-body">
+                    <div class="product-card-tag">Portable Solution</div>
+                    <div class="product-card-title">Deep Recovery</div>
+                    <div class="product-card-desc">Post-exercise and post-treatment recovery system for muscle repair, inflammation reduction, and accelerated healing.</div>
+                    <div class="product-card-arrow">Explore →</div>
+                </div>
+            </a>
+
+        </div>
+            <div style="display: flex; justify-content: center; margin-top: 60px;">
+                <a href="PRODUCTS/ProductPage.html" class="xihe-btn">Browse Full Product Line →</a>
+            </div>
+    </div>
+</section>
+
+<!-- ============================================
+     SECTION 4 — CREDIBILITY
+     ============================================ -->
+<section class="credibility-section">
+    <div class="container">
+        <div class="credibility-header">
+            <span class="section-tag">Scientific Foundation</span>
+            <h2 class="credibility-title">
+                Laboratory-Grade Precision.<br>
+                <span>Clinically Validated Results.</span>
+            </h2>
+        </div>
+
+        <div class="credibility-grid">
+            <a href="SCIENCE/Technology.html" class="credibility-card" style="text-decoration: none; display: block;">
+                <div class="card-number data-gold">0.98</div>
+                <div class="card-unit">Emissivity</div>
+                <div class="card-label">Approaching the physical limit of an absolute blackbody within the 8-14μm vital spectrum.</div>
+            </a>
+            <a href="SCIENCE/Technology.html" class="credibility-card" style="text-decoration: none; display: block;">
+                <div class="card-number data-gold">18</div>
+                <div class="card-unit">SCI Papers</div>
+                <div class="card-label">Peer-reviewed research publications supporting the technology's clinical efficacy.</div>
+            </a>
+            <a href="SCIENCE/Technology.html" class="credibility-card" style="text-decoration: none; display: block;">
+                <div class="card-number data-gold">78.3%</div>
+                <div class="card-unit">Efficacy Rate</div>
+                <div class="card-label">Comprehensive clinical efficacy validated by Peking University Third Hospital.</div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================
+     SECTION 5 — JOURNAL / NEWS
+     ============================================ -->
+<section style="padding: 100px 0; background: #FFFFFF; border-top: 1px solid var(--border-color);">
+    <div class="container" style="text-align: center;">
+        <span class="section-tag">Journal</span>
+        <h2 style="font-family: 'Urbanist', sans-serif; font-size: 36px; font-weight: 200; color: var(--text-primary); letter-spacing: 3px; line-height: 1.2; margin-bottom: 16px;">
+            Where Wisdom<br>
+            <span style="color: var(--accent-gold);">Meets Resonance</span>
+        </h2>
+        <p style="font-size: 15px; color: var(--text-secondary); font-weight: 300; max-width: 520px; margin: 0 auto 40px; line-height: 1.8;">
+            Reflections on frequency, nature, and the body-mind connection — alongside the latest from XIHE's laboratories and partnerships.
+        </p>
+        <a href="NEWS/index.html" class="xihe-btn">Explore the Journal →</a>
+    </div>
+</section>
+
+<!-- ============================================
+     SECTION 6 — CTA
+     ============================================ -->
+<section class="cta-section">
+    <div class="container">
+        <h2 class="cta-title">
+            Ready to Restore<br>
+            <span class="highlight">Cellular Resonance?</span>
+        </h2>
+        <p class="cta-description">
+            We are building a global community of clinics, researchers, and practitioners who believe technology should serve life. You belong here.
+        </p>
+        <a href="CONTACT/index.html" class="xihe-btn">Join us in redefining the future of healing.</a>
+        <div style="margin-top: 30px; display: flex; gap: 24px; justify-content: center; flex-wrap: wrap;">
+            <a href="ABOUT/AboutOrigin.html" style="color: var(--accent-gold); text-decoration: none;">Our Origin →</a>
+            <a href="ABOUT/AboutMission.html" style="color: var(--accent-gold); text-decoration: none;">Our Mission →</a>
+            <a href="ABOUT/AboutPhilosophy.html" style="color: var(--accent-gold); text-decoration: none;">Our Philosophy →</a>
+            <a href="PRODUCTS/ProductPage.html" style="color: var(--accent-gold); text-decoration: none;">Our Products →</a>
+        </div>
+    </div>
+</section>
+
+<footer style="padding: 40px 10%; background: #1A3348; text-align: center; border-top: 2px solid #C5A059;">
+    <p style="font-size: 13px; color: #E0E6ED; letter-spacing: 0.03em;">XIHE Technology — Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard 2024-0923T-YB</p>
+</footer>
+
+</body>
+</html>

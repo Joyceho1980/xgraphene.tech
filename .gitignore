@@ -1,0 +1,15 @@
+# Python scripts (not needed for website)
+*.py
+__pycache__/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Logs
+*.log

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | XIHE — Full-Body to Portable Resonance Solutions</title>
+    <link rel="icon" type="image/svg+xml" href="../../PICTURE/XIHE_ICON.svg">
+<meta name="description" content="Explore XIHE's product ecosystem: Full-body CAPSULE, modular CABIN, portable Neural Resilience, Visceral Vitality, Deep Recovery, and Graphene Film core material.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Products | XIHE — Full-Body to Portable Resonance Solutions">
+    <meta property="og:description" content="Explore XIHE's product ecosystem: Full-body CAPSULE, modular CABIN, portable Neural Resilience, Visceral Vitality, Deep Recovery, and Graphene Film core material.">
+    <meta property="og:image" content="https://xgraphene.tech/PICTURE/xihe-og.jpg">
+    <meta property="og:url" content="https://xgraphene.tech/products/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Products | XIHE — Full-Body to Portable Resonance Solutions">
+    <meta name="twitter:description" content="Explore XIHE's product ecosystem: Full-body CAPSULE, modular CABIN, portable Neural Resilience, Visceral Vitality, Deep Recovery, and Graphene Film core material.">
+    <link rel="canonical" href="https://xgraphene.tech/products/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Urbanist:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg-color: #FAF8F5;
+    --bg-dark: #1A1D24;
+    --text-primary: #1A1D24;
+    --text-secondary: #475569;
+    --text-muted: #888888;
+    --accent-gold: #C5A059;
+    --border-color: #E5E5E7;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background: #1A3348;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+.logo span { color: var(--accent-gold); }
+
+.nav-links { display: flex; gap: 40px; }
+
+.nav-links a {
+    font-size: 11px;
+    color: #E0E6ED;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #C5A059;
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition: transform 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    transform: scaleX(1);
+    transform-origin: left center;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #C5A059;
+}
+
+/* Product sub-nav */
+.product-sub {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border-color);
+    margin-top: 70px;
+    background: #FFFFFF;
+}
+
+.product-sub a {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--text-secondary);
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    padding-bottom: 4px;
+}
+
+.product-sub a.active {
+    color: var(--accent-gold);
+    border-bottom: 1px solid var(--accent-gold);
+}
+
+.product-sub a:hover { color: var(--accent-gold); }
+
+.xihe-footer {
+    padding: 40px 10%;
+    background: #1A3348;
+    text-align: center;
+    border-top: 2px solid #C5A059;
+}
+.xihe-footer p { font-size: 13px; color: #E0E6ED; }
+
+/* Hero */
+.page-hero {
+    width: 100%;
+    min-height: 480px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.page-hero img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.page-hero .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(26,29,36,0.75) 0%, rgba(26,29,36,0.4) 100%);
+}
+
+.page-hero .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.page-hero .hero-tag {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: var(--accent-gold);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.page-hero .hero-title {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 44px;
+    font-weight: 200;
+    color: #FFFFFF;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.page-hero .hero-title span {
+    font-weight: 300;
+    color: rgba(255,255,255,0.7);
+    font-size: 34px;
+    display: block;
+    margin-top: 8px;
+}
+
+.page-hero .hero-tagline {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: rgba(255,255,255,0.55);
+    text-transform: uppercase;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 40px;
+}
+
+
+/* Product category section */
+.product-section {
+    margin-bottom: 100px;
+}
+
+.product-section:last-of-type {
+    margin-bottom: 60px;
+}
+
+.product-section-header {
+    margin-bottom: 48px;
+    position: relative;
+    text-align: center;
+}
+
+.product-section-header::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: var(--accent-gold);
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-section-tag {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    color: var(--accent-gold);
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.product-section-title {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 34px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: var(--text-primary);
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.product-section-desc {
+    font-size: 15px;
+    color: var(--text-secondary);
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Product row — magazine-style grid */
+.product-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.product-row.single {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.product-card {
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+}
+
+.product-card-image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    display: block;
+}
+
+.product-card-body {
+    padding: 28px 24px;
+    text-align: center;
+}
+
+.product-card-tag {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent-gold);
+    margin-bottom: 4px;
+}
+
+.product-card h3 {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.product-card .card-arrow {
+    font-size: 11px;
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    background: #1A365D;
+    border: 1px solid #D4AF37;
+    border-radius: 50px;
+    transition: all 0.4s ease;
+    display: inline-block;
+}
+
+.product-card:hover .card-arrow {
+    transform: translateX(6px);
+    color: #D4AF37;
+    box-shadow: 0 0 15px rgba(212,175,55,0.3);
+}
+
+/* Closing section */
+.closing-section {
+    padding: 60px 40px;
+    background: #1A3348;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.closing-section p {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: #C5A059;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.closing-section .cta-link {
+    display: inline-block;
+    padding: 14px 32px;
+    font-size: 11px;
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent !important;
+    color: #C5A059 !important;
+    border: 1px solid #C5A059 !important;
+    border-radius: 50px !important;
+    transition: all 0.4s ease !important;
+    font-weight: 500;
+}
+
+.closing-section .cta-link:hover {
+    background: #C5A059 !important;
+    color: #1A3348 !important;
+    border-color: #C5A059 !important;
+    color: #FFFFFF !important;
+    border-color: #1A365D !important;
+    box-shadow: 0 4px 12px rgba(26, 54, 93, 0.2);
+}
+
+
+.hero-cat-links {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: sticky;
+    top: 70px;
+    z-index: 50;
+    margin-top: 24px;
+    padding: 12px 0;
+    flex-shrink: 0;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.hero-cat-links::-webkit-scrollbar { display: none; }
+.hero-cat-links a {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #C5A059;
+    text-decoration: none;
+    padding: 10px 28px;
+    background: transparent;
+    border: 1px solid rgba(197,160,89,0.25);
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    position: relative;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+.hero-cat-links a:hover {
+    color: #C5A059;
+    border-color: rgba(197,160,89,0.6);
+    transform: translateY(-2px);
+}
+.hero-cat-links a.active {
+    color: #C5A059;
+    background: #1A3348;
+    border-color: #C5A059;
+}
+.hero-cat-links a::after {
+    content: attr(data-hint);
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    font-family: 'Inter', sans-serif;
+    font-size: 7px;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.25);
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    font-weight: 300;
+}
+.hero-cat-links a:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+.cat-dot {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .page-hero { min-height: 360px; }
+    .page-hero .hero-title { font-size: 32px; }
+    .page-hero .hero-title span { font-size: 26px; }
+    .product-row { grid-template-columns: 1fr; }
+    .product-sub { gap: 24px; flex-wrap: wrap; }
+    main { padding: 60px 20px; }
+    .closing-section { padding: 40px 20px; }
+    .closing-section p { font-size: 17px; }
+}
+
+@media (max-width: 600px) {
+    .hero-cat-links { justify-content: flex-start; gap: 6px; padding: 12px 10%; }
+    .hero-cat-links a { font-size: 9px; letter-spacing: 1px; padding: 6px 12px; }
+}
+
+
+/* XIHE Button System — Ghost → Solid on Hover */
+.xihe-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 11px;
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent !important;
+    color: #1A365D !important;
+    border: 1px solid #D4AF37 !important;
+    border-radius: 50px !important;
+    cursor: pointer;
+    transition: all 0.4s ease !important;
+    font-weight: 500;
+}
+.xihe-btn:hover {
+    background: #1A365D !important;
+    color: #FFFFFF !important;
+    border-color: #1A365D !important;
+    box-shadow: 0 4px 12px rgba(26, 54, 93, 0.2);
+}
+.xihe-btn-sm {
+    display: inline-block;
+    padding: 10px 24px;
+    font-size: 10px;
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: transparent !important;
+    color: #1A365D !important;
+    border: 1px solid #D4AF37 !important;
+    border-radius: 50px !important;
+    cursor: pointer;
+    transition: all 0.4s ease !important;
+    font-weight: 500;
+}
+.xihe-btn-sm:hover {
+    background: #1A365D !important;
+    color: #FFFFFF !important;
+    border-color: #1A365D !important;
+    box-shadow: 0 4px 12px rgba(26, 54, 93, 0.2);
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <a href="../../index.html" class="logo"><img src="../../PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" style="height: 44px; width: auto; display: block;"></a>
+    <div class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../ABOUT/AboutOrigin.html">About</a>
+        <a href="../SCIENCE/Technology.html">Science</a>
+        <a href="../applications.html">Applications</a>
+        <a href="ProductPage.html" class="active">Products</a>
+        <a href="../NEWS/index.html">Journal</a>
+        <a href="../CONTACT/index.html">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero -->
+<div class="page-hero">
+    <img src="CAPSULE/xihe-capsule-hero.jpg" alt="XIHE Product Ecosystem — Full-Body to Portable Resonance Solutions">
+    <div class="hero-overlay"></div>
+    <div style="flex: 1; display: flex; align-items: center; justify-content: center; width: 100%; padding: 70px 10% 0;">
+        <div class="hero-content">
+            <span class="hero-tag">Product Ecosystem</span>
+            <h1 class="hero-title">
+                Engineering for Life.<br>
+                <span>Precision for Health.</span>
+            </h1>
+            <p class="hero-tagline">From full-body resonance cabins to precision portables — every XIHE product is powered by medical-standard graphene film technology, engineered at IKKEM.</p>
+        </div>
+    </div>
+    <div class="hero-cat-links" style="flex-shrink: 0; position: static;">
+        <a href="CAPSULE/capsule-b2b.html" data-hint="Full-Body Capsule">CAPSULE</a>
+        <span class="cat-dot">·</span>
+        <a href="CABIN/cabin.html" data-hint="Modular Cabin">CABIN</a>
+        <span class="cat-dot">·</span>
+        <a href="PORTABLES/NeuralResilience.html" data-hint="Portable Wearables">WEARABLE</a>
+        <span class="cat-dot">·</span>
+        <a href="FILM/GrapheneFilm.html" data-hint="Core Material">FILM</a>
+    </div>
+</div>
+
+<main>
+
+            <!-- Full-Body Solutions -->
+            <section class="product-section">
+                <div class="product-section-header">
+                    <span class="product-section-tag">Full-Body</span>
+                    <h2 class="product-section-title">Total-Body Resonance</h2>
+                    <p class="product-section-desc">Immersive far-infrared cabins for comprehensive cellular recovery, systemic detox, and deep bioenergetic regeneration.</p>
+                </div>
+                <div class="product-row">
+                    <a href="CAPSULE/capsule-b2b.html" class="product-card">
+                        <img class="product-card-image" src="CAPSULE/xihe-capsule-hero.jpg" alt="XIHE CAPSULE — full-body graphene photon energy capsule for deep cellular recovery">
+                        <div class="product-card-body">
+                            <div class="product-card-tag">Full-Body</div>
+                            <h3>XIHE CAPSULE</h3>
+                            <p>Full-body far-infrared resonance cabin for deep cellular recovery, systemic detox, and comprehensive bioenergetic regeneration.</p>
+                            <span class="card-arrow">Explore →</span>
+                        </div>
+                    </a>
+                    <a href="CABIN/cabin.html" class="product-card">
+                        <img class="product-card-image" src="CABIN/cabin-transparent.png" alt="XIHE CABIN — modular graphene far-infrared chamber for clinical and wellness center deployments">
+                        <div class="product-card-body">
+                            <div class="product-card-tag">Modular</div>
+                            <h3>XIHE CABIN</h3>
+                            <p>Modular far-infrared cabin system — configurable for clinical, spa, and wellness center deployments with flexible form factors.</p>
+                            <span class="card-arrow">Explore →</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Portable Solutions -->
+            <section class="product-section">
+                <div class="product-section-header">
+                    <span class="product-section-tag">Portable</span>
+                    <h2 class="product-section-title">Precision on the Go</h2>
+                    <p class="product-section-desc">Targeted far-infrared devices for cognitive, visceral, and recovery applications — designed for daily use anywhere.</p>
+                </div>
+                <div class="product-row">
+                    <a href="PORTABLES/NeuralResilience.html" class="product-card">
+                        <img class="product-card-image" src="PORTABLES/xihe-portable-eye-mask.png" alt="XIHE Neural Resilience — graphene cognitive enhancement eye mask and headband system">
+                        <div class="product-card-body">
+                            <div class="product-card-tag">Cognitive</div>
+                            <h3>Neural Resilience</h3>
+                            <p>Graphene eye mask and neural helmet for cognitive enhancement, deep sleep induction, and neurological recovery support.</p>
+                            <span class="card-arrow">Explore →</span>
+                        </div>
+                    </a>
+                    <a href="PORTABLES/VisceralVitality.html" class="product-card">
+                        <img class="product-card-image" src="PORTABLES/xihe-portable-360-thermal-matrix.png" alt="XIHE Visceral Vitality — graphene far-infrared waist pad for visceral organ health">
+                        <div class="product-card-body">
+                            <div class="product-card-tag">Visceral</div>
+                            <h3>Visceral Vitality</h3>
+                            <p>Targeted far-infrared resonance for visceral organ health — liver, kidney, and digestive system support in a portable form.</p>
+                            <span class="card-arrow">Explore →</span>
+                        </div>
+                    </a>
+                    <a href="PORTABLES/DeepRecovery.html" class="product-card">
+                        <img class="product-card-image" src="PORTABLES/xihe-portable-kinetic-lumbar-belt.png" alt="XIHE Deep Recovery — graphene far-infrared wearable for spine and joint rehabilitation">
+                        <div class="product-card-body">
+                            <div class="product-card-tag">Recovery</div>
+                            <h3>Deep Recovery</h3>
+                            <p>Post-exercise and post-treatment recovery system for muscle repair, inflammation reduction, and accelerated tissue healing.</p>
+                            <span class="card-arrow">Explore →</span>
+                        </div>
+                    </a>
+                    <!-- Placeholder -->
+                    <div class="product-card" style="border: 1px dashed rgba(197,160,89,0.3); border-radius: 0; cursor: default; background: transparent;">
+                        <div style="width: 100%; aspect-ratio: 16 / 10; display: flex; align-items: center; justify-content: center; background: rgba(197,160,89,0.03);">
+                            <span style="font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 4px; color: #C5A059; text-transform: uppercase;">Coming Soon</span>
+                        </div>
+                        <div class="product-card-body">
+                            <div class="product-card-tag" style="color: rgba(197,160,89,0.4);">More</div>
+                            <h3 style="color: rgba(26,29,36,0.3);">More Are Coming</h3>
+                            <p style="color: rgba(71,85,102,0.4);">Expanding the XIHE portable ecosystem with new form factors and applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Core Material -->
+            <section class="product-section">
+                <div class="product-section-header">
+                    <span class="product-section-tag">B2B</span>
+                    <h2 class="product-section-title">The Resonance Engine</h2>
+                    <p class="product-section-desc">Medical-standard graphene heating module — the core technology powering every XIHE application.</p>
+                </div>
+                <div class="product-row single">
+                    <a href="FILM/GrapheneFilm.html" class="product-card">
+                        <img class="product-card-image" src="FILM/hero-graphene.jpg" alt="XIHE Graphene Film — medical-grade heating module with ≥0.88 normal spectral emissivity">
+                        <div class="product-card-body">
+                            <div class="product-card-tag">B2B · Heating Module</div>
+                            <h3>Graphene Film</h3>
+                            <p>Medical-standard graphene heating module — the core resonance engine behind every XIHE application. OEM/JDM partnerships available.</p>
+                            <span class="card-arrow">Technical Specs →</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+
+    <!-- Closing -->
+    <div class="closing-section">
+        <p>Not sure which solution fits your needs?<br><a href="../CONTACT/index.html" style="color: var(--accent-gold); text-decoration: none;">Let our team guide you</a> to the right application. </p>
+        <a href="../CONTACT/index.html" class="cta-link">Speak With Our Team →</a>
+    </div>
+
+</main>
+
+<footer class="xihe-footer">
+    <p>XIHE Technology — Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard 2024-0923T-YB</p>
+</footer>
+
+</body>
+</html>
