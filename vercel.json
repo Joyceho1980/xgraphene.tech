@@ -2,12 +2,6 @@
   "buildCommand": "",
   "outputDirectory": ".",
   "framework": null,
-  "functions": {
-    "api/auth.js": {
-      "runtime": "@vercel/node@3",
-      "includeFiles": "api/auth.js"
-    }
-  },
   "rewrites": [
     { "source": "/admin", "destination": "/admin/index.html" },
     { "source": "/admin/", "destination": "/admin/index.html" }
