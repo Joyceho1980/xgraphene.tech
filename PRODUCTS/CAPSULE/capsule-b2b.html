@@ -11,6 +11,19 @@
     <meta name="keywords" content="graphene energy capsule, far-infrared therapy capsule, terahertz wave therapy, pulsed magnetic field therapy, photon energy capsule, mitochondrial optimization chamber, biohacking equipment, cellular rejuvenation, IKKEM graphene, XIHE Technology, B2B wellness equipment, longevity clinic equipment, sports recovery capsule">
     <link rel="canonical" href="https://xgraphene.tech/products/capsule">
 
+    <!-- GEO: BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://xgraphene.tech/" },
+            { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://xgraphene.tech/products/" },
+            { "@type": "ListItem", "position": 3, "name": "XIHE CAPSULE", "item": "https://xgraphene.tech/products/capsule" }
+        ]
+    }
+    </script>
+
     <!-- Open Graph -->
     <meta property="og:title" content="XIHE CAPSULE — Graphene Photon Energy Capsule">
     <meta property="og:description" content="XIHE CAPSULE: 6-in-1 multi-physics energy capsule integrating graphene far-infrared, terahertz wave, pulsed magnetic field, photon skin light, and negative ion breeze. Powered by IKKEM R&D, National Infrared Center certified.">
@@ -23,7 +36,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Urbanist:wght@300;400;500&family=Playfair+Display:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Urbanist:wght@200;300;400;500&family=Playfair+Display:wght@300&display=swap" rel="stylesheet">
 
     <!-- GEO markup for local business & product -->
     <script type="application/ld+json">
@@ -67,6 +80,7 @@
             background-color: var(--bg-color);
             color: var(--text-primary);
             line-height: 1.7;
+            letter-spacing: 0.5px;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
@@ -113,9 +127,10 @@
             transform-origin: left center;
         }
 
-        .nav-links a:hover, .nav-links a.active {
-    color: #C5A059;
-}
+        .nav-links a:hover, .nav-links a.active { color: #C5A059; }
+
+        .nav-phone { font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px; color: var(--accent-gold); text-decoration: none; padding: 6px 14px; border: 1px solid rgba(197,160,89,0.3); border-radius: 50px; transition: all 0.3s ease; white-space: nowrap; font-weight: 500; }
+        .nav-phone:hover { background: var(--accent-gold); color: #1A3348; }
 
         /* ========== COMMON ========== */
         .section-label {
@@ -452,10 +467,13 @@
             .origin-grid { padding: 20px; }
         }
         @media (max-width: 600px) {
+            nav { padding: 0 5%; }
+            .nav-links { gap: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+            .nav-links a { font-size: 9px; letter-spacing: 0.5px; white-space: nowrap; }
             .hero-cat-links { justify-content: flex-start; gap: 6px; padding: 12px 10%; }
             .hero-cat-links a { font-size: 9px; letter-spacing: 1px; padding: 6px 12px; }
         }
-    
+
 
 /* XIHE Button System — Ghost → Solid on Hover */
 .xihe-btn {
@@ -516,11 +534,22 @@
             <a href="../../applications.html">Applications</a>
             <a href="../../PRODUCTS/ProductPage.html" class="active">Products</a>
             <a href="../../NEWS/index.html">Journal</a>
+            <a href="../../partnership.html">Partnership</a>
             <a href="../../CONTACT/index.html">Contact</a>
+            <a href="tel:0086-18688683865" class="nav-phone">+86 186 8868 3865</a>
         </div>
     </nav>
 
 
+
+    <!-- Breadcrumb -->
+    <div style="padding: 80px 10% 0; text-align: center;">
+        <a href="../../index.html" style="font-size: 10px; color: var(--text-muted); text-decoration: none; letter-spacing: 1px; font-family: 'Urbanist', sans-serif;">Home</a>
+        <span style="font-size: 10px; color: #9CA3AF; margin: 0 6px;">/</span>
+        <a href="../ProductPage.html" style="font-size: 10px; color: var(--text-muted); text-decoration: none; letter-spacing: 1px; font-family: 'Urbanist', sans-serif;">Products</a>
+        <span style="font-size: 10px; color: #9CA3AF; margin: 0 6px;">/</span>
+        <span style="font-size: 10px; color: var(--accent-gold); letter-spacing: 1px; font-family: 'Urbanist', sans-serif;">CAPSULE</span>
+    </div>
 
     <!-- ================================================================================== -->
     <!-- SECTION 1: HERO                                                                    -->
@@ -552,6 +581,7 @@
                         <span class="hero-tag"><strong>9.4μm</strong> Peak</span>
                         <span class="hero-tag"><strong>99%</strong> Efficiency</span>
                     </div>
+                    <a href="../../CONTACT/index.html" style="display:inline-block;margin-top:24px;padding:12px 28px;font-size:11px;font-family:'Urbanist',sans-serif;letter-spacing:2px;text-transform:uppercase;text-decoration:none;background:var(--accent-gold);color:#1A3348;border-radius:50px;font-weight:600;transition:all 0.3s;">Request Quote →</a>
                 </div>
 
                 <!-- Right: product image -->
@@ -784,27 +814,45 @@
                 <h2 style="font-family: 'Urbanist', sans-serif; font-size: 32px; font-weight: 200; color: #1A1D24; letter-spacing: 3px;">Engineered Beyond Standard</h2>
             </div>
 
-            <table class="specs-table">
-                <tr>
-                    <th style="text-align: center;">Parameter</th>
-                    <th style="text-align: center;">Specification</th>
-                </tr>
-                <tr><td>Product Name</td><td>Energy Capsule (XIHE Space Capsule)</td></tr>
-                <tr><td>Shell Material</td><td>Fiberglass / Acrylic / ABS</td></tr>
-                <tr><td>Dimensions</td><td>Customizable — contact us</td></tr>
-                <tr><td>Rated Voltage</td><td>AC200V – 240V</td></tr>
-                <tr><td>Frequency</td><td>50Hz</td></tr>
-                <tr><td>Rated Power</td><td>800W (at 25°C ambient)</td></tr>
-                <tr><td>Max Power</td><td>1200W (10A)</td></tr>
-                <tr><td>Graphene Heating Levels</td><td>Upper 0-15, Lower 0-15</td></tr>
-                <tr><td>Foot-Level Far-Infrared</td><td>0-8 levels</td></tr>
-                <tr><td>Vibro-Acoustic</td><td>0-10 levels (recommended ≤6, ≤10 min)</td></tr>
-                <tr><td>Negative Ion Concentration</td><td>25 million / cm³ (head-level fresh air)</td></tr>
-                <tr><td>Ozone Sanitization</td><td>800mg electronic ozone (empty capsule only)</td></tr>
-                <tr><td>Control Interface</td><td>7" touchscreen + AI voice (wake: Xiao Ai / Xiao Yi)</td></tr>
-                <tr><td>Default Session Duration</td><td>35 minutes (adjustable to 45 min)</td></tr>
-                <tr><td>Additional Features</td><td>Bluetooth hi-fi audio, ambient base lighting, photon skin light strips</td></tr>
-            </table>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+
+                <div style="padding: 28px 24px; background: #FFFFFF; border-radius: 10px; border: 1px solid rgba(197,160,89,0.1); text-align: center;">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: #C5A059; text-transform: uppercase; margin-bottom: 10px;">Build</p>
+                    <p style="font-size: 28px; font-weight: 200; color: var(--accent-gold); margin-bottom: 8px; letter-spacing: 1px; font-family: 'Urbanist', sans-serif;">Fiberglass · ABS</p>
+                    <p style="font-size: 12px; color: #888; line-height: 1.6;">Shell: fiberglass / acrylic / ABS. Custom dimensions available.</p>
+                </div>
+
+                <div style="padding: 28px 24px; background: #FFFFFF; border-radius: 10px; border: 1px solid rgba(197,160,89,0.1); text-align: center;">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: #C5A059; text-transform: uppercase; margin-bottom: 10px;">Power</p>
+                    <p style="font-size: 28px; font-weight: 200; color: var(--accent-gold); margin-bottom: 8px; letter-spacing: 1px; font-family: 'Urbanist', sans-serif;">800W – 1200W</p>
+                    <p style="font-size: 12px; color: #888; line-height: 1.6;">AC 200–240V · 50Hz. Rated 800W, max 1200W (10A).</p>
+                </div>
+
+                <div style="padding: 28px 24px; background: #FFFFFF; border-radius: 10px; border: 1px solid rgba(197,160,89,0.1); text-align: center;">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: #C5A059; text-transform: uppercase; margin-bottom: 10px;">Heating</p>
+                    <p style="font-size: 28px; font-weight: 200; color: var(--accent-gold); margin-bottom: 8px; letter-spacing: 1px; font-family: 'Urbanist', sans-serif;">Graphene · Upper/Lower</p>
+                    <p style="font-size: 12px; color: #888; line-height: 1.6;">Upper & lower zones: 0–15 levels each. Foot FIR: 0–8 levels.</p>
+                </div>
+
+                <div style="padding: 28px 24px; background: #FFFFFF; border-radius: 10px; border: 1px solid rgba(197,160,89,0.1); text-align: center;">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: #C5A059; text-transform: uppercase; margin-bottom: 10px;">Air Quality</p>
+                    <p style="font-size: 28px; font-weight: 200; color: var(--accent-gold); margin-bottom: 8px; letter-spacing: 1px; font-family: 'Urbanist', sans-serif;">25M ions/cm³</p>
+                    <p style="font-size: 12px; color: #888; line-height: 1.6;">Negative ion concentration. 800mg ozone sanitization.</p>
+                </div>
+
+                <div style="padding: 28px 24px; background: #FFFFFF; border-radius: 10px; border: 1px solid rgba(197,160,89,0.1); text-align: center;">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: #C5A059; text-transform: uppercase; margin-bottom: 10px;">Session</p>
+                    <p style="font-size: 28px; font-weight: 200; color: var(--accent-gold); margin-bottom: 8px; letter-spacing: 1px; font-family: 'Urbanist', sans-serif;">35–45 min</p>
+                    <p style="font-size: 12px; color: #888; line-height: 1.6;">Default 35 min, adjustable to 45 min. Vibro-acoustic 0–10 levels.</p>
+                </div>
+
+                <div style="padding: 28px 24px; background: #FFFFFF; border-radius: 10px; border: 1px solid rgba(197,160,89,0.1); text-align: center;">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: #C5A059; text-transform: uppercase; margin-bottom: 10px;">Control</p>
+                    <p style="font-size: 28px; font-weight: 200; color: var(--accent-gold); margin-bottom: 8px; letter-spacing: 1px; font-family: 'Urbanist', sans-serif;">7" Touch + AI</p>
+                    <p style="font-size: 12px; color: #888; line-height: 1.6;">Touchscreen + voice control. Bluetooth audio, ambient lighting, photon strips.</p>
+                </div>
+
+            </div>
 
             <div style="padding: 40px;">
                 <p style="font-family: 'Urbanist', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 1px; color: var(--accent-gold); text-transform: uppercase; margin-bottom: 16px;">Maintenance Notes</p>
@@ -989,7 +1037,7 @@
     <section class="cta-section">
         <h2>Inquire About Commercial Partnership</h2>
         <p class="subtitle">Product Brochure · Pricing · OEM Customization · Technical Data</p>
-        <a href="mailto:partner@xgraphene.tech?subject=Inquiry: XIHE CAPSULE Commercial Partnership" class="xihe-btn">GET IN TOUCH →</a>
+        <a href="../../CONTACT/index.html" class="xihe-btn">REQUEST SPECS & PRICING →</a>
         <a href="../XIHE%20Deep%20Recovery.pdf" class="cta-link" target="_blank">Download Full Product Brochure (incl. Contraindications)</a>
         <p class="cta-footer">
             XIHE Technology — Powered by Jiageng Innovation Laboratory (IKKEM) | National Infrared Center Certified | 40+ Graphene Patents | Lead Drafter of China's "Graphene Flexible Electrothermal Film" Industry Standard 2024-0923T-YB
@@ -1000,8 +1048,19 @@
     <!-- FOOTER                                                                             -->
     <!-- ================================================================================== -->
 
+    <!-- Knowledge Network -->
+    <section style="padding: 60px 10%; background: #FAF8F5; border-top: 1px solid #E5E5E7; text-align: center;">
+        <p style="font-family: 'Urbanist', sans-serif; font-size: 10px; letter-spacing: 4px; color: var(--accent-gold); text-transform: uppercase; margin-bottom: 16px;">Explore Further</p>
+        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+            <a href="../../SCIENCE/Technology.html" style="font-size: 11px; color: var(--text-secondary); text-decoration: none; padding: 8px 20px; border: 1px solid #E5E5E7; border-radius: 50px; font-family: 'Urbanist', sans-serif; letter-spacing: 1px; transition: all 0.3s;">← 9.4μm Graphene Technology</a>
+            <a href="../../applications.html" style="font-size: 11px; color: var(--text-secondary); text-decoration: none; padding: 8px 20px; border: 1px solid #E5E5E7; border-radius: 50px; font-family: 'Urbanist', sans-serif; letter-spacing: 1px; transition: all 0.3s;">Clinical Applications</a>
+            <a href="../../partnership.html" style="font-size: 11px; color: var(--text-secondary); text-decoration: none; padding: 8px 20px; border: 1px solid #E5E5E7; border-radius: 50px; font-family: 'Urbanist', sans-serif; letter-spacing: 1px; transition: all 0.3s;">B2B Partnership Models</a>
+            <a href="../../CONTACT/index.html" style="font-size: 11px; color: #FFFFFF; text-decoration: none; padding: 8px 20px; background: var(--accent-gold); border-radius: 50px; font-family: 'Urbanist', sans-serif; letter-spacing: 1px; transition: all 0.3s;">Request Quote →</a>
+        </div>
+    </section>
+
     <footer class="xihe-footer">
-        <p>© 2024 XIHE Technology. All rights reserved.</p>
+        <p>XIHE Technology — Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard 2024-0923T-YB</p>
     </footer>
 
 </body>

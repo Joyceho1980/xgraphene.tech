@@ -55,6 +55,7 @@
             background: var(--bg-color);
             color: var(--text-primary);
             line-height: 1.7;
+            letter-spacing: 0.5px;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
@@ -99,9 +100,10 @@
             transform-origin: left center;
         }
 
-        .nav-links a:hover, .nav-links a.active {
-    color: #C5A059;
-}
+        .nav-links a:hover, .nav-links a.active { color: #C5A059; }
+
+.nav-phone { font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px; color: var(--accent-gold); text-decoration: none; padding: 6px 14px; border: 1px solid rgba(197,160,89,0.3); border-radius: 50px; transition: all 0.3s ease; white-space: nowrap; font-weight: 500; }
+.nav-phone:hover { background: var(--accent-gold); color: #1A3348; }
 
         /* ========== HERO ========== */
         /* ========== HERO ========== */
@@ -256,11 +258,28 @@
             box-shadow: 0 20px 40px rgba(0,0,0,0.4);
         }
 
+        @media (max-width: 900px) {
+            .hero-title { font-size: 34px; }
+            .hero-title span { font-size: 28px; }
+        }
+        @media (max-width: 768px) {
+            .ev-sidebar-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+            .ev-sidebar-grid .sidebar { position: static !important; }
+            .ev-two-col { grid-template-columns: 1fr !important; gap: 40px !important; }
+            .ev-three-col { grid-template-columns: 1fr !important; }
+            .ev-patent-grid { grid-template-columns: 1fr !important; }
+        }
         @media (max-width: 600px) {
+            nav { padding: 0 5%; }
+            .nav-links { gap: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+            .nav-links a { font-size: 9px; letter-spacing: 0.5px; white-space: nowrap; }
             .hero-cat-links { justify-content: flex-start; gap: 6px; padding: 12px 10%; }
             .hero-cat-links a { font-size: 9px; letter-spacing: 1px; padding: 6px 12px; }
+            .hero-title { font-size: 28px; letter-spacing: 2px; }
+            .hero-title span { font-size: 22px; }
+            section[style*="padding: 100px 10%"] { padding: 60px 5% !important; }
+            section[style*="padding: 80px 10%"] { padding: 40px 5% !important; }
         }
-    
 
 /* XIHE Button System — Ghost → Solid on Hover */
 .xihe-btn {
@@ -319,8 +338,10 @@
         <a href="Technology.html" class="active">Science</a>
         <a href="../applications.html">Applications</a>
         <a href="../PRODUCTS/ProductPage.html">Products</a>
+        <a href="../partnership.html">Partnership</a>
         <a href="../NEWS/index.html">Journal</a>
         <a href="../CONTACT/index.html">Contact</a>
+        <a href="tel:0086-18688683865" class="nav-phone">+86 186 8868 3865</a>
     </div>
 </nav>
 
@@ -333,7 +354,7 @@
                 Measured. Validated.<br>
                 <span>Proven.</span>
             </h1>
-            <p class="hero-tagline" style="background: rgba(0,0,0,0.5); padding: 12px 20px; border-radius: 8px; display: inline-block; max-width: 800px;">XIHE's graphene resonance technology is supported by a growing body of clinical evidence — from randomised controlled trials and peer-reviewed publications to real-world hospital partnerships and national industry standards.</p>
+            <p class="hero-tagline">18 SCI papers. 8 RCTs. 5 hospital partners. One national standard. The evidence speaks for itself.</p>
         </div>
     </div>
     <div class="hero-cat-links" style="flex-shrink: 0; position: static;">
@@ -350,9 +371,9 @@
 <!-- ============================================ -->
 <section id="clinical-trials" style="padding: 120px 10%; background: #FFFFFF;">
     <div style="max-width: 1200px; margin: 0 auto;">
-        <div style="display: grid; grid-template-columns: 180px 1fr; gap: 60px;">
+        <div class="ev-sidebar-grid" style="display: grid; grid-template-columns: 180px 1fr; gap: 60px;">
             <!-- Sidebar -->
-            <div style="position: sticky; top: 150px; align-self: start;">
+            <div class="sidebar" style="position: sticky; top: 150px; align-self: start;">
                 <div style="border-left: 1px solid #E5E5E7; padding-left: 16px;">
                     <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: var(--accent-gold); text-transform: uppercase; margin-bottom: 20px;">On this page</p>
                     <div style="display: flex; flex-direction: column; gap: 10px;">
@@ -377,7 +398,7 @@
                     </p>
                 </div>
 
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
+                <div class="ev-three-col" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;">
                     <div style="padding: 40px 28px; background: #FAF8F5; border-radius: 18px; transition: transform 0.4s ease, box-shadow 0.4s ease; cursor: default;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.06)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
                         <p style="font-family: 'Urbanist', sans-serif; font-size: 11px; color: #C5A059; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 16px; text-align: center;">Pain Management</p>
                         <p style="font-family: 'Urbanist', sans-serif; font-size: 52px; font-weight: 200; color: #1A1D24; letter-spacing: 2px; margin-bottom: 8px; text-align: center;">78%</p>
@@ -421,7 +442,7 @@
                 Why XIHE makes every therapy more effective
             </p>
         </div>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+        <div class="ev-two-col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
             <div>
                 <p style="line-height: 1.9; color: #475569; margin-bottom: 28px; font-size: 16px;">
                     In modern medicine, <strong style="color: #1A1D24;">precision interventions</strong> — PEMF therapy, micro-hyperbaric oxygen chambers, CoQ10 supplementation, targeted drug delivery — are the <span style="color: #C5A059;">"scalpel."</span> They cut through pathology with surgical precision.
@@ -480,7 +501,7 @@
             </p>
         </div>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+        <div class="ev-two-col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
             <div class="card" style="padding: 36px; text-align: center;">
                 <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 16px;">
                     <span style="font-size: 10px; color: #FFFFFF; background: #C5A059; padding: 3px 10px; border-radius: 12px; white-space: nowrap; letter-spacing: 0.5px;">2025</span>
@@ -543,7 +564,7 @@
             </p>
         </div>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+        <div class="ev-two-col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
             <div style="padding: 40px; background: #FAF8F5; border-radius: 18px; text-align: center;">
                 <p style="font-family: 'Urbanist', sans-serif; font-size: 13px; color: #1A1D24; letter-spacing: 1px; margin-bottom: 24px;">Partner Institutions</p>
                 <div style="display: grid; gap: 20px;">
@@ -601,7 +622,7 @@
             </p>
         </div>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px;">
+        <div class="ev-patent-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px;">
             <div style="padding: 40px; background: #FFFFFF; border-radius: 18px; border: 1px solid #E5E5E7; text-align: center; transition: transform 0.4s ease, box-shadow 0.4s ease;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.06)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
                 <p style="font-family: 'Urbanist', sans-serif; font-size: 11px; color: var(--accent-gold); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px;">Industry Standard</p>
                 <p style="font-family: 'Urbanist', sans-serif; font-size: 36px; font-weight: 200; color: var(--text-primary); margin-bottom: 12px; letter-spacing: 2px;">#1 Standard Drafter</p>
@@ -618,8 +639,8 @@
 
             <div style="padding: 40px; background: #1A3348; border-radius: 18px; border: 1px solid #E5E5E7; text-align: center; transition: transform 0.4s ease, box-shadow 0.4s ease;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.06)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
                 <p style="font-family: 'Urbanist', sans-serif; font-size: 11px; color: #D4AF37; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px;">Intellectual Property</p>
-                <p style="font-family: 'Urbanist', sans-serif; font-size: 36px; font-weight: 200; color: #FFFFFF; margin-bottom: 12px; letter-spacing: 2px;">47 Patents</p>
-                <p style="font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.8;">XIHE holds 47 patents in graphene composite materials, far-infrared resonance technology, and precision thermal control systems.</p>
+                <p style="font-family: 'Urbanist', sans-serif; font-size: 36px; font-weight: 200; color: #FFFFFF; margin-bottom: 12px; letter-spacing: 2px;">40+ Patents</p>
+                <p style="font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.8;">XIHE holds 40+ core patents in graphene composite materials, far-infrared resonance technology, and precision thermal control systems.</p>
             </div>
 
             <div style="padding: 40px; background: #FFFFFF; border-radius: 18px; border: 1px solid #E5E5E7; text-align: center; transition: transform 0.4s ease, box-shadow 0.4s ease;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.06)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
@@ -635,7 +656,7 @@
 <!-- SECTION 5: Scientific Advisory Network -->
 <!-- ============================================ -->
 <section style="padding: 120px 10%; background: #FFFFFF;">
-    <div style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+    <div class="ev-two-col" style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
         <div style="border-radius: 18px; overflow: hidden; transition: transform 0.5s ease, box-shadow 0.5s ease;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 24px 48px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
             <img src="../ABOUT/讲课.jpg" alt="Nobel Laureate Konstantin Novoselov — XIHE Scientific Advisory Network" style="width: 100%; height: auto; display: block;">
         </div>
@@ -673,7 +694,7 @@
 
 <!-- Footer -->
 <footer class="xihe-footer">
-    <p>&copy; 2024 XIHE Technology. All rights reserved.</p>
+    <p>XIHE Technology — Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard 2024-0923T-YB</p>
 </footer>
 
 </body>

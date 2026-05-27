@@ -48,6 +48,7 @@ body {
     background: var(--bg-color);
     color: var(--text-primary);
     line-height: 1.7;
+    letter-spacing: 0.5px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
@@ -109,9 +110,10 @@ nav {
     transform-origin: left center;
 }
 
-.nav-links a:hover, .nav-links a.active {
-    color: #C5A059;
-}
+.nav-links a:hover, .nav-links a.active { color: #C5A059; }
+
+.nav-phone { font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px; color: var(--accent-gold); text-decoration: none; padding: 6px 14px; border: 1px solid rgba(197,160,89,0.3); border-radius: 50px; transition: all 0.3s ease; white-space: nowrap; font-weight: 500; }
+.nav-phone:hover { background: var(--accent-gold); color: #1A3348; }
 
 
 .xihe-footer {
@@ -462,9 +464,19 @@ main {
     .stat-card { padding: 14px 10px; }
     .stat-card .stat-number { font-size: 20px; }
 	}
+        @media (max-width: 900px) {
+            .hero-title { font-size: 34px; }
+            .hero-title span { font-size: 28px; }
+        }
         @media (max-width: 600px) {
+            nav { padding: 0 5%; }
+            .nav-links { gap: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+            .nav-links a { font-size: 9px; letter-spacing: 0.5px; white-space: nowrap; }
+            .hero-title { font-size: 28px; letter-spacing: 2px; }
+            .hero-title span { font-size: 22px; }
             .hero-cat-links { justify-content: flex-start; gap: 6px; padding: 12px 10%; }
             .hero-cat-links a { font-size: 9px; letter-spacing: 1px; padding: 6px 12px; }
+            section[style*="padding: 100px 10%"] { padding: 60px 5% !important; }
         }
 
 
@@ -526,8 +538,10 @@ main {
         <a href="../SCIENCE/Technology.html">Science</a>
         <a href="../applications.html">Applications</a>
         <a href="../PRODUCTS/ProductPage.html">Products</a>
+        <a href="../partnership.html">Partnership</a>
         <a href="../NEWS/index.html">Journal</a>
         <a href="../CONTACT/index.html">Contact</a>
+        <a href="tel:0086-18688683865" class="nav-phone">+86 186 8868 3865</a>
     </div>
 </nav>
 
@@ -536,11 +550,11 @@ main {
 <section class="hero-section" style="background: linear-gradient(135deg, rgba(26,29,36,0.88) 0%, rgba(26,29,36,0.55) 100%), url('MISSION HERO.jpg'); background-size: cover; background-position: center;">
     <div style="flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; padding: 70px 10% 0;">
         <div style="max-width: 800px; padding: 0 20px;">
-            <span class="hero-tag">Industrial Authority</span>
+            <span class="hero-tag">Our Mission</span>
             <h1 class="hero-title">
-                Redefining the Global Standard.
+                No Family Should Endure<br>What Mine Did.
             </h1>
-            <p class="hero-tagline">From the science corridors of Jiageng Innovation Laboratory to the frontlines of clinical care, we are engineering the benchmark for precision energy therapy.</p>
+            <p class="hero-tagline">We build the standard so no one else has to rely on guesswork.</p>
         </div>
     </div>
     <div class="hero-cat-links" style="flex-shrink: 0; position: static;">
@@ -557,30 +571,30 @@ main {
     <section class="mission-grid">
         <div class="about-text">
 
-            <!-- Block 1: The Call -->
+            <!-- Block 1: The Problem -->
             <div class="mission-block">
-                <span class="block-label">The Call</span>
-                <div class="block-headline">Why precision can no longer be optional.</div>
+                <span class="block-label">The Problem</span>
+                <div class="block-headline">Most "therapy" only reaches the surface.</div>
                 <div class="block-body">
                     <p>
-                        The medical industry suffers from a lack of precision in energy-based therapies. Superficial heating protocols remain the standard&mdash;undifferentiated, untargeted, and insufficient for the complexity of human cellular biology.
+                        The energy-therapy industry is built on superficial heat — warming pads, infrared lamps, saunas. They make skin feel warm. They don't <strong>talk to cells</strong>.
                     </p>
                     <p>
-                        Our mission is to bridge the gap between advanced materials science and fundamental cellular biology. Not to warm the surface, but to <strong>communicate with the cell</strong>.
+                        I learned this the hard way. My father needed more than warmth. He needed a physical signal his cells could understand — precise, repeatable, and independent of human effort.
                     </p>
                 </div>
             </div>
 
-            <!-- Block 3: The Promise -->
+            <!-- Block 2: The Standard -->
             <div class="mission-block">
-                <span class="block-label">The Promise</span>
-                <div class="block-headline">Your clinical confidence, engineered.</div>
+                <span class="block-label">The Standard</span>
+                <div class="block-headline">A benchmark the industry didn't have.</div>
                 <div class="block-body">
                     <p>
-                        When you choose XIHE, you are not selecting a device. You are adopting a <strong>proven standard of precision</strong> that restores the body&rsquo;s innate biological conversation&mdash;backed by national-level laboratory rigor and validated by peer-reviewed science.
+                        XIHE became the <strong>lead drafter of China's national industry standard</strong> for graphene flexible electrothermal film — not because we wanted a title, but because the market had no definition of "good enough."
                     </p>
                     <p>
-                        We empower clinicians to move beyond superficial warmth and into <strong>measurable bioenergetic restoration</strong>. That is the XIHE standard.
+                        When you choose XIHE, you're not buying a device. You're adopting a <strong>measurable, peer-reviewed standard of precision</strong> — backed by IKKEM's national laboratory and validated by clinical data.
                     </p>
                 </div>
             </div>
@@ -632,9 +646,10 @@ main {
     </div>
 
     <div style="margin-top: 40px; display: flex; gap: 20px; flex-wrap: wrap;">
-    <a href="AboutOrigin.html" class="xihe-btn-sm">Our Origin →</a>
-    <a href="AboutPhilosophy.html" class="xihe-btn-sm">Our Philosophy →</a>
-</div>
+        <a href="AboutOrigin.html" class="xihe-btn-sm">Our Origin →</a>
+        <a href="AboutPhilosophy.html" class="xihe-btn-sm">Our Philosophy →</a>
+        <a href="../partnership.html" class="xihe-btn-sm">Partner With Us →</a>
+    </div>
 
 </main>
 

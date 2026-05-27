@@ -1,0 +1,49 @@
+{
+  "section_tag": "Products",
+  "items": [
+    {
+      "tag": "Full-Body Solution",
+      "title": "XIHE CAPSULE",
+      "desc": "Full-body 9.4μm far-infrared cabin for deep cellular recovery, systemic detoxification, and mitochondrial activation in clinical settings.",
+      "image": "/PRODUCTS/CAPSULE/xihe-capsule-hero.jpg",
+      "link": "/PRODUCTS/CAPSULE/capsule-b2b.html"
+    },
+    {
+      "tag": "Wearable",
+      "title": "Neural Resilience",
+      "desc": "Graphene neural resonance headband & eye mask. Targeted alpha-wave enhancement for deep sleep and brain fog. Designed for high-pressure professionals.",
+      "image": "/PRODUCTS/PORTABLES/xihe-neural-helmet.jpg",
+      "link": "/PRODUCTS/PORTABLES/NeuralResilience.html"
+    },
+    {
+      "tag": "Core Material",
+      "title": "Graphene Film",
+      "desc": "Core technology from the Lead Drafting Unit of the National Standard. Normal total emissivity ≥0.88. OEM/ODM available.",
+      "image": "/PRODUCTS/FILM/hero-graphene.jpg",
+      "link": "/PRODUCTS/FILM/GrapheneFilm.html"
+    },
+    {
+      "tag": "Modular",
+      "title": "XIHE CABIN",
+      "desc": "Configurable modular FIR cabin for clinics, wellness centers, and sports rehab facilities. Flexible deployment for professional-grade energy intervention.",
+      "image": "/PRODUCTS/CABIN/cabin-transparent.png",
+      "link": "/PRODUCTS/CABIN/cabin.html"
+    },
+    {
+      "tag": "Wearable",
+      "title": "Visceral Vitality",
+      "desc": "Graphene FIR abdominal belt targeting visceral organs. Improves microcirculation and metabolism. For metabolic conditioning and post-operative recovery.",
+      "image": "/PRODUCTS/PORTABLES/xihe-portable-360-thermal-matrix.png",
+      "link": "/PRODUCTS/PORTABLES/VisceralVitality.html"
+    },
+    {
+      "tag": "Wearable",
+      "title": "Deep Recovery",
+      "desc": "Graphene FIR lumbar & joint recovery system. Accelerates post-exercise lactate clearance. For athletes, sedentary workers, and orthopedic rehab.",
+      "image": "/PRODUCTS/PORTABLES/xihe-portable-kinetic-lumbar-belt.png",
+      "link": "/PRODUCTS/PORTABLES/DeepRecovery.html"
+    }
+  ],
+  "bottom_cta": "Browse Full Product Line →",
+  "bottom_cta_link": "/PRODUCTS/ProductPage.html"
+}

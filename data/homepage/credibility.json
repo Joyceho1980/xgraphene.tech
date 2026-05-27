@@ -1,0 +1,25 @@
+{
+  "section_tag": "Numbers Don't Lie.",
+  "headline_1": "Not Marketing Concepts,",
+  "headline_2": "Measured Results.",
+  "cards": [
+    {
+      "number": "0.98",
+      "unit": "Normal Total Emissivity",
+      "desc": "Certified by National Infrared Center. Near black-body physical limit, significantly exceeding industry standard (0.75–0.85).",
+      "link": "/SCIENCE/Technology.html"
+    },
+    {
+      "number": "18",
+      "unit": "Core SCI Papers",
+      "desc": "Published in Nature sub-journals, Advanced Science, IJMS and other top peer-reviewed journals. Every paper is a traceable academic credential.",
+      "link": "/SCIENCE/Technology.html"
+    },
+    {
+      "number": "78.3%",
+      "unit": "Clinical Improvement Rate",
+      "desc": "Rigorously verified by Peking University Third Hospital RCT. Post-intervention IL-6 decreased 42.3%, TNF-α decreased 38.7%.",
+      "link": "/SCIENCE/Technology.html"
+    }
+  ]
+}

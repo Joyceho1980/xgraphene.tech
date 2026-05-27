@@ -1,0 +1,32 @@
+{
+  "section_tag": "Clinical Evidence Matrix",
+  "headline_1": "Mechanism-Defined",
+  "headline_gold": "Outcomes.",
+  "subtitle": "Each therapeutic target is mapped to its biophysical mechanism and supported by indexed clinical data. XIHE's 9.4μm graphene resonance technology operates at the intersection of precision engineering and measurable biology.",
+  "cards": [
+    {
+      "title": "Musculoskeletal Recovery",
+      "desc": "Deep-tissue penetration suppressing pro-inflammatory cytokines",
+      "cta": "Whitepaper →",
+      "link": "/SCIENCE/ResearchHub.html#study-01"
+    },
+    {
+      "title": "Mitochondrial Bioenergetics",
+      "desc": "9.4μm resonance catalyzing ATP synthesis via CcO activation",
+      "cta": "Metabolic Study →",
+      "link": "/SCIENCE/ResearchHub.html#study-02"
+    },
+    {
+      "title": "Neuromodulation",
+      "desc": "α-wave entrainment via cerebral blood flow enhancement",
+      "cta": "Neuro Report →",
+      "link": "/SCIENCE/ResearchHub.html#study-03"
+    },
+    {
+      "title": "Lactate Clearance",
+      "desc": "Accelerated lactate clearance at the mitochondrial level",
+      "cta": "Performance Data →",
+      "link": "/SCIENCE/ResearchHub.html#study-04"
+    }
+  ]
+}

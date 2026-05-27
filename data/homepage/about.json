@@ -1,0 +1,9 @@
+{
+  "section_tag": "About XIHE",
+  "headline_1": "Engineering for Life.",
+  "headline_gold": "Precision for Health.",
+  "body": "XIHE is powered by the Jiageng Innovation Laboratory (IKKEM) and led by Academician Zheng Nanfeng. As the Lead Drafting Unit for the National Industry Standard for Graphene Flexible Electrothermal Film, we do not merely manufacture; we define the biophysical parameters for cellular interaction. Our mission is to translate sovereign scientific assets into verified, scalable solutions for human health.",
+  "btn_1": { "text": "The IKKEM Alliance →", "link": "/ABOUT/AboutMission.html" },
+  "btn_2": { "text": "Defining the Standard", "link": "/ABOUT/AboutMission.html" },
+  "btn_3": { "text": "Biological Protocols", "link": "/ABOUT/AboutPhilosophy.html" }
+}

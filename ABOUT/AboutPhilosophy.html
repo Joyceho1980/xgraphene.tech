@@ -48,6 +48,7 @@ body {
     background: var(--bg-color);
     color: var(--text-primary);
     line-height: 1.7;
+    letter-spacing: 0.5px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
@@ -109,9 +110,10 @@ nav {
     transform-origin: left center;
 }
 
-.nav-links a:hover, .nav-links a.active {
-    color: #C5A059;
-}
+.nav-links a:hover, .nav-links a.active { color: #C5A059; }
+
+.nav-phone { font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px; color: var(--accent-gold); text-decoration: none; padding: 6px 14px; border: 1px solid rgba(197,160,89,0.3); border-radius: 50px; transition: all 0.3s ease; white-space: nowrap; font-weight: 500; }
+.nav-phone:hover { background: var(--accent-gold); color: #1A3348; }
 
 
 .xihe-footer {
@@ -313,7 +315,16 @@ main {
     .philosophy-title { font-size: 32px; }
     .philosophy-title span { font-size: 26px; }
 }
+        @media (max-width: 900px) {
+            .hero-title { font-size: 34px; }
+            .hero-title span { font-size: 28px; }
+        }
         @media (max-width: 600px) {
+            nav { padding: 0 5%; }
+            .nav-links { gap: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+            .nav-links a { font-size: 9px; letter-spacing: 0.5px; white-space: nowrap; }
+            .hero-title { font-size: 28px; letter-spacing: 2px; }
+            .hero-title span { font-size: 22px; }
             .hero-cat-links { justify-content: flex-start; gap: 6px; padding: 12px 10%; }
             .hero-cat-links a { font-size: 9px; letter-spacing: 1px; padding: 6px 12px; }
         }
@@ -377,8 +388,10 @@ main {
         <a href="../SCIENCE/Technology.html">Science</a>
         <a href="../applications.html">Applications</a>
         <a href="../PRODUCTS/ProductPage.html">Products</a>
+        <a href="../partnership.html">Partnership</a>
         <a href="../NEWS/index.html">Journal</a>
         <a href="../CONTACT/index.html">Contact</a>
+        <a href="tel:0086-18688683865" class="nav-phone">+86 186 8868 3865</a>
     </div>
 </nav>
 
@@ -387,11 +400,11 @@ main {
 <section class="hero-section" style="background: linear-gradient(135deg, rgba(26,29,36,0.75) 0%, rgba(26,29,36,0.4) 100%), url('philosohpy Hero.jpg'); background-size: cover; background-position: center;">
     <div style="flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; padding: 70px 10% 0;">
         <div style="max-width: 800px; padding: 0 20px;">
-            <span class="hero-tag">The Biological Soul</span>
+            <span class="hero-tag">Our Belief</span>
             <h1 class="hero-title">
-                The Biology of Homo-Resonance.
+                The Body Already Knows<br>How to Heal.
             </h1>
-            <p class="hero-tagline">Resonance is not just a measurement; it is a return to nature. We engineer the bridge back to biological harmony.</p>
+            <p class="hero-tagline">We just need to speak its language.</p>
         </div>
     </div>
     <div class="hero-cat-links" style="flex-shrink: 0; position: static;">
@@ -408,25 +421,29 @@ main {
         <div>
             <div class="philosophy-body">
                 <p>
-                    Nature breathes in perpetual waves. The ocean tides are the visible pulse of the earth, and every single human heartbeat is a signature electromagnetic wave of existence. True <strong>biological homeostasis</strong> is the harmony of these intrinsic biological frequencies; what is commonly felt as physical decline is simply the chaotic desynchronization of this internal rhythm.
+                    Everything in nature has a rhythm. Ocean tides. Heartbeats. The vibration of water molecules inside every cell. When these rhythms fall out of sync, we call it illness. When they align, we call it health.
+                </p>
+                <p>
+                    XIHE doesn't force the body into submission. We don't burn, shock, or override. We send a signal — <strong>9.4μm of precisely tuned infrared light</strong> — that your cells already know how to interpret. It's the frequency water resonates at. It's the language your mitochondria speak.
                 </p>
                 <div class="philosophy-quote">
-                    XIHE's philosophical mission is to realign human technology with the natural Life Spectrum. Through our engineered <strong>5-15μm far-infrared inherent wavelength</strong>, we speak the precise "biological hearing" of human cells. We do not force the body; we remind it of its original cadence.
+                    <strong>We don't heal the body. We remind it of its original rhythm — and let it do the rest.</strong>
                 </div>
             </div>
         </div>
         <div class="visual-col">
-            <div class="visual-frame">
-                <img src="WATER CIRCLE.jpg" alt="XIHE Resonance Philosophy — 5-15μm Far-Infrared Synchronizing with Cellular Frequencies">
+            <div class="visual-frame" style="background: #1A3348; padding: 12px;">
+                <img src="WATER CIRCLE.jpg" alt="Water ripple — nature's frequency" style="filter: brightness(0.9) contrast(1.1);">
             </div>
-            <span class="visual-caption" style="color: var(--accent-gold);">Resonance: Aligning Technology with the Inherent Life Spectrum.</span>
+            <span class="visual-caption" style="color: var(--text-secondary); font-size: 12px; font-weight: 500; letter-spacing: 2px; margin-top: 16px;">Every cell speaks this language. We just learned to listen.</span>
         </div>
     </section>
 
     <div style="margin-top: 40px; display: flex; gap: 20px; flex-wrap: wrap;">
-    <a href="AboutOrigin.html" class="xihe-btn-sm">Our Origin →</a>
-    <a href="AboutMission.html" class="xihe-btn-sm">Our Mission →</a>
-</div>
+        <a href="AboutOrigin.html" class="xihe-btn-sm">Our Origin →</a>
+        <a href="AboutMission.html" class="xihe-btn-sm">Our Mission →</a>
+        <a href="../SCIENCE/Technology.html" class="xihe-btn-sm">The Science →</a>
+    </div>
 
 </main>
 

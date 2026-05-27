@@ -55,6 +55,7 @@
             background: var(--bg-color);
             color: var(--text-primary);
             line-height: 1.7;
+            letter-spacing: 0.5px;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
@@ -99,9 +100,10 @@
             transform-origin: left center;
         }
 
-        .nav-links a:hover, .nav-links a.active {
-    color: #C5A059;
-}
+        .nav-links a:hover, .nav-links a.active { color: #C5A059; }
+
+.nav-phone { font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px; color: var(--accent-gold); text-decoration: none; padding: 6px 14px; border: 1px solid rgba(197,160,89,0.3); border-radius: 50px; transition: all 0.3s ease; white-space: nowrap; font-weight: 500; }
+.nav-phone:hover { background: var(--accent-gold); color: #1A3348; }
 
         /* ========== HERO ========== */
         /* ========== HERO ========== */
@@ -232,11 +234,28 @@
         }
         .xihe-footer p { font-size: 13px; color: #E0E6ED; }
 
+        @media (max-width: 900px) {
+            .hero-title { font-size: 34px; }
+            .hero-title span { font-size: 28px; }
+        }
+        @media (max-width: 768px) {
+            .mech-sidebar-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+            .mech-sidebar-grid .sidebar { position: static !important; }
+            .mech-two-col { grid-template-columns: 1fr !important; gap: 40px !important; }
+            .mech-card-grid-2 { grid-template-columns: 1fr !important; }
+            .mech-card-grid-3 { grid-template-columns: 1fr !important; }
+        }
         @media (max-width: 600px) {
+            nav { padding: 0 5%; }
+            .nav-links { gap: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+            .nav-links a { font-size: 9px; letter-spacing: 0.5px; white-space: nowrap; }
             .hero-cat-links { justify-content: flex-start; gap: 6px; padding: 12px 10%; }
             .hero-cat-links a { font-size: 9px; letter-spacing: 1px; padding: 6px 12px; }
+            .hero-title { font-size: 28px; letter-spacing: 2px; }
+            .hero-title span { font-size: 22px; }
+            section[style*="padding: 120px 10%"] { padding: 60px 5% !important; }
+            section[style*="padding: 100px 10%"] { padding: 60px 5% !important; }
         }
-    
 
 /* XIHE Button System — Ghost → Solid on Hover */
 .xihe-btn {
@@ -295,8 +314,10 @@
         <a href="Technology.html" class="active">Science</a>
         <a href="../applications.html">Applications</a>
         <a href="../PRODUCTS/ProductPage.html">Products</a>
+        <a href="../partnership.html">Partnership</a>
         <a href="../NEWS/index.html">Journal</a>
         <a href="../CONTACT/index.html">Contact</a>
+        <a href="tel:0086-18688683865" class="nav-phone">+86 186 8868 3865</a>
     </div>
 </nav>
 
@@ -309,7 +330,7 @@
                 The Energy of Life,<br>
                 <span>Amplified.</span>
             </h1>
-            <p class="hero-tagline" style="background: rgba(0,0,0,0.5); padding: 12px 20px; border-radius: 8px; display: inline-block; max-width: 700px;">XIHE graphene far-infrared catalyzes ATP synthesis — the universal currency of cellular energy — igniting the body's innate capacity for repair.</p>
+            <p class="hero-tagline">9.4μm photons → CcO activation → ATP synthesis. The simplest path from physics to healing.</p>
         </div>
     </div>
     <div class="hero-cat-links" style="flex-shrink: 0; position: static;">
@@ -326,9 +347,9 @@
 <!-- ============================================ -->
 <section id="deep-tissue" style="padding: 120px 10%; background: #FFFFFF; border-top: 1px solid #E5E5E7;">
     <div style="max-width: 1200px; margin: 0 auto;">
-        <div style="display: grid; grid-template-columns: 180px 1fr; gap: 60px;">
+        <div class="mech-sidebar-grid" style="display: grid; grid-template-columns: 180px 1fr; gap: 60px;">
             <!-- Sidebar -->
-            <div style="position: sticky; top: 150px; align-self: start;">
+            <div class="sidebar" style="position: sticky; top: 150px; align-self: start;">
                 <div style="border-left: 1px solid #E5E5E7; padding-left: 16px;">
                     <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: var(--accent-gold); text-transform: uppercase; margin-bottom: 20px;">On this page</p>
                     <div style="display: flex; flex-direction: column; gap: 10px;">
@@ -349,12 +370,12 @@
                         Far-Infrared Penetration &amp; Cellular Activation
                     </p>
                 </div>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+                <div class="mech-two-col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
                     <div>
                         <img src="../xihe-deep-tissue-penetration-visualization.jpg"
                              alt="XIHE graphene far-infrared technology penetrates 3-5cm deep tissue"
                              style="width: 100%; height: auto; object-fit: contain; border: 1px solid #E5E5E7; background: #FAF8F5; border-radius: 18px;">
-                        <div style="border-left: 3px solid #C5A059; padding-left: 24px; margin-top: 140px;">
+                        <div style="border-left: 3px solid #C5A059; padding-left: 24px; margin-top: 36px;">
                             <p style="font-family: 'Urbanist', sans-serif; font-size: 15px; color: #C5A059; font-weight: 300; letter-spacing: 2px; margin: 0; line-height: 1.8;">
                                 Surface warmth is not the goal.<br>
                                 Cellular activation is.
@@ -396,7 +417,7 @@
             </p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; margin-bottom: 80px;">
+        <div class="mech-card-grid-2" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; margin-bottom: 80px;">
 
             <!-- Level 1 -->
             <div style="text-align: center; padding: 40px 30px; background: #FAF8F5; border-radius: 18px; transition: transform 0.4s ease, box-shadow 0.4s ease; cursor: default;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.06)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
@@ -478,7 +499,7 @@
                      alt="XIHE ATP powers three therapeutic pillars - pain relief, metabolic activation, and immune enhancement"
                      style="width: 100%; height: auto; display: block;">
             </div>
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
+            <div class="mech-card-grid-3" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
                 <div style="padding: 32px; background: #FFFFFF; border-radius: 18px; transition: transform 0.4s ease, box-shadow 0.4s ease; cursor: default;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.06)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
                     <div style="font-size: 11px; color: #C5A059; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px;">Pain Relief</div>
                     <p style="font-size: 14px; color: #475569; line-height: 1.7;">
@@ -539,7 +560,7 @@
 
 <!-- Footer -->
 <footer class="xihe-footer">
-    <p>&copy; 2024 XIHE Technology. All rights reserved.</p>
+    <p>XIHE Technology — Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard 2024-0923T-YB</p>
 </footer>
 
 </body>

@@ -9,6 +9,68 @@
     <meta name="keywords" content="XIHE Cabin, graphene far infrared therapy, mitochondrial optimization chamber, 9.4μm photon resonance, 0.98 emissivity, Tan Kah Kee Innovation Laboratory, IKKEM, longevity clinic equipment, sports recovery technology, HBOT synergy, PEMF synergy, medical-grade infrared therapy, metabolic restoration, cellular resonance, photobiomodulation chamber">
     <link rel="canonical" href="https://xgraphene.tech/products/cabin">
 
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://xgraphene.tech/" },
+            { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://xgraphene.tech/products/" },
+            { "@type": "ListItem", "position": 3, "name": "XIHE CABIN", "item": "https://xgraphene.tech/products/cabin" }
+        ]
+    }
+    </script>
+
+    <!-- GEO: FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What's the difference between the XIHE CABIN and a regular infrared sauna?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Regular far-infrared products (carbon fiber, ceramic) have low emissivity (0.75-0.85) with scattered spectrum — most energy stays on the skin surface. The XIHE CABIN achieves 0.98 normal total emissivity with peak precision-locked at 9.4μm, targeting deep tissue physical resonance rather than surface heating."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is the XIHE CABIN safe for commercial high-frequency use?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. The CABIN features near-zero EMF industrial shielding, no UV, and no microwave radiation. Core heating modules are NIQS-tested with heating stability far exceeding industry standards. Supports 8+ hours continuous daily operation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How is the 0.98 emissivity verified?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The 0.98 emissivity is FT-IR spectroscopy verified by IKKEM (Tan Kah Kee Innovation Laboratory). The graphene module's far-infrared spectrum concentrates in the 5-15μm range, peaking at 9.4μm, with normal total emissivity tested at 0.98 — far exceeding the industry 0.85 average. Full spectral test reports available upon request."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What installation requirements does the CABIN need?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Standard 220V household/commercial power. Power customizable by size (typically 1500-2500W). Plug and play — no special wiring or external hydronic system required. A+ grade hemlock frame, approximately 30-minute installation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What B2B partnership models are available for the CABIN?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Four partnership pathways: OEM Customization (custom cabin products built on XIHE modules), JDM Co-Development (full-process joint R&D), Module Procurement (purchase core heating modules for integration into your products), and Technology Licensing (access to XIHE patents and standard-setter credential). All partners can access IKKEM research data and 40+ patent portfolio."
+                }
+            }
+        ]
+    }
+    </script>
+
     <!-- GEO: Product Schema -->
     <script type="application/ld+json">
     {
@@ -44,7 +106,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Urbanist:wght@300;400;500&family=Playfair+Display:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Urbanist:wght@200;300;400;500&family=Playfair+Display:wght@300&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-color: #FAF8F5;
@@ -64,6 +126,7 @@
             background-color: var(--bg-color);
             color: var(--text-primary);
             line-height: 1.7;
+            letter-spacing: 0.5px;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
@@ -113,6 +176,14 @@
         .nav-links a:hover, .nav-links a.active {
     color: #C5A059;
 }
+
+        .nav-phone {
+            font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px;
+            color: var(--accent-gold); text-decoration: none; padding: 6px 14px;
+            border: 1px solid rgba(197,160,89,0.3); border-radius: 50px;
+            transition: all 0.3s ease; white-space: nowrap; font-weight: 500;
+        }
+        .nav-phone:hover { background: var(--accent-gold); color: #1A3348; }
 
         .section-label {
             font-family: 'Urbanist', sans-serif;
@@ -694,10 +765,13 @@
             }
         }
         @media (max-width: 600px) {
+            nav { padding: 0 5%; }
+            .nav-links { gap: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+            .nav-links a { font-size: 9px; letter-spacing: 0.5px; white-space: nowrap; }
             .hero-cat-links { justify-content: flex-start; gap: 6px; padding: 12px 10%; }
             .hero-cat-links a { font-size: 9px; letter-spacing: 1px; padding: 6px 12px; }
         }
-    
+
 
 /* XIHE Button System — Ghost → Solid on Hover */
 .xihe-btn {
@@ -757,8 +831,10 @@
             <a href="../../SCIENCE/Technology.html">Science</a>
             <a href="../../applications.html">Applications</a>
             <a href="../../PRODUCTS/ProductPage.html" class="active">Products</a>
+            <a href="../../partnership.html">Partnership</a>
             <a href="../../NEWS/index.html">Journal</a>
             <a href="../../CONTACT/index.html">Contact</a>
+            <a href="tel:0086-18688683865" class="nav-phone">+86 186 8868 3865</a>
         </div>
     </nav>
 
@@ -771,29 +847,26 @@
 
                 <!-- 左侧：文字 -->
                 <div style="text-align: left;">
-                    <p style="font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 4px; color: var(--accent-gold); text-transform: uppercase; margin-bottom: 24px;">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 4px; color: var(--accent-gold); text-transform: uppercase; margin-bottom: 18px;">
                         Photon Resonance Chamber
                     </p>
-                    <h1 style="font-family: 'Urbanist', sans-serif; font-size: 72px; font-weight: 200; color: #FFFFFF; letter-spacing: 3px; margin-bottom: 32px; line-height: 1.1;">
+                    <h1 style="font-family: 'Urbanist', sans-serif; font-size: 64px; font-weight: 200; color: #FFFFFF; letter-spacing: 3px; margin-bottom: 20px; line-height: 1.1;">
                         CABIN
                     </h1>
-                    <p style="font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 3px; color: rgba(255,255,255,0.65); text-transform: uppercase; margin-bottom: 20px;">
-                        Engineering for Life. Precision for Health.
+                    <p style="font-size: 20px; font-weight: 200; color: #FFFFFF; letter-spacing: 2px; margin-bottom: 20px; line-height: 1.3;">
+                        <strong style="color: var(--accent-gold);">9.4μm Precision.</strong><br>Full-Body Cellular Resonance.
                     </p>
-                    <p style="font-size: 24px; font-weight: 200; color: #FFFFFF; letter-spacing: 2px; margin-bottom: 24px; line-height: 1.4;">
-                        <strong style="color: var(--accent-gold);">RESTORE EVERY CELL.</strong><br>
-                        FROM EVERY ANGLE.
+                    <p style="font-size: 14px; font-weight: 400; color: rgba(255,255,255,0.65); letter-spacing: 1px; margin-bottom: 32px; line-height: 1.6; border-left: 1px solid rgba(197,160,89,0.4); padding-left: 14px;">
+                        A metabolic restoration chamber for clinics, longevity centers, and professional recovery facilities.
                     </p>
-                    <p style="font-size: 14px; font-weight: 400; color: rgba(255,255,255,0.65); letter-spacing: 1px; margin-bottom: 36px; line-height: 1.6; border-left: 1px solid rgba(197,160,89,0.4); padding-left: 14px;">
-                        Technology serves life.<br>We build it to empower human potential, never the reverse.
-                    </p>
-                    <div style="display: flex; gap: 24px; align-items: center;">
+                    <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
                         <span style="font-family: 'Urbanist', sans-serif; font-size: 12px; letter-spacing: 1px; color: rgba(255,255,255,0.7); padding: 8px 16px; border: 1px solid rgba(197,160,89,0.3);">
-                            <strong style="color: var(--accent-gold);">>0.98</strong> Emissivity
+                            <strong style="color: var(--accent-gold);">0.98</strong> Emissivity
                         </span>
                         <span style="font-family: 'Urbanist', sans-serif; font-size: 12px; letter-spacing: 1px; color: rgba(255,255,255,0.7); padding: 8px 16px; border: 1px solid rgba(197,160,89,0.3);">
-                            <strong style="color: var(--accent-gold);">9.4μm</strong> Photon Resonance
+                            <strong style="color: var(--accent-gold);">9.4μm</strong> Peak Wavelength
                         </span>
+                        <a href="../../CONTACT/index.html" style="display:inline-block;padding:10px 24px;font-size:11px;font-family:'Urbanist',sans-serif;letter-spacing:2px;text-transform:uppercase;text-decoration:none;background:var(--accent-gold);color:#1A3348;border-radius:50px;font-weight:600;transition:all 0.3s;">Request Quote →</a>
                     </div>
                 </div>
 
@@ -853,22 +926,18 @@
 
                         <!-- 右侧：文案 -->
                         <div style="text-align: left;">
-                            <p style="font-family: 'Urbanist', sans-serif; font-size: 36px; font-weight: 200; line-height: 1.3; color: #1A1D24; margin-bottom: 40px; letter-spacing: 3px;">
+                            <p style="font-family: 'Urbanist', sans-serif; font-size: 36px; font-weight: 200; line-height: 1.3; color: #1A1D24; margin-bottom: 32px; letter-spacing: 3px;">
                                 STOP PILING WOOD.<br>
                                 START BURNING.
                             </p>
-                            <p style="font-size: 17px; line-height: 1.9; color: #475569; margin-bottom: 28px;">
-                                You're investing in premium metabolic support—NMN, NAD+, NR—the finest biohacking fuel available. But even the most expensive supplements remain <strong style="color: #1A1D24;">"frozen assets"</strong> without the right cellular trigger. Your mitochondria need more than nutrients; they need resonance.
+                            <p style="font-size: 17px; line-height: 1.9; color: #475569; margin-bottom: 24px;">
+                                Premium supplements — NMN, NAD+, NR — are <strong style="color: #1A1D24;">frozen assets</strong> without the right cellular trigger. Your mitochondria need more than fuel. They need resonance.
                             </p>
-                            <p style="font-size: 22px; font-weight: 300; line-height: 1.6; color: #C5A059; margin-bottom: 28px;">
-                                XIHE Cabin is not a sauna.<br>It's a metabolic restoration chamber.
+                            <p style="font-size: 20px; font-weight: 300; line-height: 1.5; color: #C5A059; margin-bottom: 24px;">
+                                The XIHE Cabin is not a sauna.<br>It's a metabolic restoration chamber.
                             </p>
-                            <p style="font-size: 17px; line-height: 1.9; color: #475569; margin-bottom: 40px;">
-                                Using <a href="../../SCIENCE/Technology.html" style="color: var(--accent-gold); text-decoration: none;"><strong style="color: #C5A059;">9.4μm precision photon resonance</strong></a>, we optimize your mitochondrial micro-environment—switching cells from "power-saving mode" to "high-energy repair mode." Your NAD+ protocols finally work. Your investment finally burns.
-                            </p>
-                            <p style="font-size: 17px; line-height: 1.9; color: #475569; margin-bottom: 28px;">
-                            <p style="font-size: 14px; letter-spacing: 2px; text-transform: uppercase; color: #C5A059; border-left: 2px solid #C5A059; padding-left: 16px;">
-                                Stop buying fuel. Start the fire.
+                            <p style="font-size: 17px; line-height: 1.9; color: #475569; margin-bottom: 32px;">
+                                9.4μm precision photon resonance switches cells from "power-saving" to "high-energy repair mode." <strong style="color: #C5A059;">Your protocols finally work. Your investment finally burns.</strong>
                             </p>
                         </div>
 
@@ -1101,42 +1170,42 @@
                 <h2 style="font-family: 'Urbanist', sans-serif; font-size: 32px; font-weight: 200; color: #1A1D24; letter-spacing: 3px;">ENGINEERED BEYOND STANDARD</h2>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: #E5E5E7; border: 1px solid #E5E5E7;">
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
 
-                <div style="padding: 48px 36px; background: #FFFFFF;">
-                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: #C5A059; text-transform: uppercase; margin-bottom: 12px;">Spectral Performance</p>
-                    <p style="font-size: 28px; font-weight: 300; color: #C5A059; margin-bottom: 6px; letter-spacing: 1px;">0.97 – 0.98</p>
-                    <p style="font-size: 13px; color: #888; line-height: 1.6;">Normal total emissivity, FT-IR verified within 8–14μm human vital spectrum. Peak precision-locked at 9.4μm.</p>
+                <div style="padding: 36px 28px; background: #FFFFFF; border-radius: 10px; border: 1px solid rgba(197,160,89,0.1); text-align: center;">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: #C5A059; text-transform: uppercase; margin-bottom: 10px;">Spectral Performance</p>
+                    <p style="font-size: 32px; font-weight: 200; color: var(--accent-gold); margin-bottom: 8px; letter-spacing: 1px; font-family: 'Urbanist', sans-serif;">0.97 – 0.98</p>
+                    <p style="font-size: 12px; color: #888; line-height: 1.6;">FT-IR verified within 8–14μm vital spectrum. Peak locked at 9.4μm.</p>
                 </div>
 
-                <div style="padding: 48px 36px; background: #FFFFFF;">
-                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: #C5A059; text-transform: uppercase; margin-bottom: 12px;">Thermal Control</p>
-                    <p style="font-size: 28px; font-weight: 300; color: #C5A059; margin-bottom: 6px; letter-spacing: 1px;">Ambient – 65°C</p>
-                    <p style="font-size: 13px; color: #888; line-height: 1.6;">±1°C omnidirectional uniformity. Adjustable in 1°C increments, up to 99-minute session timer.</p>
+                <div style="padding: 36px 28px; background: #FFFFFF; border-radius: 10px; border: 1px solid rgba(197,160,89,0.1); text-align: center;">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: #C5A059; text-transform: uppercase; margin-bottom: 10px;">Thermal Control</p>
+                    <p style="font-size: 32px; font-weight: 200; color: var(--accent-gold); margin-bottom: 8px; letter-spacing: 1px; font-family: 'Urbanist', sans-serif;">Ambient – 65°C</p>
+                    <p style="font-size: 12px; color: #888; line-height: 1.6;">±1°C uniformity. 1°C increments. 99-min session timer.</p>
                 </div>
 
-                <div style="padding: 48px 36px; background: #FFFFFF;">
-                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: #C5A059; text-transform: uppercase; margin-bottom: 12px;">EMF Safety</p>
-                    <p style="font-size: 28px; font-weight: 300; color: #C5A059; margin-bottom: 6px; letter-spacing: 1px;">Near-Zero EMF</p>
-                    <p style="font-size: 13px; color: #888; line-height: 1.6;">Industrial-grade multi-phase electromagnetic shielding. No UV, no microwave radiation.</p>
+                <div style="padding: 36px 28px; background: #FFFFFF; border-radius: 10px; border: 1px solid rgba(197,160,89,0.1); text-align: center;">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: #C5A059; text-transform: uppercase; margin-bottom: 10px;">EMF Safety</p>
+                    <p style="font-size: 32px; font-weight: 200; color: var(--accent-gold); margin-bottom: 8px; letter-spacing: 1px; font-family: 'Urbanist', sans-serif;">Near-Zero</p>
+                    <p style="font-size: 12px; color: #888; line-height: 1.6;">Industrial multi-phase shielding. No UV, no microwave.</p>
                 </div>
 
-                <div style="padding: 48px 36px; background: #FFFFFF;">
-                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: #C5A059; text-transform: uppercase; margin-bottom: 12px;">Power & Installation</p>
-                    <p style="font-size: 28px; font-weight: 300; color: #C5A059; margin-bottom: 6px; letter-spacing: 1px;">220V / 1500–2500W</p>
-                    <p style="font-size: 13px; color: #888; line-height: 1.6;">Standard household/commercial power. Plug & play, no special wiring or external hydronic system.</p>
+                <div style="padding: 36px 28px; background: #FFFFFF; border-radius: 10px; border: 1px solid rgba(197,160,89,0.1); text-align: center;">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: #C5A059; text-transform: uppercase; margin-bottom: 10px;">Power & Install</p>
+                    <p style="font-size: 32px; font-weight: 200; color: var(--accent-gold); margin-bottom: 8px; letter-spacing: 1px; font-family: 'Urbanist', sans-serif;">220V · 1.5–2.5kW</p>
+                    <p style="font-size: 12px; color: #888; line-height: 1.6;">Plug & play. No special wiring or hydronic system.</p>
                 </div>
 
-                <div style="padding: 48px 36px; background: #FFFFFF;">
-                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: #C5A059; text-transform: uppercase; margin-bottom: 12px;">Sanitation</p>
-                    <p style="font-size: 28px; font-weight: 300; color: #C5A059; margin-bottom: 6px; letter-spacing: 1px;">3-Min Turnover</p>
-                    <p style="font-size: 13px; color: #888; line-height: 1.6;">Integrated 800mg industrial electronic ozone disinfection + negative ion breeze system.</p>
+                <div style="padding: 36px 28px; background: #FFFFFF; border-radius: 10px; border: 1px solid rgba(197,160,89,0.1); text-align: center;">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: #C5A059; text-transform: uppercase; margin-bottom: 10px;">Sanitation</p>
+                    <p style="font-size: 32px; font-weight: 200; color: var(--accent-gold); margin-bottom: 8px; letter-spacing: 1px; font-family: 'Urbanist', sans-serif;">3-Min Turnover</p>
+                    <p style="font-size: 12px; color: #888; line-height: 1.6;">800mg ozone disinfection + negative ion breeze.</p>
                 </div>
 
-                <div style="padding: 48px 36px; background: #FFFFFF;">
-                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: #C5A059; text-transform: uppercase; margin-bottom: 12px;">Clinical Validation</p>
-                    <p style="font-size: 28px; font-weight: 300; color: #C5A059; margin-bottom: 6px; letter-spacing: 1px;">18 SCI Papers</p>
-                    <p style="font-size: 13px; color: #888; line-height: 1.6;">8 RCTs, Peking University Third Hospital data: 78.3% comprehensive efficacy rate.</p>
+                <div style="padding: 36px 28px; background: #FFFFFF; border-radius: 10px; border: 1px solid rgba(197,160,89,0.1); text-align: center;">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: #C5A059; text-transform: uppercase; margin-bottom: 10px;">Clinical Validation</p>
+                    <p style="font-size: 32px; font-weight: 200; color: var(--accent-gold); margin-bottom: 8px; letter-spacing: 1px; font-family: 'Urbanist', sans-serif;">18 SCI Papers</p>
+                    <p style="font-size: 12px; color: #888; line-height: 1.6;">8 RCTs. Peking University data: 78.3% efficacy.</p>
                 </div>
 
             </div>
@@ -1170,9 +1239,8 @@
             <div class="faq-item">
                 <p class="faq-question">Q: Is the 0.98 emissivity claim reliable? How to verify?</p>
                 <p class="faq-answer">
-                    0.98 is based on <strong>Tan Kah Kee Innovation Laboratory (IKKEM) FT-IR spectroscopy analysis</strong> — actual test results, not theoretical values. This is the core of our <strong>scientific evidence chain</strong>: independently verified, peer-reviewed, and backed by <strong>clinical observational data</strong>.<br><br>
-                    XIHE graphene modules' far-infrared spectrum concentrates in 5-15μm range, peaking at 9.4μm, with normal total emissivity tested at 0.98 — far exceeding the industry 0.85 average and setting the <strong>national industry standard</strong> for graphene far-infrared emission.<br><br>
-                    <strong>We provide complete spectral test reports and the technical whitepaper for partner verification.</strong>
+                    0.98 is based on <strong>IKKEM (Tan Kah Kee Innovation Laboratory) FT-IR spectroscopy analysis</strong> — actual test results, not theoretical values. The graphene module's far-infrared spectrum concentrates in the 5-15μm range, peaking at 9.4μm, far exceeding the industry 0.85 average.<br><br>
+                    <strong>Complete spectral test reports and the technical whitepaper are available for partner verification.</strong>
                 </p>
             </div>
 
@@ -1200,61 +1268,66 @@
     <!-- ========== SECTION 8: COMPLIANCE & CERTIFICATIONS ========== -->
     <section style="padding: 80px 10%; background: #0D0D0D;">
         <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
-            
+
             <span style="font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 4px; color: #C5A059; text-transform: uppercase; margin-bottom: 16px; display: block;">Compliance & Certifications</span>
             <h2 style="font-family: 'Urbanist', sans-serif; font-size: 32px; font-weight: 200; color: #FFFFFF; margin-bottom: 20px; letter-spacing: 3px;">
-                GLOBAL COMPLIANCE,<br>LOCAL DEPLOYMENT
+                BUILT FOR<br>GLOBAL DEPLOYMENT
             </h2>
             <p style="font-size: 16px; color: rgba(255,255,255,0.7); margin-bottom: 60px; max-width: 600px; margin-left: auto; margin-right: auto;">
-                Engineered for <strong style="color: #C5A059;">multi-region regulatory readiness</strong> — meeting or exceeding safety and electromagnetic compatibility standards across North America, Europe, and key international markets. Every certification is backed by the full <strong style="color: #C5A059;">scientific evidence chain</strong> from IKKEM and <strong style="color: #C5A059;">clinical observational data</strong>.
+                Designed for <strong style="color: #C5A059;">multi-region regulatory compliance</strong>. Backed by NIQS lab testing, GB4706 safety, and IKKEM's full scientific evidence chain.
             </p>
-            
+
             <!-- 认证卡片 -->
-            <div style="display: flex; justify-content: center; gap: 60px; flex-wrap: wrap;">
-                
-                <!-- UL 认证 -->
+            <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+
+                <!-- Obtained -->
                 <div style="text-align: center;">
-                    <div style="width: 120px; height: 120px; background: rgba(197,160,89,0.1); border: 1px solid rgba(197,160,89,0.3); display: flex; justify-content: center; align-items: center; margin: 0 auto 20px;">
-                        <span style="font-family: 'Urbanist', sans-serif; font-size: 32px; font-weight: 700; color: #C5A059;">UL</span>
+                    <div style="width: 110px; height: 110px; background: rgba(197,160,89,0.12); border: 2px solid rgba(197,160,89,0.5); display: flex; justify-content: center; align-items: center; margin: 0 auto 16px;">
+                        <span style="font-family: 'Urbanist', sans-serif; font-size: 24px; font-weight: 700; color: #C5A059;">GB</span>
                     </div>
-                    <p style="font-family: 'Urbanist', sans-serif; font-size: 14px; letter-spacing: 1px; color: #FFFFFF; margin-bottom: 8px; text-transform: uppercase;">Electrical Safety</p>
-                    <p style="font-size: 13px; color: rgba(255,255,255,0.65); line-height: 1.6;">Underwriters Laboratories<br>Certified for North America</p>
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 12px; letter-spacing: 1px; color: #FFFFFF; text-transform: uppercase;">GB4706 Safety</p>
+                    <p style="font-size: 11px; color: #059669;">Obtained</p>
                 </div>
-                
-                <!-- ETL 认证 -->
+
                 <div style="text-align: center;">
-                    <div style="width: 120px; height: 120px; background: rgba(197,160,89,0.1); border: 1px solid rgba(197,160,89,0.3); display: flex; justify-content: center; align-items: center; margin: 0 auto 20px;">
-                        <span style="font-family: 'Urbanist', sans-serif; font-size: 32px; font-weight: 700; color: #C5A059;">ETL</span>
+                    <div style="width: 110px; height: 110px; background: rgba(197,160,89,0.12); border: 2px solid rgba(197,160,89,0.5); display: flex; justify-content: center; align-items: center; margin: 0 auto 16px;">
+                        <span style="font-family: 'Urbanist', sans-serif; font-size: 24px; font-weight: 700; color: #C5A059;">NIQS</span>
                     </div>
-                    <p style="font-family: 'Urbanist', sans-serif; font-size: 14px; letter-spacing: 1px; color: #FFFFFF; margin-bottom: 8px; text-transform: uppercase;">Product Safety</p>
-                    <p style="font-size: 13px; color: rgba(255,255,255,0.65); line-height: 1.6;">Intertek Testing<br>NA & EU Compliance</p>
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 12px; letter-spacing: 1px; color: #FFFFFF; text-transform: uppercase;">NIQS Tested</p>
+                    <p style="font-size: 11px; color: #059669;">Obtained</p>
                 </div>
-                
-                <!-- FCC 认证 -->
+
                 <div style="text-align: center;">
-                    <div style="width: 120px; height: 120px; background: rgba(197,160,89,0.1); border: 1px solid rgba(197,160,89,0.3); display: flex; justify-content: center; align-items: center; margin: 0 auto 20px;">
-                        <span style="font-family: 'Urbanist', sans-serif; font-size: 32px; font-weight: 700; color: #C5A059;">FCC</span>
+                    <div style="width: 110px; height: 110px; background: rgba(197,160,89,0.12); border: 2px solid rgba(197,160,89,0.5); display: flex; justify-content: center; align-items: center; margin: 0 auto 16px;">
+                        <span style="font-family: 'Urbanist', sans-serif; font-size: 24px; font-weight: 700; color: #C5A059;">RoHS</span>
                     </div>
-                    <p style="font-family: 'Urbanist', sans-serif; font-size: 14px; letter-spacing: 1px; color: #FFFFFF; margin-bottom: 8px; text-transform: uppercase;">EMC Compliance</p>
-                    <p style="font-size: 13px; color: rgba(255,255,255,0.65); line-height: 1.6;">Federal Communications<br>Zero-EMF Verified</p>
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 12px; letter-spacing: 1px; color: #FFFFFF; text-transform: uppercase;">RoHS / REACH</p>
+                    <p style="font-size: 11px; color: #059669;">Obtained</p>
                 </div>
-                
-                <!-- CE 认证 -->
+
+                <!-- In Progress -->
                 <div style="text-align: center;">
-                    <div style="width: 120px; height: 120px; background: rgba(197,160,89,0.1); border: 1px solid rgba(197,160,89,0.3); display: flex; justify-content: center; align-items: center; margin: 0 auto 20px;">
-                        <span style="font-family: 'Urbanist', sans-serif; font-size: 32px; font-weight: 700; color: #C5A059;">CE</span>
+                    <div style="width: 110px; height: 110px; background: rgba(197,160,89,0.06); border: 1px dashed rgba(197,160,89,0.3); display: flex; justify-content: center; align-items: center; margin: 0 auto 16px;">
+                        <span style="font-family: 'Urbanist', sans-serif; font-size: 22px; font-weight: 700; color: rgba(197,160,89,0.5);">UL</span>
                     </div>
-                    <p style="font-family: 'Urbanist', sans-serif; font-size: 14px; letter-spacing: 1px; color: #FFFFFF; margin-bottom: 8px; text-transform: uppercase;">European Standard</p>
-                    <p style="font-size: 13px; color: rgba(255,255,255,0.65); line-height: 1.6;">EU Market Access<br>Safety & Health</p>
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 12px; letter-spacing: 1px; color: rgba(255,255,255,0.7); text-transform: uppercase;">UL / ETL</p>
+                    <p style="font-size: 11px; color: var(--accent-gold);">In Progress — Q3 2026</p>
                 </div>
-                
+
+                <div style="text-align: center;">
+                    <div style="width: 110px; height: 110px; background: rgba(197,160,89,0.06); border: 1px dashed rgba(197,160,89,0.3); display: flex; justify-content: center; align-items: center; margin: 0 auto 16px;">
+                        <span style="font-family: 'Urbanist', sans-serif; font-size: 22px; font-weight: 700; color: rgba(197,160,89,0.5);">CE</span>
+                    </div>
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 12px; letter-spacing: 1px; color: rgba(255,255,255,0.7); text-transform: uppercase;">CE / FCC</p>
+                    <p style="font-size: 11px; color: var(--accent-gold);">In Progress — Q3 2026</p>
+                </div>
+
             </div>
-            
-            <!-- 底部说明 -->
-            <p style="font-size: 12px; color: rgba(255,255,255,0.7); margin-top: 60px; letter-spacing: 1px;">
-                * Certification status varies by product configuration. Contact us for specific compliance documentation.
+
+            <p style="font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 48px;">
+                Contact us for current compliance documentation and test reports.
             </p>
-            
+
         </div>
     </section>
 
@@ -1262,16 +1335,27 @@
     <section class="cta-section">
         <h2>REQUEST TECHNICAL WHITEPAPER</h2>
         <p class="subtitle">XIHE Research Data • 40+ Patents • Spectral Test Reports</p>
-        <a href="mailto:partner@xgraphene.tech?subject=Request Technical Whitepaper - CABIN" class="xihe-btn">GET WHITEPAPER →</a>
-        <a href="../SCIENCE/Technology.html" class="cta-link">Discover 9.4μm Resonance Science →</a>
+        <a href="../../CONTACT/index.html" class="xihe-btn">REQUEST SPECS & PRICING →</a>
+        <a href="../../SCIENCE/Technology.html" class="cta-link">Discover 9.4μm Resonance Science →</a>
         <p class="cta-footer">
-            XIHE Technology — Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter of China's "Graphene Flexible Electrothermal Film" Industry Standard 2024-0923T-YB | 40+ Core Patents | UL & FCC Certified
+            XIHE Technology — Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard 2024-0923T-YB
         </p>
     </section>
 
     <!-- ========== FOOTER ========== -->
+    <!-- Knowledge Network -->
+    <section style="padding: 60px 10%; background: #FAF8F5; border-top: 1px solid #E5E5E7; text-align: center;">
+        <p style="font-family: 'Urbanist', sans-serif; font-size: 10px; letter-spacing: 4px; color: var(--accent-gold); text-transform: uppercase; margin-bottom: 16px;">Explore Further</p>
+        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+            <a href="../../SCIENCE/Technology.html" style="font-size: 11px; color: var(--text-secondary); text-decoration: none; padding: 8px 20px; border: 1px solid #E5E5E7; border-radius: 50px; font-family: 'Urbanist', sans-serif; letter-spacing: 1px; transition: all 0.3s;">← 9.4μm Graphene Technology</a>
+            <a href="../../applications.html" style="font-size: 11px; color: var(--text-secondary); text-decoration: none; padding: 8px 20px; border: 1px solid #E5E5E7; border-radius: 50px; font-family: 'Urbanist', sans-serif; letter-spacing: 1px; transition: all 0.3s;">Clinical Applications</a>
+            <a href="../../partnership.html" style="font-size: 11px; color: var(--text-secondary); text-decoration: none; padding: 8px 20px; border: 1px solid #E5E5E7; border-radius: 50px; font-family: 'Urbanist', sans-serif; letter-spacing: 1px; transition: all 0.3s;">B2B Partnership Models</a>
+            <a href="../../CONTACT/index.html" style="font-size: 11px; color: #FFFFFF; text-decoration: none; padding: 8px 20px; background: var(--accent-gold); border-radius: 50px; font-family: 'Urbanist', sans-serif; letter-spacing: 1px; transition: all 0.3s;">Request Quote →</a>
+        </div>
+    </section>
+
     <footer class="xihe-footer">
-        <p>© 2024 XIHE Technology. All rights reserved.</p>
+        <p>XIHE Technology — Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard 2024-0923T-YB</p>
     </footer>
 
 </body>

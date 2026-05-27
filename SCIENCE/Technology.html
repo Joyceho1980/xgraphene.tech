@@ -118,6 +118,7 @@
             background: var(--bg-color);
             color: var(--text-primary);
             line-height: 1.7;
+            letter-spacing: 0.5px;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
@@ -162,9 +163,10 @@
             transform-origin: left center;
         }
 
-        .nav-links a:hover, .nav-links a.active {
-    color: #C5A059;
-}
+        .nav-links a:hover, .nav-links a.active { color: #C5A059; }
+
+.nav-phone { font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px; color: var(--accent-gold); text-decoration: none; padding: 6px 14px; border: 1px solid rgba(197,160,89,0.3); border-radius: 50px; transition: all 0.3s ease; white-space: nowrap; font-weight: 500; }
+.nav-phone:hover { background: var(--accent-gold); color: #1A3348; }
 
         /* ========== HERO ========== */
         .hero-section {
@@ -298,11 +300,29 @@
         }
         .xihe-footer p { font-size: 13px; color: #E0E6ED; }
 
+        @media (max-width: 900px) {
+            .hero-title { font-size: 34px; }
+            .hero-title span { font-size: 28px; }
+        }
+        @media (max-width: 768px) {
+            .tech-sidebar-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+            .tech-sidebar-grid .sidebar { position: static !important; }
+            .tech-two-col { grid-template-columns: 1fr !important; gap: 40px !important; }
+            .tech-safety-grid { grid-template-columns: 1fr !important; }
+        }
         @media (max-width: 600px) {
+            nav { padding: 0 5%; }
+            .nav-links { gap: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+            .nav-links a { font-size: 9px; letter-spacing: 0.5px; white-space: nowrap; }
             .hero-cat-links { justify-content: flex-start; gap: 6px; padding: 12px 10%; }
             .hero-cat-links a { font-size: 9px; letter-spacing: 1px; padding: 6px 12px; }
+            .hero-title { font-size: 28px; letter-spacing: 2px; }
+            .hero-title span { font-size: 22px; }
+            section[style*="padding: 120px 10%"] { padding: 60px 5% !important; }
+            section[style*="padding: 100px 10%"] { padding: 60px 5% !important; }
+            section[style*="padding: 80px 10%"] { padding: 40px 5% !important; }
+            section[style*="padding: 60px 10%"] { padding: 40px 5% !important; }
         }
-    
 
 /* XIHE Button System — Ghost → Solid on Hover */
 .xihe-btn {
@@ -378,8 +398,10 @@
         <a href="Technology.html" class="active">Science</a>
         <a href="../applications.html">Applications</a>
         <a href="../PRODUCTS/ProductPage.html">Products</a>
+        <a href="../partnership.html">Partnership</a>
         <a href="../NEWS/index.html">Journal</a>
         <a href="../CONTACT/index.html">Contact</a>
+        <a href="tel:0086-18688683865" class="nav-phone">+86 186 8868 3865</a>
     </div>
 </nav>
 
@@ -387,12 +409,12 @@
 <section class="hero-section" style="background: linear-gradient(135deg, rgba(26,51,72,0.85) 0%, rgba(26,51,72,0.4) 100%), url('../science-hero-bg.png'); background-size: cover; background-position: center;">
     <div style="flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; padding: 70px 10% 0;">
         <div style="max-width: 800px; padding: 0 20px;">
-            <span class="hero-tag">Engineering for Life. Precision for Health.</span>
+            <span class="hero-tag">Technology</span>
             <h1 class="hero-title">
-                Resonance,<br>
-                <span>Re-Engineered.</span>
+                Not Just Heat.<br>
+                <span>Precision Resonance.</span>
             </h1>
-            <p class="hero-tagline">XIHE: From the frontiers of graphene material science to the forefront of bio-energy resonance, we define the standard.</p>
+            <p class="hero-tagline">0.95 emissivity. 9.4μm peak. 99.8% conversion. One material, engineered to the physical limit.</p>
         </div>
     </div>
     <div class="hero-cat-links" style="flex-shrink: 0; position: static;">
@@ -424,9 +446,9 @@
 <!-- ============================================ -->
 <section id="piano-analogy" style="padding: 120px 10%; background: #FFFFFF; border-top: 1px solid #E5E5E7;">
     <div style="max-width: 1200px; margin: 0 auto;">
-        <div style="display: grid; grid-template-columns: 180px 1fr; gap: 60px;">
+        <div class="tech-sidebar-grid" style="display: grid; grid-template-columns: 180px 1fr; gap: 60px;">
             <!-- Sidebar -->
-            <div style="position: sticky; top: 150px; align-self: start;">
+            <div class="sidebar" style="position: sticky; top: 150px; align-self: start;">
                 <div style="border-left: 1px solid #E5E5E7; padding-left: 16px;">
                     <p style="font-family: 'Urbanist', sans-serif; font-size: 9px; letter-spacing: 3px; color: var(--accent-gold); text-transform: uppercase; margin-bottom: 20px;">On this page</p>
                     <div style="display: flex; flex-direction: column; gap: 10px;">
@@ -438,41 +460,29 @@
             </div>
             <!-- Content -->
             <div>
-                <h2 style="font-family: 'Urbanist', sans-serif; font-size: 40px; margin-bottom: 50px; font-weight: 200; line-height: 1.3; letter-spacing: 3px; text-align: center;">
-                    <span style="color: #1A365D;">It's Not Just the Band.</span> <span style="color: var(--accent-gold);">It's the Resonance.</span>
-                </h2>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+                <div class="tech-two-col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+                    <div style="text-align: center;">
+                        <img src="../xihe-graphene-emissivity-comparison.jpg"
+                             alt="XIHE graphene heating film achieves ≥0.88 normal spectral emissivity vs commodity graphene 0.75-0.85 comparison"
+                             style="width: 85%; height: auto; object-fit: contain; border: 1px solid #E5E5E7; display: block; margin: 0 auto; border-radius: 8px;">
+                    </div>
                     <div>
-                <p style="line-height: 1.75; color: #475569; margin-bottom: 16px; font-size: 15px;">
-                    Every graphene product on the market talks about the <strong style="color: #1A1D24;">5–15μm far-infrared band</strong>. That's physics. It's not a differentiator; it's a commodity baseline.
-                </p>
-                <p style="line-height: 1.75; color: #475569; margin-bottom: 16px; font-size: 15px;">
-                    Think of it this way: the far-infrared emission band is simply the keyboard of a piano. Every piano has 88 keys. But why does a Steinway resonate differently?
-                </p>
-                <p style="line-height: 1.75; color: #C5A059; margin-bottom: 16px; font-size: 16px; font-weight: 500;">
-                    It's the soundboard.
-                </p>
-                <p style="line-height: 1.75; color: #475569; margin-bottom: 16px; font-size: 15px;">
-                    Most <a href="../PRODUCTS/FILM/GrapheneFilm.html" style="color: var(--accent-gold); text-decoration: none;"><strong style="color: #1A1D24;">graphene heating films</strong></a> on the market suffer from low normal spectral emissivity—they are like pianos with cracked soundboards. You press the key, but the energy is trapped, dissipated as inefficient surface heat rather than deep-tissue resonance.
-                </p>
-                <p style="line-height: 1.75; color: #475569; margin-bottom: 16px; font-size: 15px;">
-                    At <strong style="color: #1A1D24;">XIHE Technology</strong>, a leader in graphene industrial standardization based in Xiamen, we've re-engineered the soundboard.
-                </p>
-                <p style="line-height: 1.75; color: #475569; margin-bottom: 16px; font-size: 15px;">
-                    By leveraging our proprietary <strong style="color: #1A1D24;">integrated matrix engineering</strong>—pioneered at <strong style="color: #1A1D24;">XIHE's R&amp;D facility within Jiageng Innovation Lab</strong>—we achieve a normal spectral emissivity of <span style="color: #C5A059; font-size: 17px; font-weight: 500;">≥0.88</span> (with a peak of <span style="color: #C5A059; font-size: 17px; font-weight: 500;">0.95</span>). We strike the same <span style="color: #C5A059; font-weight: 500;">9.4μm</span> "central C" that others claim, but our energy is <em style="color: #1A1D24;">transmitted</em>, not <em style="color: #888;">trapped</em>.
-                </p>
-                <p style="line-height: 1.9; color: #1A1D24; font-size: 16px;">
-                    This is the XIHE difference: we provide not just the right frequency for <a href="Mechanism.html" style="color: var(--accent-gold); text-decoration: none;"><strong>biological resonance</strong></a>, but the <strong>electro-thermal radiation efficiency</strong> to deliver it deep into human physiology.
-                </p>
-            </div>
-            <div style="text-align: center;">
-                <img src="../xihe-graphene-emissivity-comparison.jpg"
-                     alt="XIHE graphene heating film achieves ≥0.88 normal spectral emissivity vs commodity graphene 0.75-0.85 comparison"
-                     style="width: 58%; height: auto; object-fit: contain; border: 1px solid #E5E5E7; display: block; margin: 0 auto 24px auto;">
-                <p style="font-size: 15px; color: #C5A059; font-style: italic; line-height: 1.6; max-width: 85%; margin: 0 auto;">
-                    "It's the difference between a piano that plays to itself, and a piano that plays to you."
-                </p>
-                </div>  <!-- closes 1fr 1fr grid -->
+                        <h2 style="font-family: 'Urbanist', sans-serif; font-size: 28px; font-weight: 200; line-height: 1.3; letter-spacing: 2px; margin-bottom: 24px; color: #1A1D24;">
+                            <span style="color: #1A365D;">It's Not Just the Band.</span><br><span style="color: var(--accent-gold);">It's the Resonance.</span>
+                        </h2>
+                        <p style="line-height: 1.8; color: #475569; margin-bottom: 20px; font-size: 15px;">
+                            Every graphene product claims the <strong style="color: #1A1D24;">5–15μm far-infrared band</strong>. That's like saying a piano has 88 keys — it's not a differentiator. It's a baseline.
+                        </p>
+                        <p style="line-height: 1.8; color: #C5A059; margin-bottom: 20px; font-size: 16px; font-weight: 500;">
+                            The real question is: how good is the soundboard?
+                        </p>
+                        <p style="line-height: 1.8; color: #475569; margin-bottom: 20px; font-size: 15px;">
+                            Most graphene heating films have <strong>low spectral emissivity</strong> — like a cracked soundboard. You strike the key, but the energy stays trapped as surface heat. XIHE's proprietary integrated matrix engineering achieves <span style="color: #C5A059; font-size: 17px; font-weight: 500;">≥0.88</span> emissivity (peak <span style="color: #C5A059; font-size: 17px; font-weight: 500;">0.95</span>) — we strike the same 9.4μm note, but our energy is <strong style="color: #1A1D24;">transmitted</strong>, not trapped.
+                        </p>
+                        <p style="font-size: 15px; color: #C5A059; font-style: italic; line-height: 1.6; margin-top: 4px;">
+                            "It's the difference between a piano that plays to itself, and a piano that plays to you."
+                        </p>
+                    </div>
             </div>  <!-- closes content div -->
         </div>  <!-- closes sidebar+content grid -->
     </div>  <!-- closes max-width container -->
@@ -510,7 +520,7 @@
             The Science of Safety:<br>
             <span style="color: var(--accent-gold);">Why XIHE Graphene Is Medical-Grade</span>
         </h2>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+        <div class="tech-safety-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
             <div class="blue-hover" style="padding: 32px 24px; background: #FFFFFF; border-radius: 18px; border: 1px solid var(--border-color);">
                 <p style="font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 2px; color: var(--accent-gold); text-transform: uppercase; margin-bottom: 12px; text-align: center;">Non-Ionizing Radiation</p>
                 <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.8;">
@@ -588,54 +598,118 @@
             </p>
         </div>
 
-        <!-- Comparison Table -->
-        <div style="overflow-x: auto; background: #FFFFFF; border-radius: 12px; padding: 40px; border: 1px solid #E5E5E7; border-left: 2px solid #1A365D;">
-            <table style="width: 100%; border-collapse: collapse; font-size: 14px; color: var(--text-secondary);">
-                <thead>
-                    <tr style="border-bottom: 2px solid #D4AF37;">
-                        <th style="padding: 14px 16px; text-align: left; font-family: 'Urbanist', sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted);">Parameter</th>
-                        <th style="padding: 14px 16px; text-align: center; font-family: 'Urbanist', sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--accent-gold);">XIHE Graphene</th>
-                        <th style="padding: 14px 16px; text-align: center; font-family: 'Urbanist', sans-serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-muted);">Conventional Heating</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr style="border-bottom: 1px solid #E5E5E7;">
-                        <td style="padding: 14px 16px; font-weight: 500; color: var(--text-primary);">Heating Mechanism</td>
-                        <td style="padding: 14px 16px; text-align: center; color: var(--accent-gold);">Far-infrared resonance</td>
-                        <td style="padding: 14px 16px; text-align: center; color: var(--text-muted);">Convection / conduction</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #E5E5E7;">
-                        <td style="padding: 14px 16px; font-weight: 500; color: var(--text-primary);">Electrothermal Efficiency</td>
-                        <td style="padding: 14px 16px; text-align: center; color: var(--accent-gold);">99.8%</td>
-                        <td style="padding: 14px 16px; text-align: center; color: var(--text-muted);">60–75%</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #E5E5E7;">
-                        <td style="padding: 14px 16px; font-weight: 500; color: var(--text-primary);">Spectral Emissivity</td>
-                        <td style="padding: 14px 16px; text-align: center; color: var(--accent-gold);">≥0.88 (peak 0.95)</td>
-                        <td style="padding: 14px 16px; text-align: center; color: var(--text-muted);">0.40–0.70</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #E5E5E7;">
-                        <td style="padding: 14px 16px; font-weight: 500; color: var(--text-primary);">Tissue Penetration</td>
-                        <td style="padding: 14px 16px; text-align: center; color: var(--accent-gold);">3–5 cm deep</td>
-                        <td style="padding: 14px 16px; text-align: center; color: var(--text-muted);">Surface only</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #E5E5E7;">
-                        <td style="padding: 14px 16px; font-weight: 500; color: var(--text-primary);">Heat Distribution</td>
-                        <td style="padding: 14px 16px; text-align: center; color: var(--accent-gold);">Uniform across surface</td>
-                        <td style="padding: 14px 16px; text-align: center; color: var(--text-muted);">Hot spots / uneven</td>
-                    </tr>
-                    <tr style="border-bottom: 1px solid #E5E5E7;">
-                        <td style="padding: 14px 16px; font-weight: 500; color: var(--text-primary);">Thermal Stability</td>
-                        <td style="padding: 14px 16px; text-align: center; color: var(--accent-gold);">±0.1°C (10,000+ hrs)</td>
-                        <td style="padding: 14px 16px; text-align: center; color: var(--text-muted);">±2–5°C (drifts over time)</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 14px 16px; font-weight: 500; color: var(--text-primary);">EMF Radiation</td>
-                        <td style="padding: 14px 16px; text-align: center; color: var(--accent-gold);">0.08 μT (near-zero)</td>
-                        <td style="padding: 14px 16px; text-align: center; color: var(--text-muted);">10–20 μT typical</td>
-                    </tr>
-                </tbody>
-            </table>
+        <!-- Mechanism of Action: Penetration Depth Comparison -->
+        <div style="margin-bottom: 50px; padding: 40px 36px; background: #FFFFFF; border-radius: 12px; border: 1px solid #E5E5E7; border-left: 2px solid #C5A059;">
+            <p style="font-family: 'Urbanist', sans-serif; font-size: 10px; letter-spacing: 3px; color: var(--accent-gold); text-transform: uppercase; margin-bottom: 28px; text-align: center;">Mechanism of Action — Penetration Depth</p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+                <!-- Conventional -->
+                <div style="text-align: center;">
+                    <div style="position: relative; height: 180px; background: #F5F3F0; border-radius: 8px; overflow: hidden; margin-bottom: 16px; display: flex; align-items: flex-end;">
+                        <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 11px; color: #888; letter-spacing: 1px; text-transform: uppercase;">Skin Surface</span>
+                        </div>
+                        <!-- Surface heat zone (very thin) -->
+                        <div style="width: 100%; height: 8%; background: linear-gradient(180deg, #D4AF37 0%, rgba(212,175,55,0.1) 100%); transition: height 0.5s;"></div>
+                        <div style="position: absolute; top: 14%; width: 100%; text-align: center;">
+                            <span style="display: inline-block; background: rgba(0,0,0,0.6); color: #fff; font-size: 9px; padding: 2px 10px; border-radius: 4px; letter-spacing: 1px;">~1mm</span>
+                        </div>
+                    </div>
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 12px; font-weight: 500; color: var(--text-muted); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px;">Conventional Thermal Conduction</p>
+                    <p style="font-size: 12px; color: var(--text-muted); line-height: 1.6;">Surface-level heating only. Energy dissipates as superficial warmth — no cellular engagement.</p>
+                </div>
+                <!-- XIHE -->
+                <div style="text-align: center;">
+                    <div style="position: relative; height: 180px; background: #1A3348; border-radius: 8px; overflow: hidden; margin-bottom: 16px; display: flex; align-items: flex-end;">
+                        <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;">
+                            <span style="font-size: 11px; color: rgba(255,255,255,0.3); letter-spacing: 1px; text-transform: uppercase;">Skin Surface</span>
+                        </div>
+                        <!-- Deep penetration zone -->
+                        <div style="width: 100%; height: 65%; background: linear-gradient(180deg, rgba(197,160,89,0.6) 0%, rgba(197,160,89,0.1) 60%, transparent 100%);"></div>
+                        <!-- Pulsing resonance indicator -->
+                        <div style="position: absolute; top: 10%; left: 50%; transform: translateX(-50%); width: 60%; height: 2px; background: rgba(197,160,89,0.3); box-shadow: 0 0 12px rgba(197,160,89,0.3);"></div>
+                        <div style="position: absolute; bottom: 8%; width: 100%; text-align: center;">
+                            <span style="display: inline-block; background: var(--accent-gold); color: #1A3348; font-size: 9px; padding: 2px 10px; border-radius: 4px; letter-spacing: 1px; font-weight: 600;">3–5cm</span>
+                        </div>
+                    </div>
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 12px; font-weight: 500; color: var(--accent-gold); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px;">XIHE Molecular Resonance</p>
+                    <p style="font-size: 12px; color: var(--text-secondary); line-height: 1.6;">Deep-tissue far-infrared resonance penetrates 3–5cm — activating cellular ATP synthesis and microcirculation.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comparison Bars -->
+        <div style="background: #FFFFFF; border-radius: 12px; padding: 40px; border: 1px solid #E5E5E7; border-left: 2px solid #1A365D; display: flex; flex-direction: column; gap: 14px;">
+
+            <!-- Mechanism of Action — qualitative -->
+            <div style="display: grid; grid-template-columns: 170px 1fr; gap: 20px; align-items: center; padding: 14px 0; border-bottom: 1px solid #F3F4F6;">
+                <p style="font-family: 'Urbanist', sans-serif; font-size: 12px; font-weight: 500; color: var(--text-primary);">Mechanism</p>
+                <div style="display: flex; gap: 12px; align-items: center;">
+                    <span style="background: rgba(197,160,89,0.1); color: var(--accent-gold); font-size: 11px; padding: 4px 12px; border-radius: 20px; font-weight: 500;">XIHE: Molecular Resonance · 3–5cm deep</span>
+                    <span style="font-size: 10px; color: #9CA3AF;">vs</span>
+                    <span style="background: #F3F4F6; color: #9CA3AF; font-size: 11px; padding: 4px 12px; border-radius: 20px;">Conventional: Thermal Conduction · ~1mm surface</span>
+                </div>
+            </div>
+
+            <!-- Electrothermal Efficiency -->
+            <div style="display: grid; grid-template-columns: 170px 1fr; gap: 20px; align-items: center; padding: 14px 0; border-bottom: 1px solid #F3F4F6;">
+                <p style="font-family: 'Urbanist', sans-serif; font-size: 12px; font-weight: 500; color: var(--text-primary);">Efficiency</p>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <div style="flex: 1; height: 26px; background: #F3F4F6; border-radius: 6px; position: relative; overflow: hidden;">
+                        <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 68%; background: rgba(156,163,175,0.3); border-radius: 6px 0 0 6px; display: flex; align-items: center; padding-left: 10px;">
+                            <span style="font-size: 10px; color: #9CA3AF;">Conventional 60–75%</span>
+                        </div>
+                        <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 99.8%; background: linear-gradient(90deg, rgba(197,160,89,0.7), rgba(197,160,89,0.9)); border-radius: 6px; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px;">
+                            <span style="font-size: 11px; color: #1A3348; font-weight: 600;">XIHE 99.8%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spectral Emissivity -->
+            <div style="display: grid; grid-template-columns: 170px 1fr; gap: 20px; align-items: center; padding: 14px 0; border-bottom: 1px solid #F3F4F6;">
+                <p style="font-family: 'Urbanist', sans-serif; font-size: 12px; font-weight: 500; color: var(--text-primary);">Emissivity</p>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <div style="flex: 1; height: 26px; background: #F3F4F6; border-radius: 6px; position: relative; overflow: hidden;">
+                        <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 55%; background: rgba(156,163,175,0.3); border-radius: 6px 0 0 6px; display: flex; align-items: center; padding-left: 10px;">
+                            <span style="font-size: 10px; color: #9CA3AF;">Conventional 0.40–0.70</span>
+                        </div>
+                        <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 92%; background: linear-gradient(90deg, rgba(197,160,89,0.7), rgba(197,160,89,0.9)); border-radius: 6px; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px;">
+                            <span style="font-size: 11px; color: #1A3348; font-weight: 600;">XIHE ≥0.88 (peak 0.95)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tissue Penetration — qualitative -->
+            <div style="display: grid; grid-template-columns: 170px 1fr; gap: 20px; align-items: center; padding: 14px 0; border-bottom: 1px solid #F3F4F6;">
+                <p style="font-family: 'Urbanist', sans-serif; font-size: 12px; font-weight: 500; color: var(--text-primary);">Penetration</p>
+                <div style="display: flex; gap: 12px; align-items: center;">
+                    <span style="background: rgba(197,160,89,0.1); color: var(--accent-gold); font-size: 11px; padding: 4px 12px; border-radius: 20px; font-weight: 500;">XIHE: 3–5 cm deep tissue</span>
+                    <span style="font-size: 10px; color: #9CA3AF;">vs</span>
+                    <span style="background: #F3F4F6; color: #9CA3AF; font-size: 11px; padding: 4px 12px; border-radius: 20px;">Conventional: Surface only</span>
+                </div>
+            </div>
+
+            <!-- Thermal Stability -->
+            <div style="display: grid; grid-template-columns: 170px 1fr; gap: 20px; align-items: center; padding: 14px 0; border-bottom: 1px solid #F3F4F6;">
+                <p style="font-family: 'Urbanist', sans-serif; font-size: 12px; font-weight: 500; color: var(--text-primary);">Stability</p>
+                <div style="display: flex; gap: 12px; align-items: center;">
+                    <span style="background: rgba(197,160,89,0.1); color: var(--accent-gold); font-size: 11px; padding: 4px 12px; border-radius: 20px; font-weight: 500;">XIHE: ±0.1°C · 10,000+ hrs</span>
+                    <span style="font-size: 10px; color: #9CA3AF;">vs</span>
+                    <span style="background: #F3F4F6; color: #9CA3AF; font-size: 11px; padding: 4px 12px; border-radius: 20px;">Conventional: ±2–5°C · drifts</span>
+                </div>
+            </div>
+
+            <!-- EMF -->
+            <div style="display: grid; grid-template-columns: 170px 1fr; gap: 20px; align-items: center; padding: 14px 0;">
+                <p style="font-family: 'Urbanist', sans-serif; font-size: 12px; font-weight: 500; color: var(--text-primary);">EMF Safety</p>
+                <div style="display: flex; gap: 12px; align-items: center;">
+                    <span style="background: rgba(197,160,89,0.1); color: var(--accent-gold); font-size: 11px; padding: 4px 12px; border-radius: 20px; font-weight: 500;">XIHE: 0.08 μT · near-zero</span>
+                    <span style="font-size: 10px; color: #9CA3AF;">vs</span>
+                    <span style="background: #F3F4F6; color: #9CA3AF; font-size: 11px; padding: 4px 12px; border-radius: 20px;">Conventional: 10–20 μT</span>
+                </div>
+            </div>
+
         </div>
         <p style="font-size: 11px; color: var(--text-muted); text-align: center; margin-top: 28px; font-style: italic;">
             Data sourced from National Infrared Center test reports and independent third-party validation.
@@ -704,7 +778,7 @@
 
 <!-- Footer -->
 <footer class="xihe-footer">
-    <p>&copy; 2024 XIHE Technology. All rights reserved.</p>
+    <p>XIHE Technology — Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard 2024-0923T-YB</p>
 </footer>
 
 <script>

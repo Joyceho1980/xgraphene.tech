@@ -1,0 +1,242 @@
+backend:
+  name: github
+  repo: Joyceho1980/xgraphene.tech
+  branch: main
+  base_url: https://xgraphene.tech
+  auth_endpoint: /api/auth
+
+media_folder: "PICTURE"
+public_folder: "/PICTURE"
+site_url: https://xgraphene.tech
+display_url: https://xgraphene.tech
+logo_url: https://xgraphene.tech/PICTURE/XIHE_ICON.svg
+
+locale: en
+
+collections:
+  - name: settings
+    label: "Site Settings"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: general
+        label: "General Settings"
+        file: "data/settings.json"
+        fields:
+          - {label: "Site Title", name: title, widget: string, default: "XIHE GLOBAL — Returning Technology to the Frequency of Life"}
+          - {label: "Meta Description", name: description, widget: text, default: "XIHE engineers precise biophysical resonance technology. 9.4μm far-infrared wavelength, 0.98 emissivity, powered by IKKEM and Academician Zheng Nanfeng's team."}
+          - {label: "Contact Email", name: email, widget: string, default: "Joyce@xgraphene.tech"}
+          - {label: "Contact Phone", name: phone, widget: string, default: "+86 186 8868 3865"}
+          - {label: "Address Locality", name: locality, widget: string, default: "Xiamen"}
+          - {label: "Address Country", name: country, widget: string, default: "CN"}
+
+  - name: homepage
+    label: "Homepage"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: hero
+        label: "Hero Section"
+        file: "data/homepage/hero.json"
+        fields:
+          - {label: "Source Tag", name: source_tag, widget: string, default: "Technology Source: Jiageng Innovation Laboratory (IKKEM)"}
+          - {label: "Brand Name", name: brand_name, widget: string, default: "XIHE"}
+          - {label: "Headline Line 1", name: headline_1, widget: string, default: "Returning Technology to the"}
+          - {label: "Headline Gold Text", name: headline_gold, widget: string, default: "Frequency of Life"}
+          - {label: "Subtitle", name: subtitle, widget: string, default: "Not Heat. Resonance."}
+          - {label: "Param Line", name: param_line, widget: string, default: "9.4μm Precision FIR · Lab-Grade Photobiomodulation"}
+          - {label: "CTA Primary Text", name: cta_primary, widget: string, default: "Explore Clinical Partnerships"}
+          - {label: "CTA Primary Link", name: cta_primary_link, widget: string, default: "/CONTACT/"}
+          - {label: "CTA Secondary Text", name: cta_secondary, widget: string, default: "See the Science →"}
+          - {label: "CTA Secondary Link", name: cta_secondary_link, widget: string, default: "/SCIENCE/Technology.html"}
+      - name: truths
+        label: "Three Truths Section"
+        file: "data/homepage/truths.json"
+        fields:
+          - {label: "Section Tag", name: section_tag, widget: string, default: "Three Truths"}
+          - label: "Truth 01 — Water Resonance"
+            name: truth_01
+            widget: object
+            fields:
+              - {label: "Headline", name: headline, widget: string, default: "Everything Has a Frequency"}
+              - {label: "Sub-headline", name: subheadline, widget: string, default: "Precision resonance matching between water molecules and graphene lattice"}
+              - {label: "Lead-in", name: leadin, widget: string, default: "Not heating. Dialogue."}
+              - {label: "Body", name: body, widget: text}
+              - {label: "CTA Text", name: cta_text, widget: string, default: "Learn the Resonance Principle →"}
+              - {label: "CTA Link", name: cta_link, widget: string, default: "/SCIENCE/Technology.html"}
+              - {label: "Image Caption", name: image_caption, widget: string, default: "Co-Resonance · Water-Graphene Interface"}
+          - label: "Truth 02 — The Band of Life"
+            name: truth_02
+            widget: object
+            fields:
+              - {label: "Headline Part 1", name: headline_1, widget: string, default: "5–15μm"}
+              - {label: "Headline Part 2", name: headline_2, widget: string, default: "is the Band of Life's Light"}
+              - {label: "Body", name: body, widget: text}
+              - {label: "CTA Text", name: cta_text, widget: string, default: "See Applications →"}
+              - {label: "CTA Link", name: cta_link, widget: string, default: "/applications.html"}
+          - label: "Truth 03 — Energy Intervention"
+            name: truth_03
+            widget: object
+            fields:
+              - {label: "Headline", name: headline, widget: string, default: "Energy Intervention."}
+              - {label: "Body", name: body, widget: text}
+              - {label: "Highlight Box", name: highlight_box, widget: text}
+              - {label: "CTA Text", name: cta_text, widget: string, default: "View Resonance Products →"}
+              - {label: "CTA Link", name: cta_link, widget: string, default: "/PRODUCTS/ProductPage.html"}
+              - {label: "Image Caption", name: image_caption, widget: string, default: "Mitochondrial Resonance · ATP Synthesis"}
+      - name: about_brand
+        label: "About / Brand Section"
+        file: "data/homepage/about.json"
+        fields:
+          - {label: "Section Tag", name: section_tag, widget: string, default: "About XIHE"}
+          - {label: "Headline Line 1", name: headline_1, widget: string, default: "We Don't Sell Products."}
+          - {label: "Headline Gold", name: headline_gold, widget: string, default: "We Set Standards."}
+          - {label: "Body", name: body, widget: text}
+          - label: "Button 1"
+            name: btn_1
+            widget: object
+            fields:
+              - {label: "Text", name: text, widget: string, default: "IKKEM Alliance"}
+              - {label: "Link", name: link, widget: string, default: "/ABOUT/AboutOrigin.html"}
+          - label: "Button 2"
+            name: btn_2
+            widget: object
+            fields:
+              - {label: "Text", name: text, widget: string, default: "Defining Standards"}
+              - {label: "Link", name: link, widget: string, default: "/ABOUT/AboutMission.html"}
+          - label: "Button 3"
+            name: btn_3
+            widget: object
+            fields:
+              - {label: "Text", name: text, widget: string, default: "Biological Protocol"}
+              - {label: "Link", name: link, widget: string, default: "/ABOUT/AboutPhilosophy.html"}
+      - name: solutions
+        label: "Solutions Grid (4 Cards)"
+        file: "data/homepage/solutions.json"
+        fields:
+          - {label: "Section Tag", name: section_tag, widget: string, default: "How We Help"}
+          - {label: "Headline Part 1", name: headline_1, widget: string, default: "From Published Data"}
+          - {label: "Headline Gold", name: headline_gold, widget: string, default: "to What You Can Feel."}
+          - {label: "Subtitle", name: subtitle, widget: string, default: "Four RCT-validated solutions for the health concerns you care about most."}
+          - label: "Cards"
+            name: cards
+            widget: list
+            fields:
+              - {label: "Title", name: title, widget: string}
+              - {label: "Description", name: desc, widget: text}
+              - {label: "CTA Text", name: cta, widget: string}
+              - {label: "CTA Link", name: link, widget: string}
+      - name: products
+        label: "Product Showcase"
+        file: "data/homepage/products.json"
+        fields:
+          - {label: "Section Tag", name: section_tag, widget: string, default: "Full Product Line"}
+          - label: "Products"
+            name: items
+            widget: list
+            fields:
+              - {label: "Tag", name: tag, widget: string}
+              - {label: "Title", name: title, widget: string}
+              - {label: "Description", name: desc, widget: string}
+              - {label: "Image", name: image, widget: image}
+              - {label: "Link", name: link, widget: string}
+          - {label: "Bottom CTA Text", name: bottom_cta, widget: string, default: "Browse Full Product Line →"}
+          - {label: "Bottom CTA Link", name: bottom_cta_link, widget: string, default: "/PRODUCTS/ProductPage.html"}
+      - name: credibility
+        label: "Credibility / Data Section"
+        file: "data/homepage/credibility.json"
+        fields:
+          - {label: "Section Tag", name: section_tag, widget: string, default: "Numbers Don't Lie."}
+          - {label: "Headline Line 1", name: headline_1, widget: string, default: "Not Marketing Concepts,"}
+          - {label: "Headline Line 2", name: headline_2, widget: string, default: "Measured Results."}
+          - label: "Data Cards"
+            name: cards
+            widget: list
+            fields:
+              - {label: "Number", name: number, widget: string}
+              - {label: "Unit", name: unit, widget: string}
+              - {label: "Description", name: desc, widget: text}
+              - {label: "Link", name: link, widget: string}
+      - name: journal
+        label: "Journal / Blog Section"
+        file: "data/homepage/journal.json"
+        fields:
+          - {label: "Section Tag", name: section_tag, widget: string, default: "XIHE Journal"}
+          - {label: "Headline Line 1", name: headline_1, widget: string, default: "From Taoist Philosophy"}
+          - {label: "Headline Gold", name: headline_gold, widget: string, default: "to Cellular Microscopy"}
+          - {label: "Description", name: desc, widget: text}
+          - {label: "CTA Text", name: cta, widget: string, default: "Enter Journal Library →"}
+          - {label: "CTA Link", name: cta_link, widget: string, default: "/NEWS/index.html"}
+      - name: final_cta
+        label: "Bottom CTA Section"
+        file: "data/homepage/cta.json"
+        fields:
+          - {label: "Headline Line 1", name: headline_1, widget: string, default: "Your Body Already Knows"}
+          - {label: "Headline Gold", name: headline_gold, widget: string, default: "How to Heal."}
+          - {label: "Description", name: desc, widget: text}
+          - {label: "CTA Text", name: cta_text, widget: string, default: "Schedule Technical Exchange →"}
+          - {label: "CTA Link", name: cta_link, widget: string, default: "/CONTACT/"}
+          - label: "Footer Nav Links"
+            name: footer_links
+            widget: list
+            fields:
+              - {label: "Text", name: text, widget: string}
+              - {label: "Link", name: link, widget: string}
+
+  - name: pages
+    label: "Pages"
+    files:
+      - name: about_origin
+        label: "About — Origin"
+        file: "data/pages/about-origin.json"
+        fields:
+          - {label: "Page Title", name: title, widget: string, default: "About XIHE — Origin"}
+          - {label: "Content Sections", name: sections, widget: list, fields: [{label: "Title", name: title, widget: string}, {label: "Body", name: body, widget: text}, {label: "Image", name: image, widget: image, required: false}]}
+      - name: contact
+        label: "Contact Page"
+        file: "data/pages/contact.json"
+        fields:
+          - {label: "Page Title", name: title, widget: string, default: "Contact XIHE"}
+          - {label: "Subtitle", name: subtitle, widget: text, default: "Partner with XIHE. Access lab-grade FIR technology backed by IKKEM."}
+          - {label: "Form Recipient Email", name: recipient_email, widget: string, default: "Joyce@xgraphene.tech"}
+      - name: partnership
+        label: "Partnership Page"
+        file: "data/pages/partnership.json"
+        fields:
+          - {label: "Page Title", name: title, widget: string, default: "Partnership — XIHE Technology"}
+          - {label: "Content Sections", name: sections, widget: list, fields: [{label: "Title", name: title, widget: string}, {label: "Body", name: body, widget: text}]}
+
+  - name: applications
+    label: "Applications"
+    delete: false
+    files:
+      - name: applications_page
+        label: "Applications Page"
+        file: "data/applications.json"
+        fields:
+          - {label: "Page Title", name: title, widget: string, default: "Applications"}
+          - {label: "Subtitle", name: subtitle, widget: text}
+          - label: "Domains"
+            name: domains
+            widget: list
+            fields:
+              - {label: "Name", name: name, widget: string}
+              - {label: "Icon", name: icon, widget: string}
+              - {label: "Description", name: desc, widget: text}
+              - {label: "Link", name: link, widget: string}
+
+  - name: news
+    label: "News & Journal"
+    folder: "NEWS"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: true
+    fields:
+      - {label: "Title", name: title, widget: string}
+      - {label: "Publish Date", name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false}
+      - {label: "Featured Image", name: image, widget: image, required: false}
+      - {label: "Summary", name: summary, widget: text}
+      - {label: "Body", name: body, widget: markdown}
