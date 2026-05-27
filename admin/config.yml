@@ -2,14 +2,14 @@ backend:
   name: github
   repo: Joyceho1980/xgraphene.tech
   branch: main
-  base_url: https://xgraphene.tech
+  base_url: https://www.xgraphene.tech
   auth_endpoint: /api/auth
 
 media_folder: "PICTURE"
 public_folder: "/PICTURE"
-site_url: https://xgraphene.tech
-display_url: https://xgraphene.tech
-logo_url: https://xgraphene.tech/PICTURE/XIHE_ICON.svg
+site_url: https://www.xgraphene.tech
+display_url: https://www.xgraphene.tech
+logo_url: https://www.xgraphene.tech/PICTURE/XIHE_ICON.svg
 
 locale: en
 
