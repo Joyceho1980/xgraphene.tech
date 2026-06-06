@@ -36,12 +36,13 @@
         .subnav a:hover::after, .subnav a.hl::after { transform: scaleX(1); }
         .subnav a.hl { color: var(--t); font-weight: 600; }
 
-        .hero { padding: 140px 10% 80px; text-align: center; background: url('/PICTURE/knowledge-hero.jpg') center/cover; position: relative; overflow: hidden; }
-        .hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(26,51,72,0.8) 0%, rgba(26,51,72,0.6) 100%); z-index: 1; }
-        .hero-tag { font-family: 'Urbanist', sans-serif; font-size: 10px; letter-spacing: 5px; color: var(--g); text-transform: uppercase; margin-bottom: 16px; position: relative; z-index: 2; }
-        .hero h1 { font-family: 'Urbanist', sans-serif; font-size: 48px; font-weight: 200; color: #FFF; letter-spacing: 3px; line-height: 1.2; margin-bottom: 16px; position: relative; z-index: 2; }
-        .hero h1 span { display: block; font-size: 18px; color: var(--g); font-weight: 300; margin-top: 8px; letter-spacing: 1px; }
-        .hero p { font-size: 15px; color: rgba(255,255,255,0.65); max-width: 620px; margin: 0 auto; position: relative; line-height: 1.8; z-index: 2; }
+        .hero { padding: 172px 10% 80px; text-align: left; background: url('/PICTURE/knowledge-hero.jpg') center/cover; position: relative; display: flex; align-items: center; }
+        .hero-content { max-width: 640px; }
+        .breadcrumb { font-size: 11px; color: var(--g); margin-bottom: 20px; letter-spacing: 1px; }
+        .breadcrumb a { color: var(--g); text-decoration: none; }
+        .hero h1 { font-family: 'Urbanist', sans-serif; font-size: 48px; font-weight: 200; color: #FFF; letter-spacing: 2px; line-height: 1.2; margin-bottom: 12px; }
+        .hero h1 span { display: block; font-size: 20px; color: var(--g); font-weight: 300; margin-top: 8px; letter-spacing: 1px; }
+        .hero p { font-size: 16px; color: rgba(255,255,255,0.7); line-height: 1.8; max-width: 560px; }
 
         section { padding: 80px 10%; }
 
@@ -75,9 +76,11 @@
 </nav>
 
 <header class="hero">
-    <div class="hero-tag">Layer 04 &middot; Knowledge Hub</div>
-    <h1>Ten interconnected hubs.<br><span>From mitochondria to the questions you actually ask.</span></h1>
-    <p>A structured knowledge architecture — every answer linked to published research with DOIs, PubMed IDs, and evidence levels. No claims. Just science.</p>
+    <div class="hero-content">
+        <p class="breadcrumb"><a href="/">Home</a> &rsaquo; Knowledge Hub</p>
+        <h1>Knowledge Hub<span>Ten Interconnected Science Centers</span></h1>
+        <p>A structured knowledge architecture — every answer linked to published research with DOIs, PubMed IDs, and evidence levels. No claims. Just science.</p>
+    </div>
 </header>
 
 <div class="subnav">
