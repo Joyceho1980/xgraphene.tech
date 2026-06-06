@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html translate="no">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate" />
   <title>XIHE — Content Manager</title>
-  <script src="https://unpkg.com/decap-cms@3.1.10/dist/decap-cms.js"></script>
 </head>
 <body>
+  <script src="/admin/decap-cms.js"></script>
   <script>
-    var CMS_CONFIG = {
-      backend: {
-        name: 'github',
-        repo: 'Joyceho1980/xgraphene.tech',
-        branch: 'main',
-        base_url: 'https://www.xgraphene.tech',
-        auth_endpoint: '/api/auth'
-      },
-      media_folder: 'PICTURE',
-      public_folder: '/PICTURE',
-      site_url: 'https://www.xgraphene.tech',
-      display_url: 'https://www.xgraphene.tech',
-      logo_url: 'https://www.xgraphene.tech/PICTURE/XIHE_ICON.svg',
-      locale: 'en',
-      load_config_file: false
-    };
-
-    CMS.init({ config: CMS_CONFIG });
+    CMS.init({
+      config: {
+        backend: {
+          name: 'github',
+          repo: 'Joyceho1980/xgraphene.tech',
+          branch: 'main',
+          base_url: 'https://www.xgraphene.tech',
+          auth_endpoint: '/api/auth'
+        },
+        media_folder: 'PICTURE',
+        public_folder: '/PICTURE',
+        site_url: 'https://www.xgraphene.tech',
+        display_url: 'https://www.xgraphene.tech',
+        logo_url: 'https://www.xgraphene.tech/PICTURE/XIHE_ICON.svg',
+        locale: 'en',
+        load_config_file: true
+      }
+    });
   </script>
 </body>
 </html>
