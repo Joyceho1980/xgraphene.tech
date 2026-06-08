@@ -10,7 +10,7 @@
     <link rel="canonical" href="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Recovery/">
     <meta property="og:title" content="Recovery Science | XIHE Knowledge Hub">
     <meta property="og:description" content="The science behind recovery: tissue repair, inflammation resolution, and cellular regeneration processes.">
-    <meta property="og:image" content="https://www.xgraphene.tech/PICTURE/xihe-og.jpg">
+    <meta property="og:image" content="https://www.xgraphene.tech/PICTURE/xihe-og.webp">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="original-source" content="https://www.xgraphene.tech">
@@ -38,7 +38,8 @@
         .hub-nav .sep { width: 1px; height: 16px; background: var(--b); flex-shrink: 0; margin: 0 4px; }
 
         .hero {
-            background: url('/PICTURE/recovery-hero.jpg') center/cover;
+            background: url('/VISUAL-LIBRARY/Recovery%20Hero.webp') center/cover;
+            min-height: 85vh;
             padding: 172px 10% 80px;
             text-align: left;
             position: relative;
@@ -46,10 +47,7 @@
             align-items: center;
         }
         .hero::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to right, rgba(26,51,72,0.75) 0%, rgba(26,51,72,0.2) 100%);
+            content: none;
             z-index: 1;
         }
         .hero-content { position: relative; z-index: 2; max-width: 640px; }
@@ -63,59 +61,59 @@
         .explore-title { font-family: 'Urbanist', sans-serif; font-size: 32px; font-weight: 200; text-align: center; margin-bottom: 48px; color: var(--n); letter-spacing: 2px; }
 
         .card-list { display: flex; flex-direction: column; gap: 24px; }
-        .card { 
-            display: grid; 
-            grid-template-columns: 100px 1fr 280px; 
-            gap: 32px; 
-            align-items: center; 
-            padding: 36px 40px; 
-            background: #FFF; 
-            border: 1px solid var(--b); 
-            text-decoration: none; 
-            transition: all .25s; 
+        .card {
+            display: grid;
+            grid-template-columns: 100px 1fr 280px;
+            gap: 32px;
+            align-items: center;
+            padding: 36px 40px;
+            background: #FFF;
+            border: 1px solid var(--b);
+            text-decoration: none;
+            transition: all .25s;
             position: relative;
         }
-        .card:hover { 
-            border-color: var(--g); 
+        .card:hover {
+            border-color: var(--g);
             box-shadow: 0 8px 32px rgba(197,160,89,0.08);
             transform: translateY(-2px);
         }
         .card:hover .card-arrow { opacity: 1; right: 24px; }
 
-        .card-icon { 
-            width: 90px; 
-            height: 90px; 
-            background: linear-gradient(135deg, #F8F6F3 0%, #EFEBE5 100%); 
-            border-radius: 50%; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
+        .card-icon {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(135deg, #F8F6F3 0%, #EFEBE5 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             flex-shrink: 0;
         }
         .card-icon svg { width: 44px; height: 44px; stroke: var(--s); stroke-width: 1.5; fill: none; }
 
         .card-body { }
         .card-body h3 { font-family: 'Urbanist', sans-serif; font-size: 22px; font-weight: 400; color: var(--t); margin-bottom: 8px; display: flex; align-items: center; gap: 12px; }
-        .tag { 
-            display: inline-block; 
-            font-size: 9px; 
-            padding: 3px 12px; 
-            letter-spacing: 1.5px; 
-            text-transform: uppercase; 
+        .tag {
+            display: inline-block;
+            font-size: 9px;
+            padding: 3px 12px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
             font-weight: 600;
             border-radius: 50px;
         }
         .tag.live { background: #E8F5E9; color: #2D6A4F; }
         .tag.planned { background: #F5F5F5; color: var(--m); }
-        
+
         .card-body p { font-size: 14px; color: var(--s); line-height: 1.7; margin: 10px 0 8px; }
         .card-links { font-size: 11px; color: var(--m); letter-spacing: 0.5px; }
         .card-links b { color: var(--g); font-weight: 600; }
 
-        .card-img { 
-            width: 260px; 
-            height: 160px; 
-            object-fit: cover; 
+        .card-img {
+            width: 260px;
+            height: 160px;
+            object-fit: cover;
             border-radius: 8px;
             opacity: 0.95;
         }
@@ -132,54 +130,54 @@
         }
 
         .about { max-width: 1100px; margin: 0 auto; padding: 48px 24px 72px; }
-        .about-card { 
-            display: grid; 
-            grid-template-columns: 70px 1fr; 
-            gap: 28px; 
-            padding: 40px; 
-            background: #FAF8F5; 
+        .about-card {
+            display: grid;
+            grid-template-columns: 70px 1fr;
+            gap: 28px;
+            padding: 40px;
+            background: #FAF8F5;
             border-left: 3px solid var(--n);
         }
-        .about-icon { 
-            width: 70px; 
-            height: 70px; 
-            background: var(--n); 
-            border-radius: 50%; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
+        .about-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--n);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             flex-shrink: 0;
         }
         .about-icon svg { width: 32px; height: 32px; stroke: #FFF; stroke-width: 2; fill: none; }
         .about-text h3 { font-family: 'Urbanist', sans-serif; font-size: 22px; font-weight: 400; color: var(--t); margin-bottom: 12px; }
         .about-text p { font-size: 14px; color: var(--s); line-height: 1.8; margin-bottom: 16px; }
-        .disclaimer { 
-            font-size: 11px; 
-            color: var(--m); 
-            padding: 16px 20px; 
-            background: #FFF; 
-            border: 1px solid var(--b); 
+        .disclaimer {
+            font-size: 11px;
+            color: var(--m);
+            padding: 16px 20px;
+            background: #FFF;
+            border: 1px solid var(--b);
             border-radius: 6px;
             line-height: 1.6;
         }
 
-        footer { padding: 40px 10%; background: var(--n); text-align: center; border-top: 2px solid var(--g); } 
+        footer { padding: 40px 10%; background: var(--n); text-align: center; border-top: 2px solid var(--g); }
         footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
 
-        @media (max-width: 900px) { 
+        @media (max-width: 900px) {
             .card { grid-template-columns: 80px 1fr; padding: 28px 24px; }
             .card-img { display: none; }
             .hero { padding: 152px 5% 64px; }
             .hero h1 { font-size: 36px; }
         }
-        @media (max-width: 600px) { 
-            nav { padding: 0 5%; } 
-            .nl { gap: 12px; overflow-x: auto; } 
-            .nl a { font-size: 9px; } 
-            .hub-nav { justify-content: flex-start; padding: 0 5%; gap: 2px; } 
-            .hub-nav a { font-size: 9px; padding: 6px 8px; } 
-            .hub-nav .sep { display: none; } 
-            .hero { padding: 140px 5% 56px; } 
+        @media (max-width: 600px) {
+            nav { padding: 0 5%; }
+            .nl { gap: 12px; overflow-x: auto; }
+            .nl a { font-size: 9px; }
+            .hub-nav { justify-content: flex-start; padding: 0 5%; gap: 2px; }
+            .hub-nav a { font-size: 9px; padding: 6px 8px; }
+            .hub-nav .sep { display: none; }
+            .hero { padding: 140px 5% 56px; }
             .hero h1 { font-size: 28px; }
             .card { grid-template-columns: 1fr; text-align: center; }
             .card-icon { margin: 0 auto; }
@@ -187,6 +185,38 @@
             .about-icon { margin: 0 auto; }
         }
     </style>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.xgraphene.tech/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Science",
+            "item": "https://www.xgraphene.tech/SCIENCE/Landing.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Recovery",
+            "item": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Recovery/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Recovery Science",
+            "item": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Recovery/"
+        }
+    ]
+}
+    </script>
 </head>
 <body>
 <nav>
@@ -221,62 +251,89 @@
         <p>Recovery is an active process. From mitochondrial repair to inflammation resolution, this hub explores how the body rebuilds after physical or mental stress — and what science says about supporting these processes.</p>
     </div>
 </header>
+<section style="background:#FAF8F5;padding:48px 10%;border-bottom:1px solid #E5E5E7;">
+    <div style="max-width:800px;margin:0 auto;">
+        <p style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin-bottom:12px;">Quick Answer</p>
+        <h2 style="font-family:'Urbanist',sans-serif;font-size:24px;font-weight:400;color:#1A3348;margin-bottom:12px;line-height:1.3;">What is recovery?</h2>
+        <p style="font-size:16px;color:#475569;line-height:1.8;max-width:700px;">Recovery is the biological process by which the body repairs damage, restores energy reserves, and adapts to stress at the cellular level. Effective recovery depends on mitochondrial ATP production, protein synthesis for tissue repair, hormone regulation, and clearance of metabolic waste products. When recovery is incomplete — due to insufficient sleep, chronic stress, or metabolic dysfunction — cellular damage accumulates, leading to fatigue, inflammation, and performance decline. This hub explores the science of cellular recovery.</p>
+    </div>
+</section>
+
+<section style="background:#FFF;padding:40px 10%;">
+    <div style="max-width:800px;margin:0 auto;">
+        <p style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin-bottom:12px;">Why This Matters</p>
+        <p style="font-size:15px;color:#475569;line-height:1.8;">Recovery is where health is built. Every training adaptation, every wound healed, every infection cleared depends on cellular energy availability.</p>
+    </div>
+</section>
+
 
 <section class="explore">
     <h2 class="explore-title">Explore This Hub</h2>
-    
     <div class="card-list">
-        <div class="card" style="opacity: 0.85;">
-            <div class="card-arrow">→</div>
-            <div class="card-icon">
-                <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-            </div>
-            <div class="card-body">
-                <h3>Mitochondrial recovery mechanisms <span class="tag live">LIVE</span></h3>
-                <p>How mitochondria repair themselves after exercise or stress. Quality control systems: mitophagy, biogenesis, and fusion-fission dynamics.</p>
-                <p class="card-links">Links to: <b>H1 (Mitochondria)</b>, <b>H2 (Cellular Energy)</b></p>
-            </div>
-            <img src="https://picsum.photos/seed/mito-recovery/520/320" alt="Mitochondrial Recovery" class="card-img">
-        </div>
+        <div class="card" style="opacity:0.7;">
+    <div class="card-arrow">→</div>
+    <div class="card-icon">
+        <svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+    </div>
+    <div class="card-body">
+        <h3>Why Recovery Matters <span class="tag planned">PLANNED</span></h3>
+        <p>Recovery is where health is built. Every adaptation — from muscle growth to immune memory — happens during recovery, not during stress.</p>
+        <p class="card-links">Links to: <b>H10 (Recovery)</b>, <b>H4 (Fatigue)</b></p>
+    </div>
+    <img src="https://picsum.photos/seed/recovery-matters/520/320" alt="Why Recovery Matters" class="card-img">
+</div>
 
-        <div class="card" style="opacity: 0.85;">
-            <div class="card-arrow">→</div>
-            <div class="card-icon">
-                <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-            </div>
-            <div class="card-body">
-                <h3>Inflammation resolution <span class="tag live">LIVE</span></h3>
-                <p>The active process of turning off inflammation. Pro-resolving mediators, macrophage phenotype switching, and why incomplete resolution leads to chronic issues.</p>
-                <p class="card-links">Links to: <b>H6 (Inflammation)</b>, <b>H5 (Oxidative Stress)</b></p>
-            </div>
-            <img src="https://picsum.photos/seed/inflammation-resolution/520/320" alt="Inflammation Resolution" class="card-img">
-        </div>
+<div class="card" style="opacity:0.7;">
+    <div class="card-arrow">→</div>
+    <div class="card-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+    </div>
+    <div class="card-body">
+        <h3>Cellular Recovery Explained <span class="tag planned">PLANNED</span></h3>
+        <p>From membrane repair to protein synthesis to mitochondrial biogenesis — the step-by-step biology of how cells rebuild after stress.</p>
+        <p class="card-links">Links to: <b>H10 (Recovery)</b>, <b>H2 (Mitochondria)</b>, <b>H3 (ATP)</b></p>
+    </div>
+    <img src="https://picsum.photos/seed/cellular-recovery/520/320" alt="Cellular Recovery" class="card-img">
+</div>
 
-        <div class="card" style="opacity: 0.85;">
-            <div class="card-arrow">→</div>
-            <div class="card-icon">
-                <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-            </div>
-            <div class="card-body">
-                <h3>Sleep and recovery connection <span class="tag live">LIVE</span></h3>
-                <p>Why sleep is critical for recovery. Growth hormone release, glymphatic system clearance, and memory consolidation during deep sleep phases.</p>
-                <p class="card-links">Links to: <b>H3 (Sleep)</b>, <b>H4 (Fatigue)</b></p>
-            </div>
-            <img src="https://picsum.photos/seed/sleep-recovery/520/320" alt="Sleep Recovery" class="card-img">
-        </div>
+<div class="card" style="opacity:0.7;">
+    <div class="card-arrow">→</div>
+    <div class="card-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6M23 12h-6m-6 0H1"/><circle cx="12" cy="12" r="10"/></svg>
+    </div>
+    <div class="card-body">
+        <h3>Recovery and ATP <span class="tag planned">PLANNED</span></h3>
+        <p>ATP powers every step of recovery — from protein synthesis and DNA repair to the active transport of nutrients and waste products.</p>
+        <p class="card-links">Links to: <b>H3 (ATP)</b>, <b>H10 (Recovery)</b></p>
+    </div>
+    <img src="https://picsum.photos/seed/recovery-atp/520/320" alt="Recovery & ATP" class="card-img">
+</div>
 
-        <div class="card" style="opacity: 0.7;">
-            <div class="card-arrow">→</div>
-            <div class="card-icon">
-                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            </div>
-            <div class="card-body">
-                <h3>Circadian rhythms and recovery timing <span class="tag planned">PLANNED</span></h3>
-                <p>When to train, when to recover. Chronobiology insights on optimal recovery windows based on your body clock.</p>
-                <p class="card-links">Links to: <b>H3 (Sleep)</b>, <b>H7 (Metabolism)</b></p>
-            </div>
-            <img src="https://picsum.photos/seed/circadian-recovery/520/320" alt="Coming Soon" class="card-img">
-        </div>
+<div class="card" style="opacity:0.7;">
+    <div class="card-arrow">→</div>
+    <div class="card-icon">
+        <svg viewBox="0 0 24 24"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5l6.74-6.76z"/></svg>
+    </div>
+    <div class="card-body">
+        <h3>Recovery and Sleep <span class="tag planned">PLANNED</span></h3>
+        <p>Sleep is the body's most powerful recovery tool. Growth hormone, cellular repair, and ATP restoration all peak during deep sleep.</p>
+        <p class="card-links">Links to: <b>H3 (Sleep)</b>, <b>H10 (Recovery)</b></p>
+    </div>
+    <img src="https://picsum.photos/seed/recovery-sleep/520/320" alt="Recovery & Sleep" class="card-img">
+</div>
+
+<div class="card" style="opacity:0.7;">
+    <div class="card-arrow">→</div>
+    <div class="card-icon">
+        <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+    </div>
+    <div class="card-body">
+        <h3>Recovery and Microcirculation <span class="tag planned">PLANNED</span></h3>
+        <p>How blood flow and nutrient delivery through the microcirculation network powers tissue repair and accelerates recovery.</p>
+        <p class="card-links">Links to: <b>H5 (Microcirculation)</b>, <b>H10 (Recovery)</b></p>
+    </div>
+    <img src="https://picsum.photos/seed/recovery-micro/520/320" alt="Recovery & Microcirculation" class="card-img">
+</div>
     </div>
 </section>
 
@@ -287,16 +344,116 @@
         </div>
         <div class="about-text">
             <h3>About This Hub</h3>
-            <p>Recovery is not passive — it's an active biological process involving multiple interconnected systems. This hub explores the science of how the body repairs, restores, and adapts after stress.</p>
+            <p>Recovery is an active biological process, not passive rest. This hub curates scientific insights on cellular repair mechanisms, mitochondrial restoration, inflammation resolution, and the research connecting recovery quality to energy, performance, and healthy aging.</p>
             <div class="disclaimer">
-                <strong>Disclaimer:</strong> This content is for scientific reference only and does not constitute medical advice, diagnosis, or treatment.
+                <strong>Disclaimer:</strong> This content is for scientific reference only and does not constitute medical advice, diagnosis, or treatment. Preclinical findings cannot be directly extrapolated to human physiology.
             </div>
         </div>
     </div>
 </section>
 
-<footer>
-    <p>XIHE Technology — Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard 2024-0923T-YB</p>
+<section style="background:#FFF;padding:40px 10% 80px;">
+    <div style="max-width:800px;margin:0 auto;">
+        <h3 style="font-family:'Urbanist',sans-serif;font-size:14px;letter-spacing:2px;color:#1A3348;text-transform:uppercase;margin-bottom:20px;">Related Hubs</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;">
+            <a href="/SCIENCE/KNOWLEDGE/Sleep/" style="padding:12px 24px;background:#1A3348;border:1px solid rgba(255,255,255,0.1);border-radius:50px;color:#E0E6ED;font-family:Urbanist,sans-serif;font-size:11px;letter-spacing:1px;text-decoration:none;transition:all .25s;">Sleep &amp; Recovery</a>
+<a href="/SCIENCE/KNOWLEDGE/Fatigue/" style="padding:12px 24px;background:#1A3348;border:1px solid rgba(255,255,255,0.1);border-radius:50px;color:#E0E6ED;font-family:Urbanist,sans-serif;font-size:11px;letter-spacing:1px;text-decoration:none;transition:all .25s;">Chronic Fatigue</a>
+<a href="/SCIENCE/KNOWLEDGE/Mitochondria/" style="padding:12px 24px;background:#1A3348;border:1px solid rgba(255,255,255,0.1);border-radius:50px;color:#E0E6ED;font-family:Urbanist,sans-serif;font-size:11px;letter-spacing:1px;text-decoration:none;transition:all .25s;">Mitochondrial Health</a>
+<a href="/SCIENCE/KNOWLEDGE/Microcirculation/" style="padding:12px 24px;background:#1A3348;border:1px solid rgba(255,255,255,0.1);border-radius:50px;color:#E0E6ED;font-family:Urbanist,sans-serif;font-size:11px;letter-spacing:1px;text-decoration:none;transition:all .25s;">Microcirculation Science</a>
+
+        </div>
+    </div>
+</section>
+
+<section style="background:#FFF;padding:64px 10%;">
+    <div style="max-width:800px;margin:0 auto;">
+        <h3 style="font-family:'Urbanist',sans-serif;font-size:28px;font-weight:200;color:#1A3348;letter-spacing:2px;text-align:center;margin-bottom:40px;">Frequently Asked Questions</h3>
+
+        <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
+            <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">How does the body recover at the cellular level?</h4>
+            <p style="font-size:14px;color:#475569;line-height:1.7;">Cellular recovery involves DNA repair, protein synthesis, mitochondrial biogenesis, and clearance of damaged cellular components through autophagy and mitophagy.</p>
+        </div>
+
+        <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
+            <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">Why does recovery slow with age?</h4>
+            <p style="font-size:14px;color:#475569;line-height:1.7;">Aging is associated with reduced mitochondrial efficiency, slower protein turnover, decreased hormone levels, and impaired cellular cleanup mechanisms — all of which extend recovery time.</p>
+        </div>
+
+        <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
+            <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">What role does ATP play in recovery?</h4>
+            <p style="font-size:14px;color:#475569;line-height:1.7;">ATP powers every step of the recovery process — from protein synthesis and membrane repair to the active transport of nutrients and waste products across cell membranes.</p>
+        </div>
+
+        <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
+            <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">How can recovery be accelerated?</h4>
+            <p style="font-size:14px;color:#475569;line-height:1.7;">Research supports sleep optimization, proper nutrition timing, hydration, active recovery movement, and technologies that support microcirculation as strategies to enhance recovery.</p>
+        </div>
+
+        <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
+            <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">What happens when recovery is incomplete?</h4>
+            <p style="font-size:14px;color:#475569;line-height:1.7;">Incomplete recovery leads to accumulated cellular damage, chronic inflammation, hormonal dysregulation, increased injury risk, and progressive decline in physical and cognitive performance.</p>
+        </div>
+
+    </div>
+</section>
+
+<section style="background:#FAF8F5;padding:40px 10%;border-top:1px solid #E5E5E7;">
+    <div style="max-width:800px;margin:0 auto;">
+        <p style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:2px;color:#94A3B8;text-transform:uppercase;margin-bottom:12px;">Scientific Disclaimer</p>
+        <p style="font-size:12px;color:#94A3B8;line-height:1.8;">This hub is for scientific education and informational purposes only. The content reflects published research and current scientific understanding. It does not constitute medical advice, diagnosis, or treatment recommendations. Preclinical and mechanistic findings cannot be directly extrapolated to clinical outcomes in individual cases. Always consult qualified healthcare professionals for personal health decisions.</p>
+    </div>
+</section>
 </footer>
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How does the body recover at the cellular level?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cellular recovery involves DNA repair, protein synthesis, mitochondrial biogenesis, and clearance of damaged cellular components through autophagy and mitophagy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does recovery slow with age?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aging is associated with reduced mitochondrial efficiency, slower protein turnover, decreased hormone levels, and impaired cellular cleanup mechanisms — all of which extend recovery time."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What role does ATP play in recovery?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ATP powers every step of the recovery process — from protein synthesis and membrane repair to the active transport of nutrients and waste products across cell membranes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can recovery be accelerated?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Research supports sleep optimization, proper nutrition timing, hydration, active recovery movement, and technologies that support microcirculation as strategies to enhance recovery."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens when recovery is incomplete?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Incomplete recovery leads to accumulated cellular damage, chronic inflammation, hormonal dysregulation, increased injury risk, and progressive decline in physical and cognitive performance."
+      }
+    }
+  ]
+}
+</script>
 </body>
 </html>

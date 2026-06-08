@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google" content="notranslate">
-    <title>Knowledge Hub | XIHE — 10 Interconnected Science Hubs</title>
+    <title>Knowledge Hub | XIHE — 15 Interconnected Science Hubs</title>
     <link rel="icon" type="image/svg+xml" href="/PICTURE/XIHE_ICON.svg">
-    <meta name="description" content="XIHE Knowledge Hub: 10 interconnected knowledge centers covering mitochondrial health, cellular energy, fatigue, recovery, sleep, and inflammation — backed by published research.">
+    <meta name="description" content="XIHE Knowledge Hub: 15 interconnected knowledge centers covering mitochondrial health, cellular energy, fatigue, recovery, sleep, inflammation, bioenergetics, and more — backed by published research.">
     <link rel="canonical" href="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/">
     <meta property="og:title" content="Knowledge Hub | XIHE Science Platform">
     <meta property="og:description" content="10 interconnected science hubs. Evidence-based answers about cellular energy, mitochondrial health, fatigue, recovery, and more.">
@@ -48,13 +48,14 @@
 
         .hubs-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 56px 48px; max-width: 800px; margin: 0 auto; }
 
-        .knowledge-card { display: block; position: relative; overflow: hidden; text-decoration: none; transition: opacity .2s; min-height: 170px; background-size: cover; background-position: center; }
+        .knowledge-card { display: block; position: relative; overflow: visible; text-decoration: none; transition: opacity .2s; min-height: 190px; background-size: cover; background-position: center; }
         .knowledge-card:hover { opacity: 0.92; }
         .hub-left { position: absolute; top: 0; left: 0; bottom: 0; width: 50%; padding: 24px; display: flex; flex-direction: column; justify-content: center; }
         .hub-left h3 { font-family: 'Urbanist', sans-serif; font-size: 19px; font-weight: 500; color: var(--t); margin-bottom: 6px; }
         .hub-left h3 span { font-size: 11px; color: var(--m); font-weight: 400; margin-left: 6px; }
         .hub-left p { font-size: 13px; color: var(--s); line-height: 1.6; margin-bottom: 12px; }
-        .hub-left .cta { font-size: 11px; font-family: 'Urbanist', sans-serif; letter-spacing: 1.5px; text-transform: uppercase; color: var(--g); font-weight: 500; }
+        .hub-left .cta { display: inline-block; font-size: 10px; font-family: 'Urbanist', sans-serif; letter-spacing: 2px; text-transform: uppercase; color: #FFF; font-weight: 500; background: #1A3348; padding: 10px 20px; border-radius: 50px; margin-top: 8px; transition: all .25s; }
+        .knowledge-card:hover .cta { background: #C5A059; color: #1A3348; }
 
         section.alt { background: #FFF; }
 
@@ -64,6 +65,32 @@
         @media (max-width: 768px) { .hubs-grid { grid-template-columns: 1fr; } }
         @media (max-width: 600px) { nav { padding: 0 5%; } .nl { gap: 10px; overflow-x: auto; } .nl a { font-size: 9px; } .hero { padding: 120px 5% 60px; } .hero h1 { font-size: 30px; } .subnav { overflow-x: auto; justify-content: flex-start; padding: 0 5%; } section { padding: 48px 5%; } }
     </style>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.xgraphene.tech/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Science",
+            "item": "https://www.xgraphene.tech/SCIENCE/Landing.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Knowledge Hub",
+            "item": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/"
+        }
+    ]
+}
+    </script>
 </head>
 <body>
 
@@ -78,7 +105,7 @@
 <header class="hero">
     <div class="hero-content">
         <p class="breadcrumb"><a href="/">Home</a> &rsaquo; Knowledge Hub</p>
-        <h1>Knowledge Hub<span>Ten Interconnected Science Centers</span></h1>
+        <h1>Knowledge Hub<span>Fifteen Interconnected Science Centers</span></h1>
         <p>A structured knowledge architecture — every answer linked to published research with DOIs, PubMed IDs, and evidence levels. No claims. Just science.</p>
     </div>
 </header>
@@ -165,6 +192,19 @@
     </div>
 </section>
 
+<section style="background:#FAF8F5;padding:24px 10% 60px;">
+    <div style="max-width:880px;margin:0 auto;">
+        <h3 style="font-family:'Urbanist',sans-serif;font-size:14px;letter-spacing:2px;color:#1A3348;text-transform:uppercase;margin-bottom:20px;">Extended Hubs</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;">
+            <a href="/SCIENCE/KNOWLEDGE/bioenergetics/" style="padding:12px 24px;background:#1A3348;border:1px solid rgba(255,255,255,0.1);border-radius:50px;color:#E0E6ED;font-family:Urbanist,sans-serif;font-size:11px;letter-spacing:1px;text-decoration:none;transition:all .25s;">Bioenergetics</a>
+            <a href="/SCIENCE/KNOWLEDGE/Clinical-Evidence/" style="padding:12px 24px;background:#1A3348;border:1px solid rgba(255,255,255,0.1);border-radius:50px;color:#E0E6ED;font-family:Urbanist,sans-serif;font-size:11px;letter-spacing:1px;text-decoration:none;transition:all .25s;">Clinical Evidence</a>
+            <a href="/SCIENCE/KNOWLEDGE/Research-Library/" style="padding:12px 24px;background:#1A3348;border:1px solid rgba(255,255,255,0.1);border-radius:50px;color:#E0E6ED;font-family:Urbanist,sans-serif;font-size:11px;letter-spacing:1px;text-decoration:none;transition:all .25s;">Research Library</a>
+            <a href="/SCIENCE/KNOWLEDGE/Technology-Platform/" style="padding:12px 24px;background:#1A3348;border:1px solid rgba(255,255,255,0.1);border-radius:50px;color:#E0E6ED;font-family:Urbanist,sans-serif;font-size:11px;letter-spacing:1px;text-decoration:none;transition:all .25s;">Technology Platform</a>
+            <a href="/SCIENCE/KNOWLEDGE/oxidative-stress/" style="padding:12px 24px;background:#1A3348;border:1px solid rgba(255,255,255,0.1);border-radius:50px;color:#E0E6ED;font-family:Urbanist,sans-serif;font-size:11px;letter-spacing:1px;text-decoration:none;transition:all .25s;">Oxidative Stress</a>
+        </div>
+    </div>
+</section>
+
 <section style="background:#FFF;padding:20px 10% 80px;">
     <div style="max-width:880px;margin:0 auto;display:flex;align-items:center;gap:24px;">
         <div style="flex-shrink:0;width:56px;height:56px;display:flex;align-items:center;justify-content:center;">
@@ -174,7 +214,7 @@
             <h3 style="font-family:'Urbanist',sans-serif;font-size:18px;font-weight:500;color:var(--t);margin-bottom:4px;">Transparent. Traceable. Trustworthy.</h3>
             <p style="font-size:14px;color:var(--s);line-height:1.7;margin:0;">All articles are linked to original sources with DOIs, PubMed IDs, and study information so you can verify the science yourself.</p>
         </div>
-        <a href="/SCIENCE/Landing.html" style="flex-shrink:0;display:inline-block;padding:12px 28px;font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;color:#FFF;background:var(--n);transition:all .2s;">VIEW ALL 10 TOPIC HUBS &rarr;</a>
+        <a href="/SCIENCE/Landing.html" style="flex-shrink:0;display:inline-block;padding:12px 28px;font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;color:#FFF;background:var(--n);transition:all .2s;">VIEW ALL 15 TOPIC HUBS &rarr;</a>
     </div>
 </section>
 
