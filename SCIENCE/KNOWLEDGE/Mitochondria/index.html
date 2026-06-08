@@ -436,28 +436,49 @@
             border-top: 1px solid var(--line);
         }
 
-        .hub-cards {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 18px;
+        .card-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
             margin-top: 24px;
         }
-        .hub-card {
+        .card {
             display: grid;
-            grid-template-columns: 76px 1fr 210px;
-            gap: 18px;
-            align-items: stretch;
-            text-decoration: none;
-            background: var(--card);
+            grid-template-columns: 100px 1fr 280px;
+            gap: 32px;
+            align-items: center;
+            padding: 36px 40px;
+            background: #FFF;
             border: 1px solid var(--line);
-            border-radius: 10px;
-            padding: 18px;
-            transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+            text-decoration: none;
+            transition: all .25s;
+            position: relative;
+            border-radius: 0;
         }
-        .hub-card:hover {
-            transform: translateY(-2px);
+        .card:hover {
             border-color: rgba(197, 160, 89, 0.55);
-            box-shadow: 0 12px 32px rgba(26, 29, 36, 0.06);
+            box-shadow: 0 8px 32px rgba(197,160,89,0.08);
+            transform: translateY(-2px);
+        }
+        .card:hover .card-arrow { opacity: 1; right: 24px; }
+
+        .card-img {
+            width: 260px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            opacity: 0.95;
+        }
+
+        .card-arrow {
+            position: absolute;
+            right: 32px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 28px;
+            color: var(--gold);
+            opacity: 0;
+            transition: all .25s;
         }
         .card-icon {
             width: 76px;
@@ -514,40 +535,6 @@
             font-size: 11px;
             color: var(--muted);
             letter-spacing: 0.3px;
-        }
-        .card-preview {
-            border-radius: 8px;
-            overflow: hidden;
-            background: #F8F6F3;
-            border: 1px solid var(--line);
-            display: flex;
-            align-items: stretch;
-            justify-content: stretch;
-        }
-        .card-preview img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-        .card-preview.note {
-            background: linear-gradient(180deg, #FAF8F5 0%, #F4EFE7 100%);
-            padding: 16px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        .card-preview.note strong {
-            font-size: 12px;
-            letter-spacing: 1.6px;
-            text-transform: uppercase;
-            color: var(--gold);
-            margin-bottom: 8px;
-        }
-        .card-preview.note p {
-            font-size: 13px;
-            color: var(--subtext);
-            margin: 0;
         }
 
         .faq {
@@ -632,14 +619,14 @@
         }
 
         @media (max-width: 1100px) {
-            .hub-card { grid-template-columns: 76px 1fr; }
-            .card-preview { grid-column: 1 / -1; min-height: 140px; }
+            .card { grid-template-columns: 80px 1fr; padding: 28px 24px; }
+            .card-img { display: none; }
         }
         @media (max-width: 900px) {
             .hero { padding: 156px 5% 70px; }
             .hero h1 { font-size: 38px; }
             .section { padding-left: 5%; padding-right: 5%; }
-            .note-grid, .faq, .hub-cards { grid-template-columns: 1fr; }
+            .note-grid, .faq { grid-template-columns: 1fr; }
             nav { padding: 0 5%; }
         }
         @media (max-width: 600px) {
@@ -650,8 +637,8 @@
             .hub-nav .sep { display: none; }
             .hero { min-height: auto; padding: 138px 5% 56px; }
             .hero h1 { font-size: 28px; }
-            .hub-card { grid-template-columns: 1fr; }
-            .card-icon { margin-bottom: 2px; }
+            .card { grid-template-columns: 1fr; text-align: center; }
+            .card-icon { margin: 0 auto; }
         }
     </style>
 </head>
@@ -749,144 +736,124 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section card-band">
         <div class="section-inner">
             <span class="eyebrow">Explore This Hub</span>
             <h2>Live pages and next priorities.</h2>
-            <p>Live cards point to current pages already on the site. Planned cards show the next content to build so the hub can grow into a stronger knowledge graph.</p>
 
-            <div class="subsection">
-                <h3>Live now</h3>
-                <div class="hub-cards">
-                    <a class="hub-card" href="/SCIENCE/KNOWLEDGE/Mitochondria/what-is-mitochondrial-health.html">
-                        <div class="card-icon">
-                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-meta"><span class="pill live">Live now</span><span class="pill">Foundation</span></div>
-                            <h3>What Are Mitochondria?</h3>
-                            <p>A plain-language foundation for what mitochondria do, why ATP matters, and why high-energy tissues are sensitive to energy problems.</p>
-                            <div class="card-links">Links to: Cellular Energy, ATP, Bioenergetics, Metabolism</div>
-                        </div>
-                        <div class="card-preview">
-                            <img src="/PICTURE/hub-mitochondria.jpg" alt="Mitochondria visual">
-                        </div>
-                    </a>
+            <div class="card-list">
+                <!-- LIVE CARDS -->
+                <a href="/SCIENCE/KNOWLEDGE/Mitochondria/what-is-mitochondrial-health.html" class="card">
+                    <div class="card-arrow">→</div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta"><span class="pill live">Live now</span><span class="pill">Foundation</span></div>
+                        <h3>What Are Mitochondria?</h3>
+                        <p>A plain-language foundation for what mitochondria do, why ATP matters, and why high-energy tissues are sensitive to energy problems.</p>
+                        <div class="card-links">Links to: Cellular Energy, ATP, Bioenergetics, Metabolism</div>
+                    </div>
+                    <img class="card-img" src="/PICTURE/hub-mitochondria.jpg" alt="Mitochondria visual" loading="lazy">
+                </a>
 
-                    <a class="hub-card" href="/SCIENCE/KNOWLEDGE/Mitochondria/mitochondrial-function-recovery.html">
-                        <div class="card-icon">
-                            <svg viewBox="0 0 24 24"><path d="M4 12h16"></path><path d="M12 4l8 8-8 8"></path></svg>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-meta"><span class="pill live">Live now</span><span class="pill">Recovery</span></div>
-                            <h3>How Do Mitochondria Support Recovery?</h3>
-                            <p>Explains ATP, sleep, repair, inflammation resolution, and why recovery is an active biological process.</p>
-                            <div class="card-links">Links to: Recovery, Sleep, Inflammation, Microcirculation</div>
-                        </div>
-                        <div class="card-preview">
-                            <img src="/PICTURE/research-cards/mitochondria-atp-production.png" alt="ATP production chart">
-                        </div>
-                    </a>
+                <a href="/SCIENCE/KNOWLEDGE/Mitochondria/mitochondrial-function-recovery.html" class="card">
+                    <div class="card-arrow">→</div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M4 12h16"></path><path d="M12 4l8 8-8 8"></path></svg>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta"><span class="pill live">Live now</span><span class="pill">Recovery</span></div>
+                        <h3>How Do Mitochondria Support Recovery?</h3>
+                        <p>Explains ATP, sleep, repair, inflammation resolution, and why recovery is an active biological process.</p>
+                        <div class="card-links">Links to: Recovery, Sleep, Inflammation, Microcirculation</div>
+                    </div>
+                    <img class="card-img" src="/PICTURE/research-cards/mitochondria-atp-production.png" alt="ATP production chart" loading="lazy">
+                </a>
 
-                    <a class="hub-card" href="/SCIENCE/KNOWLEDGE/Mitochondria/mitochondrial-function-far-infrared.html">
-                        <div class="card-icon">
-                            <svg viewBox="0 0 24 24"><path d="M4 16c4-8 12-8 16 0"></path><path d="M6 12c3-5 9-5 12 0"></path></svg>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-meta"><span class="pill live">Live now</span><span class="pill">Research</span></div>
-                            <h3>Does Far-Infrared Affect Mitochondria?</h3>
-                            <p>A cautious review of far-infrared research with attention to circulation, comfort, and cellular response, not cure claims.</p>
-                            <div class="card-links">Links to: Graphene FIR, Microcirculation, Recovery</div>
-                        </div>
-                        <div class="card-preview">
-                            <img src="/PICTURE/hub-cards/Mitochondrial.png" alt="Mitochondria research visual">
-                        </div>
-                    </a>
+                <a href="/SCIENCE/KNOWLEDGE/Mitochondria/mitochondrial-function-far-infrared.html" class="card">
+                    <div class="card-arrow">→</div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M4 16c4-8 12-8 16 0"></path><path d="M6 12c3-5 9-5 12 0"></path></svg>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta"><span class="pill live">Live now</span><span class="pill">Research</span></div>
+                        <h3>Does Far-Infrared Affect Mitochondria?</h3>
+                        <p>A cautious review of far-infrared research with attention to circulation, comfort, and cellular response, not cure claims.</p>
+                        <div class="card-links">Links to: Graphene FIR, Microcirculation, Recovery</div>
+                    </div>
+                    <img class="card-img" src="/PICTURE/hub-cards/Mitochondrial.png" alt="Mitochondria research visual" loading="lazy">
+                </a>
 
-                    <a class="hub-card" href="/SCIENCE/KNOWLEDGE/Mitochondria/atp-study.html">
-                        <div class="card-icon">
-                            <svg viewBox="0 0 24 24"><path d="M12 3v18"></path><path d="M5 8c2-2 5-3 7-3s5 1 7 3"></path><path d="M5 16c2 2 5 3 7 3s5-1 7-3"></path></svg>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-meta"><span class="pill live">Live now</span><span class="pill">Energy</span></div>
-                            <h3>ATP and Mitochondrial Energy</h3>
-                            <p>A compact article for readers who want the link between mitochondria, ATP, and the energy that powers cells.</p>
-                            <div class="card-links">Links to: Cellular Energy, Metabolism, Bioenergetics</div>
-                        </div>
-                        <div class="card-preview note">
-                            <strong>Core topic</strong>
-                            <p>Useful for readers who want the mechanism before the diagnosis discussion.</p>
-                        </div>
-                    </a>
+                <a href="/SCIENCE/KNOWLEDGE/Mitochondria/atp-study.html" class="card">
+                    <div class="card-arrow">→</div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 3v18"></path><path d="M5 8c2-2 5-3 7-3s5 1 7 3"></path><path d="M5 16c2 2 5 3 7 3s5-1 7-3"></path></svg>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta"><span class="pill live">Live now</span><span class="pill">Energy</span></div>
+                        <h3>ATP and Mitochondrial Energy</h3>
+                        <p>A compact article for readers who want the link between mitochondria, ATP, and the energy that powers cells.</p>
+                        <div class="card-links">Links to: Cellular Energy, Metabolism, Bioenergetics</div>
+                    </div>
+                    <img class="card-img" src="https://picsum.photos/seed/atp-energy-card/520/320" alt="ATP Energy" loading="lazy">
+                </a>
+
+                <!-- PLANNED CARDS -->
+                <div class="card" style="opacity: 0.7;">
+                    <div class="card-arrow">→</div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M12 4v16"></path></svg>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta"><span class="pill planned">Planned next</span><span class="pill">Priority</span></div>
+                        <h3>What Is the Difference Between Mitochondria and Mitochondrial Disease?</h3>
+                        <p>The most important confusion to fix: normal cell biology on one side, medical disorder on the other.</p>
+                        <div class="card-links">AI / GEO priority: very high</div>
+                    </div>
+                    <img class="card-img" src="https://picsum.photos/seed/mito-vs-disease/520/320" alt="Coming Soon" loading="lazy">
                 </div>
-            </div>
 
-            <div class="subsection">
-                <h3>Build next</h3>
-                <div class="hub-cards">
-                    <div class="hub-card">
-                        <div class="card-icon">
-                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M12 4v16"></path></svg>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-meta"><span class="pill planned">Planned next</span><span class="pill">Priority</span></div>
-                            <h3>What Is the Difference Between Mitochondria and Mitochondrial Disease?</h3>
-                            <p>The most important confusion to fix: normal cell biology on one side, medical disorder on the other.</p>
-                            <div class="card-links">AI / GEO priority: very high</div>
-                        </div>
-                        <div class="card-preview note">
-                            <strong>Next article</strong>
-                            <p>Essential for reducing the common error that "mitochondria" itself means disease.</p>
-                        </div>
+                <div class="card" style="opacity: 0.7;">
+                    <div class="card-arrow">→</div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M4 12h16"></path><path d="M8 8h8"></path><path d="M8 16h8"></path></svg>
                     </div>
+                    <div class="card-body">
+                        <div class="card-meta"><span class="pill planned">Planned next</span><span class="pill">Definition</span></div>
+                        <h3>What Is Mitochondrial Dysfunction?</h3>
+                        <p>A functional explanation of what happens when mitochondria do not work as efficiently as the cell needs.</p>
+                        <div class="card-links">AI / GEO priority: high</div>
+                    </div>
+                    <img class="card-img" src="https://picsum.photos/seed/mito-dysfunction/520/320" alt="Coming Soon" loading="lazy">
+                </div>
 
-                    <div class="hub-card">
-                        <div class="card-icon">
-                            <svg viewBox="0 0 24 24"><path d="M4 12h16"></path><path d="M8 8h8"></path><path d="M8 16h8"></path></svg>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-meta"><span class="pill planned">Planned next</span><span class="pill">Definition</span></div>
-                            <h3>What Is Mitochondrial Dysfunction?</h3>
-                            <p>A functional explanation of what happens when mitochondria do not work as efficiently as the cell needs.</p>
-                            <div class="card-links">AI / GEO priority: high</div>
-                        </div>
-                        <div class="card-preview note">
-                            <strong>Next article</strong>
-                            <p>Useful bridge between broad fatigue content and disease-specific content.</p>
-                        </div>
+                <div class="card" style="opacity: 0.7;">
+                    <div class="card-arrow">→</div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M6 18l6-12 6 12"></path><path d="M9 12h6"></path></svg>
                     </div>
+                    <div class="card-body">
+                        <div class="card-meta"><span class="pill planned">Planned next</span><span class="pill">Experience</span></div>
+                        <h3>What Does Mitochondrial Disease Feel Like?</h3>
+                        <p>A human-centered article on fatigue, poor recovery, weakness, and why the experience can vary so much.</p>
+                        <div class="card-links">AI / GEO priority: very high</div>
+                    </div>
+                    <img class="card-img" src="https://picsum.photos/seed/mito-feels-like/520/320" alt="Coming Soon" loading="lazy">
+                </div>
 
-                    <div class="hub-card">
-                        <div class="card-icon">
-                            <svg viewBox="0 0 24 24"><path d="M6 18l6-12 6 12"></path><path d="M9 12h6"></path></svg>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-meta"><span class="pill planned">Planned next</span><span class="pill">Experience</span></div>
-                            <h3>What Does Mitochondrial Disease Feel Like?</h3>
-                            <p>A human-centered article on fatigue, poor recovery, weakness, and why the experience can vary so much.</p>
-                            <div class="card-links">AI / GEO priority: very high</div>
-                        </div>
-                        <div class="card-preview note">
-                            <strong>Next article</strong>
-                            <p>Ideal for story-led openings and lived-experience framing.</p>
-                        </div>
+                <div class="card" style="opacity: 0.7;">
+                    <div class="card-arrow">→</div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M5 19V5h14v14"></path><path d="M8 9h8"></path><path d="M8 13h8"></path></svg>
                     </div>
-
-                    <div class="hub-card">
-                        <div class="card-icon">
-                            <svg viewBox="0 0 24 24"><path d="M5 19V5h14v14"></path><path d="M8 9h8"></path><path d="M8 13h8"></path></svg>
-                        </div>
-                        <div class="card-body">
-                            <div class="card-meta"><span class="pill planned">Planned next</span><span class="pill">Diagnosis</span></div>
-                            <h3>How Do You Find Out If You Have a Mitochondrial Disease?</h3>
-                            <p>Explains the evaluation path: symptoms, family history, specialist review, metabolic tests, and genetics.</p>
-                            <div class="card-links">AI / GEO priority: very high</div>
-                        </div>
-                        <div class="card-preview note">
-                            <strong>Next article</strong>
-                            <p>Important for readers trying to separate suspicion from diagnosis.</p>
-                        </div>
+                    <div class="card-body">
+                        <div class="card-meta"><span class="pill planned">Planned next</span><span class="pill">Diagnosis</span></div>
+                        <h3>How Do You Find Out If You Have a Mitochondrial Disease?</h3>
+                        <p>Explains the evaluation path: symptoms, family history, specialist review, metabolic tests, and genetics.</p>
+                        <div class="card-links">AI / GEO priority: very high</div>
                     </div>
+                    <img class="card-img" src="https://picsum.photos/seed/mito-diagnosis/520/320" alt="Coming Soon" loading="lazy">
                 </div>
             </div>
         </div>
