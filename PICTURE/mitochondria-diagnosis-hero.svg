@@ -1,0 +1,78 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">How to Find Out If You Have Mitochondrial Disease</title>
+  <desc id="desc">A diagnostic path illustration showing symptoms, specialist evaluation, testing, genetics, and sometimes tissue analysis.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFF7E9"/>
+      <stop offset="55%" stop-color="#F4F1ED"/>
+      <stop offset="100%" stop-color="#E8EFF7"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1A3348"/>
+      <stop offset="100%" stop-color="#0E1B26"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#0B1720" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="#F5F1EB"/>
+  <g filter="url(#shadow)">
+    <rect x="70" y="70" width="1460" height="760" rx="36" fill="#FFF"/>
+  </g>
+  <clipPath id="clip">
+    <rect x="70" y="70" width="1460" height="760" rx="36"/>
+  </clipPath>
+  <g clip-path="url(#clip)">
+    <rect x="70" y="70" width="1460" height="760" fill="url(#bg)"/>
+    <circle cx="226" cy="165" r="78" fill="#F7D77D" opacity="0.65"/>
+    <circle cx="1320" cy="180" r="92" fill="#5BB7F1" opacity="0.18"/>
+
+    <g transform="translate(160 250)">
+      <rect x="0" y="0" width="260" height="440" rx="28" fill="#FFF" stroke="#E5E5E7"/>
+      <text x="24" y="40" fill="#1A3348" font-family="Urbanist, Inter, Arial, sans-serif" font-size="24" font-weight="300" letter-spacing="1">Start with the pattern</text>
+      <rect x="24" y="74" width="212" height="62" rx="16" fill="#EDF7EF" stroke="#CDE7D1"/>
+      <rect x="24" y="150" width="212" height="62" rx="16" fill="#FFF6DF" stroke="#F1D58A"/>
+      <rect x="24" y="226" width="212" height="62" rx="16" fill="#FDEFEF" stroke="#F2B6B6"/>
+      <rect x="24" y="302" width="212" height="62" rx="16" fill="#EEF4FB" stroke="#C9D7E8"/>
+      <text x="46" y="111" fill="#2F6A4F" font-family="Inter, Arial, sans-serif" font-size="14">Symptoms</text>
+      <text x="46" y="187" fill="#8A6D2F" font-family="Inter, Arial, sans-serif" font-size="14">Family history</text>
+      <text x="46" y="263" fill="#A54A4A" font-family="Inter, Arial, sans-serif" font-size="14">Organ involvement</text>
+      <text x="46" y="339" fill="#1A3348" font-family="Inter, Arial, sans-serif" font-size="14">Specialist review</text>
+    </g>
+
+    <g transform="translate(520 280)">
+      <rect x="0" y="0" width="1040" height="370" rx="34" fill="url(#panel)"/>
+      <g transform="translate(84 74)">
+        <rect x="0" y="0" width="164" height="102" rx="20" fill="rgba(255,255,255,0.10)" stroke="rgba(197,160,89,0.28)"/>
+        <rect x="196" y="0" width="164" height="102" rx="20" fill="rgba(255,255,255,0.10)" stroke="rgba(197,160,89,0.28)"/>
+        <rect x="392" y="0" width="164" height="102" rx="20" fill="rgba(255,255,255,0.10)" stroke="rgba(197,160,89,0.28)"/>
+        <rect x="588" y="0" width="164" height="102" rx="20" fill="rgba(255,255,255,0.10)" stroke="rgba(197,160,89,0.28)"/>
+        <rect x="784" y="0" width="164" height="102" rx="20" fill="rgba(255,255,255,0.10)" stroke="rgba(197,160,89,0.28)"/>
+        <text x="82" y="42" text-anchor="middle" fill="#FFF" font-family="Urbanist, Inter, Arial, sans-serif" font-size="20" font-weight="300">Blood</text>
+        <text x="82" y="66" text-anchor="middle" fill="#C5A059" font-family="Inter, Arial, sans-serif" font-size="12">and urine</text>
+        <text x="278" y="42" text-anchor="middle" fill="#FFF" font-family="Urbanist, Inter, Arial, sans-serif" font-size="20" font-weight="300">Heart</text>
+        <text x="278" y="66" text-anchor="middle" fill="#C5A059" font-family="Inter, Arial, sans-serif" font-size="12">testing</text>
+        <text x="474" y="42" text-anchor="middle" fill="#FFF" font-family="Urbanist, Inter, Arial, sans-serif" font-size="20" font-weight="300">Hearing</text>
+        <text x="474" y="66" text-anchor="middle" fill="#C5A059" font-family="Inter, Arial, sans-serif" font-size="12">and vision</text>
+        <text x="670" y="42" text-anchor="middle" fill="#FFF" font-family="Urbanist, Inter, Arial, sans-serif" font-size="20" font-weight="300">Genetics</text>
+        <text x="670" y="66" text-anchor="middle" fill="#C5A059" font-family="Inter, Arial, sans-serif" font-size="12">testing</text>
+        <text x="866" y="42" text-anchor="middle" fill="#FFF" font-family="Urbanist, Inter, Arial, sans-serif" font-size="20" font-weight="300">Biopsy</text>
+        <text x="866" y="66" text-anchor="middle" fill="#C5A059" font-family="Inter, Arial, sans-serif" font-size="12">when needed</text>
+      </g>
+      <path d="M166 226H880" stroke="#C5A059" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 10"/>
+      <path d="M800 206L880 226L800 246" stroke="#C5A059" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <text x="520" y="274" text-anchor="middle" fill="#FFFFFF" font-family="Urbanist, Inter, Arial, sans-serif" font-size="28" font-weight="300" letter-spacing="1">
+        No single test answers everything
+      </text>
+      <text x="520" y="308" text-anchor="middle" fill="#D9E1EA" font-family="Inter, Arial, sans-serif" font-size="14">
+        diagnosis is built from patterns across symptoms, history, and specialist evaluation
+      </text>
+    </g>
+
+    <g transform="translate(1140 674)">
+      <rect x="0" y="0" width="290" height="92" rx="20" fill="#FFF" stroke="#E5E5E7"/>
+      <text x="18" y="36" fill="#1A3348" font-family="Urbanist, Inter, Arial, sans-serif" font-size="22" font-weight="300">Diagnosis Path</text>
+      <text x="18" y="61" fill="#6B7280" font-family="Inter, Arial, sans-serif" font-size="13">Start with the pattern, then test what it suggests.</text>
+    </g>
+  </g>
+</svg>

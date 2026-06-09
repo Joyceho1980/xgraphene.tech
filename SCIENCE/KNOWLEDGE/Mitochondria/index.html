@@ -53,7 +53,32 @@
         },
         {
           "@type": "Article",
-          "name": "ATP and Cellular Energy",
+          "name": "Are Mitochondria a Disease?",
+          "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/are-mitochondria-a-disease.html"
+        },
+        {
+          "@type": "Article",
+          "name": "What Is Mitochondrial Dysfunction?",
+          "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/what-is-mitochondrial-dysfunction.html"
+        },
+        {
+          "@type": "Article",
+          "name": "What Does Mitochondrial Disease Feel Like?",
+          "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/what-does-mitochondrial-disease-feel-like.html"
+        },
+        {
+          "@type": "Article",
+          "name": "How Do You Find Out If You Have a Mitochondrial Disease?",
+          "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/how-do-you-find-out-if-you-have-a-mitochondrial-disease.html"
+        },
+        {
+          "@type": "Article",
+          "name": "How Is Mitochondrial Disease Managed?",
+          "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/how-is-mitochondrial-disease-managed.html"
+        },
+        {
+          "@type": "Article",
+          "name": "ATP and Mitochondrial Energy",
           "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/atp-study.html"
         }
       ]
@@ -259,7 +284,10 @@
             padding: 0 10%;
             z-index: 999;
             overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
         }
+        .hub-nav::-webkit-scrollbar { display: none; }
         .hub-nav a {
             font-family: 'Urbanist', sans-serif;
             font-size: 11px;
@@ -341,127 +369,17 @@
             max-width: 620px;
         }
 
-        /* Concept Row */
-        .concept-row {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            max-width: 980px;
-            margin: -48px auto 0;
-            padding: 0 10%;
-            position: relative;
-            z-index: 2;
-        }
-        .concept-card {
-            background: #FFF;
-            border: 1px solid var(--line);
-            border-radius: 10px;
-            padding: 28px 22px;
-            text-align: center;
-            transition: transform .2s, box-shadow .2s;
-        }
-        .concept-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 28px rgba(26,29,36,0.06);
-        }
-        .concept-icon {
-            width: 48px;
-            height: 48px;
-            margin: 0 auto 14px;
-            background: linear-gradient(135deg, #F8F6F3, #EFEAE2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .concept-icon svg { width: 24px; height: 24px; stroke: var(--gold); stroke-width: 1.5; fill: none; }
-        .concept-card h4 {
-            font-family: 'Urbanist', sans-serif;
-            font-size: 15px;
-            font-weight: 500;
-            color: var(--nav);
-            margin-bottom: 6px;
-        }
-        .concept-card p {
-            font-size: 12px;
-            color: var(--muted);
-            line-height: 1.6;
-            margin: 0;
-        }
-
-        /* Callout box */
-        .callout {
-            background: #FFF;
-            border: 1px solid var(--line);
-            border-left: 4px solid var(--gold);
-            border-radius: 10px;
-            padding: 28px 30px;
-            margin-top: 20px;
-        }
-        .callout p { margin-bottom: 0; font-size: 15px; }
-        .callout-boundary {
-            background: #FFFBF5;
-            border: 1px solid rgba(197,160,89,0.2);
-            border-radius: 10px;
-            padding: 28px 30px;
-            margin-top: 20px;
-        }
-        .callout-boundary ul { margin: 0; padding-left: 18px; color: var(--subtext); font-size: 14px; }
-        .callout-boundary li { margin-bottom: 6px; }
-
-        /* Roadmap diagram */
-        .roadmap {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0;
-            flex-wrap: wrap;
-            margin: 32px 0;
-            font-size: 13px;
-        }
-        .roadmap-node {
-            background: var(--nav);
-            color: #FFF;
-            padding: 14px 22px;
-            border-radius: 8px;
-            font-family: 'Urbanist', sans-serif;
-            font-weight: 500;
-            font-size: 14px;
-            letter-spacing: 0.5px;
-            white-space: nowrap;
-        }
-        .roadmap-arrow {
-            color: var(--gold);
-            font-size: 22px;
-            margin: 0 12px;
-            font-weight: 300;
-        }
-        .roadmap-node.light {
-            background: #FFF;
-            color: var(--nav);
-            border: 1px solid var(--gold);
-        }
-
-        /* Section spacing */
-        .section { padding: 64px 10%; }
-        .section + .section { border-top: none; }
-        .section.card-band + .section { padding-top: 64px; }
-
-        .section {
-            padding: 52px 10%;
-        }
-        .section-inner {
-            max-width: 980px;
-            margin: 0 auto;
-        }
+        .section { padding: 52px 10%; }
+        .section-inner { max-width: 980px; margin: 0 auto; }
         .eyebrow {
-            display: inline-block;
+            display: block;
             font-family: 'Urbanist', sans-serif;
             font-size: 11px;
             letter-spacing: 3px;
             color: var(--gold);
             text-transform: uppercase;
             margin-bottom: 14px;
+            text-align: center;
         }
         .section h2 {
             font-family: 'Urbanist', sans-serif;
@@ -471,6 +389,7 @@
             letter-spacing: 1px;
             line-height: 1.25;
             margin-bottom: 18px;
+            text-align: center;
         }
         .section h3 {
             font-family: 'Urbanist', sans-serif;
@@ -485,62 +404,38 @@
             line-height: 1.85;
             margin-bottom: 14px;
         }
-        .card-band {
-            background: var(--bg);
-            border-top: 1px solid var(--line);
-            border-bottom: 1px solid var(--line);
-        }
-        .quick-answer {
-            background: var(--card);
-            border: 1px solid var(--line);
-            border-left: 4px solid var(--gold);
-            border-radius: 10px;
-            padding: 28px 30px;
-            box-shadow: 0 10px 32px rgba(26, 29, 36, 0.04);
-        }
-        .quick-answer p {
-            font-size: 16px;
-            color: var(--text);
-            margin-bottom: 0;
-        }
-        .note-grid {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 18px;
-            margin-top: 20px;
-        }
-        .note {
-            background: var(--card);
-            border: 1px solid var(--line);
-            border-radius: 8px;
-            padding: 22px 24px;
-        }
-        .note strong {
-            display: block;
-            font-size: 14px;
-            color: var(--nav);
-            margin-bottom: 8px;
-        }
-        .note p {
-            margin-bottom: 0;
-            font-size: 14px;
-        }
-        .bullets {
-            margin: 14px 0 0;
-            padding-left: 18px;
-            color: var(--subtext);
-        }
-        .bullets li { margin-bottom: 8px; }
 
         .subsection {
-            margin-top: 18px;
-            padding-top: 8px;
-        }
-        .subsection + .subsection {
-            margin-top: 28px;
-            padding-top: 20px;
+            margin-top: 48px;
+            padding-top: 40px;
             border-top: 1px solid var(--line);
         }
+
+        .explore { max-width: 1100px; margin: 0 auto; padding: 64px 24px 48px; }
+        .explore-title { font-family: 'Urbanist', sans-serif; font-size: 32px; font-weight: 200; text-align: center; margin-bottom: 48px; color: var(--nav); letter-spacing: 2px; }
+
+        .about { max-width: 1100px; margin: 0 auto; padding: 48px 24px 72px; }
+        .about-card {
+            display: grid;
+            grid-template-columns: 70px 1fr;
+            gap: 28px;
+            padding: 40px;
+            background: #FAF8F5;
+            border-left: 3px solid var(--nav);
+        }
+        .about-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--nav);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .about-icon svg { width: 32px; height: 32px; stroke: #FFF; stroke-width: 2; fill: none; }
+        .about-text h3 { font-family: 'Urbanist', sans-serif; font-size: 22px; font-weight: 400; color: var(--text); margin-bottom: 12px; }
+        .about-text p { font-size: 14px; color: var(--subtext); line-height: 1.8; margin-bottom: 0; }
 
         .card-list {
             display: flex;
@@ -559,7 +454,6 @@
             text-decoration: none;
             transition: all .25s;
             position: relative;
-            border-radius: 0;
         }
         .card:hover {
             border-color: rgba(197, 160, 89, 0.55);
@@ -603,9 +497,7 @@
             stroke-width: 1.5;
             fill: none;
         }
-        .card-body {
-            min-width: 0;
-        }
+        .card-body { min-width: 0; }
         .card-meta {
             display: flex;
             flex-wrap: wrap;
@@ -643,61 +535,62 @@
             letter-spacing: 0.3px;
         }
 
-        .faq {
+        .next-up {
             display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 14px;
-            margin-top: 24px;
-        }
-        details {
-            background: var(--card);
-            border: 1px solid var(--line);
-            border-radius: 10px;
-            padding: 18px 20px;
-        }
-        summary {
-            font-size: 15px;
-            font-weight: 600;
-            color: var(--text);
-            cursor: pointer;
-            list-style: none;
-        }
-        summary::-webkit-details-marker { display: none; }
-        details p {
-            margin-top: 12px;
-            margin-bottom: 0;
-            font-size: 14px;
-        }
-
-        .hub-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
+            grid-template-columns: 1fr;
+            gap: 8px;
             margin-top: 18px;
         }
-        .hub-links a {
+        .next-up-item {
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+            padding: 14px 0;
+            border-top: 1px solid var(--line);
+            background: transparent;
+        }
+        .next-up-item:first-child { border-top: none; padding-top: 0; }
+        .next-up-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #F8F6F3 0%, #EFEAE2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .next-up-icon svg {
+            width: 20px;
+            height: 20px;
+            stroke: var(--gold);
+            stroke-width: 1.7;
+            fill: none;
+        }
+        .next-up-item strong {
+            display: block;
+            font-family: 'Urbanist', sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--nav);
+            margin-bottom: 4px;
+        }
+        .next-up-item strong a { color: var(--nav); text-decoration: none; }
+        .next-up-item strong a:hover { color: var(--gold); }
+        .next-up-item p {
+            margin: 0;
             font-size: 13px;
-            color: var(--gold);
-            text-decoration: none;
-            border: 1px solid rgba(197, 160, 89, 0.2);
-            background: #FFFFFF;
-            padding: 10px 14px;
-            border-radius: 999px;
+            color: var(--subtext);
+            line-height: 1.6;
         }
-        .hub-links a:hover {
-            border-color: rgba(197, 160, 89, 0.6);
-            background: #FFFDF8;
-        }
+
+
         .references {
             background: var(--bg);
             border-top: 1px solid var(--line);
             border-bottom: 1px solid var(--line);
         }
-        .references ul {
-            padding-left: 18px;
-            margin-top: 14px;
-            color: var(--subtext);
-        }
+        .references ul { padding-left: 18px; margin-top: 14px; color: var(--subtext); }
         .references li { margin-bottom: 8px; }
         .references a { color: var(--nav); }
 
@@ -732,9 +625,8 @@
             .hero { padding: 156px 5% 70px; }
             .hero h1 { font-size: 38px; }
             .section { padding-left: 5%; padding-right: 5%; }
-            .note-grid, .faq { grid-template-columns: 1fr; }
+            .next-up { grid-template-columns: 1fr; }
             nav { padding: 0 5%; }
-            .concept-row { grid-template-columns: repeat(2, 1fr); margin-top: -32px; }
         }
         @media (max-width: 600px) {
             .nav-links { gap: 12px; overflow-x: auto; }
@@ -746,9 +638,6 @@
             .hero h1 { font-size: 28px; }
             .card { grid-template-columns: 1fr; text-align: center; }
             .card-icon { margin: 0 auto; }
-            .concept-row { grid-template-columns: 1fr; margin-top: -24px; padding: 0 5%; }
-            .roadmap { flex-direction: column; gap: 8px; }
-            .roadmap-arrow { transform: rotate(90deg); margin: 0; }
         }
     </style>
 </head>
@@ -785,118 +674,30 @@
     </div>
 </header>
 
-	<div class="concept-row">
-	    <div class="concept-card">
-	        <div class="concept-icon">
-	            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-	        </div>
-	        <h4>Mitochondria</h4>
-	        <p>Normal cell structures that produce ATP — the energy cells need to function.</p>
-	    </div>
-	    <div class="concept-card">
-	        <div class="concept-icon">
-	            <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-	        </div>
-	        <h4>Dysfunction</h4>
-	        <p>When mitochondria work less efficiently. Not a diagnosis — a functional state.</p>
-	    </div>
-	    <div class="concept-card">
-	        <div class="concept-icon">
-	            <svg viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 16v-4m0-4h.01"/></svg>
-	        </div>
-	        <h4>Disease</h4>
-	        <p>A medical group of genetic disorders. Can be serious and needs specialist care.</p>
-	    </div>
-	    <div class="concept-card">
-	        <div class="concept-icon">
-	            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="9" y1="9" x2="15" y2="15"/><circle cx="12" cy="12" r="2"/></svg>
-	        </div>
-	        <h4>Diagnosis</h4>
-	        <p>Requires medical evaluation: symptoms, family history, genetics, and specialist review.</p>
-	    </div>
-	</div>
 
 <main>
-    <section class="section card-band">
-        <div class="section-inner">
-            <span class="eyebrow">Quick Answer</span>
-            <div class="quick-answer">
-                <p>Mitochondria are normal cell structures that help convert food and oxygen into ATP, the energy cells use to work, repair, and recover. Mitochondrial dysfunction means that energy system is under strain or working less efficiently, but that is not the same as mitochondrial disease. Mitochondrial disease is a medical group of disorders, often genetic, that can affect muscles, brain, heart, nerves, eyes, liver, and digestion. These conditions can be serious, and some are life-threatening. Fatigue may be part of the picture, but fatigue alone does not mean mitochondrial disease.</p>
-            </div>
+    <section style="background:#FAF8F5;padding:48px 10%;border-bottom:1px solid #E5E5E7;">
+        <div style="max-width:800px;margin:0 auto;">
+            <p style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin-bottom:12px;">Quick Answer</p>
+            <h2 style="font-family:'Urbanist',sans-serif;font-size:24px;font-weight:400;color:#1A3348;margin-bottom:12px;line-height:1.3;">What Is Mitochondrial Health?</h2>
+            <p style="font-size:16px;color:#475569;line-height:1.8;max-width:700px;">Mitochondria are normal cell structures that help convert food and oxygen into ATP, the energy cells use to work, repair, and recover. Mitochondrial dysfunction means that energy system is under strain or working less efficiently, but that is not the same as mitochondrial disease. Mitochondrial disease is a medical group of disorders, often genetic, that can affect muscles, brain, heart, nerves, eyes, liver, and digestion. These conditions can be serious, and some are life-threatening. Fatigue may be part of the picture, but fatigue alone does not mean mitochondrial disease.</p>
         </div>
     </section>
 
     <section class="section">
         <div class="section-inner">
             <span class="eyebrow">Why This Matters</span>
-            <h2>Many people confuse mitochondria, dysfunction, and disease.</h2>
-            <p>Some readers first encounter mitochondria through fatigue, exercise intolerance, poor recovery, or a family story that never got a clear diagnosis. Others meet the topic through aging, metabolism, recovery science, or disease research. The confusion is understandable, because the same word is often used in very different ways.</p>
-            <p>This hub keeps the distinctions clear. Mitochondria are normal biology. Mitochondrial dysfunction is a broad functional problem. Mitochondrial disease is a medical disorder category that can affect multiple organs and sometimes needs specialist evaluation.</p>
-            <div class="note-grid">
-                <div class="note">
-                    <strong>Human question</strong>
-                    <p>Why does the body feel like it has less energy than before?</p>
-                </div>
-                <div class="note">
-                    <strong>Scientific answer</strong>
-                    <p>Sometimes the issue is recovery, metabolism, inflammation, sleep, or aging. Sometimes it is a diagnosed mitochondrial disorder. The difference matters.</p>
-                </div>
-            </div>
+            <h2>Most people never think about mitochondria. They think about energy.</h2>
+            <p>The energy to get out of bed. The energy to work. The energy to recover. The energy to enjoy life.</p>
+            <p>When that energy begins to fade, people often feel something is wrong long before they understand the cause.</p>
+            <p>Sometimes it is aging. Sometimes it is illness. Sometimes it is a problem with how the body produces and uses energy.</p>
+            <p>This hub helps separate those questions clearly. Mitochondria are not a disease. Mitochondrial dysfunction is not automatically mitochondrial disease. And fatigue alone does not mean a mitochondrial disorder.</p>
+            <p>Because understanding mitochondria is not only about understanding cells. It is about understanding vitality.</p>
         </div>
     </section>
 
-    <section class="section card-band">
-        <div class="section-inner">
-            <span class="eyebrow">About This Hub</span>
-            <h2>A clear map of mitochondria, disease, and management.</h2>
-            <p>This hub is designed to help readers, search engines, and AI systems separate the core concepts around mitochondrial science. It answers the basic biology question first, then moves into dysfunction, disease, symptoms, seriousness, diagnosis, and management. The tone stays calm and educational, because the topic is real medicine, not marketing.</p>
-            <p>The page also connects mitochondria to recovery, inflammation, metabolism, healthy aging, and microcirculation. Graphene far-infrared research is included as a secondary support topic, not as the defining story of the hub.</p>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="section-inner">
-            <span class="eyebrow">How It Is Managed</span>
-            <h2>Most primary mitochondrial diseases are managed rather than simply cured.</h2>
-            <div class="callout">
-                <p>Care usually focuses on symptom control, monitoring, nutrition, rehabilitation, trigger avoidance, and coordinated specialist support. The exact plan depends on the specific diagnosis and which organs are involved. Some people need only intermittent follow-up, while others need ongoing multi-specialty care.</p>
-                <p style="margin-top:14px;font-size:13px;color:var(--muted);">Healthy habits may support overall mitochondrial function, but they are not the same as preventing or curing a primary genetic mitochondrial disease.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section card-band">
-        <div class="section-inner">
-            <span class="eyebrow">What It Is Not</span>
-            <h2>This hub is careful about boundaries.</h2>
-            <div class="callout-boundary">
-                <ul style="margin:0;padding-left:18px;color:var(--subtext);font-size:14px;">
-                    <li style="margin-bottom:8px;">Mitochondria are not a disease. They are part of healthy cell biology.</li>
-                    <li style="margin-bottom:8px;">Mitochondrial dysfunction is not automatically a diagnosis of mitochondrial disease.</li>
-                    <li style="margin-bottom:8px;">Fatigue alone does not mean mitochondrial disease.</li>
-                    <li style="margin-bottom:8px;">Supporting mitochondrial function is not the same as preventing a primary genetic mitochondrial disease.</li>
-                    <li style="margin-bottom:8px;">Far-infrared and graphene far-infrared are secondary research and support topics, not cures.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="section card-band">
-        <div class="section-inner">
-            <span class="eyebrow">Explore This Hub</span>
-            <h2>Live pages and next priorities.</h2>
-
-            <div class="roadmap">
-                <div class="roadmap-node">Mitochondria</div>
-                <span class="roadmap-arrow">→</span>
-                <div class="roadmap-node light">Dysfunction</div>
-                <span class="roadmap-arrow">→</span>
-                <div class="roadmap-node light">Disease</div>
-                <span class="roadmap-arrow">→</span>
-                <div class="roadmap-node light">Diagnosis</div>
-                <span class="roadmap-arrow">→</span>
-                <div class="roadmap-node light">Management</div>
-            </div>
+    <section class="explore">
+        <h2 class="explore-title">Explore This Hub</h2>
 
             <div class="card-list">
                 <!-- LIVE CARDS -->
@@ -907,7 +708,7 @@
                     </div>
                     <div class="card-body">
                         <div class="card-meta"><span class="pill live">Live now</span><span class="pill">Foundation</span></div>
-                        <h3>What Are Mitochondria?</h3>
+                        <h3>What Is Mitochondrial Health?</h3>
                         <p>A plain-language foundation for what mitochondria do, why ATP matters, and why high-energy tissues are sensitive to energy problems.</p>
                         <div class="card-links">Links to: Cellular Energy, ATP, Bioenergetics, Metabolism</div>
                     </div>
@@ -942,147 +743,155 @@
                     <img class="card-img" src="/PICTURE/hub-cards/Mitochondrial.png" alt="Mitochondria research visual" loading="lazy">
                 </a>
 
-                <a href="/SCIENCE/KNOWLEDGE/Mitochondria/atp-study.html" class="card">
-                    <div class="card-arrow">→</div>
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24"><path d="M12 3v18"></path><path d="M5 8c2-2 5-3 7-3s5 1 7 3"></path><path d="M5 16c2 2 5 3 7 3s5-1 7-3"></path></svg>
+                <div class="next-up">
+                    <div class="next-up-item">
+                        <div class="next-up-icon">
+                            <svg viewBox="0 0 24 24"><path d="M4 12h16"></path><path d="M8 8h8"></path><path d="M8 16h8"></path></svg>
+                        </div>
+                        <div>
+                            <strong><a href="/SCIENCE/KNOWLEDGE/Mitochondria/what-is-mitochondrial-dysfunction.html">What Is Mitochondrial Dysfunction?</a></strong>
+                            <p>Define dysfunction clearly before the page moves into disease and diagnosis.</p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <div class="card-meta"><span class="pill live">Live now</span><span class="pill">Energy</span></div>
-                        <h3>ATP and Mitochondrial Energy</h3>
-                        <p>A compact article for readers who want the link between mitochondria, ATP, and the energy that powers cells.</p>
-                        <div class="card-links">Links to: Cellular Energy, Metabolism, Bioenergetics</div>
-                    </div>
-                    <img class="card-img" src="https://picsum.photos/seed/atp-energy-card/520/320" alt="ATP Energy" loading="lazy">
-                </a>
 
-                <!-- PLANNED CARDS -->
-                <div class="card" style="opacity: 0.7;">
-                    <div class="card-arrow">→</div>
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M12 4v16"></path></svg>
+                    <div class="next-up-item">
+                        <div class="next-up-icon">
+                            <svg viewBox="0 0 24 24"><path d="M6 18l6-12 6 12"></path><path d="M9 12h6"></path></svg>
+                        </div>
+                        <div>
+                            <strong><a href="/SCIENCE/KNOWLEDGE/Mitochondria/what-does-mitochondrial-disease-feel-like.html">What Does Mitochondrial Disease Feel Like?</a></strong>
+                            <p>A lived-experience article for readers who are looking for themselves in the symptoms.</p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <div class="card-meta"><span class="pill planned">Planned next</span><span class="pill">Priority</span></div>
-                        <h3>What Is the Difference Between Mitochondria and Mitochondrial Disease?</h3>
-                        <p>The most important confusion to fix: normal cell biology on one side, medical disorder on the other.</p>
-                        <div class="card-links">AI / GEO priority: very high</div>
-                    </div>
-                    <img class="card-img" src="https://picsum.photos/seed/mito-vs-disease/520/320" alt="Coming Soon" loading="lazy">
-                </div>
 
-                <div class="card" style="opacity: 0.7;">
-                    <div class="card-arrow">→</div>
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24"><path d="M4 12h16"></path><path d="M8 8h8"></path><path d="M8 16h8"></path></svg>
+                    <div class="next-up-item">
+                        <div class="next-up-icon">
+                            <svg viewBox="0 0 24 24"><path d="M5 19V5h14v14"></path><path d="M8 9h8"></path><path d="M8 13h8"></path></svg>
+                        </div>
+                        <div>
+                            <strong><a href="/SCIENCE/KNOWLEDGE/Mitochondria/how-do-you-find-out-if-you-have-a-mitochondrial-disease.html">How Do You Find Out If You Have a Mitochondrial Disease?</a></strong>
+                            <p>The diagnosis path, written in calm language for real users and AI readers.</p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <div class="card-meta"><span class="pill planned">Planned next</span><span class="pill">Definition</span></div>
-                        <h3>What Is Mitochondrial Dysfunction?</h3>
-                        <p>A functional explanation of what happens when mitochondria do not work as efficiently as the cell needs.</p>
-                        <div class="card-links">AI / GEO priority: high</div>
-                    </div>
-                    <img class="card-img" src="https://picsum.photos/seed/mito-dysfunction/520/320" alt="Coming Soon" loading="lazy">
-                </div>
 
-                <div class="card" style="opacity: 0.7;">
-                    <div class="card-arrow">→</div>
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24"><path d="M6 18l6-12 6 12"></path><path d="M9 12h6"></path></svg>
+                    <div class="next-up-item">
+                        <div class="next-up-icon">
+                            <svg viewBox="0 0 24 24"><path d="M12 3l7 4v10l-7 4-7-4V7z"></path><path d="M8 12h8"></path></svg>
+                        </div>
+                        <div>
+                            <strong><a href="/SCIENCE/KNOWLEDGE/Mitochondria/how-is-mitochondrial-disease-managed.html">How Is Mitochondrial Disease Managed?</a></strong>
+                            <p>The practical next step: support, monitoring, and quality of life.</p>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <div class="card-meta"><span class="pill planned">Planned next</span><span class="pill">Experience</span></div>
-                        <h3>What Does Mitochondrial Disease Feel Like?</h3>
-                        <p>A human-centered article on fatigue, poor recovery, weakness, and why the experience can vary so much.</p>
-                        <div class="card-links">AI / GEO priority: very high</div>
-                    </div>
-                    <img class="card-img" src="https://picsum.photos/seed/mito-feels-like/520/320" alt="Coming Soon" loading="lazy">
-                </div>
 
-                <div class="card" style="opacity: 0.7;">
-                    <div class="card-arrow">→</div>
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24"><path d="M5 19V5h14v14"></path><path d="M8 9h8"></path><path d="M8 13h8"></path></svg>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-meta"><span class="pill planned">Planned next</span><span class="pill">Diagnosis</span></div>
-                        <h3>How Do You Find Out If You Have a Mitochondrial Disease?</h3>
-                        <p>Explains the evaluation path: symptoms, family history, specialist review, metabolic tests, and genetics.</p>
-                        <div class="card-links">AI / GEO priority: very high</div>
-                    </div>
-                    <img class="card-img" src="https://picsum.photos/seed/mito-diagnosis/520/320" alt="Coming Soon" loading="lazy">
+                    <div class="next-up-item">
+                        <div class="next-up-icon">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M12 4v16"></path></svg>
+                        </div>
+                        <div>
+                            <strong><a href="/SCIENCE/KNOWLEDGE/Mitochondria/atp-study.html">ATP and Mitochondrial Energy</a></strong>
+                            <p>The energy foundation behind the whole hub, for readers who want the mechanism first.</p>
+                        </div>
                 </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="about">
+        <div class="about-card">
+            <div class="about-icon">
+                <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <div class="about-text">
+                <h3>About this Hub</h3>
+                <p>This hub separates normal mitochondrial biology from dysfunction, and dysfunction from disease. It connects mitochondria to recovery, metabolism, healthy aging, circulation, and emerging research — each explored in its own dedicated article. The tone stays educational, because the topic is real medicine, not marketing.</p>
             </div>
         </div>
     </section>
 
-    <section class="section card-band" id="faq">
+    <section class="section" style="background:#FAF8F5;border-top:1px solid #E5E5E7;border-bottom:1px solid #E5E5E7;">
         <div class="section-inner">
-            <span class="eyebrow">FAQ</span>
-            <h2>Questions readers ask most often.</h2>
-            <div class="faq">
-                <details>
-                    <summary>Are mitochondria a disease?</summary>
-                    <p>No. Mitochondria are normal structures inside cells. They help produce ATP, the energy cells use to function. Mitochondrial disease occurs when mitochondria cannot meet the energy needs of cells and organs, often because of genetic changes.</p>
-                </details>
-                <details>
-                    <summary>What is the difference between mitochondria and mitochondrial disease?</summary>
-                    <p>Mitochondria are part of healthy cell biology. Mitochondrial disease is a group of medical disorders in which mitochondrial energy production is impaired enough to cause symptoms or organ involvement. Everyone has mitochondria; only some people have mitochondrial disease.</p>
-                </details>
-                <details>
-                    <summary>What is mitochondrial dysfunction?</summary>
-                    <p>Mitochondrial dysfunction means mitochondria are not working efficiently enough for a cell's needs. It can be seen in primary mitochondrial disease, but it can also appear secondarily in aging, inflammation, metabolic stress, toxins, infections, medications, or other diseases.</p>
-                </details>
-                <details>
-                    <summary>What does mitochondrial disease feel like?</summary>
-                    <p>The experience varies widely. Some people report severe fatigue, muscle weakness, exercise intolerance, poor recovery, brain fog, seizures, migraines, vision or hearing problems, digestive issues, or episodes of worsening after stress or illness.</p>
-                </details>
-                <details>
-                    <summary>How does mitochondrial disease affect a person's life?</summary>
-                    <p>Mitochondrial disease can make daily activities require more energy and recovery than expected. School, work, exercise, travel, digestion, concentration, and social life may all be affected. Some people manage symptoms for years, while others need significant medical support.</p>
-                </details>
-                <details>
-                    <summary>How serious can mitochondrial disease be?</summary>
-                    <p>Mitochondrial disease can range from mild to severe. Some forms are progressive and some can be life-threatening or fatal, especially when the brain, heart, breathing muscles, liver, or several organ systems are affected.</p>
-                </details>
-                <details>
-                    <summary>How do you find out if you have a mitochondrial disease?</summary>
-                    <p>Diagnosis usually requires a medical evaluation. Doctors may consider symptoms, family history, neurologic findings, organ involvement, blood or urine studies, imaging, heart testing, eye or hearing exams, genetic testing, mitochondrial DNA testing, and sometimes tissue biopsy.</p>
-                </details>
-                <details>
-                    <summary>Can mitochondrial disease be cured?</summary>
-                    <p>Most primary mitochondrial diseases do not have a universal cure. Care usually focuses on managing symptoms, monitoring complications, supporting nutrition and rehabilitation, avoiding triggers, and improving quality of life.</p>
-                </details>
-                <details>
-                    <summary>Can mitochondrial disease be prevented?</summary>
-                    <p>Most primary mitochondrial diseases are genetic and usually cannot be prevented through ordinary lifestyle choices. Healthy habits may support overall mitochondrial function, but they should not be presented as prevention for genetic mitochondrial disease.</p>
-                </details>
-                <details>
-                    <summary>What causes mitochondrial diseases?</summary>
-                    <p>Many primary mitochondrial diseases are caused by genetic changes in mitochondrial DNA or nuclear DNA. Some mitochondrial problems are inherited, while others may occur spontaneously. Secondary mitochondrial dysfunction can also occur in other diseases or as part of aging.</p>
-                </details>
+            <span class="eyebrow">How It Is Managed</span>
+            <h2>Most primary mitochondrial diseases are managed rather than simply cured.</h2>
+            <p>Management often focuses on preserving function, reducing symptoms, supporting recovery, and maintaining quality of life.</p>
+            <p>Care may include nutrition, rehabilitation, monitoring, lifestyle adjustments, and specialist support depending on which organs are affected.</p>
+            <p>Healthy habits can support overall mitochondrial function, but they are not the same as preventing or curing a primary genetic mitochondrial disease.</p>
+
+            <div class="subsection">
+                <span class="eyebrow">After Management</span>
+                <h3>Once care is understood, some readers ask how the body's energy systems may be supported.</h3>
+                <p>Graphene far-infrared research is explored here as a support topic &mdash; not a cure and not a replacement for medical care. Current research focuses on circulation, recovery, comfort, and mitochondrial-related pathways.</p>
+                <p>For the evidence layer, continue to the <a href="/SCIENCE/KNOWLEDGE/Clinical-Evidence/">Clinical Evidence Hub</a>.</p>
+                <p>Next: <a href="/SCIENCE/KNOWLEDGE/Mitochondria/mitochondrial-function-far-infrared.html">Does Far-Infrared Affect Mitochondria?</a></p>
             </div>
         </div>
     </section>
 
     <section class="section">
-        <div class="section-inner">
-            <span class="eyebrow">Related Hubs</span>
-            <h2>Where this page connects into the wider knowledge graph.</h2>
-            <div class="hub-links">
-                <a href="/SCIENCE/KNOWLEDGE/cellular-energy/">Cellular Energy</a>
-                <a href="/SCIENCE/KNOWLEDGE/cellular-energy/atp-study.html">ATP</a>
-                <a href="/SCIENCE/KNOWLEDGE/Fatigue/">Fatigue</a>
-                <a href="/SCIENCE/KNOWLEDGE/Recovery/">Recovery</a>
-                <a href="/SCIENCE/KNOWLEDGE/Inflammation/">Inflammation</a>
-                <a href="/SCIENCE/KNOWLEDGE/Microcirculation/">Microcirculation</a>
-                <a href="/SCIENCE/KNOWLEDGE/Metabolism/">Metabolism</a>
-                <a href="/SCIENCE/KNOWLEDGE/bioenergetics/">Bioenergetics</a>
-                <a href="/SCIENCE/KNOWLEDGE/healthy-aging/">Healthy Aging</a>
-                <a href="/SCIENCE/KNOWLEDGE/graphene-fir/">Graphene FIR</a>
-                <a href="/SCIENCE/KNOWLEDGE/Clinical-Evidence/">Clinical Evidence</a>
-                <a href="/SCIENCE/KNOWLEDGE/Research-Library/">Research Library</a>
+        <div class="section-inner" style="text-align:center;">
+            <p style="font-family:'Urbanist',sans-serif;font-size:22px;font-weight:250;color:var(--nav);letter-spacing:0.5px;line-height:1.5;max-width:720px;margin:0 auto;">The purpose of this hub is not to sell a technology. It is to understand how human energy is created, protected, and sustained throughout life.</p>
+        </div>
+    </section>
+
+    <section style="background:#FFF;padding:64px 10%;">
+        <div style="max-width:800px;margin:0 auto;">
+            <h3 style="font-family:'Urbanist',sans-serif;font-size:28px;font-weight:200;color:#1A3348;letter-spacing:2px;text-align:center;margin-bottom:40px;">Frequently Asked Questions</h3>
+
+            <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
+                <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">Are mitochondria a disease?</h4>
+                <p style="font-size:14px;color:#475569;line-height:1.7;">No. Mitochondria are normal structures inside cells. They help produce ATP, the energy cells use to function. Mitochondrial disease occurs when mitochondria cannot meet the energy needs of cells and organs, often because of genetic changes.</p>
             </div>
+
+            <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
+                <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">What is the difference between mitochondria and mitochondrial disease?</h4>
+                <p style="font-size:14px;color:#475569;line-height:1.7;">Mitochondria are part of healthy cell biology. Mitochondrial disease is a group of medical disorders in which mitochondrial energy production is impaired enough to cause symptoms or organ involvement. Everyone has mitochondria; only some people have mitochondrial disease.</p>
+            </div>
+
+            <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
+                <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">What is mitochondrial dysfunction?</h4>
+                <p style="font-size:14px;color:#475569;line-height:1.7;">Mitochondrial dysfunction means mitochondria are not working efficiently enough for a cell's needs. It can be seen in primary mitochondrial disease, but it can also appear secondarily in aging, inflammation, metabolic stress, toxins, infections, medications, or other diseases.</p>
+            </div>
+
+            <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
+                <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">What does mitochondrial disease feel like?</h4>
+                <p style="font-size:14px;color:#475569;line-height:1.7;">The experience varies widely. Some people report severe fatigue, muscle weakness, exercise intolerance, poor recovery, brain fog, seizures, migraines, vision or hearing problems, digestive issues, or episodes of worsening after stress or illness.</p>
+            </div>
+
+            <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
+                <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">How does mitochondrial disease affect a person's life?</h4>
+                <p style="font-size:14px;color:#475569;line-height:1.7;">Mitochondrial disease can make daily activities require more energy and recovery than expected. School, work, exercise, travel, digestion, concentration, and social life may all be affected. Some people manage symptoms for years, while others need significant medical support.</p>
+            </div>
+
+            <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
+                <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">How serious can mitochondrial disease be?</h4>
+                <p style="font-size:14px;color:#475569;line-height:1.7;">Mitochondrial disease can range from mild to severe. Some forms are progressive and some can be life-threatening or fatal, especially when the brain, heart, breathing muscles, liver, or several organ systems are affected.</p>
+            </div>
+
+            <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
+                <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">How do you find out if you have a mitochondrial disease?</h4>
+                <p style="font-size:14px;color:#475569;line-height:1.7;">Diagnosis usually requires a medical evaluation. Doctors may consider symptoms, family history, neurologic findings, organ involvement, blood or urine studies, imaging, heart testing, eye or hearing exams, genetic testing, mitochondrial DNA testing, and sometimes tissue biopsy.</p>
+            </div>
+
+            <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
+                <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">Can mitochondrial disease be cured?</h4>
+                <p style="font-size:14px;color:#475569;line-height:1.7;">Most primary mitochondrial diseases do not have a universal cure. Care usually focuses on managing symptoms, monitoring complications, supporting nutrition and rehabilitation, avoiding triggers, and improving quality of life.</p>
+            </div>
+
+            <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
+                <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">How is mitochondrial disease managed?</h4>
+                <p style="font-size:14px;color:#475569;line-height:1.7;">Management is individualized and often includes symptom control, nutrition support, gentle rehabilitation, organ monitoring, and quality-of-life support. The exact plan depends on the type of disease and which organs are affected.</p>
+            </div>
+
+            <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
+                <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">Can mitochondrial disease be prevented?</h4>
+                <p style="font-size:14px;color:#475569;line-height:1.7;">Most primary mitochondrial diseases are genetic and usually cannot be prevented through ordinary lifestyle choices. Healthy habits may support overall mitochondrial function, but they should not be presented as prevention for genetic mitochondrial disease.</p>
+            </div>
+
+            <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
+                <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">What causes mitochondrial diseases?</h4>
+                <p style="font-size:14px;color:#475569;line-height:1.7;">Many primary mitochondrial diseases are caused by genetic changes in mitochondrial DNA or nuclear DNA. Some mitochondrial problems are inherited, while others may occur spontaneously. Secondary mitochondrial dysfunction can also occur in other diseases or as part of aging.</p>
+            </div>
+
         </div>
     </section>
 

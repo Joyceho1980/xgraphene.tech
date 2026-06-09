@@ -1,438 +1,447 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.xgraphene.tech/ABOUT/AboutMission.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/ABOUT/AboutOrigin.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/ABOUT/AboutPhilosophy.html</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.xgraphene.tech/applications.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.xgraphene.tech/CONTACT//</loc>
-    <lastmod>2026-06-06</lastmod>
+    <loc>https://www.xgraphene.tech/CONTACT/</loc>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.xgraphene.tech/</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/NEWS/Company-Updates/graphene-thermal-clinical-research-ethics-approval.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/NEWS/Company-Updates/ikkem-partnership.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/NEWS/Company-Updates/national-standard.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/NEWS/Company-Updates/neural-helmet.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/NEWS/Company-Updates/novoselov-cas-foreign-member.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/NEWS/Company-Updates/zheng-nanfeng-neuropsychiatric-research.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.xgraphene.tech/NEWS//</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://www.xgraphene.tech/NEWS/Industry-News/graphene-national-strategic-material.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/NEWS/Industry-News/rise-of-non-pharmacological-healthcare.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.xgraphene.tech/partnership.html</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://www.xgraphene.tech/NEWS/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.xgraphene.tech/PICTURE/button-preview.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/PRODUCTS/CABIN/cabin.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/PRODUCTS/CAPSULE/capsule-b2b.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/PRODUCTS/FILM/GrapheneFilm.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/PRODUCTS/PORTABLES/DeepRecovery.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/PRODUCTS/PORTABLES/NeuralResilience.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/PRODUCTS/PORTABLES/VisceralVitality.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/PRODUCTS/ProductPage.html</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/SCIENCE/Evidence.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/bioenergetics//</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/atp-pain-signaling.html</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/atp-study.html</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/cellular-energy-atp.html</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/central-sensitization-energy.html</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy//</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Clinical-Evidence//</loc>
-    <lastmod>2026-06-06</lastmod>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Clinical-Evidence/</loc>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Clinical-Evidence/pku-clinical-trial.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Fatigue//</loc>
-    <lastmod>2026-06-06</lastmod>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Fatigue/</loc>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Fatigue/why-am-i-always-tired.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Fatigue/why-do-small-things-make-you-irritable.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Fatigue/why-do-some-people-have-endless-energy.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Fatigue/why-do-you-feel-more-tired-after-sleeping-longer.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Fatigue/why-do-you-feel-tired-after-lunch.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/comparison.html</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/frequency-of-life.html</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/how-fir-works.html</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir//</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/photobiomodulation-spectrum.html</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/pku-clinical-trial.html</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/water-memory.html</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/wavelength-essay.html</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/wu-wei-resonance.html</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/healthy-aging//</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE//</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Inflammation//</loc>
-    <lastmod>2026-06-06</lastmod>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Inflammation/</loc>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Inflammation/inflammation-recovery-biology.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Inflammation/nociceptive-vs-neuropathic-mechanisms.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Metabolism//</loc>
-    <lastmod>2026-06-06</lastmod>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Metabolism/</loc>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Microcirculation/graphene-fir-microcirculation.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Microcirculation//</loc>
-    <lastmod>2026-06-06</lastmod>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Microcirculation/</loc>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Microcirculation/microcirculation-science.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/atp-study.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria//</loc>
-    <lastmod>2026-06-06</lastmod>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/</loc>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/mitochondrial-function-far-infrared.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/mitochondrial-function-recovery.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/mitochondrial-health.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/what-is-mitochondrial-health.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/oxidative-stress//</loc>
-    <lastmod>2026-06-06</lastmod>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Recovery/</loc>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Recovery//</loc>
-    <lastmod>2026-06-06</lastmod>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Research-Library/</loc>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Research-Library//</loc>
-    <lastmod>2026-06-06</lastmod>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Sleep/</loc>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Sleep//</loc>
-    <lastmod>2026-06-06</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Technology-Platform//</loc>
-    <lastmod>2026-06-06</lastmod>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Technology-Platform/</loc>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Technology-Platform/photobiomodulation-spectrum.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/bioenergetics/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/atp-pain-signaling.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/atp-study.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/cellular-energy-atp.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/central-sensitization-energy.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/comparison.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/frequency-of-life.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/how-fir-works.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/photobiomodulation-spectrum.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/pku-clinical-trial.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/water-memory.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/wavelength-essay.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/wu-wei-resonance.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/healthy-aging/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/old-cellular-energy-index.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/oxidative-stress/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.xgraphene.tech/SCIENCE/Landing.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/SCIENCE/Mechanism.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.xgraphene.tech/SCIENCE/Technology.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.xgraphene.tech/science.html</loc>
-    <lastmod>2026-06-06</lastmod>
+    <loc>https://www.xgraphene.tech/applications.html</loc>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
+  <url>
+    <loc>https://www.xgraphene.tech/</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.xgraphene.tech/partnership.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.xgraphene.tech/science.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
