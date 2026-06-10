@@ -253,30 +253,49 @@
       line-height: 1.8;
       max-width: 540px;
     }
-    .hero-footerline {
+    .hero-meta {
       position: absolute;
       left: 8vw;
       bottom: 28px;
       z-index: 2;
       display: flex;
-      align-items: center;
-      gap: 18px;
       flex-wrap: wrap;
+      gap: 16px 28px;
+      align-items: center;
       max-width: calc(100vw - 16vw - 64px);
-      color: rgba(255,255,255,0.72);
       font-family: 'Urbanist', sans-serif;
     }
-    .hero-footerline .brand {
+    .hero-meta .meta-date {
       font-size: 11px;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      color: var(--gold);
+      color: rgba(255,255,255,0.55);
+      letter-spacing: 0.8px;
       white-space: nowrap;
     }
-    .hero-footerline .track {
+    .hero-meta .hero-trail {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 10px;
+      align-items: center;
+      font-size: 11px;
+      color: rgba(255,255,255,0.55);
+      letter-spacing: 0.5px;
+    }
+    .hero-meta .hero-trail strong {
       font-size: 10px;
-      letter-spacing: 1.8px;
-      white-space: nowrap;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+    }
+    .hero-meta .hero-trail a {
+      text-decoration: none;
+      color: rgba(255,255,255,0.7);
+      transition: color 0.2s;
+    }
+    .hero-meta .hero-trail a:hover { color: #FFF; }
+    .hero-meta .hero-trail .sep {
+      color: var(--gold);
+      font-size: 11px;
     }
     .hero-image {
       position: absolute;
@@ -342,7 +361,7 @@
     /* Quick Answer — AI layer */
     .quick-answer {
       max-width: 1100px;
-      margin: -30px auto 0;
+      margin: 56px auto 0;
       padding: 40px 44px 36px;
       background: #FFFFFF;
       border: 1px solid var(--line);
@@ -447,31 +466,99 @@
     }
 
     main {
-      max-width: 1120px;
+      max-width: 680px;
       margin: 0 auto;
-      padding: 38px 24px 72px;
+      padding: 56px 24px 72px;
     }
     section {
-      margin-top: 40px;
-      padding-top: 36px;
-      border-top: 1px solid var(--line);
+      margin-top: 56px;
+      padding-top: 0;
+      border-top: none;
+    }
+    section + section {
+      margin-top: 64px;
     }
     h2 {
       font-family: 'Urbanist', sans-serif;
-      font-size: 28px;
-      font-weight: 300;
+      font-size: 22px;
+      font-weight: 400;
       color: var(--nav);
-      line-height: 1.25;
-      margin-bottom: 14px;
+      line-height: 1.3;
+      margin-bottom: 20px;
+      text-align: left;
+      letter-spacing: 0.4px;
     }
     h3 {
       font-family: 'Urbanist', sans-serif;
-      font-size: 20px;
-      font-weight: 400;
+      font-size: 18px;
+      font-weight: 500;
       color: var(--nav);
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
-    p { font-size: 16px; color: var(--subtext); margin-bottom: 16px; }
+    p {
+      font-size: 17px;
+      color: var(--subtext);
+      margin-bottom: 14px;
+      line-height: 1.82;
+    }
+    /* Drop cap */
+    .drop-cap > p:first-of-type::first-letter {
+      float: left;
+      font-family: 'Urbanist', sans-serif;
+      font-size: 72px;
+      font-weight: 200;
+      line-height: 0.75;
+      padding-right: 12px;
+      padding-top: 6px;
+      color: var(--nav);
+    }
+    /* Section ornament */
+    .ornament {
+      text-align: center;
+      color: var(--gold);
+      font-size: 12px;
+      letter-spacing: 6px;
+      margin: 48px 0 0;
+      opacity: 0.5;
+    }
+    /* One-word beat lines */
+    .beat-word {
+      font-family: 'Urbanist', sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--text);
+      margin-bottom: 10px;
+      letter-spacing: 0.3px;
+      line-height: 1.6;
+    }
+    /* Pull-quote moment */
+    .pull-line {
+      font-family: 'Urbanist', sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      color: var(--nav);
+      line-height: 1.55;
+      margin: 22px 0;
+      letter-spacing: 0.2px;
+    }
+    /* Supplementary zone */
+    .supplement {
+      background: #FAF8F5;
+      margin-left: calc(-50vw + 50%);
+      margin-right: calc(-50vw + 50%);
+      padding: 56px calc(50vw - 50%) 64px;
+      margin-top: 64px;
+    }
+    .supplement section {
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 48px;
+      background: transparent;
+    }
+    .supplement section:first-child {
+      margin-top: 0;
+    }
     ul { padding-left: 22px; margin-bottom: 16px; color: var(--subtext); }
     li { margin-bottom: 10px; }
 
@@ -695,9 +782,20 @@
       <h1>How Do You Find Out If You Have a Mitochondrial Disease?<span>The search for answers often begins long before there is a name for the problem.</span></h1>
     </div>
     <div class="hero-image" aria-hidden="true"></div>
-    <div class="hero-footerline" aria-hidden="true">
-      <span class="brand">XIHE KNOWLEDGE HUB</span>
-      <span class="track">Science Education · Cellular Energy · Recovery Science</span>
+    <div class="hero-meta" aria-hidden="true">
+      <span class="meta-date">Published June 9, 2026 · 5 min read · XIHE Knowledge</span>
+      <div class="hero-trail" aria-label="Mitochondria hub path">
+        <strong>Mitochondria Hub</strong>
+        <a href="what-is-mitochondrial-health.html">Health</a>
+        <span class="sep">›</span>
+        <a href="what-is-mitochondrial-dysfunction.html">Dysfunction</a>
+        <span class="sep">›</span>
+        <a href="are-mitochondria-a-disease.html">Disease</a>
+        <span class="sep">›</span>
+        <a href="how-do-you-find-out-if-you-have-a-mitochondrial-disease.html">Diagnosis</a>
+        <span class="sep">›</span>
+        <a href="how-is-mitochondrial-disease-managed.html">Management</a>
+      </div>
     </div>
   </div>
 
@@ -721,67 +819,72 @@
   </div>
 
   <main>
-    <p class="meta">Published June 9, 2026 • 5 min read • XIHE Knowledge</p>
-
-    <div class="hub-trail" aria-label="Mitochondria hub path">
-      <strong>Mitochondria Hub</strong>
-      <a href="what-is-mitochondrial-health.html">Health</a>
-      <span class="sep">→</span>
-      <a href="what-is-mitochondrial-dysfunction.html">Dysfunction</a>
-      <span class="sep">→</span>
-      <a href="are-mitochondria-a-disease.html">Disease</a>
-      <span class="sep">→</span>
-      <a href="how-do-you-find-out-if-you-have-a-mitochondrial-disease.html">Diagnosis</a>
-      <span class="sep">→</span>
-      <a href="how-is-mitochondrial-disease-managed.html">Management</a>
-    </div>
-
-    <section class="why-it-matters">
-      <h2>Why This Matters</h2>
-      <p>Many people spend years searching for answers before a mitochondrial condition is even considered. Symptoms can affect multiple systems — energy, muscles, vision, hearing, digestion — and often do not fit neatly into a single category. One doctor visit becomes five. One test becomes twenty. A sentence typed into a search bar late at night.</p>
-      <p>The diagnostic limbo — knowing something is wrong but not having a name for it — is one of the hardest parts of the experience. This page is for the in-between: when you are looking for answers, but the answer hasn't arrived yet.</p>
+    <section class="why-it-matters drop-cap">
+      <h2>Why People Start Looking for Answers</h2>
+      <p>Most people do not wake up one morning and decide to learn about mitochondrial disease.</p>
+      <p>They start searching because something has changed.</p>
+      <p>Recovery takes longer.</p>
+      <p>Energy disappears more quickly.</p>
+      <p>Symptoms begin showing up in places that seem unrelated.</p>
+      <p>One doctor becomes two.</p>
+      <p>One test becomes ten.</p>
+      <p>And eventually a new question appears:</p>
+      <p class="pull-line"><em>Could there be something deeper happening inside the body's energy system?</em></p>
     </section>
 
     <section>
-      <h2>Start with the pattern</h2>
-      <p>Doctors usually begin by asking what is happening in daily life: fatigue, exercise intolerance, weakness, neurologic symptoms, vision or hearing changes, digestive issues, growth concerns, or symptoms across more than one body system.</p>
-      <p>They also look at family history, because mitochondrial disease can be inherited in different ways depending on the underlying cause.</p>
-      <p>To understand why those symptoms can spread across more than one system, it helps to read about <a href="../cellular-energy/what-is-atp.html">ATP</a>, the cell's main energy molecule, and <a href="what-is-mitochondrial-dysfunction.html">mitochondrial dysfunction</a>, which may appear before a formal disease diagnosis.</p>
+      <h2>How Diagnosis Usually Begins</h2>
+      <p>Doctors rarely diagnose mitochondrial disease from a single symptom.</p>
+      <p>Instead, they look for patterns.</p>
+      <p class="beat-word">Fatigue.</p>
+      <p class="beat-word">Exercise intolerance.</p>
+      <p class="beat-word">Neurological symptoms.</p>
+      <p class="beat-word">Digestive problems.</p>
+      <p class="beat-word">Vision changes.</p>
+      <p class="beat-word">Hearing changes.</p>
+      <p>When symptoms appear across multiple systems, the body's energy machinery becomes part of the investigation.</p>
+      <p>Family history also matters, because mitochondrial disease can be inherited in different ways depending on the underlying cause. To understand why symptoms can spread across more than one system, it helps to read about <a href="../cellular-energy/what-is-atp.html">ATP</a>, the cell's main energy molecule, and <a href="what-is-mitochondrial-dysfunction.html">mitochondrial dysfunction</a>, which may appear before a formal disease diagnosis.</p>
     </section>
 
     <section>
-      <h2>Tests doctors may use</h2>
-      <div class="difference-grid">
-        <div class="difference-card">
-          <span>Basic tests</span>
-          <p><strong>Blood and urine</strong> studies may help look for metabolic clues.</p>
-        </div>
-        <div class="difference-card">
-          <span>Organ checks</span>
-          <p><strong>Heart, hearing, and vision</strong> assessments may reveal multi-system involvement.</p>
-        </div>
-        <div class="difference-card">
-          <span>Genetics</span>
-          <p><strong>Genetic testing</strong> is often central when a hereditary condition is suspected.</p>
-        </div>
-      </div>
-      <p style="margin-top:16px;">In some cases, doctors may also use imaging or tissue studies such as muscle biopsy to clarify the diagnosis.</p>
+      <h2>What Doctors Look For</h2>
+      <p>Blood and urine studies may help look for metabolic clues.</p>
+      <p>Heart, hearing, and vision assessments may reveal multi-system involvement.</p>
+      <p>Genetic testing is often central when a hereditary condition is suspected.</p>
+      <p>In some cases, doctors may also use imaging or tissue studies such as muscle biopsy to clarify the diagnosis.</p>
     </section>
 
     <section>
-      <h2>Why diagnosis can take time</h2>
-      <p>Mitochondrial disease can be hard to diagnose because it may affect several systems at once, and early tests can sometimes look normal. People may see more than one specialist before the pattern becomes clear.</p>
-      <p>That is not a reason to panic. It is a reason to work with clinicians who understand metabolic or mitochondrial disorders and can interpret the whole picture.</p>
+      <h2>Why Finding Answers Can Take Years</h2>
+      <p>Mitochondrial disease can be hard to diagnose because it may affect several systems at once.</p>
+      <p>Early tests can sometimes look normal.</p>
+      <p>People may see more than one specialist before the pattern becomes clear.</p>
+      <p>That is not a reason to panic.</p>
+      <p>It is a reason to work with clinicians who understand metabolic or mitochondrial disorders and can interpret the whole picture.</p>
     </section>
 
     <section>
-      <h2>What to remember</h2>
-      <ul>
-        <li>A single blood test does not usually settle the question.</li>
-        <li>Symptoms matter, but they need to be interpreted in context.</li>
-        <li>Genetics often plays a major role, but not every case looks the same.</li>
-        <li>Specialist evaluation is often the most useful next step.</li>
-      </ul>
+      <h2>Living in the Diagnostic Gap</h2>
+      <p>For many people, the hardest part is not the diagnosis itself.</p>
+      <p>It is the years before the diagnosis.</p>
+      <p>The period where something is clearly wrong, but nobody can yet explain why.</p>
+      <p>The uncertainty can be exhausting.</p>
+      <p>A diagnosis does not solve every problem.</p>
+      <p>But it gives the problem a name.</p>
+      <p>And sometimes a name is the beginning of a path forward.</p>
+    </section>
+
+    <section>
+      <h2>What To Remember</h2>
+      <p>A mitochondrial diagnosis rarely comes from a single test.</p>
+      <p>It emerges from a larger story.</p>
+      <p class="beat-word">Symptoms.</p>
+      <p class="beat-word">Patterns.</p>
+      <p class="beat-word">History.</p>
+      <p class="beat-word">Genetics.</p>
+      <p class="beat-word">Clinical judgment.</p>
+      <p>The goal is not to find one abnormal result.</p>
+      <p>The goal is to understand the whole picture.</p>
       <div class="path-list" aria-label="Next reading path">
         <div class="path-item">
           <span class="path-index">1</span>
@@ -821,14 +924,9 @@
       </div>
     </section>
 
+    <div class="supplement">
     <section>
-      <h2>Real human experience</h2>
-      <p>For many people, the diagnostic journey is emotionally difficult because they know something is wrong, but they do not yet have a name for it. The uncertainty can last a long time, especially when symptoms are broad or fluctuate over time.</p>
-      <p>A clear diagnostic path helps turn that uncertainty into a plan.</p>
-    </section>
-
-    <section>
-      <h2>Common questions</h2>
+      <h2>Questions People Often Ask</h2>
       <div class="faq-item">
         <h3>Can symptoms alone diagnose mitochondrial disease?</h3>
         <p>No. Symptoms can raise suspicion, but diagnosis usually requires testing and clinical evaluation.</p>
@@ -848,7 +946,7 @@
     </section>
 
     <section>
-      <h2>Your Mitochondria Knowledge Path</h2>
+      <h2>Where to Go From Here</h2>
       <p style="text-align:center;font-size:15px;color:var(--muted);max-width:560px;margin:0 auto 20px;">Follow the steps. Each one builds on the last - from foundational understanding to the research frontier.</p>
       <div class="path-list" aria-label="Knowledge path">
         <div class="path-item">
@@ -890,7 +988,7 @@
     </section>
 
     <section>
-      <h2>Why Researchers Care About Mitochondrial Function</h2>
+      <h2>Where Science Is Headed Next</h2>
       <p>Once cellular energy becomes the focus, researchers naturally begin exploring interventions that may support recovery, circulation, and metabolic resilience. The question shifts from "what is wrong?" to "what might help?"</p>
       <p>One emerging area is graphene far-infrared technology. Far-infrared energy, in specific wavelengths, is being studied for its interaction with cellular water and microcirculation - two factors closely tied to how mitochondria perform.</p>
       <div class="path-list" style="margin-top: 20px;">
@@ -910,6 +1008,7 @@
         This page is for education only and is not medical advice. Mitochondrial disease can be serious and may require specialist evaluation. If someone has persistent fatigue, muscle weakness, neurologic symptoms, seizures, vision or hearing changes, heart symptoms, developmental concerns, unexplained exercise intolerance, or multi-system symptoms, they should consult a qualified healthcare professional. XIHE does not claim that lifestyle changes, far-infrared technology, or graphene far-infrared products diagnose, treat, cure, prevent, or reverse mitochondrial disease.
       </div>
     </section>
+    </div>
 
     <div class="back-link"><a href="/SCIENCE/KNOWLEDGE/Mitochondria/">Back to Mitochondria Hub</a></div>
   </main>
