@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <title>Oxidative Stress | XIHE Knowledge Hub</title>
+    <link rel="icon" type="image/svg+xml" href="/PICTURE/XIHE_ICON.svg">
+    <meta name="description" content="Oxidative stress is the imbalance between free radicals and antioxidants — the hidden driver of fatigue, aging, and chronic disease. Understand ROS, antioxidant defense, and redox balance.">
+    <link rel="canonical" href="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/oxidative-stress/">
+    <meta property="og:title" content="Oxidative Stress | XIHE Knowledge Hub">
+    <meta property="og:description" content="Free radicals vs antioxidants — how oxidative stress drives fatigue, aging, and disease at the molecular level.">
+    <meta property="og:image" content="https://www.xgraphene.tech/PICTURE/xihe-og.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="original-source" content="https://www.xgraphene.tech">
+    <link rel="stylesheet" href="../../../fonts/fonts.css">
+    <style>
+        :root { --bg: #FAF8F5; --t: #1A1D24; --s: #475569; --m: #94A3B8; --g: #C5A059; --b: #E5E5E7; --n: #1A3348; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #FFF; color: var(--t); line-height: 1.75; -webkit-font-smoothing: antialiased; }
+        nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: var(--n); display: flex; align-items: center; justify-content: space-between; padding: 0 10%; z-index: 1000; }
+        .nl { display: flex; gap: 30px; align-items: center; }
+        .nl a { font-size: 11px; color: #E0E6ED; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; position: relative; padding-bottom: 4px; white-space: nowrap; }
+        .nl a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: var(--g); transform: scaleX(0); transform-origin: right center; transition: transform .3s; }
+        .nl a:hover::after, .nl a.active::after { transform: scaleX(1); transform-origin: left center; }
+        .nl a:hover, .nl a.active { color: var(--g); }
+        .np { font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px; color: var(--g); text-decoration: none; padding: 6px 14px; border: 1px solid rgba(197,160,89,.3); border-radius: 50px; transition: all .3s; white-space: nowrap; font-weight: 500; }
+        .np:hover { background: var(--g); color: var(--n); }
+        .hub-nav { position: fixed; top: 70px; left: 0; right: 0; height: 44px; background: var(--bg); border-bottom: 1px solid var(--b); display: flex; align-items: center; justify-content: center; gap: 0; padding: 0 10%; z-index: 999; overflow-x: auto; }
+        .hub-nav a { font-family: 'Urbanist', sans-serif; font-size: 11px; color: var(--s); text-decoration: none; padding: 8px 16px; white-space: nowrap; letter-spacing: 0.8px; transition: all .15s; position: relative; }
+        .hub-nav a:hover { color: var(--t); }
+        .hub-nav a.active { color: var(--n); font-weight: 600; }
+        .hub-nav a.active::after { content: ''; position: absolute; bottom: -1px; left: 50%; transform: translateX(-50%); width: 24px; height: 2px; background: var(--g); }
+        .hub-nav .sep { width: 1px; height: 16px; background: var(--b); flex-shrink: 0; margin: 0 4px; }
+
+        .hero {
+            background: linear-gradient(135deg, rgba(26,51,72,0.92) 0%, rgba(35,63,90,0.88) 100%),
+                        url('/PICTURE/xihe-science-hero-bg.jpg') center/cover;
+            min-height: 85vh;
+            padding: 172px 10% 80px;
+            text-align: left;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .hero-content { max-width: 640px; }
+        .breadcrumb { font-size: 11px; color: var(--g); margin-bottom: 20px; letter-spacing: 1px; }
+        .breadcrumb a { color: var(--g); text-decoration: none; }
+        .hero h1 { font-family: 'Urbanist', sans-serif; font-size: 48px; font-weight: 200; color: #FFF; letter-spacing: 2px; line-height: 1.2; margin-bottom: 12px; }
+        .hero h1 span { display: block; font-size: 20px; color: var(--g); font-weight: 300; margin-top: 8px; letter-spacing: 1px; }
+        .hero p { font-size: 16px; color: rgba(255,255,255,0.7); line-height: 1.8; max-width: 560px; }
+
+        .explore { max-width: 1100px; margin: 0 auto; padding: 64px 24px 48px; }
+        .explore-title { font-family: 'Urbanist', sans-serif; font-size: 32px; font-weight: 200; text-align: center; margin-bottom: 48px; color: var(--n); letter-spacing: 2px; }
+
+        .card-list { display: flex; flex-direction: column; gap: 24px; }
+        .card { display: grid; grid-template-columns: 100px 1fr 280px; gap: 32px; align-items: center; padding: 36px 40px; background: #FFF; border: 1px solid var(--b); text-decoration: none; transition: all .25s; position: relative; }
+        .card:hover { border-color: var(--g); box-shadow: 0 8px 32px rgba(197,160,89,0.08); transform: translateY(-2px); }
+        .card:hover .card-arrow { opacity: 1; right: 24px; }
+
+        .card-icon { width: 90px; height: 90px; background: linear-gradient(135deg, #F8F6F3 0%, #EFEBE5 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .card-icon svg { width: 44px; height: 44px; stroke: var(--s); stroke-width: 1.5; fill: none; }
+
+        .card-body { }
+        .card-body h3 { font-family: 'Urbanist', sans-serif; font-size: 22px; font-weight: 400; color: var(--t); margin-bottom: 8px; display: flex; align-items: center; gap: 12px; }
+        .tag { display: inline-block; font-size: 9px; padding: 3px 12px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; border-radius: 50px; }
+        .tag.live { background: #E8F5E9; color: #2D6A4F; }
+        .tag.planned { background: #F5F5F5; color: var(--m); }
+
+        .card-body p { font-size: 14px; color: var(--s); line-height: 1.7; margin: 10px 0 8px; }
+        .card-links { font-size: 11px; color: var(--m); letter-spacing: 0.5px; }
+        .card-links b { color: var(--g); font-weight: 600; }
+
+        .card-img { width: 260px; height: 160px; object-fit: cover; border-radius: 8px; opacity: 0.95; }
+
+        .card-arrow { position: absolute; right: 32px; top: 50%; transform: translateY(-50%); font-size: 28px; color: var(--g); opacity: 0; transition: all .25s; }
+
+        .about { max-width: 1100px; margin: 0 auto; padding: 48px 24px 72px; }
+        .about-card { display: grid; grid-template-columns: 70px 1fr; gap: 28px; padding: 40px; background: #FAF8F5; border-left: 3px solid var(--n); }
+        .about-icon { width: 70px; height: 70px; background: var(--n); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .about-icon svg { width: 32px; height: 32px; stroke: #FFF; stroke-width: 2; fill: none; }
+        .about-text h3 { font-family: 'Urbanist', sans-serif; font-size: 22px; font-weight: 400; color: var(--t); margin-bottom: 12px; }
+        .about-text p { font-size: 14px; color: var(--s); line-height: 1.8; margin-bottom: 16px; }
+        .disclaimer { font-size: 11px; color: var(--m); padding: 16px 20px; background: #FFF; border: 1px solid var(--b); border-radius: 6px; line-height: 1.6; }
+
+        footer { padding: 40px 10%; background: var(--n); text-align: center; border-top: 2px solid var(--g); } footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
+
+        @media (max-width: 900px) { .card { grid-template-columns: 80px 1fr; padding: 28px 24px; } .card-img { display: none; } .hero { padding: 152px 5% 64px; } .hero h1 { font-size: 36px; } }
+        @media (max-width: 600px) { nav { padding: 0 5%; } .nl { gap: 12px; overflow-x: auto; } .nl a { font-size: 9px; } .hub-nav { justify-content: flex-start; padding: 0 5%; gap: 2px; } .hub-nav a { font-size: 9px; padding: 6px 8px; } .hub-nav .sep { display: none; } .hero { padding: 140px 5% 56px; } .hero h1 { font-size: 28px; } .card { grid-template-columns: 1fr; text-align: center; } .card-icon { margin: 0 auto; } .about-card { grid-template-columns: 1fr; text-align: center; } .about-icon { margin: 0 auto; } }
+    </style>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.xgraphene.tech/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Science",
+            "item": "https://www.xgraphene.tech/SCIENCE/Landing.html"
+        },
+        {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Oxidative Stress",
+            "item": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/oxidative-stress/"
+        },
+        {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Oxidative Stress",
+            "item": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/oxidative-stress/"
+        }
+    ]
+}
+    </script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "headline": "Oxidative Stress",
+          "description": "Reactive oxygen species, antioxidant systems, and the redox biology of cellular health.",
+          "about": {
+            "@type": "Thing",
+            "name": "Oxidative Stress"
+          },
+          "isPartOf": {
+            "@type": "CollectionPage",
+            "name": "XIHE Knowledge Hub",
+            "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/"
+          },
+          "author": {
+            "@type": "Organization",
+            "name": "XIHE Technology"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "XIHE Technology",
+            "parentOrganization": {
+              "@type": "ResearchOrganization",
+              "name": "Jiageng Innovation Laboratory (IKKEM)"
+            }
+          }
+        }
+    </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C7YSVFRQ6R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-C7YSVFRQ6R");
+</script>
+</head>
+<body>
+<nav>
+    <a href="/"><img src="/PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" style="height:44px;width:auto"></a>
+    <div class="nl">
+        <a href="/">Home</a><a href="/ABOUT/AboutOrigin.html">About</a><a href="/SCIENCE/Landing.html">Science</a><a href="/applications.html">Applications</a><a href="/PRODUCTS/ProductPage.html">Products</a><a href="/partnership.html">Partnership</a><a href="/NEWS/index.html">News</a><a href="/CONTACT/index.html">Contact</a>
+        <a href="tel:0086-18688683865" class="np">+86 186 8868 3865</a>
+    </div>
+</nav>
+
+<div class="hub-nav">
+    <a href="/SCIENCE/KNOWLEDGE/">All Hubs</a>
+    <span class="sep"></span>
+    <a href="/SCIENCE/KNOWLEDGE/Mitochondria/">Mitochondria</a>
+    <a href="/SCIENCE/KNOWLEDGE/cellular-energy/">ATP &amp; Energy</a>
+    <a href="/SCIENCE/KNOWLEDGE/Fatigue/">Fatigue</a>
+    <a href="/SCIENCE/KNOWLEDGE/Inflammation/">Inflammation</a>
+    <a href="/SCIENCE/KNOWLEDGE/Sleep/">Sleep</a>
+    <a href="/SCIENCE/KNOWLEDGE/Recovery/">Recovery</a>
+    <a href="/SCIENCE/KNOWLEDGE/Microcirculation/">Microcirculation</a>
+    <a href="/SCIENCE/KNOWLEDGE/graphene-fir/">Graphene FIR</a>
+    <span class="sep"></span>
+    <a href="/SCIENCE/KNOWLEDGE/Metabolism/">Metabolism</a>
+    <a href="/SCIENCE/KNOWLEDGE/bioenergetics/">Bioenergetics</a>
+    <a href="/SCIENCE/KNOWLEDGE/healthy-aging/">Aging</a>
+</div>
+
+<header class="hero">
+    <div class="hero-content">
+        <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/SCIENCE/KNOWLEDGE/">Knowledge</a> &rsaquo; Oxidative Stress</p>
+        <h1>H10: Oxidative Stress<span>Free Radicals vs Antioxidants</span></h1>
+        <p>Oxidative stress is the imbalance between free radical production and your body's ability to neutralize them. It's the hidden driver behind fatigue, accelerated aging, inflammation, and many chronic conditions. This hub explains ROS, antioxidant defense systems, and how to restore redox balance.</p>
+    </div>
+</header>
+
+<section style="background:#FAF8F5;padding:48px 10%;border-bottom:1px solid #E5E5E7;">
+    <div style="max-width:800px;margin:0 auto;">
+        <p style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin-bottom:12px;">Quick Answer</p>
+        <h2 style="font-family:'Urbanist',sans-serif;font-size:24px;font-weight:400;color:#1A3348;margin-bottom:12px;line-height:1.3;">What is oxidative stress?</h2>
+        <p style="font-size:16px;color:#475569;line-height:1.8;max-width:700px;">Oxidative stress occurs when there is an imbalance between free radicals (reactive oxygen species) and the body's antioxidant defenses. Free radicals are natural byproducts of mitochondrial energy production — but when they accumulate beyond the body's capacity to neutralize them, they damage cellular components including membranes, proteins, and DNA. This hub explores the science of oxidative stress in the context of cellular energy and health.</p>
+    </div>
+</section>
+
+<section style="background:#FFF;padding:40px 10%;">
+    <div style="max-width:800px;margin:0 auto;">
+        <p style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin-bottom:12px;">Why This Matters</p>
+        <p style="font-size:15px;color:#475569;line-height:1.8;">Free radicals are not the enemy — they are essential signaling molecules. The problem is imbalance. When oxidative stress is chronic, it damages mitochondria, accelerates aging, and contributes to fatigue and inflammation.</p>
+    </div>
+</section>
+
+<section class="explore">
+    <h2 class="explore-title">Explore This Hub</h2>
+
+    <div class="card-list">
+        <div class="card" style="opacity: 0.85;">
+            <div class="card-arrow">&rarr;</div>
+            <div class="card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6M23 12h-6m-6 0H1"/><circle cx="12" cy="12" r="10"/></svg></div>
+            <div class="card-body">
+                <h3>What is oxidative stress? <span class="tag live">LIVE</span></h3>
+                <p>The science of free radicals, reactive oxygen species (ROS), and why this invisible battle matters for every cell in your body.</p>
+                <p class="card-links">Links to: <b>H1 (Mitochondria)</b>, <b>H6 (Inflammation)</b></p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?w=520&h=320&fit=crop" alt="Free radicals and oxidative stress mechanism in cells" class="card-img">
+        </div>
+
+        <div class="card" style="opacity: 0.85;">
+            <div class="card-arrow">&rarr;</div>
+            <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+            <div class="card-body">
+                <h3>How does oxidative stress cause fatigue? <span class="tag live">LIVE</span></h3>
+                <p>When ROS damages mitochondria, energy production drops. The direct link between oxidative burden and persistent tiredness.</p>
+                <p class="card-links">Links to: <b>H4 (Fatigue)</b>, <b>H1 (Mitochondria)</b></p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1530210124556-912dc1381cb8?w=520&h=320&fit=crop" alt="Oxidative damage causing cellular fatigue and energy depletion" class="card-img">
+        </div>
+
+        <div class="card" style="opacity: 0.7;">
+            <div class="card-arrow">&rarr;</div>
+            <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <div class="card-body">
+                <h3>What are endogenous antioxidants? <span class="tag planned">PLANNED</span></h3>
+                <p>Your body's built-in defense system: glutathione, SOD, catalase, and how they neutralize free radicals naturally.</p>
+                <p class="card-links">Links to: <b>H1 (Mitochondria)</b>, <b>H8 (Healthy Aging)</b></p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=520&h=320&fit=crop" alt="Endogenous antioxidants and natural defense systems" class="card-img">
+        </div>
+
+        <div class="card" style="opacity: 0.7;">
+            <div class="card-arrow">&rarr;</div>
+            <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div>
+            <div class="card-body">
+                <h3>Does oxidative stress accelerate aging? <span class="tag planned">PLANNED</span></h3>
+                <p>The free radical theory of aging revisited — how cumulative oxidative damage affects lifespan and healthspan.</p>
+                <p class="card-links">Links to: <b>H8 (Healthy Aging)</b>, <b>H6 (Inflammation)</b></p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=520&h=320&fit=crop" alt="Oxidative stress accelerating aging and cellular damage" class="card-img">
+        </div>
+
+        <div class="card" style="opacity: 0.7;">
+            <div class="card-arrow">&rarr;</div>
+            <div class="card-icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+            <div class="card-body">
+                <h3>How to reduce oxidative stress? <span class="tag planned">PLANNED</span></h3>
+                <p>Evidence-based strategies: lifestyle, nutrition, and emerging approaches to rebalancing your redox state.</p>
+                <p class="card-links">Links to: <b>H5 (Recovery)</b>, <b>H9 (Graphene FIR)</b></p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=520&h=320&fit=crop" alt="Strategies to reduce oxidative stress and improve health" class="card-img">
+        </div>
+    </div>
+</section>
+
+<section class="about">
+    <div class="about-card">
+        <div class="about-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></div>
+        <div class="about-text">
+            <h3>About This Hub</h3>
+            <p>Oxidative stress sits at the crossroads of nearly every health topic we cover. When mitochondria produce energy, they also generate free radicals as byproducts. Understanding this balance is key to understanding fatigue, aging, inflammation, and overall vitality.</p>
+            <div class="disclaimer"><strong>Disclaimer:</strong> This content is for scientific reference only and does not constitute medical advice, diagnosis, or treatment.</div>
+        </div>
+    </div>
+</section>
+
+<section style="background:#FFF;padding:40px 10% 80px;">
+    <div style="max-width:800px;margin:0 auto;">
+        <h3 style="font-family:'Urbanist',sans-serif;font-size:14px;letter-spacing:2px;color:#1A3348;text-transform:uppercase;margin-bottom:20px;">Related Hubs</h3>
+        <div style="display:flex;flex-wrap:wrap;gap:12px;">
+            <a href="/SCIENCE/KNOWLEDGE/Mitochondria/" style="padding:12px 24px;background:#1A3348;border:1px solid rgba(255,255,255,0.1);border-radius:50px;color:#E0E6ED;font-family:Urbanist,sans-serif;font-size:11px;letter-spacing:1px;text-decoration:none;transition:all .25s;">Mitochondrial Health</a>
+<a href="/SCIENCE/KNOWLEDGE/Inflammation/" style="padding:12px 24px;background:#1A3348;border:1px solid rgba(255,255,255,0.1);border-radius:50px;color:#E0E6ED;font-family:Urbanist,sans-serif;font-size:11px;letter-spacing:1px;text-decoration:none;transition:all .25s;">Inflammation</a>
+<a href="/SCIENCE/KNOWLEDGE/healthy-aging/" style="padding:12px 24px;background:#1A3348;border:1px solid rgba(255,255,255,0.1);border-radius:50px;color:#E0E6ED;font-family:Urbanist,sans-serif;font-size:11px;letter-spacing:1px;text-decoration:none;transition:all .25s;">Healthy Aging</a>
+<a href="/SCIENCE/KNOWLEDGE/Recovery/" style="padding:12px 24px;background:#1A3348;border:1px solid rgba(255,255,255,0.1);border-radius:50px;color:#E0E6ED;font-family:Urbanist,sans-serif;font-size:11px;letter-spacing:1px;text-decoration:none;transition:all .25s;">Recovery Science</a>
+
+        </div>
+    </div>
+</section>
+
+<section style="background:#FFF;padding:64px 10%;">
+    <div style="max-width:800px;margin:0 auto;">
+        <h3 style="font-family:'Urbanist',sans-serif;font-size:28px;font-weight:200;color:#1A3348;letter-spacing:2px;text-align:center;margin-bottom:40px;">Frequently Asked Questions</h3>
+
+        <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
+            <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">What are free radicals?</h4>
+            <p style="font-size:14px;color:#475569;line-height:1.7;">Free radicals — primarily reactive oxygen species (ROS) — are unstable molecules produced as natural byproducts of mitochondrial energy production. At normal levels, they serve as important cellular signals.</p>
+        </div>
+
+        <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
+            <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">How does oxidative stress affect mitochondria?</h4>
+            <p style="font-size:14px;color:#475569;line-height:1.7;">Mitochondria are both the primary source and a key target of oxidative damage. Excess ROS can damage mitochondrial DNA, impair electron transport chain function, and reduce ATP production efficiency.</p>
+        </div>
+
+        <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
+            <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">What causes oxidative stress?</h4>
+            <p style="font-size:14px;color:#475569;line-height:1.7;">Common contributors include poor diet, environmental toxins, chronic inflammation, intense or prolonged exercise without adequate recovery, psychological stress, sleep deprivation, and natural aging processes.</p>
+        </div>
+
+        <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
+            <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">What is the body's antioxidant system?</h4>
+            <p style="font-size:14px;color:#475569;line-height:1.7;">The body produces endogenous antioxidants — including glutathione, superoxide dismutase, and catalase — that neutralize free radicals. Dietary antioxidants from fruits, vegetables, and other plant foods provide additional support.</p>
+        </div>
+
+        <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
+            <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">Can oxidative stress be measured?</h4>
+            <p style="font-size:14px;color:#475569;line-height:1.7;">Research-grade markers include F2-isoprostanes, 8-OHdG, protein carbonyls, and glutathione-to-GSSG ratio. However, no single test provides a complete picture of oxidative status.</p>
+        </div>
+
+    </div>
+</section>
+
+<section style="background:#FAF8F5;padding:40px 10%;border-top:1px solid #E5E5E7;">
+    <div style="max-width:800px;margin:0 auto;">
+        <p style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:2px;color:#94A3B8;text-transform:uppercase;margin-bottom:12px;">Scientific Disclaimer</p>
+        <p style="font-size:12px;color:#94A3B8;line-height:1.8;">This hub is for scientific education and informational purposes only. The content reflects published research and current scientific understanding. It does not constitute medical advice, diagnosis, or treatment recommendations. Preclinical and mechanistic findings cannot be directly extrapolated to clinical outcomes in individual cases. Always consult qualified healthcare professionals for personal health decisions.</p>
+    </div>
+</section>
+
+<footer>
+    <p>XIHE Technology &mdash; Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard 2024-0923T-YB</p>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are free radicals?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Free radicals — primarily reactive oxygen species (ROS) — are unstable molecules produced as natural byproducts of mitochondrial energy production. At normal levels, they serve as important cellular signals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does oxidative stress affect mitochondria?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mitochondria are both the primary source and a key target of oxidative damage. Excess ROS can damage mitochondrial DNA, impair electron transport chain function, and reduce ATP production efficiency."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What causes oxidative stress?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common contributors include poor diet, environmental toxins, chronic inflammation, intense or prolonged exercise without adequate recovery, psychological stress, sleep deprivation, and natural aging processes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the body's antioxidant system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The body produces endogenous antioxidants — including glutathione, superoxide dismutase, and catalase — that neutralize free radicals. Dietary antioxidants from fruits, vegetables, and other plant foods provide additional support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can oxidative stress be measured?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Research-grade markers include F2-isoprostanes, 8-OHdG, protein carbonyls, and glutathione-to-GSSG ratio. However, no single test provides a complete picture of oxidative status."
+      }
+    }
+  ]
+}
+</script>
+</body>
+</html>

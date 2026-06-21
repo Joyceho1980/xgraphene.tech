@@ -1,0 +1,139 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1920" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0A2E58"/>
+      <stop offset="0.48" stop-color="#0D3D73"/>
+      <stop offset="1" stop-color="#071726"/>
+    </linearGradient>
+    <radialGradient id="aura" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1210 410) rotate(90) scale(380 500)">
+      <stop offset="0" stop-color="#8FD0FF" stop-opacity="0.34"/>
+      <stop offset="0.24" stop-color="#8FD0FF" stop-opacity="0.18"/>
+      <stop offset="0.56" stop-color="#8FD0FF" stop-opacity="0.05"/>
+      <stop offset="1" stop-color="#8FD0FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="outerShell" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1216 432) rotate(90) scale(250 320)">
+      <stop offset="0" stop-color="#B8D9EE"/>
+      <stop offset="0.34" stop-color="#7FB2DE"/>
+      <stop offset="0.72" stop-color="#39628E"/>
+      <stop offset="1" stop-color="#17314E"/>
+    </radialGradient>
+    <radialGradient id="innerShell" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1216 432) rotate(90) scale(198 248)">
+      <stop offset="0" stop-color="#F6E8D2"/>
+      <stop offset="0.25" stop-color="#D6B17A"/>
+      <stop offset="0.58" stop-color="#76526F"/>
+      <stop offset="1" stop-color="#3A2741"/>
+    </radialGradient>
+    <radialGradient id="cristae" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1210 430) rotate(90) scale(136 178)">
+      <stop offset="0" stop-color="#F1D2C3"/>
+      <stop offset="0.28" stop-color="#C07F7D"/>
+      <stop offset="0.6" stop-color="#7B4B63"/>
+      <stop offset="1" stop-color="#3A2542"/>
+    </radialGradient>
+    <radialGradient id="glowCore" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1228 438) rotate(90) scale(52 86)">
+      <stop offset="0" stop-color="#FFF8EC"/>
+      <stop offset="0.36" stop-color="#FFD7AE"/>
+      <stop offset="0.7" stop-color="#F0A261"/>
+      <stop offset="1" stop-color="#D47B3D"/>
+    </radialGradient>
+    <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="44"/>
+    </filter>
+    <filter id="midBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.78" numOctaves="1" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.04"/>
+      </feComponentTransfer>
+    </filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="22" stdDeviation="34" flood-color="#000000" flood-opacity="0.36"/>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#aura)"/>
+
+  <g opacity="0.22" filter="url(#softBlur)">
+    <circle cx="290" cy="210" r="160" fill="#69A7E6"/>
+    <circle cx="1620" cy="160" r="118" fill="#1E456A"/>
+    <circle cx="1560" cy="780" r="210" fill="#183552"/>
+  </g>
+
+  <g opacity="0.20">
+    <path d="M0 818C180 765 300 760 474 812C654 865 804 880 986 830C1166 780 1392 754 1920 855V1080H0V818Z" fill="#A9BDD0"/>
+    <path d="M0 890C208 844 360 850 520 895C698 944 864 956 1052 910C1238 864 1458 846 1920 952V1080H0V890Z" fill="#07101A"/>
+  </g>
+
+  <g opacity="0.35">
+    <circle cx="280" cy="126" r="2.8" fill="#D6E4F2"/>
+    <circle cx="410" cy="230" r="1.9" fill="#D6E4F2"/>
+    <circle cx="520" cy="174" r="2.4" fill="#D6E4F2"/>
+    <circle cx="1648" cy="244" r="2.4" fill="#D6E4F2"/>
+    <circle cx="1528" cy="186" r="1.8" fill="#D6E4F2"/>
+    <circle cx="1470" cy="780" r="2.2" fill="#D6E4F2"/>
+    <circle cx="1702" cy="656" r="2.0" fill="#D6E4F2"/>
+    <circle cx="192" cy="776" r="1.9" fill="#D6E4F2"/>
+    <circle cx="340" cy="642" r="1.6" fill="#D6E4F2"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <!-- Outer membrane -->
+    <path d="M928 388C992 284 1116 216 1260 218C1396 220 1496 298 1530 406C1564 518 1516 636 1404 700C1280 772 1122 780 1004 720C900 668 844 566 858 468C870 432 896 410 928 388Z" fill="url(#outerShell)"/>
+    <!-- Intermembrane highlight -->
+    <path d="M950 404C1012 320 1114 268 1238 270C1346 272 1428 334 1458 418C1488 506 1454 592 1378 644C1288 706 1154 714 1058 668C978 632 930 552 936 472C940 438 934 424 950 404Z" fill="#F3E4C8" fill-opacity="0.22"/>
+    <!-- Inner matrix -->
+    <path d="M992 414C1042 344 1128 300 1228 302C1320 304 1392 356 1416 432C1440 512 1410 584 1340 630C1260 684 1156 690 1074 650C1004 616 968 548 972 476C974 450 974 434 992 414Z" fill="url(#innerShell)"/>
+    <!-- Central glow -->
+    <path d="M1150 396C1180 376 1216 366 1248 370C1280 374 1304 392 1320 420C1336 448 1332 478 1314 500C1292 524 1260 534 1228 530C1194 526 1170 510 1156 486C1142 462 1138 418 1150 396Z" fill="url(#glowCore)" opacity="0.95"/>
+  </g>
+
+  <!-- Cristae folds -->
+  <g opacity="0.95">
+    <path d="M1008 418C1050 384 1098 370 1148 372C1188 374 1220 386 1244 406C1264 422 1276 446 1276 470C1276 496 1268 520 1252 540" stroke="url(#cristae)" stroke-width="34" stroke-linecap="round"/>
+    <path d="M1034 456C1068 432 1104 424 1144 426C1180 428 1208 438 1230 456C1248 470 1258 490 1258 512C1258 536 1250 558 1236 576" stroke="url(#cristae)" stroke-width="34" stroke-linecap="round"/>
+    <path d="M1008 514C1044 492 1084 486 1128 488C1166 490 1196 500 1218 520C1236 536 1244 556 1242 580C1240 604 1230 626 1212 644" stroke="url(#cristae)" stroke-width="34" stroke-linecap="round"/>
+    <path d="M1298 404C1340 388 1386 390 1420 410C1450 428 1462 458 1456 490C1450 522 1432 548 1402 566" stroke="url(#cristae)" stroke-width="34" stroke-linecap="round"/>
+    <path d="M1320 452C1356 440 1390 442 1416 458C1440 474 1450 496 1446 522C1442 548 1430 570 1410 586" stroke="url(#cristae)" stroke-width="34" stroke-linecap="round"/>
+    <path d="M1318 512C1350 500 1380 502 1406 516C1428 528 1438 546 1436 570C1434 594 1424 614 1406 630" stroke="url(#cristae)" stroke-width="34" stroke-linecap="round"/>
+    <path d="M1016 570C1054 548 1094 542 1136 544C1170 546 1198 556 1218 574C1234 588 1240 608 1238 632C1236 656 1224 678 1204 694" stroke="url(#cristae)" stroke-width="34" stroke-linecap="round"/>
+  </g>
+
+  <!-- Secondary mitochondrion to reinforce recognition -->
+  <g transform="translate(392 510) rotate(-12) scale(0.65)" opacity="0.7" filter="url(#midBlur)">
+    <path d="M928 388C992 284 1116 216 1260 218C1396 220 1496 298 1530 406C1564 518 1516 636 1404 700C1280 772 1122 780 1004 720C900 668 844 566 858 468C870 432 896 410 928 388Z" fill="#294F78"/>
+  </g>
+
+  <g opacity="0.86">
+    <path d="M1038 286C1102 248 1172 232 1244 236" stroke="#F3E3B5" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M1028 382C1102 354 1178 352 1258 368" stroke="#F3E3B5" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M1026 484C1094 460 1168 458 1240 472" stroke="#F3E3B5" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M1022 594C1090 570 1160 570 1228 584" stroke="#F3E3B5" stroke-width="4.5" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.24" filter="url(#blur24)">
+    <circle cx="1164" cy="266" r="10" fill="#F8E7C0"/>
+    <circle cx="1460" cy="290" r="8" fill="#F8E7C0"/>
+    <circle cx="1518" cy="470" r="9" fill="#F8E7C0"/>
+    <circle cx="1124" cy="608" r="8" fill="#F8E7C0"/>
+    <circle cx="1322" cy="684" r="8" fill="#F8E7C0"/>
+    <circle cx="1598" cy="396" r="7" fill="#F8E7C0"/>
+  </g>
+
+  <g opacity="0.30">
+    <rect x="120" y="112" width="300" height="1.5" fill="#D8B56B" fill-opacity="0.6"/>
+    <text x="120" y="168" fill="#D8B56B" font-family="Urbanist, Inter, sans-serif" font-size="20" letter-spacing="5.5" text-transform="uppercase">XIHE KNOWLEDGE</text>
+    <text x="120" y="254" fill="#FFFFFF" font-family="Urbanist, Inter, sans-serif" font-size="78" font-weight="200" letter-spacing="1.8">Mitochondria</text>
+    <text x="120" y="334" fill="#FFFFFF" font-family="Urbanist, Inter, sans-serif" font-size="78" font-weight="200" letter-spacing="1.8">and Vitality</text>
+    <text x="120" y="398" fill="#D7E0EA" font-family="Inter, sans-serif" font-size="24" font-weight="300">A clean, human-centered view of energy, dysfunction, and diagnosis.</text>
+  </g>
+
+  <g opacity="0.40">
+    <rect x="120" y="944" width="260" height="1.5" fill="#D8B56B" fill-opacity="0.55"/>
+    <text x="120" y="986" fill="#D8B56B" font-family="Urbanist, Inter, sans-serif" font-size="16" letter-spacing="2.8">ENERGY · RECOVERY · CLARITY</text>
+  </g>
+
+  <rect width="1920" height="1080" filter="url(#grain)" opacity="0.28"/>
+</svg>

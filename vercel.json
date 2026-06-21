@@ -146,6 +146,18 @@
     {
       "source": "/graphene-fir/:path*",
       "destination": "/WEBSITE/pages/graphene-fir/:path*"
+    },
+    {
+      "source": "/nodes/:path*",
+      "destination": "/WEBSITE/pages/nodes/:path*.html"
+    },
+    {
+      "source": "/nodes",
+      "destination": "/WEBSITE/pages/nodes/index.html"
+    },
+    {
+      "source": "/nodes/",
+      "destination": "/WEBSITE/pages/nodes/index.html"
     }
   ],
   "redirects": [
@@ -397,6 +409,11 @@
     {
       "source": "/NEWS/atp-study.html",
       "destination": "/SCIENCE/KNOWLEDGE/cellular-energy/atp-study.html",
+      "statusCode": 301
+    },
+    {
+      "source": "/SCIENCE/KNOWLEDGE/graphene-fir/How Graphene Far-Infrared May Support Sleep, Anxiety, and Cognitive Recovery.html",
+      "destination": "/SCIENCE/KNOWLEDGE/graphene-fir/graphene-fir-sleep-anxiety-cognitive-recovery.html",
       "statusCode": 301
     }
   ]

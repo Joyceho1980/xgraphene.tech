@@ -1,0 +1,126 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#08111D"/>
+      <stop offset="0.48" stop-color="#0E1B2A"/>
+      <stop offset="1" stop-color="#132739"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1080 350) rotate(90) scale(260 380)">
+      <stop offset="0" stop-color="#D7B56D" stop-opacity="0.38"/>
+      <stop offset="0.42" stop-color="#D7B56D" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#D7B56D" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1118 352) rotate(90) scale(150 150)">
+      <stop offset="0" stop-color="#E6F1FF"/>
+      <stop offset="0.4" stop-color="#A8C7E8"/>
+      <stop offset="0.82" stop-color="#4E7398"/>
+      <stop offset="1" stop-color="#1D3246"/>
+    </radialGradient>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1118 352) rotate(90) scale(78 78)">
+      <stop offset="0" stop-color="#FFF8E7"/>
+      <stop offset="0.3" stop-color="#F2D7A0"/>
+      <stop offset="0.8" stop-color="#C59D55"/>
+      <stop offset="1" stop-color="#A06F2C"/>
+    </radialGradient>
+    <linearGradient id="strand" x1="790" y1="260" x2="1200" y2="470" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F4E3B0" stop-opacity="0.0"/>
+      <stop offset="0.35" stop-color="#F4E3B0" stop-opacity="0.28"/>
+      <stop offset="0.72" stop-color="#D8B05C" stop-opacity="0.56"/>
+      <stop offset="1" stop-color="#F4E3B0" stop-opacity="0.0"/>
+    </linearGradient>
+    <filter id="blur40" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+    <filter id="blur14" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="blur8" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="28" stdDeviation="30" flood-color="#000000" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+
+  <g opacity="0.18">
+    <path d="M0 720C180 650 300 645 460 708C626 773 770 790 938 742C1112 692 1290 667 1600 742V900H0V720Z" fill="#AEBFD1"/>
+    <path d="M0 770C156 730 334 738 470 780C618 826 784 835 948 792C1104 751 1310 732 1600 804V900H0V770Z" fill="#0C1724"/>
+  </g>
+
+  <g opacity="0.26" filter="url(#blur8)">
+    <circle cx="390" cy="210" r="120" fill="#5E8FBF"/>
+    <circle cx="1245" cy="145" r="92" fill="#2C4E70"/>
+    <circle cx="1328" cy="632" r="135" fill="#22384F"/>
+  </g>
+
+  <g opacity="0.16">
+    <path d="M0 120H1600" stroke="#D6E4F2" stroke-opacity="0.22"/>
+    <path d="M0 240H1600" stroke="#D6E4F2" stroke-opacity="0.10"/>
+    <path d="M0 360H1600" stroke="#D6E4F2" stroke-opacity="0.08"/>
+    <path d="M0 480H1600" stroke="#D6E4F2" stroke-opacity="0.06"/>
+    <path d="M0 600H1600" stroke="#D6E4F2" stroke-opacity="0.06"/>
+    <path d="M120 0V900" stroke="#D6E4F2" stroke-opacity="0.06"/>
+    <path d="M320 0V900" stroke="#D6E4F2" stroke-opacity="0.04"/>
+    <path d="M520 0V900" stroke="#D6E4F2" stroke-opacity="0.04"/>
+    <path d="M720 0V900" stroke="#D6E4F2" stroke-opacity="0.04"/>
+    <path d="M920 0V900" stroke="#D6E4F2" stroke-opacity="0.04"/>
+    <path d="M1120 0V900" stroke="#D6E4F2" stroke-opacity="0.04"/>
+    <path d="M1320 0V900" stroke="#D6E4F2" stroke-opacity="0.04"/>
+  </g>
+
+  <g filter="url(#blur40)" opacity="0.6">
+    <ellipse cx="1098" cy="348" rx="170" ry="170" fill="#D7B56D" fill-opacity="0.38"/>
+    <ellipse cx="1112" cy="350" rx="112" ry="112" fill="#F3D79C" fill-opacity="0.24"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <ellipse cx="1094" cy="349" rx="210" ry="150" fill="url(#orb)"/>
+    <ellipse cx="1094" cy="349" rx="162" ry="114" fill="#15273A" opacity="0.34"/>
+    <ellipse cx="1094" cy="349" rx="118" ry="84" fill="url(#core)"/>
+  </g>
+
+  <g opacity="0.82">
+    <path d="M1035 318C1060 294 1093 285 1128 288C1166 291 1192 307 1210 332" stroke="#F7E2B0" stroke-width="5" stroke-linecap="round"/>
+    <path d="M1034 349C1063 333 1096 327 1132 331C1164 335 1188 348 1205 371" stroke="#F7E2B0" stroke-width="5" stroke-linecap="round"/>
+    <path d="M1040 383C1069 367 1100 360 1133 363C1165 366 1188 378 1202 395" stroke="#F7E2B0" stroke-width="5" stroke-linecap="round"/>
+    <path d="M1038 448C1068 429 1100 421 1134 425C1164 429 1186 441 1200 458" stroke="#F7E2B0" stroke-width="5" stroke-linecap="round" opacity="0.82"/>
+  </g>
+
+  <g opacity="0.95">
+    <path d="M830 300C882 266 940 253 995 260" stroke="url(#strand)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M820 375C885 350 948 348 1016 365" stroke="url(#strand)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M830 455C890 439 952 440 1010 456" stroke="url(#strand)" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.24">
+    <circle cx="980" cy="250" r="7" fill="#F6E7C0"/>
+    <circle cx="1250" cy="265" r="6" fill="#F6E7C0"/>
+    <circle cx="1288" cy="412" r="8" fill="#F6E7C0"/>
+    <circle cx="940" cy="518" r="6" fill="#F6E7C0"/>
+    <circle cx="1170" cy="560" r="7" fill="#F6E7C0"/>
+    <circle cx="1368" cy="340" r="5" fill="#F6E7C0"/>
+  </g>
+
+  <g opacity="0.88">
+    <path d="M908 216C948 194 991 185 1036 191" stroke="#E9D6A0" stroke-opacity="0.18" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M902 538C945 560 992 568 1041 561" stroke="#E9D6A0" stroke-opacity="0.12" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M1238 205C1282 222 1319 248 1350 281" stroke="#E9D6A0" stroke-opacity="0.12" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M1248 513C1291 494 1326 468 1351 436" stroke="#E9D6A0" stroke-opacity="0.12" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.92">
+    <rect x="112" y="118" width="252" height="1.5" fill="#D7B56D" fill-opacity="0.55"/>
+    <text x="112" y="166" fill="#E8EEF6" font-family="Urbanist, Inter, sans-serif" font-size="19" letter-spacing="5" text-transform="uppercase">XIHE KNOWLEDGE</text>
+    <text x="112" y="246" fill="#FFFFFF" font-family="Urbanist, Inter, sans-serif" font-size="66" font-weight="200" letter-spacing="1.8">Are Mitochondria</text>
+    <text x="112" y="324" fill="#FFFFFF" font-family="Urbanist, Inter, sans-serif" font-size="66" font-weight="200" letter-spacing="1.8">a Disease?</text>
+    <text x="112" y="386" fill="#D0DAE4" font-family="Inter, sans-serif" font-size="22" font-weight="300" letter-spacing="0.2">Understanding the boundary between energy, dysfunction, and diagnosis.</text>
+  </g>
+
+  <g opacity="0.42">
+    <rect x="112" y="802" width="230" height="1.5" fill="#D7B56D" fill-opacity="0.45"/>
+    <text x="112" y="840" fill="#D7B56D" font-family="Urbanist, Inter, sans-serif" font-size="16" letter-spacing="2.4">ENERGY · VITALITY · MEDICAL CLARITY</text>
+  </g>
+</svg>
