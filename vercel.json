@@ -80,16 +80,8 @@
       "destination": "/WEBSITE/pages/SCIENCE/KNOWLEDGE/index.html"
     },
     {
-      "source": "/SCIENCE/KNOWLEDGE/:hub",
-      "destination": "/WEBSITE/pages/SCIENCE/KNOWLEDGE/:hub/index.html"
-    },
-    {
       "source": "/SCIENCE/KNOWLEDGE/:hub/",
       "destination": "/WEBSITE/pages/SCIENCE/KNOWLEDGE/:hub/index.html"
-    },
-    {
-      "source": "/SCIENCE/KNOWLEDGE/:hub/:subhub",
-      "destination": "/WEBSITE/pages/SCIENCE/KNOWLEDGE/:hub/:subhub/index.html"
     },
     {
       "source": "/SCIENCE/KNOWLEDGE/:hub/:subhub/",
