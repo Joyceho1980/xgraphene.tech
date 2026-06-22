@@ -8,6 +8,14 @@
       "destination": "/index.html"
     },
     {
+      "source": "/robots.txt",
+      "destination": "/WEBSITE/robots.txt"
+    },
+    {
+      "source": "/sitemap.xml",
+      "destination": "/WEBSITE/sitemap.xml"
+    },
+    {
       "source": "/VISUAL-LIBRARY/:path*",
       "destination": "/ASSETS/VISUAL-LIBRARY/:path*"
     },
@@ -70,6 +78,22 @@
     {
       "source": "/SCIENCE/KNOWLEDGE/",
       "destination": "/WEBSITE/pages/SCIENCE/KNOWLEDGE/index.html"
+    },
+    {
+      "source": "/SCIENCE/KNOWLEDGE/:hub",
+      "destination": "/WEBSITE/pages/SCIENCE/KNOWLEDGE/:hub/index.html"
+    },
+    {
+      "source": "/SCIENCE/KNOWLEDGE/:hub/",
+      "destination": "/WEBSITE/pages/SCIENCE/KNOWLEDGE/:hub/index.html"
+    },
+    {
+      "source": "/SCIENCE/KNOWLEDGE/:hub/:subhub",
+      "destination": "/WEBSITE/pages/SCIENCE/KNOWLEDGE/:hub/:subhub/index.html"
+    },
+    {
+      "source": "/SCIENCE/KNOWLEDGE/:hub/:subhub/",
+      "destination": "/WEBSITE/pages/SCIENCE/KNOWLEDGE/:hub/:subhub/index.html"
     },
     {
       "source": "/science/:path*",
@@ -148,16 +172,16 @@
       "destination": "/WEBSITE/pages/graphene-fir/:path*"
     },
     {
-      "source": "/nodes/:path*",
-      "destination": "/WEBSITE/pages/nodes/:path*.html"
-    },
-    {
       "source": "/nodes",
       "destination": "/WEBSITE/pages/nodes/index.html"
     },
     {
       "source": "/nodes/",
       "destination": "/WEBSITE/pages/nodes/index.html"
+    },
+    {
+      "source": "/nodes/:page",
+      "destination": "/WEBSITE/pages/nodes/:page.html"
     }
   ],
   "redirects": [
