@@ -1,418 +1,476 @@
 <!DOCTYPE html>
-<html lang="en" translate="no">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google" content="notranslate">
-    <title>Graphene Far-Infrared | XIHE Knowledge Hub</title>
-    <link rel="icon" type="image/svg+xml" href="/PICTURE/XIHE_ICON.svg">
-    <meta name="description" content="Graphene far-infrared technology produces precise thermal energy at biologically relevant wavelengths. Explore the science, mechanisms, and research behind graphene FIR.">
-    <link rel="canonical" href="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/">
-    <meta property="og:title" content="Graphene Far-Infrared | XIHE Knowledge Hub">
-    <meta property="og:description" content="Precision thermal technology: how graphene generates far-infrared energy and its potential biological effects.">
-    <meta property="og:image" content="https://www.xgraphene.tech/PICTURE/xihe-og.webp">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="original-source" content="https://www.xgraphene.tech">
-    <link rel="stylesheet" href="../../../fonts/fonts.css">
-    <style>:root{--bg:#FAF8F5;--t:#1A1D24;--s:#475569;--m:#94A3B8;--g:#C5A059;--b:#E5E5E7;--n:#1A3348}*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Inter',sans-serif;background:#FFF;color:var(--t);line-height:1.75;-webkit-font-smoothing:antialiased}nav{position:fixed;top:0;left:0;right:0;height:70px;background:var(--n);display:flex;align-items:center;justify-content:space-between;padding:0 10%;z-index:1000}.nl{display:flex;gap:30px;align-items:center}.nl a{font-size:11px;color:#E0E6ED;text-decoration:none;letter-spacing:1px;text-transform:uppercase;position:relative;padding-bottom:4px;white-space:nowrap}.nl a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:1px;background:var(--g);transform:scaleX(0);transform-origin:right center;transition:transform .3s}.nl a:hover::after,.nl a.active::after{transform:scaleX(1);transform-origin:left center}.nl a:hover,.nl a.active{color:var(--g)}.np{font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:1px;color:var(--g);text-decoration:none;padding:6px 14px;border:1px solid rgba(197,160,89,.3);border-radius:50px;transition:all .3s;white-space:nowrap;font-weight:500}.np:hover{background:var(--g);color:var(--n)}.hub-nav{position:fixed;top:70px;left:0;right:0;height:44px;background:var(--bg);border-bottom:1px solid var(--b);display:flex;align-items:center;justify-content:center;gap:0;padding:0 10%;z-index:999;overflow-x:auto}.hub-nav a{font-family:'Urbanist',sans-serif;font-size:11px;color:var(--s);text-decoration:none;padding:8px 16px;white-space:nowrap;letter-spacing:.8px;transition:all .15s;position:relative}.hub-nav a:hover{color:var(--t)}.hub-nav a.active{color:var(--n);font-weight:600}.hub-nav a.active::after{content:'';position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:24px;height:2px;background:var(--g)}.hub-nav .sep{width:1px;height:16px;background:var(--b);flex-shrink:0;margin:0 4px}.hero{background:url('/VISUAL-LIBRARY/GRAPHENE%20HERO.webp') center/cover;min-height:85vh;padding:172px 10% 80px;text-align:left;position:relative;display:flex;align-items:center}.hero-content{max-width:640px}.breadcrumb{font-size:11px;color:var(--g);margin-bottom:20px;letter-spacing:1px}.breadcrumb a{color:var(--g);text-decoration:none}.hero h1{font-family:'Urbanist',sans-serif;font-size:48px;font-weight:200;color:#FFF;letter-spacing:2px;line-height:1.2;margin-bottom:12px}.hero h1 span{display:block;font-size:20px;color:var(--g);font-weight:300;margin-top:8px;letter-spacing:1px}.hero p{font-size:16px;color:rgba(255,255,255,.7);line-height:1.8;max-width:560px}.explore{max-width:1100px;margin:0 auto;padding:64px 24px 48px}.explore-title{font-family:'Urbanist',sans-serif;font-size:32px;font-weight:200;text-align:center;margin-bottom:48px;color:var(--n);letter-spacing:2px}.card-list{display:flex;flex-direction:column;gap:24px}.card{display:grid;grid-template-columns:100px 1fr 280px;gap:32px;align-items:center;padding:36px 40px;background:#FFF;border:1px solid var(--b);text-decoration:none;transition:all .25s;position:relative}.card:hover{border-color:var(--g);box-shadow:0 8px 32px rgba(197,160,89,.08);transform:translateY(-2px)}.card:hover .card-arrow{opacity:1;right:24px}.card-icon{width:90px;height:90px;background:linear-gradient(135deg,#F8F6F3 0%,#EFEBE5 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}.card-icon svg{width:44px;height:44px;stroke:var(--s);stroke-width:1.5;fill:none}.card-body{}.card-body h3{font-family:'Urbanist',sans-serif;font-size:22px;font-weight:400;color:var(--t);margin-bottom:8px;display:flex;align-items:center;gap:12px}.tag{display:inline-block;font-size:9px;padding:3px 12px;letter-spacing:1.5px;text-transform:uppercase;font-weight:600;border-radius:50px}.tag.live{background:#E8F5E9;color:#2D6A4F}.tag.planned{background:#F5F5F5;color:var(--m)}.tag.research{background:#EDE7F6;color:#4527A0}.card-body p{font-size:14px;color:var(--s);line-height:1.7;margin:10px 0 8px}.card-links{font-size:11px;color:var(--m);letter-spacing:.5px}.card-links b{color:var(--g);font-weight:600}.card-img{width:260px;height:160px;object-fit:cover;border-radius:8px;opacity:.95}.card-arrow{position:absolute;right:32px;top:50%;transform:translateY(-50%);font-size:28px;color:var(--g);opacity:0;transition:all .25s}.about{max-width:1100px;margin:0 auto;padding:48px 24px 72px}.about-card{display:grid;grid-template-columns:70px 1fr;gap:28px;padding:40px;background:#FAF8F5;border-left:3px solid var(--n)}.about-icon{width:70px;height:70px;background:var(--n);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}.about-icon svg{width:32px;height:32px;stroke:#FFF;stroke-width:2;fill:none}.about-text h3{font-family:'Urbanist',sans-serif;font-size:22px;font-weight:400;color:var(--t);margin-bottom:12px}.about-text p{font-size:14px;color:var(--s);line-height:1.8;margin-bottom:16px}.disclaimer{font-size:11px;color:var(--m);padding:16px 20px;background:#FFF;border:1px solid var(--b);border-radius:6px;line-height:1.6}footer{padding:40px 10%;background:var(--n);text-align:center;border-top:2px solid var(--g)}footer p{font-size:13px;color:#E0E6ED;margin-bottom:0}@media(max-width:900px){.card{grid-template-columns:80px 1fr;padding:28px 24px}.card-img{display:none}.hero{padding:152px 5% 64px}.hero h1{font-size:36px}}@media(max-width:600px){nav{padding:0 5%}.nl{gap:12px;overflow-x:auto}.nl a{font-size:9px}.hub-nav{justify-content:flex-start;padding:0 5%;gap:2px}.hub-nav a{font-size:9px;padding:6px 8px}.hub-nav .sep{display:none}.hero{padding:140px 5% 56px}.hero h1{font-size:28px}.card{grid-template-columns:1fr;text-align:center}.card-icon{margin:0 auto}.about-card{grid-template-columns:1fr;text-align:center}.about-icon{margin:0 auto}}</style>
-    <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-        {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.xgraphene.tech/"
-        },
-        {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Science",
-            "item": "https://www.xgraphene.tech/SCIENCE/Landing.html"
-        },
-        {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Graphene FIR",
-            "item": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/"
-        },
-        {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Graphene Far-Infrared",
-            "item": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/"
-        }
-    ]
-}
-    </script>
-
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "CollectionPage",
-          "headline": "Graphene Far-Infrared",
-          "description": "Far-infrared photon-tissue interaction, 8–10μm precision wavelength, and the biophysics of FIR.",
-          "about": {
-            "@type": "Thing",
-            "name": "Graphene Far-Infrared Science"
-          },
-          "knowsAbout": [
-            "Graphene Materials",
-            "Far Infrared Radiation",
-            "Electrothermal Film",
-            "Photon Energy Systems",
-            "Mitochondrial Bioenergetics",
-            "Recovery Environment Design",
-            "Thermal Engineering"
-          ],
-          "isPartOf": {
-            "@type": "CollectionPage",
-            "name": "XIHE Knowledge Hub",
-            "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/"
-          },
-          "author": {
-            "@type": "Organization",
-            "name": "XIHE Technology"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "XIHE Technology",
-            "parentOrganization": {
-              "@type": "ResearchOrganization",
-              "name": "Jiageng Innovation Laboratory (IKKEM)"
-            }
-          },
-          "hasPart": [
-            {
-              "@type": "Article",
-              "name": "Comparison",
-              "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/comparison.html"
-            },
-            {
-              "@type": "Article",
-              "name": "Elderly Anxiety Cognition RCT 2024",
-              "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/elderly-anxiety-cognition-rct-2024.html"
-            },
-            {
-              "@type": "Article",
-              "name": "Frequency Of Life",
-              "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/frequency-of-life.html"
-            },
-            {
-              "@type": "Article",
-              "name": "How FIR Works",
-              "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/how-fir-works.html"
-            },
-            {
-              "@type": "Article",
-              "name": "Photobiomodulation Spectrum",
-              "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/photobiomodulation-spectrum.html"
-            },
-            {
-              "@type": "Article",
-              "name": "Pku Clinical Trial",
-              "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/pku-clinical-trial.html"
-            },
-            {
-              "@type": "Article",
-              "name": "Water Memory",
-              "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/water-memory.html"
-            },
-            {
-              "@type": "Article",
-              "name": "Wavelength Essay",
-              "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/wavelength-essay.html"
-            },
-            {
-              "@type": "Article",
-              "name": "Wu Wei Resonance",
-              "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/wu-wei-resonance.html"
-            }
-          ]
-        }
-    </script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C7YSVFRQ6R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag("js", new Date());
-  gtag("config", "G-C7YSVFRQ6R");
-</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graphene Far-Infrared | XIHE Knowledge Hub</title>
+<style>
+:root { --bg: #FAF8F5; --t: #1A1D24; --s: #475569; --m: #94A3B8; --g: #C5A059; --b: #E5E5E7; --n: #1A3348; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: #FFF; color: var(--t); line-height: 1.75; -webkit-font-smoothing: antialiased; }
+nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: var(--n); display: flex; align-items: center; justify-content: space-between; padding: 0 10%; z-index: 1000; }
+.nl { display: flex; gap: 30px; align-items: center; }
+.nl a { font-size: 11px; color: #E0E6ED; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; position: relative; padding-bottom: 4px; white-space: nowrap; }
+.nl a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: var(--g); transform: scaleX(0); transform-origin: right center; transition: transform .3s; }
+.nl a:hover::after, .nl a.active::after { transform: scaleX(1); transform-origin: left center; }
+.nl a:hover, .nl a.active { color: var(--g); }
+.np { font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px; color: var(--g); text-decoration: none; padding: 6px 14px; border: 1px solid rgba(197,160,89,.3); border-radius: 50px; transition: all .3s; white-space: nowrap; font-weight: 500; }
+.np:hover { background: var(--g); color: var(--n); }
+.hub-nav { position: fixed; top: 70px; left: 0; right: 0; height: 44px; background: var(--bg); border-bottom: 1px solid var(--b); display: flex; align-items: center; justify-content: center; gap: 0; padding: 0 10%; z-index: 999; overflow-x: auto; }
+.hub-nav a { font-family: 'Urbanist', sans-serif; font-size: 11px; color: var(--s); text-decoration: none; padding: 8px 16px; white-space: nowrap; letter-spacing: 0.8px; transition: all .15s; position: relative; }
+.hub-nav a:hover { color: var(--t); }
+.hub-nav a.active { color: var(--n); font-weight: 600; }
+.hub-nav a.active::after { content: ''; position: absolute; bottom: -1px; left: 50%; transform: translateX(-50%); width: 24px; height: 2px; background: var(--g); }
+.hub-nav .sep { width: 1px; height: 16px; background: var(--b); flex-shrink: 0; margin: 0 4px; }
+.hero { background: url('/VISUAL-LIBRARY/GRAPHENE%20HERO.webp') center/cover; min-height: 85vh; padding: 172px 10% 80px; text-align: left; position: relative; display: flex; align-items: center; }
+.hero-content { max-width: 640px; }
+.breadcrumb { font-size: 11px; color: var(--g); margin-bottom: 20px; letter-spacing: 1px; }
+.breadcrumb a { color: var(--g); text-decoration: none; }
+.hero h1 { font-family: 'Urbanist', sans-serif; font-size: 48px; font-weight: 200; color: #FFF; letter-spacing: 2px; line-height: 1.2; margin-bottom: 12px; }
+.hero h1 span { display: block; font-size: 20px; color: var(--g); font-weight: 300; margin-top: 8px; letter-spacing: 1px; }
+.hero p { font-size: 16px; color: rgba(255,255,255,0.7); line-height: 1.8; max-width: 560px; }
+.explore { max-width: 1100px; margin: 0 auto; padding: 64px 24px 48px; }
+.explore-title { font-family: 'Urbanist', sans-serif; font-size: 32px; font-weight: 200; text-align: center; margin-bottom: 48px; color: var(--n); letter-spacing: 2px; }
+.card-list { display: flex; flex-direction: column; gap: 24px; }
+.card { display: grid; grid-template-columns: 100px 1fr 280px; gap: 32px; align-items: center; padding: 36px 40px; background: #FFF; border: 1px solid var(--b); text-decoration: none; transition: all .25s; position: relative; }
+.card:hover { border-color: var(--g); box-shadow: 0 8px 32px rgba(197,160,89,0.08); transform: translateY(-2px); }
+.card:hover .card-arrow { opacity: 1; right: 24px; }
+.card-icon { width: 90px; height: 90px; background: linear-gradient(135deg, #F8F6F3 0%, #EFEBE5 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.card-icon svg { width: 44px; height: 44px; stroke: var(--s); stroke-width: 1.5; fill: none; }
+.card-body { }
+.card-body h3 { font-family: 'Urbanist', sans-serif; font-size: 22px; font-weight: 400; color: var(--t); margin-bottom: 8px; display: flex; align-items: center; gap: 12px; }
+.tag { display: inline-block; font-size: 9px; padding: 3px 12px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; border-radius: 50px; }
+.tag.live { background: #E8F5E9; color: #2D6A4F; }
+.tag.planned { background: #F5F5F5; color: var(--m); }
+.tag.research { background: #EDE7F6; color: #4527A0; }
+.card-body p { font-size: 14px; color: var(--s); line-height: 1.7; margin: 10px 0 8px; }
+.card-links { font-size: 11px; color: var(--m); letter-spacing: 0.5px; }
+.card-links b { color: var(--g); font-weight: 600; }
+.card-img { width: 260px; height: 160px; object-fit: cover; border-radius: 8px; opacity: 0.95; }
+.card-arrow { position: absolute; right: 32px; top: 50%; transform: translateY(-50%); font-size: 28px; color: var(--g); opacity: 0; transition: all .25s; }
+.about { max-width: 1100px; margin: 0 auto; padding: 48px 24px 72px; }
+.disclaimer { font-size: 11px; color: var(--m); padding: 16px 20px; background: #FFF; border: 1px solid var(--b); border-radius: 6px; line-height: 1.6; }
+footer { padding: 40px 10%; background: var(--n); text-align: center; border-top: 2px solid var(--g); }
+footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
+@media (max-width: 900px) { .card { grid-template-columns: 80px 1fr; padding: 28px 24px; } .card-img { display: none; } .hero { padding: 152px 5% 64px; } .hero h1 { font-size: 36px; } }
+@media (max-width: 600px) { nav { padding: 0 5%; } .nl { gap: 12px; overflow-x: auto; } .nl a { font-size: 9px; } .hub-nav { justify-content: flex-start; padding: 0 5%; gap: 2px; } .hub-nav a { font-size: 9px; padding: 6px 8px; } .hub-nav .sep { display: none; } .hero { padding: 140px 5% 56px; } .hero h1 { font-size: 28px; } .card { grid-template-columns: 1fr; text-align: center; } .card-icon { margin: 0 auto; } }
+</style>
 </head>
 <body>
-<nav><a href="/"><img src="/PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" style="height:44px;width:auto"></a><div class="nl"><a href="/">Home</a><a href="/ABOUT/AboutOrigin.html">About</a><a href="/SCIENCE/Landing.html">Science</a><a href="/applications.html">Applications</a><a href="/PRODUCTS/ProductPage.html">Products</a><a href="/partnership.html">Partnership</a><a href="/NEWS/index.html">News</a><a href="/CONTACT/index.html">Contact</a><a href="tel:0086-18688683865" class="np">+86 186 8868 3865</a></div></nav>
-<div class="hub-nav"><a href="/SCIENCE/KNOWLEDGE/">All Hubs</a><span class="sep"></span><a href="/SCIENCE/KNOWLEDGE/Mitochondria/">Mitochondria</a><a href="/SCIENCE/KNOWLEDGE/cellular-energy/">ATP &amp; Energy</a><a href="/SCIENCE/KNOWLEDGE/Fatigue/">Fatigue</a><a href="/SCIENCE/KNOWLEDGE/Inflammation/">Inflammation</a><a href="/SCIENCE/KNOWLEDGE/Sleep/">Sleep</a><a href="/SCIENCE/KNOWLEDGE/Recovery/">Recovery</a><a href="/SCIENCE/KNOWLEDGE/Microcirculation/">Microcirculation</a><a href="/SCIENCE/KNOWLEDGE/graphene-fir/" class="active">Graphene FIR</a><span class="sep"></span><a href="/SCIENCE/KNOWLEDGE/Metabolism/">Metabolism</a><a href="/SCIENCE/KNOWLEDGE/bioenergetics/">Bioenergetics</a><a href="/SCIENCE/KNOWLEDGE/healthy-aging/">Aging</a></div>
-<header class="hero"><div class="hero-content"><p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/SCIENCE/KNOWLEDGE/">Knowledge</a> &rsaquo; Graphene FIR</p><h1>H9: Graphene Far-Infrared<span>Precision Thermal Technology — Engineered for Radiant Efficiency, Not Surface Heat</span></h1><p>All graphene products convert electricity into heat. XIHE's differentiator is how much of that heat is delivered as usable far-infrared radiation — not surface warmth, but resonant energy transfer in the 8–10μm region.</p></div>
 
-<div style="max-width:900px;margin:20px auto 0;padding:16px 10%;text-align:center;border-top:1px solid rgba(255,255,255,0.15);">
-    <p style="font-family:'Urbanist',sans-serif;font-size:10px;letter-spacing:2px;color:rgba(255,255,255,0.5);text-transform:uppercase;margin-bottom:12px;">Knowledge Path</p>
-    <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;align-items:center;">
-        <a href="/SCIENCE/KNOWLEDGE/Sleep/" style="font-size:11px;color:rgba(255,255,255,0.5);text-decoration:none;padding:6px 12px;border:1px solid rgba(255,255,255,0.1);border-radius:50px;">Sleep</a>
-        <span style="color:rgba(255,255,255,0.2);font-size:12px;">→</span>
-        <a href="/SCIENCE/KNOWLEDGE/Fatigue/" style="font-size:11px;color:rgba(255,255,255,0.5);text-decoration:none;padding:6px 12px;border:1px solid rgba(255,255,255,0.1);border-radius:50px;">Fatigue</a>
-        <span style="color:rgba(255,255,255,0.2);font-size:12px;">→</span>
-        <a href="/SCIENCE/KNOWLEDGE/Recovery/" style="font-size:11px;color:rgba(255,255,255,0.5);text-decoration:none;padding:6px 12px;border:1px solid rgba(255,255,255,0.1);border-radius:50px;">Recovery</a>
-        <span style="color:rgba(255,255,255,0.2);font-size:12px;">→</span>
-        <a href="/SCIENCE/KNOWLEDGE/Mitochondria/" style="font-size:11px;color:rgba(255,255,255,0.5);text-decoration:none;padding:6px 12px;border:1px solid rgba(255,255,255,0.1);border-radius:50px;">Mitochondria</a>
-        <span style="color:rgba(255,255,255,0.2);font-size:12px;">→</span>
-        <a href="/SCIENCE/KNOWLEDGE/cellular-energy/" style="font-size:11px;color:rgba(255,255,255,0.5);text-decoration:none;padding:6px 12px;border:1px solid rgba(255,255,255,0.1);border-radius:50px;">Cellular Energy</a>
-        <span style="color:rgba(255,255,255,0.2);font-size:12px;">→</span>
-        <a href="/SCIENCE/KNOWLEDGE/graphene-fir/" style="font-size:11px;color:#1A3348;text-decoration:none;padding:6px 14px;background:#C5A059;border-radius:50px;font-weight:600;letter-spacing:1px;">★ Graphene FIR</a>
-        <span style="color:rgba(255,255,255,0.2);font-size:12px;">→</span>
-        <span style="font-size:11px;color:rgba(255,255,255,0.3);padding:6px 12px;border:1px dashed rgba(255,255,255,0.15);border-radius:50px;">Recovery Environment</span>
-    </div>
+<nav>
+<div class="nl">
+<a href="/"><img src="/PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" style="height:28px;"></a>
+<a href="/">Home</a>
+<a href="/ABOUT/AboutOrigin.html">About</a>
+<a href="/SCIENCE/Landing.html">Science</a>
+<a href="/applications.html">Applications</a>
+<a href="/PRODUCTS/ProductPage.html">Products</a>
+<a href="/partnership.html">Partnership</a>
+<a href="/NEWS/index.html">News</a>
+<a href="/CONTACT/index.html">Contact</a>
 </div>
-</header>
+<a class="np" href="tel:0086-18688683865">+86 186 8868 3865</a>
+</nav>
 
-<section style="background:#FAF8F5;padding:48px 10%;border-bottom:1px solid #E5E5E7;">
-    <div style="max-width:800px;margin:0 auto;">
-        <p style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin-bottom:12px;">Quick Answer</p>
-        <h2 style="font-family:'Urbanist',sans-serif;font-size:24px;font-weight:400;color:#1A3348;margin-bottom:12px;line-height:1.3;">What Is Graphene Far-Infrared Technology?</h2>
-        <p style="font-size:16px;color:#475569;line-height:1.8;max-width:700px;">Graphene far-infrared refers to the use of graphene — a multi-layer carbon lattice — to generate and emit far-infrared radiation (FIR) when an electrical current is applied. XIHE's graphene elements are engineered around a three-layer energy conversion framework:</p>
-        <p style="font-size:15px;color:#475569;line-height:2.0;max-width:700px;margin-top:12px;">
-            <strong>Layer 1 — Electrical → Thermal:</strong> ≈99% conversion efficiency (industry baseline)<br>
-            <strong>Layer 2 — Thermal → FIR Radiation:</strong> ≥68% electro-thermal radiation conversion efficiency (NIQS-tested — XIHE's core differentiator)<br>
-            <strong>Layer 3 — Surface Emission:</strong> ≥0.88 normal total emissivity (NIQS-tested)
-        </p>
-        <p style="font-size:16px;color:#475569;line-height:1.8;max-width:700px;margin-top:12px;">Rather than pursuing higher temperature, XIHE systems are engineered for higher-quality energy output — precision wavelength in the 8–10μm region and industry-leading radiant efficiency.</p>
-    </div>
+<div class="hub-nav">
+<a href="/SCIENCE/KNOWLEDGE/">All Hubs</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Mitochondria/">Mitochondria</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/cellular-energy/">ATP &amp; Energy</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Fatigue/">Fatigue</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Inflammation/">Inflammation</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Sleep/">Sleep</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Recovery/">Recovery</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Microcirculation/">Microcirculation</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/graphene-fir/" class="active">Graphene FIR</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Metabolism/">Metabolism</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/bioenergetics/">Bioenergetics</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/healthy-aging/">Aging</a>
+</div>
+
+<section class="hero">
+<div class="hero-content">
+<div class="breadcrumb">
+<a href="/">Home</a> &rsaquo; <a href="/SCIENCE/KNOWLEDGE/">Knowledge</a> &rsaquo; Graphene FIR
+</div>
+<h1>Graphene Far-Infrared<span>Precision Thermal Technology for Radiant Energy Delivery</span></h1>
+<p>Graphene's single-atom-layer structure enables efficient electro-thermal conversion with high far-infrared emissivity. This hub explores how precision thermal technology delivers energy at biologically relevant wavelengths and what that means for microcirculation and cellular support.</p>
+</div>
 </section>
 
-<section style="background:#FFF;padding:40px 10%;">
-    <div style="max-width:800px;margin:0 auto;">
-        <p style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin-bottom:12px;">Why This Matters: The Three Layers of Energy Conversion</p>
-        <p style="font-size:15px;color:#475569;line-height:1.8;margin-bottom:24px;">Most graphene heating products share the same electro-thermal conversion capability (Layer 1). The real difference is in Layer 2 — what fraction of thermal energy becomes usable far-infrared radiation rather than dissipating as surface heat.</p>
-        <table style="width:100%;border-collapse:collapse;font-size:14px;">
-            <thead>
-                <tr style="border-bottom:2px solid #C5A059;">
-                    <th style="padding:12px 16px;text-align:left;color:#1A3348;font-family:'Urbanist',sans-serif;font-weight:500;">Layer</th>
-                    <th style="padding:12px 16px;text-align:left;color:#1A3348;font-family:'Urbanist',sans-serif;font-weight:500;">Conversion</th>
-                    <th style="padding:12px 16px;text-align:left;color:#1A3348;font-family:'Urbanist',sans-serif;font-weight:500;">XIHE Data</th>
-                    <th style="padding:12px 16px;text-align:left;color:#1A3348;font-family:'Urbanist',sans-serif;font-weight:500;">What It Means</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr style="border-bottom:1px solid #E5E5E7;">
-                    <td style="padding:12px 16px;color:#475569;">1</td>
-                    <td style="padding:12px 16px;color:#475569;">Electrical → Thermal</td>
-                    <td style="padding:12px 16px;color:#C5A059;font-weight:500;">≈99%</td>
-                    <td style="padding:12px 16px;color:#475569;">Industry baseline capability</td>
-                </tr>
-                <tr style="border-bottom:1px solid #E5E5E7;">
-                    <td style="padding:12px 16px;color:#475569;">2</td>
-                    <td style="padding:12px 16px;color:#475569;">Thermal → FIR Radiation</td>
-                    <td style="padding:12px 16px;color:#C5A059;font-weight:500;">≥68% (NIQS)</td>
-                    <td style="padding:12px 16px;color:#475569;">Core differentiator — more radiant energy, less surface heat</td>
-                </tr>
-                <tr>
-                    <td style="padding:12px 16px;color:#475569;">3</td>
-                    <td style="padding:12px 16px;color:#475569;">Surface Emission</td>
-                    <td style="padding:12px 16px;color:#C5A059;font-weight:500;">≥0.88 (NIQS)</td>
-                    <td style="padding:12px 16px;color:#475569;">Material efficiency measure</td>
-                </tr>
-            </tbody>
-        </table>
-        <p style="font-size:14px;color:#1A3348;line-height:1.8;margin-top:20px;font-family:'Urbanist',sans-serif;">This is not about temperature. It is about the quality and precision of energy delivery.</p>
-    </div>
-</section>
+<!-- ============ RELATED HUBS ============ -->
+<div style="max-width:1100px;margin:0 auto 32px;padding:0 24px;">
+<h3 style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#94A3B8;text-transform:uppercase;margin:0 0 12px;">Explore Related Hubs</h3>
+<div style="display:flex;flex-wrap:wrap;gap:12px;">
+<a href="/SCIENCE/KNOWLEDGE/Microcirculation/" style="padding:12px 24px;border:1px solid #E5E5E7;border-radius:8px;color:#1A3348;font-family:'Urbanist',sans-serif;font-size:13px;text-decoration:none;transition:all .2s;">Microcirculation Science</a>
+<a href="/SCIENCE/KNOWLEDGE/Mitochondria/" style="padding:12px 24px;border:1px solid #E5E5E7;border-radius:8px;color:#1A3348;font-family:'Urbanist',sans-serif;font-size:13px;text-decoration:none;transition:all .2s;">Mitochondrial Health</a>
+<a href="/SCIENCE/KNOWLEDGE/cellular-energy/" style="padding:12px 24px;border:1px solid #E5E5E7;border-radius:8px;color:#1A3348;font-family:'Urbanist',sans-serif;font-size:13px;text-decoration:none;transition:all .2s;">ATP &amp; Cellular Energy</a>
+<a href="/SCIENCE/KNOWLEDGE/Sleep/" style="padding:12px 24px;border:1px solid #E5E5E7;border-radius:8px;color:#1A3348;font-family:'Urbanist',sans-serif;font-size:13px;text-decoration:none;transition:all .2s;">Sleep &amp; Recovery</a>
+</div>
+</div>
 
-<section class="explore">
-    <h2 class="explore-title">Explore This Hub</h2>
-    <div class="card-list">
-        <a href="/SCIENCE/KNOWLEDGE/graphene-fir/how-fir-works.html" class="card">
-            <div class="card-arrow">&rarr;</div>
-            <div class="card-icon">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            </div>
-            <div class="card-body">
-                <h3>Why Is Far-Infrared Invisible but Warm?<span class="tag live">LIVE</span></h3>
-                <p>The physics of light and skin: understanding how FIR wavelengths interact with biological tissue.</p>
-                <div class="card-links">Foundation · <b>H7 (Microcirculation)</b></div>
-            </div>
-            <img class="card-img" src="https://picsum.photos/id/24/260/160" alt="Why is far-infrared invisible but warm" loading="lazy">
-        </a><a href="/SCIENCE/KNOWLEDGE/graphene-fir/RESONANCE/" class="card">
-            <div class="card-arrow">&rarr;</div>
-            <div class="card-icon">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            </div>
-            <div class="card-body">
-                <h3>Frequency & Resonance <span class="tag live">SUB-HUB</span></h3>
-                <p>8–10μm — where graphene FIR meets cellular water. The biophysics of precision frequency, brainwave modulation, and biological harmony.</p>
-                <div class="card-links">Sub-Hub · <b>Resonance</b> · <b>Alpha Wave</b> · <b>Frequency of Life</b></div>
-            </div>
-            <img class="card-img" src="https://picsum.photos/id/32/260/160" alt="Frequency and resonance sub-hub" loading="lazy">
-        </a><a href="/SCIENCE/KNOWLEDGE/graphene-fir/graphene-sleep-brainwaves.html" class="card">
-            <div class="card-arrow">&rarr;</div>
-            <div class="card-icon">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            </div>
-            <div class="card-body">
-                <h3>Graphene and Sleep: FIR, Brainwaves & Relaxation <span class="tag live">NEW</span></h3>
-                <p>How far-infrared radiation may influence alpha and theta brainwave activity — EEG findings from Zhejiang University.</p>
-                <div class="card-links">Science · <b>Brainwaves</b> · <b>Sleep</b> · <b>Resonance</b></div>
-            </div>
-            <img class="card-img" src="/VISUAL-LIBRARY/How%20Far-Infrared%20Radiation%20May%20Influence%20Brainwaves%20and%20Relaxation%20States.webp" alt="Graphene sleep brainwaves" loading="lazy">
-        </a><a href="/SCIENCE/KNOWLEDGE/graphene-fir/comparison.html" class="card">
-            <div class="card-arrow">&rarr;</div>
-            <div class="card-icon">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            </div>
-            <div class="card-body">
-                <h3>Graphene Infrared vs Traditional Heating<span class="tag live">LIVE</span></h3>
-                <p>Technical comparison: emissivity, penetration depth, and energy efficiency across heating technologies.</p>
-                <div class="card-links">Technical · <b>Technology Platform</b></div>
-            </div>
-            <img class="card-img" src="https://picsum.photos/id/26/260/160" alt="Graphene infrared vs traditional heating" loading="lazy">
-        </a><a href="/SCIENCE/KNOWLEDGE/graphene-fir/wavelength-essay.html" class="card">
-            <div class="card-arrow">&rarr;</div>
-            <div class="card-icon">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            </div>
-            <div class="card-body">
-                <h3>5-15um Is Not a Coincidence<span class="tag live">JOURNAL</span></h3>
-                <p>How nature speaks through wavelength — an exploration of the electromagnetic spectrum and biological resonance.</p>
-                <div class="card-links">Essay · <b>H1 (Mitochondria)</b> · <b>H7 (Microcirculation)</b></div>
-            </div>
-            <img class="card-img" src="https://picsum.photos/id/30/260/160" alt="5-15um is not a coincidence" loading="lazy">
-        </a><a href="/SCIENCE/KNOWLEDGE/graphene-fir/water-memory.html" class="card">
-            <div class="card-arrow">&rarr;</div>
-            <div class="card-icon">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            </div>
-            <div class="card-body">
-                <h3>Water Has Memory, Cells Have Rhythm<span class="tag live">JOURNAL</span></h3>
-                <p>The psychology of resonance: how water, waves, and cellular communication converge.</p>
-                <div class="card-links">Essay · <b>H1 (Mitochondria)</b></div>
-            </div>
-            <img class="card-img" src="https://picsum.photos/id/16/260/160" alt="Water has memory cells have rhythm" loading="lazy">
-        </a><a href="/SCIENCE/KNOWLEDGE/graphene-fir/photobiomodulation-spectrum.html" class="card">
-            <div class="card-arrow">&rarr;</div>
-            <div class="card-icon">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            </div>
-            <div class="card-body">
-                <h3>Red Light, NIR, and FIR — The Spectrum<span class="tag live">LIVE</span></h3>
-                <p>Understanding the photobiomodulation spectrum: red light, near-infrared, and far-infrared compared.</p>
-                <div class="card-links">Technical · <b>H1 (Mitochondria)</b></div>
-            </div>
-            <img class="card-img" src="https://picsum.photos/id/42/260/160" alt="Red light NIR and FIR spectrum" loading="lazy">
-        </a><a href="/SCIENCE/KNOWLEDGE/graphene-fir/pku-clinical-trial.html" class="card">
-            <div class="card-arrow">&rarr;</div>
-            <div class="card-icon">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            </div>
-            <div class="card-body">
-                <h3>PKU Third Hospital Research: 78.3% Outcome<span class="tag live">LIVE</span></h3>
-                <p>Clinical research: measured outcomes from a Peking University Third Hospital graphene FIR study.</p>
-                <div class="card-links">Research data · <b>H7 (Microcirculation)</b></div>
-            </div>
-            <img class="card-img" src="https://picsum.photos/id/48/260/160" alt="PKU third hospital research" loading="lazy">
-        </a><a href="/SCIENCE/KNOWLEDGE/graphene-fir/elderly-anxiety-cognition-rct-2024.html" class="card">
-            <div class="card-arrow">&rarr;</div>
-            <div class="card-icon">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            </div>
-            <div class="card-body">
-                <h3>RCT: 65% Anxiety Reduction in Older Adults<span class="tag research">RESEARCH</span></h3>
-                <p>Published RCT in BMC Geriatrics (2024): graphene FIR reduced anxiety 65% and improved cognition 83% in 108 older adults. Co-authored by Academician Zheng Nanfeng.</p>
-                <div class="card-links">Research · <b>H1 (Mitochondria)</b> · <b>H7 (Microcirculation)</b></div>
-            </div>
-            <img class="card-img" src="https://picsum.photos/id/60/260/160" alt="Elderly anxiety cognition RCT BMC Geriatrics 2024" loading="lazy">
-        </a><a href="/SCIENCE/KNOWLEDGE/graphene-fir/graphene-fir-sleep-anxiety-cognitive-recovery.html" class="card">
-            <div class="card-arrow">&rarr;</div>
-            <div class="card-icon">
-                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            </div>
-            <div class="card-body">
-                <h3>How Does Graphene FIR Affect Sleep?<span class="tag live">NEW</span></h3>
-                <p>FIR, microcirculation, and thermoregulation — the biological pathway to deeper, more restorative sleep.</p>
-                <div class="card-links">Science · <b>H7 (Microcirculation)</b> · <b>H4 (Sleep)</b></div>
-            </div>
-            <img class="card-img" src="/VISUAL-LIBRARY/why-do-i-wake-up-tired.webp" alt="Graphene far-infrared sleep quality" loading="lazy">
-        </a>
-    </div>
-</section>
+<!-- ============ KNOWLEDGE GRAPH NODE DEFINITION (5-Layer Foldable) ============ -->
+<details class="knowledge-graph-fold" style="max-width:1100px;margin:0 auto 32px;padding:0 24px;">
+<summary style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:2px;color:#94A3B8;text-transform:uppercase;cursor:pointer;padding:12px 0;">Knowledge Graph Node</summary>
+
+<!-- LAYER 1: AI Core Summary -->
+<div style="background:#FAF8F5;padding:24px 28px;border-left:3px solid #C5A059;margin-bottom:16px;border-radius:0 6px 6px 0;">
+<h3 style="font-family:'Urbanist',sans-serif;font-size:10px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin:0 0 8px;">Layer 1 &middot; AI Core Summary</h3>
+<p style="font-size:15px;color:#1A1D24;line-height:1.8;margin:0;"><strong>Graphene far-infrared technology achieves 68% electro-thermal conversion efficiency at 9.4&mu;m wavelength, building a FIR radiation environment that supports cellular energy without directly altering biological function.</strong></p>
+<p style="font-size:13px;color:#94A3B8;margin:8px 0 0;">Evidence Type: National Infrared Center (NIQS) testing data</p>
+</div>
+
+<!-- LAYER 2: Node Definition -->
+<div style="padding:16px 0;margin-bottom:12px;">
+<h3 style="font-family:'Urbanist',sans-serif;font-size:10px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin:0 0 12px;">Layer 2 &middot; Node Definition</h3>
+<table style="width:100%;border-collapse:collapse;font-size:13px;border:1px solid #E5E5E7;">
+<tr style="background:#FAF8F5;"><td style="padding:8px 12px;font-weight:600;width:160px;">Node</td><td style="padding:8px 12px;">Graphene FIR</td></tr>
+<tr><td style="padding:8px 12px;font-weight:600;">Layer</td><td style="padding:8px 12px;">Technology Layer</td></tr>
+<tr style="background:#FAF8F5;"><td style="padding:8px 12px;font-weight:600;">Question Addressed</td><td style="padding:8px 12px;">How does graphene far-infrared support cellular health?</td></tr>
+<tr><td style="padding:8px 12px;font-weight:600;">Mechanism Entry</td><td style="padding:8px 12px;">68% radiant efficiency, precise 9.4&mu;m wavelength band</td></tr>
+<tr style="background:#FAF8F5;"><td style="padding:8px 12px;font-weight:600;">Upstream Cause</td><td style="padding:8px 12px;">Ultimate convergence point of all upstream hubs</td></tr>
+<tr><td style="padding:8px 12px;font-weight:600;">Outcome</td><td style="padding:8px 12px;">Builds a far-infrared radiation environment that supports cellular energy</td></tr>
+</table>
+</div>
+
+<!-- LAYER 3: Knowledge Position -->
+<div style="padding:16px 0;margin-bottom:12px;">
+<h3 style="font-family:'Urbanist',sans-serif;font-size:10px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin:0 0 12px;">Layer 3 &middot; Knowledge Position</h3>
+<pre style="font-family:'Courier New',monospace;font-size:12px;color:#1A3348;background:#FAF8F5;padding:16px 20px;border-radius:6px;line-height:1.7;overflow-x:auto;">
+TECHNOLOGY LAYER
+&DownRightVector; Graphene FIR &star; (CURRENT)
+    &UpArrowBar;
+ENERGY LAYER
+&DownRightVector; Cellular Energy
+    &UpArrowBar;
+MECHANISMS LAYER
+&DownRightVector; Mitochondria
+    &UpArrowBar;
+SYMPTOMS LAYER
+&UnderBar; Sleep
+&UnderBar; Fatigue
+&UnderBar; Recovery
+&UnderBar; Inflammation
+&UnderBar; Microcirculation
+&UnderBar; Healthy Aging
+&UnderBar; Metabolism
+    &UpArrowBar;
+EVIDENCE LAYER
+&DownRightVector; Clinical Evidence
+</pre>
+</div>
+
+<!-- LAYER 4: Evidence Snapshot -->
+<div style="padding:16px 0;margin-bottom:12px;">
+<h3 style="font-family:'Urbanist',sans-serif;font-size:10px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin:0 0 12px;">Layer 4 &middot; Evidence Snapshot</h3>
+<ul style="font-size:13px;color:#475569;line-height:1.8;padding-left:20px;">
+<li>NIQS certified (report 2022-WT-HW-00529): normal total emissivity 0.88 (national standard GB/T 30127 requires ≥0.83)</li>
+<li>NIQS certified: electro-thermal radiation conversion efficiency 68% (industry standard requires ≥55%) — 24% above threshold</li>
+<li>Small Science (DOI: 10.1002/smsc.202200036): graphene FIR triggered 2.3–4.1× brainwave increase in human subjects, EEG-confirmed</li>
+</ul>
+</div>
+
+<!-- LAYER 5: Graph Navigation -->
+<div style="padding:16px 0;">
+<h3 style="font-family:'Urbanist',sans-serif;font-size:10px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin:0 0 12px;">Layer 5 &middot; Graph Navigation</h3>
+<p style="font-size:13px;color:#475569;line-height:1.8;margin:0 0 4px;"><strong>⬆ Upstream:</strong> Clinical Evidence &rarr; All Symptoms &rarr; Mitochondria &rarr; Cellular Energy</p>
+<p style="font-size:13px;color:#475569;line-height:1.8;margin:0 0 4px;"><strong>➡ Siblings:</strong> &mdash; (Terminal technology node)</p>
+<p style="font-size:13px;color:#475569;line-height:1.8;margin:0;"><strong>⬇ Downstream:</strong> Graphene FIR &rarr; Product Applications (Capsule, Eye Mask, Cabin)</p>
+</div>
+
+</details>
+
+<!-- Quick Answer: required per Hub Design System -->
+<div style="max-width:1100px;margin:0 auto;padding:0 24px;">
+<div style="background:#FAF8F5;border-left:4px solid #C5A059;padding:32px 36px;margin:0 0 32px;border-radius:0 8px 8px 0;">
+<p style="font-size:10px;text-transform:uppercase;letter-spacing:2px;color:#C5A059;font-weight:600;margin:0 0 10px;">Quick Answer</p>
+<h2 style="font-family:'Urbanist',sans-serif;font-size:22px;font-weight:400;color:#1A1D24;margin:10px 0 16px;line-height:1.3;">How does graphene far-infrared technology work?</h2>
+<p style="font-size:15px;line-height:1.8;color:#475569;margin:0;">Graphene generates far-infrared radiation in the 6-14&mu;m range through electro-thermal conversion. Unlike conventional heaters that dissipate most energy as surface heat, XIHE's graphene elements achieve &ge;68% electro-thermal radiation conversion efficiency (NIQS-tested) &mdash; meaning a higher proportion of energy is delivered as usable far-infrared radiation in the 8&ndash;10&mu;m region, which coincides with the human body's natural thermal emission.</p>
+</div>
+</div>
+
+<div class="explore">
+<h2 class="explore-title">Explore This Hub</h2>
+<div class="card-list">
+
+<a class="card" href="/SCIENCE/KNOWLEDGE/graphene-fir/how-fir-works.html">
+<div class="card-icon">
+<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+</div>
+<div class="card-body">
+<h3>Why Is Far-Infrared Invisible but Warm? <span class="tag live">LIVE</span></h3>
+<p>The physics of light and skin: understanding how FIR wavelengths interact with biological tissue.</p>
+<div class="card-links">Foundation &middot; <b>H7 (Microcirculation)</b></div>
+</div>
+<img class="card-img" src="https://picsum.photos/id/24/260/160" alt="" loading="lazy">
+</a>
+
+<a class="card" href="/SCIENCE/KNOWLEDGE/graphene-fir/RESONANCE/">
+<div class="card-icon">
+<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+</div>
+<div class="card-body">
+<h3>Frequency &amp; Resonance <span class="tag live">SUB-HUB</span></h3>
+<p>8&ndash;10&mu;m &mdash; where graphene FIR meets cellular water. The biophysics of precision frequency, brainwave modulation, and biological harmony.</p>
+<div class="card-links">Sub-Hub &middot; <b>Resonance</b></div>
+</div>
+<img class="card-img" src="https://picsum.photos/id/32/260/160" alt="" loading="lazy">
+</a>
+
+<a class="card" href="/SCIENCE/KNOWLEDGE/graphene-fir/graphene-sleep-brainwaves.html">
+<div class="card-icon">
+<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+</div>
+<div class="card-body">
+<h3>Graphene and Sleep: FIR, Brainwaves &amp; Relaxation <span class="tag live">NEW</span></h3>
+<p>How far-infrared radiation may influence alpha and theta brainwave activity &mdash; EEG findings from Zhejiang University.</p>
+<div class="card-links">Science &middot; <b>Brainwaves</b> &middot; <b>Sleep</b></div>
+</div>
+<img class="card-img" src="/VISUAL-LIBRARY/How%20Far-Infrared%20Radiation%20May%20Influence%20Brainwaves%20and%20Relaxation%20States.webp" alt="" loading="lazy">
+</a>
+
+<a class="card" href="/SCIENCE/KNOWLEDGE/graphene-fir/comparison.html">
+<div class="card-icon">
+<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+</div>
+<div class="card-body">
+<h3>Graphene Infrared vs Traditional Heating <span class="tag live">LIVE</span></h3>
+<p>Technical comparison: emissivity, penetration depth, and energy efficiency across heating technologies.</p>
+<div class="card-links">Technical &middot; <b>Technology Platform</b></div>
+</div>
+<img class="card-img" src="https://picsum.photos/id/26/260/160" alt="" loading="lazy">
+</a>
+
+<a class="card" href="/SCIENCE/KNOWLEDGE/graphene-fir/wavelength-essay.html">
+<div class="card-icon">
+<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+</div>
+<div class="card-body">
+<h3>5-15&mu;m Is Not a Coincidence <span class="tag live">JOURNAL</span></h3>
+<p>How nature speaks through wavelength &mdash; an exploration of the electromagnetic spectrum and biological resonance.</p>
+<div class="card-links">Essay &middot; <b>H1 (Mitochondria)</b> &middot; <b>H7 (Microcirculation)</b></div>
+</div>
+<img class="card-img" src="https://picsum.photos/id/30/260/160" alt="" loading="lazy">
+</a>
+
+<a class="card" href="/SCIENCE/KNOWLEDGE/graphene-fir/water-memory.html">
+<div class="card-icon">
+<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+</div>
+<div class="card-body">
+<h3>Water Has Memory, Cells Have Rhythm <span class="tag live">JOURNAL</span></h3>
+<p>The physics of resonance: how water, waves, and cellular communication converge.</p>
+<div class="card-links">Essay &middot; <b>H1 (Mitochondria)</b></div>
+</div>
+<img class="card-img" src="https://picsum.photos/id/16/260/160" alt="" loading="lazy">
+</a>
+
+<a class="card" href="/SCIENCE/KNOWLEDGE/graphene-fir/photobiomodulation-spectrum.html">
+<div class="card-icon">
+<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+</div>
+<div class="card-body">
+<h3>Red Light, NIR, and FIR &mdash; The Spectrum <span class="tag live">LIVE</span></h3>
+<p>Understanding the photobiomodulation spectrum: red light, near-infrared, and far-infrared compared.</p>
+<div class="card-links">Technical &middot; <b>H1 (Mitochondria)</b></div>
+</div>
+<img class="card-img" src="https://picsum.photos/id/42/260/160" alt="" loading="lazy">
+</a>
+
+<a class="card" href="/SCIENCE/KNOWLEDGE/graphene-fir/pku-clinical-trial.html">
+<div class="card-icon">
+<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+</div>
+<div class="card-body">
+<h3>PKU Third Hospital Research: 78.3% Outcome <span class="tag live">LIVE</span></h3>
+<p>Clinical research: measured outcomes from a Peking University Third Hospital graphene FIR study.</p>
+<div class="card-links">Research data &middot; <b>H7 (Microcirculation)</b></div>
+</div>
+<img class="card-img" src="https://picsum.photos/id/48/260/160" alt="" loading="lazy">
+</a>
+
+<a class="card" href="/SCIENCE/KNOWLEDGE/graphene-fir/elderly-anxiety-cognition-rct-2024.html">
+<div class="card-icon">
+<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+</div>
+<div class="card-body">
+<h3>RCT: 65% Anxiety Reduction in Older Adults <span class="tag research">RESEARCH</span></h3>
+<p>Published RCT in BMC Geriatrics (2024): graphene FIR reduced anxiety 65% and improved cognition 83% in 108 older adults.</p>
+<div class="card-links">Research &middot; <b>H1 (Mitochondria)</b> &middot; <b>H7 (Microcirculation)</b></div>
+</div>
+<img class="card-img" src="https://picsum.photos/id/60/260/160" alt="" loading="lazy">
+</a>
+
+<a class="card" href="/SCIENCE/KNOWLEDGE/graphene-fir/graphene-fir-sleep-anxiety-cognitive-recovery.html">
+<div class="card-icon">
+<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+</div>
+<div class="card-body">
+<h3>How Does Graphene FIR Affect Sleep? <span class="tag live">NEW</span></h3>
+<p>FIR, microcirculation, and thermoregulation &mdash; the biological pathway to deeper, more restorative sleep.</p>
+<div class="card-links">Science &middot; <b>H7 (Microcirculation)</b> &middot; <b>H4 (Sleep)</b></div>
+</div>
+<img class="card-img" src="/VISUAL-LIBRARY/why-do-i-wake-up-tired.webp" alt="" loading="lazy">
+</a>
+
+<a class="card" href="/SCIENCE/KNOWLEDGE/graphene-fir/what-is-emissivity.html">
+<div class="card-icon">
+<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+</div>
+<div class="card-body">
+<h3>What Is Emissivity? <span class="tag live">LIVE</span></h3>
+<p>Understanding the material property that determines how efficiently a surface radiates energy.</p>
+<div class="card-links">Technical &middot; <b>Material Science</b></div>
+</div>
+<img class="card-img" src="https://picsum.photos/id/24/260/160" alt="" loading="lazy">
+</a>
+
+<a class="card" href="/SCIENCE/KNOWLEDGE/graphene-fir/what-is-far-infrared-radiant-efficiency.html">
+<div class="card-icon">
+<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+</div>
+<div class="card-body">
+<h3>What Is Far-Infrared Radiant Efficiency? <span class="tag live">LIVE</span></h3>
+<p>The key metric that separates XIHE's graphene elements from conventional FIR emitters.</p>
+<div class="card-links">Technical &middot; <b>Core Differentiator</b></div>
+</div>
+<img class="card-img" src="https://picsum.photos/id/26/260/160" alt="" loading="lazy">
+</a>
+
+<a class="card" href="/SCIENCE/KNOWLEDGE/graphene-fir/how-to-evaluate-fir-heating-film.html">
+<div class="card-icon">
+<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+</div>
+<div class="card-body">
+<h3>How to Evaluate FIR Heating Film <span class="tag live">LIVE</span></h3>
+<p>A practical guide to assessing far-infrared heating film: emissivity, radiant efficiency, and real-world performance.</p>
+<div class="card-links">Guide &middot; <b>Evaluation</b></div>
+</div>
+<img class="card-img" src="https://picsum.photos/id/30/260/160" alt="" loading="lazy">
+</a>
+
+</div>
+</div>
+
+<div class="about">
+
+<h3 style="font-family:'Urbanist',sans-serif;font-size:22px;font-weight:400;color:var(--t);margin-bottom:20px;">Frequently Asked Questions</h3>
+
+<details style="border-bottom:1px solid #E5E5E7;padding:14px 0;">
+<summary style="font-family:'Urbanist',sans-serif;font-size:14px;font-weight:600;color:#1A3348;cursor:pointer;">What makes graphene different from other FIR materials?</summary>
+<p style="font-size:13px;color:#475569;line-height:1.7;margin-top:8px;padding-left:8px;">Graphene's single-atom-thick carbon lattice enables exceptionally uniform heat distribution, NIQS-certified emissivity of 0.88, and precise wavelength control. Unlike ceramic or carbon fiber FIR emitters, graphene produces consistent far-infrared output across its entire surface with minimal hot spots.</p>
+</details>
+
+<details style="border-bottom:1px solid #E5E5E7;padding:14px 0;">
+<summary style="font-family:'Urbanist',sans-serif;font-size:14px;font-weight:600;color:#1A3348;cursor:pointer;">What wavelength does graphene emit?</summary>
+<p style="font-size:13px;color:#475569;line-height:1.7;margin-top:8px;padding-left:8px;">Graphene emits far-infrared radiation primarily in the 5 to 15 micrometer range, with peak emission at 8&ndash;10 micrometers &mdash; a wavelength that coincides with the human body's natural thermal radiation and enables resonant energy transfer.</p>
+</details>
+
+<details style="border-bottom:1px solid #E5E5E7;padding:14px 0;">
+<summary style="font-family:'Urbanist',sans-serif;font-size:14px;font-weight:600;color:#1A3348;cursor:pointer;">Is graphene far-infrared safe?</summary>
+<p style="font-size:13px;color:#475569;line-height:1.7;margin-top:8px;padding-left:8px;">Graphene far-infrared devices operate at low, non-ionizing energy levels. The FIR wavelengths emitted are the same as those the human body naturally radiates. Published clinical research has reported no adverse effects in human studies using graphene FIR devices under controlled conditions.</p>
+</details>
+
+<details style="border-bottom:1px solid #E5E5E7;padding:14px 0;">
+<summary style="font-family:'Urbanist',sans-serif;font-size:14px;font-weight:600;color:#1A3348;cursor:pointer;">What does the research show about graphene FIR?</summary>
+<p style="font-size:13px;color:#475569;line-height:1.7;margin-top:8px;padding-left:8px;">Published preclinical and clinical research on graphene FIR includes studies on microcirculatory blood flow enhancement (64.9% increase), mitochondrial ATP production pathways, and outcomes from Peking University Third Hospital research. Most studies focus on mechanistic effects rather than disease-specific outcomes.</p>
+</details>
+
+<details style="border-bottom:1px solid #E5E5E7;padding:14px 0;">
+<summary style="font-family:'Urbanist',sans-serif;font-size:14px;font-weight:600;color:#1A3348;cursor:pointer;">How is graphene FIR different from a heating pad?</summary>
+<p style="font-size:13px;color:#475569;line-height:1.7;margin-top:8px;padding-left:8px;">A heating pad uses conductive or convective heat transfer (contact heating). Graphene FIR uses radiant energy transfer at specific wavelengths. Graphene achieves NIQS-certified emissivity of 0.88, meaning a high proportion of energy is delivered as useful radiant energy rather than surface heat.</p>
+</details>
+
+<details style="border-bottom:1px solid #E5E5E7;padding:14px 0;">
+<summary style="font-family:'Urbanist',sans-serif;font-size:14px;font-weight:600;color:#1A3348;cursor:pointer;">Is higher emissivity always better?</summary>
+<p style="font-size:13px;color:#475569;line-height:1.7;margin-top:8px;padding-left:8px;">Emissivity measures how well a material surface radiates compared to a blackbody. But what matters more for end performance is radiant efficiency &mdash; what fraction of input energy becomes usable far-infrared radiation. A material with high emissivity but low radiant efficiency still wastes most of its energy as surface heat. XIHE optimizes across both metrics.</p>
+</details>
+
+<div style="margin-top:48px;">
+<h3 style="font-family:'Urbanist',sans-serif;font-size:22px;font-weight:400;color:var(--t);margin-bottom:20px;">Key Takeaways</h3>
+<p style="font-size:14px;color:var(--s);line-height:1.8;">Graphene far-infrared technology represents a differentiated approach to thermal energy delivery &mdash; prioritizing radiant efficiency over surface temperature. The 8&ndash;10&mu;m wavelength range coincides with the human body's natural thermal emission, enabling resonant energy transfer. XIHE's graphene elements achieve NIQS-certified &ge;68% electro-thermal radiation conversion efficiency, distinguishing them from conventional FIR emitters. This technology does not directly alter biological function but may support conditions for microcirculatory enhancement and thermal comfort. This hub curates the physics, materials science, and published research behind graphene FIR &mdash; not medical claims.</p>
+</div>
 
 
 
+<div style="margin-top:36px;">
+<div class="disclaimer"><strong>Scientific Disclaimer:</strong> This hub is for scientific education and informational purposes only. The content reflects published research and current scientific understanding. It does not constitute medical advice, diagnosis, or treatment recommendations. Preclinical and mechanistic findings cannot be directly extrapolated to clinical outcomes in individual cases. Always consult qualified healthcare professionals for personal health decisions.</div>
+</div>
+</div>
 
+<!-- ============ WHERE THIS FITS ============ -->
+<div style="max-width:1100px;margin:48px auto 0;padding:0 24px;">
+<div style="background:#FAF8F5;padding:28px 32px;border-radius:8px;border-left:4px solid #1A3348;">
+<h3 style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#94A3B8;text-transform:uppercase;margin:0 0 12px;">Where This Fits</h3>
+<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">⬆ <strong>Upstream:</strong> All knowledge graph layers converge here</p>
+<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">&bull; <strong>Current:</strong> Graphene FIR &mdash; XIHE's core technology</p>
+<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">⬇ <strong>Downstream:</strong> Product applications</p>
+<p style="font-size:14px;color:#475569;line-height:1.8;margin:0;">&#x1F3C1; <strong>Terminal:</strong> &mdash; (This IS the terminal)</p>
+</div>
+</div>
 
-
-<section class="about">
-    <div class="about-card">
-        <div class="about-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        </div>
-        <div class="about-text">
-            <h3>About this Hub</h3>
-            <p>Graphene far-infrared technology sits at the intersection of materials science and cellular biology. This hub curates the physics of FIR emission, the materials properties of graphene, and published preclinical research on biological interactions — without oversimplification or exaggerated claims.</p>
-        </div>
-    </div>
-</section>
-
-<section style="background:#FFF;padding:40px 10% 80px;">
-    <div style="max-width:800px;margin:0 auto;">
-        <h3 style="font-family:'Urbanist',sans-serif;font-size:14px;letter-spacing:2px;color:#1A3348;text-transform:uppercase;margin-bottom:20px;">Related Hubs</h3>
-        <div style="display:flex;flex-wrap:wrap;gap:12px;">
-            <a href="/SCIENCE/KNOWLEDGE/Microcirculation/" style="padding:12px 24px;background:#1A3348;border:1px solid rgba(255,255,255,0.1);border-radius:50px;color:#E0E6ED;font-family:Urbanist,sans-serif;font-size:11px;letter-spacing:1px;text-decoration:none;transition:all .25s;">Microcirculation Science</a>
-<a href="/SCIENCE/KNOWLEDGE/Mitochondria/" style="padding:12px 24px;background:#1A3348;border:1px solid rgba(255,255,255,0.1);border-radius:50px;color:#E0E6ED;font-family:Urbanist,sans-serif;font-size:11px;letter-spacing:1px;text-decoration:none;transition:all .25s;">Mitochondrial Health</a>
-<a href="/SCIENCE/KNOWLEDGE/Technology-Platform/" style="padding:12px 24px;background:#1A3348;border:1px solid rgba(255,255,255,0.1);border-radius:50px;color:#E0E6ED;font-family:Urbanist,sans-serif;font-size:11px;letter-spacing:1px;text-decoration:none;transition:all .25s;">Technology Platform</a>
-
-        </div>
-    </div>
-</section>
-
-<section style="background:#FFF;padding:64px 10%;">
-    <div style="max-width:800px;margin:0 auto;">
-        <h3 style="font-family:'Urbanist',sans-serif;font-size:28px;font-weight:200;color:#1A3348;letter-spacing:2px;text-align:center;margin-bottom:40px;">Frequently Asked Questions</h3>
-
-        <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
-            <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">What makes graphene different from other FIR materials?</h4>
-            <p style="font-size:14px;color:#475569;line-height:1.7;">Graphene's single-atom-thick carbon lattice enables exceptionally uniform heat distribution, NIQS-certified emissivity of 0.88, and precise wavelength control. Unlike ceramic or carbon fiber FIR emitters, graphene produces consistent far-infrared output across its entire surface with minimal hot spots.</p>
-        </div>
-
-        <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
-            <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">What wavelength does graphene emit?</h4>
-            <p style="font-size:14px;color:#475569;line-height:1.7;">Graphene emits far-infrared radiation primarily in the 5 to 15 micrometer range, with peak emission at 8–10 micrometers — a wavelength that coincides with the human body's natural thermal radiation and enables resonant energy transfer.</p>
-        </div>
-
-        <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
-            <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">Is graphene far-infrared safe?</h4>
-            <p style="font-size:14px;color:#475569;line-height:1.7;">Graphene far-infrared devices operate at low, non-ionizing energy levels. The FIR wavelengths emitted are the same as those the human body naturally radiates. Published clinical research has reported no adverse effects in human studies using graphene FIR devices under controlled conditions.</p>
-        </div>
-
-        <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
-            <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">What does the research show about graphene FIR?</h4>
-            <p style="font-size:14px;color:#475569;line-height:1.7;">Published preclinical and clinical research on graphene FIR includes studies on microcirculatory blood flow enhancement (64.9% increase), mitochondrial ATP production pathways, and outcomes from Peking University Third Hospital research. Most studies focus on mechanistic effects rather than disease-specific outcomes.</p>
-        </div>
-
-        <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
-            <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">How is graphene FIR different from a heating pad?</h4>
-            <p style="font-size:14px;color:#475569;line-height:1.7;">A heating pad uses conductive or convective heat transfer (contact heating). Graphene FIR uses radiant energy transfer at specific wavelengths. Graphene achieves NIQS-certified emissivity of 0.88, meaning a high proportion of energy is delivered as useful radiant energy rather than surface heat. Radiant efficiency varies significantly depending on material architecture, surface engineering, and system design.</p>
-        </div>
-
-        <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
-            <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">Is higher emissivity always better?</h4>
-            <p style="font-size:14px;color:#475569;line-height:1.7;">Emissivity (Layer 3) measures how well a material surface radiates compared to a blackbody. But what matters more for end performance is radiant efficiency (Layer 2) — what fraction of input energy becomes usable far-infrared radiation. A material with high emissivity but low radiant efficiency still wastes most of its energy as surface heat. XIHE optimizes across all three layers.</p>
-        </div>
-
-    </div>
-</section>
-
-<section style="background:#FAF8F5;padding:40px 10%;border-top:1px solid #E5E5E7;">
-    <div style="max-width:800px;margin:0 auto;">
-        <p style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:2px;color:#94A3B8;text-transform:uppercase;margin-bottom:12px;">Scientific Disclaimer</p>
-        <p style="font-size:12px;color:#94A3B8;line-height:1.8;">This hub is for scientific education and informational purposes only. The content reflects published research and current scientific understanding. It does not constitute medical advice, diagnosis, or treatment recommendations. Preclinical and mechanistic findings cannot be directly extrapolated to clinical outcomes in individual cases. Always consult qualified healthcare professionals for personal health decisions.</p>
-        <p style="font-size:12px;color:#94A3B8;line-height:1.8;margin-top:12px;font-style:italic;">(For simplicity, this metric is referred to throughout this site as far-infrared radiant efficiency.)</p>
-    </div>
-</section>
+<footer style="padding: 40px 10%; background: #1A3348; text-align: center; border-top: 2px solid #C5A059;">
+    <p style="font-size: 13px; color: #E0E6ED; letter-spacing: 0.03em;">XIHE Technology — A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
 </footer>
 
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag("js", new Date());
+gtag("config", "G-C7YSVFRQ6R");
+</script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.xgraphene.tech/" },
+    { "@type": "ListItem", "position": 2, "name": "Science", "item": "https://www.xgraphene.tech/SCIENCE/Landing.html" },
+    { "@type": "ListItem", "position": 3, "name": "Graphene FIR", "item": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/" },
+    { "@type": "ListItem", "position": 4, "name": "Graphene Far-Infrared", "item": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/" }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "headline": "Graphene Far-Infrared",
+  "description": "Precision thermal technology: how graphene generates far-infrared energy for microcirculatory and cellular support.",
+  "about": { "@type": "Thing", "name": "Graphene Far-Infrared Technology" },
+  "isPartOf": { "@type": "CollectionPage", "name": "XIHE Knowledge Hub", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/" },
+  "author": { "@type": "Organization", "name": "XIHE Technology" },
+  "publisher": { "@type": "Organization", "name": "XIHE Technology", "parentOrganization": { "@type": "ResearchOrganization", "name": "Jiageng Innovation Laboratory (IKKEM)" } },
+  "hasPart": [
+    { "@type": "Article", "name": "How FIR Works", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/how-fir-works.html" },
+    { "@type": "Article", "name": "Frequency & Resonance", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/RESONANCE/" },
+    { "@type": "Article", "name": "Graphene Sleep Brainwaves", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/graphene-sleep-brainwaves.html" },
+    { "@type": "Article", "name": "Comparison", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/comparison.html" },
+    { "@type": "Article", "name": "5-15um Is Not a Coincidence", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/wavelength-essay.html" },
+    { "@type": "Article", "name": "Water Memory", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/water-memory.html" },
+    { "@type": "Article", "name": "Photobiomodulation Spectrum", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/photobiomodulation-spectrum.html" },
+    { "@type": "Article", "name": "PKU Clinical Trial", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/pku-clinical-trial.html" },
+    { "@type": "Article", "name": "Elderly Anxiety Cognition RCT 2024", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/elderly-anxiety-cognition-rct-2024.html" },
+    { "@type": "Article", "name": "Graphene FIR Sleep Anxiety Cognitive Recovery", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/graphene-fir-sleep-anxiety-cognitive-recovery.html" },
+    { "@type": "Article", "name": "What Is Emissivity", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/what-is-emissivity.html" },
+    { "@type": "Article", "name": "What Is Far-Infrared Radiant Efficiency", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/what-is-far-infrared-radiant-efficiency.html" },
+    { "@type": "Article", "name": "How to Evaluate FIR Heating Film", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/how-to-evaluate-fir-heating-film.html" }
+  ]
+}
+</script>
 
 <script type="application/ld+json">
 {
@@ -432,7 +490,7 @@
       "name": "What wavelength does graphene emit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Graphene emits far-infrared radiation primarily in the 5 to 15 micrometer range, with peak emission at 8–10 micrometers — a wavelength that coincides with the human body's natural thermal radiation and enables resonant energy transfer."
+        "text": "Graphene emits far-infrared radiation primarily in the 5 to 15 micrometer range, with peak emission at 8\u201310 micrometers \u2014 a wavelength that coincides with the human body's natural thermal radiation and enables resonant energy transfer."
       }
     },
     {
@@ -456,7 +514,7 @@
       "name": "How is graphene FIR different from a heating pad?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A heating pad uses conductive or convective heat transfer (contact heating). Graphene FIR uses radiant energy transfer at specific wavelengths. Graphene achieves NIQS-certified emissivity of 0.88, meaning a high proportion of energy is delivered as useful radiant energy rather than surface heat. Radiant efficiency varies significantly depending on material architecture, surface engineering, and system design."
+        "text": "A heating pad uses conductive or convective heat transfer (contact heating). Graphene FIR uses radiant energy transfer at specific wavelengths. Graphene achieves NIQS-certified emissivity of 0.88, meaning a high proportion of energy is delivered as useful radiant energy rather than surface heat."
       }
     },
     {
@@ -464,11 +522,37 @@
       "name": "Is higher emissivity always better?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Emissivity (Layer 3) measures how well a material surface radiates compared to a blackbody. But what matters more for end performance is radiant efficiency (Layer 2) — what fraction of input energy becomes usable far-infrared radiation. A material with high emissivity but low radiant efficiency still wastes most of its energy as surface heat. XIHE optimizes across all three layers."
+        "text": "Emissivity measures how well a material surface radiates compared to a blackbody. But what matters more for end performance is radiant efficiency \u2014 what fraction of input energy becomes usable far-infrared radiation. A material with high emissivity but low radiant efficiency still wastes most of its energy as surface heat. XIHE optimizes across both metrics."
       }
     }
   ]
 }
 </script>
+
+<!-- === JSON-LD DefinedTerm (Graphene FIR entity in XIHE Knowledge Graph) === -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "name": "Graphene FIR",
+  "description": "Graphene-generated far-infrared radiation. Graphene's single-atom-layer structure enables 68% electro-thermal conversion efficiency at 9.4μm wavelength, building a FIR radiation environment that supports cellular energy without directly altering biological function.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "XIHE Knowledge Graph",
+    "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/"
+  },
+  "termCode": "KG-NODE-GRAPHENE-FIR",
+  "sameAs": [
+    "https://en.wikipedia.org/wiki/Graphene"
+  ],
+  "relatedTerm": [
+    { "@type": "DefinedTerm", "name": "Cellular Energy", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/" },
+    { "@type": "DefinedTerm", "name": "Mitochondria", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/" },
+    { "@type": "DefinedTerm", "name": "Microcirculation", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Microcirculation/" },
+    { "@type": "DefinedTerm", "name": "Clinical Evidence", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Clinical-Evidence/" }
+  ]
+}
+</script>
+
 </body>
 </html>

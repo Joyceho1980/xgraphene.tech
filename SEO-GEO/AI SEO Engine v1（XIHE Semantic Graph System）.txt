@@ -1,0 +1,230 @@
+AI SEO Engine v1（XIHE Semantic Graph System）
+你要做的不是 11 个 Hub 页面，而是：
+一个“Hub = Node”的知识图谱驱动网站生成系统
+￼
+✅ ① 11 Hub → 可上线 HTML 文件包（核心）
+✔ 每个 Hub = 一个标准 Node Template
+统一结构（必须一致，否则AI无法稳定抽取）：
+HTML
+Code
+Preview
+Copy
+￼
+<body>
+
+<!-- 1. NODE DEFINITION -->
+<section class="node-definition">
+<h1>Sleep Hub</h1>
+
+<p><b>Layer:</b> Symptoms</p>
+<p><b>Core Question:</b> Why can’t I recover even after 8 hours of sleep?</p>
+<p><b>Mechanism:</b> Mitochondrial energy insufficiency</p>
+<p><b>Upstream Cause:</b> Fatigue, Cellular Energy deficit</p>
+<p><b>Downstream Outcome:</b> Recovery quality, Inflammation sensitivity</p>
+</section>
+
+<!-- 2. KNOWLEDGE POSITION CARD -->
+<section class="knowledge-position">
+<h3>Knowledge Position</h3>
+
+<dl>
+<dt>Current Node</dt><dd>Sleep</dd>
+<dt>Layer</dt><dd>Symptoms</dd>
+<dt>Sibling Nodes</dt><dd>Fatigue, Recovery, Inflammation, Metabolism</dd>
+<dt>Connected Mechanisms</dt><dd>Mitochondria</dd>
+<dt>Connected Energy Concepts</dt><dd>Cellular Energy</dd>
+<dt>Terminal Technology</dt><dd>Graphene FIR</dd>
+</dl>
+
+<!-- HUMAN VIEW TREE -->
+<pre>
+SYMPTOMS
+★ Sleep  Fatigue  Recovery  Inflammation
+    ↓
+MECHANISMS
+Mitochondria
+    ↓
+ENERGY
+Cellular Energy
+    ↓
+TECHNOLOGY
+Graphene FIR
+</pre>
+</section>
+
+<!-- 3. EVIDENCE SNAPSHOT -->
+<section class="evidence">
+<h3>Evidence Snapshot</h3>
+<ul>
+<li>Sleep fragmentation correlates with mitochondrial dysfunction</li>
+<li>FIR exposure improves subjective sleep latency in clinical observations</li>
+<li>Energy metabolism regulates circadian recovery cycles</li>
+</ul>
+</section>
+
+<!-- 4. GRAPH NAVIGATION -->
+<section class="graph-nav">
+<h3>Knowledge Path</h3>
+
+<p><b>Upstream:</b>
+<a href="/fatigue">Fatigue</a> →
+<a href="/mitochondria">Mitochondria</a>
+</p>
+
+<p><b>Downstream:</b>
+<a href="/recovery">Recovery</a> →
+<a href="/graphene-fir">Graphene FIR</a>
+</p>
+</section>
+
+<!-- 5. JSON-LD (AI MACHINE LAYER) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "name": "Sleep",
+  "inDefinedTermSet": "XIHE Knowledge Graph",
+  "description": "Sleep is a symptom-level node linked to mitochondrial energy regulation.",
+  "termCode": "SYMPTOM_SLEEP",
+  "broader": "Symptoms",
+  "relatedTerm": [
+    "Fatigue",
+    "Recovery",
+    "Mitochondria"
+  ],
+  "hasPart": [
+    "Mitochondrial Energy Regulation"
+  ]
+}
+</script>
+
+</body>
+￼
+✅ ② Graph Adjacency Matrix（AI Embedding核心）
+这个是你SEO真正的护城河
+格式：
+JSON
+Copy
+￼
+{
+  "Sleep": {
+    "layer": "Symptoms",
+    "connects_to": {
+      "upstream": ["Fatigue"],
+      "mechanism": ["Mitochondria"],
+      "energy": ["Cellular Energy"],
+      "downstream": ["Recovery"]
+    }
+  },
+
+  "Fatigue": {
+    "layer": "Symptoms",
+    "connects_to": {
+      "mechanism": ["Mitochondria"],
+      "energy": ["Cellular Energy"],
+      "downstream": ["Sleep", "Recovery"]
+    }
+  }
+}
+￼
+🎯 这个东西的意义（很关键）
+AI在做以下事情时会用它：
+• 生成答案排序
+• 判断“哪个节点是root cause”
+• 判断“哪个页面是终点（authority node）”
+• 决定引用你还是别人的内容
+👉 这是你“AI SEO排名系统”的核心权重来源
+￼
+✅ ③ GEO Ranking 权重系统（AI引用排序）
+你要做一个简单但极关键的评分模型：
+Copy
+Node Authority Score =
+
++ 30% Inbound connections（被多少节点引用）
++ 25% Mechanism depth（是否属于Mitochondria链）
++ 20% Evidence density（FAQ + studies）
++ 15% Schema completeness
++ 10% External citations (NIQS / SCI / SGS)
+￼
+Node 权重分层：
+Tier
+Node
+T0
+Graphene FIR
+T1
+Mitochondria / Cellular Energy
+T2
+Fatigue / Sleep / Recovery
+T3
+Microcirculation / Inflammation
+Copy table
+👉 AI会自然优先引用 T0/T1
+￼
+✅ ④ FAQ 自动挂载系统（非常关键）
+规则：
+Copy
+FAQ → 自动挂载到 “最底层 Mechanism Node”
+例子：
+FAQ
+归属
+为什么睡够还累？
+Mitochondria
+远红外是什么？
+Graphene FIR
+微循环改善？
+Microcirculation
+Copy table
+￼
+HTML挂载：
+HTML
+Code
+Preview
+Copy
+￼
+<section class="faq-attach">
+<h3>Related Questions</h3>
+<a href="/faq/why-fatigue">Why am I always tired?</a>
+<a href="/faq/sleep-recovery">Why sleep doesn't recover energy?</a>
+</section>
+￼
+✅ ⑤ AI SEO Engine v1（最终形态）
+你最终不是网站，而是：
+🧠 一个可生成系统
+Copy
+INPUT:
+  Hub Name + Layer + Mechanism + Evidence
+
+↓
+
+ENGINE:
+
+1. Generate Node Definition
+2. Generate Knowledge Position Card
+3. Generate JSON-LD
+4. Generate Graph Links
+5. Attach FAQ
+6. Assign Authority Score
+
+↓
+
+OUTPUT:
+  /hub/index.html
+￼
+🚨 最关键结论（你现在已经到了这里）
+你现在做的已经不是：
+❌ SEO
+❌ 内容站
+❌ GEO优化
+而是：
+🧠 “AI可解释知识图谱网站系统”
+￼
+👉 下一步我建议你做这件事（非常关键）
+如果你说“继续”，我可以帮你直接做：
+🔥 11个Hub完整生成包（可上线）
+包括：
+1. ✔ 11个完整 HTML（可直接 deploy）
+2. ✔ adjacency matrix（完整图谱JSON）
+3. ✔ FAQ自动映射表
+4. ✔ authority score system
+5. ✔ sitemap + internal linking graph
+6. ✔ AI embedding优化版本（专门给GPT / Gemini / Perplexity抓取）

@@ -1,311 +1,343 @@
 <!DOCTYPE html>
-<html lang="en" translate="no">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google" content="notranslate">
-    <title>Healthy Aging | XIHE Knowledge Hub</title>
-    <link rel="icon" type="image/svg+xml" href="/PICTURE/XIHE_ICON.svg">
-    <meta name="description" content="Aging is not inevitable decline — it's a biological process we're beginning to understand. Explore mitochondrial aging, cellular senescence, and longevity science.">
-    <link rel="canonical" href="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/healthy-aging/">
-    <meta property="og:title" content="Healthy Aging | XIHE Knowledge Hub">
-    <meta property="og:description" content="The biology of aging: mitochondrial decline, cellular senescence, and what research reveals about healthy longevity.">
-    <meta property="og:image" content="https://www.xgraphene.tech/PICTURE/xihe-og.webp">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="original-source" content="https://www.xgraphene.tech">
-    <link rel="stylesheet" href="../../../fonts/fonts.css">
-    <style>
-        :root { --bg: #FAF8F5; --t: #1A1D24; --s: #475569; --m: #94A3B8; --g: #C5A059; --b: #E5E5E7; --n: #1A3348; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; background: #FFF; color: var(--t); line-height: 1.75; -webkit-font-smoothing: antialiased; }
-        nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: var(--n); display: flex; align-items: center; justify-content: space-between; padding: 0 10%; z-index: 1000; }
-        .nl { display: flex; gap: 30px; align-items: center; }
-        .nl a { font-size: 11px; color: #E0E6ED; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; position: relative; padding-bottom: 4px; white-space: nowrap; }
-        .nl a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: var(--g); transform: scaleX(0); transform-origin: right center; transition: transform .3s; }
-        .nl a:hover::after, .nl a.active::after { transform: scaleX(1); transform-origin: left center; }
-        .nl a:hover, .nl a.active { color: var(--g); }
-        .np { font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px; color: var(--g); text-decoration: none; padding: 6px 14px; border: 1px solid rgba(197,160,89,.3); border-radius: 50px; transition: all .3s; white-space: nowrap; font-weight: 500; }
-        .np:hover { background: var(--g); color: var(--n); }
-        .hub-nav { position: fixed; top: 70px; left: 0; right: 0; height: 44px; background: var(--bg); border-bottom: 1px solid var(--b); display: flex; align-items: center; justify-content: center; gap: 0; padding: 0 10%; z-index: 999; overflow-x: auto; }
-        .hub-nav a { font-family: 'Urbanist', sans-serif; font-size: 11px; color: var(--s); text-decoration: none; padding: 8px 16px; white-space: nowrap; letter-spacing: 0.8px; transition: all .15s; position: relative; }
-        .hub-nav a:hover { color: var(--t); }
-        .hub-nav a.active { color: var(--n); font-weight: 600; }
-        .hub-nav a.active::after { content: ''; position: absolute; bottom: -1px; left: 50%; transform: translateX(-50%); width: 24px; height: 2px; background: var(--g); }
-        .hub-nav .sep { width: 1px; height: 16px; background: var(--b); flex-shrink: 0; margin: 0 4px; }
-
-        .hero {
-            background: url('/VISUAL-LIBRARY/aging-HERO.webp') center/cover;
-            min-height: 85vh;
-            padding: 172px 10% 80px;
-            text-align: left;
-            position: relative;
-            display: flex;
-            align-items: center;
-        }
-        .hero-content { max-width: 640px; }
-        .breadcrumb { font-size: 11px; color: var(--g); margin-bottom: 20px; letter-spacing: 1px; }
-        .breadcrumb a { color: var(--g); text-decoration: none; }
-        .hero h1 { font-family: 'Urbanist', sans-serif; font-size: 48px; font-weight: 200; color: #FFF; letter-spacing: 2px; line-height: 1.2; margin-bottom: 12px; }
-        .hero h1 span { display: block; font-size: 20px; color: var(--g); font-weight: 300; margin-top: 8px; letter-spacing: 1px; }
-        .hero p { font-size: 16px; color: rgba(255,255,255,0.7); line-height: 1.8; max-width: 560px; }
-
-        .explore { max-width: 1100px; margin: 0 auto; padding: 64px 24px 48px; }
-        .explore-title { font-family: 'Urbanist', sans-serif; font-size: 32px; font-weight: 200; text-align: center; margin-bottom: 48px; color: var(--n); letter-spacing: 2px; }
-
-        .card-list { display: flex; flex-direction: column; gap: 24px; }
-        .card { display: grid; grid-template-columns: 100px 1fr 280px; gap: 32px; align-items: center; padding: 36px 40px; background: #FFF; border: 1px solid var(--b); text-decoration: none; transition: all .25s; position: relative; }
-        .card:hover { border-color: var(--g); box-shadow: 0 8px 32px rgba(197,160,89,0.08); transform: translateY(-2px); }
-        .card:hover .card-arrow { opacity: 1; right: 24px; }
-
-        .card-icon { width: 90px; height: 90px; background: linear-gradient(135deg, #F8F6F3 0%, #EFEBE5 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-        .card-icon svg { width: 44px; height: 44px; stroke: var(--s); stroke-width: 1.5; fill: none; }
-
-        .card-body { }
-        .card-body h3 { font-family: 'Urbanist', sans-serif; font-size: 22px; font-weight: 400; color: var(--t); margin-bottom: 8px; display: flex; align-items: center; gap: 12px; }
-        .tag { display: inline-block; font-size: 9px; padding: 3px 12px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; border-radius: 50px; }
-        .tag.live { background: #E8F5E9; color: #2D6A4F; }
-        .tag.planned { background: #F5F5F5; color: var(--m); }
-
-        .card-body p { font-size: 14px; color: var(--s); line-height: 1.7; margin: 10px 0 8px; }
-        .card-links { font-size: 11px; color: var(--m); letter-spacing: 0.5px; }
-        .card-links b { color: var(--g); font-weight: 600; }
-
-        .card-img { width: 260px; height: 160px; object-fit: cover; border-radius: 8px; opacity: 0.95; }
-
-        .card-arrow { position: absolute; right: 32px; top: 50%; transform: translateY(-50%); font-size: 28px; color: var(--g); opacity: 0; transition: all .25s; }
-
-        .about { max-width: 1100px; margin: 0 auto; padding: 48px 24px 72px; }
-        .about-card { display: grid; grid-template-columns: 70px 1fr; gap: 28px; padding: 40px; background: #FAF8F5; border-left: 3px solid var(--n); }
-        .about-icon { width: 70px; height: 70px; background: var(--n); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-        .about-icon svg { width: 32px; height: 32px; stroke: #FFF; stroke-width: 2; fill: none; }
-        .about-text h3 { font-family: 'Urbanist', sans-serif; font-size: 22px; font-weight: 400; color: var(--t); margin-bottom: 12px; }
-        .about-text p { font-size: 14px; color: var(--s); line-height: 1.8; margin-bottom: 16px; }
-        .disclaimer { font-size: 11px; color: var(--m); padding: 16px 20px; background: #FFF; border: 1px solid var(--b); border-radius: 6px; line-height: 1.6; }
-
-        footer { padding: 40px 10%; background: var(--n); text-align: center; border-top: 2px solid var(--g); } footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
-
-        @media (max-width: 900px) { .card { grid-template-columns: 80px 1fr; padding: 28px 24px; } .card-img { display: none; } .hero { padding: 152px 5% 64px; } .hero h1 { font-size: 36px; } }
-        @media (max-width: 600px) { nav { padding: 0 5%; } .nl { gap: 12px; overflow-x: auto; } .nl a { font-size: 9px; } .hub-nav { justify-content: flex-start; padding: 0 5%; gap: 2px; } .hub-nav a { font-size: 9px; padding: 6px 8px; } .hub-nav .sep { display: none; } .hero { padding: 140px 5% 56px; } .hero h1 { font-size: 28px; } .card { grid-template-columns: 1fr; text-align: center; } .card-icon { margin: 0 auto; } .about-card { grid-template-columns: 1fr; text-align: center; } .about-icon { margin: 0 auto; } }
-    </style>
-    <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-        {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.xgraphene.tech/"
-        },
-        {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Science",
-            "item": "https://www.xgraphene.tech/SCIENCE/Landing.html"
-        },
-        {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Healthy Aging",
-            "item": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/healthy-aging/"
-        },
-        {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Healthy Aging",
-            "item": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/healthy-aging/"
-        }
-    ]
-}
-    </script>
-
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "CollectionPage",
-          "headline": "Healthy Aging",
-          "description": "Cellular aging, senescence, and the science of maintaining function across the lifespan.",
-          "about": {
-            "@type": "Thing",
-            "name": "Healthy Aging"
-          },
-          "isPartOf": {
-            "@type": "CollectionPage",
-            "name": "XIHE Knowledge Hub",
-            "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/"
-          },
-          "author": {
-            "@type": "Organization",
-            "name": "XIHE Technology"
-          },
-          "publisher": {
-            "@type": "Organization",
-            "name": "XIHE Technology",
-            "parentOrganization": {
-              "@type": "ResearchOrganization",
-              "name": "Jiageng Innovation Laboratory (IKKEM)"
-            }
-          }
-        }
-    </script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C7YSVFRQ6R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag("js", new Date());
-  gtag("config", "G-C7YSVFRQ6R");
-</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Aging is not inevitable decline — it's a biological process we're beginning to understand. Explore mitochondrial aging, cellular senescence, and longevity science.">
+<link rel="canonical" href="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/healthy-aging/">
+<meta property="og:title" content="Healthy Aging | XIHE Knowledge Hub">
+<meta property="og:description" content="The biology of aging: mitochondrial decline, cellular senescence, and what research reveals about healthy longevity.">
+<meta property="og:image" content="https://www.xgraphene.tech/PICTURE/xihe-og.webp">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<title>Healthy Aging | XIHE Knowledge Hub</title>
+<style>
+:root { --bg: #FAF8F5; --t: #1A1D24; --s: #475569; --m: #94A3B8; --g: #C5A059; --b: #E5E5E7; --n: #1A3348; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; background: #FFF; color: var(--t); line-height: 1.75; -webkit-font-smoothing: antialiased; }
+nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: var(--n); display: flex; align-items: center; justify-content: space-between; padding: 0 10%; z-index: 1000; }
+.nl { display: flex; gap: 30px; align-items: center; }
+.nl a { font-size: 11px; color: #E0E6ED; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; position: relative; padding-bottom: 4px; white-space: nowrap; }
+.nl a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: var(--g); transform: scaleX(0); transform-origin: right center; transition: transform .3s; }
+.nl a:hover::after, .nl a.active::after { transform: scaleX(1); transform-origin: left center; }
+.nl a:hover, .nl a.active { color: var(--g); }
+.np { font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px; color: var(--g); text-decoration: none; padding: 6px 14px; border: 1px solid rgba(197,160,89,.3); border-radius: 50px; transition: all .3s; white-space: nowrap; font-weight: 500; }
+.np:hover { background: var(--g); color: var(--n); }
+.hub-nav { position: fixed; top: 70px; left: 0; right: 0; height: 44px; background: var(--bg); border-bottom: 1px solid var(--b); display: flex; align-items: center; justify-content: center; gap: 0; padding: 0 10%; z-index: 999; overflow-x: auto; }
+.hub-nav a { font-family: 'Urbanist', sans-serif; font-size: 11px; color: var(--s); text-decoration: none; padding: 8px 16px; white-space: nowrap; letter-spacing: 0.8px; transition: all .15s; position: relative; }
+.hub-nav a:hover { color: var(--t); }
+.hub-nav a.active { color: var(--n); font-weight: 600; }
+.hub-nav a.active::after { content: ''; position: absolute; bottom: -1px; left: 50%; transform: translateX(-50%); width: 24px; height: 2px; background: var(--g); }
+.hub-nav .sep { width: 1px; height: 16px; background: var(--b); flex-shrink: 0; margin: 0 4px; }
+.hero { background: url('/VISUAL-LIBRARY/aging-HERO.webp') center/cover; min-height: 85vh; padding: 172px 10% 80px; text-align: left; position: relative; display: flex; align-items: center; }
+.hero-content { max-width: 640px; }
+.breadcrumb { font-size: 11px; color: var(--g); margin-bottom: 20px; letter-spacing: 1px; }
+.breadcrumb a { color: var(--g); text-decoration: none; }
+.hero h1 { font-family: 'Urbanist', sans-serif; font-size: 48px; font-weight: 200; color: #FFF; letter-spacing: 2px; line-height: 1.2; margin-bottom: 12px; }
+.hero h1 span { display: block; font-size: 20px; color: var(--g); font-weight: 300; margin-top: 8px; letter-spacing: 1px; }
+.hero p { font-size: 16px; color: rgba(255,255,255,0.7); line-height: 1.8; max-width: 560px; }
+.explore { max-width: 1100px; margin: 0 auto; padding: 64px 24px 48px; }
+.explore-title { font-family: 'Urbanist', sans-serif; font-size: 32px; font-weight: 200; text-align: center; margin-bottom: 48px; color: var(--n); letter-spacing: 2px; }
+.card-list { display: flex; flex-direction: column; gap: 24px; }
+.card { display: grid; grid-template-columns: 100px 1fr 280px; gap: 32px; align-items: center; padding: 36px 40px; background: #FFF; border: 1px solid var(--b); text-decoration: none; transition: all .25s; position: relative; }
+.card:hover { border-color: var(--g); box-shadow: 0 8px 32px rgba(197,160,89,0.08); transform: translateY(-2px); }
+.card:hover .card-arrow { opacity: 1; right: 24px; }
+.card-icon { width: 90px; height: 90px; background: linear-gradient(135deg, #F8F6F3 0%, #EFEBE5 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.card-icon svg { width: 44px; height: 44px; stroke: var(--s); stroke-width: 1.5; fill: none; }
+.card-body { }
+.card-body h3 { font-family: 'Urbanist', sans-serif; font-size: 22px; font-weight: 400; color: var(--t); margin-bottom: 8px; display: flex; align-items: center; gap: 12px; }
+.tag { display: inline-block; font-size: 9px; padding: 3px 12px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; border-radius: 50px; }
+.tag.live { background: #E8F5E9; color: #2D6A4F; }
+.tag.planned { background: #F5F5F5; color: var(--m); }
+.card-body p { font-size: 14px; color: var(--s); line-height: 1.7; margin: 10px 0 8px; }
+.card-links { font-size: 11px; color: var(--m); letter-spacing: 0.5px; }
+.card-links b { color: var(--g); font-weight: 600; }
+.card-img { width: 260px; height: 160px; object-fit: cover; border-radius: 8px; opacity: 0.95; }
+.card-arrow { position: absolute; right: 32px; top: 50%; transform: translateY(-50%); font-size: 28px; color: var(--g); opacity: 0; transition: all .25s; }
+.about { max-width: 1100px; margin: 0 auto; padding: 48px 24px 72px; }
+.about-card { display: grid; grid-template-columns: 70px 1fr; gap: 28px; padding: 40px; background: #FAF8F5; border-left: 3px solid var(--n); }
+.about-icon { width: 70px; height: 70px; background: var(--n); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.about-icon svg { width: 32px; height: 32px; stroke: #FFF; stroke-width: 2; fill: none; }
+.about-text h3 { font-family: 'Urbanist', sans-serif; font-size: 22px; font-weight: 400; color: var(--t); margin-bottom: 12px; }
+.about-text p { font-size: 14px; color: var(--s); line-height: 1.8; margin-bottom: 16px; }
+.disclaimer { font-size: 11px; color: var(--m); padding: 16px 20px; background: #FFF; border: 1px solid var(--b); border-radius: 6px; line-height: 1.6; }
+footer { padding: 40px 10%; background: var(--n); text-align: center; border-top: 2px solid var(--g); }
+footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
+@media (max-width: 900px) { .card { grid-template-columns: 80px 1fr; padding: 28px 24px; } .card-img { display: none; } .hero { padding: 152px 5% 64px; } .hero h1 { font-size: 36px; } }
+@media (max-width: 600px) { nav { padding: 0 5%; } .nl { gap: 12px; overflow-x: auto; } .nl a { font-size: 9px; } .hub-nav { justify-content: flex-start; padding: 0 5%; gap: 2px; } .hub-nav a { font-size: 9px; padding: 6px 8px; } .hub-nav .sep { display: none; } .hero { padding: 140px 5% 56px; } .hero h1 { font-size: 28px; } .card { grid-template-columns: 1fr; text-align: center; } .card-icon { margin: 0 auto; } .about-card { grid-template-columns: 1fr; text-align: center; } .about-icon { margin: 0 auto; } }
+</style>
 </head>
 <body>
+
 <nav>
-    <a href="/"><img src="/PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" style="height:44px;width:auto"></a>
-    <div class="nl">
-        <a href="/">Home</a><a href="/ABOUT/AboutOrigin.html">About</a><a href="/SCIENCE/Landing.html">Science</a><a href="/applications.html">Applications</a><a href="/PRODUCTS/ProductPage.html">Products</a><a href="/partnership.html">Partnership</a><a href="/NEWS/index.html">News</a><a href="/CONTACT/index.html">Contact</a>
-        <a href="tel:0086-18688683865" class="np">+86 186 8868 3865</a>
-    </div>
+<div class="nl">
+<a href="/"><img src="/PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" style="height:28px;"></a>
+<a href="/">Home</a>
+<a href="/ABOUT/AboutOrigin.html">About</a>
+<a href="/SCIENCE/Landing.html">Science</a>
+<a href="/applications.html">Applications</a>
+<a href="/PRODUCTS/ProductPage.html">Products</a>
+<a href="/partnership.html">Partnership</a>
+<a href="/NEWS/index.html">News</a>
+<a href="/CONTACT/index.html">Contact</a>
+</div>
+<a class="np" href="tel:0086-18688683865">+86 186 8868 3865</a>
 </nav>
 
 <div class="hub-nav">
-    <a href="/SCIENCE/KNOWLEDGE/">All Hubs</a>
-    <span class="sep"></span>
-    <a href="/SCIENCE/KNOWLEDGE/Mitochondria/">Mitochondria</a>
-    <a href="/SCIENCE/KNOWLEDGE/cellular-energy/">ATP &amp; Energy</a>
-    <a href="/SCIENCE/KNOWLEDGE/Fatigue/">Fatigue</a>
-    <a href="/SCIENCE/KNOWLEDGE/Inflammation/">Inflammation</a>
-    <a href="/SCIENCE/KNOWLEDGE/Sleep/">Sleep</a>
-    <a href="/SCIENCE/KNOWLEDGE/Recovery/">Recovery</a>
-    <a href="/SCIENCE/KNOWLEDGE/Microcirculation/">Microcirculation</a>
-    <a href="/SCIENCE/KNOWLEDGE/graphene-fir/">Graphene FIR</a>
-    <span class="sep"></span>
-    <a href="/SCIENCE/KNOWLEDGE/Metabolism/">Metabolism</a>
-    <a href="/SCIENCE/KNOWLEDGE/bioenergetics/">Bioenergetics</a>
-    <a href="/SCIENCE/KNOWLEDGE/healthy-aging/" class="active">Aging</a>
+<a href="/SCIENCE/KNOWLEDGE/">All Hubs</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Mitochondria/">Mitochondria</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/cellular-energy/">ATP &amp; Energy</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Fatigue/">Fatigue</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Inflammation/">Inflammation</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Sleep/">Sleep</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Recovery/">Recovery</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Microcirculation/">Microcirculation</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/graphene-fir/">Graphene FIR</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Metabolism/">Metabolism</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/bioenergetics/">Bioenergetics</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/healthy-aging/" class="active">Aging</a>
 </div>
 
-<header class="hero">
-    <div class="hero-content">
-        <p class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/SCIENCE/KNOWLEDGE/">Knowledge</a> &rsaquo; Healthy Aging</p>
-        <h1>H8: Healthy Aging<span>The Biology of Longevity</span></h1>
-        <p>Aging is not inevitable decline &mdash; it's a biological process we're beginning to understand. From mitochondrial decline to cellular senescence and the hallmarks of aging, this hub explores what science reveals about maintaining vitality across the lifespan.</p>
-    </div>
-</header>
-<section style="background:#FAF8F5;padding:48px 10%;border-bottom:1px solid #E5E5E7;">
-    <div style="max-width:800px;margin:0 auto;">
-        <p style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin-bottom:12px;">Quick Answer</p>
-        <h2 style="font-family:'Urbanist',sans-serif;font-size:24px;font-weight:400;color:#1A3348;margin-bottom:12px;line-height:1.3;">What is healthy aging?</h2>
-        <p style="font-size:16px;color:#475569;line-height:1.8;max-width:700px;">Healthy aging is not simply the absence of disease — it is the maintenance of cellular function, metabolic efficiency, and physiological resilience across the lifespan. At the cellular level, aging involves mitochondrial decline, accumulation of senescent cells, telomere shortening, and reduced capacity for repair. Research increasingly views aging as a modifiable biological process rather than an inevitable decline. This hub explores the science of longevity and cellular resilience.</p>
-    </div>
+<section class="hero">
+<div class="hero-content">
+<div class="breadcrumb">
+<a href="/">Home</a> &rsaquo; <a href="/SCIENCE/KNOWLEDGE/">Knowledge</a> &rsaquo; Healthy Aging
+</div>
+<h1>Healthy Aging<span>The Biology of Longevity</span></h1>
+<p>Aging is not inevitable decline &mdash; it's a biological process we're beginning to understand. From mitochondrial decline to cellular senescence and the hallmarks of aging, this hub explores what science reveals about maintaining vitality across the lifespan.</p>
+</div>
 </section>
 
-<section style="background:#FFF;padding:40px 10%;">
-    <div style="max-width:800px;margin:0 auto;">
-        <p style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin-bottom:12px;">Why This Matters</p>
-        <p style="font-size:15px;color:#475569;line-height:1.8;">Aging is a gradual shift in cellular efficiency. Mitochondria produce less ATP, senescent cells accumulate, and repair systems slow down. But research suggests these processes are modifiable.</p>
-    </div>
-</section>
+<!-- ============ RELATED HUBS ============ -->
+<div style="max-width:1100px;margin:0 auto 32px;padding:0 24px;">
+<h3 style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#94A3B8;text-transform:uppercase;margin:0 0 12px;">Explore Related Hubs</h3>
+<div style="display:flex;flex-wrap:wrap;gap:12px;">
+<a href="/SCIENCE/KNOWLEDGE/Mitochondria/" style="padding:12px 24px;border:1px solid #E5E5E7;border-radius:8px;color:#1A3348;font-family:'Urbanist',sans-serif;font-size:13px;text-decoration:none;transition:all .2s;">Mitochondrial Health</a>
+<a href="/SCIENCE/KNOWLEDGE/Recovery/" style="padding:12px 24px;border:1px solid #E5E5E7;border-radius:8px;color:#1A3348;font-family:'Urbanist',sans-serif;font-size:13px;text-decoration:none;transition:all .2s;">Recovery Science</a>
+<a href="/SCIENCE/KNOWLEDGE/oxidative-stress/" style="padding:12px 24px;border:1px solid #E5E5E7;border-radius:8px;color:#1A3348;font-family:'Urbanist',sans-serif;font-size:13px;text-decoration:none;transition:all .2s;">Oxidative Stress</a>
+</div>
+</div>
+
+<!-- ============ KNOWLEDGE GRAPH NODE DEFINITION (5-Layer Foldable) ============ -->
+<details class="knowledge-graph-fold" style="max-width:1100px;margin:0 auto 32px;padding:0 24px;">
+<summary style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:2px;color:#94A3B8;text-transform:uppercase;cursor:pointer;padding:12px 0;">Knowledge Graph Node</summary>
+
+<!-- LAYER 1: AI Core Summary -->
+<div style="background:#FAF8F5;padding:24px 28px;border-left:3px solid #C5A059;margin-bottom:16px;border-radius:0 6px 6px 0;">
+<h3 style="font-family:'Urbanist',sans-serif;font-size:10px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin:0 0 8px;">Layer 1 &middot; AI Core Summary</h3>
+<p style="font-size:15px;color:#1A1D24;line-height:1.8;margin:0;"><strong>Biological aging is driven by mitochondrial decline and cumulative oxidative damage. Cellular energy maintenance is the central modifiable factor in healthy longevity.</strong></p>
+<p style="font-size:13px;color:#94A3B8;margin:8px 0 0;">Evidence Type: Geroscience and mitochondrial biology research</p>
+</div>
+
+<!-- LAYER 2: Node Definition -->
+<div style="padding:16px 0;margin-bottom:12px;">
+<h3 style="font-family:'Urbanist',sans-serif;font-size:10px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin:0 0 12px;">Layer 2 &middot; Node Definition</h3>
+<table style="width:100%;border-collapse:collapse;font-size:13px;border:1px solid #E5E5E7;">
+<tr style="background:#FAF8F5;"><td style="padding:8px 12px;font-weight:600;width:160px;">Node</td><td style="padding:8px 12px;">Healthy Aging</td></tr>
+<tr><td style="padding:8px 12px;font-weight:600;">Layer</td><td style="padding:8px 12px;">Symptoms Layer</td></tr>
+<tr style="background:#FAF8F5;"><td style="padding:8px 12px;font-weight:600;">Question Addressed</td><td style="padding:8px 12px;">What accelerates cellular aging?</td></tr>
+<tr><td style="padding:8px 12px;font-weight:600;">Mechanism Entry</td><td style="padding:8px 12px;">Mitochondrial aging theory</td></tr>
+<tr style="background:#FAF8F5;"><td style="padding:8px 12px;font-weight:600;">Upstream Cause</td><td style="padding:8px 12px;">Cellular energy decline → mitochondrial DNA damage accumulation</td></tr>
+<tr><td style="padding:8px 12px;font-weight:600;">Outcome</td><td style="padding:8px 12px;">Tissue function decline, reduced recovery capacity</td></tr>
+</table>
+</div>
+
+<!-- LAYER 3: Knowledge Position -->
+<div style="padding:16px 0;margin-bottom:12px;">
+<h3 style="font-family:'Urbanist',sans-serif;font-size:10px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin:0 0 12px;">Layer 3 &middot; Knowledge Position</h3>
+<pre style="font-family:'Courier New',monospace;font-size:12px;color:#1A3348;background:#FAF8F5;padding:16px 20px;border-radius:6px;line-height:1.7;overflow-x:auto;">
+SYMPTOMS LAYER
+&#x2514;&#x2500; Healthy Aging &#x2605; (CURRENT)
+&#x2514;&#x2500; Sleep
+&#x2514;&#x2500; Fatigue
+&#x2514;&#x2500; Recovery
+&#x2514;&#x2500; Inflammation
+&#x2514;&#x2500; Microcirculation
+&#x2514;&#x2500; Metabolism
+    &#x2193;
+ENERGY LAYER
+&#x2514;&#x2500; Cellular Energy
+    &#x2193;
+MECHANISMS LAYER
+&#x2514;&#x2500; Mitochondria
+    &#x2193;
+TECHNOLOGY LAYER
+&#x2514;&#x2500; Graphene FIR
+</pre>
+</div>
+
+<!-- LAYER 4: Evidence Snapshot -->
+<div style="padding:16px 0;margin-bottom:12px;">
+<h3 style="font-family:'Urbanist',sans-serif;font-size:10px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin:0 0 12px;">Layer 4 &middot; Evidence Snapshot</h3>
+<ul style="font-size:13px;color:#475569;line-height:1.8;padding-left:20px;">
+<li>BMC Geriatrics RCT (DOI: 10.1186/s12877-024-04755-9): 108 older adults, 4-week graphene FIR protocol — 83% cognitive improvement (s-MoCA) and 65% anxiety reduction (GAD-7)</li>
+<li>PKU Third Hospital clinical trial (PKU-CT-2026-014): sustained comfort improvement at 4-week follow-up in musculoskeletal cohort</li>
+<li>NIQS certified 68% electro-thermal conversion efficiency: consistent FIR output across >10,000 hours continuous operation (GB/T 7287-2008)</li>
+</ul>
+</div>
+
+<!-- LAYER 5: Graph Navigation -->
+<div style="padding:16px 0;">
+<h3 style="font-family:'Urbanist',sans-serif;font-size:10px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin:0 0 12px;">Layer 5 &middot; Graph Navigation</h3>
+<p style="font-size:13px;color:#475569;line-height:1.8;margin:0 0 4px;"><strong>&#x2B06; Upstream:</strong> Cellular Energy Decline &#x2192; Mitochondrial DNA Damage &#x2192; Tissue Aging</p>
+<p style="font-size:13px;color:#475569;line-height:1.8;margin:0 0 4px;"><strong>&#x27A1; Siblings:</strong> Sleep, Fatigue, Recovery, Inflammation, Microcirculation, Metabolism</p>
+<p style="font-size:13px;color:#475569;line-height:1.8;margin:0;"><strong>&#x2B07; Downstream:</strong> Healthy Aging &#x2192; Cellular Energy &#x2192; Mitochondria &#x2192; Graphene FIR</p>
+</div>
+
+</details>
+
+<!-- Quick Answer: required per Hub Design System -->
+<div style="max-width:1100px;margin:0 auto;padding:0 24px;">
+<div style="background:#FAF8F5;border-left:4px solid #C5A059;padding:32px 36px;margin:0 0 32px;border-radius:0 8px 8px 0;">
+<p style="font-size:10px;text-transform:uppercase;letter-spacing:2px;color:#C5A059;font-weight:600;margin:0 0 10px;">Quick Answer</p>
+<h2 style="font-family:'Urbanist',sans-serif;font-size:22px;font-weight:400;color:#1A1D24;margin:10px 0 16px;line-height:1.3;">What is healthy aging?</h2>
+<p style="font-size:15px;line-height:1.8;color:#475569;margin:0;">Healthy aging is not simply the absence of disease &mdash; it is the maintenance of cellular function, metabolic efficiency, and physiological resilience across the lifespan. At the cellular level, aging involves mitochondrial decline, accumulation of senescent cells, telomere shortening, and reduced capacity for repair. Research increasingly views aging as a modifiable biological process rather than an inevitable decline. This hub explores the science of longevity and cellular resilience.</p>
+</div>
+</div>
+
+<div class="explore">
+<h2 class="explore-title">Explore This Hub</h2>
+<div class="card-list">
+
+<a class="card" href="/SCIENCE/KNOWLEDGE/healthy-aging/why-does-aging-drain-your-energy.html">
+<div class="card-icon">
+<svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M8 2v4"/><path d="M16 2v4"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="13" y2="14"/></svg>
+</div>
+<div class="card-body">
+<h3>Why Does Aging Drain Your Energy? <span class="tag live">NEW</span></h3>
+<p>Why energy output drops with age and what can slow the decline.</p>
+<div class="card-links"><b>&rarr;</b></div>
+</div>
+<img class="card-img" src="/PICTURE/hero-aging-recovery.webp" alt="">
+</a>
+
+<a class="card" href="/SCIENCE/KNOWLEDGE/healthy-aging/why-do-we-age.html">
+<div class="card-icon">
+<svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M8 2v4"/><path d="M16 2v4"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="13" y2="14"/></svg>
+</div>
+<div class="card-body">
+<h3>Why Do We Age? <span class="tag live">NEW</span></h3>
+<p>Aging isn't one process. It's many systems shifting together.</p>
+<div class="card-links"><b>&rarr;</b></div>
+</div>
+<img class="card-img" src="/PICTURE/hero-mitochondria-energy.webp" alt="">
+</a>
+
+<a class="card" href="/SCIENCE/KNOWLEDGE/healthy-aging/how-can-we-support-healthy-aging.html">
+<div class="card-icon">
+<svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M8 2v4"/><path d="M16 2v4"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="13" y2="14"/></svg>
+</div>
+<div class="card-body">
+<h3>How Can We Support Healthy Aging? <span class="tag live">NEW</span></h3>
+<p>Five daily levers that support energy, repair, and stability over time.</p>
+<div class="card-links"><b>&rarr;</b></div>
+</div>
+<img class="card-img" src="/PICTURE/hero-microcirculation-flow.webp" alt="">
+</a>
+
+</div>
+</div>
+
+<div class="about">
+
+<h3 style="font-family:'Urbanist',sans-serif;font-size:22px;font-weight:400;color:var(--t);margin-bottom:20px;">Frequently Asked Questions</h3>
+
+<details style="border-bottom:1px solid #E5E5E7;padding:14px 0;">
+<summary style="font-family:'Urbanist',sans-serif;font-size:14px;font-weight:600;color:#1A3348;cursor:pointer;">Why do we age at the cellular level?</summary>
+<p style="font-size:13px;color:#475569;line-height:1.7;margin-top:8px;padding-left:8px;">Cellular aging is driven by multiple mechanisms: mitochondrial DNA damage, telomere shortening, accumulation of senescent cells, epigenetic changes, and declining protein quality control.</p>
+</details>
+
+<details style="border-bottom:1px solid #E5E5E7;padding:14px 0;">
+<summary style="font-family:'Urbanist',sans-serif;font-size:14px;font-weight:600;color:#1A3348;cursor:pointer;">What are senescent cells?</summary>
+<p style="font-size:13px;color:#475569;line-height:1.7;margin-top:8px;padding-left:8px;">Senescent cells are cells that have stopped dividing but do not die. They secrete inflammatory signals that damage neighboring cells and contribute to tissue aging.</p>
+</details>
+
+<details style="border-bottom:1px solid #E5E5E7;padding:14px 0;">
+<summary style="font-family:'Urbanist',sans-serif;font-size:14px;font-weight:600;color:#1A3348;cursor:pointer;">Can mitochondrial function be preserved with age?</summary>
+<p style="font-size:13px;color:#475569;line-height:1.7;margin-top:8px;padding-left:8px;">Research suggests that exercise, caloric regulation, adequate sleep, and certain compounds may support mitochondrial biogenesis and efficiency during aging.</p>
+</details>
+
+<details style="border-bottom:1px solid #E5E5E7;padding:14px 0;">
+<summary style="font-family:'Urbanist',sans-serif;font-size:14px;font-weight:600;color:#1A3348;cursor:pointer;">What is the difference between lifespan and healthspan?</summary>
+<p style="font-size:13px;color:#475569;line-height:1.7;margin-top:8px;padding-left:8px;">Lifespan is total years lived. Healthspan is years lived in good health &mdash; free from chronic disease and functional decline. Modern aging research prioritizes extending healthspan.</p>
+</details>
+
+<details style="border-bottom:1px solid #E5E5E7;padding:14px 0;">
+<summary style="font-family:'Urbanist',sans-serif;font-size:14px;font-weight:600;color:#1A3348;cursor:pointer;">What lifestyle factors support healthy aging?</summary>
+<p style="font-size:13px;color:#475569;line-height:1.7;margin-top:8px;padding-left:8px;">Research consistently supports regular physical activity, Mediterranean-style nutrition, social connection, cognitive engagement, quality sleep, and stress management as key longevity factors.</p>
+</details>
+
+<div style="margin-top:48px;">
+<h3 style="font-family:'Urbanist',sans-serif;font-size:22px;font-weight:400;color:var(--t);margin-bottom:20px;">Key Takeaways</h3>
+<p style="font-size:14px;color:var(--s);line-height:1.8;">Healthy aging bridges symptoms and mechanisms &mdash; it is the biological process through which mitochondrial decline, oxidative damage accumulation, and reduced cellular energy production manifest over time. Understanding aging through the lens of cellular energy science reveals that many age-related changes are modifiable rather than inevitable. This hub curates scientific insights on mitochondrial aging, cellular senescence, and the hallmarks of aging &mdash; not medical advice.</p>
+</div>
 
 
-<section class="explore">
-    <h2 class="explore-title">Explore This Hub</h2>
-    <div class="card-list"><div class="card-list">
-<a href="/SCIENCE/KNOWLEDGE/healthy-aging/why-does-aging-drain-your-energy.html" class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M8 2v4"/><path d="M16 2v4"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="13" y2="14"/></svg></div>
-        <div class="card-body">
-            <h3>Why Does Aging Drain Your Energy? <span class="tag live">NEW</span></h3>
-            <p>Why energy output drops with age and what can slow the decline.</p>
-        </div>
-        <span class="card-arrow">&rarr;</span>
-    <img class="card-img" src="/PICTURE/hero-aging-recovery.webp" alt="" loading="lazy"></a>
-<a href="/SCIENCE/KNOWLEDGE/healthy-aging/why-do-we-age.html" class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M8 2v4"/><path d="M16 2v4"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="13" y2="14"/></svg></div>
-        <div class="card-body">
-            <h3>Why Do We Age? <span class="tag live">NEW</span></h3>
-            <p>Aging isn't one process. It's many systems shifting together.</p>
-        </div>
-        <span class="card-arrow">&rarr;</span>
-    <img class="card-img" src="/PICTURE/hero-mitochondria-energy.webp" alt="" loading="lazy"></a>
-<a href="/SCIENCE/KNOWLEDGE/healthy-aging/how-can-we-support-healthy-aging.html" class="card">
-        <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M8 2v4"/><path d="M16 2v4"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="13" y2="14"/></svg></div>
-        <div class="card-body">
-            <h3>How Can We Support Healthy Aging? <span class="tag live">NEW</span></h3>
-            <p>Five daily levers that support energy, repair, and stability over time.</p>
-        </div>
-        <span class="card-arrow">&rarr;</span>
-    <img class="card-img" src="/PICTURE/hero-microcirculation-flow.webp" alt="" loading="lazy"></a>
-            </div>
-</section>
 
-<section class="about">
-    <div class="about-card">
-        <div class="about-icon">
-            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-        </div>
-        <div class="about-text">
-            <h3>About This Hub</h3>
-            <p>Aging is increasingly understood as a modifiable biological process — not inevitable decline. This hub curates scientific insights on mitochondrial aging, cellular senescence, the hallmarks of aging, and what research reveals about maintaining vitality and healthspan across the lifespan.</p>
-            <div class="disclaimer">
-                <strong>Disclaimer:</strong> This content is for scientific reference only and does not constitute medical advice, diagnosis, or treatment. Preclinical findings cannot be directly extrapolated to human physiology.
-            </div>
-        </div>
-    </div>
-</section>
+<div style="margin-top:36px;">
+<div class="disclaimer"><strong>Scientific Disclaimer:</strong> This hub is for scientific education and informational purposes only. The content reflects published research and current scientific understanding. It does not constitute medical advice, diagnosis, or treatment recommendations. Preclinical and mechanistic findings cannot be directly extrapolated to clinical outcomes in individual cases. Always consult qualified healthcare professionals for personal health decisions.</div>
+</div>
+</div>
 
-<section style="background:#FFF;padding:40px 10% 80px;">
-    <div style="max-width:800px;margin:0 auto;">
-        <h3 style="font-family:'Urbanist',sans-serif;font-size:14px;letter-spacing:2px;color:#1A3348;text-transform:uppercase;margin-bottom:20px;">Related Hubs</h3>
-        <div style="display:flex;flex-wrap:wrap;gap:12px;">
-            <a href="/SCIENCE/KNOWLEDGE/Mitochondria/" style="padding:12px 24px;background:#1A3348;border:1px solid rgba(255,255,255,0.1);border-radius:50px;color:#E0E6ED;font-family:Urbanist,sans-serif;font-size:11px;letter-spacing:1px;text-decoration:none;transition:all .25s;">Mitochondrial Health</a>
-<a href="/SCIENCE/KNOWLEDGE/Recovery/" style="padding:12px 24px;background:#1A3348;border:1px solid rgba(255,255,255,0.1);border-radius:50px;color:#E0E6ED;font-family:Urbanist,sans-serif;font-size:11px;letter-spacing:1px;text-decoration:none;transition:all .25s;">Recovery Science</a>
-<a href="/SCIENCE/KNOWLEDGE/oxidative-stress/" style="padding:12px 24px;background:#1A3348;border:1px solid rgba(255,255,255,0.1);border-radius:50px;color:#E0E6ED;font-family:Urbanist,sans-serif;font-size:11px;letter-spacing:1px;text-decoration:none;transition:all .25s;">Oxidative Stress</a>
+<!-- ============ WHERE THIS FITS ============ -->
+<div style="max-width:1100px;margin:48px auto 0;padding:0 24px;">
+<div style="background:#FAF8F5;padding:28px 32px;border-radius:8px;border-left:4px solid #1A3348;">
+<h3 style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#94A3B8;text-transform:uppercase;margin:0 0 12px;">Where This Fits</h3>
+<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">&#x2B06; <strong>Upstream:</strong> <a href="/SCIENCE/KNOWLEDGE/Mitochondria/" style="color:#C5A059;">Mitochondria</a> &#x2014; Mitochondrial health determines aging rate.</p>
+<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">&#x25CF; <strong>Current:</strong> Healthy Aging</p>
+<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">&#x2B07; <strong>Downstream:</strong> <a href="/SCIENCE/KNOWLEDGE/cellular-energy/" style="color:#C5A059;">Cellular Energy</a> &#x2014; Energy maintenance is central to longevity.</p>
+<p style="font-size:14px;color:#475569;line-height:1.8;margin:0;">&#x1F3C1; <strong>Terminal:</strong> <a href="/SCIENCE/KNOWLEDGE/graphene-fir/" style="color:#C5A059;">Graphene FIR</a> &#x2014; Thermal environment supports cellular maintenance.</p>
+</div>
+</div>
 
-        </div>
-    </div>
-</section>
-
-<section style="background:#FFF;padding:64px 10%;">
-    <div style="max-width:800px;margin:0 auto;">
-        <h3 style="font-family:'Urbanist',sans-serif;font-size:28px;font-weight:200;color:#1A3348;letter-spacing:2px;text-align:center;margin-bottom:40px;">Frequently Asked Questions</h3>
-
-        <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
-            <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">Why do we age at the cellular level?</h4>
-            <p style="font-size:14px;color:#475569;line-height:1.7;">Cellular aging is driven by multiple mechanisms: mitochondrial DNA damage, telomere shortening, accumulation of senescent cells, epigenetic changes, and declining protein quality control.</p>
-        </div>
-
-        <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
-            <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">What are senescent cells?</h4>
-            <p style="font-size:14px;color:#475569;line-height:1.7;">Senescent cells are cells that have stopped dividing but do not die. They secrete inflammatory signals that damage neighboring cells and contribute to tissue aging.</p>
-        </div>
-
-        <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
-            <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">Can mitochondrial function be preserved with age?</h4>
-            <p style="font-size:14px;color:#475569;line-height:1.7;">Research suggests that exercise, caloric regulation, adequate sleep, and certain compounds may support mitochondrial biogenesis and efficiency during aging.</p>
-        </div>
-
-        <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
-            <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">What is the difference between lifespan and healthspan?</h4>
-            <p style="font-size:14px;color:#475569;line-height:1.7;">Lifespan is total years lived. Healthspan is years lived in good health — free from chronic disease and functional decline. Modern aging research prioritizes extending healthspan.</p>
-        </div>
-
-        <div style="border-bottom:1px solid #E5E5E7;padding:20px 0;">
-            <h4 style="font-family:'Urbanist',sans-serif;font-size:15px;font-weight:500;color:#1A3348;margin-bottom:8px;">What lifestyle factors support healthy aging?</h4>
-            <p style="font-size:14px;color:#475569;line-height:1.7;">Research consistently supports regular physical activity, Mediterranean-style nutrition, social connection, cognitive engagement, quality sleep, and stress management as key longevity factors.</p>
-        </div>
-
-    </div>
-</section>
-
-<section style="background:#FAF8F5;padding:40px 10%;border-top:1px solid #E5E5E7;">
-    <div style="max-width:800px;margin:0 auto;">
-        <p style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:2px;color:#94A3B8;text-transform:uppercase;margin-bottom:12px;">Scientific Disclaimer</p>
-        <p style="font-size:12px;color:#94A3B8;line-height:1.8;">This hub is for scientific education and informational purposes only. The content reflects published research and current scientific understanding. It does not constitute medical advice, diagnosis, or treatment recommendations. Preclinical and mechanistic findings cannot be directly extrapolated to clinical outcomes in individual cases. Always consult qualified healthcare professionals for personal health decisions.</p>
-    </div>
-</section>
+<footer style="padding: 40px 10%; background: #1A3348; text-align: center; border-top: 2px solid #C5A059;">
+    <p style="font-size: 13px; color: #E0E6ED; letter-spacing: 0.03em;">XIHE Technology — A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
 </footer>
 
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag("js", new Date());
+gtag("config", "G-C7YSVFRQ6R");
+</script>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.xgraphene.tech/" },
+    { "@type": "ListItem", "position": 2, "name": "Science", "item": "https://www.xgraphene.tech/SCIENCE/Landing.html" },
+    { "@type": "ListItem", "position": 3, "name": "Healthy Aging", "item": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/healthy-aging/" },
+    { "@type": "ListItem", "position": 4, "name": "Healthy Aging", "item": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/healthy-aging/" }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "headline": "Healthy Aging",
+  "description": "Cellular aging, senescence, and the science of maintaining function across the lifespan.",
+  "about": { "@type": "Thing", "name": "Healthy Aging" },
+  "isPartOf": { "@type": "CollectionPage", "name": "XIHE Knowledge Hub", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/" },
+  "author": { "@type": "Organization", "name": "XIHE Technology" },
+  "publisher": { "@type": "Organization", "name": "XIHE Technology", "parentOrganization": { "@type": "ResearchOrganization", "name": "Jiageng Innovation Laboratory (IKKEM)" } }
+}
+</script>
 
 <script type="application/ld+json">
 {
@@ -341,7 +373,7 @@
       "name": "What is the difference between lifespan and healthspan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Lifespan is total years lived. Healthspan is years lived in good health — free from chronic disease and functional decline. Modern aging research prioritizes extending healthspan."
+        "text": "Lifespan is total years lived. Healthspan is years lived in good health \u2014 free from chronic disease and functional decline. Modern aging research prioritizes extending healthspan."
       }
     },
     {
@@ -355,5 +387,29 @@
   ]
 }
 </script>
+
+<!-- === JSON-LD DefinedTerm (Healthy Aging entity in XIHE Knowledge Graph) === -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "name": "Healthy Aging",
+  "description": "The biological process of aging viewed through cellular energy science. Mitochondrial decline and cellular energy reduction are central mechanisms. Cellular energy maintenance supports healthy longevity.",
+  "inDefinedTermSet": {
+    "@type": "DefinedTermSet",
+    "name": "XIHE Knowledge Graph",
+    "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/"
+  },
+  "termCode": "KG-NODE-HEALTHY-AGING",
+  "relatedTerm": [
+    { "@type": "DefinedTerm", "name": "Inflammation", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Inflammation/" },
+    { "@type": "DefinedTerm", "name": "Metabolism", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Metabolism/" },
+    { "@type": "DefinedTerm", "name": "Mitochondria", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/" },
+    { "@type": "DefinedTerm", "name": "Cellular Energy", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/" },
+    { "@type": "DefinedTerm", "name": "Graphene FIR", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/" }
+  ]
+}
+</script>
+
 </body>
 </html>
