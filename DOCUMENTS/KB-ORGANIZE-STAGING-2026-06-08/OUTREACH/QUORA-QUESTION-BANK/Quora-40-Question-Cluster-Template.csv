@@ -1,0 +1,7 @@
+Cluster ID,Cluster Name,Question Number,Exact Quora Question,Parent Hub,Primary KB Concept,Answer Status,Article Candidate,FAQ Candidate,Score,Notes
+MUSCLE-MITO-01,Muscle mitochondria and fatigue,1,"Why can't all muscles evolve to have high mitochondrial density, like cardiac muscle, so we never get tired?",Mitochondria,CONCEPT-003-Mitochondria.md,Drafted,Yes,Yes,29,Seed question
+MUSCLE-MITO-01,Muscle mitochondria and fatigue,2,Why cardiac muscle are nonfatigue?,Mitochondria,CONCEPT-003-Mitochondria.md,Drafted,Yes,Yes,28,Supporting question; cleaner title: Why is cardiac muscle fatigue-resistant?
+MUSCLE-MITO-01,Muscle mitochondria and fatigue,3,Why do cardiac muscles not get tired like striated muscles?,Mitochondria,CONCEPT-003-Mitochondria.md,Clustered,Yes,Yes,Duplicate,Duplicate of fatigue-resistant cardiac muscle answer
+MUSCLE-MITO-01,Muscle mitochondria and fatigue,4,Why does a cardiac muscle and smooth muscle never get fatigued?,Mitochondria,TBD,Clustered,Maybe,Yes,Duplicate/Caution,Correct wording: fatigue-resistant not never fatigued
+MUSCLE-MITO-01,Muscle mitochondria and fatigue,5,What causes cardiac muscle fatigue?,Mitochondria,CONCEPT-003-Mitochondria.md,Drafted,Yes,Yes,27,Distinct answer; supply-demand and calcium-handling angle
+MUSCLE-MITO-01,Muscle mitochondria and fatigue,6,"Can sufficiently-precise nanotechnology (e.g five-9s uptime) reverse mitochondrial fatigue and confer immortality onto mankind?",Healthy Aging,TBD,Archived,No,No,12,Speculative; do not use as XIHE article

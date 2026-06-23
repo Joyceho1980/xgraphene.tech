@@ -1,0 +1,138 @@
+{
+  "date": "2026-06-11",
+  "sources": [
+    "D:\\XIHE-ENGLISH-KB\\04-SEO-KEYWORDS\\KEYWORDS.md",
+    "D:\\XIHE-ENGLISH-KB\\04-SEO-KEYWORDS\\b2b-industrial-keywords.md",
+    "D:\\XIHE-ENGLISH-KB\\04-SEO-KEYWORDS\\overseas-keywords.md"
+  ],
+  "layers": {
+    "brand_moat": [
+      "9.4um far-infrared",
+      "high-emissivity graphene",
+      "integrated matrix engineering",
+      "precision FIR engineering",
+      "graphene photobiomodulation",
+      "IKKEM graphene",
+      "0.95 emissivity graphene",
+      "graphene resonance ecosystem",
+      "recovery infrastructure",
+      "cellular energy environment"
+    ],
+    "industrial_b2b": [
+      "flexible heating element supplier",
+      "OEM heating element manufacturer",
+      "graphene heating element B2B",
+      "graphene heater OEM",
+      "custom heating element manufacturer",
+      "flexible heater manufacturer",
+      "thin film heating element supplier",
+      "graphene heating film wholesale",
+      "heating element for OEM appliances",
+      "12V heating element for vehicle",
+      "low voltage high temperature heater",
+      "flexible heating element for curved surface",
+      "high emissivity heating film"
+    ],
+    "recovery_wellness": [
+      "physical therapy",
+      "sports rehab",
+      "sports medicine clinic",
+      "orthopedic rehab",
+      "return to play",
+      "post-op recovery",
+      "recovery suite",
+      "recovery environment",
+      "premium recovery",
+      "cash-pay wellness",
+      "patient experience",
+      "member experience",
+      "recovery workflow",
+      "non-invasive recovery technology",
+      "non-invasive far-infrared recovery",
+      "professional recovery technology",
+      "sports recovery far-infrared",
+      "FIR wellness environment"
+    ],
+    "geo_questions": [
+      "What is non-invasive recovery technology?",
+      "How do non-invasive modalities support cellular energy?",
+      "What makes XIHE graphene different from standard heating films?",
+      "How does emissivity affect far-infrared performance?",
+      "What is integrated matrix engineering?",
+      "How does 9.4um far-infrared interact with cells?",
+      "What is the relationship between FIR and ATP production?",
+      "Does graphene far-infrared support microcirculation?",
+      "What does published research say about graphene far-infrared?",
+      "What types of facilities use graphene far-infrared technology?"
+    ]
+  },
+  "search_families": {
+    "company_discovery": [
+      "PEMF physical therapy",
+      "cryotherapy recovery center",
+      "red light sports medicine",
+      "infrared sauna wellness center",
+      "sports recovery founder"
+    ],
+    "decision_maker_discovery": [
+      "Company Name founder",
+      "Company Name owner",
+      "Company Name director of operations",
+      "Company Name practice administrator",
+      "site:linkedin.com/in Company Name sports medicine outreach"
+    ],
+    "email_route_discovery": [
+      "site:companydomain.com \"@companydomain.com\"",
+      "site:companydomain.com (contact OR team OR about) \"@companydomain.com\"",
+      "filetype:pdf \"Company Name\" email",
+      "filetype:pdf \"companydomain.com\" contact"
+    ],
+    "comparison": [
+      "graphene vs ceramic heating element",
+      "graphene vs carbon fiber heating",
+      "PTC heater vs graphene",
+      "graphene heating element review"
+    ]
+  },
+  "crm_tags": [
+    "#PT",
+    "#SportsMedicine",
+    "#Recovery",
+    "#PEMF",
+    "#Cryotherapy",
+    "#RedLight",
+    "#Longevity",
+    "#CashPay",
+    "#PremiumRecovery",
+    "#OEM",
+    "#B2BIndustrial",
+    "#ReturnToPlay",
+    "#EvidenceAware"
+  ],
+  "outreach_angles": [
+    "recovery workflow fit",
+    "patient recovery experience",
+    "return-to-play support",
+    "premium recovery add-on",
+    "evidence-aware evaluation",
+    "OEM or integration discussion",
+    "commercial differentiation"
+  ],
+  "seo_topic_types": [
+    "knowledge article",
+    "segment page",
+    "product or module page",
+    "comparison page",
+    "FAQ page",
+    "glossary page"
+  ],
+  "keyword_flow": [
+    "discovered",
+    "clustered",
+    "approved",
+    "used in search",
+    "used in CRM",
+    "used in outreach",
+    "used in SEO"
+  ]
+}

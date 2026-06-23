@@ -1,0 +1,26 @@
+Paper ID,Short Name,Current Evidence Label,Recommended EC Class,Relationship Tier,Citation Risk,Primary Website Use,Required Next Action
+PAPER-001,Graphene T-Cell Immunotherapy,L3 Animal Study,EC3,RT1,Red/Yellow,B2B material credibility only; no cancer claims,Confirm public-safe language and keep clinical claims internal
+PAPER-002,Dual-Mode IR Emitter,L5 Material Characterization,EC5,RT1,Green,Technology Platform and Graphene FIR technical pages,Complete missing author list
+PAPER-003,Elderly Anxiety and Cognition RCT,L1 Human RCT,EC1,RT1 or RT2,Yellow,Clinical Evidence; Healthy Aging; Brain Energy,Clarify XIHE material relationship and write limitation language
+PAPER-004,Alpha/Brainwave Modulation,L2 Human Observational,EC2,RT3,Yellow,Sleep; Brain Energy; Graphene FIR,Complete author list and add sample-size limitations
+PAPER-005,Gut-Brain Axis Anxiety,L3 Animal Study,EC3,RT3,Yellow,Inflammation; Metabolism; Gut-Brain Axis,State animal model clearly and avoid human anxiety claims
+PAPER-006,Non-Thermal Biological Effects Yeast,L4 In Vitro / Cellular,EC4,RT3,Yellow,Cellular Energy; Mitochondria; Graphene FIR,Flag journal/source limitations and keep to cellular plausibility
+PAPER-007,GraMOS Neuromodulation,L4 In Vitro / Basic Research,EC4,RT2,Yellow,Research Library; Technology Platform; Bioelectronic Interfaces,Complete author list and avoid clinical neurology claims
+PAPER-008,Diabetic Wound Healing,L2 Animal Study,EC3,RT2,Yellow,Recovery Science; Inflammation; Research Library,Complete author list and avoid human wound-healing claims
+PAPER-009,Post-Surgical Adhesion Prevention,L2 Large Animal Study,EC3,RT2,Yellow,Recovery Science; Inflammation; Research Library,Complete author list and keep human surgical claims out
+PAPER-010,Chronic Low Back Pain RCT,L3 Human RCT,EC1,RT3,Yellow,Clinical Evidence; Recovery; Pain Science,Retrieve DOI/full text before public claim use
+PAPER-011,Peripheral Blood Circulation,L2 Human Experimental,EC2,RT3,Yellow,Microcirculation; Cellular Energy,Confirm journal/source and sample details
+PAPER-012,Exercise and Glucose Metabolism,L2 Animal Study,EC3,RT3,Yellow,Metabolism; Recovery; AMPK,Complete author list and state mouse model
+PAPER-013,Primary Hypertension,L2 Animal Study,EC3,RT3,Yellow,Microcirculation; Vascular Biology,Find DOI and avoid hypertension treatment claims
+PAPER-014,Deep Sleep Improvement RCT,L3 Human RCT,EC1,RT3,Yellow, Sleep; Recovery; Clinical Evidence,Find journal DOI authors and methods before strong use
+PAPER-015,Exercise Endurance RCT,L3 Human RCT Crossover,EC1,RT3,Yellow,Recovery; Sports Recovery; Metabolism,Find journal DOI authors and exact protocol
+PAPER-016,Post-Stroke Insomnia RCT,L1 Human RCT incomplete,EC1,RT3,Red,Sleep; Clinical Evidence internal only until complete,Do not use externally until metadata and intervention attribution are complete
+PAPER-017,Post-Exercise Fatigue Recovery RCT,L3 Human RCT,EC1,RT3,Yellow,Fatigue; Recovery; Clinical Evidence,Find journal DOI authors and exact outcome data
+PAPER-018,Obesity/UCP1 Thermogenesis,L2 Animal Study,EC3,RT3,Yellow,Metabolism; Healthy Aging,Find DOI and avoid weight-loss or obesity treatment claims
+PAPER-019,Microcirculation and Vascular Regulation,L2 Mechanistic / Experimental,TBD EC3 or EC4,RT3,Yellow,Microcirculation; Technology Platform,Clarify model type before assigning final EC class
+PAPER-020,Graphene FIR Thermotherapy,Missing likely L4/L5,TBD EC4 or EC5,RT3,Red,Internal only until full paper review,Retrieve full paper and verify title DOI authors
+PAPER-021,Mitochondrial Function and FIR,L4 In Vitro / Laboratory,EC4,RT3,Yellow,Mitochondria; Cellular Energy,Find full citation and avoid human mitochondrial claims
+PAPER-022,Triple-Negative Breast Cancer Nanjing,L2 Animal Study,EC3,RT4,Red,Field context only; not XIHE claim,Keep internal or heavily disclaimed as Grahope/non-XIHE
+PAPER-023,RBC Rouleaux and Blood Rheology,L2 Human Observational,EC2,RT4,Yellow,Microcirculation; Research Library,Disclose source and avoid cardiovascular treatment claims
+PAPER-024,FIR Moxibustion for Insomnia,L2 Human Observational,EC2,RT5,Yellow,Sleep context only,Clarify general FIR context and avoid graphene/XIHE attribution
+PAPER-025,Graphene Chronic Tonsillitis RCT,L1 Human RCT,EC1,RT4,Red,Competitor/field context only,Do not use as XIHE evidence; disclose Grahope if ever referenced

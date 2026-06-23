@@ -1,0 +1,35 @@
+Module,Concept,Status,Existing KB Source,Recommended New Note,Website Hub,Priority,Graphene Mention
+Cell Architecture,Cell membrane,Missing,,Cell-Membrane.md,Cellular Energy,P2,No
+Cell Architecture,Cytoplasm,Missing,,Cytoplasm.md,Cellular Energy,P3,No
+Cell Architecture,Nucleus and gene expression,Missing,,Nucleus-Gene-Expression.md,Bioenergetics,P3,No
+Cell Architecture,Endoplasmic reticulum,Missing,,Endoplasmic-Reticulum.md,Cellular Energy,P3,No
+Cell Architecture,Lysosomes and cleanup,Partial,02-SCIENCE/05-Chronic-Pain-Science drafts,Lysosomes-Autophagy.md,Healthy Aging,P2,No
+Energy System,Cellular energy,Partial,02-SCIENCE-HUBS/cellular-energy/README.md,Cellular-Energy.md,Cellular Energy,P0,No
+Energy System,ATP,Partial,02-SCIENCE/03-Mechanisms/ATP-Pathway/Concept.md,ATP.md,ATP,P0,No
+Energy System,Glycolysis,Missing,,Glycolysis.md,Metabolism,P1,No
+Energy System,TCA cycle,Missing,,TCA-Cycle.md,Bioenergetics,P1,No
+Energy System,Electron transport chain,Partial,02-SCIENCE/05-Chronic-Pain-Science drafts,Electron-Transport-Chain.md,Mitochondria,P0,No
+Energy System,Oxidative phosphorylation,Partial,02-SCIENCE/05-Chronic-Pain-Science drafts,Oxidative-Phosphorylation.md,Bioenergetics,P0,No
+Energy System,Mitochondrial membrane potential,Partial,02-SCIENCE/01-Evidence/2022-Non-Thermal-Biological-Effects, Mitochondrial-Membrane-Potential.md,Mitochondria,P1,No
+Energy System,AMPK,Partial,02-SCIENCE/01-Research-Assets/Metabolic/008-exercise-glucose-metabolism-scirep-2024.md,AMPK-Energy-Sensor.md,Metabolism,P0,No
+Delivery System,Microcirculation,Partial,02-SCIENCE/02-Concepts/Microcirculation/Concept.md,Microcirculation.md,Microcirculation,P0,No
+Delivery System,Capillary exchange,Missing,,Capillary-Exchange.md,Microcirculation,P1,No
+Delivery System,Oxygen diffusion,Missing,,Oxygen-Diffusion-to-Mitochondria.md,Cellular Energy,P1,No
+Delivery System,Nitric oxide,Partial,02-SCIENCE/05-Chronic-Pain-Science drafts,Nitric-Oxide-Vascular-Signaling.md,Microcirculation,P1,No
+Delivery System,Lymphatic flow,Missing,,Lymphatic-Flow.md,Recovery,P2,No
+Stress and Defense,Reactive oxygen species,Partial,02-SCIENCE/01-Evidence/2022-Non-Thermal-Biological-Effects,Reactive-Oxygen-Species.md,Oxidative Stress,P0,No
+Stress and Defense,Oxidative stress,Partial,02-SCIENCE-HUBS/README.md,Oxidative-Stress.md,Oxidative Stress,P0,No
+Stress and Defense,Inflammation,Partial,02-SCIENCE-HUBS/inflammation/README.md,Inflammation.md,Inflammation,P0,No
+Stress and Defense,Cytokines,Partial,02-SCIENCE/05-Chronic-Pain-Science drafts,Cytokines.md,Inflammation,P1,No
+Stress and Defense,NF-kB,Partial,02-SCIENCE/01-Research-Assets/Neural/010-gut-brain-axis-anxiety-2024.md,NF-kB.md,Inflammation,P2,No
+Stress and Defense,Macrophage polarization,Partial,02-SCIENCE/01-Research-Assets/Recovery/003-diabetic-wound-healing-ijms-2026.md,Macrophage-Polarization.md,Recovery,P1,No
+Repair and Renewal,Protein synthesis,Missing,,Protein-Synthesis-and-Repair.md,Recovery,P2,No
+Repair and Renewal,Autophagy,Partial,02-SCIENCE/05-Chronic-Pain-Science drafts,Autophagy.md,Healthy Aging,P1,No
+Repair and Renewal,Mitophagy,Missing,,Mitophagy.md,Mitochondria,P1,No
+Repair and Renewal,Mitochondrial biogenesis,Partial,02-SCIENCE-HUBS/mitochondrial-health/README.md,Mitochondrial-Biogenesis.md,Mitochondria,P0,No
+Repair and Renewal,Glymphatic clearance,Partial,02-SCIENCE/05-Chronic-Pain-Science drafts,Glymphatic-System.md,Sleep,P1,No
+System Outcomes,Fatigue,Partial,02-SCIENCE-HUBS/fatigue/README.md,Fatigue-Cellular-Energy.md,Fatigue,P0,No
+System Outcomes,Recovery biology,Partial,02-SCIENCE-HUBS/recovery/README.md,Recovery-Biology.md,Recovery,P0,No
+System Outcomes,Healthy aging,Partial,02-SCIENCE-HUBS/healthy-aging/README.md,Cellular-Aging.md,Healthy Aging,P0,No
+Technology Bridge,Far-infrared biological context,Partial,02-SCIENCE-HUBS/graphene-fir/README.md,FIR-Biology-Bridge.md,Graphene FIR,P1,Yes
+Technology Bridge,Graphene FIR evidence interpretation,Partial,02-SCIENCE/PAPER-DATABASE.md,Graphene-FIR-Evidence-Interpretation.md,Research Library,P1,Yes

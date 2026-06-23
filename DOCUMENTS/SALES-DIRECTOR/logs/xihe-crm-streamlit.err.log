@@ -1,0 +1,297 @@
+2026-06-13 14:22:10.011 Uvicorn server started on 127.0.0.1:8501
+2026-06-13 14:24:07.387 Uvicorn server started on 0.0.0.0:8501
+2026-06-13 14:24:08.309 Did not auto detect external IP.
+Please go to https://docs.streamlit.io/ for debugging hints.
+2026-06-13 14:32:15.275 Uvicorn server started on 0.0.0.0:8501
+2026-06-13 15:15:25.311 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-13 15:26:35.859 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-13 16:15:09.163 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-13 16:15:09.178 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-13 16:15:10.570 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-13 16:15:10.582 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-13 16:15:16.592 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-13 16:15:16.598 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-13 16:15:16.729 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-14 20:00:41.452 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-14 20:00:41.458 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-14 20:16:53.579 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-14 20:16:53.593 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-14 21:07:45.078 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-14 21:07:45.084 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-14 21:07:57.010 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-14 21:07:57.016 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-14 21:18:33.592 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-14 21:18:33.597 Please replace `use_container_width` with `width`.
+
+`use_container_width` will be removed after 2025-12-31.
+
+For `use_container_width=True`, use `width='stretch'`. For `use_container_width=False`, use `width='content'`.
+2026-06-14 21:59:05.343 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+             ^^^^^^
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 789, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\app.py", line 136, in <module>
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\navigation\page.py", line 490, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\pages\01_仪表盘.py", line 12, in <module>
+    from utils.database import get_conversion_funnel, get_customers, get_follow_up_queue, get_linkedin_watch_alerts, get_stats, update_customer
+ImportError: cannot import name 'get_linkedin_watch_alerts' from 'utils.database' (D:\CODEX\XIHE-CRM\utils\database.py)
+2026-06-14 22:00:05.107 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+             ^^^^^^
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 789, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\app.py", line 136, in <module>
+    st.Page("pages/10_趋势情报.py", title="趋势情报", icon="\U0001f4c8"),
+    ^^^^^^^^
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\navigation\page.py", line 490, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\pages\01_仪表盘.py", line 12, in <module>
+    from utils.database import get_conversion_funnel, get_customers, get_follow_up_queue, get_linkedin_watch_alerts, get_stats, update_customer
+ImportError: cannot import name 'get_linkedin_watch_alerts' from 'utils.database' (D:\CODEX\XIHE-CRM\utils\database.py)
+2026-06-14 22:00:29.092 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+             ^^^^^^
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 789, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\app.py", line 136, in <module>
+    st.Page("pages/10_趋势情报.py", title="趋势情报", icon="\U0001f4c8"),
+    ^^^^^^^^
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\navigation\page.py", line 490, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\pages\01_仪表盘.py", line 12, in <module>
+    from utils.database import get_conversion_funnel, get_customers, get_follow_up_queue, get_linkedin_watch_alerts, get_stats, update_customer
+ImportError: cannot import name 'get_linkedin_watch_alerts' from 'utils.database' (D:\CODEX\XIHE-CRM\utils\database.py)
+2026-06-14 22:02:13.878 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+             ^^^^^^
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 789, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\app.py", line 136, in <module>
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\navigation\page.py", line 490, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\pages\01_仪表盘.py", line 12, in <module>
+    import utils as _utils_check
+ImportError: cannot import name 'get_linkedin_watch_alerts' from 'utils.database' (D:\CODEX\XIHE-CRM\utils\database.py)
+2026-06-14 22:03:01.298 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+             ^^^^^^
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 789, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\app.py", line 136, in <module>
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\navigation\page.py", line 490, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\pages\01_仪表盘.py", line 12, in <module>
+    import utils as _utils_check
+ImportError: cannot import name 'get_linkedin_watch_alerts' from 'utils.database' (D:\CODEX\XIHE-CRM\utils\database.py)
+2026-06-14 22:13:40.610 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+             ^^^^^^
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 789, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\app.py", line 136, in <module>
+    pg.run()
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\navigation\page.py", line 490, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\pages\01_仪表盘.py", line 12, in <module>
+    from crm_utils.database import get_conversion_funnel, get_customers, get_follow_up_queue, get_linkedin_watch_alerts, get_stats, update_customer
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: cannot import name 'get_linkedin_watch_alerts' from 'utils.database' (D:\CODEX\XIHE-CRM\utils\database.py)
+2026-06-15 08:42:16.488 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+             ^^^^^^
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 789, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\app.py", line 136, in <module>
+    st.Page("pages/07_设置.py", title="设置", icon="\u2699"),
+    ^^^^^^^^
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\navigation\page.py", line 490, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\pages\01_仪表盘.py", line 12, in <module>
+    from utils.database import get_conversion_funnel, get_customers, get_follow_up_queue, get_linkedin_watch_alerts, get_stats, update_customer
+ImportError: cannot import name 'get_linkedin_watch_alerts' from 'utils.database' (D:\CODEX\XIHE-CRM\utils\database.py)
+2026-06-15 08:45:23.350 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+             ^^^^^^
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 789, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\app.py", line 136, in <module>
+    pg = st.navigation(pages)
+    ^^^^^^^^
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\navigation\page.py", line 490, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\pages\01_仪表盘.py", line 12, in <module>
+    from utils.database import get_conversion_funnel, get_customers, get_follow_up_queue, get_linkedin_watch_alerts, get_stats, update_customer
+ImportError: cannot import name 'get_linkedin_watch_alerts' from 'utils.database' (D:\CODEX\XIHE-CRM\utils\database.py)
+2026-06-15 08:48:39.084 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+             ^^^^^^
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 789, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\app.py", line 136, in <module>
+    st.Page("pages/10_趋势情报.py", title="趋势情报", icon="\U0001f4c8"),
+    ^^^^^^^^
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\navigation\page.py", line 490, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\pages\01_仪表盘.py", line 12, in <module>
+    from utils.database import get_conversion_funnel, get_customers, get_follow_up_queue, get_linkedin_watch_alerts, get_stats, update_customer
+ImportError: cannot import name 'get_linkedin_watch_alerts' from 'utils.database' (D:\CODEX\XIHE-CRM\utils\database.py)
+2026-06-15 08:49:30.486 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+             ^^^^^^
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 789, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\app.py", line 136, in <module>
+    st.Page("pages/10_趋势情报.py", title="趋势情报", icon="\U0001f4c8"),
+    ^^^^^^^^
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\navigation\page.py", line 490, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\pages\01_仪表盘.py", line 12, in <module>
+    from utils.database import get_conversion_funnel, get_customers, get_follow_up_queue, get_linkedin_watch_alerts, get_stats, update_customer
+ImportError: cannot import name 'get_linkedin_watch_alerts' from 'utils.database' (D:\CODEX\XIHE-CRM\utils\database.py)
+2026-06-15 08:49:47.781 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+             ^^^^^^
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 789, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\app.py", line 136, in <module>
+    st.Page("pages/10_趋势情报.py", title="趋势情报", icon="\U0001f4c8"),
+    ^^^^^^^^
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\navigation\page.py", line 490, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\pages\01_仪表盘.py", line 12, in <module>
+    from utils.database import get_conversion_funnel, get_customers, get_follow_up_queue, get_linkedin_watch_alerts, get_stats, update_customer
+ImportError: cannot import name 'get_linkedin_watch_alerts' from 'utils.database' (D:\CODEX\XIHE-CRM\utils\database.py)
+2026-06-15 08:58:24.930 Uncaught app execution
+Traceback (most recent call last):
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\exec_code.py", line 129, in exec_func_with_error_handling
+    result = func()
+             ^^^^^^
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\runtime\scriptrunner\script_runner.py", line 789, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\app.py", line 136, in <module>
+    )
+  File "C:\Users\Administrator.DESKTOP-PCHA21E\AppData\Local\Programs\Python\Python312\Lib\site-packages\streamlit\navigation\page.py", line 490, in run
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CODEX\XIHE-CRM\pages\01_仪表盘.py", line 12, in <module>
+    try:
+ImportError: cannot import name 'get_linkedin_watch_alerts' from 'utils.database' (D:\CODEX\XIHE-CRM\utils\database.py)

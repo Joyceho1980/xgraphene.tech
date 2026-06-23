@@ -1,0 +1,15 @@
+Folder,Observed File Count,Current Role,Primary Issue,Recommended Source-of-Truth Role,Priority
+00-STRATEGY,7,Governance and architecture,Evidence level documents conflict with science terminology,Command center for final taxonomy and content rules,P0
+01-BRAND,13,Brand story and positioning,Some language may become claim-like if copied directly,Story and voice source with compliance boundaries,P2
+01-WEBSITE,6,Website draft content,Should not become the evidence source,Publishing staging only,P2
+02-JOURNAL,11,Long-form essays and science editorials,Needs evidence tags and claim checks before publishing,Editorial layer connected to evidence IDs,P2
+02-SCIENCE,178,Science evidence concepts mechanisms applications,Duplicate evidence structures and competing paper databases,Scientific source of truth after normalization,P0
+02-SCIENCE-HUBS,11,Knowledge graph and hub planning,Most hub README files are short stubs,Website hub planning and article map,P1
+03-CLINICAL-DOCS,4,Technical and clinical documentation,Needs connection into master paper/evidence map,Technical evidence archive,P1
+04-SEO-KEYWORDS,4,Keywords and approved claims,Approved claims too small for 25-paper inventory,Claim and query governance,P0
+05-ASSETS,0,Planned asset folder,Currently empty,Future canonical asset metadata folder,P3
+LINKEDIN-CONTENT,13,Social content,Derivative content may drift from claim rules,Distribution layer generated from approved source,P3
+OBSIDIAN,14,Research vault and source notes,Some evidence tags may use alternate numbering,Back-office source vault and reference archive,P1
+OUTREACH,7,Quora and outreach drafts,Needs citation and claim checks before reuse,Distribution layer generated from approved source,P3
+STORIES,9,Human story bank,Needs target article and compliance boundary per story,Formal Story Layer,P2
+Visual Libarary,55,Visual assets,Folder name typo and unclear metadata,Visual asset library with alt text and usage tags,P3

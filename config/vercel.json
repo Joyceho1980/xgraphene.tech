@@ -1,0 +1,408 @@
+{
+    "buildCommand":  "",
+    "outputDirectory":  ".",
+    "framework":  null,
+    "rewrites":  [
+                     {
+                         "source":  "/",
+                         "destination":  "/index.html"
+                     },
+                     {
+                         "source":  "/VISUAL-LIBRARY/:path*",
+                         "destination":  "/ASSETS/VISUAL-LIBRARY/:path*"
+                     },
+                     {
+                         "source":  "/PICTURE/:path*",
+                         "destination":  "/ASSETS/PICTURE/:path*"
+                     },
+                     {
+                         "source":  "/admin",
+                         "destination":  "/admin/index.html"
+                     },
+                     {
+                         "source":  "/admin/",
+                         "destination":  "/admin/index.html"
+                     },
+                     {
+                         "source":  "/about/:path*",
+                         "destination":  "/WEBSITE/pages/ABOUT/:path*"
+                     },
+                     {
+                         "source":  "/ABOUT/:path*",
+                         "destination":  "/WEBSITE/pages/ABOUT/:path*"
+                     },
+                     {
+                         "source":  "/contact/:path*",
+                         "destination":  "/WEBSITE/pages/CONTACT/:path*"
+                     },
+                     {
+                         "source":  "/CONTACT/:path*",
+                         "destination":  "/WEBSITE/pages/CONTACT/:path*"
+                     },
+                     {
+                         "source":  "/news/:path*",
+                         "destination":  "/WEBSITE/pages/NEWS/:path*"
+                     },
+                     {
+                         "source":  "/NEWS/:path*",
+                         "destination":  "/WEBSITE/pages/NEWS/:path*"
+                     },
+                     {
+                         "source":  "/products/:path*",
+                         "destination":  "/WEBSITE/pages/PRODUCTS/:path*"
+                     },
+                     {
+                         "source":  "/PRODUCTS/:path*",
+                         "destination":  "/WEBSITE/pages/PRODUCTS/:path*"
+                     },
+                     {
+                         "source":  "/SCIENCE/KNOWLEDGE/Sleep",
+                         "destination":  "/WEBSITE/pages/SCIENCE/KNOWLEDGE/Sleep/index.html"
+                     },
+                     {
+                         "source":  "/SCIENCE/KNOWLEDGE/Sleep/",
+                         "destination":  "/WEBSITE/pages/SCIENCE/KNOWLEDGE/Sleep/index.html"
+                     },
+                     {
+                         "source":  "/science/:path*",
+                         "destination":  "/WEBSITE/pages/SCIENCE/:path*"
+                     },
+                     {
+                         "source":  "/SCIENCE/KNOWLEDGE/Sleep",
+                         "destination":  "/WEBSITE/pages/SCIENCE/KNOWLEDGE/Sleep/index.html"
+                     },
+                     {
+                         "source":  "/SCIENCE/KNOWLEDGE/Sleep/",
+                         "destination":  "/WEBSITE/pages/SCIENCE/KNOWLEDGE/Sleep/index.html"
+                     },
+                     {
+                         "source":  "/SCIENCE/:path*",
+                         "destination":  "/WEBSITE/pages/SCIENCE/:path*"
+                     },
+                     {
+                         "source":  "/applications.html",
+                         "destination":  "/WEBSITE/pages/applications.html"
+                     },
+                     {
+                         "source":  "/partnership.html",
+                         "destination":  "/WEBSITE/pages/partnership.html"
+                     },
+                     {
+                         "source":  "/cellular-energy",
+                         "destination":  "/WEBSITE/pages/cellular-energy/index.html"
+                     },
+                     {
+                         "source":  "/cellular-energy/",
+                         "destination":  "/WEBSITE/pages/cellular-energy/index.html"
+                     },
+                     {
+                         "source":  "/cellular-energy/:path*",
+                         "destination":  "/WEBSITE/pages/cellular-energy/:path*"
+                     },
+                     {
+                         "source":  "/sleep-quality",
+                         "destination":  "/WEBSITE/pages/sleep-quality/index.html"
+                     },
+                     {
+                         "source":  "/sleep-quality/",
+                         "destination":  "/WEBSITE/pages/sleep-quality/index.html"
+                     },
+                     {
+                         "source":  "/sleep-quality/:path*",
+                         "destination":  "/WEBSITE/pages/sleep-quality/:path*"
+                     },
+                     {
+                         "source":  "/chronic-fatigue",
+                         "destination":  "/WEBSITE/pages/chronic-fatigue/index.html"
+                     },
+                     {
+                         "source":  "/chronic-fatigue/",
+                         "destination":  "/WEBSITE/pages/chronic-fatigue/index.html"
+                     },
+                     {
+                         "source":  "/chronic-fatigue/:path*",
+                         "destination":  "/WEBSITE/pages/chronic-fatigue/:path*"
+                     },
+                     {
+                         "source":  "/brain-fog",
+                         "destination":  "/WEBSITE/pages/brain-fog/index.html"
+                     },
+                     {
+                         "source":  "/brain-fog/",
+                         "destination":  "/WEBSITE/pages/brain-fog/index.html"
+                     },
+                     {
+                         "source":  "/brain-fog/:path*",
+                         "destination":  "/WEBSITE/pages/brain-fog/:path*"
+                     },
+                     {
+                         "source":  "/graphene-fir",
+                         "destination":  "/WEBSITE/pages/graphene-fir/index.html"
+                     },
+                     {
+                         "source":  "/graphene-fir/",
+                         "destination":  "/WEBSITE/pages/graphene-fir/index.html"
+                     },
+                     {
+                         "source":  "/graphene-fir/:path*",
+                         "destination":  "/WEBSITE/pages/graphene-fir/:path*"
+                     }
+                 ],
+    "redirects":  [
+                      {
+                          "source":  "/about/mission",
+                          "destination":  "/ABOUT/AboutMission.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/about/philosophy",
+                          "destination":  "/ABOUT/AboutPhilosophy.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/about/",
+                          "destination":  "/ABOUT/AboutOrigin.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/about",
+                          "destination":  "/ABOUT/AboutOrigin.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/contact/",
+                          "destination":  "/CONTACT/",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/contact",
+                          "destination":  "/CONTACT/",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/PRODUCTS/",
+                          "destination":  "/PRODUCTS/ProductPage.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/ABOUT/",
+                          "destination":  "/ABOUT/AboutOrigin.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/",
+                          "destination":  "/SCIENCE/Landing.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/journal/frequency-of-life",
+                          "destination":  "/SCIENCE/KNOWLEDGE/graphene-fir/frequency-of-life.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/ResearchHub.html",
+                          "destination":  "/SCIENCE/KNOWLEDGE/Research-Library/",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/Cellular-Energy-Recovery/",
+                          "destination":  "/SCIENCE/KNOWLEDGE/",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/Cellular-Energy-Recovery/index.html",
+                          "destination":  "/SCIENCE/KNOWLEDGE/index.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/Cellular-Energy-Recovery/cellular-energy-atp.html",
+                          "destination":  "/SCIENCE/KNOWLEDGE/cellular-energy/cellular-energy-atp.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/Cellular-Energy-Recovery/atp-pain-signaling.html",
+                          "destination":  "/SCIENCE/KNOWLEDGE/cellular-energy/atp-pain-signaling.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/Cellular-Energy-Recovery/central-sensitization-energy.html",
+                          "destination":  "/SCIENCE/KNOWLEDGE/cellular-energy/central-sensitization-energy.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/Cellular-Energy-Recovery/mitochondrial-function-recovery.html",
+                          "destination":  "/SCIENCE/KNOWLEDGE/Mitochondria/mitochondrial-function-recovery.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/Cellular-Energy-Recovery/microcirculation-science.html",
+                          "destination":  "/SCIENCE/KNOWLEDGE/Microcirculation/microcirculation-science.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/Cellular-Energy-Recovery/inflammation-recovery-biology.html",
+                          "destination":  "/SCIENCE/KNOWLEDGE/Inflammation/inflammation-recovery-biology.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/Cellular-Energy-Recovery/nociceptive-vs-neuropathic-mechanisms.html",
+                          "destination":  "/SCIENCE/KNOWLEDGE/Inflammation/nociceptive-vs-neuropathic-mechanisms.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/Clinical-Evidence",
+                          "destination":  "/SCIENCE/KNOWLEDGE/Clinical-Evidence",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/Clinical-Evidence/",
+                          "destination":  "/SCIENCE/KNOWLEDGE/Clinical-Evidence/",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/Clinical-Evidence/:path*",
+                          "destination":  "/SCIENCE/KNOWLEDGE/Clinical-Evidence/:path*",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/Technology-Platform",
+                          "destination":  "/SCIENCE/KNOWLEDGE/Technology-Platform",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/Technology-Platform/",
+                          "destination":  "/SCIENCE/KNOWLEDGE/Technology-Platform/",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/Technology-Platform/:path*",
+                          "destination":  "/SCIENCE/KNOWLEDGE/Technology-Platform/:path*",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/Research-Library",
+                          "destination":  "/SCIENCE/KNOWLEDGE/Research-Library",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/Research-Library/",
+                          "destination":  "/SCIENCE/KNOWLEDGE/Research-Library/",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/Research-Library/:path*",
+                          "destination":  "/SCIENCE/KNOWLEDGE/Research-Library/:path*",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/far-infrared-invisible-warmth.html",
+                          "destination":  "/SCIENCE/KNOWLEDGE/graphene-fir/how-fir-works.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/Comparison.html",
+                          "destination":  "/SCIENCE/KNOWLEDGE/graphene-fir/comparison.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/NEWS/frequency-of-life.html",
+                          "destination":  "/SCIENCE/KNOWLEDGE/graphene-fir/frequency-of-life.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/NEWS/wavelength-essay.html",
+                          "destination":  "/SCIENCE/KNOWLEDGE/graphene-fir/wavelength-essay.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/NEWS/water-memory.html",
+                          "destination":  "/SCIENCE/KNOWLEDGE/graphene-fir/water-memory.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/NEWS/wu-wei-resonance.html",
+                          "destination":  "/SCIENCE/KNOWLEDGE/graphene-fir/wu-wei-resonance.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/NEWS/graphene-thermal-clinical-research-ethics-approval.html",
+                          "destination":  "/NEWS/Company-Updates/graphene-thermal-clinical-research-ethics-approval.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/NEWS/ikkem-partnership.html",
+                          "destination":  "/NEWS/Company-Updates/ikkem-partnership.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/NEWS/national-standard.html",
+                          "destination":  "/NEWS/Company-Updates/national-standard.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/NEWS/novoselov-cas-foreign-member.html",
+                          "destination":  "/NEWS/Company-Updates/novoselov-cas-foreign-member.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/NEWS/neural-helmet.html",
+                          "destination":  "/NEWS/Company-Updates/neural-helmet.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/NEWS/zheng-nanfeng-neuropsychiatric-research.html",
+                          "destination":  "/NEWS/Company-Updates/zheng-nanfeng-neuropsychiatric-research.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/NEWS/Research-Watch/:path*",
+                          "destination":  "/SCIENCE/KNOWLEDGE/:path*",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/NEWS/photobiomodulation-spectrum.html",
+                          "destination":  "/SCIENCE/KNOWLEDGE/graphene-fir/photobiomodulation-spectrum.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/ResearchHub.html",
+                          "destination":  "/SCIENCE/KNOWLEDGE/Research-Library/",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/KNOWLEDGE/mitochondrial-health",
+                          "destination":  "/SCIENCE/KNOWLEDGE/Mitochondria/",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/SCIENCE/KNOWLEDGE/mitochondrial-health/",
+                          "destination":  "/SCIENCE/KNOWLEDGE/Mitochondria/",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/NEWS/pku-clinical-trial.html",
+                          "destination":  "/SCIENCE/KNOWLEDGE/graphene-fir/pku-clinical-trial.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/NEWS/what-is-mitochondrial-health.html",
+                          "destination":  "/SCIENCE/KNOWLEDGE/Mitochondria/what-is-mitochondrial-health.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/NEWS/mitochondrial-function-far-infrared.html",
+                          "destination":  "/SCIENCE/KNOWLEDGE/Mitochondria/mitochondrial-function-far-infrared.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/NEWS/graphene-fir-microcirculation.html",
+                          "destination":  "/SCIENCE/KNOWLEDGE/Microcirculation/graphene-fir-microcirculation.html",
+                          "statusCode":  301
+                      },
+                      {
+                          "source":  "/NEWS/atp-study.html",
+                          "destination":  "/SCIENCE/KNOWLEDGE/cellular-energy/atp-study.html",
+                          "statusCode":  301
+                      }
+                  ]
+}
