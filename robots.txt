@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /PICTURE/button-preview.html
+
+Sitemap: https://www.xgraphene.tech/sitemap.xml

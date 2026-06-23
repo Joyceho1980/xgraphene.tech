@@ -1,13 +1,1 @@
-1|Cron run: 2026-06-21 22:19:12 CST
-2|Checked by: Hermes Agent (deepseek-chat)
-3|---
-4|01-TASKS/pending/: EMPTY (all locations)
-5|01-TASKS/CLAUDE-CODE/pending/: EMPTY
-6|01-TASKS/CODEX/pending/: EMPTY
-7|02-REVIEWS/passed/: No new review files since last check
-8|02-REVIEWS/failed/: EMPTY
-9|02-REVIEWS/review/: 4 review files in queue (all previously dispositioned)
-10|SCIENCE/KNOWLEDGE HTML (last 10min): 2 files found — reviewed & encoding fix applied
-11|  - Sleep/index.html: PASS (7 corrupted em-dashes FIXED)
-12|  - Sleep/how-graphene-fir-affects-sleep-architecture.html: PASS (clean)
-13|Review written: REVIEW-2026-06-21-sleep-hub-encoding-fix.md -> passed/
+1782124330

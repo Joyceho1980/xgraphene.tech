@@ -88,6 +88,14 @@
       "destination": "/WEBSITE/pages/SCIENCE/KNOWLEDGE/:hub/:subhub/index.html"
     },
     {
+      "source": "/SCIENCE/KNOWLEDGE/:path*",
+      "destination": "/WEBSITE/pages/SCIENCE/KNOWLEDGE/:path*"
+    },
+    {
+      "source": "/technology/:path*",
+      "destination": "/WEBSITE/pages/technology/:path*"
+    },
+    {
       "source": "/science/:path*",
       "destination": "/WEBSITE/pages/SCIENCE/:path*"
     },
