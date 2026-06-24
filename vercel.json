@@ -108,20 +108,12 @@
       "destination": "/WEBSITE/pages/science.html"
     },
     {
-      "source": "/applications.html",
-      "destination": "/WEBSITE/pages/applications.html"
-    },
-    {
       "source": "/applications",
       "destination": "/WEBSITE/pages/applications.html"
     },
     {
       "source": "/applications/",
       "destination": "/WEBSITE/pages/applications.html"
-    },
-    {
-      "source": "/partnership.html",
-      "destination": "/WEBSITE/pages/partnership.html"
     },
     {
       "source": "/partnership",
@@ -209,6 +201,16 @@
     }
   ],
   "redirects": [
+    {
+      "source": "/applications.html",
+      "destination": "/applications",
+      "statusCode": 301
+    },
+    {
+      "source": "/partnership.html",
+      "destination": "/partnership",
+      "statusCode": 301
+    },
     {
       "source": "/about/mission",
       "destination": "/ABOUT/AboutMission.html",
