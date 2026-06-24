@@ -112,7 +112,23 @@
       "destination": "/WEBSITE/pages/applications.html"
     },
     {
+      "source": "/applications",
+      "destination": "/WEBSITE/pages/applications.html"
+    },
+    {
+      "source": "/applications/",
+      "destination": "/WEBSITE/pages/applications.html"
+    },
+    {
       "source": "/partnership.html",
+      "destination": "/WEBSITE/pages/partnership.html"
+    },
+    {
+      "source": "/partnership",
+      "destination": "/WEBSITE/pages/partnership.html"
+    },
+    {
+      "source": "/partnership/",
       "destination": "/WEBSITE/pages/partnership.html"
     },
     {

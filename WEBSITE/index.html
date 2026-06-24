@@ -22,10 +22,32 @@
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "XIHE Technology",
-        "description": "Graphene far-infrared medical technology platform — incubated by Jiageng Innovation Laboratory (IKKEM), associated with Academician Zheng Nanfeng of Xiamen University. NMPA Class II medical device certified. National standard lead drafter for graphene flexible electrothermal film.",
+        "description": "Graphene far-infrared medical technology platform — incubated by Jiageng Innovation Laboratory (IKKEM), associated with Academician Zheng Nanfeng of Xiamen University. NMPA Class II medical device certified. Lead drafter, China national industry standard for graphene flexible electrothermal film.",
+        "url": "https://www.xgraphene.tech",
+        "founder": {
+            "@type": "Person",
+            "name": "CHAN YONGXING"
+        },
+        "sameAs": [
+            "https://www.xgraphene.tech",
+            "https://ikkem.xmu.edu.cn",
+            "https://en.wikipedia.org/wiki/Graphene",
+            "https://doi.org/10.1002/adtp.202200163",
+            "https://doi.org/10.1002/advs.202301234",
+            "https://doi.org/10.1186/s12877-024-04755-9",
+            "https://doi.org/10.3390/ijms27073101",
+            "https://pubmed.ncbi.nlm.nih.gov/38526158",
+            "https://doi.org/10.1038/s41467-025-62637-6",
+            "http://www.ikkem.com/newsshow.php?cid=48&id=11467",
+            "http://www.graphene.tv/2023080798598/",
+            "http://www.ikkem.com/newsshow.php?cid=48&id=1028",
+            "https://news.xmu.edu.cn/info/1003/2391.htm",
+            "http://www.graphene.tv/2023041390083/"
+        ],
         "parentOrganization": {
             "@type": "Organization",
-            "name": "Jiageng Innovation Laboratory (IKKEM)"
+            "name": "Jiageng Innovation Laboratory (IKKEM)",
+            "url": "https://ikkem.xmu.edu.cn"
         },
         "associatedWith": {
             "@type": "Person",
@@ -35,13 +57,60 @@
         },
         "hasCredential": [
             {
-                "@type": "MedicalDevice",
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Medical Device Registration",
                 "name": "NMPA Class II Medical Device Registration — Far-Infrared Therapeutic Patch",
-                "recognizingAuthority": "China National Medical Products Administration"
+                "recognizedBy": {
+                    "@type": "Organization",
+                    "name": "NMPA (China National Medical Products Administration)"
+                },
+                "about": "China Class II Medical Device — equivalent to EU Class IIa / US 510(k) clearance tier"
             },
             {
-                "@type": "CreativeWork",
-                "name": "National Standard Lead Drafter — Graphene Flexible Electrothermal Film"
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "National Industry Standard Lead Drafter",
+                "name": "Lead Drafter — Graphene Flexible Electrothermal Film Industry Standard (Plan 2024-0923T-YB)",
+                "about": "YB/T Graphene Flexible Electrothermal Film Industry Standard — led by Jiageng Innovation Laboratory (IKKEM), co-drafted by XIHE Technology as a core contributor",
+                "recognizedBy": {
+                    "@type": "Organization",
+                    "name": "MIIT (Ministry of Industry and Information Technology, China)"
+                },
+                "identifier": "2024-0923T-YB",
+                "url": "http://www.graphene.tv/20250814145315/"
+            },
+            {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Test Report",
+                "name": "NIQS Far-Infrared Performance Test Report",
+                "recognizedBy": {
+                    "@type": "Organization",
+                    "name": "National Infrared and Industrial Electrothermal Products Quality Inspection and Testing Center (NIQS)"
+                },
+                "identifier": "(2022)WT-HW-00529",
+                "measuredProperty": [
+                    { "@type": "PropertyValue", "name": "Normal Total Emissivity", "value": "0.88", "minValue": "0.83", "unitText": "ratio" },
+                    { "@type": "PropertyValue", "name": "Electro-Thermal Radiant Conversion Efficiency", "value": "68", "minValue": "55", "unitText": "percent" }
+                ]
+            },
+            {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Hospital Clinical Collaboration",
+                "about": "Joint Biomedical Energy Materials R&D Center with Xiamen Hospital of TCM (witnessed by Xiamen S&T Bureau and Health Commission); clinical trials across 5 Grade-A tertiary hospitals including Xiamen University Affiliated Hospitals",
+                "recognizedBy": {
+                    "@type": "Organization",
+                    "name": "Xiamen Science and Technology Bureau, Xiamen Municipal Health Commission"
+                },
+                "url": "http://www.ikkem.com/newsshow.php?cid=48&id=1028"
+            },
+            {
+                "@type": "EducationalOccupationalCredential",
+                "credentialCategory": "Hospital Clinical Collaboration — Mental Health",
+                "about": "Joint clinical research with Xiamen Xianyue Hospital (Xiamen Mental Health Center) on graphene far-infrared for adjunctive intervention in depression, anxiety, and sleep disorders. Academician Zheng Nanfeng delivered a plenary academic report at the hospital's Mental Health Research Institute inauguration.",
+                "recognizedBy": {
+                    "@type": "Organization",
+                    "name": "Xiamen Xianyue Hospital (Xiamen Mental Health Center)"
+                },
+                "url": "http://m.toutiao.com/group/7631568646761906751/"
             }
         ],
         "citation": {
@@ -53,9 +122,10 @@
         },
         "knowsAbout": [
             "Graphene Far-Infrared Medical Technology",
-            "NMPA Class II Medical Device",
+            "China Class II Medical Device",
             "Clinical FIR Applications",
-            "Multilayer Graphene Lattice Engineering"
+            "Multilayer Graphene Lattice Engineering",
+            "Electro-Thermal Radiant Conversion Efficiency"
         ]
     }
     </script>
@@ -1087,9 +1157,9 @@ nav {
         <a href="/" class="active">Home</a>
         <a href="ABOUT/AboutOrigin.html">About</a>
         <a href="SCIENCE/Landing.html">Science</a>
-        <a href="applications.html">Applications</a>
+        <a href="/applications">Applications</a>
         <a href="PRODUCTS/ProductPage.html">Products</a>
-        <a href="partnership.html">Partnership</a>
+        <a href="/partnership">Partnership</a>
         <a href="/NEWS/">News</a>
         <a href="CONTACT/index.html">Contact</a>
         <a href="tel:0086-18688683865" class="nav-phone">+86 186 8868 3865</a>
