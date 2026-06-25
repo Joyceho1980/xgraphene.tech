@@ -139,15 +139,13 @@ nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: var(
 .hero p { font-size: 16px; color: rgba(255,255,255,0.7); line-height: 1.8; max-width: 560px; }
 .explore { max-width: 1100px; margin: 0 auto; padding: 64px 24px 48px; }
 .explore-title { font-family: 'Urbanist', sans-serif; font-size: 32px; font-weight: 200; text-align: center; margin-bottom: 48px; color: var(--n); letter-spacing: 2px; }
-.card-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
-.card { display: flex; flex-direction: column; padding: 24px; background: transparent; border: 1px solid var(--b); text-decoration: none; transition: all .25s; position: relative; border-radius: 8px; }
+.card-list { display: flex; flex-direction: column; gap: 24px; }
+.card { display: grid; grid-template-columns: 100px 1fr 280px; gap: 32px; align-items: center; padding: 36px 40px; background: #FFF; border: 1px solid var(--b); text-decoration: none; transition: all .25s; position: relative; border-radius: 0; }
 .card:hover { border-color: var(--g); box-shadow: 0 8px 32px rgba(197,160,89,0.08); transform: translateY(-2px); }
-.card.level-a { border: 2px solid #c8a05e; background: #fdfaf3; }
-.card.level-a:hover { border-color: #c8a05e; }
-.card-icon { width: 64px; height: 64px; background: linear-gradient(135deg, #F8F6F3 0%, #EFEBE5 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-bottom: 16px; }
-.card-icon svg { width: 32px; height: 32px; stroke: var(--s); stroke-width: 1.5; fill: none; }
-.card-body { flex: 1; }
-.card-body h3 { font-family: 'Urbanist', sans-serif; font-size: 18px; font-weight: 500; color: var(--t); margin-bottom: 8px; }
+.card:hover .card-arrow { opacity: 1; right: 24px; }
+.card-icon { width: 90px; height: 90px; background: linear-gradient(135deg, #F8F6F3 0%, #EFEBE5 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.card-icon svg { width: 44px; height: 44px; stroke: var(--s); stroke-width: 1.5; fill: none; }
+.card-body h3 { font-family: 'Urbanist', sans-serif; font-size: 22px; font-weight: 400; color: var(--t); margin-bottom: 8px; display: flex; align-items: center; gap: 12px; }
 .level-tag { display: inline-block; font-size: 0.6rem; padding: 2px 6px; border-radius: 3px; text-transform: uppercase; margin-bottom: 0.5rem; color: white; }
 .tag { display: inline-block; font-size: 9px; padding: 3px 12px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; border-radius: 50px; }
 .tag.live { background: #E8F5E9; color: #2D6A4F; }
@@ -155,8 +153,8 @@ nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: var(
 .card-body p { font-size: 14px; color: var(--s); line-height: 1.7; margin: 10px 0 8px; }
 .card-links { font-size: 11px; color: var(--m); letter-spacing: 0.5px; }
 .card-links b { color: var(--g); font-weight: 600; }
-.card-arrow { position: absolute; right: 16px; top: 16px; font-size: 20px; color: var(--g); opacity: 0; transition: all .25s; }
-.card:hover .card-arrow { opacity: 1; }
+.card-img { width: 260px; height: 160px; object-fit: cover; border-radius: 8px; opacity: 0.95; }
+.card-arrow { position: absolute; right: 32px; top: 50%; transform: translateY(-50%); font-size: 28px; color: var(--g); opacity: 0; transition: all .25s; }
 .about { max-width: 1100px; margin: 0 auto; padding: 48px 24px 72px; }
 .disclaimer { font-size: 11px; color: var(--m); padding: 16px 20px; background: #FFF; border: 1px solid var(--b); border-radius: 6px; line-height: 1.6; }
 footer { padding: 40px 10%; background: var(--n); text-align: center; border-top: 2px solid var(--g); }
@@ -336,7 +334,7 @@ TECHNOLOGY LAYER
 
 <h3 class="group-title">🧠 Core Definition</h3>
 <div class="card-list">
-<a class="card level-a" href="/SCIENCE/KNOWLEDGE/Mitochondria/what-is-mitochondrial-health.html">
+<a class="card" href="/SCIENCE/KNOWLEDGE/Mitochondria/what-is-mitochondrial-health.html">
 <span class="level-tag" style="background:#c8a05e;">A级 · 根节点</span>
 <div class="card-icon">
 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
@@ -346,6 +344,7 @@ TECHNOLOGY LAYER
 <p>A plain-language foundation for what mitochondria do, why ATP matters, and why high-energy tissues are sensitive to energy problems.</p>
 <div class="card-links"><b>&rarr;</b></div>
 </div>
+<img class="card-img" src="/PICTURE/hub-cards/Mitochondrial.png" alt="Mitochondrial health overview">
 </a>
 </div>
 
@@ -361,6 +360,7 @@ TECHNOLOGY LAYER
 <p>Explains ATP, sleep, repair, inflammation resolution, and why recovery is an active biological process.</p>
 <div class="card-links"><b>&rarr;</b></div>
 </div>
+<img class="card-img" src="/PICTURE/hub-cards/Mitochondrial.png" alt="Mitochondria and recovery">
 </a>
 
 <a class="card" href="/SCIENCE/KNOWLEDGE/Mitochondria/mitochondrial-function-far-infrared.html">
@@ -373,6 +373,7 @@ TECHNOLOGY LAYER
 <p>A cautious review of far-infrared research with attention to circulation, comfort, and cellular response.</p>
 <div class="card-links"><b>&rarr;</b></div>
 </div>
+<img class="card-img" src="/PICTURE/hub-cards/Mitochondrial.png" alt="Far-infrared and mitochondria">
 </a>
 
 <a class="card" href="/SCIENCE/KNOWLEDGE/Mitochondria/atp-study.html">
@@ -385,6 +386,7 @@ TECHNOLOGY LAYER
 <p>The energy foundation behind the whole hub, for readers who want the mechanism first.</p>
 <div class="card-links"><b>&rarr;</b></div>
 </div>
+<img class="card-img" src="/PICTURE/hub-cards/Mitochondrial.png" alt="ATP and mitochondrial energy">
 </a>
 </div>
 
@@ -400,6 +402,7 @@ TECHNOLOGY LAYER
 <p>Clean separation: mitochondria are normal cell structures. Dysfunction is performance. Disease is a diagnosis.</p>
 <div class="card-links"><b>&rarr;</b></div>
 </div>
+<img class="card-img" src="/PICTURE/hub-cards/Mitochondrial.png" alt="Are mitochondria a disease">
 </a>
 
 <a class="card" href="/SCIENCE/KNOWLEDGE/Mitochondria/what-is-mitochondrial-dysfunction.html">
@@ -412,6 +415,7 @@ TECHNOLOGY LAYER
 <p>The engine still runs. It just burns more fuel to go the same distance. Dysfunction is performance, not diagnosis.</p>
 <div class="card-links"><b>&rarr;</b></div>
 </div>
+<img class="card-img" src="/PICTURE/hub-cards/Mitochondrial.png" alt="What is mitochondrial dysfunction">
 </a>
 
 <a class="card" href="/SCIENCE/KNOWLEDGE/Mitochondria/what-does-mitochondrial-disease-feel-like.html">
@@ -424,6 +428,7 @@ TECHNOLOGY LAYER
 <p>A lived-experience article for readers who are looking for themselves in the symptoms.</p>
 <div class="card-links"><b>&rarr;</b></div>
 </div>
+<img class="card-img" src="/PICTURE/hub-cards/Mitochondrial.png" alt="What does mitochondrial disease feel like">
 </a>
 
 <a class="card" href="/SCIENCE/KNOWLEDGE/Mitochondria/how-do-you-find-out-if-you-have-a-mitochondrial-disease.html">
@@ -436,6 +441,7 @@ TECHNOLOGY LAYER
 <p>The diagnosis path, written in calm language for real users and AI readers.</p>
 <div class="card-links"><b>&rarr;</b></div>
 </div>
+<img class="card-img" src="/PICTURE/hub-cards/Mitochondrial.png" alt="How to find out if you have mitochondrial disease">
 </a>
 
 <a class="card" href="/SCIENCE/KNOWLEDGE/Mitochondria/how-is-mitochondrial-disease-managed.html">
@@ -448,6 +454,7 @@ TECHNOLOGY LAYER
 <p>The practical next step: support, monitoring, and quality of life.</p>
 <div class="card-links"><b>&rarr;</b></div>
 </div>
+<img class="card-img" src="/PICTURE/hub-cards/Mitochondrial.png" alt="How is mitochondrial disease managed">
 </a>
 </div>
 
