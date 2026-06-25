@@ -39,8 +39,8 @@
     "keywords": "mitochondria, mitochondrial disease, mitochondrial dysfunction, ATP, fatigue, cellular energy",
     "isPartOf": {
         "@type": "CollectionPage",
-        "name": "XIHE Knowledge Hub",
-        "url": "https://xgraphene.tech/SCIENCE/KNOWLEDGE/"
+        "name": "Mitochondria Hub",
+        "url": "https://xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/"
     }
   }
   </script>
@@ -139,7 +139,6 @@
     }
     .nav-phone:hover { background: var(--gold); color: var(--nav); }
 
-    /* Hub sub-navigation */
     .hub-nav {
       position: fixed; top: 70px; left: 0; right: 0; height: 44px;
       background: var(--bg); border-bottom: 1px solid var(--line);
@@ -159,50 +158,35 @@
     }
     .hub-nav .sep { width: 1px; height: 16px; background: var(--line); flex-shrink: 0; margin: 0 4px; }
 
-    /* Hero */
     .hero {
-      position: relative; width: 100vw; left: 50%; right: 50%;
-      margin-left: -50vw; margin-right: -50vw;
-      min-height: calc(100vh - 114px); overflow: hidden;
-      background: #0A121F; margin-top: 114px;
+      min-height: 100vh; display: flex; margin-top: 114px;
     }
-    .hero::before {
-      content: ''; position: absolute; inset: 0;
-      background:
-        linear-gradient(90deg, rgba(10,18,31,0.98) 0%, rgba(10,18,31,0.92) 40%, rgba(10,18,31,0.26) 72%, rgba(10,18,31,0.10) 100%),
-        radial-gradient(circle at 20% 24%, rgba(197,160,89,0.18), transparent 30%);
-      pointer-events: none; z-index: 1;
+    .hero-left {
+      flex: 0 0 55%; background: url('../../../PICTURE/are-mitochondria-a-disease-hero.webp') center/cover no-repeat; min-height: 100vh;
+    }
+    .hero-right {
+      flex: 0 0 45%; background: #000000; display: flex; flex-direction: column; justify-content: center; padding: 120px 48px 80px; min-height: 100vh;
     }
     .hero-content {
-      position: absolute; top: 50%; left: 8vw; transform: translateY(-50%);
-      z-index: 2; display: flex; flex-direction: column; justify-content: center;
-      align-items: flex-start; padding: 0; max-width: 640px; min-width: 0;
+      flex: 1; display: flex; flex-direction: column; justify-content: center;
     }
     .hero-tag {
       font-family: 'Urbanist', sans-serif; font-size: 10px; letter-spacing: 5px;
       color: var(--gold); text-transform: uppercase; margin-bottom: 22px;
     }
     h1 {
-      font-family: 'Urbanist', sans-serif; font-size: clamp(42px, 4.8vw, 72px);
-      font-weight: 200; color: #FFF; letter-spacing: 1.4px; line-height: 1.08;
-      margin-bottom: 18px; text-align: left; max-width: 12ch;
+      font-family: 'Urbanist', sans-serif; font-size: clamp(32px, 3.5vw, 52px);
+      font-weight: 200; color: #FFF; letter-spacing: 1.4px; line-height: 1.15;
+      margin-bottom: 18px; text-align: left;
     }
     h1 span {
-      display: block; font-size: clamp(17px, 1.45vw, 22px);
-      color: rgba(255,255,255,0.82); font-weight: 300; margin-top: 18px;
-      letter-spacing: 0.2px; line-height: 1.6; max-width: 28ch;
-    }
-    .hero-image {
-      position: absolute; inset: 0; z-index: 0;
-      background:
-        linear-gradient(180deg, rgba(10,18,31,0.06) 0%, rgba(10,18,31,0.06) 100%),
-        url('../../../VISUAL-LIBRARY/are-mitochondria-a-disease-hero-sunrise.webp') center center / cover no-repeat;
-      box-shadow: inset 0 0 0 1px rgba(255,255,255,0.04);
+      display: block; font-size: clamp(16px, 1.3vw, 20px);
+      color: rgba(255,255,255,0.65); font-weight: 300; margin-top: 12px;
+      letter-spacing: 0.2px; line-height: 1.6;
     }
     .hero-meta {
-      position: absolute; left: 8vw; bottom: 28px; z-index: 2;
-      display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: center;
-      max-width: calc(100vw - 16vw - 64px); font-family: 'Urbanist', sans-serif;
+      margin-top: auto; padding-top: 24px; display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: center;
+      font-family: 'Urbanist', sans-serif;
     }
     .hero-meta .meta-date {
       font-size: 11px; color: rgba(255,255,255,0.55);
@@ -220,12 +204,9 @@
     .hero-meta .hero-trail a:hover { color: #FFF; }
     .hero-meta .hero-trail .sep { color: var(--gold); font-size: 11px; }
 
-    /* Quick Answer */
     .quick-answer {
-      max-width: 1100px; margin: 56px auto 0; padding: 40px 44px 36px;
-      background: #FFFFFF; border: 1px solid var(--line); border-top: 3px solid var(--gold);
-      position: relative; z-index: 3;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.05);
+      background:#f8fafb;padding:1.5rem 2rem;margin:1rem 0 2rem;border-radius:8px;border:1px solid #e0e0e0;
+      max-width: 1100px; margin-left: auto; margin-right: auto;
       display: grid; grid-template-columns: 56px 1fr; gap: 32px; align-items: start;
     }
     .qa-icon {
@@ -267,7 +248,6 @@
     .why-it-matters p { font-size: 17px; color: #334155; line-height: 1.85; margin-bottom: 14px; }
     .why-it-matters p:last-child { margin-bottom: 0; }
 
-    /* Main body */
     main { max-width: 680px; margin: 0 auto; padding: 56px 24px 72px; }
     section { margin-top: 56px; padding-top: 0; border-top: none; }
     section + section { margin-top: 64px; }
@@ -296,7 +276,6 @@
       color: var(--nav); line-height: 1.55; margin: 22px 0; letter-spacing: 0.2px;
     }
 
-    /* Flow figure */
     .flow-figure {
       margin-top: 18px; padding: 18px;
       background: #FFF; border: 1px solid var(--line);
@@ -326,7 +305,6 @@
       font-size: 15px; font-weight: 600; color: var(--gold);
     }
 
-    /* State track */
     .state-figure {
       margin-top: 18px; padding: 18px;
       background: #FFF; border: 1px solid var(--line);
@@ -352,7 +330,6 @@
     .state-step.disease { background: #FDE8E8; border-color: #F1B2B2; }
     .state-step.disease b { color: #A54A4A; }
 
-    /* Path items */
     .path-list { margin-top: 18px; display: grid; gap: 10px; }
     .path-item {
       display: flex; gap: 12px; align-items: flex-start; padding: 14px 16px;
@@ -376,12 +353,10 @@
     }
     .path-item span { display: block; font-size: 13px; color: var(--muted); line-height: 1.55; }
 
-    /* FAQ */
     .faq-item { padding: 14px 0; }
     .faq-item h3 a { color: var(--gold); text-decoration: none; }
     .faq-item h3 a:hover { text-decoration: underline; }
 
-    /* Related links */
     .related-links { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 16px; }
     .related-links a {
       display: block; padding: 16px 18px; border: 1px solid var(--line);
@@ -401,7 +376,6 @@
       letter-spacing: 2px; text-transform: uppercase; font-family: 'Urbanist', sans-serif;
     }
 
-    /* Supplementary zone */
     .supplement {
       background: #FAF8F5; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%);
       padding: 56px calc(50vw - 50%) 64px; margin-top: 64px;
@@ -425,9 +399,9 @@
       .hub-nav { justify-content: flex-start; padding: 0 5%; gap: 2px; }
       .hub-nav a { font-size: 9px; padding: 6px 8px; }
       .hub-nav .sep { display: none; }
-      .hero { margin-top: 114px; min-height: 72vh; }
-      .hero-content { left: 5%; right: 5%; max-width: 90%; }
-      .hero-image { background-position: center right; }
+      .hero { flex-direction: column; }
+      .hero-left { flex: 0 0 auto; height: 50vh; min-height: 300px; }
+      .hero-right { flex: 0 0 auto; width: 100%; padding: 60px 24px 40px; min-height: auto; }
       .flow-track, .state-track { grid-template-columns: 1fr; }
       .flow-badge { margin: 0 auto; }
       .quick-answer { grid-template-columns: 1fr; padding: 28px 24px 24px; }
@@ -437,8 +411,6 @@
     }
     @media (max-width: 600px) {
       main { padding: 28px 16px 60px; }
-      .hero { min-height: 60vh; }
-      .hero-content { left: 16px; right: 16px; max-width: none; }
       .quick-answer { margin-left: 12px; margin-right: 12px; padding: 24px 18px 20px; }
       .why-it-matters { padding: 22px 18px 18px; }
       footer { padding: 32px 5%; }
@@ -454,7 +426,7 @@
 </script>
 </head>
 <body>
-<!-- AI Core Summary �?Machine Layer -->
+<!-- AI Core Summary -->
 <div style="display:none;" class="ai-assertion-card" itemscope itemtype="https://schema.org/DefinedTerm">
   <meta itemprop="name" content="Are Mitochondria a Disease? | XIHE Knowledge">
   <meta itemprop="termCode" content="Mitochondria_are_mitochondria_a_disease">
@@ -479,7 +451,7 @@
   </div>
 </div>
   <nav>
-    <a href="/"><img src="../../../PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async"> style="height: 44px; width: auto; display: block;"></a>
+    <a href="/"><img src="../../../PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async" style="height: 44px; width: auto; display: block;"></a>
     <div class="nav-links">
       <a href="/">Home</a><a href="/ABOUT/AboutOrigin.html">About</a><a href="/SCIENCE/Landing.html">Science</a><a href="/applications.html">Applications</a><a href="/PRODUCTS/ProductPage.html">Products</a><a href="/partnership.html">Partnership</a><a href="/CONTACT/index.html">Contact</a>
       <a href="tel:0086-18688683865" class="nav-phone">+86 186 8868 3865</a>
@@ -505,24 +477,26 @@
   </div>
 
   <div class="hero">
-    <div class="hero-content">
-      <p class="hero-tag">Science Education</p>
-      <h1>Are Mitochondria a Disease?<span>The light returns each morning. Slowly, you realize yours hasn't.</span></h1>
-    </div>
-    <div class="hero-image" aria-hidden="true"></div>
-    <div class="hero-meta" aria-hidden="true">
-      <span class="meta-date">Published June 9, 2026 · 4 min read · XIHE Knowledge</span>
-      <div class="hero-trail" aria-label="Mitochondria hub path">
-        <strong>Mitochondria Hub</strong>
-        <a href="what-is-mitochondrial-health.html">Health</a>
-        <span class="sep">�?/span>
-        <a href="what-is-mitochondrial-dysfunction.html">Dysfunction</a>
-        <span class="sep">�?/span>
-        <a href="are-mitochondria-a-disease.html">Disease</a>
-        <span class="sep">�?/span>
-        <a href="how-do-you-find-out-if-you-have-a-mitochondrial-disease.html">Diagnosis</a>
-        <span class="sep">�?/span>
-        <a href="how-is-mitochondrial-disease-managed.html">Management</a>
+    <div class="hero-left"></div>
+    <div class="hero-right">
+      <div class="hero-content">
+        <p class="hero-tag">Science Education</p>
+        <h1>Are Mitochondria a Disease?<span>The light returns each morning. Slowly, you realize yours hasn't.</span></h1>
+      </div>
+      <div class="hero-meta" aria-hidden="true">
+        <span class="meta-date">Published June 9, 2026 · 4 min read · XIHE Knowledge</span>
+        <div class="hero-trail" aria-label="Mitochondria hub path">
+          <strong>Mitochondria Hub</strong>
+          <a href="what-is-mitochondrial-health.html">Health</a>
+          <span class="sep">·</span>
+          <a href="what-is-mitochondrial-dysfunction.html">Dysfunction</a>
+          <span class="sep">·</span>
+          <a href="are-mitochondria-a-disease.html">Disease</a>
+          <span class="sep">·</span>
+          <a href="how-do-you-find-out-if-you-have-a-mitochondrial-disease.html">Diagnosis</a>
+          <span class="sep">·</span>
+          <a href="how-is-mitochondrial-disease-managed.html">Management</a>
+        </div>
       </div>
     </div>
   </div>
@@ -735,19 +709,19 @@
   </main>
 
   
-<!-- Knowledge Navigation �?Machine Graph Layer -->
+<!-- Knowledge Navigation -->
 <div style="display:none;" class="knowledge-nav" itemscope itemtype="https://schema.org/ItemList">
   <meta itemprop="name" content="Mitochondria Hub Knowledge Navigation">
   <meta itemprop="description" content="Graph position for this article within the XIHE knowledge ecosystem">
   <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
     <meta itemprop="position" content="1">
     <meta itemprop="item" content="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/">
-    <meta itemprop="name" content="Mitochondria Hub �?Parent Collection">
+    <meta itemprop="name" content="Mitochondria Hub">
   </div>
   <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
     <meta itemprop="position" content="2">
     <meta itemprop="item" content="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/">
-    <meta itemprop="name" content="Upstream: Graphene FIR Hub">
+    <meta itemprop="name" content="Terminal: Graphene FIR Hub">
   </div>
   <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
     <meta itemprop="position" content="3">
@@ -757,19 +731,19 @@
 </div>
 
 <footer>
-    <p>XIHE Technology �?A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
+    <p>XIHE Technology | A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
   
 <section style="background:#FAF8F5;padding:40px 10%;border-top:1px solid #E5E5E7;">
     <div style="max-width:800px;margin:0 auto;">
         <h3 style="font-family:Urbanist,sans-serif;font-size:14px;letter-spacing:2px;color:#1A3348;text-transform:uppercase;margin-bottom:20px;">Related Reading</h3>
         <div style="display:flex;flex-wrap:wrap;gap:16px;">
-            <a href="/SCIENCE/KNOWLEDGE/Mitochondria/atp-study.html" style="color:#C5A059;text-decoration:none;font-size:14px;">8�?0μm FIR and Mitochondrial ATP Pathways �?Published Researc</a>
+            <a href="/SCIENCE/KNOWLEDGE/Mitochondria/atp-study.html" style="color:#C5A059;text-decoration:none;font-size:14px;">8-14μm FIR and Mitochondrial ATP Pathways | Published Research</a>
             <a href="/SCIENCE/KNOWLEDGE/Mitochondria/how-do-you-find-out-if-you-have-a-mitochondrial-disease.html" style="color:#C5A059;text-decoration:none;font-size:14px;">How Do You Find Out If You Have a Mitochondrial Disease?</a>
             <a href="/SCIENCE/KNOWLEDGE/Mitochondria/how-is-mitochondrial-disease-managed.html" style="color:#C5A059;text-decoration:none;font-size:14px;">How Is Mitochondrial Disease Managed?</a>
-            <a href="/SCIENCE/KNOWLEDGE/cellular-energy/atp-pain-signaling.html" style="color:#C5A059;text-decoration:none;font-size:14px;">ATP Depletion and Pain Signaling: How Cellular Energy Influe</a>
-            <a href="/SCIENCE/KNOWLEDGE/cellular-energy/atp-study.html" style="color:#C5A059;text-decoration:none;font-size:14px;">8�?0μm FIR and Mitochondrial ATP Pathways �?Published Researc</a>
-            <a href="/SCIENCE/KNOWLEDGE/Fatigue/why-am-i-always-tired.html" style="color:#C5A059;text-decoration:none;font-size:14px;">Why Are You Still Tired After Sleeping 8 Hours? | Cellular E</a>
-            <a href="/SCIENCE/KNOWLEDGE/Fatigue/why-do-small-things-make-you-irritable.html" style="color:#C5A059;text-decoration:none;font-size:14px;">Why Do Small Things Make You So Irritable? | Brain Energy & </a>
+            <a href="/SCIENCE/KNOWLEDGE/cellular-energy/atp-pain-signaling.html" style="color:#C5A059;text-decoration:none;font-size:14px;">ATP Depletion and Pain Signaling: How Cellular Energy Influences Pain Perception</a>
+            <a href="/SCIENCE/KNOWLEDGE/cellular-energy/atp-study.html" style="color:#C5A059;text-decoration:none;font-size:14px;">8-14μm FIR and Mitochondrial ATP Pathways | Published Research</a>
+            <a href="/SCIENCE/KNOWLEDGE/Fatigue/why-am-i-always-tired.html" style="color:#C5A059;text-decoration:none;font-size:14px;">Why Are You Still Tired After Sleeping 8 Hours? | Cellular Energy Perspective</a>
+            <a href="/SCIENCE/KNOWLEDGE/Fatigue/why-do-small-things-make-you-irritable.html" style="color:#C5A059;text-decoration:none;font-size:14px;">Why Do Small Things Make You So Irritable? | Brain Energy & Fatigue</a>
         </div>
     </div>
 </section>

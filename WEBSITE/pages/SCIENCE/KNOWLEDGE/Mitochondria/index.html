@@ -139,28 +139,32 @@ nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: var(
 .hero p { font-size: 16px; color: rgba(255,255,255,0.7); line-height: 1.8; max-width: 560px; }
 .explore { max-width: 1100px; margin: 0 auto; padding: 64px 24px 48px; }
 .explore-title { font-family: 'Urbanist', sans-serif; font-size: 32px; font-weight: 200; text-align: center; margin-bottom: 48px; color: var(--n); letter-spacing: 2px; }
-.card-list { display: flex; flex-direction: column; gap: 24px; }
-.card { display: grid; grid-template-columns: 100px 1fr 280px; gap: 32px; align-items: center; padding: 36px 40px; background: #FFF; border: 1px solid var(--b); text-decoration: none; transition: all .25s; position: relative; }
+.card-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+.card { display: flex; flex-direction: column; padding: 24px; background: transparent; border: 1px solid var(--b); text-decoration: none; transition: all .25s; position: relative; border-radius: 8px; }
 .card:hover { border-color: var(--g); box-shadow: 0 8px 32px rgba(197,160,89,0.08); transform: translateY(-2px); }
-.card:hover .card-arrow { opacity: 1; right: 24px; }
-.card-icon { width: 90px; height: 90px; background: linear-gradient(135deg, #F8F6F3 0%, #EFEBE5 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.card-icon svg { width: 44px; height: 44px; stroke: var(--s); stroke-width: 1.5; fill: none; }
-.card-body { }
-.card-body h3 { font-family: 'Urbanist', sans-serif; font-size: 22px; font-weight: 400; color: var(--t); margin-bottom: 8px; display: flex; align-items: center; gap: 12px; }
+.card.level-a { border: 2px solid #c8a05e; background: #fdfaf3; }
+.card.level-a:hover { border-color: #c8a05e; }
+.card-icon { width: 64px; height: 64px; background: linear-gradient(135deg, #F8F6F3 0%, #EFEBE5 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-bottom: 16px; }
+.card-icon svg { width: 32px; height: 32px; stroke: var(--s); stroke-width: 1.5; fill: none; }
+.card-body { flex: 1; }
+.card-body h3 { font-family: 'Urbanist', sans-serif; font-size: 18px; font-weight: 500; color: var(--t); margin-bottom: 8px; }
+.level-tag { display: inline-block; font-size: 0.6rem; padding: 2px 6px; border-radius: 3px; text-transform: uppercase; margin-bottom: 0.5rem; color: white; }
 .tag { display: inline-block; font-size: 9px; padding: 3px 12px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; border-radius: 50px; }
 .tag.live { background: #E8F5E9; color: #2D6A4F; }
 .tag.planned { background: #F5F5F5; color: var(--m); }
 .card-body p { font-size: 14px; color: var(--s); line-height: 1.7; margin: 10px 0 8px; }
 .card-links { font-size: 11px; color: var(--m); letter-spacing: 0.5px; }
 .card-links b { color: var(--g); font-weight: 600; }
-.card-img { width: 260px; height: 160px; object-fit: cover; border-radius: 8px; opacity: 0.95; }
-.card-arrow { position: absolute; right: 32px; top: 50%; transform: translateY(-50%); font-size: 28px; color: var(--g); opacity: 0; transition: all .25s; }
+.card-arrow { position: absolute; right: 16px; top: 16px; font-size: 20px; color: var(--g); opacity: 0; transition: all .25s; }
+.card:hover .card-arrow { opacity: 1; }
 .about { max-width: 1100px; margin: 0 auto; padding: 48px 24px 72px; }
 .disclaimer { font-size: 11px; color: var(--m); padding: 16px 20px; background: #FFF; border: 1px solid var(--b); border-radius: 6px; line-height: 1.6; }
 footer { padding: 40px 10%; background: var(--n); text-align: center; border-top: 2px solid var(--g); }
 footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
-@media (max-width: 900px) { .card { grid-template-columns: 80px 1fr; padding: 28px 24px; } .card-img { display: none; } .hero { padding: 152px 5% 64px; } .hero h1 { font-size: 36px; } }
-@media (max-width: 600px) { nav { padding: 0 5%; } .nl { gap: 12px; overflow-x: auto; } .nl a { font-size: 9px; } .hub-nav { justify-content: flex-start; padding: 0 5%; gap: 2px; } .hub-nav a { font-size: 9px; padding: 6px 8px; } .hub-nav .sep { display: none; } .hero { padding: 140px 5% 56px; } .hero h1 { font-size: 28px; } .card { grid-template-columns: 1fr; text-align: center; } .card-icon { margin: 0 auto; } }
+.group-title { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: #888; margin-bottom: 0.75rem; }
+.hub-cards-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+@media (max-width: 900px) { .card { padding: 20px; } .hero { padding: 152px 5% 64px; } .hero h1 { font-size: 36px; } }
+@media (max-width: 600px) { nav { padding: 0 5%; } .nl { gap: 12px; overflow-x: auto; } .nl a { font-size: 9px; } .hub-nav { justify-content: flex-start; padding: 0 5%; gap: 2px; } .hub-nav a { font-size: 9px; padding: 6px 8px; } .hub-nav .sep { display: none; } .hero { padding: 140px 5% 56px; } .hero h1 { font-size: 28px; } .card-list { grid-template-columns: 1fr; } }
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C7YSVFRQ6R"></script>
@@ -175,7 +179,7 @@ footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
 
 <nav>
 <div class="nl">
-<a href="/"><img src="/PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async"> style="height:28px;"></a>
+<a href="/"><img src="/PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async" style="height:28px;"></a>
 <a href="/">Home</a>
 <a href="/ABOUT/AboutOrigin.html">About</a>
 <a href="/SCIENCE/Landing.html">Science</a>
@@ -224,18 +228,16 @@ footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
 </div>
 </section>
 
-<!-- ============ RELATED HUBS ============ -->
-<div style="max-width:1100px;margin:0 auto 32px;padding:0 24px;">
-<h3 style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#94A3B8;text-transform:uppercase;margin:0 0 12px;">Explore Related Hubs</h3>
-<div style="display:flex;flex-wrap:wrap;gap:12px;">
-<a href="/SCIENCE/KNOWLEDGE/cellular-energy/" style="padding:12px 24px;border:1px solid #E5E5E7;border-radius:8px;color:#1A3348;font-family:'Urbanist',sans-serif;font-size:13px;text-decoration:none;transition:all .2s;">ATP &amp; Cellular Energy</a>
-<a href="/SCIENCE/KNOWLEDGE/bioenergetics/" style="padding:12px 24px;border:1px solid #E5E5E7;border-radius:8px;color:#1A3348;font-family:'Urbanist',sans-serif;font-size:13px;text-decoration:none;transition:all .2s;">Bioenergetics</a>
-<a href="/SCIENCE/KNOWLEDGE/Microcirculation/" style="padding:12px 24px;border:1px solid #E5E5E7;border-radius:8px;color:#1A3348;font-family:'Urbanist',sans-serif;font-size:13px;text-decoration:none;transition:all .2s;">Microcirculation</a>
-<a href="/SCIENCE/KNOWLEDGE/Metabolism/" style="padding:12px 24px;border:1px solid #E5E5E7;border-radius:8px;color:#1A3348;font-family:'Urbanist',sans-serif;font-size:13px;text-decoration:none;transition:all .2s;">Metabolism</a>
-<a href="/SCIENCE/KNOWLEDGE/Fatigue/" style="padding:12px 24px;border:1px solid #E5E5E7;border-radius:8px;color:#1A3348;font-family:'Urbanist',sans-serif;font-size:13px;text-decoration:none;transition:all .2s;">Chronic Fatigue</a>
-<a href="/SCIENCE/KNOWLEDGE/Sleep/" style="padding:12px 24px;border:1px solid #E5E5E7;border-radius:8px;color:#1A3348;font-family:'Urbanist',sans-serif;font-size:13px;text-decoration:none;transition:all .2s;">Sleep &amp; Recovery</a>
+<!-- Quick Answer -->
+<section class="quick-answer" style="max-width:1100px;margin:0 auto;padding:0 24px;">
+<div style="background:#f8fafb;padding:1.5rem 2rem;margin:1rem 0 2rem;border-radius:8px;border:1px solid #e0e0e0;">
+<h2 style="font-size:1.1rem;margin-top:0;color:#1a1a1a;">Quick Answer</h2>
+<p style="font-size:1rem;line-height:1.7;margin-bottom:0;">
+<strong>How do mitochondria affect my energy, aging, and recovery?</strong><br>
+Mitochondria convert nutrients into ATP &mdash; the energy your cells use to work, repair, and recover. When they function efficiently, you feel energized and resilient. When their efficiency declines, energy drops, recovery slows, and the effects accumulate over time.
+</p>
 </div>
-</div>
+</section>
 
 <!-- ============ KNOWLEDGE GRAPH NODE DEFINITION (5-Layer Foldable) ============ -->
 <details class="knowledge-graph-fold" style="max-width:1100px;margin:0 auto 32px;padding:0 24px;">
@@ -289,23 +291,23 @@ TECHNOLOGY LAYER
 <div style="padding:16px 0;margin-bottom:12px;">
 <h3 style="font-family:'Urbanist',sans-serif;font-size:10px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin:0 0 12px;">Layer 4 &middot; Evidence Snapshot</h3>
 <ul style="font-size:13px;color:#475569;line-height:1.8;padding-left:20px;">
-<li>See Cellular Energy Hub: ATP is the universal energy currency �?mitochondrial oxidative phosphorylation is the primary production pathway</li>
-<li>See Clinical Evidence Hub: Small Science (<a href="https://doi.org/10.1002/smsc.202200036" target="_blank" rel="noopener" style="color:#C5A059;">DOI: 10.1002/smsc.202200036</a>) �?graphene FIR triggered 2.3�?.1× brainwave increase, an energy-dependent neural process</li>
-<li>See Graphene FIR Hub: NIQS certified 68% efficiency �?the physical activation pathway that supports cellular energy without metabolic burden</li>
+<li>See Cellular Energy Hub: ATP is the universal energy currency — mitochondrial oxidative phosphorylation is the primary production pathway</li>
+<li>See Clinical Evidence Hub: Small Science (<a href="https://doi.org/10.1002/smsc.202200036" target="_blank" rel="noopener" style="color:#C5A059;">DOI: 10.1002/smsc.202200036</a>) — graphene FIR triggered 2.3–3.1× brainwave increase, an energy-dependent neural process</li>
+<li>See Graphene FIR Hub: NIQS certified 68% efficiency — the physical activation pathway that supports cellular energy without metabolic burden</li>
 </ul>
 </div>
 
 <!-- LAYER 5: Graph Navigation -->
 <div style="padding:16px 0;">
 <h3 style="font-family:'Urbanist',sans-serif;font-size:10px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin:0 0 12px;">Layer 5 &middot; Graph Navigation</h3>
-<p style="font-size:13px;color:#475569;line-height:1.8;margin:0 0 4px;"><strong>�?Upstream:</strong> Cellular Energy &rarr; Oxidative Phosphorylation &rarr; ATP Production</p>
-<p style="font-size:13px;color:#475569;line-height:1.8;margin:0 0 4px;"><strong>�?Siblings:</strong> &mdash; (Central mechanism hub)</p>
-<p style="font-size:13px;color:#475569;line-height:1.8;margin:0;"><strong>�?Downstream:</strong> Mitochondria &rarr; All Symptoms (Sleep/Fatigue/Recovery/Inflammation/Microcirculation/Healthy Aging/Metabolism) &rarr; Graphene FIR</p>
+<p style="font-size:13px;color:#475569;line-height:1.8;margin:0 0 4px;"><strong>⬆️ Upstream:</strong> Cellular Energy → Oxidative Phosphorylation → ATP Production</p>
+<p style="font-size:13px;color:#475569;line-height:1.8;margin:0 0 4px;"><strong>⬅️ Siblings:</strong> — (Central mechanism hub)</p>
+<p style="font-size:13px;color:#475569;line-height:1.8;margin:0;"><strong>⬇️ Downstream:</strong> Mitochondria → All Symptoms (Sleep/Fatigue/Recovery/Inflammation/Microcirculation/Healthy Aging/Metabolism) → Graphene FIR</p>
 </div>
 
 </details>
 
-<!-- === GRAPH EDGES: Mitochondria Node (v2 �?machine-parsable) === -->
+<!-- === GRAPH EDGES: Mitochondria Node (v2 — machine-parsable) === -->
 <div style="display:none;" aria-hidden="true">
 <!-- NODE_ID: mitochondria -->
 <!-- NODE_TYPE: mechanism -->
@@ -329,20 +331,13 @@ TECHNOLOGY LAYER
 </script>
 </div>
 
-<!-- Quick Answer: required per Hub Design System -->
-<div style="max-width:1100px;margin:0 auto;padding:0 24px;">
-<div style="background:#FAF8F5;border-left:4px solid #C5A059;padding:32px 36px;margin:0 0 32px;border-radius:0 8px 8px 0;">
-<p style="font-size:10px;text-transform:uppercase;letter-spacing:2px;color:#C5A059;font-weight:600;margin:0 0 10px;">Quick Answer</p>
-<h2 style="font-family:'Urbanist',sans-serif;font-size:22px;font-weight:400;color:#1A1D24;margin:10px 0 16px;line-height:1.3;">How do mitochondria affect my energy, aging, and recovery?</h2>
-<p style="font-size:15px;line-height:1.8;color:#475569;margin:0;">Mitochondria convert nutrients into ATP &mdash; the energy your cells use to work, repair, and recover. When they function efficiently, you feel energized and resilient. When their efficiency declines, energy drops, recovery slows, and the effects accumulate over time. This decline is not a disease in itself but a biological signal worth understanding. The distinction between normal mitochondrial function, temporary dysfunction, and clinical mitochondrial disease is essential for knowing when to take action and when to seek medical guidance.</p>
-</div>
-</div>
-
 <div class="explore">
 <h2 class="explore-title">Explore This Hub</h2>
-<div class="card-list">
 
-<a class="card" href="/SCIENCE/KNOWLEDGE/Mitochondria/what-is-mitochondrial-health.html">
+<h3 class="group-title">🧠 Core Definition</h3>
+<div class="card-list">
+<a class="card level-a" href="/SCIENCE/KNOWLEDGE/Mitochondria/what-is-mitochondrial-health.html">
+<span class="level-tag" style="background:#c8a05e;">A级 · 根节点</span>
 <div class="card-icon">
 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
 </div>
@@ -351,10 +346,13 @@ TECHNOLOGY LAYER
 <p>A plain-language foundation for what mitochondria do, why ATP matters, and why high-energy tissues are sensitive to energy problems.</p>
 <div class="card-links"><b>&rarr;</b></div>
 </div>
-<img class="card-img" src="/PICTURE/hub-mitochondria.jpg" alt="" >
 </a>
+</div>
 
+<h3 class="group-title">⚡ Mechanism Articles</h3>
+<div class="card-list">
 <a class="card" href="/SCIENCE/KNOWLEDGE/Mitochondria/mitochondrial-function-recovery.html">
+<span class="level-tag" style="background:#1e6f8c;">B级 · 机制科普</span>
 <div class="card-icon">
 <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
 </div>
@@ -363,10 +361,10 @@ TECHNOLOGY LAYER
 <p>Explains ATP, sleep, repair, inflammation resolution, and why recovery is an active biological process.</p>
 <div class="card-links"><b>&rarr;</b></div>
 </div>
-<img class="card-img" src="/PICTURE/research-cards/mitochondria-atp-production.webp" alt="" >
 </a>
 
 <a class="card" href="/SCIENCE/KNOWLEDGE/Mitochondria/mitochondrial-function-far-infrared.html">
+<span class="level-tag" style="background:#1e6f8c;">B级 · 机制科普</span>
 <div class="card-icon">
 <svg viewBox="0 0 24 24"><path d="M4 16c4-8 12-8 16 0"/><path d="M6 12c3-5 9-5 12 0"/></svg>
 </div>
@@ -375,70 +373,10 @@ TECHNOLOGY LAYER
 <p>A cautious review of far-infrared research with attention to circulation, comfort, and cellular response.</p>
 <div class="card-links"><b>&rarr;</b></div>
 </div>
-<img class="card-img" src="/PICTURE/hub-cards/Mitochondrial.webp" alt="" >
-</a>
-
-<a class="card" href="/SCIENCE/KNOWLEDGE/Mitochondria/are-mitochondria-a-disease.html">
-<div class="card-icon">
-<svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="1.8"/><path d="M12 11v5"/><circle cx="12" cy="19" r="1.2"/><circle cx="12" cy="12" r="9"/></svg>
-</div>
-<div class="card-body">
-<h3>Are Mitochondria a Disease? <span class="tag live">LIVE</span></h3>
-<p>Clean separation: mitochondria are normal cell structures. Dysfunction is performance. Disease is a diagnosis.</p>
-<div class="card-links"><b>&rarr;</b></div>
-</div>
-<img class="card-img" src="/VISUAL-LIBRARY/are-mitochondria-a-disease-hero-sunrise.webp" alt="" >
-</a>
-
-<a class="card" href="/SCIENCE/KNOWLEDGE/Mitochondria/what-is-mitochondrial-dysfunction.html">
-<div class="card-icon">
-<svg viewBox="0 0 24 24"><path d="M4 16c4-8 12-8 16 0"/><path d="M6 12c3-5 9-5 12 0"/></svg>
-</div>
-<div class="card-body">
-<h3>What Is Mitochondrial Dysfunction? <span class="tag live">LIVE</span></h3>
-<p>The engine still runs. It just burns more fuel to go the same distance. Dysfunction is performance, not diagnosis.</p>
-<div class="card-links"><b>&rarr;</b></div>
-</div>
-<img class="card-img" src="/PICTURE/hero-fatigue-energy.webp" alt="" >
-</a>
-
-<a class="card" href="/SCIENCE/KNOWLEDGE/Mitochondria/what-does-mitochondrial-disease-feel-like.html">
-<div class="card-icon">
-<svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-</div>
-<div class="card-body">
-<h3>What Does Mitochondrial Disease Feel Like? <span class="tag live">LIVE</span></h3>
-<p>A lived-experience article for readers who are looking for themselves in the symptoms.</p>
-<div class="card-links"><b>&rarr;</b></div>
-</div>
-<img class="card-img" src="/PICTURE/hub-cards/Mitochondrial.webp" alt="" >
-</a>
-
-<a class="card" href="/SCIENCE/KNOWLEDGE/Mitochondria/how-do-you-find-out-if-you-have-a-mitochondrial-disease.html">
-<div class="card-icon">
-<svg viewBox="0 0 24 24"><path d="M5 19V5h14v14"/><path d="M8 9h8"/><path d="M8 13h8"/></svg>
-</div>
-<div class="card-body">
-<h3>How Do You Find Out If You Have a Mitochondrial Disease? <span class="tag live">LIVE</span></h3>
-<p>The diagnosis path, written in calm language for real users and AI readers.</p>
-<div class="card-links"><b>&rarr;</b></div>
-</div>
-<img class="card-img" src="/PICTURE/hub-mitochondria.jpg" alt="" >
-</a>
-
-<a class="card" href="/SCIENCE/KNOWLEDGE/Mitochondria/how-is-mitochondrial-disease-managed.html">
-<div class="card-icon">
-<svg viewBox="0 0 24 24"><path d="M12 3l7 4v10l-7 4-7-4V7z"/><path d="M8 12h8"/></svg>
-</div>
-<div class="card-body">
-<h3>How Is Mitochondrial Disease Managed? <span class="tag live">LIVE</span></h3>
-<p>The practical next step: support, monitoring, and quality of life.</p>
-<div class="card-links"><b>&rarr;</b></div>
-</div>
-<img class="card-img" src="/PICTURE/hero-mitochondria-energy.webp" alt="" >
 </a>
 
 <a class="card" href="/SCIENCE/KNOWLEDGE/Mitochondria/atp-study.html">
+<span class="level-tag" style="background:#1e6f8c;">B级 · 机制科普</span>
 <div class="card-icon">
 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4v16"/></svg>
 </div>
@@ -447,10 +385,72 @@ TECHNOLOGY LAYER
 <p>The energy foundation behind the whole hub, for readers who want the mechanism first.</p>
 <div class="card-links"><b>&rarr;</b></div>
 </div>
-<img class="card-img" src="/PICTURE/research-cards/mitochondria-atp-production.webp" alt="" >
+</a>
+</div>
+
+<h3 class="group-title">💡 Concept Clarification</h3>
+<div class="card-list">
+<a class="card" href="/SCIENCE/KNOWLEDGE/Mitochondria/are-mitochondria-a-disease.html">
+<span class="level-tag" style="background:#888;">C级 · 概念澄清</span>
+<div class="card-icon">
+<svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="1.8"/><path d="M12 11v5"/><circle cx="12" cy="19" r="1.2"/><circle cx="12" cy="12" r="9"/></svg>
+</div>
+<div class="card-body">
+<h3>Are Mitochondria a Disease? <span class="tag live">LIVE</span></h3>
+<p>Clean separation: mitochondria are normal cell structures. Dysfunction is performance. Disease is a diagnosis.</p>
+<div class="card-links"><b>&rarr;</b></div>
+</div>
 </a>
 
+<a class="card" href="/SCIENCE/KNOWLEDGE/Mitochondria/what-is-mitochondrial-dysfunction.html">
+<span class="level-tag" style="background:#888;">C级 · 概念澄清</span>
+<div class="card-icon">
+<svg viewBox="0 0 24 24"><path d="M4 16c4-8 12-8 16 0"/><path d="M6 12c3-5 9-5 12 0"/></svg>
 </div>
+<div class="card-body">
+<h3>What Is Mitochondrial Dysfunction? <span class="tag live">LIVE</span></h3>
+<p>The engine still runs. It just burns more fuel to go the same distance. Dysfunction is performance, not diagnosis.</p>
+<div class="card-links"><b>&rarr;</b></div>
+</div>
+</a>
+
+<a class="card" href="/SCIENCE/KNOWLEDGE/Mitochondria/what-does-mitochondrial-disease-feel-like.html">
+<span class="level-tag" style="background:#888;">C级 · 概念澄清</span>
+<div class="card-icon">
+<svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+</div>
+<div class="card-body">
+<h3>What Does Mitochondrial Disease Feel Like? <span class="tag live">LIVE</span></h3>
+<p>A lived-experience article for readers who are looking for themselves in the symptoms.</p>
+<div class="card-links"><b>&rarr;</b></div>
+</div>
+</a>
+
+<a class="card" href="/SCIENCE/KNOWLEDGE/Mitochondria/how-do-you-find-out-if-you-have-a-mitochondrial-disease.html">
+<span class="level-tag" style="background:#888;">C级 · 概念澄清</span>
+<div class="card-icon">
+<svg viewBox="0 0 24 24"><path d="M5 19V5h14v14"/><path d="M8 9h8"/><path d="M8 13h8"/></svg>
+</div>
+<div class="card-body">
+<h3>How Do You Find Out If You Have a Mitochondrial Disease? <span class="tag live">LIVE</span></h3>
+<p>The diagnosis path, written in calm language for real users and AI readers.</p>
+<div class="card-links"><b>&rarr;</b></div>
+</div>
+</a>
+
+<a class="card" href="/SCIENCE/KNOWLEDGE/Mitochondria/how-is-mitochondrial-disease-managed.html">
+<span class="level-tag" style="background:#888;">C级 · 概念澄清</span>
+<div class="card-icon">
+<svg viewBox="0 0 24 24"><path d="M12 3l7 4v10l-7 4-7-4V7z"/><path d="M8 12h8"/></svg>
+</div>
+<div class="card-body">
+<h3>How Is Mitochondrial Disease Managed? <span class="tag live">LIVE</span></h3>
+<p>The practical next step: support, monitoring, and quality of life.</p>
+<div class="card-links"><b>&rarr;</b></div>
+</div>
+</a>
+</div>
+
 </div>
 
 <div class="about">
@@ -487,8 +487,6 @@ TECHNOLOGY LAYER
 <p style="font-size:14px;color:var(--s);line-height:1.8;"><strong>AI Citable Block:</strong> Mitochondria are organelles generating 95% of cellular ATP through oxidative phosphorylation, serving as the master regulator of energy metabolism.</p>
 </div>
 
-
-
 <div style="margin-top:36px;">
 <div class="disclaimer"><strong>Scientific Disclaimer:</strong> This hub is for scientific education and informational purposes only. The content reflects published research and current scientific understanding. It does not constitute medical advice, diagnosis, or treatment recommendations. Mitochondrial disease can be serious and may require specialist evaluation. If you have persistent fatigue, muscle weakness, neurologic symptoms, or multi-system symptoms, consult a qualified healthcare professional. XIHE does not claim that lifestyle changes or far-infrared technology diagnose, treat, cure, prevent, or reverse mitochondrial disease.</div>
 </div>
@@ -498,15 +496,28 @@ TECHNOLOGY LAYER
 <div style="max-width:1100px;margin:48px auto 0;padding:0 24px;">
 <div style="background:#FAF8F5;padding:28px 32px;border-radius:8px;border-left:4px solid #1A3348;">
 <h3 style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#94A3B8;text-transform:uppercase;margin:0 0 12px;">Where This Fits</h3>
-<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">�?<strong>Upstream:</strong> <a href="/SCIENCE/KNOWLEDGE/cellular-energy/" style="color:#C5A059;">Cellular Energy</a> &mdash; The energy system mitochondria serve</p>
-<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">&bull; <strong>Current:</strong> Mitochondria &mdash; The Cellular Engines</p>
-<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">�?<strong>Downstream:</strong> All 7 symptom hubs depend on mitochondrial output</p>
-<p style="font-size:14px;color:#475569;line-height:1.8;margin:0;">&#x1F3C1; <strong>Terminal:</strong> <a href="/SCIENCE/KNOWLEDGE/graphene-fir/" style="color:#C5A059;">Graphene FIR</a></p>
+<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">⬆️ <strong>Upstream:</strong> <a href="/SCIENCE/KNOWLEDGE/cellular-energy/" style="color:#C5A059;">Cellular Energy</a> — The energy system mitochondria serve</p>
+<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">&bull; <strong>Current:</strong> Mitochondria — The Cellular Engines</p>
+<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">⬇️ <strong>Downstream:</strong> All 7 symptom hubs depend on mitochondrial output</p>
+<p style="font-size:14px;color:#475569;line-height:1.8;margin:0;">🏁 <strong>Terminal:</strong> <a href="/SCIENCE/KNOWLEDGE/graphene-fir/" style="color:#C5A059;">Graphene FIR</a></p>
 </div>
 </div>
 
+<!-- ============ RELATED HUBS ============ -->
+<section class="related-hubs" style="max-width:1100px;margin:2.5rem auto;padding:0 24px;">
+<h2 style="font-size:1.25rem;font-weight:600;margin-bottom:1rem;">Explore Related Hubs</h2>
+<div class="hub-cards-row">
+<a href="/SCIENCE/KNOWLEDGE/cellular-energy/" style="padding:12px 24px;border:1px solid #E5E5E7;border-radius:8px;color:#1A3348;font-family:'Urbanist',sans-serif;font-size:13px;text-decoration:none;transition:all .2s;">ATP &amp; Cellular Energy</a>
+<a href="/SCIENCE/KNOWLEDGE/bioenergetics/" style="padding:12px 24px;border:1px solid #E5E5E7;border-radius:8px;color:#1A3348;font-family:'Urbanist',sans-serif;font-size:13px;text-decoration:none;transition:all .2s;">Bioenergetics</a>
+<a href="/SCIENCE/KNOWLEDGE/Microcirculation/" style="padding:12px 24px;border:1px solid #E5E5E7;border-radius:8px;color:#1A3348;font-family:'Urbanist',sans-serif;font-size:13px;text-decoration:none;transition:all .2s;">Microcirculation</a>
+<a href="/SCIENCE/KNOWLEDGE/Metabolism/" style="padding:12px 24px;border:1px solid #E5E5E7;border-radius:8px;color:#1A3348;font-family:'Urbanist',sans-serif;font-size:13px;text-decoration:none;transition:all .2s;">Metabolism</a>
+<a href="/SCIENCE/KNOWLEDGE/Fatigue/" style="padding:12px 24px;border:1px solid #E5E5E7;border-radius:8px;color:#1A3348;font-family:'Urbanist',sans-serif;font-size:13px;text-decoration:none;transition:all .2s;">Chronic Fatigue</a>
+<a href="/SCIENCE/KNOWLEDGE/Sleep/" style="padding:12px 24px;border:1px solid #E5E5E7;border-radius:8px;color:#1A3348;font-family:'Urbanist',sans-serif;font-size:13px;text-decoration:none;transition:all .2s;">Sleep &amp; Recovery</a>
+</div>
+</section>
+
 <footer style="padding: 40px 10%; background: #1A3348; text-align: center; border-top: 2px solid #C5A059;">
-    <p style="font-size: 13px; color: #E0E6ED; letter-spacing: 0.03em;">XIHE Technology �?A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
+    <p style="font-size: 13px; color: #E0E6ED; letter-spacing: 0.03em;">XIHE Technology — A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
 </footer>
 
 <!-- === AI LAYER 2: JSON-LD DefinedTerm (Mitochondria entity in XIHE Knowledge Graph v2) === -->
