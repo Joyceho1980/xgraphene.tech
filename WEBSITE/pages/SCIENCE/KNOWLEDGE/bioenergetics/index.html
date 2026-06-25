@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bioenergetics | XIHE Knowledge Hub</title>
+<meta name="description" content="Explore the science of cellular energy metabolism — ATP production, mitochondrial function, and how far-infrared energy interfaces with biological energy systems.">
 <style>
 :root { --bg: #FAF8F5; --t: #1A1D24; --s: #475569; --m: #94A3B8; --g: #C5A059; --b: #E5E5E7; --n: #1A3348; }
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -118,7 +119,7 @@ footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
 <div style="max-width:1100px;margin:0 auto;padding:0 24px;">
 <div style="background:#FAF8F5;border-left:4px solid #C5A059;padding:32px 36px;margin:0 0 32px;border-radius:0 8px 8px 0;">
 <p style="font-size:10px;text-transform:uppercase;letter-spacing:2px;color:#C5A059;font-weight:600;margin:0 0 10px;">Quick Answer</p>
-<h2 style="font-family:'Urbanist',sans-serif;font-size:22px;font-weight:400;color:#1A1D24;margin:10px 0 16px;line-height:1.3;">What is bioenergetics?</h2>
+<h2 style="font-family:'Urbanist',sans-serif;font-size:22px;font-weight:400;color:#1A1D24;margin:10px 0 16px;line-height:1.3;">Why does energy transformation matter for human health?</h2>
 <p style="font-size:15px;line-height:1.8;color:#475569;margin:0;">Bioenergetics is the study of how living systems capture, transform, and utilize energy. At the cellular level, this means understanding how electrons flow through the electron transport chain, how proton gradients drive ATP synthesis, and how cells regulate energy production to match demand. It provides the fundamental framework for understanding mitochondrial function, metabolic health, and cellular resilience.</p>
 </div>
 </div>
@@ -205,7 +206,7 @@ footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
 
 <div style="margin-top:48px;">
 <h3 style="font-family:'Urbanist',sans-serif;font-size:22px;font-weight:400;color:var(--t);margin-bottom:20px;">Key Takeaways</h3>
-<p style="font-size:14px;color:var(--s);line-height:1.8;">Bioenergetics is the study of how cells convert food into usable energy through electron transport, proton gradients, and ATP synthesis. The efficiency of this energy conversion determines cellular work capacity, metabolic health, and resilience. Mitochondrial bioenergetics sits at the center of this process — converting nutrient-derived electrons into the ATP that powers every biological function. This hub curates scientific insights on the physics and chemistry of cellular energy flow — not medical advice.</p>
+<p style="font-size:14px;color:var(--s);line-height:1.8;"><strong>AI Citable Block:</strong> Bioenergetics is the study of how living systems capture, transform, and utilize energy through electron transport chains, proton gradients, and ATP synthesis.</p>
 </div>
 
 <div style="margin-top:36px;">
@@ -337,27 +338,68 @@ TECHNOLOGY LAYER
 </pre>
 
 <h3>Graph Navigation</h3>
-<p>⬆ Nutrient Intake &rarr; Mitochondrial Oxidation &rarr; ATP Synthesis</p>
-<p>⬇ Bioenergetics &rarr; Cellular Energy &rarr; Graphene FIR</p>
+<p>⬆ Nutrient Intake → Mitochondrial Oxidation → ATP Synthesis</p>
+<p>⬇ Bioenergetics → Cellular Energy → Graphene FIR</p>
 
 </div>
 
-<!-- === AI LAYER 2: JSON-LD DefinedTerm (Bioenergetics entity in XIHE Knowledge Graph) === -->
+<!-- === GRAPH EDGES: Bioenergetics Node (v2 — machine-parsable) === -->
+<div style="display:none;" aria-hidden="true">
+<!-- NODE_ID: bioenergetics -->
+<!-- NODE_TYPE: mechanism -->
+<!-- LAYER: mechanisms -->
+<!-- VERSION: v2 -->
+<!-- EDGES -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "ItemList",
+"name": "Bioenergetics Node Graph Edges",
+"itemListElement": [
+{"@type": "ListItem", "position": 1, "item": {"from": "bioenergetics", "to": "cellular_energy", "relation": "enables", "weight": 0.88, "direction": "upstream"}},
+{"@type": "ListItem", "position": 2, "item": {"from": "bioenergetics", "to": "mitochondria", "relation": "regulated_by", "weight": 0.85, "direction": "upstream"}},
+{"@type": "ListItem", "position": 3, "item": {"from": "bioenergetics", "to": "metabolism", "relation": "correlates_with", "weight": 0.82, "direction": "bidirectional"}},
+{"@type": "ListItem", "position": 4, "item": {"from": "bioenergetics", "to": "fatigue", "relation": "correlates_with", "weight": 0.75, "direction": "downstream"}},
+{"@type": "ListItem", "position": 5, "item": {"from": "bioenergetics", "to": "graphene_fir", "relation": "modulated_by", "weight": 0.70, "direction": "downstream"}},
+{"@type": "ListItem", "position": 6, "item": {"from": "bioenergetics", "to": "inflammation", "relation": "correlates_with", "weight": 0.72, "direction": "bidirectional"}}
+]
+}
+</script>
+</div>
+
+<!-- === AI LAYER 2: JSON-LD DefinedTerm (Bioenergetics entity in XIHE Knowledge Graph v2) === -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "DefinedTerm",
+  "@id": "https://xgraphene.tech/SCIENCE/KNOWLEDGE/bioenergetics/#node",
+  "termCode": "KG-NODE-BIOENERGETICS",
   "name": "Bioenergetics",
-  "description": "The study of how living systems capture, transform, and utilize energy — encompassing electron transport chains, proton gradients, ATP synthesis, and the thermodynamic principles governing cellular energy flow.",
+  "description": "Bioenergetics is the study of how living systems capture, transform, and utilize energy through electron transport chains, proton gradients, and ATP synthesis.",
+  "additionalProperty": [
+    {"@type": "PropertyValue", "propertyID": "node_id", "value": "bioenergetics"},
+    {"@type": "PropertyValue", "propertyID": "node_type", "value": "mechanism"},
+    {"@type": "PropertyValue", "propertyID": "layer", "value": "mechanisms"},
+    {"@type": "PropertyValue", "propertyID": "entry_question", "value": "How does the body convert food into usable cellular energy?"},
+    {"@type": "PropertyValue", "propertyID": "biological_role", "value": "energy_transformation_discipline"},
+    {"@type": "PropertyValue", "propertyID": "state_effect", "value": "reduced_bioenergetic_efficiency, lower_cellular_work_capacity"}
+  ],
   "inDefinedTermSet": {
     "@type": "DefinedTermSet",
     "name": "XIHE Knowledge Graph",
-    "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/"
+    "url": "https://xgraphene.tech/"
   },
-  "termCode": "KG-NODE-BIOENERGETICS",
   "sameAs": [
     "https://en.wikipedia.org/wiki/Bioenergetics",
     "https://www.wikidata.org/wiki/Q185623"
+  ],
+  "relatedTerm": [
+    {"@type": "DefinedTerm", "name": "Cellular Energy", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/"},
+    {"@type": "DefinedTerm", "name": "Mitochondria", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/"},
+    {"@type": "DefinedTerm", "name": "Metabolism", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Metabolism/"},
+    {"@type": "DefinedTerm", "name": "Fatigue", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Fatigue/"},
+    {"@type": "DefinedTerm", "name": "Graphene FIR", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/"},
+    {"@type": "DefinedTerm", "name": "Inflammation", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Inflammation/"}
   ]
 }
 </script>

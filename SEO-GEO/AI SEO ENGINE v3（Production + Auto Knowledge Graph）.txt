@@ -1,0 +1,249 @@
+AI SEO ENGINE v3（Production + Auto Knowledge Graph）
+核心升级
+Copy
+v2: 你喂数据 → 系统理解
+v3: 系统自动抓数据 → 自动建图 → 自动优化 → 自动可被AI引用
+￼
+🧩 v3 总架构
+Copy
+┌──────────────────────────────────────────┐
+│ L5: AI EXPORT / SEO OUTPUT LAYER        │ ← Google / LLM引用输出
+├──────────────────────────────────────────┤
+│ L4: RAG GENERATION ENGINE               │ ← AI回答生成
+├──────────────────────────────────────────┤
+│ L3: HYBRID RETRIEVAL ENGINE             │ ← embedding + graph + rerank
+├──────────────────────────────────────────┤
+│ L2: AUTO KNOWLEDGE GRAPH BUILDER        │ ← ⭐核心升级
+├──────────────────────────────────────────┤
+│ L1: DATA INGESTION PIPELINE            │ ← 自动抓论文/网页/文本
+└──────────────────────────────────────────┘
+￼
+🚀 L1 — DATA INGESTION PIPELINE（自动知识来源）
+输入来源（v3关键能力）
+Copy
+- Papers (PDF / arXiv / PubMed)
+- Web pages
+- Internal articles
+- Existing Hub pages
+- User queries
+￼
+📦 ingestion.py（核心）
+Python
+Copy
+￼
+Run
+￼
+import requests
+from bs4 import BeautifulSoup
+
+class IngestionPipeline:
+    def fetch_url(self, url):
+        html = requests.get(url).text
+        soup = BeautifulSoup(html, "html.parser")
+        return soup.get_text()
+
+    def clean_text(self, text):
+        return " ".join(text.split())
+￼
+🧠 L2 — AUTO KNOWLEDGE GRAPH BUILDER（核心升级）
+🧬 目标：
+从文本 → 自动生成 Node + Edge
+￼
+📦 graph_builder.py
+Python
+Copy
+￼
+Run
+￼
+from engine.embedder import Embedder
+import itertools
+
+class AutoGraphBuilder:
+    def __init__(self):
+        self.embedder = Embedder()
+
+    def extract_nodes(self, text_chunks):
+        nodes = []
+
+        for chunk in text_chunks:
+            nodes.append({
+                "id": self._make_id(chunk),
+                "definition": chunk,
+                "ai_citable": chunk
+            })
+
+        return nodes
+
+    def extract_edges(self, nodes):
+        edges = []
+
+        embeddings = self.embedder.encode([n["definition"] for n in nodes])
+
+        for i, j in itertools.combinations(range(len(nodes)), 2):
+            sim = float(
+                (embeddings[i] @ embeddings[j]) /
+                (abs(embeddings[i]) * abs(embeddings[j]) + 1e-9)
+            )
+
+            if sim > 0.55:
+                edges.append({
+                    "from": nodes[i]["id"],
+                    "to": nodes[j]["id"],
+                    "relation": "correlates_with",
+                    "weight": sim
+                })
+
+        return edges
+
+    def _make_id(self, text):
+        return str(abs(hash(text)) % 10**8)
+￼
+🧠 L3 — HYBRID RETRIEVAL ENGINE（升级版）
+现在 retrieval 不再是单一 embedding，而是：
+vector + graph + semantic rerank
+￼
+📦 hybrid_retriever.py
+Python
+Copy
+￼
+Run
+￼
+class HybridRetriever:
+    def __init__(self, rag_engine, graph):
+        self.rag = rag_engine
+        self.graph = graph
+
+    def retrieve(self, query):
+        # 1. semantic retrieval
+        base_nodes = self.rag.retrieve(query)
+
+        # 2. graph expansion
+        expanded = set(base_nodes)
+
+        for node in base_nodes:
+            expanded.update(
+                self.graph.expand(node, depth=1)
+            )
+
+        return list(expanded)
+￼
+🤖 L4 — RAG GENERATION ENGINE（增强版）
+Python
+Copy
+￼
+Run
+￼
+class RAGEngineV3:
+    def __init__(self, retriever, nodes):
+        self.retriever = retriever
+        self.nodes = nodes
+
+    def generate_answer(self, query):
+        nodes = self.retriever.retrieve(query)
+
+        context = []
+        for n in nodes:
+            node = self._get_node(n)
+            if node:
+                context.append(node["ai_citable"])
+
+        return {
+            "query": query,
+            "context": context,
+            "answer": self._compose(context)
+        }
+
+    def _compose(self, context):
+        return " ".join(context)
+￼
+📊 L5 — AI SEO OUTPUT LAYER（关键）
+这一层是：
+🔥 “让AI愿意引用你”的层
+￼
+📦 seo_export.py
+Python
+Copy
+￼
+Run
+￼
+class SEOExporter:
+    def generate_ai_snippet(self, node):
+        return {
+            "title": node["id"],
+            "ai_summary": node["ai_citable"],
+            "schema": {
+                "@type": "Dataset",
+                "name": node["id"],
+                "text": node["ai_citable"]
+            }
+        }
+
+    def generate_sitemap_node(self, nodes):
+        return [
+            {
+                "url": f"/node/{n['id']}",
+                "priority": 0.8
+            }
+            for n in nodes
+        ]
+￼
+🔥 v3核心能力（质变）
+✔ 1. 自动建图
+输入网页 → 自动 Node + Edge
+✔ 2. 自动语义聚类
+embedding自动形成知识结构
+✔ 3. 自动扩展Graph
+新内容自动挂接已有知识体系
+✔ 4. Hybrid RAG
+vector + graph + context
+✔ 5. AI SEO输出层
+直接给 GPT / Google AI Overview 用
+￼
+🧠 v3系统运行逻辑
+Copy
+网页 / PDF / text
+        ↓
+Ingestion Pipeline
+        ↓
+Auto Graph Builder
+        ↓
+Knowledge Graph
+        ↓
+Embedding Index
+        ↓
+Hybrid Retrieval
+        ↓
+RAG Answer Engine
+        ↓
+AI SEO Export Layer
+￼
+📈 v3 vs v2（关键区别）
+层级
+v2
+v3
+数据
+手工
+自动
+Graph
+静态
+自增长
+Embedding
+有
+强化
+Retrieval
+单路径
+Hybrid
+SEO
+被动
+AI导向
+系统性质
+工具
+基础设施
+Copy table
+￼
+🧠 v3本质（非常重要）
+你现在这个系统已经不是：
+❌ SEO Engine
+❌ Knowledge Graph Tool
+而是：
+🧠 Self-Expanding AI Knowledge Infrastructure（自增长知识基础设施

@@ -1,0 +1,733 @@
+XIHE Partnership / Application Page V2（Production Ready）
+🧠 1. 页面架构总览（V2升级版）
+/partnership
+
+├── HERO (Authority Identity Layer)
+├── TRUST SYSTEM (3-Layer Evidence Graph)
+│     ├ Layer 1: National Authority
+│     ├ Layer 2: Clinical Network
+│     ├ Layer 3: Application Cases
+│
+├── TECHNICAL VALIDATION (Standards Layer)
+│
+├── PARTNERSHIP MODES (Commercial Layer)
+│
+├── COLLABORATION PROCESS (Risk Reduction Layer)
+│
+├── DOCUMENT CENTER (Download + Proof Lock)
+│
+└── FINAL CTA (Conversion Gate)
+⚙️ 2. 可上线 HTML（Tailwind结构）
+
+下面是可直接部署版本骨架
+
+🟦 HERO MODULE
+<section class="hero">
+  <div class="container">
+
+    <h1>We Define the Physics. You Build the Business.</h1>
+
+    <p>
+      XIHE is a national-standard graphene far-infrared technology platform,
+      jointly developed with leading research institutions in China.
+    </p>
+
+    <div class="tags">
+      <span>IKKEM Majority-Owned (55%)</span>
+      <span>National Standard Lead Drafter</span>
+      <span>NMPA Class II Framework</span>
+      <span>NIQS Thermal Certification</span>
+    </div>
+
+    <button class="cta-primary">
+      Start Technical Evaluation →
+    </button>
+
+  </div>
+</section>
+🧱 3. TRUST SYSTEM（核心升级重点）
+⭐ 改造点：从“列表”升级为“证据图谱系统”
+🟨 TRUST SYSTEM CONTAINER
+<section class="trust-system">
+
+  <h2>Verified Collaboration Evidence System</h2>
+
+  <p>Multi-layer institutional validation across research, clinical, and deployment networks.</p>
+🟥 LAYER 1 — NATIONAL AUTHORITY
+<div class="layer">
+  <h3>Layer 1 — National & Institutional Authority</h3>
+
+  <div class="card">
+    <h4>IKKEM / Xiamen University Joint Laboratory</h4>
+    <p>Graphene electrothermal national standard co-development unit.</p>
+    <a href="#">View Official Source →</a>
+  </div>
+
+  <div class="card">
+    <h4>National Standard Drafting Participation</h4>
+    <p>Lead contributor to graphene electrothermal film technical specification.</p>
+  </div>
+</div>
+🟧 LAYER 2 — CLINICAL NETWORK
+<div class="layer">
+  <h3>Layer 2 — Clinical Validation Network</h3>
+
+  <ul>
+    <li>Xiame First Affiliated Hospital</li>
+    <li>Xiame Zhongshan Hospital</li>
+    <li>Xiame Maternity & Child Health Hospital</li>
+    <li>Xiame Xiang'an Hospital</li>
+    <li>Xiame Traditional Chinese Medicine Hospital</li>
+  </ul>
+
+  <p>Multi-center clinical evaluation programs in rehabilitation and pain management.</p>
+</div>
+🟩 LAYER 3 — APPLICATION CASES
+<div class="layer">
+  <h3>Layer 3 — Deployment & Application Cases</h3>
+
+  <div class="card">Ophthalmology rehabilitation pilot programs</div>
+  <div class="card">Post-surgical recovery applications</div>
+  <div class="card">Emergency medical support deployment (2020 Wuhan initiative)</div>
+</div>
+
+</section>
+⚙️ 4. TECHNICAL VALIDATION（关键升级）
+
+👉 改名：Standards & Physical Validation
+
+<section class="tech">
+
+  <h2>Standards & Physical Validation</h2>
+
+  <div class="metrics">
+
+    <div class="metric">
+      <h3>68%</h3>
+      <p>Radiative Efficiency</p>
+      <span>Measured under NIQS thermal emission protocol</span>
+    </div>
+
+    <div class="metric">
+      <h3>0.88</h3>
+      <p>Normal Spectral Emissivity</p>
+      <span>Validated via FT-IR spectral analysis (5–15μm band)</span>
+    </div>
+
+    <div class="metric">
+      <h3>9.4μm</h3>
+      <p>Peak Resonance Wavelength</p>
+      <span>Observed graphene FIR emission peak</span>
+    </div>
+
+  </div>
+
+</section>
+🤝 5. PARTNERSHIP MODES（商业入口）
+<section class="partnership">
+
+  <h2>One Technology. Four Pathways.</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Hospital Procurement</h3>
+      <p>Clinical-grade deployment for rehabilitation systems</p>
+      <button>Request Evaluation</button>
+    </div>
+
+    <div class="card">
+      <h3>Distribution Partnership</h3>
+      <p>Regional commercialization framework</p>
+      <button>Apply as Partner</button>
+    </div>
+
+    <div class="card">
+      <h3>OEM / Integration</h3>
+      <p>Embedded graphene thermal systems</p>
+      <button>Technical Specs</button>
+    </div>
+
+    <div class="card">
+      <h3>Research Collaboration</h3>
+      <p>Academic and clinical joint studies</p>
+      <button>Submit Proposal</button>
+    </div>
+
+  </div>
+
+</section>
+🧭 6. PROCESS（降低决策焦虑）
+<section class="process">
+
+  <h2>Collaboration Process</h2>
+
+  <div class="steps">
+    <span>Discover</span>
+    <span>Evaluate</span>
+    <span>Pilot</span>
+    <span>Partner</span>
+    <span>Deploy</span>
+    <span>Scale</span>
+  </div>
+
+</section>
+📄 7. DOCUMENT CENTER（V2新增核心）
+
+👉 这是V2关键升级（提升信任转化率）
+
+<section class="docs">
+
+  <h2>Technical Documentation Center</h2>
+
+  <div class="downloads">
+
+    <a href="#">Graphene FIR Technical Whitepaper (PDF)</a>
+    <a href="#">Clinical Evaluation Summary</a>
+    <a href="#">National Standard Specification Draft</a>
+    <a href="#">Material Safety & Compliance Report</a>
+
+  </div>
+
+</section>
+🚀 8. FINAL CTA（优化版）
+<section class="cta">
+
+  <h2>Ready for Technical Evaluation?</h2>
+
+  <p>
+    Join institutions evaluating next-generation graphene far-infrared systems.
+  </p>
+
+  <button>Apply for Pilot Collaboration</button>
+  <button>Download Full Technical Dossier</button>
+
+  <div class="contact">
+    <p>Joyce@xgraphene.tech</p>
+    <p>+86 186 8868 3865</p>
+  </div>
+
+</section>
+🧠 9. SEO + AI SEARCH（关键升级）
+JSON-LD（AI识别结构）
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "XIHE Graphene Technology",
+  "description": "Graphene far-infrared medical and industrial materials platform",
+  "areaServed": "Global",
+  "knowsAbout": [
+    "Graphene Far-Infrared Technology",
+    "Medical Rehabilitation Materials",
+    "Thermal Emission Systems",
+    "Biomedical Materials Engineering"
+  ]
+}
+📊 10. 转化埋点（非常重要）
+
+建议加：
+
+Event	Trigger
+view_hero	页面进入
+scroll_trust	滑到Trust System
+click_doc	下载文档
+click_cta_eval	点击评估
+submit_lead	表单提交
+🔥 V2升级核心总结
+
+这个版本和你V1的本质区别：
+
+❌ V1
+内容展示型
+marketing trust
+静态结构
+✅ V2
+Evidence Graph System（证据图谱）
+AI可读SEO结构
+B2B决策漏斗页面
+带转化埋点的系统页面
+标准化技术入口（不是品牌页）
+
+
+需要修正的问题
+问题	位置	说明
+医院列表太简略	Layer 2	只列了医院名字，没有合作内容、没有官方报道链接。这是Trust Wall的核心，不能缩水成列表
+Layer 3应用案例空洞	Layer 3	“Ophthalmology rehabilitation pilot programs”这种表述太泛，B2B买家要看到具体数据和来源
+Technical Validation指标写法有误	Section 4	“0.88 Normal Spectral Emissivity”不准确——0.88是法向全发射率，不是光谱发射率。而且数据来源NIQS报告编号没标注
+医院名字拼写	Layer 2	“Xiame”应该是“Xiamen”，全部拼错
+缺失关键合作	Layer 2	仙岳医院精神卫生合作（2026最新）没放进去，这是目前最有时效性的证据
+缺失安踏合作	整体	56万件量产验证是你们最大规模的商业应用证据，没出现
+缺少AI Core Summary	页面顶部	其他Hub都有5层结构+AI断言卡，Partnership页应该也有
+修正后的Trust System结构
+Layer 1 — 国家标准与机构权威
+
+text
+复制
+下载
+┌─────────────────────────────────────────────────┐
+│ Layer 1 — National & Institutional Authority    │
+├─────────────────────────────────────────────────┤
+│                                                 │
+│ █ 国家石墨烯电热膜标准起草单位                     │
+│   Lead Drafter, China National Standard for     │
+│   Graphene Flexible Electrothermal Film          │
+│                                                 │
+│ █ 嘉庚创新实验室（IKKEM）持股55%                  │
+│   省级实验室孵化，郑南峰院士团队                    │
+│   [ikkem.xmu.edu.cn →]                          │
+│                                                 │
+│ █ NMPA II类医疗器械注册                          │
+│                                                 │
+│ █ NIQS检测认证（报告编号可查）                    │
+│   (2022)WT-HW-00529                             │
+└─────────────────────────────────────────────────┘
+Layer 2 — 医院临床合作网络
+
+text
+复制
+下载
+┌─────────────────────────────────────────────────┐
+│ Layer 2 — Hospital Clinical Network             │
+├─────────────────────────────────────────────────┤
+│                                                 │
+│ 🏥 厦门市中医院                                   │
+│   医用生物能量材料联合研发中心共建                   │
+│   郑南峰院士 × 裴晓华院长签约                      │
+│   市科技局、市卫健委见证                           │
+│   [ikkem.com官方报道 →]                          │
+│                                                 │
+│ 🏥 厦门市仙岳医院（精神卫生中心）                   │
+│   精神卫生研究所：远红外用于抑郁/焦虑/失眠临床研究    │
+│   郑南峰院士做专题学术报告（2026年4月启动）          │
+│   [福建卫生报报道 →]                             │
+│                                                 │
+│ 🏥 5家三甲医院常态化临床试验                       │
+│   厦大附属第一医院 · 中山医院 · 市妇幼 · 翔安医院   │
+│   方向：中医理疗 / 术后康复 / 儿童视力恢复          │
+│                                                 │
+│ 🏥 厦大附属中山医院（武汉抗疫）                     │
+│   2020年援鄂医疗队物资：石墨烯护腰+加热床垫          │
+│   [厦大新闻网 →]                                 │
+│                                                 │
+│ 🏥 成都新津维珅眼科医院                            │
+│   石墨烯眼罩用于青少年眼部康复试验                   │
+│   [搜狐财经 →]                                   │
+│                                                 │
+│ 📋 2023年医工交叉沙龙                             │
+│   厦大医学院+5家医院专家实地参观晞和产线             │
+│   [石墨烯网 →]                                   │
+└─────────────────────────────────────────────────┘
+Layer 3 — 商业应用验证
+
+text
+复制
+下载
+┌─────────────────────────────────────────────────┐
+│ Layer 3 — Commercial Deployment                 │
+├─────────────────────────────────────────────────┤
+│                                                 │
+│ 🏆 安踏集团 — 56万件量产验证                      │
+│   2019年“炽热科技”系列羽绒服                       │
+│   远红外发射率0.94，超国标0.88                     │
+│   目前最大规模的石墨烯远红外消费品应用              │
+│                                                 │
+│ 🔬 18篇SCI论文 + 40+专利                         │
+│   含Nature Communications一篇                    │
+│   [6篇DOI可查 →]                                 │
+│                                                 │
+│ 🏭 日产>5000m²全自动印刷产线                      │
+│   嘉庚实验室提供基础研发，晞和负责产业化             │
+└─────────────────────────────────────────────────┘
+Technical Validation 修正
+text
+复制
+下载
+┌──────────────────────────────────────────────────┐
+│ Standards & Physical Validation                  │
+│ All data certified by NIQS (2022)WT-HW-00529     │
+├──────────────────┬──────────────┬────────────────┤
+│ 68%              │ 0.88         │ 9.4μm          │
+│ 电-热辐射转换效率 │ 法向全发射率   │ 特征发射峰       │
+│ 国标≥55%         │ 国标≥0.83    │ 5-15μm波段内    │
+│ 超国标23.6%      │ 超国标6%     │ 精准锁定         │
+└──────────────────┴──────────────┴────────────────┘
+最终页面结构（修正版）
+text
+复制
+下载
+1. Hero + AI Core Summary
+2. Trust System
+   ├─ Layer 1: National Authority
+   ├─ Layer 2: Hospital Clinical Network（6条证据，每条有链接）
+   └─ Layer 3: Commercial Deployment（安踏+论文+产线）
+3. Technical Validation（3个数字+NIQS来源）
+4. Partnership Modes（4个卡片，简化）
+5. Collaboration Process（6步）
+6. Document Center（可下载文档）
+7. Final CTA
+
+
+ XIHE Partnership Page V3 — Figma Design System（Production Grade）
+￼
+1️⃣ Design System 总架构
+在 Figma 里拆成 6 个核心 Page：
+Copy
+1. Foundations（设计基础）
+2. Layout System（布局系统）
+3. Components（组件库）
+4. Sections（页面模块）
+5. Templates（整页模板）
+6. Motion & Interaction（动效系统）
+￼
+2️⃣ FOUNDATIONS（设计基础）
+￼
+🎨 Color Tokens（必须做成 Figma Variables）
+Primary System
+Token
+Value
+Usage
+primary/900
+#0B1F3B
+Hero / headers
+primary/700
+#163A5F
+UI accents
+primary/500
+#1F5A8A
+links
+primary/100
+#E7F0FA
+backgrounds
+Copy table
+￼
+Neutral System
+Token
+Value
+gray/900
+#101828
+gray/700
+#344054
+gray/500
+#667085
+gray/300
+#D0D5DD
+gray/100
+#F2F4F7
+Copy table
+￼
+Semantic Colors
+Token
+Value
+success
+#1F8A70
+warning
+#B54708
+error
+#B3261E
+Copy table
+￼
+⚠️ Figma关键设置：
+👉 全部用 Variables Mode
+• Light Mode
+• Scientific Mode（推荐深蓝背景版本）
+￼
+3️⃣ TYPOGRAPHY SYSTEM
+￼
+Font Stack
+Copy
+Inter (EN)
+PingFang SC (CN)
+Noto Sans SC (fallback)
+￼
+Type Scale（必须做成 Text Styles）
+Style
+Size
+Weight
+Use
+Display
+56px
+600
+Hero H1
+H1
+40px
+600
+Section Title
+H2
+28px
+600
+Module Title
+H3
+20px
+500
+Card Title
+Body L
+16px
+400
+Paragraph
+Body S
+14px
+400
+Metadata
+Caption
+12px
+400
+Source / labels
+Copy table
+￼
+4️⃣ GRID SYSTEM（Figma Layout）
+￼
+Desktop Frame
+Copy
+Width: 1440px
+Content width: 1200px
+Columns: 12
+Gutter: 24px
+Margin: 120px
+￼
+Mobile Frame
+Copy
+Width: 390px
+Columns: 4
+Margin: 16px
+Gutter: 16px
+￼
+5️⃣ SPACING SYSTEM（必须严格）
+Copy
+4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 96 / 128
+￼
+6️⃣ COMPONENT LIBRARY（核心）
+￼
+🧱 6.1 Evidence Card（最重要组件）
+名称：
+Copy
+Card / Evidence / Institutional
+￼
+结构：
+Copy
+┌──────────────────────────────┐
+│ Icon + Title                 │
+│ Subtitle (institution)       │
+│ Description text             │
+│ Metadata line (source/date)  │
+│ Link →                      │
+└──────────────────────────────┘
+￼
+Variants：
+Variant
+Use
+National
+authority layer
+Clinical
+hospital layer
+Application
+case layer
+Copy table
+￼
+States：
+• Default
+• Hover (lift + border-left blue)
+• Active (expanded)
+￼
+🧮 6.2 Metric Card（数据模块）
+Copy
+Card / Metric / Scientific
+￼
+Layout：
+Copy
+[ BIG NUMBER ]
+Label
+Source line
+￼
+Variants:
+• Primary Metric (blue)
+• Verified Metric (green badge)
+• Research Metric (gray)
+￼
+Interaction:
+• count-up animation
+• fade-in on scroll
+￼
+🤝 6.3 Partnership Card
+Copy
+Card / Partnership Mode
+￼
+Structure:
+Copy
+Icon
+Title
+1-line description
+CTA button (ghost)
+￼
+Style:
+• minimal shadow
+• lots of whitespace
+• no heavy borders
+￼
+📄 6.4 Document Card
+Copy
+Card / Document
+￼
+Layout:
+Copy
+📄 Title
+Type label (whitepaper / report)
+Download link
+￼
+Style rule:
+👉 must look like “academic library”, not download button
+￼
+🧭 6.5 Process Step Component
+Copy
+Component / Process Step
+￼
+Layout:
+Copy
+● Step Name
+short description
+￼
+Variant:
+• active
+• completed
+• upcoming
+￼
+7️⃣ SECTION SYSTEM（页面模块）
+￼
+7.1 Hero Section
+Style:
+• full-width dark blue gradient
+• grid overlay (5% opacity)
+• centered content
+￼
+7.2 Trust System Section
+Layout:
+Copy
+H2 Title
+Subtitle
+
+Layer Tabs:
+[National] [Clinical] [Application]
+
+→ Evidence Cards Grid
+￼
+Interaction:
+• tab switch animation
+• fade transition
+￼
+7.3 Technical Validation Section
+Layout:
+Copy
+3-column metric grid
++ subtle divider lines
+￼
+Background:
+Copy
+#F7F9FC or dark scientific mode #0B1F3B
+￼
+7.4 Partnership Section
+Layout:
+• 2x2 grid (desktop)
+• 1 column (mobile)
+￼
+7.5 Process Section
+Layout:
+horizontal timeline with connector line
+￼
+7.6 CTA Section
+Layout:
+center aligned
+dark background
+single primary action
+￼
+8️⃣ MOTION SYSTEM（非常关键）
+￼
+Micro-interactions
+Action
+Animation
+card hover
+translateY(-4px)
+section load
+fade + slide up
+number metric
+count-up
+tab switch
+opacity + blur transition
+Copy table
+￼
+Timing system
+Copy
+Fast: 120ms
+Normal: 200ms
+Slow: 400ms
+￼
+Easing
+Copy
+cubic-bezier(0.4, 0, 0.2, 1)
+￼
+9️⃣ DESIGN MODES（关键升级）
+￼
+Mode 1 — Light Scientific Mode
+• white background
+• blue accents
+• hospital/academic feel
+￼
+Mode 2 — Deep Authority Mode (推荐默认)
+• deep navy background
+• white text
+• green validation accents
+• “control room UI”感觉
+￼
+🔟 ICON SYSTEM
+￼
+Style:
+• line icons only
+• 2px stroke
+• no filled icons
+￼
+Categories:
+• Institution (🏥)
+• Research (🔬)
+• Validation (📊)
+• Partnership (🤝)
+• Document (📄)
+￼
+1️⃣1️⃣ Figma FILE STRUCTURE（交付级）
+Copy
+XIHE Partnership System V3
+
+├── Foundations
+│   ├── Colors
+│   ├── Typography
+│   ├── Spacing
+│   ├── Grid
+│
+├── Components
+│   ├── Cards
+│   ├── Metrics
+│   ├── Buttons
+│   ├── Tabs
+│   ├── Process Steps
+│
+├── Sections
+│   ├── Hero
+│   ├── Trust System
+│   ├── Technical Validation
+│   ├── Partnership Modes
+│   ├── Process
+│   ├── CTA
+│
+├── Templates
+│   ├── Desktop Page
+│   ├── Mobile Page
+│
+└── Motion
+    ├── Animations
+    ├── Transitions
+￼
+🚀 最重要总结（V3本质）
+这个版本不是设计页面，而是：
+🧠 “XIHE B2B Scientific Trust UI System（可复用设计语言）”
+它的核心变化是：
+❌ 旧版本
+• 页面设计
+✅ V3
+• 设计系统（可扩展成整个官网 + SaaS + AI knowledge UI）

@@ -130,7 +130,7 @@ footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
 <div style="max-width:1100px;margin:0 auto;padding:0 24px;">
 <div style="background:#FAF8F5;border-left:4px solid #C5A059;padding:32px 36px;margin:0 0 32px;border-radius:0 8px 8px 0;">
 <p style="font-size:10px;text-transform:uppercase;letter-spacing:2px;color:#C5A059;font-weight:600;margin:0 0 10px;">Quick Answer</p>
-<h2 style="font-family:'Urbanist',sans-serif;font-size:22px;font-weight:400;color:#1A1D24;margin:10px 0 16px;line-height:1.3;">What is oxidative stress?</h2>
+<h2 style="font-family:'Urbanist',sans-serif;font-size:22px;font-weight:400;color:#1A1D24;margin:10px 0 16px;line-height:1.3;">Why does oxidative stress accelerate aging and fatigue?</h2>
 <p style="font-size:15px;line-height:1.8;color:#475569;margin:0;">Oxidative stress is a state of imbalance between reactive oxygen species (free radicals) production and the body's antioxidant defenses. Free radicals are natural byproducts of mitochondrial energy production &mdash; but when they accumulate beyond the body's capacity to neutralize them, they damage cellular components including membranes, proteins, and DNA. This hub curates the science of oxidative stress, redox signaling, and how this imbalance connects to energy, fatigue, and aging.</p>
 </div>
 </div>
@@ -233,7 +233,7 @@ footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
 
 <div style="margin-top:48px;">
 <h3 style="font-family:'Urbanist',sans-serif;font-size:22px;font-weight:400;color:var(--t);margin-bottom:20px;">Key Takeaways</h3>
-<p style="font-size:14px;color:var(--s);line-height:1.8;">Oxidative stress is not the presence of free radicals &mdash; it is the imbalance between radical production and antioxidant defense. Mitochondria are both the primary source and a primary target of oxidative damage. Chronic oxidative stress impairs ATP production, damages cellular structures, and accelerates biological aging. The body's endogenous antioxidant systems (glutathione, SOD, catalase) provide the first line of defense. Dietary and lifestyle factors can either exacerbate or mitigate oxidative burden. This hub curates mechanistic insights into redox biology and cellular energy &mdash; not medical advice.</p>
+<p style="font-size:14px;color:var(--s);line-height:1.8;"><strong>AI Citable Block:</strong> Oxidative stress is the imbalance between free radical production and antioxidant defenses, where excess ROS damages mitochondria and impairs ATP production, driving fatigue and aging.</p>
 </div>
 
 <div style="margin-top:36px;">
@@ -369,27 +369,68 @@ TECHNOLOGY LAYER
 </pre>
 
 <h3>Graph Navigation</h3>
-<p>⬆ Upstream: Mitochondrial ROS &rarr; Antioxidant Depletion &rarr; Cellular Damage</p>
-<p>⬇ Downstream: Oxidative Stress &rarr; Mitochondria &rarr; Cellular Energy &rarr; Graphene FIR</p>
+<p>⬆ Upstream: Mitochondrial ROS → Antioxidant Depletion → Cellular Damage</p>
+<p>⬇ Downstream: Oxidative Stress → Mitochondria → Cellular Energy → Graphene FIR</p>
 
 </div>
 
-<!-- === AI LAYER 2: JSON-LD DefinedTerm (Oxidative Stress entity in XIHE Knowledge Graph) === -->
+<!-- === GRAPH EDGES: Oxidative Stress Node (v2 — machine-parsable) === -->
+<div style="display:none;" aria-hidden="true">
+<!-- NODE_ID: oxidative_stress -->
+<!-- NODE_TYPE: energy -->
+<!-- LAYER: energy -->
+<!-- VERSION: v2 -->
+<!-- EDGES -->
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "ItemList",
+"name": "Oxidative Stress Node Graph Edges",
+"itemListElement": [
+{"@type": "ListItem", "position": 1, "item": {"from": "oxidative_stress", "to": "mitochondria", "relation": "produced_by", "weight": 0.90, "direction": "upstream"}},
+{"@type": "ListItem", "position": 2, "item": {"from": "oxidative_stress", "to": "cellular_energy", "relation": "impairs", "weight": 0.85, "direction": "downstream"}},
+{"@type": "ListItem", "position": 3, "item": {"from": "oxidative_stress", "to": "inflammation", "relation": "triggers", "weight": 0.82, "direction": "downstream"}},
+{"@type": "ListItem", "position": 4, "item": {"from": "oxidative_stress", "to": "healthy_aging", "relation": "drives", "weight": 0.84, "direction": "downstream"}},
+{"@type": "ListItem", "position": 5, "item": {"from": "oxidative_stress", "to": "graphene_fir", "relation": "modulated_by", "weight": 0.72, "direction": "downstream"}},
+{"@type": "ListItem", "position": 6, "item": {"from": "oxidative_stress", "to": "fatigue", "relation": "contributes_to", "weight": 0.80, "direction": "downstream"}}
+]
+}
+</script>
+</div>
+
+<!-- === AI LAYER 2: JSON-LD DefinedTerm (Oxidative Stress entity in XIHE Knowledge Graph v2) === -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "DefinedTerm",
+  "@id": "https://xgraphene.tech/SCIENCE/KNOWLEDGE/oxidative-stress/#node",
+  "termCode": "KG-NODE-OXIDATIVE_STRESS",
   "name": "Oxidative Stress",
-  "description": "A state of imbalance between reactive oxygen species (free radicals) production and antioxidant defenses. Chronic oxidative stress damages DNA, lipids, and proteins, contributing to mitochondrial dysfunction, accelerated aging, and impaired cellular energy production.",
+  "description": "Oxidative stress is the imbalance between free radical production and antioxidant defenses, where excess ROS damages mitochondria and impairs ATP production, driving fatigue and aging.",
+  "additionalProperty": [
+    {"@type": "PropertyValue", "propertyID": "node_id", "value": "oxidative_stress"},
+    {"@type": "PropertyValue", "propertyID": "node_type", "value": "energy"},
+    {"@type": "PropertyValue", "propertyID": "layer", "value": "energy"},
+    {"@type": "PropertyValue", "propertyID": "entry_question", "value": "What is oxidative stress and how does it damage cells over time?"},
+    {"@type": "PropertyValue", "propertyID": "biological_role", "value": "redox_balance_guardian"},
+    {"@type": "PropertyValue", "propertyID": "state_effect", "value": "ros_accumulation, mitochondrial_dna_damage, lipid_peroxidation"}
+  ],
   "inDefinedTermSet": {
     "@type": "DefinedTermSet",
     "name": "XIHE Knowledge Graph",
-    "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/"
+    "url": "https://xgraphene.tech/"
   },
-  "termCode": "KG-NODE-OXIDATIVE-STRESS",
   "sameAs": [
     "https://en.wikipedia.org/wiki/Oxidative_stress",
     "https://www.wikidata.org/wiki/Q898814"
+  ],
+  "relatedTerm": [
+    {"@type": "DefinedTerm", "name": "Mitochondria", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/"},
+    {"@type": "DefinedTerm", "name": "Inflammation", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Inflammation/"},
+    {"@type": "DefinedTerm", "name": "Healthy Aging", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/healthy-aging/"},
+    {"@type": "DefinedTerm", "name": "Fatigue", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Fatigue/"},
+    {"@type": "DefinedTerm", "name": "Cellular Energy", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/"},
+    {"@type": "DefinedTerm", "name": "Graphene FIR", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/"}
   ]
 }
 </script>

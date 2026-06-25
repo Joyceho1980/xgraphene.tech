@@ -1,0 +1,77 @@
+XIHE AI SEO Engine 分阶段实施路线图
+总目标
+让XIHE的知识体系成为AI在回答“石墨烯远红外、细胞能量、睡眠恢复”等问题时优先调用的结构化知识源。
+
+Phase 1: 地基 — 数据层完善（当前阶段）
+目标： 11个Hub的知识图谱数据完整、准确、可计算
+
+步骤	任务	产出	验证标准
+1.1	确认Cellular Energy Hub替换Bioenergetics完成	文件夹重命名 + 全站引用更新	所有Hub的Edge指向cellular-energy，无404
+1.2	补齐11个Hub的5层可见结构	每个Hub的index.html包含Layer 1-5 + Where This Fits	Sleep Hub验收通过，其余批量复制
+1.3	补齐Clinical Evidence Hub	第12个Hub上线，Evidence Snapshot填入6篇论文+PKU数据	页面可访问，5层结构完整
+1.4	修正重复内容	Quick Answer / Key Takeaways / AI Citable Summary三模块不再重复	每个Hub只有1个Key Takeaways，1个Quick Answer
+1.5	全站Schema补齐	sameAs（9条）、hasCredential（3项）、Product PropertyValue	Schema审计通过
+1.6	生成完整nodes.json和edges.json	2个JSON文件，包含12个Node和所有Edge关系	数据与Hub页面内容一致
+Phase 1完成标志： 12个Hub的index.html全部含5层结构 + nodes.json和edges.json数据完整
+
+Phase 2: 引擎 — Graph Engine v1 本地跑通
+目标： 图计算能力可用，能计算每个Node的GEO权重
+
+步骤	任务	产出	验证标准
+2.1	用完整nodes.json和edges.json替换示例数据	数据文件更新	文件包含全部12个Node
+2.2	修正edges.json关系词为标准词表	所有Edge使用标准6种关系	无produces等非标词
+2.3	本地安装依赖，启动API	pip install -r requirements.txt && python run.py	三个端点返回正确数据
+2.4	验证排名结果	GET /rank	cellular_energy、graphene_fir、mitochondria排名前三
+Phase 2完成标志： 本地http://localhost:8000/rank返回12个Node的GEO分数排序
+
+Phase 3: 部署 — Vercel Serverless上线
+目标： API服务部署到生产环境，同域名可访问
+
+步骤	任务	产出	验证标准
+3.1	把Python API拆成Vercel Serverless Functions	/api/node/[id].py、/api/rank.py	本地Vercel CLI测试通过
+3.2	添加vercel.json配置Python Runtime	配置文件	Vercel部署成功
+3.3	验证生产环境API	https://xgraphene.tech/api/rank	公网可访问，返回正确数据
+Phase 3完成标志： https://xgraphene.tech/api/rank 可公开访问
+
+Phase 4: 接入 — GPT Action注册
+目标： ChatGPT可以通过API调用XIHE知识图谱
+
+步骤	任务	产出	验证标准
+4.1	编写GPT Action的OpenAPI Schema	openapi.json文件	Schema符合OpenAI规范
+4.2	创建XIHE Custom GPT	GPT Store上架或内部链接	ChatGPT中可通过链接访问
+4.3	测试端到端引用	在ChatGPT中问“Why am I tired after 8 hours sleep”	回答中包含XIHE知识图谱的断言
+Phase 4完成标志： ChatGPT回答中出现的睡眠机制解释，来自XIHE的ai_citable_sentence
+
+Phase 5: 智能 — v2 Embedding + RAG
+目标： 语义检索上线，用户用自然语言提问就能匹配到正确的Node
+
+步骤	任务	产出	验证标准
+5.1	为每个Node生成Embedding向量	embeddings.json	所有Node有向量表示
+5.2	实现/api/search?q=端点	语义检索功能	自然语言提问匹配到正确Node
+5.3	更新GPT Action接入search端点	Custom GPT升级	ChatGPT优先调search而非直接查Node
+Phase 5完成标志： GET /api/search?q=Why am I still tired 返回sleep Node，相似度>0.85
+
+Phase 6: 持续 — 监控与迭代
+目标： 持续追踪GEO效果，数据驱动优化
+
+步骤	任务	频率	说明
+6.1	月度AI可见度抽检	每月1次	50个核心问题，记录XIHE被引用率
+6.2	nodes.json和edges.json同步更新	内容变更时	新增文章或修改断言后及时更新
+6.3	GEO Score趋势监控	每月1次	对比各Node的排名变化，优先补弱环
+当前你在的位置
+text
+复制
+下载
+Phase 1 ████████░░░░ 80%
+Phase 2 ░░░░░░░░░░░░  0%
+Phase 3 ░░░░░░░░░░░░  0%
+Phase 4 ░░░░░░░░░░░░  0%
+Phase 5 ░░░░░░░░░░░░  0%
+Phase 6 ░░░░░░░░░░░░  0%
+本周要完成的
+优先级	步骤	具体动作
+🔴	1.1	Agent确认Cellular Energy文件夹重命名完成
+🔴	1.2	Sleep Hub作为模板验证5层结构，然后批量复制到其余11个
+🔴	1.3	Agent创建Clinical Evidence Hub，填入6篇论文+PKU数据
+🟡	1.4	修正Quick Answer/Key Takeaways重复
+🟡	1.6	输出完整nodes.json和edges.json

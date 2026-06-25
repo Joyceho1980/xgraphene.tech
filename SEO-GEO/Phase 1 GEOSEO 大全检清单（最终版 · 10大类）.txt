@@ -1,0 +1,86 @@
+Phase 1 GEO/SEO 大全检清单（最终版 · 10大类）
+一、Schema 层全检
+检查项	验收标准	状态
+Organization Schema 全站部署	所有页面 <head> 含 Organization	✅
+sameAs 9条链接	全部可访问，无404	⬜
+hasCredential 3项	NMPA + MIIT国标 + NIQS报告编号，字段完整	⬜
+Product Schema PropertyValue	0.88 / 68% / 5-15μm / >10000h，6个产品页	⬜
+DefinedTerm 12个Hub	termCode + relatedTerm 完整	✅
+FAQPage Schema	所有FAQ页面标记正确	⬜
+BreadcrumbList	所有页面面包屑标记正确	⬜
+ScholarlyArticle	辐射效率页 + 评估指南页 + 论文解读页	⬜
+二、12个Hub 5层结构全检
+检查项	验收标准	状态
+Layer 1: AI Core Summary	一句话断言，30字以内	⬜
+Layer 2: Node Definition	表格完整	✅
+Layer 3: Knowledge Position	ASCII树与Edge一致	⬜
+Layer 4: Evidence Snapshot	3条证据，有来源标注	⬜
+Layer 5: Graph Navigation	上下游与Edge JSON一致	⬜
+Where This Fits	每个Hub底部有	⬜
+AI Citable Block	Key Takeaways第一条是单句定义	✅
+Node Schema (JSON-LD)	6个propertyID全部有值	✅
+Edge数组 (JSON-LD)	每条Edge含from/to/relation/weight/direction	✅
+三、文章层全检
+检查项	验收标准	状态
+每篇文章有AI断言卡	一句话结论 + 证据类型 + 知识位置	🔜
+每篇文章有Article Schema	headline + isPartOf + mentions	🔜
+每篇文章有知识导航	底部上下游Hub链接	🔜
+断言卡内容不重复	同Hub内文章断言各不相同	🔜
+断言卡与Hub AI Citable Block不冲突	文章是具体角度，Hub是总纲	🔜
+四、内容质量全检
+检查项	验收标准	状态
+Quick Answer与Key Takeaways不重复	两个模块内容不同	⬜
+无医疗宣称	全文无“治疗/修复/逆转/治愈”	✅
+无穿透深度夸大	全文无“3-5cm”	✅
+数据来源标注	每个数据点有来源	⬜
+竞品对比合规	无未标注来源的竞品数据	✅
+五、链接与外链全检
+检查项	验收标准	状态
+内部链接无404	所有Hub间链接可访问	⬜
+外部权威链接可访问	ikkem / 6条DOI / 石墨烯网 / 福建卫生报	⬜
+论文DOI链接正确	6条DOI指向正确论文	⬜
+sameAs链接可访问	9条sameAs全部200	⬜
+六、数据文件全检
+检查项	验收标准	状态
+nodes.json包含12个Node	字段完整	🔜
+edges.json包含所有Edge	与各Hub一致	🔜
+nodes.json与Hub页面一致	node_id/definition/ai_citable匹配	🔜
+edges.json关系词标准化	仅6种标准类型	🔜
+七、性能与可访问性
+检查项	验收标准	状态
+移动端适配	手机端可读	⬜
+页面加载速度	核心页面<3秒	⬜
+HTTPS	全站HTTPS	✅
+八、品牌定位与核心参数红线全检（新增）
+检查项	验收标准	状态
+“发热”标签清洗	全站无“发热产品/保暖设备/加热产品”等表述。统一使用“远红外辐射环境/细胞能量支持/频率医学”等生物学机制表述	⬜
+0.88 vs 0.98参数隔离	产品页/合同规格：严格使用0.88（量产真实数据）。IKKEM学术背景页：方可出现0.98（实验室极限数据）。两者绝不混用	⬜
+视觉语境合规	全站色调严格遵循深灰蓝（#1a2a3a系）+ 琥珀金（#c8a05e系），无自行引入的其他主色调	⬜
+九、GEO底层基建与大模型爬虫全检（新增）
+检查项	验收标准	状态
+Robots.txt权限	明确允许GPTBot、ClaudeBot、Google-Extended、PerplexityBot抓取全站	⬜
+Sitemap包含图谱	sitemap.xml中12个Hub优先级高于普通文章，且包含所有页面	⬜
+语义化HTML	<h1>→<h2>→<h3>严格嵌套，无越级跳跃	⬜
+图片Alt标签	所有机制解释图、节点关系图含核心关键词（9.4μm、远红外生物机制、68%辐射效率）	⬜
+十、B2B线索与转化基建全检（新增）
+检查项	验收标准	状态
+核心交互事件埋点	点击“获取评估指南”“下载白皮书”“发起合作咨询”等高价值动作已绑定GTM事件	⬜
+CRM数据握手	Contact表单提交后数据完整写入CRM系统，无乱码、无字段丢失	⬜
+询盘流程端到端	从任意合作入口提交表单→收到自动回复邮件→CRM记录可查	⬜
+全检执行顺序
+text
+复制
+下载
+Phase 1文章注入完成
+    ↓
+第一步：二（Hub结构）+ 三（文章层）— 内容层最核心
+    ↓
+第二步：一（Schema）+ 六（数据文件）— 机器层验证
+    ↓
+第三步：四（内容质量）+ 五（链接）+ 八（品牌红线）— 合规与一致性
+    ↓
+第四步：九（爬虫基建）+ 十（转化基建）— 底层技术验证
+    ↓
+第五步：七（性能）— 最终用户体验
+    ↓
+全部✅ → Phase 1正式封顶 → 进入Phase 2
