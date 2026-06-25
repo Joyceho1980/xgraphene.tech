@@ -98,6 +98,12 @@
         .nav-links a:hover, .nav-links a.active { color: #C5A059; }
         .nav-phone { font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px; color: var(--accent-gold); text-decoration: none; padding: 6px 14px; border: 1px solid rgba(197,160,89,0.3); border-radius: 50px; transition: all 0.3s ease; white-space: nowrap; font-weight: 500; }
         .nav-phone:hover { background: var(--accent-gold); color: #1A3348; }
+        .hub-nav { position: fixed; top: 70px; left: 0; right: 0; height: 44px; background: var(--bg); border-bottom: 1px solid var(--b); display: flex; align-items: center; justify-content: center; gap: 0; padding: 0 10%; z-index: 999; overflow-x: auto; }
+        .hub-nav a { font-family: 'Urbanist', sans-serif; font-size: 11px; color: var(--s); text-decoration: none; padding: 8px 16px; white-space: nowrap; letter-spacing: 0.8px; transition: all .15s; position: relative; }
+        .hub-nav a:hover { color: var(--t); }
+        .hub-nav a.active { color: var(--n); font-weight: 600; }
+        .hub-nav a.active::after { content: ''; position: absolute; bottom: -1px; left: 50%; transform: translateX(-50%); width: 24px; height: 2px; background: var(--g); }
+        .hub-nav .sep { width: 1px; height: 16px; background: var(--b); flex-shrink: 0; margin: 0 4px; }
         .hero {
             background: url('/PICTURE/mitochondrial-health-hero.jpg') center/cover;
             min-height: 85vh;
@@ -129,7 +135,7 @@
         .xihe-footer { padding: 40px 10%; background: #1A3348; text-align: center; border-top: 2px solid #C5A059; }
         .xihe-footer p { font-size: 13px; color: #E0E6ED; }
         @media (max-width: 900px) { .hero h1 { font-size: 36px; } .hero h1 span { font-size: 16px; } }
-        @media (max-width: 600px) { nav { padding: 0 5%; } .nav-links { gap: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; } .nav-links a { font-size: 9px; letter-spacing: 0.5px; white-space: nowrap; } .hero { padding: 140px 5% 56px; min-height: 70vh; } .hero h1 { font-size: 28px; letter-spacing: 2px; } .hero h1 span { font-size: 14px; } section[style*="padding: 80px 10%"] { padding: 60px 5% !important; } }
+        @media (max-width: 600px) { nav { padding: 0 5%; } .nav-links { gap: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; } .nav-links a { font-size: 9px; letter-spacing: 0.5px; white-space: nowrap; } .hub-nav { justify-content: flex-start; padding: 0 5%; gap: 2px; } .hub-nav a { font-size: 9px; padding: 6px 8px; } .hub-nav .sep { display: none; } .hero { padding: 140px 5% 56px; min-height: 70vh; } .hero h1 { font-size: 28px; letter-spacing: 2px; } .hero h1 span { font-size: 14px; } section[style*="padding: 80px 10%"] { padding: 60px 5% !important; } }
     </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C7YSVFRQ6R"></script>
@@ -179,6 +185,23 @@
         <a href="tel:0086-18688683865" class="nav-phone">+86 186 8868 3865</a>
     </div>
 </nav>
+
+<div class="hub-nav">
+<a href="/SCIENCE/KNOWLEDGE/">All Hubs</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Mitochondria/" class="active">Mitochondria</a>
+<a href="/SCIENCE/KNOWLEDGE/cellular-energy/">ATP &amp; Energy</a>
+<a href="/SCIENCE/KNOWLEDGE/Fatigue/">Fatigue</a>
+<a href="/SCIENCE/KNOWLEDGE/Inflammation/">Inflammation</a>
+<a href="/SCIENCE/KNOWLEDGE/Sleep/">Sleep</a>
+<a href="/SCIENCE/KNOWLEDGE/Recovery/">Recovery</a>
+<a href="/SCIENCE/KNOWLEDGE/Microcirculation/">Microcirculation</a>
+<a href="/SCIENCE/KNOWLEDGE/graphene-fir/">Graphene FIR</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Metabolism/">Metabolism</a>
+<a href="/SCIENCE/KNOWLEDGE/bioenergetics/">Bioenergetics</a>
+<a href="/SCIENCE/KNOWLEDGE/healthy-aging/">Aging</a>
+</div>
 
 <header class="hero">
     <div class="hero-content">
