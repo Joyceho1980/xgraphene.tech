@@ -41,14 +41,15 @@ nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: var(
 .hero h1 { font-family: 'Urbanist', sans-serif; font-size: 48px; font-weight: 200; color: #FFF; letter-spacing: 2px; line-height: 1.2; margin-bottom: 12px; }
 .hero h1 span { display: block; font-size: 20px; color: var(--g); font-weight: 300; margin-top: 8px; letter-spacing: 1px; }
 .hero p { font-size: 16px; color: rgba(255,255,255,0.7); line-height: 1.8; max-width: 560px; }
-.metrics-row { display: flex; gap: 48px; justify-content: center; padding: 24px 0; background: rgba(26,51,72,0.6); backdrop-filter: blur(4px); margin-top: auto; }
+.metrics-row { display: flex; gap: 48px; justify-content: center; padding: 20px 10%; background: rgba(26,51,72,0.6); backdrop-filter: blur(4px); }
 .metrics-row div { text-align: center; }
-.metrics-row div:first-child { font-size: 28px; font-weight: 200; color: var(--g); }
-.metrics-row div:last-child { font-size: 11px; color: rgba(255,255,255,0.6); }
-.cta-row { text-align: center; padding: 24px 0 48px; }
-.cta-row a { font-size: 12px; letter-spacing: 2px; color: var(--g); text-decoration: none; border: 1px solid var(--g); padding: 12px 32px; border-radius: 50px; text-transform: uppercase; transition: all .3s; }
+.metrics-num { font-size: 28px; font-weight: 200; color: var(--g); }
+.metrics-label { font-size: 11px; color: rgba(255,255,255,0.6); }
+.cta-row { text-align: center; padding: 20px 0 32px; background: rgba(26,51,72,0.4); }
+.cta-row a { font-size: 12px; letter-spacing: 2px; color: var(--g); text-decoration: none; border: 1px solid var(--g); padding: 12px 32px; border-radius: 50px; text-transform: uppercase; transition: all .3s; display: inline-block; }
 .cta-row a:hover { background: var(--g); color: var(--n); }
-.hero-related { position: absolute; bottom: 0; left: 0; right: 0; z-index: 1; padding: 48px 10% 28px; background: linear-gradient(to top, rgba(26,51,72,0.7) 0%, transparent 100%); }
+.hero-bottom { position: absolute; bottom: 0; left: 0; right: 0; z-index: 1; }
+.hero-related { padding: 28px 10% 24px; background: linear-gradient(to top, rgba(26,51,72,0.85) 0%, rgba(26,51,72,0.4) 70%, transparent 100%); }
 .hero-related-label { font-family: 'Urbanist', sans-serif; font-size: 10px; letter-spacing: 3px; color: rgba(255,255,255,0.5); text-transform: uppercase; margin-bottom: 10px; }
 .hero-related a { display: inline-block; padding: 8px 20px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; color: rgba(255,255,255,0.8); font-family: 'Urbanist', sans-serif; font-size: 11px; text-decoration: none; letter-spacing: 0.5px; transition: all .2s; margin-right: 8px; margin-bottom: 6px; }
 .hero-related a:hover { border-color: var(--g); color: var(--g); background: rgba(197,160,89,0.1); }
@@ -103,18 +104,9 @@ nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: var(
 .card-list.group-b .card-icon::after { content: 'B'; }
 .card-list.group-c .card-icon::after { content: 'C'; }
 .card-body h3 { font-family: 'Urbanist', sans-serif; font-size: 22px; font-weight: 400; color: var(--t); margin-bottom: 8px; display: flex; align-items: center; gap: 12px; }
-.card-tag {
-  display: inline-block;
-  font-size: 9px;
-  padding: 3px 12px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-weight: 600;
-  border-radius: 50px;
-}
-.card-tag.a { background: linear-gradient(135deg, #FFF9F0 0%, #FEF5E6 100%); color: #c8a05e; border: 1px solid #E8D8B8; }
-.card-tag.b { background: #E8F4F8; color: #1e6f8c; }
-.card-tag.c { background: #F5F5F5; color: #888; }
+.tag { display: inline-block; font-size: 9px; padding: 3px 12px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; border-radius: 50px; }
+.tag.live { background: #E8F5E9; color: #2D6A4F; }
+.tag.planned { background: #F5F5F5; color: var(--m); }
 .card-body p { font-size: 14px; color: var(--s); line-height: 1.7; margin: 10px 0 8px; }
 .card-links { font-size: 11px; color: var(--m); letter-spacing: 0.5px; }
 .card-links b { color: var(--g); font-weight: 600; }
@@ -174,11 +166,13 @@ footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
 @media (max-width: 900px) {
   .hero { padding: 152px 5% 64px; }
   .hero h1 { font-size: 36px; }
-  .metrics-row { gap: 24px; }
+  .metrics-row { gap: 24px; padding: 16px 5%; }
+  .metrics-num { font-size: 22px; }
+  .metrics-label { font-size: 9px; }
   .energy-flow { grid-template-columns: 1fr; }
   .card { grid-template-columns: 80px 1fr; padding: 28px 24px; }
   .card-img { display: none; }
-  .hero-related { padding: 36px 5% 20px; }
+  .hero-related { padding: 24px 5% 18px; }
   .hero-related a { padding: 6px 14px; font-size: 10px; }
 }
 @media (max-width: 600px) {
@@ -193,8 +187,11 @@ footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
   .explore { padding: 48px 16px; }
   .card { grid-template-columns: 1fr; text-align: center; }
   .card-icon { margin: 0 auto; }
-  .hero-related { padding: 28px 5% 16px; }
+  .hero-related { padding: 20px 5% 12px; }
   .hero-related a { padding: 5px 12px; font-size: 9px; margin-right: 4px; margin-bottom: 4px; }
+  .metrics-row { flex-direction: column; gap: 12px; padding: 14px 5%; }
+  .metrics-num { font-size: 20px; }
+  .cta-row { padding: 14px 0 24px; }
 }
 </style>
 <script type="application/ld+json">
@@ -340,23 +337,16 @@ footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
 <a href="/SCIENCE/KNOWLEDGE/">All Hubs</a>
 <span class="sep"></span>
 <a href="/SCIENCE/KNOWLEDGE/Mitochondria/">Mitochondria</a>
-<span class="sep"></span>
 <a href="/SCIENCE/KNOWLEDGE/cellular-energy/" class="active">Cellular Energy</a>
-<span class="sep"></span>
 <a href="/SCIENCE/KNOWLEDGE/Fatigue/">Fatigue</a>
-<span class="sep"></span>
 <a href="/SCIENCE/KNOWLEDGE/Inflammation/">Inflammation</a>
-<span class="sep"></span>
 <a href="/SCIENCE/KNOWLEDGE/Sleep/">Sleep</a>
-<span class="sep"></span>
 <a href="/SCIENCE/KNOWLEDGE/Recovery/">Recovery</a>
-<span class="sep"></span>
 <a href="/SCIENCE/KNOWLEDGE/Microcirculation/">Microcirculation</a>
-<span class="sep"></span>
 <a href="/SCIENCE/KNOWLEDGE/graphene-fir/">Graphene FIR</a>
 <span class="sep"></span>
 <a href="/SCIENCE/KNOWLEDGE/Metabolism/">Metabolism</a>
-<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/bioenergetics/">Bioenergetics</a>
 <a href="/SCIENCE/KNOWLEDGE/healthy-aging/">Aging</a>
 </div>
 
@@ -370,6 +360,7 @@ footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
 <p>Every biological process—from thinking and movement to sleep and recovery—depends on cellular energy.<br>
 This hub explores how energy is produced, regulated, and experienced throughout the human body.</p>
 </div>
+<div class="hero-bottom">
 <div class="hero-related">
 <div class="hero-related-label">Explore Related Hubs</div>
 <a href="/SCIENCE/KNOWLEDGE/Mitochondria/">Mitochondria</a>
@@ -382,17 +373,16 @@ This hub explores how energy is produced, regulated, and experienced throughout 
 <a href="/SCIENCE/KNOWLEDGE/healthy-aging/">Aging</a>
 <a href="/SCIENCE/KNOWLEDGE/graphene-fir/">Graphene FIR</a>
 </div>
-</section>
-
-<div style="display:flex;gap:48px;justify-content:center;padding:24px 0;background:rgba(26,51,72,0.6);backdrop-filter:blur(4px);">
-  <div><div style="font-size:28px;font-weight:200;color:var(--g);">95%</div><div style="font-size:11px;color:rgba(255,255,255,0.6);">Cellular ATP Produced by Mitochondria</div></div>
-  <div><div style="font-size:28px;font-weight:200;color:var(--g);">37 Trillion</div><div style="font-size:11px;color:rgba(255,255,255,0.6);">Cells Depend on ATP</div></div>
-  <div><div style="font-size:28px;font-weight:200;color:var(--g);">24/7</div><div style="font-size:11px;color:rgba(255,255,255,0.6);">Energy Demand Never Stops</div></div>
+<div class="metrics-row">
+  <div><div class="metrics-num">95%</div><div class="metrics-label">Cellular ATP Produced by Mitochondria</div></div>
+  <div><div class="metrics-num">37 Trillion</div><div class="metrics-label">Cells Depend on ATP</div></div>
+  <div><div class="metrics-num">24/7</div><div class="metrics-label">Energy Demand Never Stops</div></div>
 </div>
-
 <div class="cta-row">
   <a href="#explore">Explore the Energy System ↓</a>
 </div>
+</div>
+</section>
 
 <section class="section knowledge-position">
 <h2 class="section-title">Knowledge Graph Position</h2>
@@ -436,7 +426,7 @@ Cellular energy refers to the biological processes that generate and utilize ATP
 <h2 class="explore-title">Explore This Hub</h2>
 
 <div class="column-section">
-<h3 class="column-title">🧠 Core Definition</h3>
+<h3 class="column-title">A · Core Definition</h3>
 <div class="card-list group-a">
 
 <a href="what-is-cellular-energy.html" class="card">
@@ -445,7 +435,7 @@ Cellular energy refers to the biological processes that generate and utilize ATP
     <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
-    <h3>What Is Cellular Energy?<span class="card-tag a">A级 · 根节点</span></h3>
+    <h3>What Is Cellular Energy?<span class="tag live">LIVE</span></h3>
     <p>Overview of ATP and biological energy systems.</p>
     <div class="card-links">Foundation &middot; <b>Energy Layer</b></div>
   </div>
@@ -458,7 +448,7 @@ Cellular energy refers to the biological processes that generate and utilize ATP
     <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
-    <h3>Why Does the Body Need ATP?<span class="card-tag a">A级 · 根节点</span></h3>
+    <h3>Why Does the Body Need ATP?<span class="tag live">LIVE</span></h3>
     <p>Understanding the energy currency of life.</p>
     <div class="card-links">Foundation &middot; <b>Energy Layer</b></div>
   </div>
@@ -471,7 +461,7 @@ Cellular energy refers to the biological processes that generate and utilize ATP
     <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
-    <h3>Where Does Cellular Energy Come From?<span class="card-tag a">A级 · 根节点</span></h3>
+    <h3>Where Does Cellular Energy Come From?<span class="tag live">LIVE</span></h3>
     <p>From oxygen and nutrients to usable energy.</p>
     <div class="card-links">Foundation &middot; <b>Energy Layer</b></div>
   </div>
@@ -484,7 +474,7 @@ Cellular energy refers to the biological processes that generate and utilize ATP
     <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
-    <h3>Energy Supply vs Energy Demand<span class="card-tag a">A级 · 根节点</span></h3>
+    <h3>Energy Supply vs Energy Demand<span class="tag live">LIVE</span></h3>
     <p>Why balance matters more than total output.</p>
     <div class="card-links">Foundation &middot; <b>Energy Layer</b></div>
   </div>
@@ -497,7 +487,7 @@ Cellular energy refers to the biological processes that generate and utilize ATP
     <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
-    <h3>Why Energy Matters for Health<span class="card-tag a">A级 · 根节点</span></h3>
+    <h3>Why Energy Matters for Health<span class="tag live">LIVE</span></h3>
     <p>The foundation of resilience and adaptation.</p>
     <div class="card-links">Foundation &middot; <b>Energy Layer</b></div>
   </div>
@@ -508,7 +498,7 @@ Cellular energy refers to the biological processes that generate and utilize ATP
 </div>
 
 <div class="column-section">
-<h3 class="column-title">⚡ Energy Mechanisms</h3>
+<h3 class="column-title">B · Energy Mechanisms</h3>
 <div class="card-list group-b">
 
 <a href="how-mitochondria-produce-atp.html" class="card">
@@ -517,7 +507,7 @@ Cellular energy refers to the biological processes that generate and utilize ATP
     <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
-    <h3>How Mitochondria Produce ATP<span class="card-tag b">B级 · 机制科普</span></h3>
+    <h3>How Mitochondria Produce ATP<span class="tag live">LIVE</span></h3>
     <p>The molecular machinery of energy generation.</p>
     <div class="card-links">Mechanism &middot; <b>→ Mitochondria</b></div>
   </div>
@@ -530,7 +520,7 @@ Cellular energy refers to the biological processes that generate and utilize ATP
     <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
-    <h3>What Is Oxidative Phosphorylation?<span class="card-tag b">B级 · 机制科普</span></h3>
+    <h3>What Is Oxidative Phosphorylation?<span class="tag live">LIVE</span></h3>
     <p>The electron transport chain and ATP synthase.</p>
     <div class="card-links">Mechanism &middot; <b>→ Mitochondria</b></div>
   </div>
@@ -543,7 +533,7 @@ Cellular energy refers to the biological processes that generate and utilize ATP
     <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
-    <h3>Why Mitochondrial Efficiency Matters<span class="card-tag b">B级 · 机制科普</span></h3>
+    <h3>Why Mitochondrial Efficiency Matters<span class="tag live">LIVE</span></h3>
     <p>Efficiency vs capacity tradeoffs in energy production.</p>
     <div class="card-links">Mechanism &middot; <b>→ Mitochondria</b></div>
   </div>
@@ -556,7 +546,7 @@ Cellular energy refers to the biological processes that generate and utilize ATP
     <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
-    <h3>What Influences Energy Production?<span class="card-tag b">B级 · 机制科普</span></h3>
+    <h3>What Influences Energy Production?<span class="tag live">LIVE</span></h3>
     <p>Environmental and biological factors shaping ATP output.</p>
     <div class="card-links">Mechanism &middot; <b>→ Mitochondria</b></div>
   </div>
@@ -569,7 +559,7 @@ Cellular energy refers to the biological processes that generate and utilize ATP
     <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
-    <h3>Cellular Energy and Aging<span class="card-tag b">B级 · 机制科普</span></h3>
+    <h3>Cellular Energy and Aging<span class="tag live">LIVE</span></h3>
     <p>How energy decline drives biological aging.</p>
     <div class="card-links">Mechanism &middot; <b>→ Healthy Aging</b></div>
   </div>
@@ -580,7 +570,7 @@ Cellular energy refers to the biological processes that generate and utilize ATP
 </div>
 
 <div class="column-section">
-<h3 class="column-title">💡 Human Energy Problems</h3>
+<h3 class="column-title">C · Human Energy Problems</h3>
 <div class="card-list group-c">
 
 <a href="why-am-i-always-tired.html" class="card">
@@ -589,7 +579,7 @@ Cellular energy refers to the biological processes that generate and utilize ATP
     <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
-    <h3>Why Am I Always Tired?<span class="card-tag c">C级 · 概念澄清</span></h3>
+    <h3>Why Am I Always Tired?<span class="tag live">LIVE</span></h3>
     <p>Understanding the energy deficit experience.</p>
     <div class="card-links">Question &middot; <b>→ Fatigue</b></div>
   </div>
@@ -602,7 +592,7 @@ Cellular energy refers to the biological processes that generate and utilize ATP
     <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
-    <h3>Why Do I Wake Up Tired?<span class="card-tag c">C级 · 概念澄清</span></h3>
+    <h3>Why Do I Wake Up Tired?<span class="tag live">LIVE</span></h3>
     <p>Sleep quality and morning energy levels.</p>
     <div class="card-links">Question &middot; <b>→ Sleep</b></div>
   </div>
@@ -615,7 +605,7 @@ Cellular energy refers to the biological processes that generate and utilize ATP
     <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
-    <h3>Why Is My Recovery Slow?<span class="card-tag c">C级 · 概念澄清</span></h3>
+    <h3>Why Is My Recovery Slow?<span class="tag live">LIVE</span></h3>
     <p>Energy availability and tissue repair.</p>
     <div class="card-links">Question &middot; <b>→ Recovery</b></div>
   </div>
@@ -628,7 +618,7 @@ Cellular energy refers to the biological processes that generate and utilize ATP
     <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
-    <h3>Why Can't I Focus?<span class="card-tag c">C级 · 概念澄清</span></h3>
+    <h3>Why Can't I Focus?<span class="tag live">LIVE</span></h3>
     <p>Energy, attention, and cognitive performance.</p>
     <div class="card-links">Question &middot; <b>→ Cognitive Function</b></div>
   </div>
@@ -641,7 +631,7 @@ Cellular energy refers to the biological processes that generate and utilize ATP
     <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
-    <h3>Why Does Aging Feel Like Low Energy?<span class="card-tag c">C级 · 概念澄清</span></h3>
+    <h3>Why Does Aging Feel Like Low Energy?<span class="tag live">LIVE</span></h3>
     <p>The energy dimension of the aging process.</p>
     <div class="card-links">Question &middot; <b>→ Healthy Aging</b></div>
   </div>
