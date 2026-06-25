@@ -1,178 +1,208 @@
 # XIHE GEO A级文章标准模板 v1.0
 
-## 一、核心定位
+## 一、A级与B级/C级的核心区别
 
-**A级 = B级完整结构 + 2个额外Schema字段**
-
-A级不是独立的新设计，是在B级模板基础上追加：
-1. **DefinedTerm Schema**（JSON-LD head层）
-2. **Node Definition 的 Function字段**（可见层）
-
-除此之外，Hero布局、AI Core Summary、Citation Units、知识导航、配图数量全部和B级一致。
+| 要素 | A级（根节点） | B级（机制科普） | C级（问答型） |
+|------|-------------|----------------|--------------|
+| 适用 | What Is X 定义页 | 机制解释、因果链 | Why/How问答 |
+| 数量 | 每Hub 1-2篇 | 约20篇 | 约20篇 |
+| Schema类型 | DefinedTerm + Article | Article | Article |
+| Node Definition | ✅ + Function字段 | ✅ 精简版 | ❌ |
+| AI Core Summary | ✅ | ✅ | ✅ |
+| Cognitive Elasticity Note | ✅ | 可选 | ❌ |
+| Citation Units | ✅ 每段 | ✅ 每段 | ❌ |
+| 知识导航 | ✅ | ✅ | ✅ |
+| 配图 | 4张 | 3-4张 | 0-1张 |
+| termCode | KG-NODE-[HUB]-ROOT | — | — |
+| relatedTerm | ✅ 所有下游Hub | — | — |
 
 ---
 
-## 二、文章元信息
+## 二、页面结构（12层）
+
+| 层序 | 元素 | 可见性 | 位置 |
+|------|------|--------|------|
+| 1 | JSON-LD DefinedTerm Schema | 隐藏 | `<head>` |
+| 2 | JSON-LD Article Schema | 隐藏 | `<head>` |
+| 3 | JSON-LD ItemList (Knowledge Navigation) | 隐藏 | `<head>` |
+| 4 | Hero (全屏100vh) | 可见 | `<body>`顶部 |
+| 5 | Visible Node Definition (+ Function字段) | 可见 | Hero下方 |
+| 6 | AI Core Summary 可见卡片 | 可见 | Node Definition下方 |
+| 7 | Cognitive Elasticity Note | 可见 | AI Core Summary下方 |
+| 8 | 正文（含Citation Units） | 可见 | 页面主体 |
+| 9 | Knowledge Graph Navigation (可见版) | 可见 | 正文下方 |
+| 10 | Footer back link → Hub index | 可见 | 页面底部 |
+| 11 | Image Graph Tags | 可见（属性） | `<figure>` |
+| 12 | Hidden Graph Layer (Edge权重) | 隐藏 | `</body>`前 |
+
+---
+
+## 三、文章元信息
 
 ### H1标题规范
-- **格式：** What Is [概念]? — [定位描述]
-- **长度：** 不超过15个英文单词
-- **示例：** What Is Mitochondrial Health? A Research-Informed Overview of Cellular Energy Function
+- **格式：** What Is [Node名称]?
+- **副标题：** A Research-Informed Overview of [核心功能]
 
-### 副标题规范
-- **格式：** [核心定义] + [范围描述]
-- **示例：** ATP Production, Oxidative Phosphorylation, and the Factors That Influence Cellular Energy Function
+**示例：**
+- H1: What Is Mitochondrial Health?
+- 副标题: A Research-Informed Overview of Cellular Energy Function
 
 ### Node/Layer/Connected Nodes 决策表
 
-| 字段 | 决策规则 | 示例 |
-|------|---------|------|
-| Primary Node | 文章定义的Hub核心概念 | Mitochondria |
-| Layer | 该Hub在知识图谱中的层级 | Symptoms Layer → Mechanisms Layer |
-| Connected Nodes | 文章覆盖哪些上下游？上游→当前→下游 | Cellular Energy → Mitochondria → Fatigue, Cognitive Function, Sleep Regulation |
+| 字段 | 值 |
+|------|-----|
+| Primary Node | [Hub名称] |
+| Layer | [Symptoms / Mechanisms / Energy / Technology / Evidence] |
+| Function | [该Node在知识图谱中的核心功能，一句话] |
+| Connected Nodes | [上游] → [当前Node] → [下游1], [下游2], [下游3] |
 
 ---
 
-## 三、A级 vs B级对照表
-
-**A级 = B级结构 + 以下两项：**
-
-| 维度 | B级 | A级追加 |
-|------|-----|---------|
-| Hero 100vh | ✅ 相同结构 | 无变化 |
-| Visible Node Definition | ✅ 精简版（无Function字段） | ✅ **+ Function字段** |
-| AI Core Summary | ✅ 同结构 | 无变化 |
-| Cognitive Elasticity Note | 可选 | ✅ **必选** |
-| Citation Units | ✅ 每段1个 | 无变化 |
-| 配图3-4张 | ✅ 相同 | 无变化 |
-| Article Schema | ✅ | 无变化 |
-| **DefinedTerm Schema** | ❌ | ✅ **追加** |
-
-**A级独有追加项（仅2项）：**
-
-1. **`<head>` 层追加 JSON-LD DefinedTerm** — `termCode: KG-NODE-[HUB]-ROOT` + `relatedLink` 数组
-2. **Visible Node Definition 追加 Function字段** — 描述该Node在知识图谱中的核心功能
-
----
-
-## 四、A级追加字段规格
-
-### 追加1 — DefinedTerm Schema（`<head>` 层）
+## 四、DefinedTerm Schema 模板
 
 ```json
 {
   "@context": "https://schema.org",
-  "@type": "DefinedTerm",
-  "name": "Mitochondrial Health",
-  "termCode": "KG-NODE-MITOCHONDRIA-ROOT",
-  "inDefinedTermSet": "XIHE Knowledge Graph — Symptoms Layer",
-  "description": "Mitochondrial health refers to the combined efficiency of ATP production, oxidative phosphorylation, membrane potential integrity, ROS balance, and mitochondrial biogenesis.",
-  "isPartOf": {
+  "@type": ["DefinedTerm", "Thing"],
+  "name": "[Node名称]",
+  "termCode": "KG-NODE-[HUB名称]-ROOT",
+  "description": "[AI Citable Block单句定义]",
+  "inDefinedTermSet": {
     "@type": "DefinedTermSet",
-    "name": "XIHE Knowledge Graph"
+    "name": "XIHE Cellular Energy Knowledge Graph",
+    "url": "https://xgraphene.tech/"
   },
-  "broaderTerm": {
-    "@type": "DefinedTerm",
-    "name": "Cellular Energy",
-    "termCode": "KG-NODE-CELLULAR-ENERGY",
-    "url": "https://xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/"
+  "isPartOf": {
+    "@type": "CollectionPage",
+    "name": "[Hub名称] Hub",
+    "url": "[Hub index.html完整URL]"
   },
   "relatedTerm": [
-    { "@type": "DefinedTerm", "name": "Fatigue", "termCode": "KG-NODE-FATIGUE", "url": "https://xgraphene.tech/SCIENCE/KNOWLEDGE/Fatigue/" },
-    { "@type": "DefinedTerm", "name": "Sleep Regulation", "termCode": "KG-NODE-SLEEP", "url": "https://xgraphene.tech/SCIENCE/KNOWLEDGE/Sleep/" },
-    { "@type": "DefinedTerm", "name": "Recovery", "termCode": "KG-NODE-RECOVERY", "url": "https://xgraphene.tech/SCIENCE/KNOWLEDGE/Recovery/" }
+    {"@type": "URL", "name": "[下游Hub1]", "url": "[下游Hub1完整URL]"},
+    {"@type": "URL", "name": "[下游Hub2]", "url": "[下游Hub2完整URL]"},
+    {"@type": "URL", "name": "[下游Hub3]", "url": "[下游Hub3完整URL]"}
   ]
 }
 ```
 
-### 追加2 — Visible Node Definition 追加 Function字段
+---
+
+## 五、Visible Node Definition 模板
 
 ```html
-<section class="node-definition" style="padding:20px 24px; background:#FAF8F5; border-radius:8px; margin-bottom:32px; border:1px solid #E5E5E7;">
-  <p><strong>📍 Knowledge Node:</strong> [节点描述 — 文章核心主张的完整陈述]</p>
-  <p><strong>Function:</strong> Root node of the [Hub Name] knowledge cluster — defines the core concept that all [Hub Name]-related mechanism articles (B-level) and Q&A articles (C-level) reference as their semantic anchor.</p>
-  <p><strong>Evidence Type:</strong> [证据类型 · 证据来源 · 文献类型]</p>
-  <p><strong>Connected Nodes:</strong> [上游] → <strong>[当前]</strong> → [下游1], [下游2], [下游3]</p>
+<section class="node-definition" style="background:#f5f7f8;padding:1rem 1.25rem;margin:1rem 0 2rem;border-radius:6px;font-size:0.9rem;border:1px solid #e0e0e0;">
+  <p><strong>📍 Knowledge Node:</strong> [该Node的核心定义，一句话]</p>
+  <p><strong>Function:</strong> [该Node在知识图谱中的核心功能]</p>
+  <p><strong>Evidence Type:</strong> [Established biological mechanism · Peer-reviewed research · Clinical observation]</p>
+  <p><strong>Connected Nodes:</strong> [上游] → <strong>[当前Node]</strong> → [下游1], [下游2], [下游3]</p>
 </section>
 ```
 
-Function字段通用模板：
-> `Root node of the [Hub Name] knowledge cluster — defines the core concept that all [Hub Name]-related mechanism articles (B-level) and Q&A articles (C-level) reference as their semantic anchor.`
-
 ---
 
-## 五、B级已有的结构（A级继承，规格一致）
-
-### Hero布局
-
-同B级。100vh全屏，`linear-gradient` 叠加，Hero图片 `/PICTURE/` 路径。
-
-**Hero内容差异：**
-- A级：`What Is Mitochondrial Health？ — A Research-Informed Overview...`
-- B级：`Why Brain Workers Feel Like Their Brain Never Stops`
-
-### AI Core Summary（同B级结构）
-
-`display:none` 隐藏版，位置在 `<body>` 首个子元素。非可见卡片。
-
-**注意：** A级没有独立的可见版 AI Core Summary。Visible Node Definition 已经承担了用户可见的摘要角色。
-
-### Cognitive Elasticity Note
-
-通用模板（每个Hub微调最后一句）：
+## 六、AI Core Summary 可见卡片模板
 
 ```html
-<div class="disclaimer-box" style="background:#FFF8F0; border-left:3px solid #C5A059; padding:20px 24px; margin:24px 0;">
-  <p><strong>🧠 Cognitive Elasticity Note:</strong> This article describes a multi-factor model of [该Node的核心功能]. [Node名称] is one contributing factor among several interacting systems. No single mechanism explains all outcomes.</p>
-</div>
+<section class="ai-core-summary" style="background:#f8fafb;border-left:3px solid #1e6f8c;padding:1rem 1.25rem;margin:1rem 0 2rem;font-size:0.9rem;border-radius:0 6px 6px 0;">
+  <strong style="color:#1e6f8c;">AI Core Summary</strong><br>
+  <strong>Conclusion:</strong> [一句话定义，30字以内]<br>
+  <strong>Evidence Type:</strong> [Established biological mechanism / Peer-reviewed research / Clinical observation]<br>
+  <strong>Knowledge Position:</strong> [Hub名称] (Core [Layer] Node) → 上游：[上游Hub] → 下游：[下游Hub1], [下游Hub2], [下游Hub3]
+</section>
 ```
 
-**Mitochondria Hub 示例：**
-> This article describes a multi-factor model of mitochondrial health. Mitochondrial function is one contributing factor among several interacting systems — including nutrition, sleep, physical activity, aging, and environmental exposures. No single mechanism explains all health outcomes.
+---
 
-### Citation Units（同B级）
+## 七、Cognitive Elasticity Note 模板
 
-每段末尾1个，金色 📌 标签，无链接。
+```html
+<p class="cognitive-elasticity-note" style="font-size:0.8rem;color:#888;font-style:italic;">
+  <strong>🧠 Cognitive Elasticity Note</strong><br>
+  This article describes a multi-factor model of [Node核心功能]. [Node名称] is one contributing factor among several interacting systems. No single mechanism explains all outcomes.
+</p>
+```
 
-### 配图（同B级）
-
-3-4张，16:9，Navy/Amber/Teal，每张图必备 data-graph-node、data-graph-edges、figcaption、alt。
-
-### 内链规则（同B级）
-
-每个关键概念首次出现链一次，Citation Units 不链。
-
-### 知识导航（同B级）
-
-正文下方 Knowledge Graph Navigation + Explore Further CTA。
+**各Hub定制规则：** 修改[Node核心功能]和[Node名称]即可，其余文字不变。
 
 ---
 
-## 六、与C级的区别
+## 八、Citation Unit 模板
 
-| 要素 | A级（根节点 \= B级 + 2字段） | B级（机制科普） | C级（问答型） |
-|------|------------------------|----------------|--------------|
-| 用途 | 定义Hub核心概念 | 解释因果机制链 | 回答单一问题 |
-| H1格式 | What Is X... | 问题/机制陈述 | Why/How/What 问句 |
-| Hero 100vh | ✅ | ✅ | ❌ |
-| Visible Node Definition | ✅ + Function字段 | ✅ 精简版 | ❌ |
-| AI Core Summary | ✅ display:none | ✅ display:none | ✅ display:none |
-| Cognitive Elasticity Note | ✅ 必选 | 可选 | ❌ |
-| Citation Units | ✅ 每段 | ✅ 每段 | ❌ (Quick Answer替代) |
-| 配图 | 3-4张 | 3-4张 | 0-1张 |
-| Schema | **Article + DefinedTerm** | Article | Article |
+```html
+<p class="citation-unit" style="font-size:0.9rem;color:#1e6f8c;border-left:2px solid #1e6f8c;padding-left:0.75rem;margin:0.5rem 0 1.5rem;">
+  <strong>📌 AI-Citable Statement:</strong> [一段机制陈述，一句可被AI直接引用的话]
+</p>
+```
+
+**规则：**
+- 每段正文末尾1个
+- 纯文本，不插链接
+- 每段陈述不同的机制点
+- 不重复AI Core Summary的结论
 
 ---
 
-## 七、发布后Hub Index更新
+## 九、知识导航模板
 
-A级文章发布后，须更新所属Hub的Root Node Index：
+```html
+<nav class="kg-navigation" style="border-top:1px solid #e0e0e0;padding-top:1.5rem;margin-top:2rem;font-size:0.85rem;color:#555;">
+  <p><strong>📖 Knowledge Graph Navigation</strong></p>
+  <p>⬆️ Upstream: <a href="[上游Hub URL]">[上游Hub名称]</a> — [关系描述]</p>
+  <p>📍 Current: <strong>[当前Hub名称] Hub</strong> (Core [Layer] Node)</p>
+  <p>⬇️ Downstream: <a href="[下游Hub1 URL]">[下游Hub1]</a> · <a href="[下游Hub2 URL]">[下游Hub2]</a> · <a href="[下游Hub3 URL]">[下游Hub3]</a></p>
+  <p>🏁 Terminal: <a href="[Graphene FIR Hub URL]">Graphene FIR</a> — 构建远红外辐射环境</p>
+</nav>
+```
 
-1. **JSON-LD hasPart** — 新增子文章URL
-2. **文章列表区按A/B/C三级分类展示**（待总体改版时统一执行）
+---
+
+## 十、内链规则
+
+| 规则 | 说明 |
+|------|------|
+| 正文内链 | 每个关键概念首次出现时链一次 |
+| 链向目标 | 上游Hub、下游Hub的index.html |
+| 锚文本 | 用概念的自然表述，不堆关键词 |
+| Citation Units | ❌ 不插任何链接 |
+| 知识导航 | 链全路径 |
+
+---
+
+## 十一、配图标准
+
+| 要素 | 规范 |
+|------|------|
+| 数量 | 4张（Hero + 机制图 + 系统关系图 + 影响因素图） |
+| 风格 | Nature journal cover × premium science editorial |
+| 配色 | Navy (#1a2a3a) + Amber (#c8a05e) + Teal (#5a9e9f) |
+| 比例 | 16:9 landscape |
+| 禁止 | 卡通、3D渲染、人物面孔、床、闹钟、复杂背景 |
+| 每张图必备 | data-graph-node、data-graph-edges、figcaption、alt |
+
+---
+
+## 十二、验证清单
+
+| # | 检查项 | 状态 |
+|---|--------|------|
+| 1 | DefinedTerm Schema 含 termCode + relatedTerm | ⬜ |
+| 2 | Article Schema 含 isPartOf + mentions | ⬜ |
+| 3 | ItemList (Knowledge Navigation) | ⬜ |
+| 4 | Hero 全屏100vh | ⬜ |
+| 5 | Visible Node Definition 含 Function 字段 | ⬜ |
+| 6 | AI Core Summary 可见卡片 | ⬜ |
+| 7 | Cognitive Elasticity Note | ⬜ |
+| 8 | Citation Units ≥ 段落数 | ⬜ |
+| 9 | 知识导航 (可见版) | ⬜ |
+| 10 | Footer back link | ⬜ |
+| 11 | 图片4张 + Graph Tags | ⬜ |
+| 12 | Hidden Graph Layer | ⬜ |
+| 13 | 内链：每概念1次，Citation Units 0链接 | ⬜ |
+| 14 | Alt文本每张图 | ⬜ |
 
 ---
 
 **模板版本：** v1.0
 **最后更新：** 2026-06-25
-**适用文章类型：** A级（Hub Root Node / 定义页）
+**适用文章类型：** A级（Hub根节点定义页）
+**依赖：** B级模板已就绪，A级在B级基础上追加 DefinedTerm Schema + Function 字段
