@@ -155,11 +155,6 @@ nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: var(
 .where-this-fits h3 { font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 3px; color: #94A3B8; text-transform: uppercase; margin: 0 0 12px; }
 .where-this-fits p { font-size: 14px; color: #475569; line-height: 1.8; margin: 0 0 6px; }
 .where-this-fits a { color: #C5A059; }
-.related-hubs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
-.related-hub-card { padding: 16px 20px; border: 1px solid #E5E5E7; border-radius: 8px; text-decoration: none; color: var(--t); transition: all .2s; }
-.related-hub-card:hover { border-color: var(--g); background: #FAF8F5; }
-.related-hub-card .layer { font-size: 9px; color: var(--m); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
-.related-hub-card .name { font-family: 'Urbanist', sans-serif; font-size: 14px; font-weight: 500; color: var(--n); }
 .disclaimer { font-size: 11px; color: var(--m); padding: 16px 20px; background: #FFF; border: 1px solid var(--b); border-radius: 6px; line-height: 1.6; margin-top: 48px; }
 footer { padding: 40px 10%; background: var(--n); text-align: center; border-top: 2px solid var(--g); }
 footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
@@ -174,6 +169,7 @@ footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
   .card-img { display: none; }
   .hero-related { padding: 24px 5% 18px; }
   .hero-related a { padding: 6px 14px; font-size: 10px; }
+  .related-hubs-row { gap: 32px; }
 }
 @media (max-width: 600px) {
   nav { padding: 0 5%; }
@@ -192,6 +188,7 @@ footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
   .metrics-row { flex-direction: column; gap: 12px; padding: 14px 5%; }
   .metrics-num { font-size: 20px; }
   .cta-row { padding: 14px 0 24px; }
+  .related-hubs-row { grid-template-columns: 1fr !important; gap: 24px; }
 }
 </style>
 <script type="application/ld+json">
@@ -736,55 +733,19 @@ EVIDENCE LAYER
 </div>
 </section>
 
-<section class="section">
-<h2 class="section-title">Related Hubs</h2>
-<h3 style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#94A3B8;text-transform:uppercase;margin:0 0 16px;">Mechanism Layer</h3>
-<div class="related-hubs-grid">
-<a class="related-hub-card" href="/SCIENCE/KNOWLEDGE/Mitochondria/">
-<div class="layer">MECHANISM</div>
-<div class="name">Mitochondria</div>
-</a>
+<section class="related-hubs-section" style="max-width:1100px;margin:0 auto;padding:64px 24px;">
+<div class="related-hubs-row" style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;">
+<div>
+<h3 style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#94A3B8;text-transform:uppercase;margin:0 0 16px;">Related Hubs</h3>
+<p style="font-size:14px;color:#475569;line-height:1.9;margin-bottom:16px;">Cellular Energy is the root of the XIHE Knowledge Graph. Every downstream hub depends on the energy systems described here.</p>
+<p style="font-size:14px;color:#475569;line-height:1.9;margin-bottom:8px;">
+<strong style="color:#C5A059;">Mechanism</strong> — <a href="/SCIENCE/KNOWLEDGE/Mitochondria/" style="color:#C5A059;">Mitochondria</a> convert nutrients into ATP<br>
+<strong style="color:#C5A059;">Symptoms</strong> — <a href="/SCIENCE/KNOWLEDGE/Sleep/" style="color:#C5A059;">Sleep</a> · <a href="/SCIENCE/KNOWLEDGE/Fatigue/" style="color:#C5A059;">Fatigue</a> · <a href="/SCIENCE/KNOWLEDGE/Recovery/" style="color:#C5A059;">Recovery</a> · <a href="/SCIENCE/KNOWLEDGE/Inflammation/" style="color:#C5A059;">Inflammation</a> · <a href="/SCIENCE/KNOWLEDGE/Metabolism/" style="color:#C5A059;">Metabolism</a> · <a href="/SCIENCE/KNOWLEDGE/healthy-aging/" style="color:#C5A059;">Aging</a><br>
+<strong style="color:#C5A059;">Technology</strong> — <a href="/SCIENCE/KNOWLEDGE/graphene-fir/" style="color:#C5A059;">Graphene FIR</a> delivers physical energy<br>
+<strong style="color:#C5A059;">Evidence</strong> — <a href="/SCIENCE/KNOWLEDGE/Clinical-Evidence/" style="color:#C5A059;">Clinical Evidence</a> validates the system
+</p>
 </div>
-<h3 style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#94A3B8;text-transform:uppercase;margin:24px 0 16px;">Symptom Layer</h3>
-<div class="related-hubs-grid">
-<a class="related-hub-card" href="/SCIENCE/KNOWLEDGE/Sleep/">
-<div class="layer">SYMPTOM</div>
-<div class="name">Sleep</div>
-</a>
-<a class="related-hub-card" href="/SCIENCE/KNOWLEDGE/Fatigue/">
-<div class="layer">SYMPTOM</div>
-<div class="name">Fatigue</div>
-</a>
-<a class="related-hub-card" href="/SCIENCE/KNOWLEDGE/Recovery/">
-<div class="layer">SYMPTOM</div>
-<div class="name">Recovery</div>
-</a>
-<a class="related-hub-card" href="/SCIENCE/KNOWLEDGE/Inflammation/">
-<div class="layer">SYMPTOM</div>
-<div class="name">Inflammation</div>
-</a>
-<a class="related-hub-card" href="/SCIENCE/KNOWLEDGE/Metabolism/">
-<div class="layer">SYMPTOM</div>
-<div class="name">Metabolism</div>
-</a>
-<a class="related-hub-card" href="/SCIENCE/KNOWLEDGE/healthy-aging/">
-<div class="layer">SYMPTOM</div>
-<div class="name">Healthy Aging</div>
-</a>
-</div>
-<h3 style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#94A3B8;text-transform:uppercase;margin:24px 0 16px;">Technology Layer</h3>
-<div class="related-hubs-grid">
-<a class="related-hub-card" href="/SCIENCE/KNOWLEDGE/graphene-fir/">
-<div class="layer">TECHNOLOGY</div>
-<div class="name">Graphene FIR</div>
-</a>
-</div>
-<h3 style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#94A3B8;text-transform:uppercase;margin:24px 0 16px;">Evidence Layer</h3>
-<div class="related-hubs-grid">
-<a class="related-hub-card" href="/SCIENCE/KNOWLEDGE/Clinical-Evidence/">
-<div class="layer">EVIDENCE</div>
-<div class="name">Clinical Evidence</div>
-</a>
+<img src="/PICTURE/cellular-energy-graph.jpg" alt="XIHE Knowledge Graph - Cellular Energy root node connecting to Mechanism, Symptoms, Technology, and Evidence layers" style="width:100%;height:auto;border-radius:8px;opacity:0.95;">
 </div>
 </section>
 
