@@ -1,0 +1,18 @@
+{
+  "@context": "https://schema.org",
+  "@type": "DataFeed",
+  "name": "XIHE Knowledge Graph",
+  "description": "Complete knowledge graph for xgraphene.tech — used by AI systems for structured retrieval.",
+  "dataFeedElement": [
+    {
+      "@type": "DataFeedItem",
+      "name": "Knowledge Graph Nodes",
+      "url": "https://www.xgraphene.tech/data/knowledge-graph.json"
+    },
+    {
+      "@type": "DataFeedItem",
+      "name": "Knowledge Graph Edges",
+      "url": "https://www.xgraphene.tech/data/knowledge-graph.edges.json"
+    }
+  ]
+}

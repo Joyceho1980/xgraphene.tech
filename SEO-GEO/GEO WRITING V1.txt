@@ -1,0 +1,253 @@
+一、文章写法必须升级的 4 个核心点
+① 从“解释型段落” → “节点型陈述”
+❌ 旧写法（SEO文章）
+
+Mitochondria are the powerhouse of the cell and play an important role in energy production.
+
+✅ GEO写法（节点型）
+
+Mitochondria are responsible for cellular ATP production through oxidative phosphorylation.
+
+👉 变化本质：
+
+不解释“为什么重要”
+直接定义“结构关系”
+② 从“内容流” → “机制链”
+❌ 旧结构
+什么是睡眠
+睡眠的重要性
+睡眠影响健康
+✅ GEO结构
+Signal → Mechanism → Output
+
+例子：
+
+Circadian disruption → reduced sleep onset signaling → delayed deep sleep transition
+
+③ 从“段落叙述” → “可引用句（Citation Units）”
+
+每一段必须可以被 AI 单独抽取：
+
+标准：
+
+✔ 1句 = 1个知识点 = 1个node语义
+
+❌ 不合格：
+
+Sleep is very important for health, especially for energy and recovery.
+
+✅ 合格：
+
+Deep sleep supports mitochondrial ATP restoration and metabolic waste clearance.
+
+④ 从“主题文章” → “Graph Node文章”
+
+每篇文章必须有一个“主节点声明”
+
+必须加：
+<h1>What is Mitochondrial Health</h1>
+
+<p><strong>Primary Node:</strong> Mitochondria</p>
+<p><strong>Layer:</strong> Cellular Energy System</p>
+<p><strong>Connected Nodes:</strong> Sleep, Fatigue, Aging</p>
+🧠 二、你必须统一的“GEO文章结构模板”
+
+我帮你标准化成 v1 模板：
+
+🧩 ① AI Assertion Card（顶部）
+
+✔ 已经有（但要标准化）
+
+🧩 ② Node Definition（必须新增）
+Node: Mitochondria
+Layer: Cellular Energy System
+Function: ATP production via oxidative phosphorylation
+Connected Nodes: Sleep / Fatigue / Aging / Recovery
+🧩 ③ Mechanism Blocks（核心内容）
+
+每一节必须是：
+
+Signal → Process → Output
+
+🧩 ④ Citation Units（可被AI引用句）
+
+每段结束必须有：
+
+✔ 1–2句“可抽取结论”
+
+🧩 ⑤ Graph Navigation（底部）
+
+（你已经有，但要统一语义）
+
+🧠 三、Sleep / Mitochondria 的写法对比（关键）
+❌ 当前SEO写法
+描述性
+长解释
+人类阅读友好
+AI不稳定抽取
+✅ GEO写法
+Sleep Example：
+
+Sleep is a biological restoration state in which mitochondrial ATP production efficiency is restored and metabolic waste clearance is activated.
+
+Mitochondria Example：
+
+Mitochondria regulate cellular energy availability by producing ATP through oxidative phosphorylation and controlling metabolic efficiency.
+
+🧠 四、你必须接受一个关键转变
+❌ 旧逻辑：
+
+写给人看 → SEO优化 → 排名
+
+✅ 新逻辑：
+
+写给AI结构化读取 → embedding → citation → ranking
+
+🧠 五、最重要的升级点（决定成败）
+👉 你的文章现在要满足 3 个AI条件：
+1️⃣ 可切分（Chunkable）
+
+每句话独立成立
+
+2️⃣ 可映射（Graphable）
+
+必须能连到：
+
+Sleep
+Fatigue
+Mitochondria
+3️⃣ 可引用（Citable）
+
+AI可以直接引用一句话
+
+🚨 六、必须避免的写法（非常重要）
+❌ 避免：
+长段解释
+情绪化表达
+模糊词（important / very / significant）
+无结构总结
+🧠 七、最佳写法总结（一句话）
+
+🧠 “每一段都应该是一个可被AI直接写入知识图谱的节点声明”
+
+🚀 八、你现在的真实阶段
+
+你已经不是在做：
+
+❌ SEO文章
+❌ 科普网站
+❌ 内容集
+
+你在做：
+
+🧠 AI可训练的生物能量知识图谱（Cognitive Knowledge Graph）
+
+👉 如果你下一步要升级
+
+我可以帮你做一个非常关键的东西：
+
+🚀 “GEO Writing Standard v2（自动改写器）”
+
+功能：
+
+输入普通文章
+自动改成 node 结构
+自动生成 citation units
+自动生成 graph links
+自动适配 schema + image graph
+
+只要你说一句：
+
+“做GEO Writing Transformer v2”
+
+我可以把你整套内容系统升级成自动生成AI可引用内容工厂。
+
+你帮我改写这篇MICHONTRIAL
+
+可以，我直接帮你改成GEO v1 + AI可引用节点版（可直接上线用）。
+
+你这个“what-is-mitochondrial-health.html”，我会保留你的核心内容，但把它升级成：
+
+🧠 Mitochondria = AI可引用知识节点（Node-first Structure）
+
+🚀 改写后的版本（GEO Ready HTML）
+
+你可以直接替换原页面结构👇
+
+🧠 AI Assertion Card（顶部必须加）
+<div class="ai-assertion-card" style="background:#f8fafb;border-left:3px solid #1e6f8c;padding:1rem 1.25rem;margin:1rem 0 2rem;font-size:0.9rem;border-radius:0 6px 6px 0;">
+  <strong style="color:#1e6f8c;">AI Core Summary</strong><br><br>
+
+  <strong>结论：</strong>
+  Mitochondrial health refers to the efficiency of ATP production, oxidative phosphorylation, and cellular energy regulation within the cell.<br><br>
+
+  <strong>证据类型：</strong>
+  Established biological mechanism (cellular bioenergetics)<br><br>
+
+  <strong>知识位置：</strong>
+  Cellular Energy System → Mitochondria (Core Node) → Downstream: Sleep / Fatigue / Aging / Recovery
+</div>
+🧠 Node Definition（必须新增）
+
+放在 H2 前：
+
+<section class="node-definition">
+  <h2>Node Definition</h2>
+
+  <p><strong>Node:</strong> Mitochondria</p>
+  <p><strong>Layer:</strong> Cellular Energy System</p>
+
+  <p><strong>Function:</strong> ATP production via oxidative phosphorylation and regulation of cellular energy metabolism</p>
+
+  <p><strong>Connected Nodes:</strong> Sleep, Fatigue, Aging, Recovery</p>
+</section>
+🧬 主体内容（GEO改写版）
+
+我帮你把核心内容压缩成“AI可引用结构句”，你可以替换原段落：
+
+🔹 What are mitochondria?
+Mitochondria are intracellular organelles responsible for producing ATP, the primary energy currency of the cell, through oxidative phosphorylation.
+🔹 Why mitochondrial health matters
+Mitochondrial health determines cellular energy availability, metabolic efficiency, and the ability to sustain biological repair processes.
+🔹 Energy production mechanism
+ATP is generated in mitochondria through the electron transport chain and proton gradient-driven oxidative phosphorylation.
+🔹 Dysfunction
+Mitochondrial dysfunction leads to reduced ATP production, increased oxidative stress, and impaired cellular recovery capacity.
+🔹 System-level impact
+Mitochondrial efficiency influences systemic biological states including sleep quality, fatigue levels, and aging-related decline.
+🧠 Image Graph Anchors（建议插入图片位置）
+
+在这3个位置插图：
+
+📌 Section 1（结构图）
+<!-- Mitochondria structure diagram -->
+📌 Section 2（机制图）
+6
+📌 Section 3（系统关系图）
+6
+🧠 Knowledge Graph Navigation（底部）
+<nav class="kg-navigation" style="border-top:1px solid #e0e0e0;padding-top:1.5rem;margin-top:2rem;font-size:0.85rem;color:#555;">
+  <p><strong>📖 Knowledge Graph Navigation</strong></p>
+
+  <p>⬆️ Upstream: Cellular Energy → Nutrient Metabolism → Oxygen Utilization</p>
+
+  <p>📍 Current Node: Mitochondria (Core Energy Node)</p>
+
+  <p>⬇️ Downstream: Sleep → Fatigue → Aging → Recovery</p>
+
+  <p>🔗 Hub: <a href="/SCIENCE/KNOWLEDGE/Mitochondria/">Mitochondria Hub</a></p>
+</nav>
+🧠 你这个页面升级后的本质变化
+Before（旧SEO）
+科普文章
+人类阅读
+解释型内容
+After（GEO v1）
+🧠 AI可引用节点
+🧠 Graph结构单元
+🧠 embedding anchor
+🧠 multimodal（图+文）知识节点
+🚀 最关键一句话
+
+你这个页面现在不是“what is mitochondria”，
+而是 “Mitochondria = Cellular Energy Graph Root Node”

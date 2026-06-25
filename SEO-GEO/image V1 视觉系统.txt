@@ -1,0 +1,204 @@
+图片在GEO里的三重作用
+作用	说明
+AI多模态引用	ChatGPT Vision、Google Gemini、Claude都能“读图”。图片里的文字、图表数据、机制流程图会被AI直接提取
+Google Image Search	图片SEO是独立流量入口。你的机制解释图被别人搜到，就多了一条进入知识图谱的路径
+Schema ImageObject	图片加上结构化数据后，AI知道“这张图在解释什么”，增强页面主题相关性
+55+篇文章应该配什么图
+按文章类型分类：
+
+文章类型	配图策略	示例
+机制科普（线粒体、ATP、氧化磷酸化）	一张简洁的机制流程图	电子传递链示意图、ATP合成步骤图
+症状解释（疲劳、失眠、恢复慢）	一张因果链图	“为什么睡够8小时还累”的逻辑链
+技术原理（远红外、辐射效率、9.4μm）	一张物理机制图	电能→热能→辐射能的能量释放结构图
+数据/临床（PKU试验、NIQS检测）	一张数据可视化图	68% vs 55% 对比柱状图
+关系/图谱（Hub上下游、知识路径）	一张简化的知识图谱示意图	症状层→机制层→能量层→技术层
+每张图的GEO配置
+每张图配上三样东西，AI就能完全理解：
+
+html
+复制
+下载
+运行
+<img 
+  src="/images/mitochondria-atp-production.png"
+  alt="Mitochondrial ATP production: electron transport chain complexes I-V generate proton gradient driving ATP synthase"
+  title="How Mitochondria Produce ATP — Oxidative Phosphorylation"
+>
+<p class="image-caption">
+  <strong>图：</strong>线粒体氧化磷酸化过程。电子传递链（复合体I-IV）泵出质子，建立电化学梯度，驱动ATP合酶（复合体V）将ADP磷酸化为ATP。
+  <span class="image-source">来源：基于Lehninger Biochemistry原理图重绘</span>
+</p>
+元素	作用
+alt文本	AI读图的第一入口，必须包含核心关键词和机制描述
+title	辅助信息，Google Image Search的显示文本
+<p class="image-caption">	图片周围文字，AI用来理解图片上下文
+来源标注	增加可信度，如果是重绘的原理图也标注清楚
+优先级
+优先级	图片类型	先做哪个
+🔴 最高	机制流程图（线粒体ATP生产）	Mitochondria Hub的Root Node文章
+🔴 最高	能量释放结构图（电能→热能→辐射能）	Graphene FIR Hub的定义页
+🟡 中	知识图谱层级示意图	Graphene FIR Hub或首页
+🟡 中	数据对比图（68% vs 55%）	Technology Platform页
+🟢 低	每篇文章的因果链图	后续逐篇补充
+
+Image Graph Layer v1（全站视觉知识图谱系统）
+一句话定义
+🧠 把每一张图片变成一个 Graph Node（视觉节点）+ Semantic Embedding + AI Citation Anchor
+￼
+🧠 一、系统本质升级（非常关键）
+你现在的网站从：
+❌ 传统结构
+Copy
+文章 → 图片（装饰）
+升级为：
+✅ v1结构
+Copy
+文章 → Node（知识节点）
+      ↘
+       Image Nodes（视觉节点）
+            ↘
+             Graph Embedding（AI可引用）
+￼
+🧩 二、Image Graph Layer v1 架构
+Copy
+┌──────────────────────────────────────┐
+│ IMAGE NODE REGISTRY                │ ← 每张图注册为节点
+├──────────────────────────────────────┤
+│ IMAGE → TEXT ALIGNMENT ENGINE      │ ← 图文语义对齐
+├──────────────────────────────────────┤
+│ VISUAL EMBEDDING LAYER             │ ← CLIP / multimodal embedding
+├──────────────────────────────────────┤
+│ IMAGE → GRAPH EDGE BUILDER         │ ← 图连接 Sleep / Mitochondria
+├──────────────────────────────────────┤
+│ PAGE RENDERER (GEO INJECTION)      │ ← HTML自动注入
+└──────────────────────────────────────┘
+￼
+🧠 三、核心升级：每张图 = Graph Node
+📌 Image Node标准结构
+JSON
+Copy
+￼
+{
+  "image_id": "mitochondria_atp_01",
+  "url": "/images/mitochondria-atp.png",
+  "type": "mechanism_diagram",
+  "nodes": [
+    "Mitochondria",
+    "ATP Production",
+    "Cellular Energy"
+  ],
+  "edges": [
+    "Sleep → Mitochondria",
+    "Fatigue → ATP depletion"
+  ],
+  "embedding_tags": [
+    "electron transport chain",
+    "oxidative phosphorylation",
+    "energy metabolism"
+  ]
+}
+￼
+🧠 四、三类“GEO级图片”（必须统一）
+🥇 1. Mechanism Images（机制图）
+👉 AI最重要
+￼
+￼
+￼
+4
+用途：
+• Mitochondria Node
+• ATP Node
+• Energy System Node
+￼
+🥈 2. System Relationship Images（关系图）
+👉 用来做 Graph edges
+￼
+￼
+￼
+7
+用途：
+• Sleep ↔ Mitochondria
+• Fatigue ↔ Energy
+• Aging ↔ Recovery
+￼
+🥉 3. Conceptual Abstract Maps（认知图）
+👉 用于 AI embedding + semantic clustering
+￼
+￼
+￼
+6
+用途：
+• 全局Graph
+• AI knowledge embedding
+• multi-node reasoning
+￼
+🧠 五、Image Graph 的关键机制（核心）
+1️⃣ Image → Node绑定
+每张图必须绑定：
+Copy
+Mitochondria Node
+Sleep Node
+Fatigue Node
+￼
+2️⃣ Image → Edge强化
+例如：
+Copy
+Sleep → (image) → Mitochondria
+👉 图不是插图，是“关系证据”
+￼
+3️⃣ Image → Embedding增强
+图片成为：
+🧠 multimodal semantic anchor
+AI会：
+• 通过图理解概念
+• 强化 node 权重
+• 提升 citation probability
+￼
+🧠 六、你网站的结构升级（关键）
+你现在应该变成：
+Copy
+/Sleep/
+   ├── article.html
+   ├── image_nodes.json
+   ├── mitochondria.png (node)
+   ├── circadian.png (node)
+
+/Mitochondria/
+   ├── article.html
+   ├── atp_diagram.png (node)
+   ├── energy_flow.png (node)
+￼
+🧠 七、HTML层 GEO注入（关键升级）
+你文章里图片应该升级为：
+HTML
+Code
+Preview
+Copy
+￼
+<figure data-node="mitochondria_atp">
+  <img src="/images/mitochondria-atp.png">
+
+  <figcaption>
+    ATP is produced in mitochondria through oxidative phosphorylation.
+  </figcaption>
+
+  <meta name="graph-node" content="Mitochondria|ATP|Cellular Energy">
+</figure>
+￼
+🧠 八、AI会如何“读你的图片”（关键逻辑）
+升级前：
+AI：这是插图
+升级后：
+AI：这是一个 Node（Mitochondria），连接 ATP + Sleep + Fatigue
+￼
+📊 九、Image Graph Layer v1 的本质
+一句话总结：
+🧠 图片从“视觉内容”升级为“图谱结构证据”
+￼
+🚀 十、系统级升级意义（非常重要）
+你现在做的不是：
+❌ SEO优化
+❌ 内容增强
+❌ 页面美化
+而是：
+🔥 Multimodal Knowledge Graph（多模态知识图谱）

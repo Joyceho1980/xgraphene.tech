@@ -1,7 +1,32 @@
 User-agent: *
 Allow: /
+Allow: /data/
+Allow: /SCIENCE/KNOWLEDGE/
+Allow: /nodes/
 Disallow: /admin/
 Disallow: /api/
 Disallow: /PICTURE/button-preview.html
+
+User-agent: GPTBot
+Allow: /
+Allow: /data/
+Allow: /SCIENCE/KNOWLEDGE/
+Allow: /nodes/
+
+User-agent: ClaudeBot
+Allow: /
+Allow: /data/
+Allow: /SCIENCE/KNOWLEDGE/
+Allow: /nodes/
+
+User-agent: Google-Extended
+Allow: /
+Allow: /data/
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: PerplexityBot
+Allow: /
+Allow: /data/
 
 Sitemap: https://www.xgraphene.tech/sitemap.xml

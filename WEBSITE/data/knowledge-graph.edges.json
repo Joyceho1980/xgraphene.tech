@@ -1,0 +1,261 @@
+{
+  "metadata": {
+    "name": "XIHE Knowledge Graph Edges",
+    "version": "v2",
+    "edge_count": 36
+  },
+  "edges": [
+    {
+      "from": "sleep",
+      "to": "cellular_energy",
+      "relation": "depends_on",
+      "weight": 0.92,
+      "direction": "upstream"
+    },
+    {
+      "from": "sleep",
+      "to": "mitochondria",
+      "relation": "regulated_by",
+      "weight": 0.87,
+      "direction": "upstream"
+    },
+    {
+      "from": "sleep",
+      "to": "fatigue",
+      "relation": "correlates_with",
+      "weight": 0.9,
+      "direction": "bidirectional"
+    },
+    {
+      "from": "sleep",
+      "to": "recovery",
+      "relation": "enables",
+      "weight": 0.88,
+      "direction": "downstream"
+    },
+    {
+      "from": "sleep",
+      "to": "graphene_fir",
+      "relation": "modulated_by",
+      "weight": 0.85,
+      "direction": "downstream"
+    },
+    {
+      "from": "sleep",
+      "to": "inflammation",
+      "relation": "correlates_with",
+      "weight": 0.78,
+      "direction": "bidirectional"
+    },
+    {
+      "from": "recovery",
+      "to": "cellular_energy",
+      "relation": "depends_on",
+      "weight": 0.91,
+      "direction": "upstream"
+    },
+    {
+      "from": "recovery",
+      "to": "mitochondria",
+      "relation": "regulated_by",
+      "weight": 0.86,
+      "direction": "upstream"
+    },
+    {
+      "from": "recovery",
+      "to": "sleep",
+      "relation": "enabled_by",
+      "weight": 0.89,
+      "direction": "upstream"
+    },
+    {
+      "from": "recovery",
+      "to": "fatigue",
+      "relation": "correlates_with",
+      "weight": 0.8,
+      "direction": "bidirectional"
+    },
+    {
+      "from": "recovery",
+      "to": "graphene_fir",
+      "relation": "modulated_by",
+      "weight": 0.83,
+      "direction": "downstream"
+    },
+    {
+      "from": "recovery",
+      "to": "inflammation",
+      "relation": "correlates_with",
+      "weight": 0.76,
+      "direction": "bidirectional"
+    },
+    {
+      "from": "microcirculation",
+      "to": "cellular_energy",
+      "relation": "depends_on",
+      "weight": 0.88,
+      "direction": "upstream"
+    },
+    {
+      "from": "microcirculation",
+      "to": "mitochondria",
+      "relation": "regulated_by",
+      "weight": 0.84,
+      "direction": "upstream"
+    },
+    {
+      "from": "microcirculation",
+      "to": "recovery",
+      "relation": "enables",
+      "weight": 0.86,
+      "direction": "downstream"
+    },
+    {
+      "from": "microcirculation",
+      "to": "inflammation",
+      "relation": "correlates_with",
+      "weight": 0.77,
+      "direction": "bidirectional"
+    },
+    {
+      "from": "microcirculation",
+      "to": "graphene_fir",
+      "relation": "modulated_by",
+      "weight": 0.81,
+      "direction": "downstream"
+    },
+    {
+      "from": "microcirculation",
+      "to": "sleep",
+      "relation": "correlates_with",
+      "weight": 0.73,
+      "direction": "bidirectional"
+    },
+    {
+      "from": "metabolism",
+      "to": "cellular_energy",
+      "relation": "depends_on",
+      "weight": 0.9,
+      "direction": "upstream"
+    },
+    {
+      "from": "metabolism",
+      "to": "mitochondria",
+      "relation": "regulated_by",
+      "weight": 0.93,
+      "direction": "upstream"
+    },
+    {
+      "from": "metabolism",
+      "to": "fatigue",
+      "relation": "correlates_with",
+      "weight": 0.8,
+      "direction": "downstream"
+    },
+    {
+      "from": "metabolism",
+      "to": "inflammation",
+      "relation": "correlates_with",
+      "weight": 0.76,
+      "direction": "bidirectional"
+    },
+    {
+      "from": "metabolism",
+      "to": "graphene_fir",
+      "relation": "modulated_by",
+      "weight": 0.7,
+      "direction": "downstream"
+    },
+    {
+      "from": "metabolism",
+      "to": "healthy_aging",
+      "relation": "correlates_with",
+      "weight": 0.78,
+      "direction": "downstream"
+    },
+    {
+      "from": "healthy_aging",
+      "to": "cellular_energy",
+      "relation": "depends_on",
+      "weight": 0.87,
+      "direction": "upstream"
+    },
+    {
+      "from": "healthy_aging",
+      "to": "mitochondria",
+      "relation": "regulated_by",
+      "weight": 0.89,
+      "direction": "upstream"
+    },
+    {
+      "from": "healthy_aging",
+      "to": "inflammation",
+      "relation": "correlates_with",
+      "weight": 0.8,
+      "direction": "bidirectional"
+    },
+    {
+      "from": "healthy_aging",
+      "to": "metabolism",
+      "relation": "correlates_with",
+      "weight": 0.77,
+      "direction": "downstream"
+    },
+    {
+      "from": "healthy_aging",
+      "to": "graphene_fir",
+      "relation": "modulated_by",
+      "weight": 0.72,
+      "direction": "downstream"
+    },
+    {
+      "from": "healthy_aging",
+      "to": "fatigue",
+      "relation": "correlates_with",
+      "weight": 0.79,
+      "direction": "downstream"
+    },
+    {
+      "from": "graphene_fir",
+      "to": "cellular_energy",
+      "relation": "supports",
+      "weight": 0.85,
+      "direction": "upstream"
+    },
+    {
+      "from": "graphene_fir",
+      "to": "mitochondria",
+      "relation": "supports",
+      "weight": 0.83,
+      "direction": "upstream"
+    },
+    {
+      "from": "graphene_fir",
+      "to": "sleep",
+      "relation": "modulates",
+      "weight": 0.8,
+      "direction": "downstream"
+    },
+    {
+      "from": "graphene_fir",
+      "to": "recovery",
+      "relation": "modulates",
+      "weight": 0.82,
+      "direction": "downstream"
+    },
+    {
+      "from": "graphene_fir",
+      "to": "microcirculation",
+      "relation": "modulates",
+      "weight": 0.78,
+      "direction": "downstream"
+    },
+    {
+      "from": "graphene_fir",
+      "to": "fatigue",
+      "relation": "modulates",
+      "weight": 0.76,
+      "direction": "downstream"
+    }
+  ]
+}

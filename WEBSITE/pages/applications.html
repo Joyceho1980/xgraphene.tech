@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XIHE Applications — Clinical Deployment & Evidence | Graphene FIR Technology</title>
+    <title>XIHE Applications �?Clinical Deployment & Evidence | Graphene FIR Technology</title>
     <link rel="icon" type="image/svg+xml" href="PICTURE/XIHE_ICON.svg">
     <meta name="description" content="XIHE graphene far-infrared technology deployed across 7+ clinical partner institutions including tertiary hospitals, mental health research centers, and commercial production.">
     <meta name="keywords" content="XIHE Clinical Applications, Graphene FIR Deployment, Hospital Partnerships, Medical Infrared, Clinical Evidence, B2B Healthcare">
-    <meta property="og:title" content="XIHE Applications — Clinical Deployment & Evidence">
+    <meta property="og:title" content="XIHE Applications �?Clinical Deployment & Evidence">
     <meta property="og:description" content="XIHE graphene far-infrared technology deployed across 7+ clinical partner institutions including tertiary hospitals, mental health research centers, and commercial production.">
     <meta property="og:image" content="https://www.xgraphene.tech/PICTURE/xihe-og.jpg">
     <meta property="og:url" content="https://www.xgraphene.tech/applications/">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="XIHE Applications — Clinical Deployment & Evidence">
+    <meta name="twitter:title" content="XIHE Applications �?Clinical Deployment & Evidence">
     <meta name="twitter:description" content="XIHE graphene far-infrared technology deployed across 7+ clinical partner institutions.">
     <link rel="canonical" href="https://www.xgraphene.tech/applications/">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "XIHE Applications — Clinical Deployment & Evidence",
+        "name": "XIHE Applications �?Clinical Deployment & Evidence",
         "description": "XIHE graphene far-infrared technology deployed across 7+ clinical partner institutions including tertiary hospitals, mental health research, and commercial production.",
         "url": "https://www.xgraphene.tech/applications/",
         "about": {
@@ -138,6 +138,7 @@
             line-height: 1.8;
         }
         @media (max-width: 768px) {
+            .hero-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
             nav .container { flex-wrap: wrap; }
             nav .nav-links { gap: 12px; overflow-x: auto; -webkit-overflow-scrolling: touch; flex: 1; }
             nav .nav-links a { font-size: 9px; letter-spacing: 1px; white-space: nowrap; }
@@ -145,8 +146,117 @@
             .clinical-card { grid-template-columns: 1fr !important; gap: 24px !important; padding: 24px !important; }
             div[style*="grid-template-columns: 360px 1fr"] { grid-template-columns: 1fr !important; }
             div[style*="grid-template-columns: repeat(3, 1fr)"] { grid-template-columns: 1fr !important; }
+            .hud-visual { min-height: 280px !important; }
+        }
+        /* === Hero System UI === */
+        .hero-system {
+            position: relative; overflow: hidden;
+            background: #0B1F3B;
+            background-image: radial-gradient(ellipse at 30% 40%, rgba(59,130,246,0.08) 0%, transparent 60%);
+            min-height: 80vh; display: flex; align-items: center;
+            padding: 140px 32px 100px;
+        }
+        .hero-system::before {
+            content: ''; position: absolute; inset: 0; pointer-events: none; z-index: 0;
+            background: linear-gradient(90deg, rgba(11,31,59,0.88) 0%, rgba(11,31,59,0.55) 50%, rgba(11,31,59,0.2) 100%);
+        }
+        .hero-system::after {
+            content: ''; position: absolute; inset: 0; pointer-events: none; z-index: 0;
+            background: repeating-linear-gradient(
+                0deg, transparent, transparent 2px, rgba(100,180,255,0.04) 2px, rgba(100,180,255,0.04) 3px
+            );
+            animation: scan-down 8s linear infinite;
+        }
+        @keyframes scan-down {
+            0% { transform: translateY(-100%); }
+            100% { transform: translateY(100%); }
+        }
+        .hero-grid {
+            position: relative; z-index: 1;
+            display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+            max-width: 1200px; margin: 0 auto; width: 100%;
+        }
+        .hud-visual {
+            position: relative; width: 100%; min-height: 420px;
+            border-radius: 12px; overflow: hidden;
+            background: linear-gradient(135deg, rgba(11,31,59,0.95), rgba(22,58,95,0.7));
+            border: 1px solid rgba(100,180,255,0.12);
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            padding: 32px;
+        }
+        .hud-visual .hud-bg {
+            position: absolute; inset: 0; z-index: 0;
+            object-fit: cover; width: 100%; height: 100%;
+            filter: brightness(0.35) saturate(0.6);
+        }
+        .hud-visual > *:not(.hud-bg) { position: relative; z-index: 1; }
+        .hud-visual .hud-bg-label {
+            font-family: 'Urbanist', sans-serif; font-size: 8px; letter-spacing: 3px;
+            color: rgba(100,180,255,0.25); text-transform: uppercase; position: absolute;
+            top: 16px; left: 20px; user-select: none;
+        }
+        .hud-visual .hud-network {
+            width: 100%; max-width: 400px;
+            display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+            margin-bottom: 20px;
+        }
+        .hud-visual .hud-node {
+            padding: 14px 12px; border-radius: 6px;
+            background: rgba(100,180,255,0.05);
+            border: 1px solid rgba(100,180,255,0.12);
+            text-align: center;
+        }
+        .hud-visual .hud-node .node-icon { font-size: 18px; display: block; margin-bottom: 4px; }
+        .hud-visual .hud-node .node-label {
+            font-family: 'Urbanist', sans-serif; font-size: 8px; letter-spacing: 2px;
+            color: rgba(255,255,255,0.5); text-transform: uppercase;
+        }
+        .hud-visual .hud-node .node-value {
+            font-family: 'Urbanist', sans-serif; font-size: 22px; font-weight: 200;
+            color: #7BB8FF; letter-spacing: 1px; line-height: 1.2;
+        }
+        .hud-visual .hud-stats {
+            display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;
+        }
+        .hud-visual .hud-stat {
+            padding: 10px 18px; border-radius: 6px;
+            background: rgba(100,180,255,0.04);
+            border: 1px solid rgba(100,180,255,0.08);
+            text-align: center;
+        }
+        .hud-visual .hud-stat .stat-num {
+            font-family: 'Urbanist', sans-serif; font-size: 16px; font-weight: 300;
+            color: #7BB8FF; letter-spacing: 1px;
+        }
+        .hud-visual .hud-stat .stat-label {
+            font-family: 'Urbanist', sans-serif; font-size: 7px; letter-spacing: 2px;
+            color: rgba(255,255,255,0.4); text-transform: uppercase; margin-top: 2px;
+        }
+        .hud-visual .hud-connection-line {
+            position: absolute; inset: 0; pointer-events: none;
+            opacity: 0.08;
         }
     </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+  "@type": "ListItem",
+  "position": 1,
+  "name": "Home",
+  "item": "https://www.xgraphene.tech/"
+},
+{
+  "@type": "ListItem",
+  "position": 2,
+  "name": "Applications",
+  "item": "https://www.xgraphene.tech/applications.html"
+}
+  ]
+}
+</script>
 </head>
 <body>
     <nav>
@@ -166,21 +276,73 @@
     </nav>
 
     <main>
-        <section style="padding: 140px 10% 100px; background: #1A3348;">
-            <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
-                <p style="font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 4px; color: #C5A059; text-transform: uppercase; margin-bottom: 24px;">Clinical Deployment</p>
-                <h1 style="font-family: 'Urbanist', sans-serif; font-size: 44px; font-weight: 200; color: #FFFFFF; letter-spacing: 2px; line-height: 1.2; margin-bottom: 16px;">Applications in Clinical Deployment</h1>
-                <p style="font-size: 15px; color: rgba(255,255,255,0.7); max-width: 600px; margin: 0 auto 40px; line-height: 1.7;">XIHE graphene far-infrared technology is deployed across a verified clinical network — from tertiary hospitals to specialty research centers.</p>
-                <div style="display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-bottom: 48px;">
-                    <span style="font-size: 10px; letter-spacing: 2px; color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 50px; text-transform: uppercase;">5 Partner Hospitals</span>
-                    <span style="font-size: 10px; letter-spacing: 2px; color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 50px; text-transform: uppercase;">NMPA Class II Certified</span>
-                    <span style="font-size: 10px; letter-spacing: 2px; color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 50px; text-transform: uppercase;">7 Clinical Cases</span>
-                    <span style="font-size: 10px; letter-spacing: 2px; color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 50px; text-transform: uppercase;">560K Units Produced</span>
-                    <span style="font-size: 10px; letter-spacing: 2px; color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 8px 16px; border-radius: 50px; text-transform: uppercase;">National Standard Lead Drafter</span>
+        <section class="hero-system">
+            <div class="hero-grid">
+                <div style="text-align: left;">
+                    <p style="font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 4px; color: #C5A059; text-transform: uppercase; margin-bottom: 24px;">Clinical Deployment</p>
+                    <h1 style="font-family: 'Urbanist', sans-serif; font-size: 44px; font-weight: 200; color: #FFFFFF; letter-spacing: 2px; line-height: 1.2; margin-bottom: 16px;">Applications in Clinical Deployment</h1>
+                    <p style="font-size: 15px; color: rgba(255,255,255,0.7); max-width: 520px; line-height: 1.7; margin-bottom: 40px;">XIHE graphene far-infrared technology is deployed across a verified clinical network �?from tertiary hospitals to specialty research centers.</p>
+                    <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 40px;">
+                        <a href="#clinical-cases" style="display: inline-block; padding: 16px 32px; font-size: 11px; font-family: 'Urbanist', sans-serif; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; background: #C5A059; color: #1A3348; border-radius: 50px; font-weight: 600;">Explore Clinical Cases �?/a>
+                        <a href="/partnership" style="display: inline-block; padding: 16px 32px; font-size: 11px; font-family: 'Urbanist', sans-serif; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; background: transparent; color: #FFFFFF; border: 1px solid rgba(255,255,255,0.3); border-radius: 50px;">View Partnership Options �?/a>
+                    </div>
+                    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                        <span style="font-size: 10px; letter-spacing: 2px; color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 6px 14px; border-radius: 50px; text-transform: uppercase;">5 Partner Hospitals</span>
+                        <span style="font-size: 10px; letter-spacing: 2px; color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 6px 14px; border-radius: 50px; text-transform: uppercase;">NMPA Class II Certified</span>
+                        <span style="font-size: 10px; letter-spacing: 2px; color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 6px 14px; border-radius: 50px; text-transform: uppercase;">7 Clinical Cases</span>
+                        <span style="font-size: 10px; letter-spacing: 2px; color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 6px 14px; border-radius: 50px; text-transform: uppercase;">560K Units Produced</span>
+                        <span style="font-size: 10px; letter-spacing: 2px; color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); padding: 6px 14px; border-radius: 50px; text-transform: uppercase;">National Standard Lead Drafter</span>
+                    </div>
                 </div>
-                <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
-                    <a href="#clinical-cases" style="display: inline-block; padding: 16px 32px; font-size: 11px; font-family: 'Urbanist', sans-serif; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; background: #C5A059; color: #1A3348; border-radius: 50px; font-weight: 600;">Explore Clinical Cases ↓</a>
-                    <a href="partnership.html" style="display: inline-block; padding: 16px 32px; font-size: 11px; font-family: 'Urbanist', sans-serif; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; background: transparent; color: #FFFFFF; border: 1px solid rgba(255,255,255,0.3); border-radius: 50px;">View Partnership Options →</a>
+                <div class="hud-visual">
+                    <img class="hud-bg" src="../../VISUAL-LIBRARY/application hero.jpg" alt="Clinical deployment environment" loading="lazy">
+                    <span class="hud-bg-label">Clinical Deployment System �?Live View</span>
+                    <div class="hud-network">
+                        <div class="hud-node">
+                            <span class="node-icon">🏥</span>
+                            <span class="node-value">5</span>
+                            <span class="node-label">Partner Hospitals</span>
+                        </div>
+                        <div class="hud-node">
+                            <span class="node-icon">📋</span>
+                            <span class="node-value">7</span>
+                            <span class="node-label">Clinical Cases</span>
+                        </div>
+                        <div class="hud-node">
+                            <span class="node-icon">📜</span>
+                            <span class="node-value">NMPA</span>
+                            <span class="node-label">Class II Certified</span>
+                        </div>
+                        <div class="hud-node">
+                            <span class="node-icon">🏆</span>
+                            <span class="node-value">560K</span>
+                            <span class="node-label">Units Produced</span>
+                        </div>
+                    </div>
+                    <div class="hud-stats">
+                        <div class="hud-stat">
+                            <span class="stat-num">18</span>
+                            <span class="stat-label">SCI Papers</span>
+                        </div>
+                        <div class="hud-stat">
+                            <span class="stat-num">40+</span>
+                            <span class="stat-label">Patents</span>
+                        </div>
+                        <div class="hud-stat">
+                            <span class="stat-num">68%</span>
+                            <span class="stat-label">FIR Efficiency</span>
+                        </div>
+                        <div class="hud-stat">
+                            <span class="stat-num">9.4μm</span>
+                            <span class="stat-label">Peak Resonance</span>
+                        </div>
+                    </div>
+                    <svg class="hud-connection-line" viewBox="0 0 400 300" preserveAspectRatio="none">
+                        <line x1="0" y1="0" x2="400" y2="300" stroke="#7BB8FF" stroke-width="0.5"/>
+                        <line x1="400" y1="0" x2="0" y2="300" stroke="#7BB8FF" stroke-width="0.5"/>
+                        <line x1="200" y1="0" x2="200" y2="300" stroke="#7BB8FF" stroke-width="0.3"/>
+                        <line x1="0" y1="150" x2="400" y2="150" stroke="#7BB8FF" stroke-width="0.3"/>
+                    </svg>
                 </div>
             </div>
         </section>
@@ -226,88 +388,79 @@
             <div style="max-width: 900px; margin: 0 auto;">
                 <p style="font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 4px; color: #C5A059; text-transform: uppercase; text-align: center; margin-bottom: 12px;">Evidence Layer</p>
                 <h2 style="font-family: 'Urbanist', sans-serif; font-size: 36px; font-weight: 200; color: #1A3348; letter-spacing: 2px; text-align: center; margin-bottom: 16px;">Clinical Deployment Cases</h2>
-                <p style="font-size: 15px; color: #475569; text-align: center; margin-bottom: 60px;">Verified collaborations with research institutions and hospitals — each case includes source links and photo documentation.</p>
+                <p style="font-size: 15px; color: #475569; text-align: center; margin-bottom: 60px;">Verified collaborations with research institutions and hospitals �?each case includes source links and photo documentation.</p>
 
                 <div style="display: grid; grid-template-columns: 360px 1fr; gap: 36px; align-items: start; padding: 36px; background: #FFFFFF; border: 1px solid rgba(197,160,89,0.12); border-radius: 10px; margin-bottom: 48px;">
-                    <div style="width: 100%; aspect-ratio: 3/2; background: #1A3348; border: 1px dashed rgba(197,160,89,0.4); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 20px; text-align: center;">
-                        <span style="font-size: 28px;">📸</span>
-                        <p style="font-size: 11px; color: #C5A059; letter-spacing: 1px; font-family: 'Urbanist', sans-serif; text-transform: uppercase; line-height: 1.5;">Photo: Xiamen TCM Hospital<br>Joint Research Center Signing Ceremony</p>
-                        <p style="font-size: 9px; color: rgba(255,255,255,0.4); letter-spacing: 0.5px;">Photo documentation coming soon</p>
+                    <div style="width: 100%; aspect-ratio: 3/2; border-radius: 8px; overflow: hidden; background: #1A3348;">
+                        <img src="PICTURE/images/tcm-hospital.jpg" alt="Xiamen Traditional Chinese Medicine Hospital �?Joint Research Center signing ceremony with Academician Zheng Nanfeng and President Pei Xiaohua" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" width="540" height="360">
                     </div>
                     <div>
                         <h3 style="font-family: 'Urbanist', sans-serif; font-size: 18px; font-weight: 400; color: #1A1D24; letter-spacing: 1px; margin-bottom: 4px;">🏥 Xiamen Traditional Chinese Medicine Hospital</h3>
                         <p style="font-size: 10px; letter-spacing: 2px; color: #C5A059; text-transform: uppercase; font-family: 'Urbanist', sans-serif; margin-bottom: 12px;">Joint Research Center</p>
                         <p style="font-size: 14px; color: #475569; line-height: 1.7; margin-bottom: 16px;">Co-established the 'Medical Bioenergetic Materials Joint Research Center' with Xiamen University. Signed by Academician Zheng Nanfeng and President Pei Xiaohua. Witnessed by Xiamen Science & Technology Bureau and Health Commission.</p>
                         <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-                            <a href="http://www.ikkem.com/newsshow.php?cid=48&id=1028" target="_blank" style="font-size: 10px; letter-spacing: 1.5px; color: #1A365D; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px; font-family: 'Urbanist', sans-serif;">Source →</a>
-                            <a href="/SCIENCE/KNOWLEDGE/Clinical-Evidence/" style="font-size: 10px; letter-spacing: 1.5px; color: #1A365D; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px; font-family: 'Urbanist', sans-serif;">Related Hub →</a>
+                            <a href="http://www.ikkem.com/newsshow.php?cid=48&id=1028" target="_blank" style="font-size: 10px; letter-spacing: 1.5px; color: #1A365D; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px; font-family: 'Urbanist', sans-serif;">Source �?/a>
+                            <a href="/SCIENCE/KNOWLEDGE/Clinical-Evidence/" style="font-size: 10px; letter-spacing: 1.5px; color: #1A365D; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px; font-family: 'Urbanist', sans-serif;">Related Hub �?/a>
                         </div>
                     </div>
                 </div>
 
                 <div style="display: grid; grid-template-columns: 360px 1fr; gap: 36px; align-items: start; padding: 36px; background: #FFFFFF; border: 1px solid rgba(197,160,89,0.12); border-radius: 10px; margin-bottom: 48px;">
-                    <div style="width: 100%; aspect-ratio: 3/2; background: #1A3348; border: 1px dashed rgba(197,160,89,0.4); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 20px; text-align: center;">
-                        <span style="font-size: 28px;">📸</span>
-                        <p style="font-size: 11px; color: #C5A059; letter-spacing: 1px; font-family: 'Urbanist', sans-serif; text-transform: uppercase; line-height: 1.5;">Photo: Xiamen Xianyue Hospital<br>Academician Zheng Nanfeng Keynote</p>
-                        <p style="font-size: 9px; color: rgba(255,255,255,0.4); letter-spacing: 0.5px;">Photo documentation coming soon</p>
+                    <div style="width: 100%; aspect-ratio: 3/2; border-radius: 8px; overflow: hidden; background: #1A3348;">
+                        <img src="PICTURE/images/xianyue-hospital.jpg" alt="Xiamen Xianyue Hospital �?Academician Zheng Nanfeng delivering keynote academic report at graphene FIR clinical research launch" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" width="540" height="360">
                     </div>
                     <div>
                         <h3 style="font-family: 'Urbanist', sans-serif; font-size: 18px; font-weight: 400; color: #1A1D24; letter-spacing: 1px; margin-bottom: 4px;">🏥 Xiamen Xianyue Hospital (Mental Health Center)</h3>
+
                         <p style="font-size: 10px; letter-spacing: 2px; color: #C5A059; text-transform: uppercase; font-family: 'Urbanist', sans-serif; margin-bottom: 12px;">Neuropsychiatric Research</p>
                         <p style="font-size: 14px; color: #475569; line-height: 1.7; margin-bottom: 16px;">Graphene FIR clinical research on depression, anxiety, and insomnia. Academician Zheng Nanfeng delivered a keynote academic report (April 2026 launch).</p>
                         <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-                            <a href="https://news.xmu.edu.cn/info/1003/2391.htm" target="_blank" style="font-size: 10px; letter-spacing: 1.5px; color: #1A365D; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px; font-family: 'Urbanist', sans-serif;">Source 1 →</a>
-                            <a href="http://www.graphene.tv/2023041390083/" target="_blank" style="font-size: 10px; letter-spacing: 1.5px; color: #1A365D; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px; font-family: 'Urbanist', sans-serif;">Source 2 →</a>
-                            <a href="/SCIENCE/KNOWLEDGE/Sleep/" style="font-size: 10px; letter-spacing: 1.5px; color: #1A365D; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px; font-family: 'Urbanist', sans-serif;">Related Hub →</a>
+                            <a href="https://news.xmu.edu.cn/info/1003/2391.htm" target="_blank" style="font-size: 10px; letter-spacing: 1.5px; color: #1A365D; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px; font-family: 'Urbanist', sans-serif;">Source 1 �?/a>
+                            <a href="http://www.graphene.tv/2023041390083/" target="_blank" style="font-size: 10px; letter-spacing: 1.5px; color: #1A365D; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px; font-family: 'Urbanist', sans-serif;">Source 2 �?/a>
+                            <a href="/SCIENCE/KNOWLEDGE/Sleep/" style="font-size: 10px; letter-spacing: 1.5px; color: #1A365D; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px; font-family: 'Urbanist', sans-serif;">Related Hub �?/a>
                         </div>
                     </div>
                 </div>
 
                 <div style="display: grid; grid-template-columns: 360px 1fr; gap: 36px; align-items: start; padding: 36px; background: #FFFFFF; border: 1px solid rgba(197,160,89,0.12); border-radius: 10px; margin-bottom: 48px;">
-                    <div style="width: 100%; aspect-ratio: 3/2; background: #1A3348; border: 1px dashed rgba(197,160,89,0.4); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 20px; text-align: center;">
-                        <span style="font-size: 28px;">📸</span>
-                        <p style="font-size: 11px; color: #C5A059; letter-spacing: 1px; font-family: 'Urbanist', sans-serif; text-transform: uppercase; line-height: 1.5;">Photo: Multi-Center Clinical Trial Sites<br>Xiamen</p>
-                        <p style="font-size: 9px; color: rgba(255,255,255,0.4); letter-spacing: 0.5px;">Photo documentation coming soon</p>
+                    <div style="width: 100%; aspect-ratio: 3/2; border-radius: 8px; overflow: hidden; background: #1A3348;">
+                        <img src="PICTURE/images/tertiary-hospitals.jpg" alt="Multi-center clinical trial sites �?5 tertiary hospitals participating in XIHE graphene FIR clinical evaluation programs" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" width="540" height="360">
                     </div>
                     <div>
                         <h3 style="font-family: 'Urbanist', sans-serif; font-size: 18px; font-weight: 400; color: #1A1D24; letter-spacing: 1px; margin-bottom: 4px;">🏥 5 Tertiary Hospitals</h3>
                         <p style="font-size: 10px; letter-spacing: 2px; color: #C5A059; text-transform: uppercase; font-family: 'Urbanist', sans-serif; margin-bottom: 12px;">Multi-Center Clinical Trials</p>
                         <p style="font-size: 14px; color: #475569; line-height: 1.7; margin-bottom: 16px;">Multi-center clinical evaluation programs. Directions: TCM physiotherapy, post-surgical rehabilitation, pediatric vision recovery. Ongoing cohort studies. <span style="color: #9CA3AF;">Ongoing multi-center programs</span></p>
                         <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-                            <a href="/SCIENCE/KNOWLEDGE/Clinical-Evidence/" style="font-size: 10px; letter-spacing: 1.5px; color: #1A365D; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px; font-family: 'Urbanist', sans-serif;">Related Hub →</a>
+                            <a href="/SCIENCE/KNOWLEDGE/Clinical-Evidence/" style="font-size: 10px; letter-spacing: 1.5px; color: #1A365D; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px; font-family: 'Urbanist', sans-serif;">Related Hub �?/a>
                         </div>
                     </div>
                 </div>
 
                 <div style="display: grid; grid-template-columns: 360px 1fr; gap: 36px; align-items: start; padding: 36px; background: #FFFFFF; border: 1px solid rgba(197,160,89,0.12); border-radius: 10px; margin-bottom: 48px;">
-                    <div style="width: 100%; aspect-ratio: 3/2; background: #1A3348; border: 1px dashed rgba(197,160,89,0.4); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 20px; text-align: center;">
-                        <span style="font-size: 28px;">📸</span>
-                        <p style="font-size: 11px; color: #C5A059; letter-spacing: 1px; font-family: 'Urbanist', sans-serif; text-transform: uppercase; line-height: 1.5;">Photo: Zhongshan Hospital<br>Wuhan COVID-19 Emergency Support</p>
-                        <p style="font-size: 9px; color: rgba(255,255,255,0.4); letter-spacing: 0.5px;">Photo documentation coming soon</p>
+                    <div style="width: 100%; aspect-ratio: 3/2; border-radius: 8px; overflow: hidden; background: #1A3348;">
+                        <img src="PICTURE/images/zhongshan-hospital.png" alt="Zhongshan Hospital �?XIHE donated graphene medical equipment to Xiamen medical team assisting Wuhan during COVID-19 pandemic" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" width="540" height="360">
                     </div>
                     <div>
                         <h3 style="font-family: 'Urbanist', sans-serif; font-size: 18px; font-weight: 400; color: #1A1D24; letter-spacing: 1px; margin-bottom: 4px;">🏥 Zhongshan Hospital</h3>
                         <p style="font-size: 10px; letter-spacing: 2px; color: #C5A059; text-transform: uppercase; font-family: 'Urbanist', sans-serif; margin-bottom: 12px;">Emergency Support (Wuhan)</p>
                         <p style="font-size: 14px; color: #475569; line-height: 1.7; margin-bottom: 16px;">XIHE donated graphene waist wraps and heated mattress pads to the Xiamen medical team assisting Wuhan during COVID-19. Demonstrated rapid deployment capability in crisis scenarios.</p>
                         <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-                            <a href="https://news.xmu.edu.cn/info/1003/2391.htm" target="_blank" style="font-size: 10px; letter-spacing: 1.5px; color: #1A365D; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px; font-family: 'Urbanist', sans-serif;">Source →</a>
+                            <a href="https://news.xmu.edu.cn/info/1003/2391.htm" target="_blank" style="font-size: 10px; letter-spacing: 1.5px; color: #1A365D; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px; font-family: 'Urbanist', sans-serif;">Source �?/a>
                         </div>
                     </div>
                 </div>
 
                 <div style="display: grid; grid-template-columns: 360px 1fr; gap: 36px; align-items: start; padding: 36px; background: #FFFFFF; border: 1px solid rgba(197,160,89,0.12); border-radius: 10px; margin-bottom: 48px;">
-                    <div style="width: 100%; aspect-ratio: 3/2; background: #1A3348; border: 1px dashed rgba(197,160,89,0.4); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 20px; text-align: center;">
-                        <span style="font-size: 28px;">📸</span>
-                        <p style="font-size: 11px; color: #C5A059; letter-spacing: 1px; font-family: 'Urbanist', sans-serif; text-transform: uppercase; line-height: 1.5;">Photo: Chengdu Weishen Eye Hospital<br>Pediatric Vision Trial</p>
-                        <p style="font-size: 9px; color: rgba(255,255,255,0.4); letter-spacing: 0.5px;">Photo documentation coming soon</p>
+                    <div style="width: 100%; aspect-ratio: 3/2; border-radius: 8px; overflow: hidden; background: #1A3348;">
+                        <img src="PICTURE/images/weishen-hospital.jpg" alt="Chengdu Xinjin Weishen Ophthalmology Hospital �?pediatric vision recovery clinical trial with graphene eye mask" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" width="540" height="360">
                     </div>
                     <div>
                         <h3 style="font-family: 'Urbanist', sans-serif; font-size: 18px; font-weight: 400; color: #1A1D24; letter-spacing: 1px; margin-bottom: 4px;">🏥 Chengdu Xinjin Weishen Ophthalmology Hospital</h3>
                         <p style="font-size: 10px; letter-spacing: 2px; color: #C5A059; text-transform: uppercase; font-family: 'Urbanist', sans-serif; margin-bottom: 12px;">Pediatric Vision Recovery</p>
                         <p style="font-size: 14px; color: #475569; line-height: 1.7; margin-bottom: 16px;">Graphene eye mask for adolescent vision recovery trial. Exploring non-pharmaceutical support for pediatric eye health.</p>
                         <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-                            <span style="font-size: 10px; letter-spacing: 1px; color: #9CA3AF; font-style: italic;">Ongoing clinical program — documentation pending</span>
-                            <a href="/SCIENCE/KNOWLEDGE/Clinical-Evidence/" style="font-size: 10px; letter-spacing: 1.5px; color: #1A365D; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px; font-family: 'Urbanist', sans-serif;">Related Hub →</a>
+                            <span style="font-size: 10px; letter-spacing: 1px; color: #9CA3AF; font-style: italic;">Ongoing clinical program �?documentation pending</span>
+                            <a href="/SCIENCE/KNOWLEDGE/Clinical-Evidence/" style="font-size: 10px; letter-spacing: 1.5px; color: #1A365D; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px; font-family: 'Urbanist', sans-serif;">Related Hub �?/a>
                         </div>
                     </div>
                 </div>
@@ -323,23 +476,21 @@
                         <p style="font-size: 10px; letter-spacing: 2px; color: #C5A059; text-transform: uppercase; font-family: 'Urbanist', sans-serif; margin-bottom: 12px;">Clinical Observation Study</p>
                         <p style="font-size: 14px; color: #475569; line-height: 1.7; margin-bottom: 16px;">Clinical observation study on XIHE's graphene heating pad. Published research outcomes on comfort and mobility recovery. Peer-reviewed publication.</p>
                         <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-                            <a href="/SCIENCE/KNOWLEDGE/Clinical-Evidence/pku-clinical-trial.html" style="font-size: 10px; letter-spacing: 1.5px; color: #1A365D; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px; font-family: 'Urbanist', sans-serif;">Related Hub →</a>
+                            <a href="/SCIENCE/KNOWLEDGE/Clinical-Evidence/pku-clinical-trial.html" style="font-size: 10px; letter-spacing: 1.5px; color: #1A365D; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px; font-family: 'Urbanist', sans-serif;">Related Hub �?/a>
                         </div>
                     </div>
                 </div>
 
                 <div style="display: grid; grid-template-columns: 360px 1fr; gap: 36px; align-items: start; padding: 36px; background: #FFFFFF; border: 1px solid rgba(197,160,89,0.12); border-radius: 10px;">
-                    <div style="width: 100%; aspect-ratio: 3/2; background: #1A3348; border: 1px dashed rgba(197,160,89,0.4); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 20px; text-align: center;">
-                        <span style="font-size: 28px;">📸</span>
-                        <p style="font-size: 11px; color: #C5A059; letter-spacing: 1px; font-family: 'Urbanist', sans-serif; text-transform: uppercase; line-height: 1.5;">Photo: Medical Engineering Forum<br>XIHE Production Line Tour</p>
-                        <p style="font-size: 9px; color: rgba(255,255,255,0.4); letter-spacing: 0.5px;">Photo documentation coming soon</p>
+                    <div style="width: 100%; aspect-ratio: 3/2; border-radius: 8px; overflow: hidden; background: #1A3348;">
+                        <img src="PICTURE/images/medical-forum.jpg" alt="2023 Medical Engineering Cross-Discipline Forum �?medical experts touring XIHE production line" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy" width="540" height="360">
                     </div>
                     <div>
                         <h3 style="font-family: 'Urbanist', sans-serif; font-size: 18px; font-weight: 400; color: #1A1D24; letter-spacing: 1px; margin-bottom: 4px;">🏥 2023 Medical Engineering Cross-Discipline Forum</h3>
                         <p style="font-size: 10px; letter-spacing: 2px; color: #C5A059; text-transform: uppercase; font-family: 'Urbanist', sans-serif; margin-bottom: 12px;">Industry-Academia Collaboration</p>
                         <p style="font-size: 14px; color: #475569; line-height: 1.7; margin-bottom: 16px;">Medical experts from Xiamen University Medical School and 5 partner hospitals toured XIHE production line. Key bridge between clinical research and manufacturing.</p>
                         <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-                            <a href="http://www.graphene.tv/2023041390083/" target="_blank" style="font-size: 10px; letter-spacing: 1.5px; color: #1A365D; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px; font-family: 'Urbanist', sans-serif;">Source →</a>
+                            <a href="http://www.graphene.tv/2023041390083/" target="_blank" style="font-size: 10px; letter-spacing: 1.5px; color: #1A365D; text-decoration: none; text-transform: uppercase; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px; font-family: 'Urbanist', sans-serif;">Source �?/a>
                         </div>
                     </div>
                 </div>
@@ -350,12 +501,12 @@
             <div style="max-width: 1100px; margin: 0 auto;">
                 <p style="font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 4px; color: #C5A059; text-transform: uppercase; text-align: center; margin-bottom: 12px;">Commercial Scale</p>
                 <h2 style="font-family: 'Urbanist', sans-serif; font-size: 36px; font-weight: 200; color: #1A3348; letter-spacing: 2px; text-align: center; margin-bottom: 16px;">Commercial & Industrial Deployment</h2>
-                <p style="font-size: 15px; color: #475569; text-align: center; margin-bottom: 60px;">Beyond clinical research — tangible products in the market.</p>
+                <p style="font-size: 15px; color: #475569; text-align: center; margin-bottom: 60px;">Beyond clinical research �?tangible products in the market.</p>
 
                 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px;">
                     <div style="background: #FAF8F5; border-radius: 10px; padding: 36px 28px; text-align: center;">
                         <span style="font-size: 36px; margin-bottom: 16px; display: block;">🏆</span>
-                        <h3 style="font-family: 'Urbanist', sans-serif; font-size: 16px; font-weight: 500; color: #1A3348; letter-spacing: 1px; margin-bottom: 12px;">Anta Group — 560,000 Units</h3>
+                        <h3 style="font-family: 'Urbanist', sans-serif; font-size: 16px; font-weight: 500; color: #1A3348; letter-spacing: 1px; margin-bottom: 12px;">Anta Group �?560,000 Units</h3>
                         <p style="font-size: 13px; color: #475569; line-height: 1.7;">2019 'Heat Technology' series down jackets. FIR emissivity: 0.94 (exceeds national standard 0.88). Largest-scale graphene FIR application globally. <span style="color: #9CA3AF;">Supply chain verified</span></p>
                     </div>
                     <div style="background: #FAF8F5; border-radius: 10px; padding: 36px 28px; text-align: center;">
@@ -371,7 +522,7 @@
                     <div style="background: #FAF8F5; border-radius: 10px; padding: 36px 28px; text-align: center;">
                         <span style="font-size: 36px; margin-bottom: 16px; display: block;">🏭</span>
                         <h3 style="font-family: 'Urbanist', sans-serif; font-size: 16px; font-weight: 500; color: #1A3348; letter-spacing: 1px; margin-bottom: 12px;">5,000m²+ Daily Production</h3>
-                        <p style="font-size: 13px; color: #475569; line-height: 1.7;">Full vertical integration: graphene synthesis → slurry → film → finished product. Fully automated printing line. GMP-ready environment.</p>
+                        <p style="font-size: 13px; color: #475569; line-height: 1.7;">Full vertical integration: graphene synthesis �?slurry �?film �?finished product. Fully automated printing line. GMP-ready environment.</p>
                     </div>
                 </div>
             </div>
@@ -388,19 +539,19 @@
                         <span style="font-size: 40px; margin-bottom: 16px; display: block;">🏥</span>
                         <h3 style="font-family: 'Urbanist', sans-serif; font-size: 16px; font-weight: 500; color: #1A3348; letter-spacing: 1px; margin-bottom: 8px;">Clinical & Rehab</h3>
                         <p style="font-size: 13px; color: #475569; line-height: 1.6; margin-bottom: 20px;">Hospitals, rehab centers, physiotherapy. NMPA-certified.</p>
-                        <a href="PRODUCTS/ProductPage.html" style="font-size: 10px; letter-spacing: 2px; color: #C5A059; text-decoration: none; text-transform: uppercase; font-family: 'Urbanist', sans-serif; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px;">View Products →</a>
+                        <a href="PRODUCTS/ProductPage.html" style="font-size: 10px; letter-spacing: 2px; color: #C5A059; text-decoration: none; text-transform: uppercase; font-family: 'Urbanist', sans-serif; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px;">View Products �?/a>
                     </div>
                     <div style="background: #FFFFFF; border: 1px solid rgba(197,160,89,0.1); border-radius: 10px; padding: 40px 28px; text-align: center;">
-                        <span style="font-size: 40px; margin-bottom: 16px; display: block;">🏋️</span>
+                        <span style="font-size: 40px; margin-bottom: 16px; display: block;">🏋�?/span>
                         <h3 style="font-family: 'Urbanist', sans-serif; font-size: 16px; font-weight: 500; color: #1A3348; letter-spacing: 1px; margin-bottom: 8px;">Professional Sports</h3>
                         <p style="font-size: 13px; color: #475569; line-height: 1.6; margin-bottom: 20px;">Athlete recovery, pre-competition preparation, post-training support.</p>
-                        <a href="PRODUCTS/CAPSULE/capsule-b2b.html" style="font-size: 10px; letter-spacing: 2px; color: #C5A059; text-decoration: none; text-transform: uppercase; font-family: 'Urbanist', sans-serif; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px;">Explore Sports Solutions →</a>
+                        <a href="PRODUCTS/CAPSULE/capsule-b2b.html" style="font-size: 10px; letter-spacing: 2px; color: #C5A059; text-decoration: none; text-transform: uppercase; font-family: 'Urbanist', sans-serif; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px;">Explore Sports Solutions �?/a>
                     </div>
                     <div style="background: #FFFFFF; border: 1px solid rgba(197,160,89,0.1); border-radius: 10px; padding: 40px 28px; text-align: center;">
                         <span style="font-size: 40px; margin-bottom: 16px; display: block;">⚙️</span>
                         <h3 style="font-family: 'Urbanist', sans-serif; font-size: 16px; font-weight: 500; color: #1A3348; letter-spacing: 1px; margin-bottom: 8px;">OEM Integration</h3>
                         <p style="font-size: 13px; color: #475569; line-height: 1.6; margin-bottom: 20px;">Embed XIHE graphene modules into your products. Full OEM/JDM support.</p>
-                        <a href="partnership.html" style="font-size: 10px; letter-spacing: 2px; color: #C5A059; text-decoration: none; text-transform: uppercase; font-family: 'Urbanist', sans-serif; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px;">Partner With Us →</a>
+                        <a href="partnership.html" style="font-size: 10px; letter-spacing: 2px; color: #C5A059; text-decoration: none; text-transform: uppercase; font-family: 'Urbanist', sans-serif; border-bottom: 1px solid rgba(197,160,89,0.3); padding-bottom: 2px;">Partner With Us �?/a>
                     </div>
                 </div>
             </div>
@@ -413,7 +564,7 @@
                 <p style="font-size: 15px; color: rgba(255,255,255,0.7); margin-bottom: 40px;">Contact our team for technical specifications, clinical evidence packages, and pilot program information.</p>
                 <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 32px;">
                     <a href="#" style="display: inline-block; padding: 16px 32px; font-size: 11px; font-family: 'Urbanist', sans-serif; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; background: #C5A059; color: #1A3348; border-radius: 50px; font-weight: 600;">Request Technical Dossier</a>
-                    <a href="CONTACT/index.html" style="display: inline-block; padding: 16px 32px; font-size: 11px; font-family: 'Urbanist', sans-serif; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; background: transparent; color: #FFFFFF; border: 1px solid rgba(255,255,255,0.3); border-radius: 50px;">Contact Our Team →</a>
+                    <a href="CONTACT/index.html" style="display: inline-block; padding: 16px 32px; font-size: 11px; font-family: 'Urbanist', sans-serif; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; background: transparent; color: #FFFFFF; border: 1px solid rgba(255,255,255,0.3); border-radius: 50px;">Contact Our Team �?/a>
                 </div>
                 <p style="font-size: 13px; color: rgba(255,255,255,0.5);">
                     Contact: <a href="mailto:Joyce@xgraphene.tech" style="color: #C5A059; text-decoration: none;">Joyce@xgraphene.tech</a> | <a href="tel:0086-18688683865" style="color: #C5A059; text-decoration: none;">+86 186 8868 3865</a>
@@ -427,7 +578,7 @@
     </section>
 
     <section class="xihe-footer">
-        <p>XIHE Technology — Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard 2024-0923T-YB</p>
+        <p>XIHE Technology �?Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard 2024-0923T-YB</p>
     </section>
 
     <script>

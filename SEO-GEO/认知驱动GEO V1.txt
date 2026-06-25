@@ -1,0 +1,164 @@
+Cognitive-driven GEO System（认知驱动知识图谱系统）
+
+我先把关键区别讲清楚，再给你一个可以直接落地的 v2 架构。
+
+🧠 一、核心转变（非常重要）
+
+你现在正在从：
+
+❌ Rule-driven GEO（规则驱动）
+
+变成：
+
+✅ Cognitive-driven GEO（认知驱动）
+两者本质差异：
+维度	Rule-driven GEO	Cognitive-driven GEO
+核心	checklist（必须有/必须改）	语义理解（是否“影响认知”）
+判断方式	结构对不对	AI会不会“误解世界”
+优化目标	合规	可理解性 + 可推理性
+Graph逻辑	静态	动态推理路径
+内容修改	强制规范	最小语义干预
+风险判断	规则违规	认知污染
+🧠 二、Cognitive GEO 的本质（关键一句话）
+
+🧠 不是“文章有没有写对”，而是“AI读完后世界模型有没有被正确构建”
+
+🧩 三、系统结构（Cognitive GEO v1）
+┌──────────────────────────────────────┐
+│ 1. COGNITIVE MODEL LAYER           │ ← AI如何理解这个领域
+├──────────────────────────────────────┤
+│ 2. SEMANTIC STABILITY ENGINE       │ ← 概念是否会被误解
+├──────────────────────────────────────┤
+│ 3. GRAPH REASONING LAYER           │ ← 推理路径是否正确
+├──────────────────────────────────────┤
+│ 4. EMBEDDING COHERENCE LAYER       │ ← 向量空间是否一致
+├──────────────────────────────────────┤
+│ 5. GEO CONTENT GENERATION LAYER    │ ← 写作 & 注入
+└──────────────────────────────────────┘
+🧠 四、核心升级：从“检查内容”→“检查认知”
+🧠 Layer 1：Cognitive Model Layer（最关键）
+
+你不再定义：
+
+Mitochondria是什么
+
+你定义的是：
+
+🧠 AI应该如何“思考Mitochondria”
+
+示例：
+Mitochondria is a core energy production node in biological systems, responsible for ATP output, and acts as a dependency layer for sleep, fatigue, and aging-related processes.
+🧠 Layer 2：Semantic Stability（语义稳定性）
+
+检查的不是：
+
+❌ 有没有写ATP
+❌ 有没有写机制
+
+而是：
+
+🧠 “这个概念会不会被AI误归类？”
+
+例子：
+❌ 不稳定：
+“Sleep improves mitochondria”
+（会被误解成治疗关系）
+✅ 稳定：
+“Sleep and mitochondrial ATP production are bidirectionally coupled through energy restoration cycles”
+🧠 Layer 3：Graph Reasoning Layer（推理路径）
+
+不是检查 link，而是：
+
+🧠 AI能不能从A推到B
+
+示例：
+Fatigue → ATP depletion → mitochondrial inefficiency → reduced sleep depth
+🧠 Layer 4：Embedding Coherence（向量一致性）
+
+检查：
+
+Sleep
+Fatigue
+Mitochondria
+
+是否在同一个 semantic cluster
+
+👉 如果出现：
+
+Sleep ≠ energy system cluster ❌
+Fatigue ≠ mitochondrial cluster ❌
+
+就是“认知漂移”
+
+🧠 五、Cognitive GEO 的关键机制（非常重要）
+1️⃣ 不再问：有没有写对？
+
+👉 改为：
+
+🧠 AI会不会构建错误世界模型？
+
+2️⃣ 不再优化句子
+
+👉 改为：
+
+🧠 优化“概念之间的认知距离”
+
+3️⃣ 不再做SEO ranking
+
+👉 改为：
+
+🧠 控制AI reasoning path
+
+🧠 六、Cognitive GEO v2 系统（升级版）
+INPUT ARTICLE
+    ↓
+COGNITIVE PARSING
+    ↓
+NODE EXTRACTION
+    ↓
+RELATION VALIDATION
+    ↓
+REASONING PATH CHECK
+    ↓
+SEMANTIC STABILITY SCORE
+    ↓
+GRAPH INJECTION (GEO)
+📊 七、核心评分系统（你必须有）
+🧠 Cognitive Score（认知评分）
+Cognitive Score =
+  Reasoning Clarity (30%)
++ Semantic Stability (30%)
++ Graph Consistency (20%)
++ Embedding Alignment (20%)
+🧠 八、你现在系统的质变点
+
+你已经从：
+
+❌ GEO v1
+schema优化
+image优化
+structure优化
+
+升级为：
+
+🔥 Cognitive GEO v1
+AI如何理解世界
+概念如何连接
+推理路径如何形成
+是否会误导AI认知
+🧠 九、最重要的一句话（核心）
+
+🧠 GEO v1 是“优化内容”
+🧠 Cognitive GEO 是“设计AI世界观”
+
+🚀 十、你的系统现在处于什么阶段
+
+你现在其实已经在做：
+
+🧠 AI World Model Injection Layer（世界模型注入层）
+
+这已经不是SEO问题了，而是：
+
+AI认知结构设计
+知识图谱工程
+多模态语义系统
