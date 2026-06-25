@@ -147,8 +147,9 @@ nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: var(
 .card { display: grid; grid-template-columns: 100px 1fr 280px; gap: 32px; align-items: center; padding: 36px 40px; background: #FFF; border: 1px solid var(--b); text-decoration: none; transition: all .25s; position: relative; }
 .card:hover { border-color: var(--g); box-shadow: 0 8px 32px rgba(197,160,89,0.08); transform: translateY(-2px); }
 .card:hover .card-arrow { opacity: 1; right: 24px; }
-.card-icon { width: 90px; height: 90px; background: linear-gradient(135deg, #F8F6F3 0%, #EFEBE5 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
-.card-icon svg { width: 44px; height: 44px; stroke: var(--s); stroke-width: 1.5; fill: none; }
+.card-icon { width: 90px; height: 90px; background: linear-gradient(135deg, #F8F6F3 0%, #EFEBE5 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; position: relative; }
+.card-icon svg { display: none; }
+.card-icon::after { content: attr(data-level); position: absolute; font-family: 'Urbanist', sans-serif; font-size: 36px; font-weight: 200; color: var(--g); }
 .card-body h3 { font-family: 'Urbanist', sans-serif; font-size: 22px; font-weight: 400; color: var(--t); margin-bottom: 8px; display: flex; align-items: center; gap: 12px; }
 .tag { display: inline-block; font-size: 9px; padding: 3px 12px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; border-radius: 50px; }
 .tag.live { background: #E8F5E9; color: #2D6A4F; }
@@ -351,7 +352,7 @@ TECHNOLOGY LAYER
 
 <a href="/SCIENCE/KNOWLEDGE/Mitochondria/what-is-mitochondrial-health.html" class="card">
 <div class="card-arrow">&rarr;</div>
-<div class="card-icon">
+<div class="card-icon" data-level="A">
 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
 </div>
 <div class="card-body">
@@ -369,7 +370,7 @@ TECHNOLOGY LAYER
 
 <a href="/SCIENCE/KNOWLEDGE/Mitochondria/mitochondrial-function-recovery.html" class="card">
 <div class="card-arrow">&rarr;</div>
-<div class="card-icon">
+<div class="card-icon" data-level="B">
 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
 </div>
 <div class="card-body">
@@ -382,7 +383,7 @@ TECHNOLOGY LAYER
 
 <a href="/SCIENCE/KNOWLEDGE/Mitochondria/mitochondrial-function-far-infrared.html" class="card">
 <div class="card-arrow">&rarr;</div>
-<div class="card-icon">
+<div class="card-icon" data-level="B">
 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
 </div>
 <div class="card-body">
@@ -395,7 +396,7 @@ TECHNOLOGY LAYER
 
 <a href="/SCIENCE/KNOWLEDGE/Mitochondria/atp-study.html" class="card">
 <div class="card-arrow">&rarr;</div>
-<div class="card-icon">
+<div class="card-icon" data-level="B">
 <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
 </div>
 <div class="card-body">
@@ -413,7 +414,7 @@ TECHNOLOGY LAYER
 
 <a href="/SCIENCE/KNOWLEDGE/Mitochondria/are-mitochondria-a-disease.html" class="card">
 <div class="card-arrow">&rarr;</div>
-<div class="card-icon">
+<div class="card-icon" data-level="C">
 <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M8 2v4"/><path d="M16 2v4"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="13" y2="14"/></svg>
 </div>
 <div class="card-body">
@@ -426,7 +427,7 @@ TECHNOLOGY LAYER
 
 <a href="/SCIENCE/KNOWLEDGE/Mitochondria/what-is-mitochondrial-dysfunction.html" class="card">
 <div class="card-arrow">&rarr;</div>
-<div class="card-icon">
+<div class="card-icon" data-level="C">
 <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M8 2v4"/><path d="M16 2v4"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="13" y2="14"/></svg>
 </div>
 <div class="card-body">
@@ -439,7 +440,7 @@ TECHNOLOGY LAYER
 
 <a href="/SCIENCE/KNOWLEDGE/Mitochondria/what-does-mitochondrial-disease-feel-like.html" class="card">
 <div class="card-arrow">&rarr;</div>
-<div class="card-icon">
+<div class="card-icon" data-level="C">
 <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M8 2v4"/><path d="M16 2v4"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="13" y2="14"/></svg>
 </div>
 <div class="card-body">
@@ -452,7 +453,7 @@ TECHNOLOGY LAYER
 
 <a href="/SCIENCE/KNOWLEDGE/Mitochondria/how-do-you-find-out-if-you-have-a-mitochondrial-disease.html" class="card">
 <div class="card-arrow">&rarr;</div>
-<div class="card-icon">
+<div class="card-icon" data-level="C">
 <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M8 2v4"/><path d="M16 2v4"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="13" y2="14"/></svg>
 </div>
 <div class="card-body">
@@ -465,7 +466,7 @@ TECHNOLOGY LAYER
 
 <a href="/SCIENCE/KNOWLEDGE/Mitochondria/how-is-mitochondrial-disease-managed.html" class="card">
 <div class="card-arrow">&rarr;</div>
-<div class="card-icon">
+<div class="card-icon" data-level="C">
 <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M8 2v4"/><path d="M16 2v4"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="13" y2="14"/></svg>
 </div>
 <div class="card-body">
