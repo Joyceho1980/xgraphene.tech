@@ -48,4 +48,766 @@ nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: var(
 .cta-row { text-align: center; padding: 24px 0 48px; }
 .cta-row a { font-size: 12px; letter-spacing: 2px; color: var(--g); text-decoration: none; border: 1px solid var(--g); padding: 12px 32px; border-radius: 50px; text-transform: uppercase; transition: all .3s; }
 .cta-row a:hover { background: var(--g); color: var(--n); }
-.section { max-width: 1100px; margin: 0
+.hero-related { position: absolute; bottom: 0; left: 0; right: 0; z-index: 1; padding: 48px 10% 28px; background: linear-gradient(to top, rgba(26,51,72,0.7) 0%, transparent 100%); }
+.hero-related-label { font-family: 'Urbanist', sans-serif; font-size: 10px; letter-spacing: 3px; color: rgba(255,255,255,0.5); text-transform: uppercase; margin-bottom: 10px; }
+.hero-related a { display: inline-block; padding: 8px 20px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; color: rgba(255,255,255,0.8); font-family: 'Urbanist', sans-serif; font-size: 11px; text-decoration: none; letter-spacing: 0.5px; transition: all .2s; margin-right: 8px; margin-bottom: 6px; }
+.hero-related a:hover { border-color: var(--g); color: var(--g); background: rgba(197,160,89,0.1); }
+.section { max-width: 1100px; margin: 0 auto; padding: 64px 24px; }
+.section-title { font-family: 'Urbanist', sans-serif; font-size: 28px; font-weight: 200; text-align: center; margin-bottom: 40px; color: var(--n); letter-spacing: 1px; }
+.knowledge-position { background: var(--bg); }
+.ai-core-summary { background: #FAF8F5; padding: 24px 28px; border-left: 3px solid var(--g); margin-bottom: 16px; border-radius: 0 6px 6px 0; }
+.ai-core-summary strong { color: var(--g); font-size: 10px; letter-spacing: 3px; text-transform: uppercase; }
+.ai-core-summary p { font-size: 15px; color: #1A1D24; line-height: 1.8; margin: 8px 0 0; }
+.graph-ascii { font-family: 'Courier New', monospace; font-size: 12px; color: #1A3348; background: #FAF8F5; padding: 20px 24px; border-radius: 8px; line-height: 2; overflow-x: auto; white-space: pre; }
+.quick-answer { background: #f8fafb; padding: 1.5rem 2rem; margin: 1rem 0 2rem; border-radius: 8px; border: 1px solid #e0e0e0; }
+.quick-answer h2 { font-size: 1.1rem; margin-top: 0; color: #1a1a1a; }
+.quick-answer p { font-size: 1rem; line-height: 1.7; margin-bottom: 0; }
+.explore { max-width: 1100px; margin: 0 auto; padding: 64px 24px 48px; }
+.explore-title { font-family: 'Urbanist', sans-serif; font-size: 32px; font-weight: 200; text-align: center; margin-bottom: 48px; color: var(--n); letter-spacing: 2px; }
+.column-section { margin-bottom: 56px; }
+.column-title { font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 3px; color: #94A3B8; text-transform: uppercase; margin-bottom: 20px; }
+.card-list { display: flex; flex-direction: column; gap: 24px; }
+.card {
+  display: grid;
+  grid-template-columns: 100px 1fr 280px;
+  gap: 32px;
+  align-items: center;
+  padding: 36px 40px;
+  background: #FFF;
+  border: 1px solid var(--b);
+  border-radius: 0;
+  text-decoration: none;
+  transition: all .25s;
+  position: relative;
+}
+.card:hover {
+  border-color: var(--g);
+  box-shadow: 0 8px 32px rgba(197,160,89,0.08);
+  transform: translateY(-2px);
+}
+.card:hover .card-arrow { opacity: 1; right: 24px; }
+.card-icon {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, #F8F6F3 0%, #EFEBE5 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.card-icon svg { display: none; }
+.card-icon::after { position: absolute; font-family: 'Urbanist', sans-serif; font-size: 36px; font-weight: 200; color: var(--g); }
+.card-list.group-a .card-icon::after { content: 'A'; }
+.card-list.group-b .card-icon::after { content: 'B'; }
+.card-list.group-c .card-icon::after { content: 'C'; }
+.card-body h3 { font-family: 'Urbanist', sans-serif; font-size: 22px; font-weight: 400; color: var(--t); margin-bottom: 8px; display: flex; align-items: center; gap: 12px; }
+.card-tag {
+  display: inline-block;
+  font-size: 9px;
+  padding: 3px 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 50px;
+}
+.card-tag.a { background: linear-gradient(135deg, #FFF9F0 0%, #FEF5E6 100%); color: #c8a05e; border: 1px solid #E8D8B8; }
+.card-tag.b { background: #E8F4F8; color: #1e6f8c; }
+.card-tag.c { background: #F5F5F5; color: #888; }
+.card-body p { font-size: 14px; color: var(--s); line-height: 1.7; margin: 10px 0 8px; }
+.card-links { font-size: 11px; color: var(--m); letter-spacing: 0.5px; }
+.card-links b { color: var(--g); font-weight: 600; }
+.card-img {
+  width: 260px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 0;
+  opacity: 0.95;
+}
+.card-arrow {
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 28px;
+  color: var(--g);
+  opacity: 0;
+  transition: all .25s;
+}
+.energy-flow { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+.energy-flow-left { background: #FAF8F5; padding: 32px; border-radius: 8px; }
+.energy-flow-item { display: flex; align-items: center; gap: 16px; padding: 12px 0; font-size: 14px; color: var(--s); }
+.energy-flow-arrow { color: var(--g); font-size: 16px; }
+.energy-flow-img { width: 100%; border-radius: 8px; }
+.mitochondria-connection { background: #FAF8F5; padding: 28px 32px; border-radius: 8px; border-left: 4px solid var(--n); }
+.mitochondria-connection h3 { font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 3px; color: #94A3B8; text-transform: uppercase; margin: 0 0 12px; }
+.mitochondria-connection p { font-size: 14px; color: var(--s); line-height: 1.8; margin: 0 0 12px; }
+.mitochondria-connection a { color: var(--g); text-decoration: none; font-size: 13px; }
+.mitochondria-connection a:hover { text-decoration: underline; }
+.faq-section details { border-bottom: 1px solid #E5E5E7; padding: 14px 0; }
+.faq-section details[open] summary { color: var(--g); }
+.faq-section summary { font-family: 'Urbanist', sans-serif; font-size: 14px; font-weight: 600; color: #1A3348; cursor: pointer; list-style: none; }
+.faq-section summary::-webkit-details-marker { display: none; }
+.faq-section summary::before { content: '+'; font-size: 16px; color: var(--g); margin-right: 12px; }
+.faq-section details[open] summary::before { content: '-'; }
+.faq-section p { font-size: 13px; color: #475569; line-height: 1.7; margin-top: 8px; padding-left: 28px; }
+.key-takeaways { background: var(--bg); }
+.citable-block { background: #FFF; padding: 24px 28px; border-left: 3px solid var(--g); margin-bottom: 24px; border-radius: 0 6px 6px 0; }
+.citable-block strong { color: var(--g); font-size: 10px; letter-spacing: 3px; text-transform: uppercase; }
+.citable-block p { font-size: 14px; color: var(--t); line-height: 1.8; margin: 8px 0 0; }
+.takeaway-list { list-style: none; padding: 0; }
+.takeaway-list li { font-size: 14px; color: var(--s); line-height: 1.8; padding: 8px 0 8px 24px; position: relative; }
+.takeaway-list li::before { content: '\2022'; color: var(--g); position: absolute; left: 0; }
+.where-this-fits { background: #FAF8F5; padding: 28px 32px; border-radius: 8px; border-left: 4px solid #1A3348; }
+.where-this-fits h3 { font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 3px; color: #94A3B8; text-transform: uppercase; margin: 0 0 12px; }
+.where-this-fits p { font-size: 14px; color: #475569; line-height: 1.8; margin: 0 0 6px; }
+.where-this-fits a { color: #C5A059; }
+.related-hubs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+.related-hub-card { padding: 16px 20px; border: 1px solid #E5E5E7; border-radius: 8px; text-decoration: none; color: var(--t); transition: all .2s; }
+.related-hub-card:hover { border-color: var(--g); background: #FAF8F5; }
+.related-hub-card .layer { font-size: 9px; color: var(--m); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+.related-hub-card .name { font-family: 'Urbanist', sans-serif; font-size: 14px; font-weight: 500; color: var(--n); }
+.disclaimer { font-size: 11px; color: var(--m); padding: 16px 20px; background: #FFF; border: 1px solid var(--b); border-radius: 6px; line-height: 1.6; margin-top: 48px; }
+footer { padding: 40px 10%; background: var(--n); text-align: center; border-top: 2px solid var(--g); }
+footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
+@media (max-width: 900px) {
+  .hero { padding: 152px 5% 64px; }
+  .hero h1 { font-size: 36px; }
+  .metrics-row { gap: 24px; }
+  .energy-flow { grid-template-columns: 1fr; }
+  .card { grid-template-columns: 80px 1fr; padding: 28px 24px; }
+  .card-img { display: none; }
+  .hero-related { padding: 36px 5% 20px; }
+  .hero-related a { padding: 6px 14px; font-size: 10px; }
+}
+@media (max-width: 600px) {
+  nav { padding: 0 5%; }
+  .nl { gap: 12px; overflow-x: auto; }
+  .nl a { font-size: 9px; }
+  .hub-nav { justify-content: flex-start; padding: 0 5%; gap: 2px; }
+  .hub-nav a { font-size: 9px; padding: 6px 8px; }
+  .hub-nav .sep { display: none; }
+  .hero { padding: 140px 5% 56px; }
+  .hero h1 { font-size: 28px; }
+  .explore { padding: 48px 16px; }
+  .card { grid-template-columns: 1fr; text-align: center; }
+  .card-icon { margin: 0 auto; }
+  .hero-related { padding: 28px 5% 16px; }
+  .hero-related a { padding: 5px 12px; font-size: 9px; margin-right: 4px; margin-bottom: 4px; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.xgraphene.tech/" },
+    { "@type": "ListItem", "position": 2, "name": "Science", "item": "https://www.xgraphene.tech/SCIENCE/Landing.html" },
+    { "@type": "ListItem", "position": 3, "name": "Cellular Energy", "item": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@type": "CollectionPage",
+  "name": "Cellular Energy Hub",
+  "description": "An educational hub exploring cellular energy production, ATP, mitochondrial function, and how energy systems affect health, recovery, and aging.",
+  "isPartOf": { "@type": "CollectionPage", "name": "XIHE Knowledge Graph", "url": "https://xgraphene.tech/pages/SCIENCE/KNOWLEDGE/" },
+  "hasPart": [
+    {"@type": "Article", "name": "What Is Cellular Energy?", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/what-is-cellular-energy.html"},
+    {"@type": "Article", "name": "Why Does the Body Need ATP?", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/why-does-the-body-need-atp.html"},
+    {"@type": "Article", "name": "Where Does Cellular Energy Come From?", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/where-does-cellular-energy-come-from.html"},
+    {"@type": "Article", "name": "Energy Supply vs Energy Demand", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/energy-supply-vs-demand.html"},
+    {"@type": "Article", "name": "Why Energy Matters for Health", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/why-energy-matters-for-health.html"},
+    {"@type": "Article", "name": "How Mitochondria Produce ATP", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/how-mitochondria-produce-atp.html"},
+    {"@type": "Article", "name": "What Is Oxidative Phosphorylation?", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/what-is-oxidative-phosphorylation.html"},
+    {"@type": "Article", "name": "Why Mitochondrial Efficiency Matters", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/why-mitochondrial-efficiency-matters.html"},
+    {"@type": "Article", "name": "What Influences Energy Production?", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/what-influences-energy-production.html"},
+    {"@type": "Article", "name": "Cellular Energy and Aging", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/cellular-energy-and-aging.html"},
+    {"@type": "Article", "name": "Why Am I Always Tired?", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/why-am-i-always-tired.html"},
+    {"@type": "Article", "name": "Why Do I Wake Up Tired?", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/why-do-i-wake-up-tired.html"},
+    {"@type": "Article", "name": "Why Is My Recovery Slow?", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/why-is-my-recovery-slow.html"},
+    {"@type": "Article", "name": "Why Can't I Focus?", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/why-cant-i-focus.html"},
+    {"@type": "Article", "name": "Why Does Aging Feel Like Low Energy?", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/why-does-aging-feel-like-low-energy.html"}
+  ],
+  "mainEntity": { "@type": "DefinedTerm", "name": "Cellular Energy", "termCode": "KG-NODE-CELLULAR-ENERGY" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTerm",
+  "@id": "https://xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/#node",
+  "termCode": "KG-NODE-CELLULAR-ENERGY",
+  "name": "Cellular Energy",
+  "description": "Cellular energy, primarily ATP produced by mitochondrial oxidative phosphorylation, is the foundation of all biological function.",
+  "inDefinedTermSet": { "@type": "DefinedTermSet", "name": "XIHE Knowledge Graph", "url": "https://xgraphene.tech/" },
+  "additionalProperty": [
+    {"@type": "PropertyValue", "propertyID": "node_id", "value": "cellular_energy"},
+    {"@type": "PropertyValue", "propertyID": "node_type", "value": "energy"},
+    {"@type": "PropertyValue", "propertyID": "layer", "value": "energy"},
+    {"@type": "PropertyValue", "propertyID": "entry_question", "value": "What is cellular energy and why does it matter for health?"},
+    {"@type": "PropertyValue", "propertyID": "biological_role", "value": "foundation_of_biological_function"},
+    {"@type": "PropertyValue", "propertyID": "state_effect", "value": "atp_production_decline, energy_demand_imbalance"}
+  ],
+  "sameAs": ["https://en.wikipedia.org/wiki/Adenosine_triphosphate", "https://www.wikidata.org/wiki/Q80863"],
+  "relatedTerm": [
+    {"@type": "DefinedTerm", "name": "Mitochondria", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/"},
+    {"@type": "DefinedTerm", "name": "Fatigue", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Fatigue/"},
+    {"@type": "DefinedTerm", "name": "Sleep", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Sleep/"},
+    {"@type": "DefinedTerm", "name": "Recovery", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Recovery/"},
+    {"@type": "DefinedTerm", "name": "Graphene FIR", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/"},
+    {"@type": "DefinedTerm", "name": "Metabolism", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Metabolism/"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is ATP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ATP (adenosine triphosphate) is the primary energy carrier in all living cells. It stores and transports chemical energy within cells for metabolism."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is cellular energy important?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every biological function—movement, cognition, repair, immune response—requires ATP. When energy production can't meet demand, fatigue, cognitive fog, and slow recovery follow."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What affects energy production?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oxygen availability, nutrient supply, mitochondrial health, sleep quality, stress, and age all influence cellular energy production."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does sleep influence energy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sleep is when the brain clears metabolic waste and when cellular repair processes are most active. Poor sleep directly reduces ATP production capacity."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the relationship between mitochondria and ATP?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mitochondria produce ~95% of cellular ATP through oxidative phosphorylation. They are the primary energy factories of the cell."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does aging affect energy production?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Mitochondrial efficiency declines with age, reducing ATP output and slowing recovery. This contributes to the experience of aging as low energy."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav>
+<div class="nl">
+<a href="/"><img src="/PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async" style="height:28px;"></a>
+<a href="/">Home</a>
+<a href="/ABOUT/AboutOrigin.html">About</a>
+<a href="/SCIENCE/Landing.html">Science</a>
+<a href="/applications.html">Applications</a>
+<a href="/PRODUCTS/ProductPage.html">Products</a>
+<a href="/partnership.html">Partnership</a>
+<a href="/NEWS/index.html">News</a>
+<a href="/CONTACT/index.html">Contact</a>
+</div>
+<a class="np" href="tel:0086-18688683865">+86 186 8868 3865</a>
+</nav>
+
+<div class="hub-nav">
+<a href="/SCIENCE/KNOWLEDGE/">All Hubs</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Mitochondria/">Mitochondria</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/cellular-energy/" class="active">Cellular Energy</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Fatigue/">Fatigue</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Inflammation/">Inflammation</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Sleep/">Sleep</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Recovery/">Recovery</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Microcirculation/">Microcirculation</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/graphene-fir/">Graphene FIR</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/Metabolism/">Metabolism</a>
+<span class="sep"></span>
+<a href="/SCIENCE/KNOWLEDGE/healthy-aging/">Aging</a>
+</div>
+
+<section class="hero">
+<div class="hero-overlay"></div>
+<div class="hero-content">
+<div class="breadcrumb">
+<a href="/">Home</a> &rsaquo; <a href="/SCIENCE/KNOWLEDGE/">Knowledge</a> &rsaquo; Cellular Energy
+</div>
+<h1>Cellular Energy<span>The Foundation of Biological Function</span></h1>
+<p>Every biological process—from thinking and movement to sleep and recovery—depends on cellular energy.<br>
+This hub explores how energy is produced, regulated, and experienced throughout the human body.</p>
+</div>
+<div class="hero-related">
+<div class="hero-related-label">Explore Related Hubs</div>
+<a href="/SCIENCE/KNOWLEDGE/Mitochondria/">Mitochondria</a>
+<a href="/SCIENCE/KNOWLEDGE/Fatigue/">Fatigue</a>
+<a href="/SCIENCE/KNOWLEDGE/Sleep/">Sleep</a>
+<a href="/SCIENCE/KNOWLEDGE/Recovery/">Recovery</a>
+<a href="/SCIENCE/KNOWLEDGE/Inflammation/">Inflammation</a>
+<a href="/SCIENCE/KNOWLEDGE/Microcirculation/">Microcirculation</a>
+<a href="/SCIENCE/KNOWLEDGE/Metabolism/">Metabolism</a>
+<a href="/SCIENCE/KNOWLEDGE/healthy-aging/">Aging</a>
+<a href="/SCIENCE/KNOWLEDGE/graphene-fir/">Graphene FIR</a>
+</div>
+</section>
+
+<div style="display:flex;gap:48px;justify-content:center;padding:24px 0;background:rgba(26,51,72,0.6);backdrop-filter:blur(4px);">
+  <div><div style="font-size:28px;font-weight:200;color:var(--g);">95%</div><div style="font-size:11px;color:rgba(255,255,255,0.6);">Cellular ATP Produced by Mitochondria</div></div>
+  <div><div style="font-size:28px;font-weight:200;color:var(--g);">37 Trillion</div><div style="font-size:11px;color:rgba(255,255,255,0.6);">Cells Depend on ATP</div></div>
+  <div><div style="font-size:28px;font-weight:200;color:var(--g);">24/7</div><div style="font-size:11px;color:rgba(255,255,255,0.6);">Energy Demand Never Stops</div></div>
+</div>
+
+<div class="cta-row">
+  <a href="#explore">Explore the Energy System ↓</a>
+</div>
+
+<section class="section knowledge-position">
+<h2 class="section-title">Knowledge Graph Position</h2>
+<div class="ai-core-summary">
+<strong>Knowledge Position:</strong>
+<p>Energy Layer → Mechanisms Layer → Symptoms Layer → Technology Layer → Evidence Layer</p>
+</div>
+<div class="graph-ascii">
+ENERGY LAYER
+├── Cellular Energy ★ (ROOT NODE)
+
+MECHANISMS LAYER
+├── Mitochondria
+│   └── Oxidative Phosphorylation
+
+SYMPTOMS LAYER
+├── Sleep
+├── Fatigue
+├── Recovery
+├── Inflammation
+├── Metabolism
+└── Healthy Aging
+
+TECHNOLOGY LAYER
+└── Graphene FIR
+
+EVIDENCE LAYER
+└── Clinical Evidence
+</div>
+</section>
+
+<section class="section">
+<div class="quick-answer">
+<h2>Quick Answer</h2>
+<p><strong>What Is Cellular Energy?</strong><br>
+Cellular energy refers to the biological processes that generate and utilize ATP, the primary energy currency of life. When energy production and energy demand remain balanced, biological systems function efficiently. When this balance is disrupted, fatigue, poor recovery, reduced resilience, and other downstream symptoms may emerge.</p>
+</div>
+</section>
+
+<section class="explore" id="explore">
+<h2 class="explore-title">Explore This Hub</h2>
+
+<div class="column-section">
+<h3 class="column-title">🧠 Core Definition</h3>
+<div class="card-list group-a">
+
+<a href="what-is-cellular-energy.html" class="card">
+  <div class="card-arrow">&rarr;</div>
+  <div class="card-icon">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+  </div>
+  <div class="card-body">
+    <h3>What Is Cellular Energy?<span class="card-tag a">A级 · 根节点</span></h3>
+    <p>Overview of ATP and biological energy systems.</p>
+    <div class="card-links">Foundation &middot; <b>Energy Layer</b></div>
+  </div>
+  <img class="card-img" src="/PICTURE/hub-cards/Cellular-Energy.png" alt="What is cellular energy">
+</a>
+
+<a href="why-does-the-body-need-atp.html" class="card">
+  <div class="card-arrow">&rarr;</div>
+  <div class="card-icon">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+  </div>
+  <div class="card-body">
+    <h3>Why Does the Body Need ATP?<span class="card-tag a">A级 · 根节点</span></h3>
+    <p>Understanding the energy currency of life.</p>
+    <div class="card-links">Foundation &middot; <b>Energy Layer</b></div>
+  </div>
+  <img class="card-img" src="/PICTURE/hub-cards/Cellular-Energy.png" alt="Why does the body need ATP">
+</a>
+
+<a href="where-does-cellular-energy-come-from.html" class="card">
+  <div class="card-arrow">&rarr;</div>
+  <div class="card-icon">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+  </div>
+  <div class="card-body">
+    <h3>Where Does Cellular Energy Come From?<span class="card-tag a">A级 · 根节点</span></h3>
+    <p>From oxygen and nutrients to usable energy.</p>
+    <div class="card-links">Foundation &middot; <b>Energy Layer</b></div>
+  </div>
+  <img class="card-img" src="/PICTURE/hub-cards/Cellular-Energy.png" alt="Where does cellular energy come from">
+</a>
+
+<a href="energy-supply-vs-demand.html" class="card">
+  <div class="card-arrow">&rarr;</div>
+  <div class="card-icon">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+  </div>
+  <div class="card-body">
+    <h3>Energy Supply vs Energy Demand<span class="card-tag a">A级 · 根节点</span></h3>
+    <p>Why balance matters more than total output.</p>
+    <div class="card-links">Foundation &middot; <b>Energy Layer</b></div>
+  </div>
+  <img class="card-img" src="/PICTURE/hub-cards/Cellular-Energy.png" alt="Energy supply vs demand">
+</a>
+
+<a href="why-energy-matters-for-health.html" class="card">
+  <div class="card-arrow">&rarr;</div>
+  <div class="card-icon">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+  </div>
+  <div class="card-body">
+    <h3>Why Energy Matters for Health<span class="card-tag a">A级 · 根节点</span></h3>
+    <p>The foundation of resilience and adaptation.</p>
+    <div class="card-links">Foundation &middot; <b>Energy Layer</b></div>
+  </div>
+  <img class="card-img" src="/PICTURE/hub-cards/Cellular-Energy.png" alt="Why energy matters for health">
+</a>
+
+</div>
+</div>
+
+<div class="column-section">
+<h3 class="column-title">⚡ Energy Mechanisms</h3>
+<div class="card-list group-b">
+
+<a href="how-mitochondria-produce-atp.html" class="card">
+  <div class="card-arrow">&rarr;</div>
+  <div class="card-icon">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+  </div>
+  <div class="card-body">
+    <h3>How Mitochondria Produce ATP<span class="card-tag b">B级 · 机制科普</span></h3>
+    <p>The molecular machinery of energy generation.</p>
+    <div class="card-links">Mechanism &middot; <b>→ Mitochondria</b></div>
+  </div>
+  <img class="card-img" src="/PICTURE/hub-cards/Cellular-Energy.png" alt="How mitochondria produce ATP">
+</a>
+
+<a href="what-is-oxidative-phosphorylation.html" class="card">
+  <div class="card-arrow">&rarr;</div>
+  <div class="card-icon">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+  </div>
+  <div class="card-body">
+    <h3>What Is Oxidative Phosphorylation?<span class="card-tag b">B级 · 机制科普</span></h3>
+    <p>The electron transport chain and ATP synthase.</p>
+    <div class="card-links">Mechanism &middot; <b>→ Mitochondria</b></div>
+  </div>
+  <img class="card-img" src="/PICTURE/hub-cards/Cellular-Energy.png" alt="What is oxidative phosphorylation">
+</a>
+
+<a href="why-mitochondrial-efficiency-matters.html" class="card">
+  <div class="card-arrow">&rarr;</div>
+  <div class="card-icon">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+  </div>
+  <div class="card-body">
+    <h3>Why Mitochondrial Efficiency Matters<span class="card-tag b">B级 · 机制科普</span></h3>
+    <p>Efficiency vs capacity tradeoffs in energy production.</p>
+    <div class="card-links">Mechanism &middot; <b>→ Mitochondria</b></div>
+  </div>
+  <img class="card-img" src="/PICTURE/hub-cards/Cellular-Energy.png" alt="Why mitochondrial efficiency matters">
+</a>
+
+<a href="what-influences-energy-production.html" class="card">
+  <div class="card-arrow">&rarr;</div>
+  <div class="card-icon">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+  </div>
+  <div class="card-body">
+    <h3>What Influences Energy Production?<span class="card-tag b">B级 · 机制科普</span></h3>
+    <p>Environmental and biological factors shaping ATP output.</p>
+    <div class="card-links">Mechanism &middot; <b>→ Mitochondria</b></div>
+  </div>
+  <img class="card-img" src="/PICTURE/hub-cards/Cellular-Energy.png" alt="What influences energy production">
+</a>
+
+<a href="cellular-energy-and-aging.html" class="card">
+  <div class="card-arrow">&rarr;</div>
+  <div class="card-icon">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+  </div>
+  <div class="card-body">
+    <h3>Cellular Energy and Aging<span class="card-tag b">B级 · 机制科普</span></h3>
+    <p>How energy decline drives biological aging.</p>
+    <div class="card-links">Mechanism &middot; <b>→ Healthy Aging</b></div>
+  </div>
+  <img class="card-img" src="/PICTURE/hub-cards/Cellular-Energy.png" alt="Cellular energy and aging">
+</a>
+
+</div>
+</div>
+
+<div class="column-section">
+<h3 class="column-title">💡 Human Energy Problems</h3>
+<div class="card-list group-c">
+
+<a href="why-am-i-always-tired.html" class="card">
+  <div class="card-arrow">&rarr;</div>
+  <div class="card-icon">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+  </div>
+  <div class="card-body">
+    <h3>Why Am I Always Tired?<span class="card-tag c">C级 · 概念澄清</span></h3>
+    <p>Understanding the energy deficit experience.</p>
+    <div class="card-links">Question &middot; <b>→ Fatigue</b></div>
+  </div>
+  <img class="card-img" src="/PICTURE/hub-cards/Cellular-Energy.png" alt="Why am I always tired">
+</a>
+
+<a href="why-do-i-wake-up-tired.html" class="card">
+  <div class="card-arrow">&rarr;</div>
+  <div class="card-icon">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+  </div>
+  <div class="card-body">
+    <h3>Why Do I Wake Up Tired?<span class="card-tag c">C级 · 概念澄清</span></h3>
+    <p>Sleep quality and morning energy levels.</p>
+    <div class="card-links">Question &middot; <b>→ Sleep</b></div>
+  </div>
+  <img class="card-img" src="/PICTURE/hub-cards/Cellular-Energy.png" alt="Why do I wake up tired">
+</a>
+
+<a href="why-is-my-recovery-slow.html" class="card">
+  <div class="card-arrow">&rarr;</div>
+  <div class="card-icon">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+  </div>
+  <div class="card-body">
+    <h3>Why Is My Recovery Slow?<span class="card-tag c">C级 · 概念澄清</span></h3>
+    <p>Energy availability and tissue repair.</p>
+    <div class="card-links">Question &middot; <b>→ Recovery</b></div>
+  </div>
+  <img class="card-img" src="/PICTURE/hub-cards/Cellular-Energy.png" alt="Why is my recovery slow">
+</a>
+
+<a href="why-cant-i-focus.html" class="card">
+  <div class="card-arrow">&rarr;</div>
+  <div class="card-icon">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+  </div>
+  <div class="card-body">
+    <h3>Why Can't I Focus?<span class="card-tag c">C级 · 概念澄清</span></h3>
+    <p>Energy, attention, and cognitive performance.</p>
+    <div class="card-links">Question &middot; <b>→ Cognitive Function</b></div>
+  </div>
+  <img class="card-img" src="/PICTURE/hub-cards/Cellular-Energy.png" alt="Why can't I focus">
+</a>
+
+<a href="why-does-aging-feel-like-low-energy.html" class="card">
+  <div class="card-arrow">&rarr;</div>
+  <div class="card-icon">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+  </div>
+  <div class="card-body">
+    <h3>Why Does Aging Feel Like Low Energy?<span class="card-tag c">C级 · 概念澄清</span></h3>
+    <p>The energy dimension of the aging process.</p>
+    <div class="card-links">Question &middot; <b>→ Healthy Aging</b></div>
+  </div>
+  <img class="card-img" src="/PICTURE/hub-cards/Cellular-Energy.png" alt="Why does aging feel like low energy">
+</a>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">Visual Energy Flow</h2>
+<div class="energy-flow">
+<div class="energy-flow-left">
+<div class="energy-flow-item">
+<span>Nutrients + Oxygen</span>
+<span class="energy-flow-arrow">→</span>
+</div>
+<div class="energy-flow-item">
+<span>Mitochondria</span>
+<span class="energy-flow-arrow">→</span>
+</div>
+<div class="energy-flow-item">
+<span>ATP Production</span>
+<span class="energy-flow-arrow">→</span>
+</div>
+<div class="energy-flow-item">
+<span>Cellular Function</span>
+<span class="energy-flow-arrow">→</span>
+</div>
+<div class="energy-flow-item">
+<span>Sleep · Recovery · Movement · Cognition</span>
+<span class="energy-flow-arrow">→</span>
+</div>
+<div class="energy-flow-item">
+<span style="color:var(--g);font-weight:500;">Long-Term Health</span>
+</div>
+</div>
+<img class="energy-flow-img" src="/PICTURE/cellular-energy-flow.jpg" alt="Cellular energy flow diagram showing nutrients and oxygen entering mitochondria, producing ATP for cellular functions including sleep, recovery, movement, and cognition, ultimately supporting long-term health">
+</div>
+</section>
+
+<section class="section">
+<div class="mitochondria-connection">
+<h3>The Mitochondria Connection</h3>
+<p>Cellular Energy is the upstream concept. Mitochondria are the primary mechanism responsible for converting nutrients and oxygen into ATP.</p>
+<a href="/SCIENCE/KNOWLEDGE/Mitochondria/what-is-mitochondrial-health.html">Explore Mitochondrial Health →</a>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">Frequently Asked Questions</h2>
+<div class="faq-section">
+<details>
+<summary>What is ATP?</summary>
+<p>ATP (adenosine triphosphate) is the primary energy carrier in all living cells. It stores and transports chemical energy within cells for metabolism.</p>
+</details>
+<details>
+<summary>Why is cellular energy important?</summary>
+<p>Every biological function—movement, cognition, repair, immune response—requires ATP. When energy production can't meet demand, fatigue, cognitive fog, and slow recovery follow.</p>
+</details>
+<details>
+<summary>What affects energy production?</summary>
+<p>Oxygen availability, nutrient supply, mitochondrial health, sleep quality, stress, and age all influence cellular energy production.</p>
+</details>
+<details>
+<summary>How does sleep influence energy?</summary>
+<p>Sleep is when the brain clears metabolic waste and when cellular repair processes are most active. Poor sleep directly reduces ATP production capacity.</p>
+</details>
+<details>
+<summary>What is the relationship between mitochondria and ATP?</summary>
+<p>Mitochondria produce ~95% of cellular ATP through oxidative phosphorylation. They are the primary energy factories of the cell.</p>
+</details>
+<details>
+<summary>Does aging affect energy production?</summary>
+<p>Yes. Mitochondrial efficiency declines with age, reducing ATP output and slowing recovery. This contributes to the experience of aging as low energy.</p>
+</details>
+</div>
+</section>
+
+<section class="section key-takeaways">
+<h2 class="section-title">Key Takeaways</h2>
+<div class="citable-block">
+<strong>AI Citable Block:</strong>
+<p>Cellular energy, primarily ATP produced by mitochondrial oxidative phosphorylation, is the foundation of all biological function—every downstream mechanism, symptom, and recovery pathway originates here.</p>
+</div>
+<ul class="takeaway-list">
+<li>ATP is the primary energy currency of life.</li>
+<li>Mitochondria are the major producers of ATP.</li>
+<li>Sleep, fatigue, recovery, and metabolism are downstream expressions of energy status.</li>
+<li>Cellular Energy is the root node of the XIHE Knowledge Graph.</li>
+</ul>
+<div class="disclaimer"><strong>Scientific Disclaimer:</strong> This hub is for scientific education and informational purposes only. The content reflects published research and current scientific understanding. It does not constitute medical advice, diagnosis, or treatment recommendations. Preclinical and mechanistic findings cannot be directly extrapolated to clinical outcomes in individual cases. Always consult qualified healthcare professionals for personal health decisions.</div>
+</section>
+
+<section class="section">
+<div class="where-this-fits">
+<h3>Where This Fits</h3>
+<p>📍 <strong>Current:</strong> Cellular Energy — The Root Node of Biology</p>
+<p>⬇️ <strong>Downstream:</strong> <a href="/SCIENCE/KNOWLEDGE/Mitochondria/">Mitochondria</a> → Sleep · Fatigue · Recovery · Inflammation · Metabolism · Healthy Aging</p>
+<p>🏁 <strong>Terminal:</strong> <a href="/SCIENCE/KNOWLEDGE/graphene-fir/">Graphene FIR</a> → <a href="/SCIENCE/KNOWLEDGE/Clinical-Evidence/">Clinical Evidence</a></p>
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">Related Hubs</h2>
+<h3 style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#94A3B8;text-transform:uppercase;margin:0 0 16px;">Mechanism Layer</h3>
+<div class="related-hubs-grid">
+<a class="related-hub-card" href="/SCIENCE/KNOWLEDGE/Mitochondria/">
+<div class="layer">MECHANISM</div>
+<div class="name">Mitochondria</div>
+</a>
+</div>
+<h3 style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#94A3B8;text-transform:uppercase;margin:24px 0 16px;">Symptom Layer</h3>
+<div class="related-hubs-grid">
+<a class="related-hub-card" href="/SCIENCE/KNOWLEDGE/Sleep/">
+<div class="layer">SYMPTOM</div>
+<div class="name">Sleep</div>
+</a>
+<a class="related-hub-card" href="/SCIENCE/KNOWLEDGE/Fatigue/">
+<div class="layer">SYMPTOM</div>
+<div class="name">Fatigue</div>
+</a>
+<a class="related-hub-card" href="/SCIENCE/KNOWLEDGE/Recovery/">
+<div class="layer">SYMPTOM</div>
+<div class="name">Recovery</div>
+</a>
+<a class="related-hub-card" href="/SCIENCE/KNOWLEDGE/Inflammation/">
+<div class="layer">SYMPTOM</div>
+<div class="name">Inflammation</div>
+</a>
+<a class="related-hub-card" href="/SCIENCE/KNOWLEDGE/Metabolism/">
+<div class="layer">SYMPTOM</div>
+<div class="name">Metabolism</div>
+</a>
+<a class="related-hub-card" href="/SCIENCE/KNOWLEDGE/healthy-aging/">
+<div class="layer">SYMPTOM</div>
+<div class="name">Healthy Aging</div>
+</a>
+</div>
+<h3 style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#94A3B8;text-transform:uppercase;margin:24px 0 16px;">Technology Layer</h3>
+<div class="related-hubs-grid">
+<a class="related-hub-card" href="/SCIENCE/KNOWLEDGE/graphene-fir/">
+<div class="layer">TECHNOLOGY</div>
+<div class="name">Graphene FIR</div>
+</a>
+</div>
+<h3 style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#94A3B8;text-transform:uppercase;margin:24px 0 16px;">Evidence Layer</h3>
+<div class="related-hubs-grid">
+<a class="related-hub-card" href="/SCIENCE/KNOWLEDGE/Clinical-Evidence/">
+<div class="layer">EVIDENCE</div>
+<div class="name">Clinical Evidence</div>
+</a>
+</div>
+</section>
+
+<footer>
+<p>XIHE Technology · A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
+</footer>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag("js", new Date());
+gtag("config", "G-C7YSVFRQ6R");
+</script>
+
+</body>
+</html>
