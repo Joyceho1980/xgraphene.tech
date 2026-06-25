@@ -1,4 +1,4 @@
-# TASK-019: Cellular Energy Hub — 全新 Index 页面 + 15篇壳文章
+# TASK-019: Cellular Energy Hub — 杂志风格全新 Index 页面 + 15篇壳文章
 
 ## 目标
 
@@ -134,17 +134,90 @@ GEO Block:
 
 等级标签：**C级 · 概念澄清**，灰色 `#888`。
 
-### Index 页面布局
+### Index 页面布局 — 杂志风格（严格对齐 Inflammation Hub）
 
-参考 Mitochondria Hub Index 的 A/B/C 分组卡片样式。
+**设计语言：杂志风格 = 大留白 + 轻盈字体 + 直角干净 + 图片作为视觉锚点**
+
+关键参数：
+- `border-radius: 0px` — 卡片直角，无圆角
+- 标题 `font-weight: 400` — 轻盈自然，不加粗
+- `explore-title: 32px, font-weight: 200, letter-spacing: 2px` — 超细字重，大间距
+- 浅灰圆 icon（90px 渐变背景）+ 缩略图 260px 直角
+- 白色卡片 + 细边框 `1px solid #E5E5E7`
 
 三栏标题：
 - 🧠 Core Definition（A栏）
 - ⚡ Energy Mechanisms（B栏）
 - 💡 Human Energy Problems（C栏）
 
-每组用 `grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))` 卡片网格。
-每张卡片：等级标签 + 标题 + 描述 + → 箭头。
+每组卡片横向布局（非纵向网格），每张卡片结构：
+- 左：90px 圆形渐变 SVG icon
+- 中：标题（22px, font-weight:400）+ 描述 + 等级标签
+- 右：260px 缩略图（直角）
+
+卡片 CSS 参考：
+
+```css
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 100px 1fr 280px;
+  gap: 32px;
+  align-items: center;
+  padding: 36px 40px;
+  background: #FFF;
+  border: 1px solid #E5E5E7;
+  border-radius: 0;
+  text-decoration: none;
+  transition: all .25s;
+  position: relative;
+}
+
+.card:hover {
+  border-color: var(--g);
+  box-shadow: 0 8px 32px rgba(197,160,89,0.08);
+  transform: translateY(-2px);
+}
+
+.card-icon {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, #F8F6F3 0%, #EFEBE5 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.card-body h3 {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--t);
+  margin-bottom: 8px;
+}
+
+.card-img {
+  width: 260px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 0;
+  opacity: 0.95;
+}
+```
+
+等级标签：
+- A级 · 根节点 — 金色 `#c8a05e`
+- B级 · 机制科普 — 深蓝 `#1e6f8c`
+- C级 · 概念澄清 — 灰色 `#888`
+
+缩略图统一使用：`/PICTURE/hub-cards/Cellular-Energy.png`
 
 ---
 
@@ -371,7 +444,14 @@ GEO Block:
 - [ ] Index Hero 全幅图 + 叠文字 + Metrics row + CTA
 - [ ] Knowledge Graph Position（5层图谱 + GEO Block）
 - [ ] Quick Answer
-- [ ] Explore This Hub — 三栏 A/B/C（15张卡片，每篇带等级标签 + 描述 + 箭头）
+- [ ] Explore This Hub — 杂志风格三栏 A/B/C
+  - [ ] 卡片直角 border-radius: 0
+  - [ ] 标题 font-weight: 400（不加粗）
+  - [ ] 白色卡片 + 1px solid #E5E5E7 细边框
+  - [ ] 90px 圆形渐变 SVG icon
+  - [ ] 260px 缩略图（直角）
+  - [ ] 15张卡片，每篇带等级标签 + 描述 + 箭头
+  - [ ] A/B/C 三级分组正确
 - [ ] Visual Energy Flow（文字流程图 + 图片）
 - [ ] The Mitochondria Connection（featured card 链接到 Mitochondria Hub）
 - [ ] FAQ（6个折叠，默认展开第一个）
