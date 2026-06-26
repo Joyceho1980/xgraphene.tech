@@ -194,8 +194,8 @@ p {
 /* Text-Image Split */
 .text-image-split {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
+  grid-template-columns: 42% 58%;
+  gap: 3rem;
   align-items: start;
   margin: 3rem 0;
 }
@@ -287,6 +287,59 @@ p {
 .kg-navigation ul li::before {
   content: '\2192\00A0';
   color: var(--g);
+}
+
+/* Continue Exploring */
+.continue-exploring {
+  margin: 3.5rem 0;
+  padding: 2rem 2.5rem;
+  background: #FAF8F5;
+  border-radius: 0;
+}
+.continue-exploring h3 {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #1A3348;
+  margin: 0 0 1.5rem;
+}
+.explore-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #E5E5E7;
+}
+.explore-card:last-child {
+  border-bottom: none;
+}
+.explore-num {
+  font-family: 'Urbanist', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #B8860B;
+  width: 24px;
+  flex-shrink: 0;
+  text-align: center;
+}
+.explore-content a {
+  color: #1A3348;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+.explore-content a:hover {
+  color: #B8860B;
+}
+.explore-content p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
 }
 
 /* Editorial Note */
@@ -453,11 +506,6 @@ footer p {
       <h2>Energy Becomes Matter, and Matter Returns to Energy</h2>
       <p>Biochemistry tells us: ATP is the energy currency of the cell. Mitochondria convert food and oxygen into ATP, and ATP drives your heartbeat, muscle contraction, brain activity, and wound healing.</p>
       <p>But there is a deeper layer.</p>
-      <p><strong>Energy can become matter.</strong></p>
-      <p>When you use ATP to write a good essay, it becomes words. When you use it to solve a problem, it becomes value. When you use it to repair your body, it becomes that feeling of strength you wake up with the next morning.</p>
-      <p class="citation-unit">
-        <strong>Biological Grounding:</strong> ATP hydrolysis releases free energy that drives endergonic cellular processes — protein synthesis, ion transport, muscle contraction, and nerve impulse propagation. Energy is not consumed; it is converted into biological work and structure.
-      </p>
     </div>
     <figure class="image-side">
       <img src="/VISUAL-LIBRARY/A scientific-philosophical illustration showing the energy-matter cycle described in the essay Cellular Energy is the Real Currency of Life..jpg"
@@ -466,6 +514,12 @@ footer p {
       <figcaption>Energy becomes output, and output returns to support energy.</figcaption>
     </figure>
   </section>
+
+  <p><strong>Energy can become matter.</strong></p>
+  <p>When you use ATP to write a good essay, it becomes words. When you use it to solve a problem, it becomes value. When you use it to repair your body, it becomes that feeling of strength you wake up with the next morning.</p>
+  <p class="citation-unit">
+    <strong>Biological Grounding:</strong> ATP hydrolysis releases free energy that drives endergonic cellular processes — protein synthesis, ion transport, muscle contraction, and nerve impulse propagation. Energy is not consumed; it is converted into biological work and structure.
+  </p>
 
   <p>Energy becomes matter, and then matter returns to support energy — physical repair brings more vitality; good work attracts collaborators; accumulated value gives you more resources to deploy greater energy.</p>
 
@@ -540,16 +594,30 @@ footer p {
 </figure>
 
 <div class="container">
-  <nav class="kg-navigation">
-    <p><strong>📖 Knowledge Graph Navigation</strong></p>
-    <p><strong>📍</strong> Current: Cellular Energy Hub — Root Narrative Node</p>
-    <p><strong>⬇️</strong> Explore the science behind this reflection:</p>
-    <ul>
-      <li><a href="/SCIENCE/KNOWLEDGE/cellular-energy/what-is-cellular-energy.html">What Is Cellular Energy?</a> — The scientific foundation</li>
-      <li><a href="/SCIENCE/KNOWLEDGE/cellular-energy/how-mitochondria-produce-atp.html">How Mitochondria Produce ATP</a> — The mechanism explained</li>
-    </ul>
-    <p><strong>🏁</strong> Terminal: <a href="/SCIENCE/KNOWLEDGE/graphene-fir/">Graphene FIR</a> — Far-infrared environment supporting cellular energy recovery</p>
-  </nav>
+  <section class="continue-exploring">
+    <h3>Continue Exploring</h3>
+    <div class="explore-card">
+      <span class="explore-num">1</span>
+      <div class="explore-content">
+        <a href="/SCIENCE/KNOWLEDGE/cellular-energy/what-is-cellular-energy.html">What Is Cellular Energy?</a>
+        <p>The scientific foundation — understand ATP and biological energy systems.</p>
+      </div>
+    </div>
+    <div class="explore-card">
+      <span class="explore-num">2</span>
+      <div class="explore-content">
+        <a href="/SCIENCE/KNOWLEDGE/cellular-energy/how-mitochondria-produce-atp.html">How Mitochondria Produce ATP</a>
+        <p>The mechanism explained — oxidative phosphorylation and the electron transport chain.</p>
+      </div>
+    </div>
+    <div class="explore-card">
+      <span class="explore-num">3</span>
+      <div class="explore-content">
+        <a href="/SCIENCE/KNOWLEDGE/graphene-fir/">Graphene FIR</a>
+        <p>Far-infrared environment supporting cellular energy recovery.</p>
+      </div>
+    </div>
+  </section>
 
   <section class="editorial-note">
     <p><strong>Editorial Note</strong></p>
