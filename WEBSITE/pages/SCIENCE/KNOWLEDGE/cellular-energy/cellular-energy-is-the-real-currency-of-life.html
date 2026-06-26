@@ -289,29 +289,52 @@ p {
   color: var(--g);
 }
 
-/* Continue Exploring */
-.continue-exploring {
+/* Knowledge Graph Navigation */
+.kg-navigation {
+  position: relative;
   margin: 3.5rem 0;
   padding: 2rem 2.5rem;
   background: #FAF8F5;
   border-radius: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+  z-index: 1;
 }
-.continue-exploring h3 {
+.kg-navigation h3 {
   font-family: 'Urbanist', sans-serif;
   font-size: 1.4rem;
   font-weight: 400;
   letter-spacing: 0.5px;
   color: #1A3348;
-  margin: 0 0 1.5rem;
+  margin: 0 0 1rem;
+}
+.kg-navigation .kg-current,
+.kg-navigation .kg-intro,
+.kg-navigation .kg-terminal {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+.kg-navigation .kg-terminal {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #E5E5E7;
+}
+.kg-navigation .kg-terminal a {
+  color: #B8860B;
+  text-decoration: none;
+}
+.kg-navigation .kg-terminal a:hover {
+  text-decoration: underline;
 }
 .explore-card {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  padding: 1rem 0;
+  padding: 0.85rem 0;
   border-bottom: 1px solid #E5E5E7;
 }
-.explore-card:last-child {
+.explore-card:last-of-type {
   border-bottom: none;
 }
 .explore-num {
@@ -594,8 +617,10 @@ footer p {
 </figure>
 
 <div class="container">
-  <section class="continue-exploring">
-    <h3>Continue Exploring</h3>
+  <section class="kg-navigation">
+    <h3>Knowledge Graph Navigation</h3>
+    <p class="kg-current"><strong>📍 Current:</strong> Cellular Energy Hub — Root Narrative Node</p>
+    <p class="kg-intro"><strong>⬇️ Explore the science behind this reflection:</strong></p>
     <div class="explore-card">
       <span class="explore-num">1</span>
       <div class="explore-content">
@@ -610,13 +635,7 @@ footer p {
         <p>The mechanism explained — oxidative phosphorylation and the electron transport chain.</p>
       </div>
     </div>
-    <div class="explore-card">
-      <span class="explore-num">3</span>
-      <div class="explore-content">
-        <a href="/SCIENCE/KNOWLEDGE/graphene-fir/">Graphene FIR</a>
-        <p>Far-infrared environment supporting cellular energy recovery.</p>
-      </div>
-    </div>
+    <p class="kg-terminal"><strong>🏁 Terminal:</strong> <a href="/SCIENCE/KNOWLEDGE/graphene-fir/">Graphene FIR</a> — Far-infrared environment supporting cellular energy recovery</p>
   </section>
 
   <section class="editorial-note">
