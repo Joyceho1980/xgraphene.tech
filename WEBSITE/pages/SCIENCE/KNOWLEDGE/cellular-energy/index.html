@@ -127,6 +127,11 @@ nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: var(
   opacity: 0;
   transition: all .25s;
 }
+.kg-row { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+.kg-text { display: flex; flex-direction: column; gap: 20px; }
+.kg-layer { padding: 18px 20px; background: #FAF8F5; border-radius: 6px; border-left: 3px solid var(--g); }
+.kg-layer-label { font-family: 'Urbanist', sans-serif; font-size: 10px; letter-spacing: 3px; color: var(--g); text-transform: uppercase; margin-bottom: 4px; }
+.kg-layer-body { font-size: 13px; color: var(--s); line-height: 1.7; }
 .energy-flow { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
 .energy-flow-left { background: #FAF8F5; padding: 32px; border-radius: 8px; }
 .energy-flow-item { display: flex; align-items: center; gap: 16px; padding: 12px 0; font-size: 14px; color: var(--s); }
@@ -190,6 +195,8 @@ footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
   .cta-row { padding: 14px 0 24px; }
   .kg-row { grid-template-columns: 1fr !important; gap: 24px; }
 }
+.skip-link { position: absolute; top: -100px; left: 16px; background: var(--g); color: #FFF; padding: 8px 16px; z-index: 1001; font-size: 12px; border-radius: 0 0 4px 4px; text-decoration: none; }
+.skip-link:focus { top: 0; }
 </style>
 <script type="application/ld+json">
 {
@@ -315,6 +322,8 @@ footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
 </head>
 <body>
 
+<a href="#explore" class="skip-link">Skip to content</a>
+
 <nav>
 <div class="nl">
 <a href="/"><img src="/PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async" style="height:28px;"></a>
@@ -346,8 +355,8 @@ footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
 <a href="/SCIENCE/KNOWLEDGE/healthy-aging/">Aging</a>
 </div>
 
-<section class="hero">
-<div class="hero-overlay"></div>
+<section class="hero" aria-label="Cellular Energy — The Foundation of Biological Function">
+<div class="hero-overlay" aria-hidden="true"></div>
 <div class="hero-content">
 <div class="breadcrumb">
 <a href="/">Home</a> &rsaquo; <a href="/SCIENCE/KNOWLEDGE/">Knowledge</a> &rsaquo; Cellular Energy
@@ -420,11 +429,35 @@ EVIDENCE LAYER
 </details>
 
 <div style="max-width:1100px;margin:48px auto;padding:0 24px;">
-<h3 style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#94A3B8;text-transform:uppercase;margin:0 0 16px;">Our Knowledge Graph</h3>
+<h3 style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#94A3B8;text-transform:uppercase;margin:0 0 24px;">Our Knowledge Graph</h3>
+<div class="kg-row">
+<div class="kg-text">
+<div class="kg-layer">
+<div class="kg-layer-label">Energy Layer</div>
+<div class="kg-layer-body">Cellular Energy ★ — The root node. All biological function originates here.</div>
+</div>
+<div class="kg-layer">
+<div class="kg-layer-label">Mechanisms Layer</div>
+<div class="kg-layer-body">Mitochondria → Oxidative Phosphorylation — How energy is actually produced.</div>
+</div>
+<div class="kg-layer">
+<div class="kg-layer-label">Symptoms Layer</div>
+<div class="kg-layer-body">Sleep · Fatigue · Recovery · Inflammation · Metabolism · Healthy Aging — How energy status expresses in human experience.</div>
+</div>
+<div class="kg-layer">
+<div class="kg-layer-label">Technology Layer</div>
+<div class="kg-layer-body">Graphene FIR — A physical modality that interacts with energy systems.</div>
+</div>
+<div class="kg-layer">
+<div class="kg-layer-label">Evidence Layer</div>
+<div class="kg-layer-body">Clinical Evidence — The data foundation beneath every claim.</div>
+</div>
+</div>
 <figure style="margin:0;">
 <img src="/PICTURE/cellular-energy-graph.jpg" alt="XIHE Knowledge Graph - Cellular Energy root node connecting to Mechanism, Symptoms, Technology, and Evidence layers" style="width:100%;height:auto;border-radius:8px;opacity:0.95;">
 <figcaption style="font-size:12px;color:#94A3B8;text-align:center;margin-top:8px;">Cellular Energy is the root. Mechanism → Symptoms → Technology → Evidence.</figcaption>
 </figure>
+</div>
 <div style="display:none;" data-graph-node="Cellular Energy" data-graph-edges="Mitochondria, Sleep, Fatigue, Recovery, Inflammation, Metabolism, Aging, Graphene FIR, Clinical Evidence"></div>
 </div>
 
@@ -436,9 +469,9 @@ EVIDENCE LAYER
 <div class="card-list group-a">
 
 <a href="what-is-cellular-energy.html" class="card">
-  <div class="card-arrow">&rarr;</div>
+  <div class="card-arrow" aria-hidden="true">&rarr;</div>
   <div class="card-icon">
-    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
     <h3>What Is Cellular Energy?<span class="tag live">LIVE</span></h3>
@@ -449,9 +482,9 @@ EVIDENCE LAYER
 </a>
 
 <a href="why-does-the-body-need-atp.html" class="card">
-  <div class="card-arrow">&rarr;</div>
+  <div class="card-arrow" aria-hidden="true">&rarr;</div>
   <div class="card-icon">
-    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
     <h3>Why Does the Body Need ATP?<span class="tag live">LIVE</span></h3>
@@ -462,9 +495,9 @@ EVIDENCE LAYER
 </a>
 
 <a href="where-does-cellular-energy-come-from.html" class="card">
-  <div class="card-arrow">&rarr;</div>
+  <div class="card-arrow" aria-hidden="true">&rarr;</div>
   <div class="card-icon">
-    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
     <h3>Where Does Cellular Energy Come From?<span class="tag live">LIVE</span></h3>
@@ -475,9 +508,9 @@ EVIDENCE LAYER
 </a>
 
 <a href="energy-supply-vs-demand.html" class="card">
-  <div class="card-arrow">&rarr;</div>
+  <div class="card-arrow" aria-hidden="true">&rarr;</div>
   <div class="card-icon">
-    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
     <h3>Energy Supply vs Energy Demand<span class="tag live">LIVE</span></h3>
@@ -488,9 +521,9 @@ EVIDENCE LAYER
 </a>
 
 <a href="why-energy-matters-for-health.html" class="card">
-  <div class="card-arrow">&rarr;</div>
+  <div class="card-arrow" aria-hidden="true">&rarr;</div>
   <div class="card-icon">
-    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
     <h3>Why Energy Matters for Health<span class="tag live">LIVE</span></h3>
@@ -508,9 +541,9 @@ EVIDENCE LAYER
 <div class="card-list group-b">
 
 <a href="how-mitochondria-produce-atp.html" class="card">
-  <div class="card-arrow">&rarr;</div>
+  <div class="card-arrow" aria-hidden="true">&rarr;</div>
   <div class="card-icon">
-    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
     <h3>How Mitochondria Produce ATP<span class="tag live">LIVE</span></h3>
@@ -521,9 +554,9 @@ EVIDENCE LAYER
 </a>
 
 <a href="what-is-oxidative-phosphorylation.html" class="card">
-  <div class="card-arrow">&rarr;</div>
+  <div class="card-arrow" aria-hidden="true">&rarr;</div>
   <div class="card-icon">
-    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
     <h3>What Is Oxidative Phosphorylation?<span class="tag live">LIVE</span></h3>
@@ -534,9 +567,9 @@ EVIDENCE LAYER
 </a>
 
 <a href="why-mitochondrial-efficiency-matters.html" class="card">
-  <div class="card-arrow">&rarr;</div>
+  <div class="card-arrow" aria-hidden="true">&rarr;</div>
   <div class="card-icon">
-    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
     <h3>Why Mitochondrial Efficiency Matters<span class="tag live">LIVE</span></h3>
@@ -547,9 +580,9 @@ EVIDENCE LAYER
 </a>
 
 <a href="what-influences-energy-production.html" class="card">
-  <div class="card-arrow">&rarr;</div>
+  <div class="card-arrow" aria-hidden="true">&rarr;</div>
   <div class="card-icon">
-    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
     <h3>What Influences Energy Production?<span class="tag live">LIVE</span></h3>
@@ -560,9 +593,9 @@ EVIDENCE LAYER
 </a>
 
 <a href="cellular-energy-and-aging.html" class="card">
-  <div class="card-arrow">&rarr;</div>
+  <div class="card-arrow" aria-hidden="true">&rarr;</div>
   <div class="card-icon">
-    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
     <h3>Cellular Energy and Aging<span class="tag live">LIVE</span></h3>
@@ -580,9 +613,9 @@ EVIDENCE LAYER
 <div class="card-list group-c">
 
 <a href="why-am-i-always-tired.html" class="card">
-  <div class="card-arrow">&rarr;</div>
+  <div class="card-arrow" aria-hidden="true">&rarr;</div>
   <div class="card-icon">
-    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
     <h3>Why Am I Always Tired?<span class="tag live">LIVE</span></h3>
@@ -593,9 +626,9 @@ EVIDENCE LAYER
 </a>
 
 <a href="why-do-i-wake-up-tired.html" class="card">
-  <div class="card-arrow">&rarr;</div>
+  <div class="card-arrow" aria-hidden="true">&rarr;</div>
   <div class="card-icon">
-    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
     <h3>Why Do I Wake Up Tired?<span class="tag live">LIVE</span></h3>
@@ -606,9 +639,9 @@ EVIDENCE LAYER
 </a>
 
 <a href="why-is-my-recovery-slow.html" class="card">
-  <div class="card-arrow">&rarr;</div>
+  <div class="card-arrow" aria-hidden="true">&rarr;</div>
   <div class="card-icon">
-    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
     <h3>Why Is My Recovery Slow?<span class="tag live">LIVE</span></h3>
@@ -619,9 +652,9 @@ EVIDENCE LAYER
 </a>
 
 <a href="why-cant-i-focus.html" class="card">
-  <div class="card-arrow">&rarr;</div>
+  <div class="card-arrow" aria-hidden="true">&rarr;</div>
   <div class="card-icon">
-    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
     <h3>Why Can't I Focus?<span class="tag live">LIVE</span></h3>
@@ -632,9 +665,9 @@ EVIDENCE LAYER
 </a>
 
 <a href="why-does-aging-feel-like-low-energy.html" class="card">
-  <div class="card-arrow">&rarr;</div>
+  <div class="card-arrow" aria-hidden="true">&rarr;</div>
   <div class="card-icon">
-    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
   </div>
   <div class="card-body">
     <h3>Why Does Aging Feel Like Low Energy?<span class="tag live">LIVE</span></h3>
