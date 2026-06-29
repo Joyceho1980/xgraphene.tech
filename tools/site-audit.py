@@ -18,7 +18,7 @@ from collections import defaultdict
 # ── Config ──────────────────────────────────────────────
 SITE_ROOT = Path(__file__).resolve().parent.parent  # LAUCH VERSION
 BASE_URL = "https://www.xgraphene.tech"
-SKIP_DIRS = {"node_modules", ".git", ".vercel", "admin", "VISUAL-LIBRARY", "PICTURE", "DOCUMENTS"}
+SKIP_DIRS = {"node_modules", ".git", ".vercel", "admin", "VISUAL-LIBRARY", "PICTURE", "DOCUMENTS", "output", "images", "images-root"}
 VERCEL_CONFIG = SITE_ROOT / "vercel.json"
 SITEMAP_FILE = SITE_ROOT / "sitemap.xml"
 
