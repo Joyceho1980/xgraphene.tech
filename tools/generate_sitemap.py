@@ -5,7 +5,7 @@ from datetime import date
 
 BASE = r"D:\CODEX\LAUCH VERSION\WEBSITE\pages"
 DOMAIN = "https://www.xgraphene.tech"
-TODAY = "2026-06-21"
+TODAY = "2026-06-26"
 
 # Priority rules
 HIGH_PRIORITY = ["SCIENCE/KNOWLEDGE/", "SCIENCE/Landing.html", "SCIENCE/Evidence.html",
@@ -13,9 +13,18 @@ HIGH_PRIORITY = ["SCIENCE/KNOWLEDGE/", "SCIENCE/Landing.html", "SCIENCE/Evidence
                  "SCIENCE/KNOWLEDGE/Clinical-Evidence/", "SCIENCE/KNOWLEDGE/Technology-Platform/"]
 WEEKLY = ["/index.html", "cellular-energy/index.html", "SCIENCE/Landing.html"]
 
+CLEAN_URLS = {
+    "applications.html": "applications",
+    "partnership.html": "partnership",
+}
+
 def get_url_info(rel_path):
     """Return (url, changefreq, priority)"""
     url_path = rel_path.replace("\\", "/")
+
+    # Check clean URL exceptions
+    if url_path in CLEAN_URLS:
+        return (DOMAIN + "/" + CLEAN_URLS[url_path], "monthly", "0.7")
 
     # Determine priority and changefreq
     if url_path.endswith("/index.html"):
@@ -42,6 +51,11 @@ def main():
         for f in files:
             if f.endswith(".html"):
                 full = os.path.join(root, f)
+                # Skip pages with noindex
+                with open(full, "r", encoding="utf-8", errors="ignore") as fh:
+                    head = fh.read(1024)
+                if 'noindex' in head.lower():
+                    continue
                 rel = os.path.relpath(full, BASE)
                 pages.append(rel)
 
@@ -50,6 +64,14 @@ def main():
     lines = []
     lines.append('<?xml version="1.0" encoding="UTF-8"?>')
     lines.append('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
+
+    # Homepage ALWAYS first
+    lines.append('  <url>')
+    lines.append(f'    <loc>{DOMAIN}/</loc>')
+    lines.append(f'    <lastmod>{TODAY}</lastmod>')
+    lines.append('    <changefreq>daily</changefreq>')
+    lines.append('    <priority>1.0</priority>')
+    lines.append('  </url>')
 
     for p in pages:
         url, freq, priority = get_url_info(p)

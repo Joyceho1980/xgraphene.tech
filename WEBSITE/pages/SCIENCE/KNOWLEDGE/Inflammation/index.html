@@ -1,24 +1,80 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" translate="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google" content="notranslate">
     <title>Inflammation Biology | XIHE Knowledge Hub</title>
-    <link rel="icon" type="image/svg+xml" href="/PICTURE/XIHE_ICON.svg">
-    <meta name="description" content="Inflammation is a protective response �?until it becomes chronic. Explore acute vs chronic inflammation, inflammatory cascades, and resolution mechanisms.">
+    <link rel="icon" type="image/svg+xml" href="/images/XIHE_ICON.svg">
+    <meta name="description" content="Inflammation is a protective response ??until it becomes chronic. Explore acute vs chronic inflammation, inflammatory cascades, and resolution mechanisms.">
     <link rel="canonical" href="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Inflammation/">
+<meta property="og:url" content="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Inflammation/">
     <meta property="og:title" content="Inflammation Biology | XIHE Knowledge Hub">
     <meta property="og:description" content="The biology of inflammation: from acute protection to chronic disease. Understanding inflammatory cascades and resolution.">
-    <meta property="og:image" content="https://www.xgraphene.tech/PICTURE/xihe-og.webp">
+    <meta property="og:image" content="https://www.xgraphene.tech/images/science-hero.png">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="original-source" content="https://www.xgraphene.tech">
-    <link rel="stylesheet" href="../../../fonts/fonts.css">
+    <link rel="stylesheet" href="/fonts/fonts.css">
     <style>
         :root { --bg: #FAF8F5; --t: #1A1D24; --s: #475569; --m: #94A3B8; --g: #C5A059; --b: #E5E5E7; --n: #1A3348; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * { margin: 0; padding: 0; 
+        img { max-width: 100%; height: auto; }
         body { font-family: 'Inter', sans-serif; background: #FFF; color: var(--t); line-height: 1.75; -webkit-font-smoothing: antialiased; }
+
+        /* Dropdown */
+.nav-item-dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: #1A3348;
+    border: 1px solid rgba(197,160,89,0.2);
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    z-index: 1001;
+}
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(4px);
+}
+.nav-dropdown-menu a {
+    display: block;
+    padding: 10px 24px;
+    font-size: 11px;
+    color: #E0E6ED;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-dropdown-menu a:hover {
+    background: rgba(197,160,89,0.1);
+    color: #C5A059;
+}
+.nav-dropdown-menu a::after { display: none; }
+.nav-dropdown-trigger {
+    cursor: pointer;
+}
+.nav-dropdown-trigger::after {
+    content: ' \25BE';
+    font-size: 8px;
+    opacity: 0.6;
+}
 
         nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: var(--n); display: flex; align-items: center; justify-content: space-between; padding: 0 10%; z-index: 1000; }
         .nl { display: flex; gap: 30px; align-items: center; }
@@ -37,7 +93,7 @@
         .hub-nav .sep { width: 1px; height: 16px; background: var(--b); flex-shrink: 0; margin: 0 4px; }
 
         .hero {
-            background: url('/VISUAL-LIBRARY/Inflammation%20Hero.webp') center/cover;
+            background: url('/images/hero/Inflammation%20Hero.webp') center/cover;
             min-height: 85vh;
             padding: 172px 10% 80px;
             text-align: left;
@@ -233,9 +289,37 @@
 <body>
 
 <nav>
-    <a href="/"><img src="/PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async"> style="height:44px;width:auto"></a>
+    <a href="/"><img src="/images/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async"> style="height:44px;width:auto"></a>
     <div class="nl">
-        <a href="/">Home</a><a href="/ABOUT/AboutOrigin.html">About</a><a href="/SCIENCE/Landing.html">Science</a><a href="/applications.html">Applications</a><a href="/PRODUCTS/ProductPage.html">Products</a><a href="/partnership.html">Partnership</a><a href="/NEWS/index.html">News</a><a href="/CONTACT/index.html">Contact</a>
+        <a href="/">Home</a><a href="/ABOUT/AboutOrigin.html">About</a><div class="nav-item-dropdown">
+            <a href="/SCIENCE/Landing.html" class="nav-dropdown-trigger">Science</a>
+            <div class="nav-dropdown-menu">
+                <a href="/SCIENCE/Landing.html">Science Overview</a>
+                <a href="/SCIENCE/Mechanism.html">Mechanism</a>
+                <a href="/SCIENCE/Technology.html">Technology</a>
+                <a href="/SCIENCE/Evidence.html">Evidence</a>
+                <a href="/SCIENCE/KNOWLEDGE/">Knowledge Hub</a>
+            </div>
+        </div><a href="/applications.html">Applications</a><div class="nav-item-dropdown">
+            <a href="/PRODUCTS/ProductPage.html" class="nav-dropdown-trigger">Products</a>
+            <div class="nav-dropdown-menu">
+                <a href="/PRODUCTS/CAPSULE/capsule-b2b.html">CAPSULE �� Full Body Photon Chamber</a>
+                <a href="/PRODUCTS/CABIN/cabin.html">CABIN �� Modular Resonance Chamber</a>
+                <a href="/PRODUCTS/FILM/GrapheneFilm.html">Graphene Film �� Heating Module</a>
+                <a href="/PRODUCTS/PORTABLES/NeuralResilience.html">Neural Resilience �� Wearable</a>
+                <a href="/PRODUCTS/PORTABLES/VisceralVitality.html">Visceral Vitality �� Waist Pad</a>
+                <a href="/PRODUCTS/PORTABLES/DeepRecovery.html">Deep Recovery �� Lumbar Belt</a>
+                <a href="/technology/xihe-fir-film-performance.html" style="font-size:10px;opacity:0.7;">�� FIR Film Performance Data</a>
+            </div>
+        </div><a href="/partnership.html">Partnership</a><div class="nav-item-dropdown">
+            <a href="/NEWS/index.html" class="nav-dropdown-trigger">News</a>
+            <div class="nav-dropdown-menu">
+                <a href="/NEWS/index.html">All News</a>
+                <a href="/NEWS/index.html#company">Company News</a>
+                <a href="/NEWS/index.html#industry">Industry News</a>
+                <a href="/NEWS/index.html#product">Product News</a>
+            </div>
+        </div><a href="/CONTACT/index.html">Contact</a>
         <a href="tel:0086-18688683865" class="np">+86 186 8868 3865</a>
     </div>
 </nav>
@@ -328,9 +412,9 @@ TECHNOLOGY LAYER
 <div style="padding:16px 0;margin-bottom:12px;">
 <h3 style="font-family:'Urbanist',sans-serif;font-size:10px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin:0 0 12px;">Layer 4 &middot; Evidence Snapshot</h3>
 <ul style="font-size:13px;color:#475569;line-height:1.8;padding-left:20px;">
-<li>See Microcirculation Hub: PKU clinical trial 64.9% capillary blood flow improvement �?circulation supports inflammatory resolution</li>
-<li>See Graphene FIR Hub: NIQS certified 5�?5μm FIR emission band matches tissue absorption window relevant to inflammation modulation</li>
-<li>See Clinical Evidence Hub: Int J Mol Sci (<a href="https://doi.org/10.3390/ijms27073101" target="_blank" rel="noopener" style="color:#C5A059;">DOI: 10.3390/ijms27073101</a>) �?graphene FIR accelerated wound closure to 83.9%, an inflammation-linked process</li>
+<li>See Microcirculation Hub: PKU clinical trial 64.9% capillary blood flow improvement ??circulation supports inflammatory resolution</li>
+<li>See Graphene FIR Hub: NIQS certified 5??5��m FIR emission band matches tissue absorption window relevant to inflammation modulation</li>
+<li>See Clinical Evidence Hub: Int J Mol Sci (<a href="https://doi.org/10.3390/ijms27073101" target="_blank" rel="noopener" style="color:#C5A059;">DOI: 10.3390/ijms27073101</a>) ??graphene FIR accelerated wound closure to 83.9%, an inflammation-linked process</li>
 </ul>
 </div>
 
@@ -344,7 +428,7 @@ TECHNOLOGY LAYER
 
 </details>
 
-<!-- === GRAPH EDGES: Inflammation Node (v2 �?machine-parsable) === -->
+<!-- === GRAPH EDGES: Inflammation Node (v2 ??machine-parsable) === -->
 <div style="display:none;" aria-hidden="true">
 <!-- NODE_ID: inflammation -->
 <!-- NODE_TYPE: symptom -->
@@ -391,7 +475,7 @@ TECHNOLOGY LAYER
                 <p>Acute response vs chronic dysfunction: understanding the two faces of inflammation at the cellular level.</p>
                 <div class="card-links">Foundation &middot; <b>H5 (Recovery)</b> &middot; <b>H1 (Mitochondria)</b></div>
             </div>
-            <img class="card-img" src="/PICTURE/hero-fatigue-energy.webp" alt="Inflammation and recovery biology" >
+            <img class="card-img" src="/images/hero-fatigue-energy.webp" alt="Inflammation and recovery biology" >
         </a>
 
         <a href="/SCIENCE/KNOWLEDGE/Inflammation/nociceptive-vs-neuropathic-mechanisms.html" class="card">
@@ -404,7 +488,7 @@ TECHNOLOGY LAYER
                 <p>Two distinct biological pathways: understanding how tissue damage and nerve dysfunction produce different types of discomfort.</p>
                 <div class="card-links">Advanced &middot; <b>H5 (Recovery)</b></div>
             </div>
-            <img class="card-img" src="/PICTURE/hero-fatigue-energy.webp" alt="Nociceptive vs neuropathic pain mechanisms" >
+            <img class="card-img" src="/images/hero-fatigue-energy.webp" alt="Nociceptive vs neuropathic pain mechanisms" >
         </a>
 
         <a href="/SCIENCE/KNOWLEDGE/Inflammation/beyond-thermal-comfort-biological-recovery.html" class="card">
@@ -417,7 +501,7 @@ TECHNOLOGY LAYER
                 <p>Macrophage polarization, inflammation signaling, and the M1&rarr;M2 transition. How graphene FIR may support the biological recovery environment at the cellular level.</p>
                 <div class="card-links">LINKED TO</div>
             </div>
-            <img class="card-img" src="../../../VISUAL-LIBRARY/beyond-thermal-comfort-card.webp" alt="Macrophage polarization and biological recovery" >
+            <img class="card-img" src="../..//images/hero/beyond-thermal-comfort-card.webp" alt="Macrophage polarization and biological recovery" >
         </a>
 
         <a href="/SCIENCE/KNOWLEDGE/Inflammation/what-is-chronic-inflammation.html" class="card">
@@ -427,7 +511,7 @@ TECHNOLOGY LAYER
                 <p>The kind of inflammation you don't feel &mdash; and how it drains energy.</p>
             </div>
             <span class="card-arrow">&rarr;</span>
-            <img class="card-img" src="/PICTURE/hero-fatigue-energy.webp" alt="" >
+            <img class="card-img" src="/images/hero-fatigue-energy.webp" alt="" >
         </a>
 
         <a href="/SCIENCE/KNOWLEDGE/Inflammation/how-does-inflammation-affect-energy.html" class="card">
@@ -437,7 +521,7 @@ TECHNOLOGY LAYER
                 <p>Why inflammatory signaling and mitochondrial function are closely linked.</p>
             </div>
             <span class="card-arrow">&rarr;</span>
-            <img class="card-img" src="/PICTURE/hero-mitochondria-energy.webp" alt="" >
+            <img class="card-img" src="/images/hero-mitochondria-energy.webp" alt="" >
         </a>
 
         <a href="/SCIENCE/KNOWLEDGE/Inflammation/hidden-signs-your-body-is-inflamed.html" class="card">
@@ -447,7 +531,7 @@ TECHNOLOGY LAYER
                 <p>Subtle signals that your body may be carrying a higher inflammatory load.</p>
             </div>
             <span class="card-arrow">&rarr;</span>
-            <img class="card-img" src="/PICTURE/hero-aging-recovery.webp" alt="" >
+            <img class="card-img" src="/images/hero-aging-recovery.webp" alt="" >
         </a>
 
     </div>
@@ -508,7 +592,7 @@ TECHNOLOGY LAYER
 </div>
 
 <footer style="padding: 40px 10%; background: #1A3348; text-align: center; border-top: 2px solid #C5A059;">
-    <p style="font-size: 13px; color: #E0E6ED; letter-spacing: 0.03em;">XIHE Technology �?A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
+    <p style="font-size: 13px; color: #E0E6ED; letter-spacing: 0.03em;">XIHE Technology ??A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
 </footer>
 <script type="application/ld+json">
 {

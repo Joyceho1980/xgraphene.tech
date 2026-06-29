@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graphene Infrared Research Hub | Published Studies & Clinical Evidence | XIHE</title>
-    <link rel="icon" type="image/svg+xml" href="../PICTURE/XIHE_ICON.svg">
-    <meta name="description" content="Research evidence for 8â€?0Î¼m graphene far-infrared photobiomodulation: 8 RCTs, 1,200+ subjects, published comfort and metabolic outcomes, independent validation. Powered by IKKEM, 40+ patents, 18 SCI papers.">
+    <link rel="icon" type="image/svg+xml" href="/images/XIHE_ICON.svg">
+    <meta name="description" content="Research evidence for 8?0Î¼m graphene far-infrared photobiomodulation: 8 RCTs, 1,200+ subjects, published comfort and metabolic outcomes, independent validation. Powered by IKKEM, 40+ patents, 18 SCI papers.">
     <!-- Open Graph -->
     <meta property="og:title" content="Research Evidence | XIHE Science">
     <meta property="og:description" content="XIHE research evidence: 18 SCI papers, 8 RCT trials, 5 hospital research partners, #1 industry standard drafter. Data-driven validation of graphene resonance technology.">
-    <meta property="og:image" content="https://www.xgraphene.tech/PICTURE/xihe-og.jpg">
+    <meta property="og:image" content="https://www.xgraphene.tech/images/science-hero.png">
     <meta property="og:url" content="https://www.xgraphene.tech/SCIENCE/Evidence.html">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
@@ -20,7 +20,7 @@
     {
         "@context": "https://schema.org",
         "@type": "TechArticle",
-        "headline": "XIHE Research Evidence â€?Published Outcomes in Graphene Resonance Technology",
+        "headline": "XIHE Research Evidence ?Published Outcomes in Graphene Resonance Technology",
         "description": "18 SCI papers, 8 RCT trials, 5 hospital research partners. Published research on graphene far-infrared resonance: comfort and mobility (78% measured outcome), metabolic markers (63% observed change), and immune cell activity (42% CD3+ observation).",
         "proficiencyLevel": "Advanced",
         "about": {
@@ -93,7 +93,7 @@
         "datePublished": "2024",
         "inLanguage": "en",
         "isPartOf": {"@type": "PublicationIssue", "isPartOf": {"@type": "Periodical", "name": "BMC Geriatrics", "issn": "1471-2318"}},
-        "sameAs": "https://doi.org/10.1186/s12877-024-04755-9",
+        "sameAs": "https://doi.org/10.1186/s12877-024-05344-z",
         "about": "Graphene FIR; elderly anxiety; cognitive function; RCT; 108 participants",
         "sdPublisher": {"@type": "Organization", "name": "Ningbo University / CAS Institute of Psychology / Xiamen University"}
     },
@@ -201,7 +201,7 @@
     ]
     </script>
 
-    <link rel="stylesheet" href="../fonts/fonts.css">
+    <link rel="stylesheet" href="/fonts/fonts.css">
     <style>
         :root {
             --bg-color: #FAF8F5;
@@ -212,7 +212,8 @@
             --accent-gold: #C5A059;
             --border-color: #E5E5E7;
         }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * { margin: 0; padding: 0; 
+        img { max-width: 100%; height: auto; }
         body {
             font-family: 'Inter', -apple-system, sans-serif;
             background: var(--bg-color);
@@ -265,7 +266,60 @@
 
         .nav-links a:hover, .nav-links a.active { color: #C5A059; }
 
-.nav-phone { font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px; color: var(--accent-gold); text-decoration: none; padding: 6px 14px; border: 1px solid rgba(197,160,89,0.3); border-radius: 50px; transition: all 0.3s ease; white-space: nowrap; font-weight: 500; }
+/* Dropdown */
+.nav-item-dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: #1A3348;
+    border: 1px solid rgba(197,160,89,0.2);
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    z-index: 1001;
+}
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(4px);
+}
+.nav-dropdown-menu a {
+    display: block;
+    padding: 10px 24px;
+    font-size: 11px;
+    color: #E0E6ED;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-dropdown-menu a:hover {
+    background: rgba(197,160,89,0.1);
+    color: #C5A059;
+}
+.nav-dropdown-menu a::after { display: none; }
+.nav-dropdown-trigger {
+    cursor: pointer;
+}
+.nav-dropdown-trigger::after {
+    content: ' \25BE';
+    font-size: 8px;
+    opacity: 0.6;
+}
+
+        .nav-phone { font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px; color: var(--accent-gold); text-decoration: none; padding: 6px 14px; border: 1px solid rgba(197,160,89,0.3); border-radius: 50px; transition: all 0.3s ease; white-space: nowrap; font-weight: 500; }
 .nav-phone:hover { background: var(--accent-gold); color: #1A3348; }
 
         /* ========== HERO ========== */
@@ -444,7 +498,7 @@
             section[style*="padding: 80px 10%"] { padding: 40px 5% !important; }
         }
 
-/* XIHE Button System â€?Ghost â†?Solid on Hover */
+/* XIHE Button System ?Ghost ?Solid on Hover */
 .xihe-btn {
     display: inline-block;
     padding: 15px 40px;
@@ -528,13 +582,24 @@
 <body>
 
 <nav>
-    <a href="/" class="logo"><img src="../PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" style="height: 44px; width: auto; display: block;"></a>
+    <a href="/" class="logo"><img src="/images/XIHE_LOGO_DARK.svg" alt="XIHE" style="height: 44px; width: auto; display: block;"></a>
     <div class="nav-links">
         <a href="/">Home</a>
         <a href="../ABOUT/AboutOrigin.html">About</a>
         <a href="Technology.html" class="active">Science</a>
         <a href="../applications.html">Applications</a>
-        <a href="../PRODUCTS/ProductPage.html">Products</a>
+        <div class="nav-item-dropdown">
+            <a href="/PRODUCTS/ProductPage.html" class="nav-dropdown-trigger">Products</a>
+            <div class="nav-dropdown-menu">
+                <a href="/PRODUCTS/CAPSULE/capsule-b2b.html">CAPSULE â€” Full Body Photon Chamber</a>
+                <a href="/PRODUCTS/CABIN/cabin.html">CABIN â€” Modular Resonance Chamber</a>
+                <a href="/PRODUCTS/FILM/GrapheneFilm.html">Graphene Film â€” Heating Module</a>
+                <a href="/PRODUCTS/PORTABLES/NeuralResilience.html">Neural Resilience â€” Wearable</a>
+                <a href="/PRODUCTS/PORTABLES/VisceralVitality.html">Visceral Vitality â€” Waist Pad</a>
+                <a href="/PRODUCTS/PORTABLES/DeepRecovery.html">Deep Recovery â€” Lumbar Belt</a>
+                <a href="/technology/xihe-fir-film-performance.html" style="font-size:10px;opacity:0.7;">â€” FIR Film Performance Data</a>
+            </div>
+        </div>
         <a href="../partnership.html">Partnership</a>
         
         <a href="../CONTACT/index.html">Contact</a>
@@ -545,7 +610,7 @@
 <main>
 
 <!-- ========== HERO ========== -->
-<section class="hero-section" style="background: linear-gradient(135deg, rgba(26,51,72,0.8) 0%, rgba(26,51,72,0.4) 100%), url('EVIDENCE HERO.jpg'); background-size: cover; background-position: center;">
+<section class="hero-section" style="background: linear-gradient(135deg, rgba(26,51,72,0.8) 0%, rgba(26,51,72,0.4) 100%), url('EVIDENCE%20HERO.jpg'); background-size: cover; background-position: center;">
     <div style="flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; padding: 70px 10% 0;">
         <div style="max-width: 800px; padding: 0 20px;">
             <span class="hero-tag">XIHE Research Hub</span>
@@ -553,7 +618,7 @@
                 Research-Backed.<br>
                 <span>Independently Tested.</span>
             </h1>
-            <p class="hero-tagline">18 SCI papers. 8 RCTs. 5 hospital research partners. One national standard. The complete evidence archive â€?evidence that invites scrutiny.</p>
+            <p class="hero-tagline">18 SCI papers. 8 RCTs. 5 hospital research partners. One national standard. The complete evidence archive ?evidence that invites scrutiny.</p>
         </div>
     </div>
     <div class="hero-cat-links" style="flex-shrink: 0; position: static;">
@@ -584,10 +649,10 @@
 <section style="padding: 60px 10%; background: #FAF8F5;">
     <div style="max-width: 900px; margin: 0 auto;">
         <p style="font-family: 'Urbanist', sans-serif; font-size: 18px; color: #1A3348; line-height: 1.7; margin-bottom: 24px;">
-            <strong style="color: #C5A059;">Research Summary</strong> â€?Far-infrared resonance at 8â€?0 micrometers (8â€?0&#x03BC;m), delivered through precision-engineered graphene materials, has been investigated across 8 randomized controlled trials involving 1,200+ subjects. Published research has observed <span style="color: #C5A059; font-weight: 600;">78.3% measured comfort and mobility outcomes</span>, <span style="color: #C5A059; font-weight: 600;">63% change in metabolic function markers</span>, and a <span style="color: #C5A059; font-weight: 600;">42% increase in CD3+ immune cell activity</span>. These findings are associated with photobiomodulation â€?specific wavelengths of light that interact with mitochondrial cytochrome c oxidase, supporting ATP production and cellular function.
+            <strong style="color: #C5A059;">Research Summary</strong> ?Far-infrared resonance at 8?0 micrometers (8?0&#x03BC;m), delivered through precision-engineered graphene materials, has been investigated across 8 randomized controlled trials involving 1,200+ subjects. Published research has observed <span style="color: #C5A059; font-weight: 600;">78.3% measured comfort and mobility outcomes</span>, <span style="color: #C5A059; font-weight: 600;">63% change in metabolic function markers</span>, and a <span style="color: #C5A059; font-weight: 600;">42% increase in CD3+ immune cell activity</span>. These findings are associated with photobiomodulation ?specific wavelengths of light that interact with mitochondrial cytochrome c oxidase, supporting ATP production and cellular function.
         </p>
         <p style="font-family: 'Inter', sans-serif; font-size: 13px; color: #64748B; line-height: 1.6; background: white; padding: 20px 24px; border-left: 3px solid #C5A059; border-radius: 0 8px 8px 0;">
-            <strong style="color: #1A3348;">Cite this page:</strong> XIHE Technology. (2026). <em>Research Evidence for 8â€?0&#x03BC;m Graphene Far-Infrared Photobiomodulation: 8 RCTs, 1,200+ Subjects.</em> Jiageng Innovation Laboratory (IKKEM) Research Partnership. https://www.xgraphene.tech/SCIENCE/Evidence.html
+            <strong style="color: #1A3348;">Cite this page:</strong> XIHE Technology. (2026). <em>Research Evidence for 8?0&#x03BC;m Graphene Far-Infrared Photobiomodulation: 8 RCTs, 1,200+ Subjects.</em> Jiageng Innovation Laboratory (IKKEM) Research Partnership. https://www.xgraphene.tech/SCIENCE/Evidence.html
         </p>
     </div>
 </section>
@@ -662,7 +727,7 @@
                         <span style="font-size: 9px; color: var(--accent-gold); background: rgba(197,160,89,0.08); padding: 2px 8px; border-radius: 10px; letter-spacing: 0.5px; display: inline-block; margin-bottom: 12px;">Level 3 Â· Human Clinical Research</span>
                         <p style="font-family: 'Urbanist', sans-serif; font-size: 52px; font-weight: 200; color: #1A1D24; letter-spacing: 2px; margin-bottom: 8px; text-align: center;">78%</p>
                         <p style="font-size: 13px; color: #888; margin-bottom: 20px; font-style: italic;">of participants reported meaningful comfort improvement</p>
-                        <p style="font-size: 14px; color: #475569; line-height: 1.7;">Comfort scores (VAS) showed â‰? point improvement over a standard 8-week application protocol, with sustained results at 4-week follow-up.</p>
+                        <p style="font-size: 14px; color: #475569; line-height: 1.7;">Comfort scores (VAS) showed ? point improvement over a standard 8-week application protocol, with sustained results at 4-week follow-up.</p>
                         <p style="font-size: 11px; color: #C5A059; margin-top: 16px; letter-spacing: 1px;">&mdash; RCT 2024-CP-001</p>
                     </div>
 
@@ -706,13 +771,13 @@
         <div class="ev-two-col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
             <div>
                 <p style="line-height: 1.9; color: #475569; margin-bottom: 28px; font-size: 16px;">
-                    In modern wellness and clinical practice, <strong style="color: #1A1D24;">precision interventions</strong> â€?PEMF technology, micro-hyperbaric oxygen chambers, CoQ10 supplementation, targeted modalities â€?are the <span style="color: #C5A059;">"scalpel."</span> They address specific physiological targets with precision.
+                    In modern wellness and clinical practice, <strong style="color: #1A1D24;">precision interventions</strong> ?PEMF technology, micro-hyperbaric oxygen chambers, CoQ10 supplementation, targeted modalities ?are the <span style="color: #C5A059;">"scalpel."</span> They address specific physiological targets with precision.
                 </p>
                 <p style="line-height: 1.9; color: #475569; margin-bottom: 28px; font-size: 16px;">
                     But a scalpel needs fertile ground. The cellular energy environment is the <span style="color: #C5A059;">"soil."</span>
                 </p>
                 <p style="line-height: 1.9; color: #475569; margin-bottom: 28px; font-size: 16px;">
-                    XIHE provides a constant <strong style="color: #1A1D24;">Environmental Layer</strong> â€?optimizing cellular metabolism, enhancing mitochondrial ATP production, and creating the fertile microenvironment where recovery interventions take root.
+                    XIHE provides a constant <strong style="color: #1A1D24;">Environmental Layer</strong> ?optimizing cellular metabolism, enhancing mitochondrial ATP production, and creating the fertile microenvironment where recovery interventions take root.
                 </p>
                 <p style="line-height: 1.9; color: #1A1D24; font-size: 16px; margin-bottom: 32px;">
                     Published research suggests this synergistic approach can <span style="color: #C5A059; font-weight: 500;">amplify measured outcomes by up to 30%</span> when combined with <a href="../PRODUCTS/ProductPage.html" style="color: var(--accent-gold); text-decoration: none;">targeted wellness modalities</a>.
@@ -771,7 +836,7 @@
                 </div>
                 <p style="font-size: 16px; color: #1A1D24; font-weight: 500; margin-bottom: 10px; line-height: 1.4;">Graphene Far-Infrared Effects on Cellular Stress Pathways</p>
                 <p style="font-size: 13px; color: #475569; line-height: 1.7; margin-bottom: 12px;">Laboratory research investigated the interaction of far-infrared radiation from graphene materials with cellular stress responses in an in vitro model. Findings contribute to the mechanistic understanding of FIR-biological interaction.</p>
-                <a href="https://doi.org/10.1186/s12885-025-14031-0" target="_blank" style="font-size: 10px; color: #FFFFFF; background: #1A3348; padding: 8px 18px; border-radius: 50px; text-decoration: none; letter-spacing: 1px; display: inline-block; text-transform: uppercase;">Zhang L. et al. â†?/a>
+                <a href="https://doi.org/10.1186/s12885-025-14031-0" target="_blank" style="font-size: 10px; color: #FFFFFF; background: #1A3348; padding: 8px 18px; border-radius: 50px; text-decoration: none; letter-spacing: 1px; display: inline-block; text-transform: uppercase;">Zhang L. et al. ?/a>
             </div>
 
             <div class="card" style="padding: 36px; text-align: center;">
@@ -782,7 +847,7 @@
                 </div>
                 <p style="font-size: 16px; color: #1A1D24; font-weight: 500; margin-bottom: 10px; line-height: 1.4;">UCP1 Activation Through Graphene Far-Infrared Resonance</p>
                 <p style="font-size: 13px; color: #475569; line-height: 1.7; margin-bottom: 12px;">Research observed that graphene far-infrared resonance is associated with UCP1 protein expression changes, trending toward improved metabolic markers and triglyceride profiles in study participants.</p>
-                <a href="https://pubmed.ncbi.nlm.nih.gov/40076847/" target="_blank" style="font-size: 10px; color: #FFFFFF; background: #1A3348; padding: 8px 18px; border-radius: 50px; text-decoration: none; letter-spacing: 1px; display: inline-block; text-transform: uppercase;">Wang X. et al. â†?/a>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/40076847/" target="_blank" style="font-size: 10px; color: #FFFFFF; background: #1A3348; padding: 8px 18px; border-radius: 50px; text-decoration: none; letter-spacing: 1px; display: inline-block; text-transform: uppercase;">Wang X. et al. ?/a>
             </div>
 
             <div class="card" style="padding: 36px; text-align: center;">
@@ -793,7 +858,7 @@
                 </div>
                 <p style="font-size: 16px; color: #1A1D24; font-weight: 500; margin-bottom: 10px; line-height: 1.4;">Far-Infrared and Mitochondrial Function</p>
                 <p style="font-size: 13px; color: #475569; line-height: 1.7; margin-bottom: 12px;">Research observed that far-infrared radiation is associated with changes in mitochondrial function and ATP synthesis, contributing to the bioenergetic understanding of FIR-biological interaction.</p>
-                <a href="https://www.mdpi.com/1422-0067/21/3/1030" target="_blank" style="font-size: 10px; color: #FFFFFF; background: #1A3348; padding: 8px 18px; border-radius: 50px; text-decoration: none; letter-spacing: 1px; display: inline-block; text-transform: uppercase;">Hsu Y.H. et al. â†?/a>
+                <a href="https://www.mdpi.com/1422-0067/21/3/1030" target="_blank" style="font-size: 10px; color: #FFFFFF; background: #1A3348; padding: 8px 18px; border-radius: 50px; text-decoration: none; letter-spacing: 1px; display: inline-block; text-transform: uppercase;">Hsu Y.H. et al. ?/a>
             </div>
 
             <div class="card" style="padding: 36px; text-align: center;">
@@ -804,7 +869,7 @@
                 </div>
                 <p style="font-size: 16px; color: #1A1D24; font-weight: 500; margin-bottom: 10px; line-height: 1.4;">Anti-Inflammatory Effects of Photobiomodulation</p>
                 <p style="font-size: 13px; color: #475569; line-height: 1.7; margin-bottom: 12px;">Comprehensive review of the anti-inflammatory mechanisms of photobiomodulation, contributing to the theoretical foundation for far-infrared resonance research.</p>
-                <a href="https://pubmed.ncbi.nlm.nih.gov/28218038/" target="_blank" style="font-size: 10px; color: #FFFFFF; background: #1A3348; padding: 8px 18px; border-radius: 50px; text-decoration: none; letter-spacing: 1px; display: inline-block; text-transform: uppercase;">Hamblin M.R. et al. â†?/a>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/28218038/" target="_blank" style="font-size: 10px; color: #FFFFFF; background: #1A3348; padding: 8px 18px; border-radius: 50px; text-decoration: none; letter-spacing: 1px; display: inline-block; text-transform: uppercase;">Hamblin M.R. et al. ?/a>
             </div>
         </div>
 
@@ -891,7 +956,7 @@
             <div style="padding: 40px; background: #FFFFFF; border-radius: 18px; border: 1px solid #E5E5E7; text-align: center; transition: transform 0.4s ease, box-shadow 0.4s ease;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 20px 40px rgba(0,0,0,0.06)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
                 <p style="font-family: 'Urbanist', sans-serif; font-size: 11px; color: var(--accent-gold); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px;">Industry Standard</p>
                 <p style="font-family: 'Urbanist', sans-serif; font-size: 36px; font-weight: 200; color: var(--text-primary); margin-bottom: 12px; letter-spacing: 2px;">#1 Standard Drafter</p>
-                <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 12px;">Lead drafter of China's "Graphene Flexible Electrothermal Film" industry standard â€?a national-level recognition of XIHE's technical authority.</p>
+                <p style="font-size: 13px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 12px;">Lead drafter of China's "Graphene Flexible Electrothermal Film" industry standard ?a national-level recognition of XIHE's technical authority.</p>
                 <p style="font-size: 12px; color: var(--accent-gold); letter-spacing: 1px;">Standard No. 2024-0923T-YB</p>
             </div>
 
@@ -923,7 +988,7 @@
 <section id="nobel-laureate" style="padding: 120px 10%; background: #FFFFFF;">
     <div class="ev-two-col" style="max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
         <div style="border-radius: 18px; overflow: hidden; transition: transform 0.5s ease, box-shadow 0.5s ease;" onmouseover="this.style.transform='translateY(-6px)';this.style.boxShadow='0 24px 48px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='none'">
-            <img src="../ABOUT/è®²è¯¾.webp" alt="Nobel Laureate Sir Konstantin Novoselov, FRS â€?Visiting Scholar at Jiageng Innovation Laboratory" style="width: 100%; height: auto; display: block;">
+            <img src="../ABOUT/è®²è¯¾.webp" alt="Nobel Laureate Sir Konstantin Novoselov, FRS ?Visiting Scholar at Jiageng Innovation Laboratory" style="width: 100%; height: auto; display: block;">
         </div>
         <div>
             <span class="section-label" style="color: #1A3348; font-weight: 600;">Nobel Laureate Connection</span>
@@ -931,13 +996,13 @@
                 From graphene discovery<br>to precision engineering.
             </h2>
             <p style="font-size: 15px; color: #475569; line-height: 1.8; margin-bottom: 20px;">
-                <strong style="color: #1A1D24; font-weight: 500;">Sir Konstantin Novoselov, FRS</strong> â€?Nobel Laureate in Physics (2010), co-discoverer of graphene, Visiting Scholar at Jiageng Innovation Laboratory (IKKEM), and Xiamen University Lifetime Honorary Professor â€?provides long-term academic guidance to IKKEM's 2D materials research programs. His graphene expertise directly informs XIHE's characterization methodology and multilayer lattice engineering.
+                <strong style="color: #1A1D24; font-weight: 500;">Sir Konstantin Novoselov, FRS</strong> ?Nobel Laureate in Physics (2010), co-discoverer of graphene, Visiting Scholar at Jiageng Innovation Laboratory (IKKEM), and Xiamen University Lifetime Honorary Professor ?provides long-term academic guidance to IKKEM's 2D materials research programs. His graphene expertise directly informs XIHE's characterization methodology and multilayer lattice engineering.
             </p>
             <div style="font-size: 12px; color: #888888; padding-top: 20px; border-top: 1px solid #E5E5E7; line-height: 1.6;">
                 Sir Konstantin Novoselov, FRS Â· Nobel Prize in Physics 2010 Â· IKKEM Visiting Scholar Â· Xiamen University Lifetime Honorary Professor<br>
-                <a href="https://chem.xmu.edu.cn/info/1273/21054.htm" target="_blank" style="color: #C5A059; text-decoration: none;">2023 Lab Visit Report â†?/a>
+                <a href="https://chem.xmu.edu.cn/info/1273/21054.htm" target="_blank" style="color: #C5A059; text-decoration: none;">2023 Lab Visit Report ?/a>
                 <span style="margin: 0 8px; color: #ddd;">|</span>
-                <a href="http://www.ikkem.com/newsshow.php?cid=48&id=1072" target="_blank" style="color: #C5A059; text-decoration: none;">IKKEM Profile â†?/a>
+                <a href="http://www.ikkem.com/newsshow.php?cid=48&id=1072" target="_blank" style="color: #C5A059; text-decoration: none;">IKKEM Profile ?/a>
             </div>
         </div>
     </div>
@@ -951,7 +1016,7 @@
         <div style="display: flex; flex-direction: column; gap: 32px;">
             <div>
                 <p style="font-size: 16px; color: var(--text-primary); font-weight: 500; margin-bottom: 8px;">What does published research say about graphene far-infrared technology?</p>
-                <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.8;">Published research spanning 18 SCI-indexed publications and 8 randomized controlled trials has investigated the effects of 8â€?0Î¼m graphene far-infrared technology. Studies have observed changes in comfort scores, microcirculation parameters, and metabolic markers across multiple research domains.</p>
+                <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.8;">Published research spanning 18 SCI-indexed publications and 8 randomized controlled trials has investigated the effects of 8?0Î¼m graphene far-infrared technology. Studies have observed changes in comfort scores, microcirculation parameters, and metabolic markers across multiple research domains.</p>
             </div>
             <div>
                 <p style="font-size: 16px; color: var(--text-primary); font-weight: 500; margin-bottom: 8px;">How many studies have evaluated graphene FIR technology?</p>
@@ -959,7 +1024,7 @@
             </div>
             <div>
                 <p style="font-size: 16px; color: var(--text-primary); font-weight: 500; margin-bottom: 8px;">What outcomes have been observed in graphene FIR studies?</p>
-                <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.8;">Published studies have reported measurable changes in comfort and mobility outcomes (78.3%), metabolic function markers (63%), and immune cell activity parameters (42% CD3+ observation). Research suggests these observations are associated with photobiomodulation â€?the interaction of specific light wavelengths with mitochondrial enzymes.</p>
+                <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.8;">Published studies have reported measurable changes in comfort and mobility outcomes (78.3%), metabolic function markers (63%), and immune cell activity parameters (42% CD3+ observation). Research suggests these observations are associated with photobiomodulation ?the interaction of specific light wavelengths with mitochondrial enzymes.</p>
             </div>
             <div>
                 <p style="font-size: 16px; color: var(--text-primary); font-weight: 500; margin-bottom: 8px;">What types of facilities use graphene far-infrared technology?</p>
@@ -990,7 +1055,7 @@
 
 <!-- Footer -->
 <footer class="xihe-footer">
-    <p>XIHE Technology â€?A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
+    <p>XIHE Technology ?A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
 </footer>
 
 </body>

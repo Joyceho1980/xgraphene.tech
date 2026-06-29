@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konstantin Novoselov, Jiageng Innovation Laboratory Visiting Scholar, Elected CAS Foreign Member | XIHE Knowledge</title>
-    <link rel="icon" type="image/svg+xml" href="../../PICTURE/XIHE_ICON.svg">
+    <title>Graphene News: Konstantin Novoselov Elected CAS Foreign Member | XIHE Knowledge</title>
+    <link rel="icon" type="image/svg+xml" href="/images/XIHE_ICON.svg">
     <meta name="description" content="Nobel laureate Sir Konstantin Novoselov, a visiting scholar at Jiageng Innovation Laboratory (IKKEM) and connected to the Xiamen graphene ecosystem since 2014, was elected Foreign Member of the Chinese Academy of Sciences in 2023.">
     <meta name="keywords" content="Konstantin Novoselov, graphene Nobel Prize, Chinese Academy of Sciences Foreign Member, Jiageng Innovation Laboratory, IKKEM, Xiamen graphene, 2D materials, CAS Foreign Member 2023">
     <link rel="canonical" href="https://www.xgraphene.tech/NEWS/Company-Updates/novoselov-cas-foreign-member.html">
     <meta property="og:title" content="Konstantin Novoselov, Jiageng Innovation Laboratory Visiting Scholar, Elected CAS Foreign Member | XIHE Knowledge">
     <meta property="og:description" content="Nobel laureate Sir Konstantin Novoselov, a visiting scholar at Jiageng Innovation Laboratory (IKKEM) and connected to the Xiamen graphene ecosystem since 2014, was elected Foreign Member of the Chinese Academy of Sciences in 2023.">
-    <meta property="og:image" content="https://www.xgraphene.tech/PICTURE/novoselov-ikkem-team.webp">
+    <meta property="og:image" content="https://www.xgraphene.tech/images/novoselov-ikkem-team.webp">
     <meta property="og:url" content="https://www.xgraphene.tech/NEWS/Company-Updates/novoselov-cas-foreign-member.html">
     <meta property="og:type" content="article">
     <meta name="twitter:card" content="summary_large_image">
@@ -32,10 +32,11 @@
         }
     }
     </script>
-    <link rel="stylesheet" href="../../fonts/fonts.css">
+    <link rel="stylesheet" href="/fonts/fonts.css">
     <style>
         :root { --bg-color: #FAF8F5; --bg-dark: #1A1D24; --text-primary: #1A1D24; --text-secondary: #475569; --text-muted: #888888; --accent-gold: #C5A059; --border-color: #E5E5E7; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * { margin: 0; padding: 0; 
+        img { max-width: 100%; height: auto; }
         body { font-family: 'Inter', -apple-system, sans-serif; background: #FFFFFF; color: var(--text-primary); line-height: 1.8; letter-spacing: 0.3px; -webkit-font-smoothing: antialiased; }
         nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: #1A3348; display: flex; align-items: center; justify-content: space-between; padding: 0 10%; z-index: 1000; }
         .nav-links { display: flex; gap: 30px; align-items: center; }
@@ -43,6 +44,59 @@
         .nav-links a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #C5A059; transform: scaleX(0); transform-origin: right center; transition: transform 0.3s ease; }
         .nav-links a:hover::after, .nav-links a.active::after { transform: scaleX(1); transform-origin: left center; }
         .nav-links a:hover, .nav-links a.active { color: #C5A059; }
+        /* Dropdown */
+.nav-item-dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: #1A3348;
+    border: 1px solid rgba(197,160,89,0.2);
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    z-index: 1001;
+}
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(4px);
+}
+.nav-dropdown-menu a {
+    display: block;
+    padding: 10px 24px;
+    font-size: 11px;
+    color: #E0E6ED;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-dropdown-menu a:hover {
+    background: rgba(197,160,89,0.1);
+    color: #C5A059;
+}
+.nav-dropdown-menu a::after { display: none; }
+.nav-dropdown-trigger {
+    cursor: pointer;
+}
+.nav-dropdown-trigger::after {
+    content: ' \25BE';
+    font-size: 8px;
+    opacity: 0.6;
+}
+
         .nav-phone { font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px; color: var(--accent-gold); text-decoration: none; padding: 6px 14px; border: 1px solid rgba(197,160,89,0.3); border-radius: 50px; transition: all 0.3s ease; white-space: nowrap; font-weight: 500; }
         .nav-phone:hover { background: var(--accent-gold); color: #1A3348; }
         article { max-width: 720px; margin: 0 auto; padding: 120px 24px 80px; }
@@ -58,6 +112,12 @@
         .footer-note { text-align: center; font-size: 11px; color: var(--text-muted); letter-spacing: 0.5px; margin-bottom: 40px; }
         footer { padding: 40px 10%; background: #1A3348; text-align: center; border-top: 2px solid #C5A059; } footer p { font-size: 13px; color: #E0E6ED; }
         @media (max-width: 600px) { nav { padding: 0 5%; } .nav-links { gap: 12px; overflow-x: auto; } .nav-links a { font-size: 9px; } article h1 { font-size: 26px; } }
+    
+        .news-cat-bar { max-width: 720px; margin: 0 auto; padding: 20px 24px 0; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+        .news-cat-bar .cat-label { font-size: 10px; color: var(--m); letter-spacing: 2px; text-transform: uppercase; margin-right: 4px; }
+        .news-cat-bar .cat-link { font-size: 11px; color: var(--s); text-decoration: none; padding: 4px 12px; border: 1px solid var(--b); border-radius: 20px; transition: all 0.2s; letter-spacing: 0.5px; }
+        .news-cat-bar .cat-link:hover { border-color: var(--g); color: var(--g); }
+        .news-cat-bar .cat-link.active { background: var(--g); color: #FFF; border-color: var(--g); }
     </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C7YSVFRQ6R"></script>
@@ -70,18 +130,47 @@
 </head>
 <body>
 <nav>
-    <a href="/" class="logo"><img src="../../PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" style="height: 44px; width: auto; display: block;"></a>
+    <a href="/" class="logo"><img src="/images/XIHE_LOGO_DARK.svg" alt="XIHE" style="height: 44px; width: auto; display: block;"></a>
     <div class="nav-links">
-        <a href="/">Home</a><a href="/ABOUT/AboutOrigin.html">About</a><a href="/SCIENCE/Landing.html">Science</a><a href="/applications.html">Applications</a><a href="/PRODUCTS/ProductPage.html">Products</a><a href="/partnership.html">Partnership</a><a href="/">Knowledge</a><a href="/CONTACT/index.html">Contact</a>
+        <a href="/">Home</a><a href="/ABOUT/AboutOrigin.html">About</a><div class="nav-item-dropdown">
+            <a href="/SCIENCE/Landing.html" class="nav-dropdown-trigger">Science</a>
+            <div class="nav-dropdown-menu">
+                <a href="/SCIENCE/Landing.html">Science Overview</a>
+                <a href="/SCIENCE/Mechanism.html">Mechanism</a>
+                <a href="/SCIENCE/Technology.html">Technology</a>
+                <a href="/SCIENCE/Evidence.html">Evidence</a>
+                <a href="/SCIENCE/KNOWLEDGE/">Knowledge Hub</a>
+            </div>
+        </div><a href="/applications.html">Applications</a><div class="nav-item-dropdown">
+            <a href="/PRODUCTS/ProductPage.html" class="nav-dropdown-trigger">Products</a>
+            <div class="nav-dropdown-menu">
+                <a href="/PRODUCTS/CAPSULE/capsule-b2b.html">CAPSULE — Full Body Photon Chamber</a>
+                <a href="/PRODUCTS/CABIN/cabin.html">CABIN — Modular Resonance Chamber</a>
+                <a href="/PRODUCTS/FILM/GrapheneFilm.html">Graphene Film — Heating Module</a>
+                <a href="/PRODUCTS/PORTABLES/NeuralResilience.html">Neural Resilience — Wearable</a>
+                <a href="/PRODUCTS/PORTABLES/VisceralVitality.html">Visceral Vitality — Waist Pad</a>
+                <a href="/PRODUCTS/PORTABLES/DeepRecovery.html">Deep Recovery — Lumbar Belt</a>
+                <a href="/technology/xihe-fir-film-performance.html" style="font-size:10px;opacity:0.7;">— FIR Film Performance Data</a>
+            </div>
+        </div><a href="/partnership.html">Partnership</a><div class="nav-item-dropdown">
+            <a href="/" class="nav-dropdown-trigger">News</a>
+            <div class="nav-dropdown-menu">
+                <a href="/">All News</a>
+                <a href="/#company">Company News</a>
+                <a href="/#industry">Industry News</a>
+                <a href="/#product">Product News</a>
+            </div>
+        </div><a href="/CONTACT/index.html">Contact</a>
         <a href="tel:0086-18688683865" class="nav-phone">+86 186 8868 3865</a>
     </div>
 </nav>
 
 <div style="width: 100%; max-height: 420px; overflow: hidden; margin-bottom: 40px;">
-    <img src="../../PICTURE/novoselov-ikkem-team.webp" alt="Sir Konstantin Novoselov with the Jiageng Innovation Laboratory research team" style="width: 100%; height: auto; display: block; object-fit: cover;">
+    <img src="..//images/novoselov-ikkem-team.webp" alt="Sir Konstantin Novoselov with the Jiageng Innovation Laboratory research team" style="width: 100%; height: auto; display: block; object-fit: cover;">
 </div>
 
 <article>
+<div class="news-cat-bar"><span class="cat-label">Category:</span><a href="../index.html#company" class="cat-link active">Company News</a><a href="../index.html#industry" class="cat-link">Industry News</a><a href="../index.html#product" class="cat-link">Product News</a></div>
     <span class="article-category">Scientific Leadership</span>
     <p class="article-meta"><span>November 2023</span> · Scientific Leadership · XIHE Knowledge</p>
     <h1>Konstantin Novoselov, Jiageng Innovation Laboratory Visiting Scholar, Elected Foreign Member of the Chinese Academy of Sciences</h1>
@@ -124,6 +213,26 @@
     <p>Chinese Academy of Sciences — 2023 Foreign Member Election Announcement<br>
     Jiageng Innovation Laboratory — Visiting Scholar Program<br>
     The Nobel Prize in Physics 2010 — Nobel Foundation</p>
+        <!-- CTA Block -->
+        <div class="cta-block" style="text-align:center; margin:3rem 0; padding:1.5rem; border-top:1px solid rgba(212,175,55,0.2);">
+          <p style="color:#888; font-size:0.9rem; margin-bottom:0.75rem;">
+            Ready to explore graphene FIR integration?
+          </p>
+          <a href="/partnership.html" class="btn-cta" style="
+            display:inline-block;
+            background:linear-gradient(135deg, #D4AF37, #C09A2B);
+            color:#0A0A0A;
+            padding:0.75rem 2rem;
+            border-radius:4px;
+            text-decoration:none;
+            font-weight:600;
+            font-size:0.95rem;
+            letter-spacing:0.5px;
+          ">
+            Explore OEM Integration →
+          </a>
+        </div>
+
 </article>
 
 <div class="back-link"><a href="/">Return to XIHE Knowledge →</a></div>

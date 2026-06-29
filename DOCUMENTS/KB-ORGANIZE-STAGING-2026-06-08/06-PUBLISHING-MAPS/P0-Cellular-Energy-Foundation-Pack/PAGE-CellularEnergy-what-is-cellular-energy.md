@@ -2,19 +2,27 @@
 
 Status: Draft
 Priority: P0
+Grade: A
 Parent Hub: Cellular Energy
 Target Website URL: `SCIENCE/KNOWLEDGE/cellular-energy/what-is-cellular-energy.html`
-Page Type: Q&A article
-Created: 2026-06-08
-Last Updated: 2026-06-08
+Page Type: Q&A article — Hub root definition
+Created: 2026-06-08 (original), 2026-06-26 (upgraded)
+Last Updated: 2026-06-26
 
 ## User Question
 
 What is cellular energy?
 
+## PAA Coverage
+
+What is an example of cellular energy? (bundled as a section)
+
 ## Page Purpose
 
-Define the root concept for the XIHE biology knowledge graph. This page should explain cellular energy without starting from graphene, FIR, products, or interventions.
+Define the root concept for the Cellular Energy hub. Establish the framework for understanding cellular energy as biological work. Serve as the entry point for "what is cellular energy" search queries. Include a bundled section answering "what is an example of cellular energy" (e.g., muscle contraction, nerve signaling, heart beating).
+
+Search target: `what is cellular energy`
+GEO role: Root definition for the Cellular Energy knowledge graph node
 
 ## Quick Answer
 
@@ -69,6 +77,10 @@ Compliance boundary: No product or medical claim.
 ## Why Cells Need Energy Even at Rest
 ## ATP: The Short-Term Energy Carrier
 ## Mitochondria, Oxygen, and Nutrient Flow
+## What Is an Example of Cellular Energy?
+### Muscle Contraction
+### Nerve Signal Conduction
+### Heartbeat
 ## Why Cellular Energy Matters for Recovery and Fatigue
 ## FAQ
 ## Related Reading
@@ -82,6 +94,7 @@ Compliance boundary: No product or medical claim.
 | What molecule carries energy in cells? | ATP is the main short-term energy carrier used by cells. It releases usable energy when converted to ADP and phosphate. |
 | Do cells use energy while resting? | Yes. Resting cells still use energy to maintain ion gradients, repair structures, transport molecules, and preserve internal stability. |
 | Why does oxygen matter for cellular energy? | Oxygen is used in mitochondrial oxidative phosphorylation, one of the major pathways that helps regenerate ATP from nutrient-derived energy. |
+| What is an example of cellular energy? | Muscle contraction. When a muscle cell receives a signal to contract, it breaks down ATP to power the sliding of protein filaments that produce movement. Each heartbeat, every breath, and each thought also requires cellular energy. |
 
 ## Internal Links
 
@@ -90,8 +103,9 @@ Compliance boundary: No product or medical claim.
 | Target Page | Anchor / Context |
 |---|---|
 | `SCIENCE/KNOWLEDGE/cellular-energy/cellular-energy-atp.html` | Link from ATP explanation |
+| `SCIENCE/KNOWLEDGE/cellular-energy/how-to-support-cellular-energy.html` | Link from "why cellular energy matters" section |
+| `SCIENCE/KNOWLEDGE/cellular-energy/what-drains-your-cellular-energy.html` | Link from energy demand section |
 | `SCIENCE/KNOWLEDGE/Mitochondria/what-are-mitochondria.html` | Link from mitochondria section |
-| `SCIENCE/KNOWLEDGE/bioenergetics/what-is-oxidative-phosphorylation.html` | Link from energy conversion section |
 | `SCIENCE/KNOWLEDGE/Microcirculation/what-is-microcirculation.html` | Link from oxygen delivery section |
 | `SCIENCE/KNOWLEDGE/Fatigue/` | Link from fatigue relevance section |
 
@@ -101,17 +115,19 @@ Compliance boundary: No product or medical claim.
 |---|---|
 | `SCIENCE/KNOWLEDGE/cellular-energy/` | Parent hub |
 | `SCIENCE/KNOWLEDGE/cellular-energy/cellular-energy-atp.html` | ATP deep dive |
+| `SCIENCE/KNOWLEDGE/cellular-energy/how-to-support-cellular-energy.html` | Practical guidance |
+| `SCIENCE/KNOWLEDGE/cellular-energy/what-drains-your-cellular-energy.html` | Energy consumption awareness |
 | `SCIENCE/KNOWLEDGE/Mitochondria/` | Mitochondria hub |
 | `SCIENCE/KNOWLEDGE/Microcirculation/` | Delivery system |
 | `SCIENCE/KNOWLEDGE/Recovery/` | Recovery connection |
-| `SCIENCE/KNOWLEDGE/healthy-aging/` | Aging connection |
 
 ## Schema Needed
 
 - [x] FAQPage
-- [ ] ScholarlyArticle
-- [x] BreadcrumbList
 - [x] Article
+- [x] BreadcrumbList
+- [x] DefinedTerm
+- [x] ItemList (for Knowledge Navigation)
 
 ## Image Notes
 
@@ -121,17 +137,20 @@ Alt text: "Illustration of a human cell using ATP for biological work."
 
 Supporting visuals: Simple diagram showing nutrients and oxygen feeding ATP production, then ATP powering cell work.
 
+## Website Action
+
+Upgrade existing page (82-line draft) to A-grade GEO standard.
+
 ## Review Checklist
 
 - [x] H1 matches topic.
 - [x] Quick Answer is 40-120 words.
-- [x] FAQ has 3-5 items.
+- [x] FAQ has 4-6 items.
 - [x] Evidence classes assigned.
 - [x] Approved claims only.
 - [x] Forbidden terms checked.
 - [x] Parent hub link included.
-- [x] 3-5 contextual links included.
+- [x] 4-6 contextual links included.
 - [x] Related reading included.
-- [x] Schema planned.
+- [x] Schema planned (A-grade: 5 types).
 - [x] Scientific disclaimer included.
-

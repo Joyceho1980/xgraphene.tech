@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Spotlight: Graphene Enables High-Precision Neuromodulation for Parkinson's Disease — March 2025 | XIHE</title>
+    <meta name="description" content="Flexible graphene-based neural interface achieves bidirectional deep brain mapping and closed-loop neuromodulation in Parkinsonian rats, published in Nature Communications 2025.">
+    <link rel="canonical" href="https://www.xgraphene.tech/NEWS/research-spotlight-001-graphene-parkinson-neuromodulation.html">
+    <meta property="og:title" content="Research Spotlight: Graphene Neuromodulation for Parkinson's Disease">
+    <meta property="og:description" content="Graphene-based neural interface achieves high-precision deep brain stimulation in Parkinsonian rats.">
+    <meta property="og:type" content="article">
+    <link rel="icon" type="image/svg+xml" href="/images/XIHE_ICON.svg">
+    <link rel="stylesheet" href="/fonts/fonts.css">
+    <style>
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #111111;
+            --bg-card: #1a1a1a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --accent-gold: #c8a45e;
+            --accent-gold-light: #e0c589;
+            --border-color: #333333;
+            --max-width: 860px;
+            --nav-height: 70px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+        a { color: var(--accent-gold); text-decoration: none; transition: color 0.2s; }
+        a:hover { color: var(--accent-gold-light); text-decoration: underline; }
+        img { max-width: 100%; height: auto; }
+        /* Navigation */
+        .top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--nav-height);
+            background: rgba(10,10,10,0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5%;
+            z-index: 1000;
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            font-size: 20px;
+            color: var(--text-primary);
+        }
+        .nav-logo img { height: 32px; width: auto; }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+        .nav-links a {
+            color: var(--text-secondary);
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .nav-links a:hover, .nav-links a.active { color: var(--text-primary); }
+        .nav-cta {
+            background: var(--accent-gold);
+            color: var(--bg-primary) !important;
+            padding: 8px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+        /* Article Header */
+        .article-header {
+            padding: calc(var(--nav-height) + 60px) 5% 60px;
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+        .breadcrumb a { color: var(--text-secondary); }
+        .breadcrumb a:hover { color: var(--accent-gold); }
+        .article-type {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--accent-gold);
+            background: rgba(200,164,94,0.1);
+            padding: 6px 12px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .article-header h1 {
+            font-size: clamp(28px, 5vw, 42px);
+            font-weight: 700;
+            line-height: 1.25;
+            margin-bottom: 24px;
+        }
+        .article-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+        .article-meta strong { color: var(--text-primary); }
+        .source-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-left: 3px solid var(--accent-gold);
+            padding: 20px 24px;
+            margin-bottom: 40px;
+            border-radius: 0 8px 8px 0;
+        }
+        .source-box p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+        }
+        .source-box p:last-child { margin-bottom: 0; }
+        .source-box a { font-weight: 500; }
+        .metrics {
+            display: flex;
+            gap: 24px;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border-color);
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+        .metrics span { color: var(--accent-gold); }
+        /* Article Content */
+        .article-content {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 5% 80px;
+        }
+        .article-content h2 {
+            font-size: 26px;
+            font-weight: 700;
+            margin: 60px 0 24px;
+            color: var(--text-primary);
+        }
+        .article-content h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 40px 0 16px;
+            color: var(--text-primary);
+        }
+        .article-content p {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+        .article-content p:first-of-type { color: var(--text-primary); }
+        /* Comparison Tables */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            font-size: 15px;
+        }
+        .comparison-table th {
+            background: var(--bg-card);
+            padding: 16px 20px;
+            text-align: left;
+            font-weight: 600;
+            color: var(--accent-gold);
+            border-bottom: 2px solid var(--accent-gold);
+        }
+        .comparison-table td {
+            padding: 14px 20px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            vertical-align: top;
+        }
+        .comparison-table tr:hover td { background: rgba(255,255,255,0.02); }
+        .comparison-table td:first-child { color: var(--text-primary); font-weight: 500; }
+        /* Highlight Box */
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(200,164,94,0.08) 0%, rgba(200,164,94,0.03) 100%);
+            border: 1px solid rgba(200,164,94,0.3);
+            border-radius: 12px;
+            padding: 32px;
+            margin: 40px 0;
+        }
+        .highlight-box h3 {
+            color: var(--accent-gold);
+            margin-top: 0;
+        }
+        /* Related Links */
+        .related-links {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 32px;
+            margin: 60px 0;
+        }
+        .related-links h3 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .related-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        .related-links li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .related-links li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent-gold);
+        }
+        .related-links a { font-weight: 500; }
+        /* Footer */
+        footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 60px 5%;
+            text-align: center;
+        }
+        footer p {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+        .series-tag {
+            display: inline-block;
+            margin-top: 16px;
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .article-header h1 { font-size: 26px; }
+            .article-content h2 { font-size: 22px; }
+            .article-content p { font-size: 16px; }
+            .metrics { flex-direction: column; gap: 8px; }
+            .comparison-table { font-size: 14px; }
+            .comparison-table th, .comparison-table td { padding: 12px; }
+        }
+    </style>
+
+    <!-- NewsArticle Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Research Spotlight: Graphene Enables High-Precision Neuromodulation for Parkinson's Disease — March 2025",
+        "description": "Flexible graphene-based neural interface achieves bidirectional deep brain mapping and closed-loop neuromodulation in Parkinsonian rats, published in Nature Communications.",
+        "author": {
+            "@type": "Organization",
+            "name": "XIHE Research Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "XIHE"
+        },
+        "datePublished": "2025-03-25",
+        "about": {
+            "@type": "Thing",
+            "name": "Graphene Deep Brain Stimulation",
+            "description": "Nanoporous rGO microelectrode array for high-precision neuromodulation in Parkinson's disease"
+        }
+    }
+    </script>
+
+    <!-- DefinedTerm Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "DefinedTerm",
+        "name": "graphene healthcare",
+        "description": "XIHE Research Spotlight provides curated analysis of graphene healthcare research."
+    }
+    </script>
+
+    <!-- ScholarlyArticle Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "name": "Flexible graphene-based neurotechnology for high-precision deep brain mapping and neuromodulation in Parkinsonian rats",
+        "author": "Ria N, Eladly A, et al.",
+        "datePublished": "2025-03-25",
+        "isBasedOn": "https://doi.org/10.1038/s41467-025-58156-z"
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="top-nav">
+        <a href="/" class="nav-logo">
+            <img src="/images/XIHE_ICON.svg" alt="XIHE">
+            <span>XIHE</span>
+        </a>
+        <div class="nav-links">
+            <a href="/SCIENCE/Landing.html">Science</a>
+            <a href="/PRODUCTS/FILM/GrapheneFilm.html">Products</a>
+            <div class="nav-item-dropdown">
+                        <a href="/NEWS/index.html" class="nav-dropdown-trigger">News</a>
+                        <div class="nav-dropdown-menu">
+                            <a href="/NEWS/index.html">All News</a>
+                            <a href="/NEWS/index.html#company">Company News</a>
+                            <a href="/NEWS/index.html#industry">Industry News</a>
+                            <a href="/NEWS/index.html#product">Product News</a>
+                        </div>
+                    </div>
+            <a href="/partnership.html" class="nav-cta">Partner With Us</a>
+        </div>
+    </nav>
+
+    <!-- Article Header -->
+    <header class="article-header">
+        <div class="breadcrumb">
+            <a href="/NEWS/index.html">News</a>
+            <span>/</span>
+            <span>Research Spotlight 001</span>
+        </div>
+        <span class="article-type">Research Spotlight</span>
+        <h1>Graphene Enables High-Precision Neuromodulation for Parkinson's Disease — March 2025</h1>
+        <div class="article-meta">
+            <span><strong>Source:</strong> Nature Communications, 2025, 16: 2891</span>
+            <span><strong>Published:</strong> March 25, 2025</span>
+        </div>
+        <div class="source-box">
+            <p><strong>Ria N, Eladly A, Masvidal-Codina E, et al.</strong></p>
+            <p><em>Flexible graphene-based neurotechnology for high-precision deep brain mapping and neuromodulation in Parkinsonian rats</em></p>
+            <p><a href="https://www.nature.com/articles/s41467-025-58156-z" target="_blank" rel="noopener">DOI: 10.1038/s41467-025-58156-z</a></p>
+            <div class="metrics">
+                <span>14k Accesses</span>
+                <span>30 Citations</span>
+                <span>13 Altmetric</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Article Content -->
+    <article class="article-content">
+        <!-- Section 1: TL;DR -->
+        <section>
+            <h2>1. TL;DR — 研究速览</h2>
+            <p>Researchers utilized flexible, high-density nanoporous reduced graphene oxide (rGO) microelectrode arrays to achieve precision deep brain stimulation in a rat model of Parkinson's disease. Importantly, this device can simultaneously record pathological brain signals, paving the way for intelligent closed-loop therapy that integrates monitoring and stimulation.</p>
+        </section>
+
+        <!-- Section 2: Why It Matters -->
+        <section>
+            <h2>2. Why It Matters — 对行业的潜在影响</h2>
+            <p>Current deep brain stimulation (DBS) technology faces fundamental bottlenecks including oversized electrodes and inability to track biomarkers in real-time. This research provides a novel solution characterized by "minimal invasiveness, high precision, and bidirectional closed-loop" capabilities, pointing a clear direction for future treatment of Parkinson's disease, essential tremor, and dystonia.</p>
+
+            <div class="highlight-box">
+                <h3>核心突破 / Core Breakthrough</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>现有局限 / Current Limitation</th>
+                            <th>本研究的突破 / Research Breakthrough</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>电极尺寸大，无法精准靶向亚核团</td>
+                            <td>25μm rGO 微电极阵列，亚核级精度</td>
+                        </tr>
+                        <tr>
+                            <td>Large electrodes, unable to precisely target subnuclei</td>
+                            <td>25μm rGO microelectrode array, subnuclear precision</td>
+                        </tr>
+                        <tr>
+                            <td>只能单向刺激，无法获取反馈</td>
+                            <td>首次实现同步"记录+刺激"双向闭环</td>
+                        </tr>
+                        <tr>
+                            <td>Unidirectional stimulation only, no feedback</td>
+                            <td>First simultaneous recording + stimulation closed-loop</td>
+                        </tr>
+                        <tr>
+                            <td>缺乏生物标志物追踪</td>
+                            <td>实时识别帕金森病特异性的多单元神经活动标记</td>
+                        </tr>
+                        <tr>
+                            <td>No biomarker tracking</td>
+                            <td>Real-time identification of Parkinsonian-specific neural activity markers</td>
+                        </tr>
+                        <tr>
+                            <td>无法自适应调整参数</td>
+                            <td>闭环调控能够根据病理信号即时优化刺激参数</td>
+                        </tr>
+                        <tr>
+                            <td>Cannot adaptively adjust parameters</td>
+                            <td>Closed-loop control optimizes stimulation based on pathological signals</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 3: XIHE Perspective -->
+        <section>
+            <h2>3. XIHE Perspective — 我们怎么看</h2>
+            <p>This exciting research represents the pinnacle application of <strong>electronic graphene</strong> in implantable precision neuromodulation. By leveraging graphene's electrochemical properties under invasive implantation conditions, it achieves precise intervention in brain lesions. This demonstrates graphene's immense potential in addressing the most challenging neurological diseases.</p>
+
+            <p>XIHE focuses on another facet of graphene — its <strong>thermal radiation properties</strong>. Through <strong>9.4μm far-infrared light wave physical thermal effects</strong>, we support daily neural energy metabolism and recovery in a non-invasive, non-intrusive manner, serving a broader population of sub-health individuals and rehabilitation scenarios.</p>
+
+            <div class="highlight-box">
+                <h3>XIHE 对比表 / XIHE Comparison</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>维度 / Dimension</th>
+                            <th>电子石墨烯（本篇）/ Electronic Graphene</th>
+                            <th>热辐射石墨烯（XIHE）/ Thermal Graphene</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>机制 / Mechanism</td>
+                            <td>电刺激 → 神经元直接激活</td>
+                            <td>远红外 → 线粒体 CcO → ATP 能量代谢</td>
+                        </tr>
+                        <tr>
+                            <td>方式 / Approach</td>
+                            <td>植入式（微创）/ Implantable (minimally invasive)</td>
+                            <td>非侵入式（表面应用）/ Non-invasive (surface application)</td>
+                        </tr>
+                        <tr>
+                            <td>精度 / Precision</td>
+                            <td>单神经元级 / Single-neuron level</td>
+                            <td>组织区域级 / Tissue region level</td>
+                        </tr>
+                        <tr>
+                            <td>场景 / Application</td>
+                            <td>临床治疗（帕金森 DBS）/ Clinical treatment</td>
+                            <td>日常康复与认知支持 / Daily rehabilitation</td>
+                        </tr>
+                        <tr>
+                            <td>证据 / Evidence</td>
+                            <td>2025 Nat Commun, 30 citations</td>
+                            <td>NIQS 认证 + 机构临床观察</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>The two pathways differ, but <strong>both expand the boundaries of graphene applications in neuroscience</strong>. We are delighted to see that whether it's cutting-edge implantable therapy or daily non-invasive support, graphene is becoming an indispensable part of neurological health.</p>
+        </section>
+
+        <!-- Section 4: Extended Reading -->
+        <section>
+            <h2>4. 延伸阅读 / Extended Reading</h2>
+            <div class="related-links">
+                <h3>相关研究 / Related Research</h3>
+                <ul>
+                    <li><strong>2025.08:</strong> <a href="https://www.nature.com/articles/s41467-025-62637-6" target="_blank" rel="noopener">GraMOS 平台 — Graphene Optoelectronics Non-Genetic Neuromodulation</a> (Molokanova et al.)</li>
+                    <li><strong>2026.05:</strong> <a href="https://www.nature.com/articles/s41467-026-73790-x" target="_blank" rel="noopener">双向石墨烯神经接口 — Ultra-slow brain wave recording and stimulation</a> (Prokop et al.)</li>
+                </ul>
+
+                <h3>XIHE 相关 / XIHE Related</h3>
+                <ul>
+                    <li><a href="/PRODUCTS/PORTABLES/NeuralResilience.html">XIHE Neural Resilience — 了解 XIHE 如何应用石墨烯支持日常神经健康</a></li>
+                    <li><a href="/SCIENCE/KNOWLEDGE/graphene-fir/">Graphene FIR Hub — 了解石墨烯远红外技术的原理</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <p class="series-tag">XIHE Research Spotlight 系列 · 2025-001 — 持续追踪石墨烯神经科学前沿。</p>
+
+        <!-- CTA Block -->
+        <div class="cta-block" style="text-align:center; margin:3rem 0; padding:1.5rem; border-top:1px solid rgba(212,175,55,0.2);">
+          <p style="color:#888; font-size:0.9rem; margin-bottom:0.75rem;">
+            Ready to explore graphene FIR integration?
+          </p>
+          <a href="/partnership.html" class="btn-cta" style="
+            display:inline-block;
+            background:linear-gradient(135deg, #D4AF37, #C09A2B);
+            color:#0A0A0A;
+            padding:0.75rem 2rem;
+            border-radius:4px;
+            text-decoration:none;
+            font-weight:600;
+            font-size:0.95rem;
+            letter-spacing:0.5px;
+          ">
+            Explore OEM Integration →
+          </a>
+        </div>
+
+    </article>
+
+    <!-- Footer -->
+    <footer>
+        <p>XIHE Research Spotlight — Connecting graphene neuroscience research to practical applications.</p>
+        <p class="series-tag">Subscribe at /NEWS/ for the latest analyses.</p>
+    </footer>
+</body>
+</html>

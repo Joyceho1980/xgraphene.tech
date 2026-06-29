@@ -1,0 +1,67 @@
+GEO内容策略五步法
+Step 1: Google Trends — 找词
+目标： 找到搜索量在涨、和你们知识体系匹配的关键词。
+
+动作	工具	产出
+输入种子词（cellular energy, mitochondria, ATP, far-infrared）	Google Trends	搜索量趋势、相关词、地域分布
+筛选涨势明显的词（+20%以上）	—	优先覆盖列表
+排除学生作业词（photosynthesis, cellular respiration diagram）	人工判断	避免浪费精力
+输出： 5-10个目标关键词，标注搜索量趋势和商业价值。
+
+Step 2: 分析搜索意图 — 客户画像
+目标： 搞清楚谁在搜这个词，他们想要什么。
+
+问题	判断方法
+这个人在什么场景下搜这个词？	看相关搜索词。如果相关词是"supplements""how to boost"，是消费者。如果是"definition""equation"，是学生
+他的问题解决了吗？	看People Also Ask里的问题——他搜了一个词，紧接着又问什么？
+他可能成为你们的客户吗？	B2B决策者不搜"what is ATP"。但他们的终端用户会搜。终端用户的认知会影响B2B采购
+输出： 每个关键词的用户画像 + 商业价值评级（高/中/低）。
+
+Step 3: Google People Also Ask — 找问题
+目标： 发现用户真正想问的问题，作为C级文章标题。
+
+动作	产出
+在Google搜目标关键词	People Also Ask列表
+展开每个问题，会再生成3-4个新问题	15-20个相关问题
+按问题类型分类	定义型（What is）、原因型（Why）、方法型（How to）、对比型（X vs Y）
+输出： 问题列表，标注问题类型和对应内容等级（A/B/C/D）。
+
+Step 4: Google AI Overview — 分析竞争
+目标： 看AI现在引用了谁、引用了什么。
+
+动作	产出
+搜索目标问题，看AI Overview	AI引用了哪些来源？Harvard？Mayo Clinic？补充剂品牌？
+分析AI引用的内容类型	定义？列表？步骤？数据？
+找到空白	AI没提到什么？哪些角度是你们可以独占的？
+输出： 竞争分析 + 内容差异化策略。
+
+Step 5: 写文章 — A/B/C/D匹配
+目标： 每个问题匹配到正确的文章等级，按优先级写作。
+
+问题类型	匹配等级	示例
+What is…	A级（定义）	What Is Cellular Energy?
+Why…	B级（机制/问题意识）	Why Does Cellular Energy Decline?
+How to…	B级（方案）	How to Support Cellular Energy
+Is X true? / What's the difference?	C级（概念澄清）	Is ATP the Same as Energy?
+哲学追问	D级（收口）	Cellular Energy is the Real Currency of Life
+输出： 每篇文章的标题、等级、目标关键词、差异化角度。
+
+完整流程
+text
+复制
+下载
+Google Trends → 找词 → 5-10个目标关键词
+    ↓
+搜索意图分析 → 客户画像 → 谁在搜、想要什么
+    ↓
+People Also Ask → 找问题 → 15-20个相关问题
+    ↓
+AI Overview → 分析竞争 → 谁被引用、什么空白
+    ↓
+A/B/C/D匹配 → 写文章 → 每篇有明确的关键词和差异化角度
+    ↓
+发布 → 监测AI引用率 → 迭代
+现在就可以做的
+把你Google Trends上找到的词发给我，我们一起过一遍Step 1和Step 2。然后把最有商业价值的词挑出来，进Step 3看People Also Ask。
+
+这个流程跑通一次，以后每个Hub都可以复用。

@@ -1,16 +1,17 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact XIHE | B2B Partnership & Clinical Collaboration</title>
-    <link rel="icon" type="image/svg+xml" href="../PICTURE/XIHE_ICON.svg">
+    <link rel="icon" type="image/svg+xml" href="/images/XIHE_ICON.svg">
 <meta name="description" content="Contact XIHE Technology for graphene far-infrared B2B partnerships, OEM/JDM manufacturing, clinical procurement, and distribution inquiries. Powered by IKKEM, Xiamen.">
 <meta name="keywords" content="XIHE Contact, Graphene B2B, OEM JDM, Clinical Procurement, IKKEM, Far-Infrared Partnership, XIHE Technology">
 <!-- Open Graph -->
 <meta property="og:title" content="Contact XIHE | B2B Partnership & Clinical Collaboration">
 <meta property="og:description" content="Contact XIHE Technology for graphene far-infrared B2B partnerships, OEM/JDM manufacturing, clinical procurement, and distribution inquiries.">
-<meta property="og:image" content="https://www.xgraphene.tech/PICTURE/xihe-og.jpg">
+<meta property="og:image" content="https://www.xgraphene.tech/images/science-hero.png">
 <meta property="og:url" content="https://www.xgraphene.tech/CONTACT/index.html">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -21,7 +22,7 @@
 {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    "name": "Contact XIHE Technology �?B2B Partnership & Clinical Collaboration",
+    "name": "Contact XIHE Technology ??B2B Partnership & Clinical Collaboration",
     "description": "Contact XIHE for institutional partnerships, clinical procurement, OEM/JDM manufacturing, and distribution inquiries. Powered by IKKEM, Xiamen.",
     "url": "https://www.xgraphene.tech/CONTACT/",
     "mainEntity": {
@@ -42,7 +43,7 @@
     }
 }
 </script>
-<link rel="stylesheet" href="../fonts/fonts.css">
+<link rel="stylesheet" href="/fonts/fonts.css">
 
 <style>
 :root {
@@ -54,7 +55,8 @@
     --border-color: #E5E5E7;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { margin: 0; padding: 0; 
+        img { max-width: 100%; height: auto; }
 
 body {
     font-family: 'Inter', -apple-system, sans-serif;
@@ -119,7 +121,60 @@ header {
 
 .nav-links a:hover, .nav-links a.active { color: #C5A059; }
 
-.nav-phone {
+/* Dropdown */
+.nav-item-dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: #1A3348;
+    border: 1px solid rgba(197,160,89,0.2);
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    z-index: 1001;
+}
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(4px);
+}
+.nav-dropdown-menu a {
+    display: block;
+    padding: 10px 24px;
+    font-size: 11px;
+    color: #E0E6ED;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-dropdown-menu a:hover {
+    background: rgba(197,160,89,0.1);
+    color: #C5A059;
+}
+.nav-dropdown-menu a::after { display: none; }
+.nav-dropdown-trigger {
+    cursor: pointer;
+}
+.nav-dropdown-trigger::after {
+    content: ' \25BE';
+    font-size: 8px;
+    opacity: 0.6;
+}
+
+        .nav-phone {
     font-family: 'Urbanist', sans-serif;
     font-size: 11px;
     letter-spacing: 1px;
@@ -268,7 +323,7 @@ header {
     line-height: 1.5;
 }
 .contact-info .trust-strip .trust-item::before {
-    content: '�?;
+    content: '??;
     color: var(--accent-gold);
     font-size: 6px;
     flex-shrink: 0;
@@ -321,8 +376,8 @@ header {
     color: var(--text-main);
     border-radius: 6px;
     transition: border-color 0.3s, box-shadow 0.3s;
-    box-sizing: border-box;
-}
+    
+        img { max-width: 100%; height: auto; }
 
 .form-group input:focus,
 .form-group select:focus,
@@ -485,13 +540,33 @@ header {
 
 <!-- Navigation -->
 <header>
-    <div class="logo"><a href="/"><img src="../PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" style="height: 44px; width: auto; display: block;"></a></div>
+    <div class="logo"><a href="/"><img src="/images/XIHE_LOGO_DARK.svg" alt="XIHE" style="height: 44px; width: auto; display: block;"></a></div>
     <nav class="nav-links">
         <a href="/">Home</a>
         <a href="../ABOUT/AboutOrigin.html">About</a>
-        <a href="../SCIENCE/Landing.html">Science</a>
+        <div class="nav-item-dropdown">
+            <a href="/SCIENCE/Landing.html" class="nav-dropdown-trigger">Science</a>
+            <div class="nav-dropdown-menu">
+                <a href="/SCIENCE/Landing.html">Science Overview</a>
+                <a href="/SCIENCE/Mechanism.html">Mechanism</a>
+                <a href="/SCIENCE/Technology.html">Technology</a>
+                <a href="/SCIENCE/Evidence.html">Evidence</a>
+                <a href="/SCIENCE/KNOWLEDGE/">Knowledge Hub</a>
+            </div>
+        </div>
         <a href="../applications.html">Applications</a>
-        <a href="../PRODUCTS/ProductPage.html">Products</a>
+        <div class="nav-item-dropdown">
+            <a href="/PRODUCTS/ProductPage.html" class="nav-dropdown-trigger">Products</a>
+            <div class="nav-dropdown-menu">
+                <a href="/PRODUCTS/CAPSULE/capsule-b2b.html">CAPSULE �� Full Body Photon Chamber</a>
+                <a href="/PRODUCTS/CABIN/cabin.html">CABIN �� Modular Resonance Chamber</a>
+                <a href="/PRODUCTS/FILM/GrapheneFilm.html">Graphene Film �� Heating Module</a>
+                <a href="/PRODUCTS/PORTABLES/NeuralResilience.html">Neural Resilience �� Wearable</a>
+                <a href="/PRODUCTS/PORTABLES/VisceralVitality.html">Visceral Vitality �� Waist Pad</a>
+                <a href="/PRODUCTS/PORTABLES/DeepRecovery.html">Deep Recovery �� Lumbar Belt</a>
+                <a href="/technology/xihe-fir-film-performance.html" style="font-size:10px;opacity:0.7;">�� FIR Film Performance Data</a>
+            </div>
+        </div>
         <a href="../partnership.html">Partnership</a>
         <a href="/" class="active">Contact</a>
         <a href="tel:0086-18688683865" class="nav-phone">+86 186 8868 3865</a>
@@ -503,7 +578,7 @@ header {
     <div class="container">
         <span class="hero-tag">Engineering for Life. Precision for Health.</span>
         <h1>Start the Conversation.</h1>
-        <p>Tell us what you need �?clinical equipment, distribution, OEM manufacturing, or research collaboration. We respond within 24 hours.</p>
+        <p>Tell us what you need ??clinical equipment, distribution, OEM manufacturing, or research collaboration. We respond within 24 hours.</p>
     </div>
 </section>
 
@@ -531,14 +606,14 @@ header {
                 </div>
                 <div class="info-block">
                     <div class="info-label">Languages</div>
-                    <div class="info-value">English · 中文 · 日本�?/div>
+                    <div class="info-value">English �� ���� �� �ձ�??/div>
                 </div>
             </div>
             <div class="trust-strip">
                 <div class="trust-item">Powered by Jiageng Innovation Laboratory (IKKEM)</div>
                 <div class="trust-item">Led by Academician Zheng Nanfeng, Chinese Academy of Sciences</div>
-                <div class="trust-item">Lead Drafter �?China National Graphene Electrothermal Film Industry Standard</div>
-                <div class="trust-item">18 SCI Papers · 40+ Patents · 5 Hospital Partners</div>
+                <div class="trust-item">Lead Drafter ??China National Graphene Electrothermal Film Industry Standard</div>
+                <div class="trust-item">18 SCI Papers �� 40+ Patents �� 5 Hospital Partners</div>
             </div>
         </div>
 
@@ -582,13 +657,13 @@ header {
                 <div class="form-group">
                     <label>Estimated Volume / Timeline</label>
                     <input type="text" name="volume" placeholder="e.g., 10 units Q3 2026, or TBD">
-                    <span class="hint">Optional �?helps us prepare the right information for your call</span>
+                    <span class="hint">Optional ??helps us prepare the right information for your call</span>
                 </div>
                 <div class="form-group">
                     <label>Message</label>
                     <textarea name="message" placeholder="Tell us about your specific needs, target market, or any questions you have..."></textarea>
                 </div>
-                <button type="submit" class="submit-btn">Send Inquiry �?/button>
+                <button type="submit" class="submit-btn">Send Inquiry ??/button>
             </form>
         </div>
     </div>
@@ -596,7 +671,7 @@ header {
 
 <!-- Footer -->
 <footer class="xihe-footer">
-    <p>XIHE Technology �?Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard 2024-0923T-YB</p>
+    <p>XIHE Technology ??Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard 2024-0923T-YB</p>
 </footer>
 
 <script>

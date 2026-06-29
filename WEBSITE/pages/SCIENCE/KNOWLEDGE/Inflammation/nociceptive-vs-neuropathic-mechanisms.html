@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nociceptive vs Neuropathic Pain Mechanisms: Understanding Two Distinct Biological Pathways | XIHE</title>
-    <link rel="icon" type="image/svg+xml" href="/PICTURE/XIHE_ICON.svg">
+    <link rel="icon" type="image/svg+xml" href="/images/XIHE_ICON.svg">
     <meta name="description" content="How nociceptive and neuropathic pain differ at the cellular level, and what emerging research suggests about ATP, ion channels, and energy metabolism in both types.">
     <!-- Open Graph -->
     <meta property="og:title" content="Nociceptive vs Neuropathic Pain Mechanisms: Understanding Two Distinct Biological Pathways | XIHE">
     <meta property="og:description" content="How nociceptive and neuropathic pain differ at the cellular level, and what emerging research suggests about ATP, ion channels, and energy metabolism in both types.">
-    <meta property="og:image" content="https://www.xgraphene.tech/PICTURE/xihe-og.jpg">
+    <meta property="og:image" content="https://www.xgraphene.tech/images/science-hero.png">
     <meta property="og:url" content="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Inflammation/nociceptive-vs-neuropathic-mechanisms.html">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
@@ -72,10 +72,11 @@
       ]
     }
     </script>
-    <link rel="stylesheet" href="../../../fonts/fonts.css">
+    <link rel="stylesheet" href="/fonts/fonts.css">
     <style>
         :root { --bg-color: #FAF8F5; --bg-dark: #1A1D24; --text-primary: #1A1D24; --text-secondary: #475569; --text-muted: #888888; --accent-gold: #C5A059; --border-color: #E5E5E7; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * { margin: 0; padding: 0; 
+        img { max-width: 100%; height: auto; }
         body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg-color); color: var(--text-primary); line-height: 1.7; letter-spacing: 0.5px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
         nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: #1A3348; display: flex; align-items: center; justify-content: space-between; padding: 0 10%; z-index: 1000; }
         .logo { font-family: 'Urbanist', sans-serif; font-size: 28px; font-weight: 300; letter-spacing: 0.15em; color: var(--text-primary); text-decoration: none; }
@@ -85,6 +86,59 @@
         .nav-links a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #C5A059; transform: scaleX(0); transform-origin: right center; transition: transform 0.3s ease; }
         .nav-links a:hover::after, .nav-links a.active::after { transform: scaleX(1); transform-origin: left center; }
         .nav-links a:hover, .nav-links a.active { color: #C5A059; }
+        /* Dropdown */
+.nav-item-dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: #1A3348;
+    border: 1px solid rgba(197,160,89,0.2);
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    z-index: 1001;
+}
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(4px);
+}
+.nav-dropdown-menu a {
+    display: block;
+    padding: 10px 24px;
+    font-size: 11px;
+    color: #E0E6ED;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-dropdown-menu a:hover {
+    background: rgba(197,160,89,0.1);
+    color: #C5A059;
+}
+.nav-dropdown-menu a::after { display: none; }
+.nav-dropdown-trigger {
+    cursor: pointer;
+}
+.nav-dropdown-trigger::after {
+    content: ' \25BE';
+    font-size: 8px;
+    opacity: 0.6;
+}
+
         .nav-phone { font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px; color: var(--accent-gold); text-decoration: none; padding: 6px 14px; border: 1px solid rgba(197,160,89,0.3); border-radius: 50px; transition: all 0.3s ease; white-space: nowrap; font-weight: 500; }
         .nav-phone:hover { background: var(--accent-gold); color: #1A3348; }
         .hero-section { min-height: 55vh; display: flex; flex-direction: column; padding-bottom: 28px; background-size: cover; background-position: center; }
@@ -157,7 +211,7 @@
 </script>
 </head>
 <body>
-<!-- AI Core Summary â€?Machine Layer -->
+<!-- AI Core Summary ï¿½?Machine Layer -->
 <div style="display:none;" class="ai-assertion-card" itemscope itemtype="https://schema.org/DefinedTerm">
   <meta itemprop="name" content="Nociceptive vs Neuropathic Pain Mechanisms: Understanding Two Distinct Biological Pathways | XIHE">
   <meta itemprop="termCode" content="Inflammation_nociceptive_vs_neuropathic_mechanisms">
@@ -183,22 +237,50 @@
 </div>
 
 <nav>
-    <a href="/" class="logo"><img src="/PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async"> style="height: 44px; width: auto; display: block;"></a>
+    <a href="/" class="logo"><img src="/images/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async"> style="height: 44px; width: auto; display: block;"></a>
     <div class="nav-links">
         <a href="/">Home</a>
         <a href="/ABOUT/AboutOrigin.html">About</a>
-        <a href="/SCIENCE/Landing.html" class="active">Science</a>
+        <div class="nav-item-dropdown">
+            <a href="/SCIENCE/Landing.html" class="nav-dropdown-trigger active">Science</a>
+            <div class="nav-dropdown-menu">
+                <a href="/SCIENCE/Landing.html">Science Overview</a>
+                <a href="/SCIENCE/Mechanism.html">Mechanism</a>
+                <a href="/SCIENCE/Technology.html">Technology</a>
+                <a href="/SCIENCE/Evidence.html">Evidence</a>
+                <a href="/SCIENCE/KNOWLEDGE/">Knowledge Hub</a>
+            </div>
+        </div>
         <a href="/applications.html">Applications</a>
-        <a href="/PRODUCTS/ProductPage.html">Products</a>
+        <div class="nav-item-dropdown">
+            <a href="/PRODUCTS/ProductPage.html" class="nav-dropdown-trigger">Products</a>
+            <div class="nav-dropdown-menu">
+                <a href="/PRODUCTS/CAPSULE/capsule-b2b.html">CAPSULE â€” Full Body Photon Chamber</a>
+                <a href="/PRODUCTS/CABIN/cabin.html">CABIN â€” Modular Resonance Chamber</a>
+                <a href="/PRODUCTS/FILM/GrapheneFilm.html">Graphene Film â€” Heating Module</a>
+                <a href="/PRODUCTS/PORTABLES/NeuralResilience.html">Neural Resilience â€” Wearable</a>
+                <a href="/PRODUCTS/PORTABLES/VisceralVitality.html">Visceral Vitality â€” Waist Pad</a>
+                <a href="/PRODUCTS/PORTABLES/DeepRecovery.html">Deep Recovery â€” Lumbar Belt</a>
+                <a href="/technology/xihe-fir-film-performance.html" style="font-size:10px;opacity:0.7;">â€” FIR Film Performance Data</a>
+            </div>
+        </div>
         <a href="/partnership.html">Partnership</a>
-        <a href="/NEWS/index.html">Journal</a>
+        <div class="nav-item-dropdown">
+            <a href="/NEWS/index.html" class="nav-dropdown-trigger">News</a>
+            <div class="nav-dropdown-menu">
+                <a href="/NEWS/index.html">All News</a>
+                <a href="/NEWS/index.html#company">Company News</a>
+                <a href="/NEWS/index.html#industry">Industry News</a>
+                <a href="/NEWS/index.html#product">Product News</a>
+            </div>
+        </div>
         <a href="/CONTACT/index.html">Contact</a>
         <a href="tel:0086-18688683865" class="nav-phone">+86 186 8868 3865</a>
     </div>
 </nav>
 
 <!-- ========== HERO ========== -->
-<section class="hero-section" style="background: linear-gradient(135deg, rgba(40,42,48,0.85) 0%, rgba(40,42,48,0.5) 100%), url('../../PICTURE/xihe-science-hero-bg.jpg'); background-size: cover; background-position: center;">
+<section class="hero-section" style="background: linear-gradient(135deg, rgba(40,42,48,0.85) 0%, rgba(40,42,48,0.5) 100%), url('/images/science-hero.png'); background-size: cover; background-position: center;">
     <div style="flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; padding: 70px 10% 0;">
         <div style="max-width: 800px; padding: 0 20px;">
             <span class="hero-tag">Cellular Energy & Recovery Science</span>
@@ -357,7 +439,7 @@
         </p>
         <ul style="font-size: 15px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px; padding-left: 24px; list-style-type: disc;">
             <li style="margin-bottom: 6px;"><strong>Axonal transport</strong> of mitochondria, proteins, and vesicles requires ATP</li>
-            <li style="margin-bottom: 6px;">Long sensory neurons â€?with axons up to 1 meter â€?may depend heavily on efficient mitochondrial distribution</li>
+            <li style="margin-bottom: 6px;">Long sensory neurons ï¿½?with axons up to 1 meter ï¿½?may depend heavily on efficient mitochondrial distribution</li>
             <li style="margin-bottom: 6px;">Damaged membranes require increased ion-pump activity</li>
             <li style="margin-bottom: 6px;"><strong>Na&#8314;/K&#8314;-ATPase</strong> activity must work continuously to maintain ion gradients</li>
             <li style="margin-bottom: 6px;">Oxidative stress may impair mitochondrial function following nerve injury</li>
@@ -495,7 +577,7 @@
         <div style="display: flex; flex-direction: column; gap: 32px;">
             <div>
                 <p style="font-size: 16px; color: var(--text-primary); font-weight: 500; margin-bottom: 8px;">What is the difference between nociceptive and neuropathic pain?</p>
-                <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.8;">Nociceptive pain originates from tissue injury detected by functioning sensory nerves â€?the body's alarm system working as intended. It is often described as aching or throbbing. Neuropathic pain originates from injury or dysfunction within the nervous system itself â€?damaged nerves generate abnormal signals independent of ongoing tissue injury. It is commonly described as burning, shooting, tingling, or electric-like. The distinction is clinically important because these two types of pain involve different biological mechanisms and may respond to different management approaches.</p>
+                <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.8;">Nociceptive pain originates from tissue injury detected by functioning sensory nerves ï¿½?the body's alarm system working as intended. It is often described as aching or throbbing. Neuropathic pain originates from injury or dysfunction within the nervous system itself ï¿½?damaged nerves generate abnormal signals independent of ongoing tissue injury. It is commonly described as burning, shooting, tingling, or electric-like. The distinction is clinically important because these two types of pain involve different biological mechanisms and may respond to different management approaches.</p>
             </div>
             <div>
                 <p style="font-size: 16px; color: var(--text-primary); font-weight: 500; margin-bottom: 8px;">Can someone have both nociceptive and neuropathic pain?</p>
@@ -503,7 +585,7 @@
             </div>
             <div>
                 <p style="font-size: 16px; color: var(--text-primary); font-weight: 500; margin-bottom: 8px;">How does ATP relate to pain mechanisms?</p>
-                <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.8;">ATP supports numerous cellular processes involved in tissue function and nervous system activity, including ion transport, neurotransmitter handling, protein synthesis, and cellular repair. In nociceptive pain, injured tissues require substantial energy for repair, and energy-depleted muscle fibers may struggle to fully relax â€?generating ongoing sensory input. In neuropathic pain, damaged neurons require additional ATP to maintain ion gradients across compromised membranes while also supporting axonal transport and repair. Emerging evidence suggests that disruptions in cellular energy metabolism may influence both pain pathways, although the precise relationships remain an active area of scientific investigation.</p>
+                <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.8;">ATP supports numerous cellular processes involved in tissue function and nervous system activity, including ion transport, neurotransmitter handling, protein synthesis, and cellular repair. In nociceptive pain, injured tissues require substantial energy for repair, and energy-depleted muscle fibers may struggle to fully relax ï¿½?generating ongoing sensory input. In neuropathic pain, damaged neurons require additional ATP to maintain ion gradients across compromised membranes while also supporting axonal transport and repair. Emerging evidence suggests that disruptions in cellular energy metabolism may influence both pain pathways, although the precise relationships remain an active area of scientific investigation.</p>
             </div>
         </div>
     </div>
@@ -530,22 +612,22 @@
                     Complete the Series
                 </span>
         <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 24px;">
-            Nociceptive and neuropathic pain follow different biological pathways â€?but emerging evidence suggests they may converge at the level of cellular energy metabolism. Understanding both the differences and the overlap provides a foundation for exploring the full range of recovery science.
+            Nociceptive and neuropathic pain follow different biological pathways ï¿½?but emerging evidence suggests they may converge at the level of cellular energy metabolism. Understanding both the differences and the overlap provides a foundation for exploring the full range of recovery science.
         </p>
-        <a href="/" class="xihe-btn">Return to Cellular Energy Hub â†?/a>
+        <a href="/" class="xihe-btn">Return to Cellular Energy Hub ï¿½?/a>
     </div>
 </section>
 
 <!-- Footer -->
 
-<!-- Knowledge Navigation â€?Machine Graph Layer -->
+<!-- Knowledge Navigation ï¿½?Machine Graph Layer -->
 <div style="display:none;" class="knowledge-nav" itemscope itemtype="https://schema.org/ItemList">
   <meta itemprop="name" content=" Knowledge Navigation">
   <meta itemprop="description" content="Graph position for this article within the XIHE knowledge ecosystem">
   <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
     <meta itemprop="position" content="1">
     <meta itemprop="item" content="https://www.xgraphene.tech">
-    <meta itemprop="name" content=" â€?Parent Collection">
+    <meta itemprop="name" content=" ï¿½?Parent Collection">
   </div>
   <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
     <meta itemprop="position" content="2">
@@ -560,7 +642,7 @@
 </div>
 
 <footer class="xihe-footer">
-    <p>XIHE Technology â€?A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
+    <p>XIHE Technology ï¿½?A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
 
 <section style="background:#FAF8F5;padding:40px 10%;border-top:1px solid #E5E5E7;">
     <div style="max-width:800px;margin:0 auto;">

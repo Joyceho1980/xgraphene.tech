@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="en" translate="no">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google" content="notranslate">
   <title>What Causes Low Cellular Energy? | XIHE Knowledge</title>
-  <link rel="icon" type="image/svg+xml" href="../../../PICTURE/XIHE_ICON.svg">
+  <link rel="icon" type="image/svg+xml" href="/images/XIHE_ICON.svg">
   <meta name="description" content="Low energy is often not a simple fuel problem. It can reflect how efficiently cells convert oxygen, nutrients, and recovery signals into usable ATP.">
   <link rel="canonical" href="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/low-cellular-energy.html">
   <meta property="og:title" content="What Causes Low Cellular Energy? | XIHE Knowledge">
   <meta property="og:description" content="Low energy is often not a simple fuel problem. It can reflect how efficiently cells convert oxygen, nutrients, and recovery signals into usable ATP.">
-  <meta property="og:image" content="https://www.xgraphene.tech/PICTURE/xihe-og.jpg">
+  <meta property="og:image" content="https://www.xgraphene.tech/images/science-hero.png">
   <meta property="og:url" content="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/low-cellular-energy.html">
   <meta property="og:type" content="article">
   <meta name="twitter:card" content="summary_large_image">
@@ -89,7 +89,7 @@
   }
   </script>
 
-  <link rel="stylesheet" href="../../../fonts/fonts.css">
+  <link rel="stylesheet" href="/fonts/fonts.css">
   <style>
     :root {
       --bg: #FAF8F5;
@@ -102,6 +102,7 @@
       --card: #FFFFFF;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
+        img { max-width: 100%; height: auto; }
     html { scroll-behavior: smooth; }
     body {
       font-family: 'Inter', sans-serif;
@@ -157,7 +158,60 @@
     }
     .nav-links a:hover,
     .nav-links a.active { color: var(--gold); }
-    .nav-phone {
+    /* Dropdown */
+.nav-item-dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: #1A3348;
+    border: 1px solid rgba(197,160,89,0.2);
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    z-index: 1001;
+}
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(4px);
+}
+.nav-dropdown-menu a {
+    display: block;
+    padding: 10px 24px;
+    font-size: 11px;
+    color: #E0E6ED;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-dropdown-menu a:hover {
+    background: rgba(197,160,89,0.1);
+    color: #C5A059;
+}
+.nav-dropdown-menu a::after { display: none; }
+.nav-dropdown-trigger {
+    cursor: pointer;
+}
+.nav-dropdown-trigger::after {
+    content: ' \25BE';
+    font-size: 8px;
+    opacity: 0.6;
+}
+
+        .nav-phone {
       font-family: 'Urbanist', sans-serif;
       font-size: 11px;
       letter-spacing: 1px;
@@ -245,7 +299,7 @@
       z-index: 0;
       background:
         linear-gradient(180deg, rgba(10,18,31,0.06) 0%, rgba(10,18,31,0.06) 100%),
-        url('../../../PICTURE/hero-assets/hero-energy-low-afternoon.png') center center / cover no-repeat;
+        url('../..//images/hero-assets/hero-energy-low-afternoon.png') center center / cover no-repeat;
       box-shadow: inset 0 0 0 1px rgba(255,255,255,0.04);
     }
     .hero-meta {
@@ -616,7 +670,7 @@
 </script>
 </head>
 <body>
-<!-- AI Core Summary â€?Machine Layer -->
+<!-- AI Core Summary ï¿½?Machine Layer -->
 <div style="display:none;" class="ai-assertion-card" itemscope itemtype="https://schema.org/DefinedTerm">
   <meta itemprop="name" content="What Causes Low Cellular Energy? | XIHE Knowledge">
   <meta itemprop="termCode" content="cellular-energy_low_cellular_energy">
@@ -641,9 +695,29 @@
   </div>
 </div>
   <nav>
-    <a href="/"><img src="../../../PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async"> style="height: 44px; width: auto; display: block;"></a>
+    <a href="/"><img src="/images/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async"> style="height: 44px; width: auto; display: block;"></a>
     <div class="nav-links">
-      <a href="/">Home</a><a href="/ABOUT/AboutOrigin.html">About</a><a href="/SCIENCE/Landing.html">Science</a><a href="/applications.html">Applications</a><a href="/PRODUCTS/ProductPage.html">Products</a><a href="/partnership.html">Partnership</a><a href="/CONTACT/index.html">Contact</a>
+      <a href="/">Home</a><a href="/ABOUT/AboutOrigin.html">About</a><div class="nav-item-dropdown">
+            <a href="/SCIENCE/Landing.html" class="nav-dropdown-trigger">Science</a>
+            <div class="nav-dropdown-menu">
+                <a href="/SCIENCE/Landing.html">Science Overview</a>
+                <a href="/SCIENCE/Mechanism.html">Mechanism</a>
+                <a href="/SCIENCE/Technology.html">Technology</a>
+                <a href="/SCIENCE/Evidence.html">Evidence</a>
+                <a href="/SCIENCE/KNOWLEDGE/">Knowledge Hub</a>
+            </div>
+        </div><a href="/applications.html">Applications</a><div class="nav-item-dropdown">
+            <a href="/PRODUCTS/ProductPage.html" class="nav-dropdown-trigger">Products</a>
+            <div class="nav-dropdown-menu">
+                <a href="/PRODUCTS/CAPSULE/capsule-b2b.html">CAPSULE â€” Full Body Photon Chamber</a>
+                <a href="/PRODUCTS/CABIN/cabin.html">CABIN â€” Modular Resonance Chamber</a>
+                <a href="/PRODUCTS/FILM/GrapheneFilm.html">Graphene Film â€” Heating Module</a>
+                <a href="/PRODUCTS/PORTABLES/NeuralResilience.html">Neural Resilience â€” Wearable</a>
+                <a href="/PRODUCTS/PORTABLES/VisceralVitality.html">Visceral Vitality â€” Waist Pad</a>
+                <a href="/PRODUCTS/PORTABLES/DeepRecovery.html">Deep Recovery â€” Lumbar Belt</a>
+                <a href="/technology/xihe-fir-film-performance.html" style="font-size:10px;opacity:0.7;">â€” FIR Film Performance Data</a>
+            </div>
+        </div><a href="/partnership.html">Partnership</a><a href="/CONTACT/index.html">Contact</a>
       <a href="tel:0086-18688683865" class="nav-phone">+86 186 8868 3865</a>
     </div>
   </nav>
@@ -694,7 +768,7 @@
     <div>
       <p class="quick-label">Quick Answer</p>
       <p class="quick-lead">Cellular energy depends on how efficiently mitochondria convert oxygen and nutrients into ATP.</p>
-      <p>When that efficiency declines, the result is not dramatic failure â€?but a quiet reduction in output that the body feels long before any test can capture it. Four systems commonly influence this:</p>
+      <p>When that efficiency declines, the result is not dramatic failure ï¿½?but a quiet reduction in output that the body feels long before any test can capture it. Four systems commonly influence this:</p>
       <ul>
         <li>Inflammatory signaling</li>
         <li>Oxidative stress burden</li>
@@ -742,7 +816,7 @@
     <section>
       <h2>Inflammation: The Background Noise</h2>
       <p>Low-grade inflammation is not the kind you feel as swelling or heat. It is more like static on a radio. Quiet enough to ignore. But present enough to make the signal harder to hear.</p>
-      <p>Inflammatory molecules â€?TNF-alpha, IL-6 â€?can interfere with how efficiently mitochondria produce ATP. The cell still works. But it works harder. And that cost adds up over weeks and months.</p>
+      <p>Inflammatory molecules ï¿½?TNF-alpha, IL-6 ï¿½?can interfere with how efficiently mitochondria produce ATP. The cell still works. But it works harder. And that cost adds up over weeks and months.</p>
     </section>
 
     <section>
@@ -753,7 +827,7 @@
 
     <section>
       <h2>Microcirculation: The Delivery Delay</h2>
-      <p>Cells need oxygen to produce ATP efficiently. But oxygen does not simply diffuse across the body. It travels through the smallest blood vessels â€?capillaries, arterioles, venules.</p>
+      <p>Cells need oxygen to produce ATP efficiently. But oxygen does not simply diffuse across the body. It travels through the smallest blood vessels ï¿½?capillaries, arterioles, venules.</p>
       <p>When that network is sluggish, cells may still receive some oxygen. But not enough to run at full capacity. Mitochondria wait. Production slows. The problem is not the engine. It is the fuel line.</p>
     </section>
 
@@ -778,14 +852,14 @@
           <span class="path-index">1</span>
           <div>
             <strong><a href="what-is-atp.html">What Is ATP and Why Does It Matter?</a></strong>
-            <span>The energy molecule that powers every cell â€?how it is made, used, and recycled.</span>
+            <span>The energy molecule that powers every cell ï¿½?how it is made, used, and recycled.</span>
           </div>
         </div>
         <div class="path-item">
           <span class="path-index">2</span>
           <div>
             <strong><a href="../Mitochondria/mitochondrial-dysfunction.html">What Is Mitochondrial Dysfunction?</a></strong>
-            <span>When the cell's energy converter slows down â€?what happens and why.</span>
+            <span>When the cell's energy converter slows down ï¿½?what happens and why.</span>
           </div>
         </div>
         <div class="path-item">
@@ -799,7 +873,7 @@
           <span class="path-index">4</span>
           <div>
             <strong><a href="../Fatigue/why-always-tired.html">Why Am I Always Tired?</a></strong>
-            <span>When energy never fully resets â€?the lived experience of low cellular output.</span>
+            <span>When energy never fully resets ï¿½?the lived experience of low cellular output.</span>
           </div>
         </div>
       </div>
@@ -814,7 +888,7 @@
       </div>
       <div class="faq-item">
         <h3>Is low cellular energy reversible?</h3>
-        <p>In many cases, yes. The body's energy systems are dynamic, not fixed. Addressing the underlying factors â€?inflammation, circulation, oxidative balance, and circadian alignment â€?can shift efficiency back toward normal.</p>
+        <p>In many cases, yes. The body's energy systems are dynamic, not fixed. Addressing the underlying factors ï¿½?inflammation, circulation, oxidative balance, and circadian alignment ï¿½?can shift efficiency back toward normal.</p>
       </div>
       <div class="faq-item">
         <h3>Does diet alone fix low cellular energy?</h3>
@@ -825,7 +899,7 @@
     <section>
       <h2>Where Science Is Headed Next</h2>
       <p>As the understanding of cellular energy deepens, researchers are exploring interventions that go beyond fuel and exercise. The question is shifting from "what to eat" to "how to support the system."</p>
-      <p>One emerging area is graphene far-infrared technology. Specific far-infrared wavelengths are being studied for their interaction with cellular water and microcirculation â€?two factors that directly influence how efficiently mitochondria produce ATP.</p>
+      <p>One emerging area is graphene far-infrared technology. Specific far-infrared wavelengths are being studied for their interaction with cellular water and microcirculation ï¿½?two factors that directly influence how efficiently mitochondria produce ATP.</p>
       <div class="path-list" style="margin-top: 20px;">
         <div class="path-item">
           <span class="path-index" style="background:var(--gold);color:#FFF;">&rarr;</span>
@@ -849,14 +923,14 @@
   </main>
 
   
-<!-- Knowledge Navigation â€?Machine Graph Layer -->
+<!-- Knowledge Navigation ï¿½?Machine Graph Layer -->
 <div style="display:none;" class="knowledge-nav" itemscope itemtype="https://schema.org/ItemList">
   <meta itemprop="name" content="Cellular Energy Hub Knowledge Navigation">
   <meta itemprop="description" content="Graph position for this article within the XIHE knowledge ecosystem">
   <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
     <meta itemprop="position" content="1">
     <meta itemprop="item" content="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/">
-    <meta itemprop="name" content="Cellular Energy Hub â€?Parent Collection">
+    <meta itemprop="name" content="Cellular Energy Hub ï¿½?Parent Collection">
   </div>
   <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
     <meta itemprop="position" content="2">
@@ -870,8 +944,28 @@
   </div>
 </div>
 
+
+        <!-- CTA Block -->
+        <div class="cta-block" style="text-align:center; margin:3rem 0; padding:1.5rem; border-top:1px solid rgba(212,175,55,0.2);">
+          <p style="color:#888; font-size:0.9rem; margin-bottom:0.75rem;">
+            Ready to explore graphene FIR integration?
+          </p>
+          <a href="/partnership.html" class="btn-cta" style="
+            display:inline-block;
+            background:linear-gradient(135deg, #D4AF37, #C09A2B);
+            color:#0A0A0A;
+            padding:0.75rem 2rem;
+            border-radius:4px;
+            text-decoration:none;
+            font-weight:600;
+            font-size:0.95rem;
+            letter-spacing:0.5px;
+          ">
+            Request Technical Data Sheet â†’
+          </a>
+        </div>
 <footer>
-    <p>XIHE Technology â€?A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
+    <p>XIHE Technology ï¿½?A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
 
 <section style="background:#FAF8F5;padding:40px 10%;border-top:1px solid #E5E5E7;">
     <div style="max-width:800px;margin:0 auto;">

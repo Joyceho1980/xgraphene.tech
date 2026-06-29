@@ -1,7 +1,7 @@
 # XIHE 中文网站 — 管理 README
 
 **文件位置：** `D:\CODEX\LAUCH VERSION\WEBSITE-MANAGING-README.md`
-**最后更新：** 2026-06-20
+**最后更新：** 2026-06-29
 **维护者：** HERMES Agent + Joyce Ho
 
 ---
@@ -1757,6 +1757,18 @@ OUTPUT: 10 articles
 | 🟣 GEO | AI 可以提取完整知识图谱，你的内容成为"来源材料" |
 | 🟠 品牌 | 你成为系统级权威，不是产品公司 |
 | 🔵 产品 | 产品自然成为"解决方案层"，不是强行推销 |
+
+---
+
+## 附录：图片文件路径说明
+
+| 目录 | 用途 | 访问方式 |
+|:----|:-----|:---------|
+| `D:\CODEX\LAUCH VERSION\images\` | Chrome 浏览器默认下载目录（所有 Google 下载的图片自动存这里） | 本地开发 |
+| `D:\CODEX\.playwright-mcp\` | Playwright 截图/Google生成照片下载目录 | 临时位置，需手动搬走 |
+| `WEBSITE\pages\PICTURE\` | 网站统一图库（线上引用路径为 /PICTURE/文件名） | 线上可访问 |
+
+**工作流：** Chrome 下载 → 进入 `images\` → 手动搬入 `PICTURE\` → 修改 HTML 引用路径
 
 ---
 

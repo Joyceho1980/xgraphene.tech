@@ -1,16 +1,17 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mitochondria &amp; Cellular Energy | XIHE Knowledge Hub</title>
-<link rel="icon" type="image/svg+xml" href="/PICTURE/XIHE_ICON.svg">
+<link rel="icon" type="image/svg+xml" href="/images/XIHE_ICON.svg">
 <meta name="description" content="Mitochondria are the cellular engines that produce ATP. Learn how mitochondrial function affects energy, recovery, and healthy aging.">
 <meta name="keywords" content="mitochondria, mitochondrial dysfunction, ATP, cellular energy, mitochondrial health, bioenergetics, recovery">
 <link rel="canonical" href="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/">
 <meta property="og:title" content="Mitochondria & Cellular Energy | XIHE Knowledge Hub">
 <meta property="og:description" content="Mitochondria are the cellular engines that produce ATP. Learn how mitochondrial function affects energy, recovery, and healthy aging.">
-<meta property="og:image" content="https://www.xgraphene.tech/PICTURE/mitochondria-hero.jpg">
+<meta property="og:image" content="https://www.xgraphene.tech/images/mitochondria-hero.jpg">
 <meta property="og:url" content="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
@@ -114,9 +115,63 @@
 
 <style>
 :root { --bg: #FAF8F5; --t: #1A1D24; --s: #475569; --m: #94A3B8; --g: #C5A059; --b: #E5E5E7; --n: #1A3348; }
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { margin: 0; padding: 0; 
+        img { max-width: 100%; height: auto; }
 body { font-family: 'Inter', sans-serif; background: #FFF; color: var(--t); line-height: 1.75; -webkit-font-smoothing: antialiased; }
-nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: var(--n); display: flex; align-items: center; justify-content: space-between; padding: 0 10%; z-index: 1000; }
+/* Dropdown */
+.nav-item-dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: #1A3348;
+    border: 1px solid rgba(197,160,89,0.2);
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    z-index: 1001;
+}
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(4px);
+}
+.nav-dropdown-menu a {
+    display: block;
+    padding: 10px 24px;
+    font-size: 11px;
+    color: #E0E6ED;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-dropdown-menu a:hover {
+    background: rgba(197,160,89,0.1);
+    color: #C5A059;
+}
+.nav-dropdown-menu a::after { display: none; }
+.nav-dropdown-trigger {
+    cursor: pointer;
+}
+.nav-dropdown-trigger::after {
+    content: ' \25BE';
+    font-size: 8px;
+    opacity: 0.6;
+}
+
+        nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: var(--n); display: flex; align-items: center; justify-content: space-between; padding: 0 10%; z-index: 1000; }
 .nl { display: flex; gap: 30px; align-items: center; }
 .nl a { font-size: 11px; color: #E0E6ED; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; position: relative; padding-bottom: 4px; white-space: nowrap; }
 .nl a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: var(--g); transform: scaleX(0); transform-origin: right center; transition: transform .3s; }
@@ -130,7 +185,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: var(
 .hub-nav a.active { color: var(--n); font-weight: 600; }
 .hub-nav a.active::after { content: ''; position: absolute; bottom: -1px; left: 50%; transform: translateX(-50%); width: 24px; height: 2px; background: var(--g); }
 .hub-nav .sep { width: 1px; height: 16px; background: var(--b); flex-shrink: 0; margin: 0 4px; }
-.hero { background: url('/PICTURE/mitochondria-hero.jpg') center/cover; min-height: 85vh; padding: 172px 10% 80px; text-align: left; position: relative; display: flex; align-items: center; }
+.hero { background: url('/images/mitochondria-hero.jpg') center/cover; min-height: 85vh; padding: 172px 10% 80px; text-align: left; position: relative; display: flex; align-items: center; }
 .hero::before { content: ''; position: absolute; inset: 0; background: linear-gradient(to right, rgba(26,51,72,0.82) 0%, rgba(26,51,72,0.28) 100%); }
 .hero-content { position: relative; z-index: 1; max-width: 640px; }
 .breadcrumb { font-size: 11px; color: var(--g); margin-bottom: 20px; letter-spacing: 1px; }
@@ -182,14 +237,42 @@ footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
 
 <nav>
 <div class="nl">
-<a href="/"><img src="/PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async" style="height:28px;"></a>
+<a href="/"><img src="/images/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async" style="height:28px;"></a>
 <a href="/">Home</a>
 <a href="/ABOUT/AboutOrigin.html">About</a>
-<a href="/SCIENCE/Landing.html">Science</a>
+<div class="nav-item-dropdown">
+            <a href="/SCIENCE/Landing.html" class="nav-dropdown-trigger">Science</a>
+            <div class="nav-dropdown-menu">
+                <a href="/SCIENCE/Landing.html">Science Overview</a>
+                <a href="/SCIENCE/Mechanism.html">Mechanism</a>
+                <a href="/SCIENCE/Technology.html">Technology</a>
+                <a href="/SCIENCE/Evidence.html">Evidence</a>
+                <a href="/SCIENCE/KNOWLEDGE/">Knowledge Hub</a>
+            </div>
+        </div>
 <a href="/applications.html">Applications</a>
-<a href="/PRODUCTS/ProductPage.html">Products</a>
+<div class="nav-item-dropdown">
+            <a href="/PRODUCTS/ProductPage.html" class="nav-dropdown-trigger">Products</a>
+            <div class="nav-dropdown-menu">
+                <a href="/PRODUCTS/CAPSULE/capsule-b2b.html">CAPSULE �� Full Body Photon Chamber</a>
+                <a href="/PRODUCTS/CABIN/cabin.html">CABIN �� Modular Resonance Chamber</a>
+                <a href="/PRODUCTS/FILM/GrapheneFilm.html">Graphene Film �� Heating Module</a>
+                <a href="/PRODUCTS/PORTABLES/NeuralResilience.html">Neural Resilience �� Wearable</a>
+                <a href="/PRODUCTS/PORTABLES/VisceralVitality.html">Visceral Vitality �� Waist Pad</a>
+                <a href="/PRODUCTS/PORTABLES/DeepRecovery.html">Deep Recovery �� Lumbar Belt</a>
+                <a href="/technology/xihe-fir-film-performance.html" style="font-size:10px;opacity:0.7;">�� FIR Film Performance Data</a>
+            </div>
+        </div>
 <a href="/partnership.html">Partnership</a>
-<a href="/NEWS/index.html">News</a>
+<div class="nav-item-dropdown">
+            <a href="/NEWS/index.html" class="nav-dropdown-trigger">News</a>
+            <div class="nav-dropdown-menu">
+                <a href="/NEWS/index.html">All News</a>
+                <a href="/NEWS/index.html#company">Company News</a>
+                <a href="/NEWS/index.html#industry">Industry News</a>
+                <a href="/NEWS/index.html#product">Product News</a>
+            </div>
+        </div>
 <a href="/CONTACT/index.html">Contact</a>
 </div>
 <a class="np" href="tel:0086-18688683865">+86 186 8868 3865</a>
@@ -295,23 +378,23 @@ TECHNOLOGY LAYER
 <div style="padding:16px 0;margin-bottom:12px;">
 <h3 style="font-family:'Urbanist',sans-serif;font-size:10px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin:0 0 12px;">Layer 4 &middot; Evidence Snapshot</h3>
 <ul style="font-size:13px;color:#475569;line-height:1.8;padding-left:20px;">
-<li>See Cellular Energy Hub: ATP is the universal energy currency — mitochondrial oxidative phosphorylation is the primary production pathway</li>
-<li>See Clinical Evidence Hub: Small Science (<a href="https://doi.org/10.1002/smsc.202200036" target="_blank" rel="noopener" style="color:#C5A059;">DOI: 10.1002/smsc.202200036</a>) — graphene FIR triggered 2.3–3.1× brainwave increase, an energy-dependent neural process</li>
-<li>See Graphene FIR Hub: NIQS certified 68% efficiency — the physical activation pathway that supports cellular energy without metabolic burden</li>
+<li>See Cellular Energy Hub: ATP is the universal energy currency �� mitochondrial oxidative phosphorylation is the primary production pathway</li>
+<li>See Clinical Evidence Hub: Small Science (<a href="https://doi.org/10.1002/smsc.202200036" target="_blank" rel="noopener" style="color:#C5A059;">DOI: 10.1002/smsc.202200036</a>) �� graphene FIR triggered 2.3�C3.1�� brainwave increase, an energy-dependent neural process</li>
+<li>See Graphene FIR Hub: NIQS certified 68% efficiency �� the physical activation pathway that supports cellular energy without metabolic burden</li>
 </ul>
 </div>
 
 <!-- LAYER 5: Graph Navigation -->
 <div style="padding:16px 0;">
 <h3 style="font-family:'Urbanist',sans-serif;font-size:10px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin:0 0 12px;">Layer 5 &middot; Graph Navigation</h3>
-<p style="font-size:13px;color:#475569;line-height:1.8;margin:0 0 4px;"><strong>⬆️ Upstream:</strong> Cellular Energy → Oxidative Phosphorylation → ATP Production</p>
-<p style="font-size:13px;color:#475569;line-height:1.8;margin:0 0 4px;"><strong>⬅️ Siblings:</strong> — (Central mechanism hub)</p>
-<p style="font-size:13px;color:#475569;line-height:1.8;margin:0;"><strong>⬇️ Downstream:</strong> Mitochondria → All Symptoms (Sleep/Fatigue/Recovery/Inflammation/Microcirculation/Healthy Aging/Metabolism) → Graphene FIR</p>
+<p style="font-size:13px;color:#475569;line-height:1.8;margin:0 0 4px;"><strong>?? Upstream:</strong> Cellular Energy �� Oxidative Phosphorylation �� ATP Production</p>
+<p style="font-size:13px;color:#475569;line-height:1.8;margin:0 0 4px;"><strong>?? Siblings:</strong> �� (Central mechanism hub)</p>
+<p style="font-size:13px;color:#475569;line-height:1.8;margin:0;"><strong>?? Downstream:</strong> Mitochondria �� All Symptoms (Sleep/Fatigue/Recovery/Inflammation/Microcirculation/Healthy Aging/Metabolism) �� Graphene FIR</p>
 </div>
 
 </details>
 
-<!-- === GRAPH EDGES: Mitochondria Node (v2 — machine-parsable) === -->
+<!-- === GRAPH EDGES: Mitochondria Node (v2 �� machine-parsable) === -->
 <div style="display:none;" aria-hidden="true">
 <!-- NODE_ID: mitochondria -->
 <!-- NODE_TYPE: mechanism -->
@@ -338,7 +421,7 @@ TECHNOLOGY LAYER
 <div class="explore">
 <h2 class="explore-title">Explore This Hub</h2>
 
-<div class="cat-header">A · System</div>
+<div class="cat-header">A �� System</div>
 <div class="card-list">
 
 <a href="/SCIENCE/KNOWLEDGE/Mitochondria/what-is-mitochondrial-health.html" class="card">
@@ -351,12 +434,12 @@ TECHNOLOGY LAYER
 <p>A plain-language foundation for what mitochondria do, why ATP matters, and why high-energy tissues are sensitive to energy problems.</p>
 <div class="card-links">Foundation &middot; <b>H1 (System)</b></div>
 </div>
-<img class="card-img" src="/PICTURE/hub-cards/Mitochondrial.png" alt="Mitochondrial health overview">
+<img class="card-img" src="/images/hero/what-is-mitochondrial-health-hero.png" alt="Mitochondrial health overview">
 </a>
 
 </div>
 
-<div class="cat-header">B · Mechanism</div>
+<div class="cat-header">B �� Mechanism</div>
 <div class="card-list">
 
 <a href="/SCIENCE/KNOWLEDGE/Mitochondria/mitochondrial-function-recovery.html" class="card">
@@ -369,7 +452,7 @@ TECHNOLOGY LAYER
 <p>Explains ATP, sleep, repair, inflammation resolution, and why recovery is an active biological process.</p>
 <div class="card-links">Mechanism &middot; <b>H2 (Recovery)</b> &middot; <b>H1 (Mitochondria)</b></div>
 </div>
-<img class="card-img" src="/PICTURE/hub-cards/Mitochondrial.png" alt="Mitochondria and recovery">
+<img class="card-img" src="/images/hub-mitochondria.jpg" alt="Mitochondria and recovery">
 </a>
 
 <a href="/SCIENCE/KNOWLEDGE/Mitochondria/mitochondrial-function-far-infrared.html" class="card">
@@ -382,7 +465,7 @@ TECHNOLOGY LAYER
 <p>A cautious review of far-infrared research with attention to circulation, comfort, and cellular response.</p>
 <div class="card-links">Mechanism &middot; <b>H3 (Graphene FIR)</b></div>
 </div>
-<img class="card-img" src="/PICTURE/hub-cards/Mitochondrial.png" alt="Far-infrared and mitochondria">
+<img class="card-img" src="/images/hero/mitochondrial-function-far-infrared-hero.png" alt="Far-infrared and mitochondria">
 </a>
 
 <a href="/SCIENCE/KNOWLEDGE/Mitochondria/atp-study.html" class="card">
@@ -395,7 +478,7 @@ TECHNOLOGY LAYER
 <p>The energy foundation behind the whole hub, for readers who want the mechanism first.</p>
 <div class="card-links">Mechanism &middot; <b>H1 (Cellular Energy)</b></div>
 </div>
-<img class="card-img" src="/PICTURE/hub-cards/Mitochondrial.png" alt="ATP and mitochondrial energy">
+<img class="card-img" src="/images/cellular-energy-mitochondria.jpg" alt="ATP and mitochondrial energy">
 </a>
 
 <a href="/SCIENCE/KNOWLEDGE/Mitochondria/why-brain-workers-brain-never-stops.html" class="card">
@@ -408,12 +491,12 @@ TECHNOLOGY LAYER
 <p>The brain burns 20% of body energy at only 2% of body weight. Why sustained cognitive work demands more from your mitochondria.</p>
 <div class="card-links">Mechanism &middot; <b>H2 (Cognitive Load)</b> &middot; <b>H1 (Mitochondria)</b></div>
 </div>
-<img class="card-img" src="/PICTURE/why-brain-workers-hero.jpg" alt="Why brain workers need more mitochondrial support">
+<img class="card-img" src="/images/brain-never-stops-mitochondria-mechanism.jpg" alt="Why brain workers need more mitochondrial support">
 </a>
 
 </div>
 
-<div class="cat-header">C · Problem &amp; Symptom</div>
+<div class="cat-header">C �� Problem &amp; Symptom</div>
 <div class="card-list">
 
 <a href="/SCIENCE/KNOWLEDGE/Mitochondria/are-mitochondria-a-disease.html" class="card">
@@ -426,7 +509,7 @@ TECHNOLOGY LAYER
 <p>Clean separation: mitochondria are normal cell structures. Dysfunction is performance. Disease is a diagnosis.</p>
 <div class="card-links">Clarification &middot; <b>H4 (Diagnosis)</b></div>
 </div>
-<img class="card-img" src="/PICTURE/hub-cards/Mitochondrial.png" alt="Are mitochondria a disease">
+<img class="card-img" src="/images/hero/are-mitochondria-a-disease-hero-sunrise.png" alt="Are mitochondria a disease">
 </a>
 
 <a href="/SCIENCE/KNOWLEDGE/Mitochondria/what-is-mitochondrial-dysfunction.html" class="card">
@@ -439,7 +522,7 @@ TECHNOLOGY LAYER
 <p>The engine still runs. It just burns more fuel to go the same distance. Dysfunction is performance, not diagnosis.</p>
 <div class="card-links">Clarification &middot; <b>H4 (Dysfunction)</b></div>
 </div>
-<img class="card-img" src="/PICTURE/hub-cards/Mitochondrial.png" alt="What is mitochondrial dysfunction">
+<img class="card-img" src="/images/hero/what-is-mitochondrial-dysfunction-hero.png" alt="What is mitochondrial dysfunction">
 </a>
 
 <a href="/SCIENCE/KNOWLEDGE/Mitochondria/what-does-mitochondrial-disease-feel-like.html" class="card">
@@ -452,7 +535,7 @@ TECHNOLOGY LAYER
 <p>A lived-experience article for readers who are looking for themselves in the symptoms.</p>
 <div class="card-links">Experience &middot; <b>H4 (Symptoms)</b></div>
 </div>
-<img class="card-img" src="/PICTURE/hub-cards/Mitochondrial.png" alt="What does mitochondrial disease feel like">
+<img class="card-img" src="/images/placeholder-card.svg" alt="What does mitochondrial disease feel like">
 </a>
 
 <a href="/SCIENCE/KNOWLEDGE/Mitochondria/how-do-you-find-out-if-you-have-a-mitochondrial-disease.html" class="card">
@@ -465,7 +548,7 @@ TECHNOLOGY LAYER
 <p>The diagnosis path, written in calm language for real users and AI readers.</p>
 <div class="card-links">Guidance &middot; <b>H4 (Diagnosis Path)</b></div>
 </div>
-<img class="card-img" src="/PICTURE/hub-cards/Mitochondrial.png" alt="How to find out if you have mitochondrial disease">
+<img class="card-img" src="/images/hero/how-do-you-find-out-if-you-have-a-mitochondrial-disease-hero.png" alt="How to find out if you have mitochondrial disease">
 </a>
 
 <a href="/SCIENCE/KNOWLEDGE/Mitochondria/how-is-mitochondrial-disease-managed.html" class="card">
@@ -478,7 +561,7 @@ TECHNOLOGY LAYER
 <p>The practical next step: support, monitoring, and quality of life.</p>
 <div class="card-links">Guidance &middot; <b>H4 (Management)</b></div>
 </div>
-<img class="card-img" src="/PICTURE/hub-cards/Mitochondrial.png" alt="How is mitochondrial disease managed">
+<img class="card-img" src="/images/mitochondria-hero.jpg" alt="How is mitochondrial disease managed">
 </a>
 
 </div>
@@ -525,10 +608,10 @@ TECHNOLOGY LAYER
 <div style="max-width:1100px;margin:48px auto 0;padding:0 24px;">
 <div style="background:#FAF8F5;padding:28px 32px;border-radius:8px;border-left:4px solid #1A3348;">
 <h3 style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#94A3B8;text-transform:uppercase;margin:0 0 12px;">Where This Fits</h3>
-<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">⬆️ <strong>Upstream:</strong> <a href="/SCIENCE/KNOWLEDGE/cellular-energy/" style="color:#C5A059;">Cellular Energy</a> — The energy system mitochondria serve</p>
-<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">&bull; <strong>Current:</strong> Mitochondria — The Cellular Engines</p>
-<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">⬇️ <strong>Downstream:</strong> All 7 symptom hubs depend on mitochondrial output</p>
-<p style="font-size:14px;color:#475569;line-height:1.8;margin:0;">🏁 <strong>Terminal:</strong> <a href="/SCIENCE/KNOWLEDGE/graphene-fir/" style="color:#C5A059;">Graphene FIR</a></p>
+<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">?? <strong>Upstream:</strong> <a href="/SCIENCE/KNOWLEDGE/cellular-energy/" style="color:#C5A059;">Cellular Energy</a> �� The energy system mitochondria serve</p>
+<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">&bull; <strong>Current:</strong> Mitochondria �� The Cellular Engines</p>
+<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">?? <strong>Downstream:</strong> All 7 symptom hubs depend on mitochondrial output</p>
+<p style="font-size:14px;color:#475569;line-height:1.8;margin:0;">?? <strong>Terminal:</strong> <a href="/SCIENCE/KNOWLEDGE/graphene-fir/" style="color:#C5A059;">Graphene FIR</a></p>
 </div>
 </div>
 
@@ -537,7 +620,7 @@ TECHNOLOGY LAYER
 </div>
 
 <footer style="padding: 40px 10%; background: #1A3348; text-align: center; border-top: 2px solid #C5A059;">
-    <p style="font-size: 13px; color: #E0E6ED; letter-spacing: 0.03em;">XIHE Technology — A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
+    <p style="font-size: 13px; color: #E0E6ED; letter-spacing: 0.03em;">XIHE Technology �� A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
 </footer>
 
 <!-- === AI LAYER 2: JSON-LD DefinedTerm (Mitochondria entity in XIHE Knowledge Graph v2) === -->

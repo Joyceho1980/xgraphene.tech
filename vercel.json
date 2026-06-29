@@ -2,6 +2,14 @@
   "buildCommand": "",
   "outputDirectory": ".",
   "framework": null,
+  "headers": [
+    {
+      "source": "/(.*\\.html)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    }
+  ],
   "rewrites": [
     {
       "source": "/",
@@ -16,12 +24,16 @@
       "destination": "/WEBSITE/sitemap.xml"
     },
     {
-      "source": "/VISUAL-LIBRARY/:path*",
-      "destination": "/ASSETS/VISUAL-LIBRARY/:path*"
+      "source": "/llms.txt",
+      "destination": "/WEBSITE/llms.txt"
     },
     {
-      "source": "/PICTURE/:path*",
-      "destination": "/ASSETS/PICTURE/:path*"
+      "source": "/fonts/:path*",
+      "destination": "/ASSETS/fonts/:path*"
+    },
+    {
+      "source": "/ASSETS/:path*",
+      "destination": "/ASSETS/:path*"
     },
     {
       "source": "/admin",
@@ -30,6 +42,30 @@
     {
       "source": "/admin/",
       "destination": "/admin/index.html"
+    },
+    {
+      "source": "/CONTACT",
+      "destination": "/WEBSITE/pages/CONTACT/index.html"
+    },
+    {
+      "source": "/CONTACT/",
+      "destination": "/WEBSITE/pages/CONTACT/index.html"
+    },
+    {
+      "source": "/NEWS",
+      "destination": "/WEBSITE/pages/NEWS/index.html"
+    },
+    {
+      "source": "/NEWS/",
+      "destination": "/WEBSITE/pages/NEWS/index.html"
+    },
+    {
+      "source": "/PRODUCTS",
+      "destination": "/WEBSITE/pages/PRODUCTS/ProductPage.html"
+    },
+    {
+      "source": "/PRODUCTS/",
+      "destination": "/WEBSITE/pages/PRODUCTS/ProductPage.html"
     },
     {
       "source": "/about/:path*",
@@ -201,6 +237,96 @@
     }
   ],
   "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "xgraphene.tech" }],
+      "destination": "https://www.xgraphene.tech/$1",
+      "statusCode": 301
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "host", "value": "xgraphene.tech" }],
+      "destination": "https://www.xgraphene.tech/",
+      "statusCode": 301
+    },
+    { "source": "/JOURNAL", "destination": "/SCIENCE/KNOWLEDGE/", "statusCode": 301 },
+    { "source": "/JOURNAL/", "destination": "/SCIENCE/KNOWLEDGE/", "statusCode": 301 },
+    { "source": "/JOURNAL/:hub", "destination": "/SCIENCE/KNOWLEDGE/:hub/", "statusCode": 301 },
+    { "source": "/JOURNAL/:hub/", "destination": "/SCIENCE/KNOWLEDGE/:hub/", "statusCode": 301 },
+    { "source": "/JOURNAL/:hub/:page", "destination": "/SCIENCE/KNOWLEDGE/:hub/:page", "statusCode": 301 },
+    { "source": "/journal/:path*", "destination": "/SCIENCE/KNOWLEDGE/:path*", "statusCode": 301 },
+    { "source": "/journal", "destination": "/SCIENCE/KNOWLEDGE/", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/SCIENCE/:path*", "destination": "/SCIENCE/:path*", "statusCode": 301 },
+    { "source": "/Technology.html", "destination": "/SCIENCE/KNOWLEDGE/Technology-Platform/", "statusCode": 301 },
+    { "source": "/Evidence.html", "destination": "/SCIENCE/Evidence.html", "statusCode": 301 },
+    { "source": "/Landing.html", "destination": "/SCIENCE/Landing.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/Clinical-Evidence/clinical-partners.html", "destination": "/partnership", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/Research-Library/", "destination": "/SCIENCE/KNOWLEDGE/", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/Research-Library", "destination": "/SCIENCE/KNOWLEDGE/", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/bioenergetics", "destination": "/SCIENCE/KNOWLEDGE/cellular-energy/", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/bioenergetics/", "destination": "/SCIENCE/KNOWLEDGE/cellular-energy/", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/bioenergetics/:path*", "destination": "/SCIENCE/KNOWLEDGE/cellular-energy/:path*", "statusCode": 301 },
+    { "source": "/technology/safety-and-compliance.html", "destination": "/SCIENCE/KNOWLEDGE/Technology-Platform/", "statusCode": 301 },
+    { "source": "/NEWS/ABOUT/:path*", "destination": "/ABOUT/:path*", "statusCode": 301 },
+    { "source": "/NEWS/SCIENCE/:path*", "destination": "/SCIENCE/:path*", "statusCode": 301 },
+    { "source": "/NEWS/CONTACT/:path*", "destination": "/CONTACT/:path*", "statusCode": 301 },
+    { "source": "/NEWS/PRODUCTS/:path*", "destination": "/PRODUCTS/:path*", "statusCode": 301 },
+    { "source": "/NEWS/Company-Updates/pku-clinical-trial.html", "destination": "/SCIENCE/KNOWLEDGE/Clinical-Evidence/pku-clinical-trial.html", "statusCode": 301 },
+    { "source": "/NEWS/Company-Updates/index.html", "destination": "/NEWS/", "statusCode": 301 },
+    { "source": "/NEWS/applications.html", "destination": "/applications", "statusCode": 301 },
+    { "source": "/NEWS/partnership.html", "destination": "/partnership", "statusCode": 301 },
+    { "source": "/SCIENCE/ABOUT/:path*", "destination": "/ABOUT/:path*", "statusCode": 301 },
+    { "source": "/SCIENCE/CONTACT/:path*", "destination": "/CONTACT/:path*", "statusCode": 301 },
+    { "source": "/SCIENCE/NEWS/:path*", "destination": "/NEWS/:path*", "statusCode": 301 },
+    { "source": "/SCIENCE/PRODUCTS/:path*", "destination": "/PRODUCTS/:path*", "statusCode": 301 },
+    { "source": "/SCIENCE/JOURNAL/:path*", "destination": "/SCIENCE/KNOWLEDGE/:path*", "statusCode": 301 },
+    { "source": "/SCIENCE/applications.html", "destination": "/applications", "statusCode": 301 },
+    { "source": "/SCIENCE/partnership.html", "destination": "/partnership", "statusCode": 301 },
+    { "source": "/SCIENCE/index.html", "destination": "/SCIENCE/Landing.html", "statusCode": 301 },
+    { "source": "/SCIENCE/mitochondrial-health.html", "destination": "/SCIENCE/KNOWLEDGE/Mitochondria/", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/ABOUT/:path*", "destination": "/ABOUT/:path*", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/CONTACT/:path*", "destination": "/CONTACT/:path*", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/PRODUCTS/:path*", "destination": "/PRODUCTS/:path*", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/Comparison.html", "destination": "/SCIENCE/KNOWLEDGE/graphene-fir/comparison.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/Evidence.html", "destination": "/SCIENCE/Evidence.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/Mechanism.html", "destination": "/SCIENCE/Mechanism.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/Technology.html", "destination": "/SCIENCE/KNOWLEDGE/Technology-Platform/", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/Landing.html", "destination": "/SCIENCE/Landing.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/applications.html", "destination": "/applications", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/partnership.html", "destination": "/partnership", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/far-infrared-invisible-warmth.html", "destination": "/SCIENCE/KNOWLEDGE/graphene-fir/how-fir-works.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/what-is-mitochondrial-health.html", "destination": "/SCIENCE/KNOWLEDGE/Mitochondria/what-is-mitochondrial-health.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/mitochondrial-function-far-infrared.html", "destination": "/SCIENCE/KNOWLEDGE/Mitochondria/mitochondrial-function-far-infrared.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/graphene-fir-microcirculation.html", "destination": "/SCIENCE/KNOWLEDGE/Microcirculation/graphene-fir-microcirculation.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/graphene-fir/Cellular-Energy-Recovery/:path*", "destination": "/SCIENCE/KNOWLEDGE/cellular-energy/:path*", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/graphene-fir/Technology.html", "destination": "/SCIENCE/KNOWLEDGE/Technology-Platform/", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/graphene-fir/Mechanism.html", "destination": "/SCIENCE/Mechanism.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/graphene-fir/Evidence.html", "destination": "/SCIENCE/Evidence.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/graphene-fir/Landing.html", "destination": "/SCIENCE/Landing.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/graphene-fir/Comparison.html", "destination": "/SCIENCE/KNOWLEDGE/graphene-fir/comparison.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/graphene-fir/far-infrared-invisible-warmth.html", "destination": "/SCIENCE/KNOWLEDGE/graphene-fir/how-fir-works.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/cellular-energy/inflammation-recovery-biology.html", "destination": "/SCIENCE/KNOWLEDGE/Inflammation/inflammation-recovery-biology.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/cellular-energy/mitochondrial-function-recovery.html", "destination": "/SCIENCE/KNOWLEDGE/Mitochondria/mitochondrial-function-recovery.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/cellular-energy/nociceptive-vs-neuropathic-mechanisms.html", "destination": "/SCIENCE/KNOWLEDGE/Inflammation/nociceptive-vs-neuropathic-mechanisms.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/Inflammation/central-sensitization-energy.html", "destination": "/SCIENCE/KNOWLEDGE/cellular-energy/central-sensitization-energy.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/Inflammation/atp-pain-signaling.html", "destination": "/SCIENCE/KNOWLEDGE/cellular-energy/atp-pain-signaling.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/Inflammation/mitochondrial-function-recovery.html", "destination": "/SCIENCE/KNOWLEDGE/Mitochondria/mitochondrial-function-recovery.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/Inflammation/microcirculation-science.html", "destination": "/SCIENCE/KNOWLEDGE/Microcirculation/microcirculation-science.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/Mitochondria/atp-pain-signaling.html", "destination": "/SCIENCE/KNOWLEDGE/cellular-energy/atp-pain-signaling.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/Mitochondria/microcirculation-science.html", "destination": "/SCIENCE/KNOWLEDGE/Microcirculation/microcirculation-science.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/Mitochondria/cellular-energy-atp.html", "destination": "/SCIENCE/KNOWLEDGE/cellular-energy/cellular-energy-atp.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/Mitochondria/Landing.html", "destination": "/SCIENCE/KNOWLEDGE/Mitochondria/", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/Microcirculation/mitochondrial-function-recovery.html", "destination": "/SCIENCE/KNOWLEDGE/Mitochondria/mitochondrial-function-recovery.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/Microcirculation/atp-pain-signaling.html", "destination": "/SCIENCE/KNOWLEDGE/cellular-energy/atp-pain-signaling.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/Microcirculation/inflammation-recovery-biology.html", "destination": "/SCIENCE/KNOWLEDGE/Inflammation/inflammation-recovery-biology.html", "statusCode": 301 },
+    { "source": "/science/cellular-energy-recovery/:path*", "destination": "/SCIENCE/KNOWLEDGE/cellular-energy/:path*", "statusCode": 301 },
+    { "source": "/science/landing", "destination": "/SCIENCE/Landing.html", "statusCode": 301 },
+    { "source": "/science/landing.html", "destination": "/SCIENCE/Landing.html", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/sleep/:path*", "destination": "/SCIENCE/KNOWLEDGE/Sleep/:path*", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/inflammation/:path*", "destination": "/SCIENCE/KNOWLEDGE/Inflammation/:path*", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/metabolism/:path*", "destination": "/SCIENCE/KNOWLEDGE/Metabolism/:path*", "statusCode": 301 },
+    { "source": "/SCIENCE/KNOWLEDGE/fatigue/:path*", "destination": "/SCIENCE/KNOWLEDGE/Fatigue/:path*", "statusCode": 301 },
+    { "source": "/products/capsule", "destination": "/PRODUCTS/CAPSULE/capsule-b2b.html", "statusCode": 301 },
     {
       "source": "/applications.html",
       "destination": "/applications",
@@ -438,7 +564,7 @@
     },
     {
       "source": "/NEWS/pku-clinical-trial.html",
-      "destination": "/SCIENCE/KNOWLEDGE/graphene-fir/pku-clinical-trial.html",
+      "destination": "/SCIENCE/KNOWLEDGE/Clinical-Evidence/pku-clinical-trial.html",
       "statusCode": 301
     },
     {

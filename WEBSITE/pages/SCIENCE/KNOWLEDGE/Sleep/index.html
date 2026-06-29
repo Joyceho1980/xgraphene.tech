@@ -1,15 +1,76 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sleep &amp; Recovery | XIHE Knowledge Hub</title>
 <meta name="description" content="Understand the relationship between far-infrared energy, circadian rhythm, and sleep quality. Research-backed perspectives on how thermal environment influences restorative sleep.">
+<link rel="canonical" href="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Sleep/">
+<meta property="og:url" content="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Sleep/">
+<meta property="og:title" content="Sleep &amp; Recovery | XIHE Knowledge Hub">
+<meta property="og:description" content="Understand the relationship between far-infrared energy, circadian rhythm, and sleep quality. Research-backed perspectives on how thermal environment influences restorative sleep.">
+<meta property="og:image" content="https://www.xgraphene.tech/images/science-hero.png">
+<meta property="og:type" content="website">
 <style>
 :root { --bg: #FAF8F5; --t: #1A1D24; --s: #475569; --m: #94A3B8; --g: #C5A059; --b: #E5E5E7; --n: #1A3348; }
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { margin: 0; padding: 0; 
+        img { max-width: 100%; height: auto; }
 body { font-family: 'Inter', sans-serif; background: #FFF; color: var(--t); line-height: 1.75; -webkit-font-smoothing: antialiased; }
-nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: var(--n); display: flex; align-items: center; justify-content: space-between; padding: 0 10%; z-index: 1000; }
+/* Dropdown */
+.nav-item-dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: #1A3348;
+    border: 1px solid rgba(197,160,89,0.2);
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    z-index: 1001;
+}
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(4px);
+}
+.nav-dropdown-menu a {
+    display: block;
+    padding: 10px 24px;
+    font-size: 11px;
+    color: #E0E6ED;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-dropdown-menu a:hover {
+    background: rgba(197,160,89,0.1);
+    color: #C5A059;
+}
+.nav-dropdown-menu a::after { display: none; }
+.nav-dropdown-trigger {
+    cursor: pointer;
+}
+.nav-dropdown-trigger::after {
+    content: ' \25BE';
+    font-size: 8px;
+    opacity: 0.6;
+}
+
+        nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: var(--n); display: flex; align-items: center; justify-content: space-between; padding: 0 10%; z-index: 1000; }
 .nl { display: flex; gap: 30px; align-items: center; }
 .nl a { font-size: 11px; color: #E0E6ED; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; position: relative; padding-bottom: 4px; white-space: nowrap; }
 .nl a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: var(--g); transform: scaleX(0); transform-origin: right center; transition: transform .3s; }
@@ -23,7 +84,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: var(
 .hub-nav a.active { color: var(--n); font-weight: 600; }
 .hub-nav a.active::after { content: ''; position: absolute; bottom: -1px; left: 50%; transform: translateX(-50%); width: 24px; height: 2px; background: var(--g); }
 .hub-nav .sep { width: 1px; height: 16px; background: var(--b); flex-shrink: 0; margin: 0 4px; }
-.hero { background: url('/VISUAL-LIBRARY/Sleep%20Hero.webp') center/cover; min-height: 85vh; padding: 172px 10% 80px; text-align: left; position: relative; display: flex; align-items: center; }
+.hero { background: url('/images/hero/Sleep%20Hero.webp') center/cover; min-height: 85vh; padding: 172px 10% 80px; text-align: left; position: relative; display: flex; align-items: center; }
 .hero-content { max-width: 640px; }
 .breadcrumb { font-size: 11px; color: var(--g); margin-bottom: 20px; letter-spacing: 1px; }
 .breadcrumb a { color: var(--g); text-decoration: none; }
@@ -65,14 +126,42 @@ footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
 
 <nav>
 <div class="nl">
-<a href="/"><img src="/PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" style="height:28px;"></a>
+<a href="/"><img src="/images/XIHE_LOGO_DARK.svg" alt="XIHE" style="height:28px;"></a>
 <a href="/">Home</a>
 <a href="/ABOUT/AboutOrigin.html">About</a>
-<a href="/SCIENCE/Landing.html">Science</a>
+<div class="nav-item-dropdown">
+            <a href="/SCIENCE/Landing.html" class="nav-dropdown-trigger">Science</a>
+            <div class="nav-dropdown-menu">
+                <a href="/SCIENCE/Landing.html">Science Overview</a>
+                <a href="/SCIENCE/Mechanism.html">Mechanism</a>
+                <a href="/SCIENCE/Technology.html">Technology</a>
+                <a href="/SCIENCE/Evidence.html">Evidence</a>
+                <a href="/SCIENCE/KNOWLEDGE/">Knowledge Hub</a>
+            </div>
+        </div>
 <a href="/applications.html">Applications</a>
-<a href="/PRODUCTS/ProductPage.html">Products</a>
+<div class="nav-item-dropdown">
+            <a href="/PRODUCTS/ProductPage.html" class="nav-dropdown-trigger">Products</a>
+            <div class="nav-dropdown-menu">
+                <a href="/PRODUCTS/CAPSULE/capsule-b2b.html">CAPSULE �� Full Body Photon Chamber</a>
+                <a href="/PRODUCTS/CABIN/cabin.html">CABIN �� Modular Resonance Chamber</a>
+                <a href="/PRODUCTS/FILM/GrapheneFilm.html">Graphene Film �� Heating Module</a>
+                <a href="/PRODUCTS/PORTABLES/NeuralResilience.html">Neural Resilience �� Wearable</a>
+                <a href="/PRODUCTS/PORTABLES/VisceralVitality.html">Visceral Vitality �� Waist Pad</a>
+                <a href="/PRODUCTS/PORTABLES/DeepRecovery.html">Deep Recovery �� Lumbar Belt</a>
+                <a href="/technology/xihe-fir-film-performance.html" style="font-size:10px;opacity:0.7;">�� FIR Film Performance Data</a>
+            </div>
+        </div>
 <a href="/partnership.html">Partnership</a>
-<a href="/NEWS/index.html">News</a>
+<div class="nav-item-dropdown">
+            <a href="/NEWS/index.html" class="nav-dropdown-trigger">News</a>
+            <div class="nav-dropdown-menu">
+                <a href="/NEWS/index.html">All News</a>
+                <a href="/NEWS/index.html#company">Company News</a>
+                <a href="/NEWS/index.html#industry">Industry News</a>
+                <a href="/NEWS/index.html#product">Product News</a>
+            </div>
+        </div>
 <a href="/CONTACT/index.html">Contact</a>
 </div>
 <a class="np" href="tel:0086-18688683865">+86 186 8868 3865</a>
@@ -155,19 +244,19 @@ footer p { font-size: 13px; color: #E0E6ED; margin-bottom: 0; }
 <h3 style="font-family:'Urbanist',sans-serif;font-size:10px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin:0 0 12px;">Layer 3 &middot; Knowledge Position</h3>
 <pre style="font-family:'Courier New',monospace;font-size:12px;color:#1A3348;background:#FAF8F5;padding:16px 20px;border-radius:6px;line-height:1.7;overflow-x:auto;">
 SYMPTOMS LAYER
-├─ Sleep �?(CURRENT)
-├─ Fatigue
-├─ Recovery
-├─ Inflammation
-├─ Microcirculation
-├─ Healthy Aging
-├─ Metabolism
-    �?ENERGY LAYER
-└─ Cellular Energy
-    �?MECHANISMS LAYER
-└─ Mitochondria
-    �?TECHNOLOGY LAYER
-└─ Graphene FIR
+���� Sleep ??(CURRENT)
+���� Fatigue
+���� Recovery
+���� Inflammation
+���� Microcirculation
+���� Healthy Aging
+���� Metabolism
+    ??ENERGY LAYER
+���� Cellular Energy
+    ??MECHANISMS LAYER
+���� Mitochondria
+    ??TECHNOLOGY LAYER
+���� Graphene FIR
 </pre>
 </div>
 
@@ -175,25 +264,25 @@ SYMPTOMS LAYER
 <div style="padding:16px 0;margin-bottom:12px;">
 <h3 style="font-family:'Urbanist',sans-serif;font-size:10px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin:0 0 12px;">Layer 4 &middot; Evidence Snapshot</h3>
 <ul style="font-size:13px;color:#475569;line-height:1.8;padding-left:20px;">
-<li>🏥 Xiamen Xianyue Hospital (Mental Health Center): Graphene FIR clinical research initiated on sleep disorder adjunctive intervention (2026, Fujian Health News). Sleep is a core application pathway in mental health. (<a href="http://m.toutiao.com/group/7631568646761906751/" target="_blank" rel="noopener" style="color:#C5A059;">Source</a>)</li>
-<li>🏥 Multi-hospital symposium (2023): Xianyue Hospital sleep medicine team toured XIHE's graphene FIR production line �?confirmed FIR's potential for sleep-related somatic symptoms and insomnia research. (<a href="http://www.graphene.tv/2023041390083/" target="_blank" rel="noopener" style="color:#C5A059;">Source: Graphene.cn</a>)</li>
+<li>?? Xiamen Xianyue Hospital (Mental Health Center): Graphene FIR clinical research initiated on sleep disorder adjunctive intervention (2026, Fujian Health News). Sleep is a core application pathway in mental health. (<a href="http://m.toutiao.com/group/7631568646761906751/" target="_blank" rel="noopener" style="color:#C5A059;">Source</a>)</li>
+<li>?? Multi-hospital symposium (2023): Xianyue Hospital sleep medicine team toured XIHE's graphene FIR production line ??confirmed FIR's potential for sleep-related somatic symptoms and insomnia research. (<a href="http://www.graphene.tv/2023041390083/" target="_blank" rel="noopener" style="color:#C5A059;">Source: Graphene.cn</a>)</li>
 <li>PKU Third Hospital clinical trial (PKU-CT-2026-014): 78.3% measured comfort outcome in musculoskeletal cohort, sustained at 4-week follow-up</li>
-<li>BMC Geriatrics RCT (<a href="https://doi.org/10.1186/s12877-024-04755-9" target="_blank" rel="noopener" style="color:#C5A059;">DOI: 10.1186/s12877-024-04755-9</a>): 65% reduction in anxiety scores in elderly participants, a key factor in sleep quality</li>
-<li>NIQS certified graphene FIR emission (report 2022-WT-HW-00529): stable emissivity in 5�?5μm range matching human body absorption window</li>
+<li>BMC Geriatrics RCT (<a href="https://doi.org/10.1186/s12877-024-05344-z" target="_blank" rel="noopener" style="color:#C5A059;">DOI: 10.1186/s12877-024-05344-z</a>): 65% reduction in anxiety scores in elderly participants, a key factor in sleep quality</li>
+<li>NIQS certified graphene FIR emission (report 2022-WT-HW-00529): stable emissivity in 5??5��m range matching human body absorption window</li>
 </ul>
 </div>
 
 <!-- LAYER 5: Graph Navigation -->
 <div style="padding:16px 0;">
 <h3 style="font-family:'Urbanist',sans-serif;font-size:10px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin:0 0 12px;">Layer 5 &middot; Graph Navigation</h3>
-<p style="font-size:13px;color:#475569;line-height:1.8;margin:0 0 4px;"><strong>�?Upstream:</strong> Cellular Energy Depletion �?Mitochondrial ATP Production Decline</p>
-<p style="font-size:13px;color:#475569;line-height:1.8;margin:0 0 4px;"><strong>�?Siblings:</strong> Fatigue, Recovery, Inflammation, Microcirculation, Healthy Aging, Metabolism</p>
-<p style="font-size:13px;color:#475569;line-height:1.8;margin:0;"><strong>�?Downstream:</strong> Sleep �?Cellular Energy �?Mitochondria �?Graphene FIR</p>
+<p style="font-size:13px;color:#475569;line-height:1.8;margin:0 0 4px;"><strong>??Upstream:</strong> Cellular Energy Depletion ??Mitochondrial ATP Production Decline</p>
+<p style="font-size:13px;color:#475569;line-height:1.8;margin:0 0 4px;"><strong>??Siblings:</strong> Fatigue, Recovery, Inflammation, Microcirculation, Healthy Aging, Metabolism</p>
+<p style="font-size:13px;color:#475569;line-height:1.8;margin:0;"><strong>??Downstream:</strong> Sleep ??Cellular Energy ??Mitochondria ??Graphene FIR</p>
 </div>
 
 </details>
 
-<!-- === GRAPH EDGES: Sleep Node (v2 �?machine-parsable) === -->
+<!-- === GRAPH EDGES: Sleep Node (v2 ??machine-parsable) === -->
 <div style="display:none;" aria-hidden="true">
 <!-- NODE_ID: sleep -->
 <!-- NODE_TYPE: symptom -->
@@ -239,7 +328,7 @@ SYMPTOMS LAYER
 <p>When sleep duration is fine but overnight repair didn't finish.</p>
 <div class="card-links"><b>&rarr;</b></div>
 </div>
-<img class="card-img" src="/VISUAL-LIBRARY/why-do-i-wake-up-tired.webp" alt="">
+<img class="card-img" src="/images/placeholder-card.svg" alt="">
 </a>
 
 <a class="card" href="/SCIENCE/KNOWLEDGE/Sleep/how-does-sleep-affect-cellular-recovery.html">
@@ -251,7 +340,7 @@ SYMPTOMS LAYER
 <p>What the body is actually doing during deep sleep and REM.</p>
 <div class="card-links"><b>&rarr;</b></div>
 </div>
-<img class="card-img" src="/PICTURE/hero-mitochondria-energy.webp" alt="">
+<img class="card-img" src="/images/hero-mitochondria-energy.webp" alt="">
 </a>
 
 <a class="card" href="/SCIENCE/KNOWLEDGE/Sleep/why-cant-i-fall-asleep-at-night.html">
@@ -263,7 +352,7 @@ SYMPTOMS LAYER
 <p>When sleep won't come, the issue may not be stress &mdash; it may be a loss of biological rhythm.</p>
 <div class="card-links"><b>&rarr;</b></div>
 </div>
-<img class="card-img" src="/VISUAL-LIBRARY/Why%20cannot%20i%20fall%20into%20sleep%20at%20night%20hero.webp" alt="">
+<img class="card-img" src="/images/placeholder-card.svg" alt="">
 </a>
 
 <a class="card" href="/SCIENCE/KNOWLEDGE/Sleep/why-do-i-wake-up-at-430am.html">
@@ -275,7 +364,7 @@ SYMPTOMS LAYER
 <p>When sleep happens, but the body still wakes at the same hour every night.</p>
 <div class="card-links"><b>&rarr;</b></div>
 </div>
-<img class="card-img" src="/VISUAL-LIBRARY/why-do-i-wake-up-at-430am-hero.png" alt="">
+<img class="card-img" src="/images/placeholder-card.svg" alt="">
 </a>
 
 <a class="card" href="/SCIENCE/KNOWLEDGE/Sleep/how-graphene-fir-affects-sleep-architecture.html">
@@ -287,7 +376,7 @@ SYMPTOMS LAYER
 <p>Sleep first, graphene second: how a thermal environment may relate to sleep timing and regulation.</p>
 <div class="card-links"><b>&rarr;</b></div>
 </div>
-<img class="card-img" src="/VISUAL-LIBRARY/how-graphene-fir-affects-sleep-architecture-hero.png" alt="">
+<img class="card-img" src="/images/placeholder-card.svg" alt="">
 </a>
 
 <a class="card" href="/SCIENCE/KNOWLEDGE/graphene-fir/graphene-fir-sleep-anxiety-cognitive-recovery.html">
@@ -299,7 +388,7 @@ SYMPTOMS LAYER
 <p>FIR, microcirculation, and thermoregulation &mdash; the biological pathway to deeper sleep.</p>
 <div class="card-links"><b>&rarr;</b></div>
 </div>
-<img class="card-img" src="/VISUAL-LIBRARY/why-do-i-wake-up-tired.webp" alt="">
+<img class="card-img" src="/images/placeholder-card.svg" alt="">
 </a>
 
 </div>
@@ -347,15 +436,15 @@ SYMPTOMS LAYER
 <div style="max-width:1100px;margin:48px auto 0;padding:0 24px;">
 <div style="background:#FAF8F5;padding:28px 32px;border-radius:8px;border-left:4px solid #1A3348;">
 <h3 style="font-family:'Urbanist',sans-serif;font-size:11px;letter-spacing:3px;color:#94A3B8;text-transform:uppercase;margin:0 0 12px;">Where This Fits</h3>
-<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">�?<strong>Upstream:</strong> <a href="/SCIENCE/KNOWLEDGE/Mitochondria/" style="color:#C5A059;">Mitochondria</a> �?Mitochondrial efficiency determines whether sleep can deliver cellular repair.</p>
-<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">�?<strong>Current:</strong> Sleep �?The Body's Restoration Cycle</p>
-<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">�?<strong>Downstream:</strong> <a href="/SCIENCE/KNOWLEDGE/cellular-energy/" style="color:#C5A059;">Cellular Energy</a> �?Sleep restores ATP. <a href="/SCIENCE/KNOWLEDGE/Recovery/" style="color:#C5A059;">Recovery</a> �?Sleep is the foundation of recovery.</p>
-<p style="font-size:14px;color:#475569;line-height:1.8;margin:0;">🏁 <strong>Terminal:</strong> <a href="/SCIENCE/KNOWLEDGE/graphene-fir/" style="color:#C5A059;">Graphene FIR</a> �?Thermal environment supports sleep onset.</p>
+<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">??<strong>Upstream:</strong> <a href="/SCIENCE/KNOWLEDGE/Mitochondria/" style="color:#C5A059;">Mitochondria</a> ??Mitochondrial efficiency determines whether sleep can deliver cellular repair.</p>
+<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">??<strong>Current:</strong> Sleep ??The Body's Restoration Cycle</p>
+<p style="font-size:14px;color:#475569;line-height:1.8;margin:0 0 6px;">??<strong>Downstream:</strong> <a href="/SCIENCE/KNOWLEDGE/cellular-energy/" style="color:#C5A059;">Cellular Energy</a> ??Sleep restores ATP. <a href="/SCIENCE/KNOWLEDGE/Recovery/" style="color:#C5A059;">Recovery</a> ??Sleep is the foundation of recovery.</p>
+<p style="font-size:14px;color:#475569;line-height:1.8;margin:0;">?? <strong>Terminal:</strong> <a href="/SCIENCE/KNOWLEDGE/graphene-fir/" style="color:#C5A059;">Graphene FIR</a> ??Thermal environment supports sleep onset.</p>
 </div>
 </div>
 
 <footer style="padding: 40px 10%; background: #1A3348; text-align: center; border-top: 2px solid #C5A059;">
-    <p style="font-size: 13px; color: #E0E6ED; letter-spacing: 0.03em;">XIHE Technology �?A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
+    <p style="font-size: 13px; color: #E0E6ED; letter-spacing: 0.03em;">XIHE Technology ??A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
 </footer>
 
 <script>
@@ -440,7 +529,7 @@ gtag("config", "G-C7YSVFRQ6R");
 }
 </script>
 
-<!-- === JSON-LD Node Schema (Sleep �?XIHE Knowledge Graph v2) === -->
+<!-- === JSON-LD Node Schema (Sleep ??XIHE Knowledge Graph v2) === -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

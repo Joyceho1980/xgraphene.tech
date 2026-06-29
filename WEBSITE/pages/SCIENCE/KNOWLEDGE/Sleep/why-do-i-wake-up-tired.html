@@ -1,17 +1,18 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" translate="no">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google" content="notranslate">
   <title>Why Do I Wake Up Tired? | XIHE Knowledge</title>
-  <link rel="icon" type="image/svg+xml" href="../../../PICTURE/XIHE_ICON.svg">
+  <link rel="icon" type="image/svg+xml" href="/images/XIHE_ICON.svg">
   <meta name="description" content="Waking up exhausted is often not a problem of sleep length, but a sign that overnight repair systems did not fully complete the work they are supposed to do.">
   <meta name="keywords" content="wake up tired, morning fatigue, sleep recovery, overnight repair, ATP restoration, mitochondrial function during sleep, XIHE knowledge">
   <link rel="canonical" href="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Sleep/why-do-i-wake-up-tired.html">
   <meta property="og:title" content="Why Do I Wake Up Tired? | XIHE Knowledge">
   <meta property="og:description" content="Morning fatigue is not a sleep-duration problem. It is a recovery-completion problem.">
-  <meta property="og:image" content="https://www.xgraphene.tech/PICTURE/xihe-og.webp">
+  <meta property="og:image" content="https://www.xgraphene.tech/images/science-hero.png">
   <meta property="og:url" content="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Sleep/why-do-i-wake-up-tired.html">
   <meta property="og:type" content="article">
   <meta name="twitter:card" content="summary_large_image">
@@ -39,7 +40,7 @@
     "keywords": "wake up tired, morning fatigue, sleep recovery, overnight repair, ATP, mitochondria, cellular energy",
     "isPartOf": {
         "@type": "CollectionPage",
-        "name": "Sleep Hub �?XIHE Knowledge",
+        "name": "Sleep Hub ??XIHE Knowledge",
         "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Sleep/"
     }
   }
@@ -82,7 +83,7 @@
   }
   </script>
 
-  <link rel="stylesheet" href="../../../fonts/fonts.css">
+  <link rel="stylesheet" href="/fonts/fonts.css">
   <style>
     :root {
       --bg: #FAF8F5;
@@ -95,6 +96,7 @@
       --card: #FFFFFF;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
+        img { max-width: 100%; height: auto; }
     html { scroll-behavior: smooth; }
     body {
       font-family: 'Inter', sans-serif;
@@ -131,7 +133,60 @@
       transform: scaleX(1); transform-origin: left center;
     }
     .nav-links a:hover, .nav-links a.active { color: var(--gold); }
-    .nav-phone {
+    /* Dropdown */
+.nav-item-dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: #1A3348;
+    border: 1px solid rgba(197,160,89,0.2);
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    z-index: 1001;
+}
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(4px);
+}
+.nav-dropdown-menu a {
+    display: block;
+    padding: 10px 24px;
+    font-size: 11px;
+    color: #E0E6ED;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-dropdown-menu a:hover {
+    background: rgba(197,160,89,0.1);
+    color: #C5A059;
+}
+.nav-dropdown-menu a::after { display: none; }
+.nav-dropdown-trigger {
+    cursor: pointer;
+}
+.nav-dropdown-trigger::after {
+    content: ' \25BE';
+    font-size: 8px;
+    opacity: 0.6;
+}
+
+        .nav-phone {
       font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px;
       color: var(--gold); text-decoration: none; padding: 6px 14px;
       border: 1px solid rgba(197,160,89,0.3); border-radius: 50px;
@@ -194,7 +249,7 @@
       position: absolute; inset: 0; z-index: 0;
       background:
         linear-gradient(180deg, rgba(10,18,31,0.06) 0%, rgba(10,18,31,0.06) 100%),
-        url('../../../VISUAL-LIBRARY/why-do-i-wake-up-tired.webp') center center / cover no-repeat;
+        url('../..//images/sleep-hero.jpg') center center / cover no-repeat;
       box-shadow: inset 0 0 0 1px rgba(255,255,255,0.04);
     }
     .hero-meta {
@@ -388,7 +443,7 @@
 </script>
 </head>
 <body>
-<!-- AI Core Summary �?Machine Layer -->
+<!-- AI Core Summary ??Machine Layer -->
 <div style="display:none;" class="ai-assertion-card" itemscope itemtype="https://schema.org/DefinedTerm">
   <meta itemprop="name" content="Why Do I Wake Up Tired?">
   <meta itemprop="termCode" content="sleep_morning-fatigue">
@@ -413,9 +468,29 @@
   </div>
 </div>
   <nav>
-    <a href="/"><img src="../../../PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" style="height: 44px; width: auto; display: block;"></a>
+    <a href="/"><img src="/images/XIHE_LOGO_DARK.svg" alt="XIHE" style="height: 44px; width: auto; display: block;"></a>
     <div class="nav-links">
-      <a href="/">Home</a><a href="/ABOUT/AboutOrigin.html">About</a><a href="/SCIENCE/Landing.html">Science</a><a href="/applications.html">Applications</a><a href="/PRODUCTS/ProductPage.html">Products</a><a href="/partnership.html">Partnership</a><a href="/CONTACT/index.html">Contact</a>
+      <a href="/">Home</a><a href="/ABOUT/AboutOrigin.html">About</a><div class="nav-item-dropdown">
+            <a href="/SCIENCE/Landing.html" class="nav-dropdown-trigger">Science</a>
+            <div class="nav-dropdown-menu">
+                <a href="/SCIENCE/Landing.html">Science Overview</a>
+                <a href="/SCIENCE/Mechanism.html">Mechanism</a>
+                <a href="/SCIENCE/Technology.html">Technology</a>
+                <a href="/SCIENCE/Evidence.html">Evidence</a>
+                <a href="/SCIENCE/KNOWLEDGE/">Knowledge Hub</a>
+            </div>
+        </div><a href="/applications.html">Applications</a><div class="nav-item-dropdown">
+            <a href="/PRODUCTS/ProductPage.html" class="nav-dropdown-trigger">Products</a>
+            <div class="nav-dropdown-menu">
+                <a href="/PRODUCTS/CAPSULE/capsule-b2b.html">CAPSULE — Full Body Photon Chamber</a>
+                <a href="/PRODUCTS/CABIN/cabin.html">CABIN — Modular Resonance Chamber</a>
+                <a href="/PRODUCTS/FILM/GrapheneFilm.html">Graphene Film — Heating Module</a>
+                <a href="/PRODUCTS/PORTABLES/NeuralResilience.html">Neural Resilience — Wearable</a>
+                <a href="/PRODUCTS/PORTABLES/VisceralVitality.html">Visceral Vitality — Waist Pad</a>
+                <a href="/PRODUCTS/PORTABLES/DeepRecovery.html">Deep Recovery — Lumbar Belt</a>
+                <a href="/technology/xihe-fir-film-performance.html" style="font-size:10px;opacity:0.7;">— FIR Film Performance Data</a>
+            </div>
+        </div><a href="/partnership.html">Partnership</a><a href="/CONTACT/index.html">Contact</a>
       <a href="tel:0086-18688683865" class="nav-phone">+86 186 8868 3865</a>
     </div>
   </nav>
@@ -449,11 +524,11 @@
       <div class="hero-trail" aria-label="Sleep hub path">
         <strong>Sleep Hub</strong>
         <a href="how-does-sleep-affect-cellular-recovery.html">Cellular Recovery</a>
-        <span class="sep">�?/span>
+        <span class="sep">??/span>
         <a href="why-cant-i-fall-asleep-at-night.html">Sleep Quality</a>
-        <span class="sep">�?/span>
+        <span class="sep">??/span>
         <a href="../Microcirculation/what-is-microcirculation.html">Microcirculation</a>
-        <span class="sep">�?/span>
+        <span class="sep">??/span>
         <a href="why-do-i-wake-up-tired.html">Morning Fatigue</a>
       </div>
     </div>
@@ -473,7 +548,7 @@
         <li><a href="../Mitochondria/mitochondrial-function-recovery.html">Mitochondria</a> shift into repair</li>
         <li>Cells restore internal balance</li>
       </ul>
-      <p><strong>Simple rule:</strong> If that cycle is incomplete, sleep still feels like sleep �?but recovery does not fully arrive.</p>
+      <p><strong>Simple rule:</strong> If that cycle is incomplete, sleep still feels like sleep ??but recovery does not fully arrive.</p>
     </div>
   </div>
 
@@ -504,7 +579,7 @@
     <section>
       <h2>Why Mitochondria Matter at Night</h2>
       <p>At the cellular level, <a href="../Mitochondria/what-is-mitochondrial-health.html">mitochondria</a> regulate energy production.</p>
-      <p>They convert oxygen and nutrients into ATP �?the energy used for every biological process.</p>
+      <p>They convert oxygen and nutrients into ATP ??the energy used for every biological process.</p>
       <p>But mitochondria are not static systems. They respond to timing, demand, and internal signals.</p>
       <p>During the night, they are expected to shift from energy output into repair and maintenance.</p>
       <p>When that transition is smooth, the body wakes up restored.</p>
@@ -554,13 +629,13 @@
       <p class="beat-word">2. How does <a href="../Inflammation/how-does-inflammation-affect-energy.html">inflammation</a> influence overnight repair?</p>
       <p class="beat-word">3. What role does <a href="../Microcirculation/what-is-microcirculation.html">microcirculation</a> play in deep sleep quality?</p>
       <p class="beat-word">4. How does <a href="../cellular-energy/what-is-atp-and-why-does-it-matter.html">ATP restoration</a> determine morning energy?</p>
-      <p>Each layer builds a clearer picture of why sleep sometimes does not translate into recovery �?and why <a href="../graphene-fir/graphene-fir-sleep-anxiety-cognitive-recovery.html">far-infrared environmental support</a> is being explored as one way to help the body complete what it already knows how to do.</p>
+      <p>Each layer builds a clearer picture of why sleep sometimes does not translate into recovery ??and why <a href="../graphene-fir/graphene-fir-sleep-anxiety-cognitive-recovery.html">far-infrared environmental support</a> is being explored as one way to help the body complete what it already knows how to do.</p>
     </section>
 
     <div class="supplement">
     <div class="why-it-matters" style="margin-top:0;">
       <h2>Key Takeaway</h2>
-      <p>Morning fatigue is not a sleep-duration problem �?it is a recovery-completion problem. When ATP restoration, mitochondrial repair, and circadian timing are not fully synchronized during deep sleep, the body may wake up tired even after adequate sleep hours. The goal is not more sleep, but more complete overnight recovery.</p>
+      <p>Morning fatigue is not a sleep-duration problem ??it is a recovery-completion problem. When ATP restoration, mitochondrial repair, and circadian timing are not fully synchronized during deep sleep, the body may wake up tired even after adequate sleep hours. The goal is not more sleep, but more complete overnight recovery.</p>
     </div>
     <section>
       <h2>Questions People Often Ask</h2>
@@ -580,7 +655,7 @@
 
     <section>
       <h2>Where Science Is Headed Next</h2>
-      <p>Researchers are exploring whether <a href="../graphene-fir/how-fir-works.html">far-infrared energy at specific biological wavelengths</a> can support microcirculatory function during sleep. The idea is not simply "more sleep," but whether sleep becomes more efficient as a recovery state �?and whether external signals can help the body enter that state more reliably.</p>
+      <p>Researchers are exploring whether <a href="../graphene-fir/how-fir-works.html">far-infrared energy at specific biological wavelengths</a> can support microcirculatory function during sleep. The idea is not simply "more sleep," but whether sleep becomes more efficient as a recovery state ??and whether external signals can help the body enter that state more reliably.</p>
       <p>Early clinical research on <a href="../graphene-fir/graphene-fir-sleep-anxiety-cognitive-recovery.html">graphene far-infrared and sleep quality</a> is beginning to emerge, showing how FIR-supported microcirculation may help the body enter deeper, more restorative sleep states.</p>
     </section>
 
@@ -591,14 +666,14 @@
           <span class="path-index">1</span>
           <div>
             <strong><a href="how-does-sleep-affect-cellular-recovery.html">How Does Sleep Affect Cellular Recovery?</a></strong>
-            <span>What the body is actually doing during deep sleep and REM �?the biology of overnight repair.</span>
+            <span>What the body is actually doing during deep sleep and REM ??the biology of overnight repair.</span>
           </div>
         </div>
         <div class="path-item">
           <span class="path-index">2</span>
           <div>
             <strong><a href="why-cant-i-fall-asleep-at-night.html">Why Can't I Fall Asleep at Night?</a></strong>
-            <span>The biological signals �?temperature, adenosine, cortisol �?that determine whether sleep restores.</span>
+            <span>The biological signals ??temperature, adenosine, cortisol ??that determine whether sleep restores.</span>
           </div>
         </div>
         <div class="path-item">
@@ -629,14 +704,14 @@
     <div class="back-link"><a href="/SCIENCE/KNOWLEDGE/Sleep/">Back to Sleep Hub</a></div>
   </main>
 
-<!-- Knowledge Navigation �?Machine Graph Layer -->
+<!-- Knowledge Navigation ??Machine Graph Layer -->
 <div style="display:none;" class="knowledge-nav" itemscope itemtype="https://schema.org/ItemList">
   <meta itemprop="name" content="Sleep Hub Knowledge Navigation">
   <meta itemprop="description" content="Graph position for this article within the XIHE knowledge ecosystem">
   <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
     <meta itemprop="position" content="1">
     <meta itemprop="item" content="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Sleep/">
-    <meta itemprop="name" content="Sleep Hub �?Parent Collection">
+    <meta itemprop="name" content="Sleep Hub ??Parent Collection">
   </div>
   <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
     <meta itemprop="position" content="2">
@@ -650,8 +725,28 @@
   </div>
 </div>
 
-  <footer>
-    <p>XIHE Technology �?A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
+  
+        <!-- CTA Block -->
+        <div class="cta-block" style="text-align:center; margin:3rem 0; padding:1.5rem; border-top:1px solid rgba(212,175,55,0.2);">
+          <p style="color:#888; font-size:0.9rem; margin-bottom:0.75rem;">
+            Ready to explore graphene FIR integration?
+          </p>
+          <a href="/partnership.html" class="btn-cta" style="
+            display:inline-block;
+            background:linear-gradient(135deg, #D4AF37, #C09A2B);
+            color:#0A0A0A;
+            padding:0.75rem 2rem;
+            border-radius:4px;
+            text-decoration:none;
+            font-weight:600;
+            font-size:0.95rem;
+            letter-spacing:0.5px;
+          ">
+            Request Technical Data Sheet →
+          </a>
+        </div>
+<footer>
+    <p>XIHE Technology ??A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
 
 <section style="background:#FAF8F5;padding:40px 10%;border-top:1px solid #E5E5E7;">
     <div style="max-width:800px;margin:0 auto;">
@@ -665,7 +760,7 @@
             <a href="../Mitochondria/mitochondrial-function-recovery.html" style="color:#C5A059;text-decoration:none;font-size:14px;">Mitochondrial Function and Recovery</a>
             <a href="../Inflammation/how-does-inflammation-affect-energy.html" style="color:#C5A059;text-decoration:none;font-size:14px;">How Does Inflammation Affect Energy?</a>
             <a href="../graphene-fir/graphene-fir-sleep-anxiety-cognitive-recovery.html" style="color:#C5A059;text-decoration:none;font-size:14px;">How Does Graphene FIR Affect Sleep?</a>
-            <a href="../graphene-fir/RESONANCE/alpha-wave-zhejiang-2022.html" style="color:#C5A059;text-decoration:none;font-size:14px;">Alpha Waves & Graphene FIR �?Zhejiang University 2022</a>
+            <a href="../graphene-fir/RESONANCE/alpha-wave-zhejiang-2022.html" style="color:#C5A059;text-decoration:none;font-size:14px;">Alpha Waves & Graphene FIR ??Zhejiang University 2022</a>
         </div>
     </div>
 </section>

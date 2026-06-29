@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <html lang="en" translate="no">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google" content="notranslate">
   <title>Far-Infrared and the Nrf2 Pathway: Activation of Endogenous Antioxidant Defense | XIHE Knowledge</title>
-  <link rel="icon" type="image/svg+xml" href="../../../PICTURE/XIHE_ICON.svg">
+  <link rel="icon" type="image/svg+xml" href="/images/XIHE_ICON.svg">
   <meta name="description" content="Understanding how FIR activates the Nrf2 pathway and endogenous antioxidant defense systems.">
   <link rel="canonical" href="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/oxidative-stress/fir-nrf2-pathway.html">
   <meta property="og:title" content="Far-Infrared and the Nrf2 Pathway: Activation of Endogenous Antioxidant Defense | XIHE Knowledge">
   <meta property="og:description" content="Understanding how FIR activates the Nrf2 pathway and endogenous antioxidant defense systems.">
-  <meta property="og:image" content="https://www.xgraphene.tech/PICTURE/xihe-og.jpg">
+  <meta property="og:image" content="https://www.xgraphene.tech/images/science-hero.png">
   <meta property="og:url" content="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/oxidative-stress/fir-nrf2-pathway.html">
   <meta property="og:type" content="article">
   <meta name="twitter:card" content="summary_large_image">
@@ -37,7 +37,7 @@
     },
     "isPartOf": {
         "@type": "CollectionPage",
-        "name": "Oxidative Stress Hub â€?XIHE Knowledge",
+        "name": "Oxidative Stress Hub ï¿½?XIHE Knowledge",
         "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/oxidative-stress/"
     }
   }
@@ -56,7 +56,7 @@
   }
   </script>
 
-  <link rel="stylesheet" href="../../../fonts/fonts.css">
+  <link rel="stylesheet" href="/fonts/fonts.css">
   <style>
     :root {
       --bg: #FAF8F5;
@@ -69,6 +69,7 @@
       --card: #FFFFFF;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
+        img { max-width: 100%; height: auto; }
     html { scroll-behavior: smooth; }
     body {
       font-family: 'Inter', sans-serif;
@@ -104,7 +105,60 @@
       transform: scaleX(1); transform-origin: left center;
     }
     .nav-links a:hover, .nav-links a.active { color: var(--gold); }
-    .nav-phone {
+    /* Dropdown */
+.nav-item-dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: #1A3348;
+    border: 1px solid rgba(197,160,89,0.2);
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    z-index: 1001;
+}
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(4px);
+}
+.nav-dropdown-menu a {
+    display: block;
+    padding: 10px 24px;
+    font-size: 11px;
+    color: #E0E6ED;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-dropdown-menu a:hover {
+    background: rgba(197,160,89,0.1);
+    color: #C5A059;
+}
+.nav-dropdown-menu a::after { display: none; }
+.nav-dropdown-trigger {
+    cursor: pointer;
+}
+.nav-dropdown-trigger::after {
+    content: ' \25BE';
+    font-size: 8px;
+    opacity: 0.6;
+}
+
+        .nav-phone {
       font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px;
       color: var(--gold); text-decoration: none; padding: 6px 14px;
       border: 1px solid rgba(197,160,89,0.3); border-radius: 50px;
@@ -159,7 +213,7 @@
   </style>
 </head>
 <body>
-<!-- AI Core Summary â€?Machine Layer -->
+<!-- AI Core Summary ï¿½?Machine Layer -->
 <div style="display:none;" class="ai-assertion-card" itemscope itemtype="https://schema.org/DefinedTerm">
   <meta itemprop="name" content="Far-Infrared and the Nrf2 Pathway: Activation of Endogenous Antioxidant Defense">
   <meta itemprop="termCode" content="oxidative-stress_fir-nrf2-pathway">
@@ -185,13 +239,33 @@
 </div>
 
 <nav>
-  <a href="../../../index.html"><img src="../../../PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async"> style="height:44px;width:auto;"></a>
+  <a href="../../../index.html"><img src="/images/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async"> style="height:44px;width:auto;"></a>
   <div class="nav-links">
     <a href="../../../index.html">Home</a>
     <a href="../../../ABOUT/AboutOrigin.html">About</a>
-    <a href="../../../SCIENCE/Landing.html">Science</a>
+    <div class="nav-item-dropdown">
+            <a href="/SCIENCE/Landing.html" class="nav-dropdown-trigger">Science</a>
+            <div class="nav-dropdown-menu">
+                <a href="/SCIENCE/Landing.html">Science Overview</a>
+                <a href="/SCIENCE/Mechanism.html">Mechanism</a>
+                <a href="/SCIENCE/Technology.html">Technology</a>
+                <a href="/SCIENCE/Evidence.html">Evidence</a>
+                <a href="/SCIENCE/KNOWLEDGE/">Knowledge Hub</a>
+            </div>
+        </div>
     <a href="../../../applications.html">Applications</a>
-    <a href="../../../PRODUCTS/ProductPage.html">Products</a>
+    <div class="nav-item-dropdown">
+            <a href="/PRODUCTS/ProductPage.html" class="nav-dropdown-trigger">Products</a>
+            <div class="nav-dropdown-menu">
+                <a href="/PRODUCTS/CAPSULE/capsule-b2b.html">CAPSULE â€” Full Body Photon Chamber</a>
+                <a href="/PRODUCTS/CABIN/cabin.html">CABIN â€” Modular Resonance Chamber</a>
+                <a href="/PRODUCTS/FILM/GrapheneFilm.html">Graphene Film â€” Heating Module</a>
+                <a href="/PRODUCTS/PORTABLES/NeuralResilience.html">Neural Resilience â€” Wearable</a>
+                <a href="/PRODUCTS/PORTABLES/VisceralVitality.html">Visceral Vitality â€” Waist Pad</a>
+                <a href="/PRODUCTS/PORTABLES/DeepRecovery.html">Deep Recovery â€” Lumbar Belt</a>
+                <a href="/technology/xihe-fir-film-performance.html" style="font-size:10px;opacity:0.7;">â€” FIR Film Performance Data</a>
+            </div>
+        </div>
     <a href="../../../partnership.html">Partnership</a>
     <a href="../../../CONTACT/index.html">Contact</a>
     <a href="tel:0086-18688683865" class="nav-phone">+86 186 8868 3865</a>
@@ -227,14 +301,14 @@
   </div>
 </div>
 
-<!-- Knowledge Navigation â€?Machine Graph Layer -->
+<!-- Knowledge Navigation ï¿½?Machine Graph Layer -->
 <div style="display:none;" class="knowledge-nav" itemscope itemtype="https://schema.org/ItemList">
   <meta itemprop="name" content="Oxidative Stress Hub Knowledge Navigation">
   <meta itemprop="description" content="Graph position for this article within the XIHE knowledge ecosystem">
   <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
     <meta itemprop="position" content="1">
     <meta itemprop="item" content="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/oxidative-stress/">
-    <meta itemprop="name" content="Oxidative Stress Hub â€?Parent Collection">
+    <meta itemprop="name" content="Oxidative Stress Hub ï¿½?Parent Collection">
   </div>
   <div itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
     <meta itemprop="position" content="2">
@@ -251,7 +325,7 @@
 <div class="back-link"><a href="/SCIENCE/KNOWLEDGE/oxidative-stress/">&larr; Back to Oxidative Stress Hub</a></div>
 
 <div class="footer">
-  <p>XIHE Technology â€?A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM)</p>
+  <p>XIHE Technology ï¿½?A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM)</p>
 </div>
 </body>
 </html>

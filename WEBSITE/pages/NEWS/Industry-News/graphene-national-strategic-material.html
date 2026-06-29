@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graphene Listed as National Strategic Material | Industry News | XIHE</title>
-    <link rel="icon" type="image/svg+xml" href="../../PICTURE/XIHE_ICON.svg">
+    <link rel="icon" type="image/svg+xml" href="/images/XIHE_ICON.svg">
     <meta name="description" content="Graphene has been identified as a key strategic material in China's technology roadmap, with growing applications in wellness, photothermal technologies, and advanced manufacturing.">
     <link rel="canonical" href="https://www.xgraphene.tech/NEWS/Industry-News/graphene-national-strategic-material.html">
     <meta property="og:title" content="Graphene Listed as National Strategic Material | XIHE">
     <meta property="og:description" content="China's technology roadmap recognizes graphene as a key advanced material. What this means for the wellness and health-management industry.">
-    <meta property="og:image" content="https://www.xgraphene.tech/PICTURE/xihe-og.jpg">
+    <meta property="og:image" content="https://www.xgraphene.tech/images/science-hero.png">
     <meta property="og:type" content="article">
     <meta name="original-source" content="https://www.xgraphene.tech">
     <meta name="copyright" content="XIHE Technology. Unauthorized reproduction prohibited.">
@@ -29,11 +29,65 @@
         }
     }
     </script>
-    <link rel="stylesheet" href="../../fonts/fonts.css">
+    <link rel="stylesheet" href="/fonts/fonts.css">
     <style>
         :root { --bg: #FAF8F5; --t: #1A1D24; --s: #475569; --m: #94A3B8; --g: #C5A059; --b: #E5E5E7; --n: #1A3348; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * { margin: 0; padding: 0; 
+        img { max-width: 100%; height: auto; }
         body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--t); line-height: 1.9; -webkit-font-smoothing: antialiased; }
+        /* Dropdown */
+.nav-item-dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: #1A3348;
+    border: 1px solid rgba(197,160,89,0.2);
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    z-index: 1001;
+}
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(4px);
+}
+.nav-dropdown-menu a {
+    display: block;
+    padding: 10px 24px;
+    font-size: 11px;
+    color: #E0E6ED;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-dropdown-menu a:hover {
+    background: rgba(197,160,89,0.1);
+    color: #C5A059;
+}
+.nav-dropdown-menu a::after { display: none; }
+.nav-dropdown-trigger {
+    cursor: pointer;
+}
+.nav-dropdown-trigger::after {
+    content: ' \25BE';
+    font-size: 8px;
+    opacity: 0.6;
+}
+
         nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: var(--n); display: flex; align-items: center; justify-content: space-between; padding: 0 10%; z-index: 1000; }
         .nl { display: flex; gap: 28px; align-items: center; }
         .nl a { font-size: 11px; color: #E0E6ED; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; position: relative; padding-bottom: 4px; white-space: nowrap; }
@@ -58,6 +112,12 @@
         footer { padding: 40px 10%; background: var(--n); text-align: center; border-top: 2px solid var(--g); }
         footer p { font-size: 13px; color: #E0E6ED; }
         @media (max-width: 600px) { nav { padding: 0 5%; } .nl { gap: 10px; overflow-x: auto; } .nl a { font-size: 9px; } h1 { font-size: 26px; } }
+    
+        .news-cat-bar { max-width: 720px; margin: 0 auto; padding: 20px 24px 0; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+        .news-cat-bar .cat-label { font-size: 10px; color: var(--m); letter-spacing: 2px; text-transform: uppercase; margin-right: 4px; }
+        .news-cat-bar .cat-link { font-size: 11px; color: var(--s); text-decoration: none; padding: 4px 12px; border: 1px solid var(--b); border-radius: 20px; transition: all 0.2s; letter-spacing: 0.5px; }
+        .news-cat-bar .cat-link:hover { border-color: var(--g); color: var(--g); }
+        .news-cat-bar .cat-link.active { background: var(--g); color: #FFF; border-color: var(--g); }
     </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-C7YSVFRQ6R"></script>
@@ -70,14 +130,43 @@
 </head>
 <body>
 <nav>
-    <a href="../../index.html"><img src="../../PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" style="height:44px;width:auto;"></a>
+    <a href="../../index.html"><img src="/images/XIHE_LOGO_DARK.svg" alt="XIHE" style="height:44px;width:auto;"></a>
     <div class="nl">
-        <a href="../../index.html">Home</a><a href="../../ABOUT/AboutOrigin.html">About</a><a href="../../SCIENCE/Landing.html">Science</a><a href="../../applications.html">Applications</a><a href="../../PRODUCTS/ProductPage.html">Products</a><a href="../../partnership.html">Partnership</a><a href="/">News</a><a href="../../CONTACT/index.html">Contact</a>
+        <a href="../../index.html">Home</a><a href="../../ABOUT/AboutOrigin.html">About</a><div class="nav-item-dropdown">
+            <a href="/SCIENCE/Landing.html" class="nav-dropdown-trigger">Science</a>
+            <div class="nav-dropdown-menu">
+                <a href="/SCIENCE/Landing.html">Science Overview</a>
+                <a href="/SCIENCE/Mechanism.html">Mechanism</a>
+                <a href="/SCIENCE/Technology.html">Technology</a>
+                <a href="/SCIENCE/Evidence.html">Evidence</a>
+                <a href="/SCIENCE/KNOWLEDGE/">Knowledge Hub</a>
+            </div>
+        </div><a href="../../applications.html">Applications</a><div class="nav-item-dropdown">
+            <a href="/PRODUCTS/ProductPage.html" class="nav-dropdown-trigger">Products</a>
+            <div class="nav-dropdown-menu">
+                <a href="/PRODUCTS/CAPSULE/capsule-b2b.html">CAPSULE — Full Body Photon Chamber</a>
+                <a href="/PRODUCTS/CABIN/cabin.html">CABIN — Modular Resonance Chamber</a>
+                <a href="/PRODUCTS/FILM/GrapheneFilm.html">Graphene Film — Heating Module</a>
+                <a href="/PRODUCTS/PORTABLES/NeuralResilience.html">Neural Resilience — Wearable</a>
+                <a href="/PRODUCTS/PORTABLES/VisceralVitality.html">Visceral Vitality — Waist Pad</a>
+                <a href="/PRODUCTS/PORTABLES/DeepRecovery.html">Deep Recovery — Lumbar Belt</a>
+                <a href="/technology/xihe-fir-film-performance.html" style="font-size:10px;opacity:0.7;">— FIR Film Performance Data</a>
+            </div>
+        </div><a href="../../partnership.html">Partnership</a><div class="nav-item-dropdown">
+            <a href="../../NEWS/index.html" class="nav-dropdown-trigger">News</a>
+            <div class="nav-dropdown-menu">
+                <a href="../../NEWS/index.html">All News</a>
+                <a href="../../NEWS/index.html#company">Company News</a>
+                <a href="../../NEWS/index.html#industry">Industry News</a>
+                <a href="../../NEWS/index.html#product">Product News</a>
+            </div>
+        </div><a href="../../CONTACT/index.html">Contact</a>
         <a href="tel:0086-18688683865" class="np">+86 186 8868 3865</a>
     </div>
 </nav>
 
 <article>
+<div class="news-cat-bar"><span class="cat-label">Category:</span><a href="../index.html#company" class="cat-link">Company News</a><a href="../index.html#industry" class="cat-link active">Industry News</a><a href="../index.html#product" class="cat-link">Product News</a></div>
     <p class="bc"><a href="../../index.html">Home</a> &rsaquo; <a href="/">News</a> &rsaquo; <a href="/">Industry News</a> &rsaquo; Graphene Listed as National Strategic Material</p>
     <div class="tag">Industry Dynamics</div>
     <h1>Graphene Listed as National Strategic Material</h1>
@@ -105,9 +194,37 @@
     <p>In 2024, XIHE participated as a lead drafting enterprise in establishing the <em>Graphene Flexible Electrothermal Film</em> industry standard (2024-0923T-YB). Our role is not limited to applying the technology — we contribute to defining the industrial benchmarks by which it is measured.</p>
     <p>From a brand-building perspective, policy-aligned content carries a distinct advantage: it communicates to partners that XIHE is not chasing short-term product trends, but operating within a long-term, nationally supported advanced-materials sector with genuine industrialization depth. This narrative resonates with government projects, medical institutions, senior-care groups, rehabilitation networks, and international distributors.</p>
 
+        <!-- Related Links -->
+        <div class="related-links" style="margin-top: 24px; padding: 20px 24px; background: #FFF; border: 1px solid var(--b); border-radius: 8px;">
+            <h3 style="font-family: 'Urbanist', sans-serif; font-size: 14px; font-weight: 400; letter-spacing: 1px; color: var(--n); margin-bottom: 12px;">Explore Graphene Far-Infrared Technology</h3>
+            <a href="/SCIENCE/KNOWLEDGE/" style="display: block; font-size: 14px; color: var(--g); text-decoration: none; padding: 4px 0;">→ Graphene FIR Knowledge Hub</a>
+            <a href="/PRODUCTS/FILM/GrapheneFilm.html" style="display: block; font-size: 14px; color: var(--g); text-decoration: none; padding: 4px 0;">→ Graphene Film — Heating Module</a>
+            <a href="/SCIENCE/Landing.html" style="display: block; font-size: 14px; color: var(--g); text-decoration: none; padding: 4px 0;">→ XIHE Science Overview</a>
+        </div>
+
     <div class="compliance">
         <p>This article is shared as an industry development update and does not constitute a product efficacy or medical claim. Graphene's recognition as a strategic material reflects national industrial policy direction and does not imply government endorsement of any specific company or product. First published on xgraphene.tech. &copy; 2026 XIHE Technology. Unauthorized reproduction prohibited.</p>
     </div>
+        <!-- CTA Block -->
+        <div class="cta-block" style="text-align:center; margin:3rem 0; padding:1.5rem; border-top:1px solid rgba(212,175,55,0.2);">
+          <p style="color:#888; font-size:0.9rem; margin-bottom:0.75rem;">
+            Ready to explore graphene FIR integration?
+          </p>
+          <a href="/partnership.html" class="btn-cta" style="
+            display:inline-block;
+            background:linear-gradient(135deg, #D4AF37, #C09A2B);
+            color:#0A0A0A;
+            padding:0.75rem 2rem;
+            border-radius:4px;
+            text-decoration:none;
+            font-weight:600;
+            font-size:0.95rem;
+            letter-spacing:0.5px;
+          ">
+            Explore OEM Integration →
+          </a>
+        </div>
+
 </article>
 
 <footer>

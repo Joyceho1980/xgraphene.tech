@@ -1,17 +1,18 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" translate="no">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google" content="notranslate">
   <title>Are Mitochondria a Disease? | XIHE Knowledge</title>
-  <link rel="icon" type="image/svg+xml" href="../../../PICTURE/XIHE_ICON.svg">
+  <link rel="icon" type="image/svg+xml" href="/images/XIHE_ICON.svg">
   <meta name="description" content="Mitochondria are not a disease. Learn the difference between mitochondria, mitochondrial dysfunction, and mitochondrial disease, and why cellular energy matters.">
   <meta name="keywords" content="are mitochondria a disease, mitochondria vs mitochondrial disease, mitochondrial dysfunction, ATP, cellular energy, XIHE knowledge">
   <link rel="canonical" href="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/are-mitochondria-a-disease.html">
   <meta property="og:title" content="Are Mitochondria a Disease? | XIHE Knowledge">
   <meta property="og:description" content="A simple explanation of why mitochondria are normal cell structures, and how dysfunction differs from disease.">
-  <meta property="og:image" content="https://www.xgraphene.tech/PICTURE/xihe-og.jpg">
+  <meta property="og:image" content="https://www.xgraphene.tech/images/science-hero.png">
   <meta property="og:url" content="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/are-mitochondria-a-disease.html">
   <meta property="og:type" content="article">
   <meta name="twitter:card" content="summary_large_image">
@@ -82,7 +83,7 @@
   }
   </script>
 
-  <link rel="stylesheet" href="../../../fonts/fonts.css">
+  <link rel="stylesheet" href="/fonts/fonts.css">
   <style>
     :root {
       --bg: #FAF8F5;
@@ -95,6 +96,7 @@
       --card: #FFFFFF;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
+        img { max-width: 100%; height: auto; }
     html { scroll-behavior: smooth; }
     body {
       font-family: 'Inter', sans-serif;
@@ -131,7 +133,60 @@
       transform: scaleX(1); transform-origin: left center;
     }
     .nav-links a:hover, .nav-links a.active { color: var(--gold); }
-    .nav-phone {
+    /* Dropdown */
+.nav-item-dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: #1A3348;
+    border: 1px solid rgba(197,160,89,0.2);
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    z-index: 1001;
+}
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(4px);
+}
+.nav-dropdown-menu a {
+    display: block;
+    padding: 10px 24px;
+    font-size: 11px;
+    color: #E0E6ED;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-dropdown-menu a:hover {
+    background: rgba(197,160,89,0.1);
+    color: #C5A059;
+}
+.nav-dropdown-menu a::after { display: none; }
+.nav-dropdown-trigger {
+    cursor: pointer;
+}
+.nav-dropdown-trigger::after {
+    content: ' \25BE';
+    font-size: 8px;
+    opacity: 0.6;
+}
+
+        .nav-phone {
       font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px;
       color: var(--gold); text-decoration: none; padding: 6px 14px;
       border: 1px solid rgba(197,160,89,0.3); border-radius: 50px;
@@ -162,7 +217,7 @@
       min-height: 100vh; display: flex; margin-top: 114px;
     }
     .hero-left {
-      flex: 0 0 55%; background: url('../../../PICTURE/are-mitochondria-a-disease-hero.webp') center/cover no-repeat; min-height: 100vh;
+      flex: 0 0 55%; background: url('../..//images/are-mitochondria-a-disease-hero.webp') center/cover no-repeat; min-height: 100vh;
     }
     .hero-right {
       flex: 0 0 45%; background: #000000; display: flex; flex-direction: column; justify-content: center; padding: 120px 48px 80px; min-height: 100vh;
@@ -451,9 +506,29 @@
   </div>
 </div>
   <nav>
-    <a href="/"><img src="../../../PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async" style="height: 44px; width: auto; display: block;"></a>
+    <a href="/"><img src="/images/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async" style="height: 44px; width: auto; display: block;"></a>
     <div class="nav-links">
-      <a href="/">Home</a><a href="/ABOUT/AboutOrigin.html">About</a><a href="/SCIENCE/Landing.html">Science</a><a href="/applications.html">Applications</a><a href="/PRODUCTS/ProductPage.html">Products</a><a href="/partnership.html">Partnership</a><a href="/CONTACT/index.html">Contact</a>
+      <a href="/">Home</a><a href="/ABOUT/AboutOrigin.html">About</a><div class="nav-item-dropdown">
+            <a href="/SCIENCE/Landing.html" class="nav-dropdown-trigger">Science</a>
+            <div class="nav-dropdown-menu">
+                <a href="/SCIENCE/Landing.html">Science Overview</a>
+                <a href="/SCIENCE/Mechanism.html">Mechanism</a>
+                <a href="/SCIENCE/Technology.html">Technology</a>
+                <a href="/SCIENCE/Evidence.html">Evidence</a>
+                <a href="/SCIENCE/KNOWLEDGE/">Knowledge Hub</a>
+            </div>
+        </div><a href="/applications.html">Applications</a><div class="nav-item-dropdown">
+            <a href="/PRODUCTS/ProductPage.html" class="nav-dropdown-trigger">Products</a>
+            <div class="nav-dropdown-menu">
+                <a href="/PRODUCTS/CAPSULE/capsule-b2b.html">CAPSULE �� Full Body Photon Chamber</a>
+                <a href="/PRODUCTS/CABIN/cabin.html">CABIN �� Modular Resonance Chamber</a>
+                <a href="/PRODUCTS/FILM/GrapheneFilm.html">Graphene Film �� Heating Module</a>
+                <a href="/PRODUCTS/PORTABLES/NeuralResilience.html">Neural Resilience �� Wearable</a>
+                <a href="/PRODUCTS/PORTABLES/VisceralVitality.html">Visceral Vitality �� Waist Pad</a>
+                <a href="/PRODUCTS/PORTABLES/DeepRecovery.html">Deep Recovery �� Lumbar Belt</a>
+                <a href="/technology/xihe-fir-film-performance.html" style="font-size:10px;opacity:0.7;">�� FIR Film Performance Data</a>
+            </div>
+        </div><a href="/partnership.html">Partnership</a><a href="/CONTACT/index.html">Contact</a>
       <a href="tel:0086-18688683865" class="nav-phone">+86 186 8868 3865</a>
     </div>
   </nav>
@@ -484,17 +559,17 @@
         <h1>Are Mitochondria a Disease?<span>The light returns each morning. Slowly, you realize yours hasn't.</span></h1>
       </div>
       <div class="hero-meta" aria-hidden="true">
-        <span class="meta-date">Published June 9, 2026 · 4 min read · XIHE Knowledge</span>
+        <span class="meta-date">Published June 9, 2026 �� 4 min read �� XIHE Knowledge</span>
         <div class="hero-trail" aria-label="Mitochondria hub path">
           <strong>Mitochondria Hub</strong>
           <a href="what-is-mitochondrial-health.html">Health</a>
-          <span class="sep">·</span>
+          <span class="sep">��</span>
           <a href="what-is-mitochondrial-dysfunction.html">Dysfunction</a>
-          <span class="sep">·</span>
+          <span class="sep">��</span>
           <a href="are-mitochondria-a-disease.html">Disease</a>
-          <span class="sep">·</span>
+          <span class="sep">��</span>
           <a href="how-do-you-find-out-if-you-have-a-mitochondrial-disease.html">Diagnosis</a>
-          <span class="sep">·</span>
+          <span class="sep">��</span>
           <a href="how-is-mitochondrial-disease-managed.html">Management</a>
         </div>
       </div>
@@ -504,8 +579,8 @@
   <section class="ai-core-summary" style="background:#f8fafb;border-left:3px solid #1e6f8c;padding:1rem 1.25rem;margin:1rem 0 2rem;font-size:0.9rem;border-radius:0 6px 6px 0;">
     <strong style="color:#1e6f8c;">AI Core Summary</strong><br>
     <strong>Conclusion:</strong> Mitochondria are normal cellular structures, not a disease. Mitochondrial dysfunction describes performance. Mitochondrial disease describes a medical diagnosis. Confusing these three concepts is common but important to clarify.<br>
-    <strong>Evidence Type:</strong> Established biological definition · Medical consensus<br>
-    <strong>Knowledge Position:</strong> <a href="./index.html" style="color:#1e6f8c;">Mitochondria Hub</a> → 澄清概念混淆，建立理解基础
+    <strong>Evidence Type:</strong> Established biological definition �� Medical consensus<br>
+    <strong>Knowledge Position:</strong> <a href="./index.html" style="color:#1e6f8c;">Mitochondria Hub</a> �� �����������������������
   </section>
 
   <div class="quick-answer">
@@ -656,14 +731,14 @@
       <h2>Continue Exploring</h2>
 
       <nav class="kg-navigation" style="border-top:1px solid #e0e0e0;padding-top:1.5rem;margin-top:2rem;font-size:0.85rem;color:#555;">
-  <p><strong>📖 Knowledge Graph Navigation</strong></p>
-  <p>📍 Current: <a href="./index.html" style="color:#C5A059;">Mitochondria Hub</a> — Concept Clarification Layer</p>
-  <p>⬇️ Continue Exploring:</p>
+  <p><strong>?? Knowledge Graph Navigation</strong></p>
+  <p>?? Current: <a href="./index.html" style="color:#C5A059;">Mitochondria Hub</a> �� Concept Clarification Layer</p>
+  <p>?? Continue Exploring:</p>
   <ul>
-    <li><a href="what-is-mitochondrial-health.html" style="color:#C5A059;">What Is Mitochondrial Health?</a> — Understand the full mechanism</li>
-    <li><a href="what-is-mitochondrial-dysfunction.html" style="color:#C5A059;">What Is Mitochondrial Dysfunction?</a> — When the energy system becomes less efficient</li>
+    <li><a href="what-is-mitochondrial-health.html" style="color:#C5A059;">What Is Mitochondrial Health?</a> �� Understand the full mechanism</li>
+    <li><a href="what-is-mitochondrial-dysfunction.html" style="color:#C5A059;">What Is Mitochondrial Dysfunction?</a> �� When the energy system becomes less efficient</li>
   </ul>
-  <p>🏁 Terminal: <a href="../../graphene-fir/index.html" style="color:#C5A059;">Graphene FIR</a> — Far-infrared environment supporting mitochondrial function</p>
+  <p>?? Terminal: <a href="../../graphene-fir/index.html" style="color:#C5A059;">Graphene FIR</a> �� Far-infrared environment supporting mitochondrial function</p>
 </nav>
       <div class="path-list" aria-label="Knowledge path">
         <div class="path-item">
@@ -730,6 +805,26 @@
   </div>
 </div>
 
+
+        <!-- CTA Block -->
+        <div class="cta-block" style="text-align:center; margin:3rem 0; padding:1.5rem; border-top:1px solid rgba(212,175,55,0.2);">
+          <p style="color:#888; font-size:0.9rem; margin-bottom:0.75rem;">
+            Ready to explore graphene FIR integration?
+          </p>
+          <a href="/partnership.html" class="btn-cta" style="
+            display:inline-block;
+            background:linear-gradient(135deg, #D4AF37, #C09A2B);
+            color:#0A0A0A;
+            padding:0.75rem 2rem;
+            border-radius:4px;
+            text-decoration:none;
+            font-weight:600;
+            font-size:0.95rem;
+            letter-spacing:0.5px;
+          ">
+            Request Technical Data Sheet →
+          </a>
+        </div>
 <footer>
     <p>XIHE Technology | A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
   
@@ -737,11 +832,11 @@
     <div style="max-width:800px;margin:0 auto;">
         <h3 style="font-family:Urbanist,sans-serif;font-size:14px;letter-spacing:2px;color:#1A3348;text-transform:uppercase;margin-bottom:20px;">Related Reading</h3>
         <div style="display:flex;flex-wrap:wrap;gap:16px;">
-            <a href="/SCIENCE/KNOWLEDGE/Mitochondria/atp-study.html" style="color:#C5A059;text-decoration:none;font-size:14px;">8-14μm FIR and Mitochondrial ATP Pathways | Published Research</a>
+            <a href="/SCIENCE/KNOWLEDGE/Mitochondria/atp-study.html" style="color:#C5A059;text-decoration:none;font-size:14px;">8-14��m FIR and Mitochondrial ATP Pathways | Published Research</a>
             <a href="/SCIENCE/KNOWLEDGE/Mitochondria/how-do-you-find-out-if-you-have-a-mitochondrial-disease.html" style="color:#C5A059;text-decoration:none;font-size:14px;">How Do You Find Out If You Have a Mitochondrial Disease?</a>
             <a href="/SCIENCE/KNOWLEDGE/Mitochondria/how-is-mitochondrial-disease-managed.html" style="color:#C5A059;text-decoration:none;font-size:14px;">How Is Mitochondrial Disease Managed?</a>
             <a href="/SCIENCE/KNOWLEDGE/cellular-energy/atp-pain-signaling.html" style="color:#C5A059;text-decoration:none;font-size:14px;">ATP Depletion and Pain Signaling: How Cellular Energy Influences Pain Perception</a>
-            <a href="/SCIENCE/KNOWLEDGE/cellular-energy/atp-study.html" style="color:#C5A059;text-decoration:none;font-size:14px;">8-14μm FIR and Mitochondrial ATP Pathways | Published Research</a>
+            <a href="/SCIENCE/KNOWLEDGE/cellular-energy/atp-study.html" style="color:#C5A059;text-decoration:none;font-size:14px;">8-14��m FIR and Mitochondrial ATP Pathways | Published Research</a>
             <a href="/SCIENCE/KNOWLEDGE/Fatigue/why-am-i-always-tired.html" style="color:#C5A059;text-decoration:none;font-size:14px;">Why Are You Still Tired After Sleeping 8 Hours? | Cellular Energy Perspective</a>
             <a href="/SCIENCE/KNOWLEDGE/Fatigue/why-do-small-things-make-you-irritable.html" style="color:#C5A059;text-decoration:none;font-size:14px;">Why Do Small Things Make You So Irritable? | Brain Energy & Fatigue</a>
         </div>

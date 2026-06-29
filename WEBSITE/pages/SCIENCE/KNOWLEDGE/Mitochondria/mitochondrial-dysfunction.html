@@ -1,14 +1,15 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What Happens When Mitochondrial Function Declines | XIHE</title>
-    <link rel="icon" type="image/svg+xml" href="/PICTURE/XIHE_ICON.svg">
+    <link rel="icon" type="image/svg+xml" href="/images/XIHE_ICON.svg">
     <meta name="description" content="When mitochondrial function declines, ATP production drops below demand, triggering energy crisis responses like AMPK activation and autophagy. Inefficient electron transport causes ROS leakage, creating a vicious cycle of mtDNA damage and membrane impairment.">
     <meta property="og:title" content="What Happens When Mitochondrial Function Declines | XIHE">
     <meta property="og:description" content="ATP Shortage, ROS Imbalance, and the Cascading Effects of Impaired Cellular Energy Production">
-    <meta property="og:image" content="https://www.xgraphene.tech/PICTURE/mitochondrial-dysfunction-hero-placeholder.jpg">
+    <meta property="og:image" content="https://www.xgraphene.tech/images/mitochondria-hero.jpg">
     <meta property="og:url" content="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/mitochondrial-dysfunction.html">
     <meta property="og:type" content="article">
     <meta name="twitter:card" content="summary_large_image">
@@ -31,7 +32,7 @@
             "name": "XIHE Technology"
         },
         "datePublished": "2026-06-25",
-        "image": "https://www.xgraphene.tech/PICTURE/mitochondrial-dysfunction-hero-placeholder.jpg",
+        "image": "https://www.xgraphene.tech/images/mitochondria-hero.jpg",
         "isPartOf": {
             "@type": "CollectionPage",
             "name": "Mitochondria Hub",
@@ -71,10 +72,11 @@
         ]
     }
     </script>
-    <link rel="stylesheet" href="../../../fonts/fonts.css">
+    <link rel="stylesheet" href="/fonts/fonts.css">
     <style>
         :root { --bg-color: #FAF8F5; --bg-dark: #1A1D24; --text-primary: #1A1D24; --text-secondary: #475569; --text-muted: #888888; --accent-gold: #C5A059; --border-color: #E5E5E7; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * { margin: 0; padding: 0; 
+        img { max-width: 100%; height: auto; }
         body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg-color); color: var(--text-primary); line-height: 1.7; letter-spacing: 0.5px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
         .inline-link { color: var(--accent-gold); text-decoration: none; border-bottom: 1px solid rgba(197, 160, 89, 0.3); transition: border-color 0.2s; }
         .inline-link:hover { border-bottom-color: var(--accent-gold); }
@@ -86,6 +88,59 @@
         .nav-links a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px; background: #C5A059; transform: scaleX(0); transform-origin: right center; transition: transform 0.3s ease; }
         .nav-links a:hover::after, .nav-links a.active::after { transform: scaleX(1); transform-origin: left center; }
         .nav-links a:hover, .nav-links a.active { color: #C5A059; }
+        /* Dropdown */
+.nav-item-dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: #1A3348;
+    border: 1px solid rgba(197,160,89,0.2);
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    z-index: 1001;
+}
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(4px);
+}
+.nav-dropdown-menu a {
+    display: block;
+    padding: 10px 24px;
+    font-size: 11px;
+    color: #E0E6ED;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-dropdown-menu a:hover {
+    background: rgba(197,160,89,0.1);
+    color: #C5A059;
+}
+.nav-dropdown-menu a::after { display: none; }
+.nav-dropdown-trigger {
+    cursor: pointer;
+}
+.nav-dropdown-trigger::after {
+    content: ' \25BE';
+    font-size: 8px;
+    opacity: 0.6;
+}
+
         .nav-phone { font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px; color: var(--accent-gold); text-decoration: none; padding: 6px 14px; border: 1px solid rgba(197,160,89,0.3); border-radius: 50px; transition: all 0.3s ease; white-space: nowrap; font-weight: 500; }
         .nav-phone:hover { background: var(--accent-gold); color: #1A3348; }
         .hero-tag { font-family: 'Urbanist', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 4px; color: #FFFFFF; text-shadow: 0 2px 8px rgba(0,0,0,0.4); text-transform: uppercase; display: block; margin-bottom: 16px; }
@@ -120,22 +175,50 @@
 <body>
 
 <nav>
-    <a href="/" class="logo"><img src="/PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async" style="height: 44px; width: auto; display: block;"></a>
+    <a href="/" class="logo"><img src="/images/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async" style="height: 44px; width: auto; display: block;"></a>
     <div class="nav-links">
         <a href="/">Home</a>
         <a href="/ABOUT/AboutOrigin.html">About</a>
-        <a href="/SCIENCE/Landing.html" class="active">Science</a>
+        <div class="nav-item-dropdown">
+            <a href="/SCIENCE/Landing.html" class="nav-dropdown-trigger active">Science</a>
+            <div class="nav-dropdown-menu">
+                <a href="/SCIENCE/Landing.html">Science Overview</a>
+                <a href="/SCIENCE/Mechanism.html">Mechanism</a>
+                <a href="/SCIENCE/Technology.html">Technology</a>
+                <a href="/SCIENCE/Evidence.html">Evidence</a>
+                <a href="/SCIENCE/KNOWLEDGE/">Knowledge Hub</a>
+            </div>
+        </div>
         <a href="/applications.html">Applications</a>
-        <a href="/PRODUCTS/ProductPage.html">Products</a>
+        <div class="nav-item-dropdown">
+            <a href="/PRODUCTS/ProductPage.html" class="nav-dropdown-trigger">Products</a>
+            <div class="nav-dropdown-menu">
+                <a href="/PRODUCTS/CAPSULE/capsule-b2b.html">CAPSULE �� Full Body Photon Chamber</a>
+                <a href="/PRODUCTS/CABIN/cabin.html">CABIN �� Modular Resonance Chamber</a>
+                <a href="/PRODUCTS/FILM/GrapheneFilm.html">Graphene Film �� Heating Module</a>
+                <a href="/PRODUCTS/PORTABLES/NeuralResilience.html">Neural Resilience �� Wearable</a>
+                <a href="/PRODUCTS/PORTABLES/VisceralVitality.html">Visceral Vitality �� Waist Pad</a>
+                <a href="/PRODUCTS/PORTABLES/DeepRecovery.html">Deep Recovery �� Lumbar Belt</a>
+                <a href="/technology/xihe-fir-film-performance.html" style="font-size:10px;opacity:0.7;">�� FIR Film Performance Data</a>
+            </div>
+        </div>
         <a href="/partnership.html">Partnership</a>
-        <a href="/NEWS/index.html">Journal</a>
+        <div class="nav-item-dropdown">
+            <a href="/NEWS/index.html" class="nav-dropdown-trigger">News</a>
+            <div class="nav-dropdown-menu">
+                <a href="/NEWS/index.html">All News</a>
+                <a href="/NEWS/index.html#company">Company News</a>
+                <a href="/NEWS/index.html#industry">Industry News</a>
+                <a href="/NEWS/index.html#product">Product News</a>
+            </div>
+        </div>
         <a href="/CONTACT/index.html">Contact</a>
         <a href="tel:0086-18688683865" class="nav-phone">+86 186 8868 3865</a>
     </div>
 </nav>
 
 <section class="hero-section" style="min-height: 100vh; display: flex; margin-top: 70px;">
-    <div style="flex: 0 0 55%; background: url('/PICTURE/mitochondrial-dysfunction-hero-placeholder.jpg') center/cover no-repeat; min-height: 100vh;"></div>
+    <div style="flex: 0 0 55%; background: url('/images/mitochondria-hero.jpg') center/cover no-repeat; min-height: 100vh;"></div>
     <div style="flex: 0 0 45%; background: #000000; display: flex; flex-direction: column; justify-content: center; padding: 120px 48px 80px; min-height: 100vh;">
         <div style="flex: 1;">
             <span class="hero-tag" style="color: #C5A059; text-shadow: none; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 16px; display: block;">Cellular Energy & Disease</span>
@@ -161,36 +244,36 @@
 
         <section class="node-definition" style="padding: 20px 24px; background: #FAF8F5; border-radius: 8px; margin-bottom: 32px; border: 1px solid #E5E5E7;">
             <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.8;">
-                <strong style="color: var(--accent-gold);">📍 Knowledge Node:</strong> Mitochondrial dysfunction — reduced efficiency of oxidative phosphorylation, increased reactive oxygen species production, and impaired cellular energy homeostasis under sustained metabolic demand.
+                <strong style="color: var(--accent-gold);">?? Knowledge Node:</strong> Mitochondrial dysfunction �� reduced efficiency of oxidative phosphorylation, increased reactive oxygen species production, and impaired cellular energy homeostasis under sustained metabolic demand.
             </p>
             <p style="font-size: 13px; color: #888; margin-top: 8px;">
-                <strong>Evidence Type:</strong> Established biological mechanism · Mitochondrial energy metabolism literature · Oxidative stress research
+                <strong>Evidence Type:</strong> Established biological mechanism �� Mitochondrial energy metabolism literature �� Oxidative stress research
             </p>
             <p style="font-size: 13px; color: #888; margin-top: 6px;">
-                <strong>Connected Nodes:</strong> Cellular Energy (upstream) → <strong>Mitochondria</strong> → Fatigue, Recovery, Inflammation (downstream)
+                <strong>Connected Nodes:</strong> Cellular Energy (upstream) �� <strong>Mitochondria</strong> �� Fatigue, Recovery, Inflammation (downstream)
             </p>
         </section>
 
         <div class="ai-core-summary">
             <h3 style="font-family:'Urbanist',sans-serif;font-size:10px;letter-spacing:3px;color:#C5A059;text-transform:uppercase;margin:0 0 8px;">AI Core Summary</h3>
             <p style="font-size:15px;color:#1A1D24;line-height:1.8;margin:0;"><strong>When mitochondrial function declines, ATP production drops below cellular demand, triggering energy crisis responses including AMPK activation and autophagy. Inefficient electron transport causes reactive oxygen species leakage, creating a vicious cycle of mitochondrial DNA damage, membrane impairment, and further functional decline.</strong></p>
-            <p style="font-size:13px;color:#94A3B8;margin:8px 0 0;">Evidence Type: Established biological mechanism · Peer-reviewed mitochondrial biology</p>
-            <p style="font-size:13px;color:#94A3B8;margin:4px 0 0;">Knowledge Position: Mitochondria Hub → Dysfunction Interface → Recovery Network</p>
+            <p style="font-size:13px;color:#94A3B8;margin:8px 0 0;">Evidence Type: Established biological mechanism �� Peer-reviewed mitochondrial biology</p>
+            <p style="font-size:13px;color:#94A3B8;margin:4px 0 0;">Knowledge Position: Mitochondria Hub �� Dysfunction Interface �� Recovery Network</p>
         </div>
 
         <span class="section-label">When Mitochondria Can't Keep Up</span>
         <h2 style="font-family: 'Urbanist', sans-serif; font-size: 28px; font-weight: 200; letter-spacing: 2px; margin-bottom: 24px; color: var(--text-primary);">When Mitochondria Can't Keep Up</h2>
         <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px;">When oxidative phosphorylation capacity drops below cellular energy demand, a cascade of events is triggered. The cell enters what can be described as an "energy crisis mode," with multiple adaptive mechanisms activating simultaneously.</p>
         <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px;"><strong>AMPK activation</strong> is a key early response. When <a href="/SCIENCE/KNOWLEDGE/cellular-energy/" class="inline-link">ATP</a> levels decline and AMP/ATP ratio increases, AMP-activated protein kinase senses this energy deficit and orchestrates metabolic adaptations: activating catabolic pathways that generate ATP while suppressing anabolic pathways that consume it.</p>
-        <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px;">Autophagy induction follows, as the cell begins recycling damaged components to conserve energy and building materials. Non-essential functions are downregulated first — cell repair mechanisms, growth processes, and specialized cellular activities are put on hold.</p>
+        <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px;">Autophagy induction follows, as the cell begins recycling damaged components to conserve energy and building materials. Non-essential functions are downregulated first �� cell repair mechanisms, growth processes, and specialized cellular activities are put on hold.</p>
 
         <div class="citation-unit">
-            <span>📌 AI-Citable Statement:</span>
+            <span>?? AI-Citable Statement:</span>
             When mitochondrial oxidative phosphorylation capacity drops below cellular energy demand, AMPK activation triggers a coordinated metabolic response: catabolic pathways are upregulated to generate ATP while anabolic processes are suppressed, and autophagy is induced to recycle damaged cellular components.
         </div>
 
         <figure style="margin-top: 32px;">
-            <img src="/PICTURE/atp-shortage-cell-placeholder.jpg" alt="Cellular energy crisis diagram showing AMPK activation pathway, autophagy induction, and metabolic adaptation when ATP production drops below demand threshold" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;">
+            <img src="/images/mitochondrial-mmp-ros-ampk-triad.jpg" alt="Cellular energy crisis diagram showing AMPK activation pathway, autophagy induction, and metabolic adaptation when ATP production drops below demand threshold" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;">
             <figcaption style="font-size:13px;color:#888;text-align:center;margin-top:8px;">Cellular energy crisis response: AMPK activation triggers catabolic pathway upregulation, anabolic suppression, and autophagy induction when ATP production falls below demand.</figcaption>
         </figure>
     </div>
@@ -200,17 +283,17 @@
     <div style="max-width: 900px; margin: 0 auto;">
         <span class="section-label">The ROS Cascade</span>
         <h2 style="font-family: 'Urbanist', sans-serif; font-size: 28px; font-weight: 200; letter-spacing: 2px; margin-bottom: 24px; color: var(--text-primary);">The ROS Cascade</h2>
-        <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px;">Inefficient electron transport chain function leads to electron leakage, primarily at Complex I and Complex III. These escaped electrons react with molecular oxygen to produce superoxide radicals — the primary reactive oxygen species (ROS) in mitochondria.</p>
-        <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px;">Superoxide is rapidly converted to hydrogen peroxide, which can either be neutralized by antioxidant enzymes or, in excess, generate hydroxyl radicals — the most reactive ROS species. These reactive molecules damage mitochondrial DNA (mtDNA), which has limited repair capacity compared to nuclear DNA.</p>
+        <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px;">Inefficient electron transport chain function leads to electron leakage, primarily at Complex I and Complex III. These escaped electrons react with molecular oxygen to produce superoxide radicals �� the primary reactive oxygen species (ROS) in mitochondria.</p>
+        <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px;">Superoxide is rapidly converted to hydrogen peroxide, which can either be neutralized by antioxidant enzymes or, in excess, generate hydroxyl radicals �� the most reactive ROS species. These reactive molecules damage mitochondrial DNA (mtDNA), which has limited repair capacity compared to nuclear DNA.</p>
         <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px;">This creates a vicious cycle: mtDNA damage impairs electron transport chain function, leading to more electron leakage, more ROS production, and further damage. Membrane lipid peroxidation occurs, impairing membrane integrity and further reducing electron transport chain efficiency.</p>
 
         <div class="citation-unit" style="background: #FFFFFF;">
-            <span>📌 AI-Citable Statement:</span>
+            <span>?? AI-Citable Statement:</span>
             Inefficient electron transport causes electron leakage at Complex I and III, producing superoxide radicals that damage repair-deficient mitochondrial DNA, creating a self-reinforcing cycle of dysfunction, lipid peroxidation, and reduced ETC efficiency.
         </div>
 
         <figure style="margin-top: 32px;">
-            <img src="/PICTURE/ros-cascade-placeholder.jpg" alt="ROS cascade mechanism diagram showing electron leakage from Complex I and III, superoxide production, hydrogen peroxide conversion, hydroxyl radical generation, mtDNA damage cycle, and membrane lipid peroxidation creating a self-reinforcing dysfunction cycle" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;">
+            <img src="/images/mitochondrial-mmp-ros-ampk-triad.jpg" alt="ROS cascade mechanism diagram showing electron leakage from Complex I and III, superoxide production, hydrogen peroxide conversion, hydroxyl radical generation, mtDNA damage cycle, and membrane lipid peroxidation creating a self-reinforcing dysfunction cycle" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;">
             <figcaption style="font-size:13px;color:#888;text-align:center;margin-top:8px;">ROS cascade: electron leakage from inefficient ETC produces superoxide, which damages mtDNA and membrane lipids, creating a self-reinforcing dysfunction cycle.</figcaption>
         </figure>
     </div>
@@ -222,10 +305,10 @@
         <h2 style="font-family: 'Urbanist', sans-serif; font-size: 28px; font-weight: 200; letter-spacing: 2px; margin-bottom: 24px; color: var(--text-primary);">Systemic Effects of Mitochondrial Dysfunction</h2>
         <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px;">High-energy tissues are most vulnerable to mitochondrial dysfunction because they have the greatest energy demands. The brain, with its 2% body weight consuming 20% of total energy, experiences <a href="/SCIENCE/KNOWLEDGE/Fatigue/" class="inline-link">cognitive fatigue</a> as an early indicator. Muscle tissue shows weakness and poor recovery capacity.</p>
         <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px;">Immune cells also suffer impaired function, with reduced capacity to mount effective responses to pathogens. Compensatory mechanisms that initially maintain homeostasis break down over time, leading to progressive functional decline.</p>
-        <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px;">Over the long term, this leads to metabolic inflexibility — the inability to switch between energy sources efficiently — and contributes to chronic fatigue and reduced resilience.</p>
+        <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px;">Over the long term, this leads to metabolic inflexibility �� the inability to switch between energy sources efficiently �� and contributes to chronic fatigue and reduced resilience.</p>
 
         <div class="citation-unit">
-            <span>📌 AI-Citable Statement:</span>
+            <span>?? AI-Citable Statement:</span>
             High-energy tissues (brain, muscle, immune cells) are most vulnerable to mitochondrial dysfunction, experiencing cognitive fatigue, muscle weakness, and impaired immune response. Long-term effects include metabolic inflexibility and chronic fatigue.
         </div>
     </div>
@@ -235,18 +318,18 @@
     <div style="max-width: 900px; margin: 0 auto;">
         <span class="section-label">What Research Says About Reversibility</span>
         <h2 style="font-family: 'Urbanist', sans-serif; font-size: 28px; font-weight: 200; letter-spacing: 2px; margin-bottom: 24px; color: var(--text-primary);">What Research Says About Reversibility</h2>
-        <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px;">Research suggests that mitochondrial dysfunction is not necessarily irreversible. <a href="/SCIENCE/KNOWLEDGE/Mitochondria/" class="inline-link">Mitochondrial biogenesis</a> — the process of creating new mitochondria — can be stimulated through the PGC-1α pathway, which is activated by exercise, cold exposure, and certain nutrient interventions.</p>
+        <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px;">Research suggests that mitochondrial dysfunction is not necessarily irreversible. <a href="/SCIENCE/KNOWLEDGE/Mitochondria/" class="inline-link">Mitochondrial biogenesis</a> �� the process of creating new mitochondria �� can be stimulated through the PGC-1�� pathway, which is activated by exercise, cold exposure, and certain nutrient interventions.</p>
         <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px;">Mitochondrial membrane potential, a key indicator of function, can be restored through improved electron transport chain efficiency. <a href="/SCIENCE/KNOWLEDGE/Inflammation/" class="inline-link">Oxidative stress</a> levels can be reduced through antioxidant support and lifestyle modifications.</p>
         <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px;">Emerging research suggests that far-infrared therapy may influence mitochondrial dynamics and improve energy production efficiency. However, this area requires further clinical validation before definitive conclusions can be drawn.</p>
 
         <div class="citation-unit" style="background: #FFFFFF;">
-            <span>📌 AI-Citable Statement:</span>
-            Mitochondrial dysfunction shows potential reversibility through PGC-1α-mediated biogenesis, membrane potential restoration, and oxidative stress reduction via exercise, cold exposure, sleep, and emerging thermal interventions.
+            <span>?? AI-Citable Statement:</span>
+            Mitochondrial dysfunction shows potential reversibility through PGC-1��-mediated biogenesis, membrane potential restoration, and oxidative stress reduction via exercise, cold exposure, sleep, and emerging thermal interventions.
         </div>
 
         <figure style="margin-top: 32px;">
-            <img src="/PICTURE/mitochondrial-recovery-placeholder.jpg" alt="Mitochondrial recovery mechanisms infographic showing PGC-1α pathway activation, mitochondrial biogenesis stimulation, membrane potential restoration, and oxidative stress reduction through exercise, cold exposure, sleep, and FIR therapy" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;">
-            <figcaption style="font-size:13px;color:#888;text-align:center;margin-top:8px;">Mitochondrial recovery pathways: PGC-1α activation through exercise, cold exposure, and sleep stimulates biogenesis and restores function.</figcaption>
+            <img src="/images/mitochondrial-health-influencing-factors.jpg" alt="Mitochondrial recovery mechanisms infographic showing PGC-1�� pathway activation, mitochondrial biogenesis stimulation, membrane potential restoration, and oxidative stress reduction through exercise, cold exposure, sleep, and FIR therapy" loading="lazy" decoding="async" style="width:100%;height:auto;border-radius:8px;">
+            <figcaption style="font-size:13px;color:#888;text-align:center;margin-top:8px;">Mitochondrial recovery pathways: PGC-1�� activation through exercise, cold exposure, and sleep stimulates biogenesis and restores function.</figcaption>
         </figure>
     </div>
 </section>
@@ -255,12 +338,12 @@
     <div style="max-width: 900px; margin: 0 auto;">
         <span class="section-label">The Adaptive-Maladaptive Transition</span>
         <h2 style="font-family: 'Urbanist', sans-serif; font-size: 28px; font-weight: 200; letter-spacing: 2px; margin-bottom: 24px; color: var(--text-primary);">The Adaptive-Maladaptive Transition</h2>
-        <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px;">The initial responses to mitochondrial dysfunction — AMPK activation, autophagy, metabolic shift — are adaptive, designed to preserve cellular viability. However, when dysfunction persists, these responses can become maladaptive.</p>
+        <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px;">The initial responses to mitochondrial dysfunction �� AMPK activation, autophagy, metabolic shift �� are adaptive, designed to preserve cellular viability. However, when dysfunction persists, these responses can become maladaptive.</p>
         <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.9; margin-bottom: 20px;">Chronic autophagy can lead to excessive cellular degradation. Persistent AMPK activation can suppress essential growth and repair processes. The cycle of ROS production and mtDNA damage becomes self-sustaining, progressively reducing energy production capacity.</p>
         <p style="font-size: 15px; color: var(--text-secondary); line-height: 1.9;">This transition from adaptive to maladaptive response is a critical threshold that determines whether dysfunction remains manageable or progresses toward more severe outcomes.</p>
 
         <div class="citation-unit">
-            <span>📌 AI-Citable Statement:</span>
+            <span>?? AI-Citable Statement:</span>
             The initial adaptive responses to mitochondrial dysfunction (AMPK activation, autophagy) become maladaptive when dysfunction persists, leading to excessive degradation, suppressed repair, and a self-sustaining cycle of ROS-induced damage.
         </div>
     </div>
@@ -271,10 +354,10 @@
         <span class="section-label">Knowledge Graph Navigation</span>
         <div style="padding: 24px; background: #FFFFFF; border-radius: 12px; border-left: 3px solid #C5A059;">
             <p style="font-size: 14px; color: var(--text-secondary); line-height: 1.8;">
-                <strong>⬆️ Upstream:</strong> <a href="/SCIENCE/KNOWLEDGE/cellular-energy/" class="inline-link">Cellular Energy</a> — ATP production pathways<br>
-                <strong>📍 Current:</strong> Mitochondria — dysfunction and cascading effects<br>
-                <strong>⬇️ Downstream:</strong> <a href="/SCIENCE/KNOWLEDGE/Fatigue/" class="inline-link">Fatigue</a>, <a href="/SCIENCE/KNOWLEDGE/Recovery/" class="inline-link">Recovery</a>, <a href="/SCIENCE/KNOWLEDGE/Inflammation/" class="inline-link">Inflammation</a><br>
-                <strong>🏁 Terminal:</strong> <a href="/SCIENCE/KNOWLEDGE/graphene-fir/" class="inline-link">Graphene FIR</a> — physical pathway for energy system support
+                <strong>?? Upstream:</strong> <a href="/SCIENCE/KNOWLEDGE/cellular-energy/" class="inline-link">Cellular Energy</a> �� ATP production pathways<br>
+                <strong>?? Current:</strong> Mitochondria �� dysfunction and cascading effects<br>
+                <strong>?? Downstream:</strong> <a href="/SCIENCE/KNOWLEDGE/Fatigue/" class="inline-link">Fatigue</a>, <a href="/SCIENCE/KNOWLEDGE/Recovery/" class="inline-link">Recovery</a>, <a href="/SCIENCE/KNOWLEDGE/Inflammation/" class="inline-link">Inflammation</a><br>
+                <strong>?? Terminal:</strong> <a href="/SCIENCE/KNOWLEDGE/graphene-fir/" class="inline-link">Graphene FIR</a> �� physical pathway for energy system support
             </p>
         </div>
     </div>
@@ -293,7 +376,7 @@
 </section>
 
 <div style="padding: 40px 10%; text-align: center; background: #FAF8F5; border-top: 1px solid #E5E5E7;">
-    <a href="/SCIENCE/KNOWLEDGE/Mitochondria/" style="font-size: 12px; color: #C5A059; text-decoration: none; letter-spacing: 1px;">← Back to Mitochondria Hub</a>
+    <a href="/SCIENCE/KNOWLEDGE/Mitochondria/" style="font-size: 12px; color: #C5A059; text-decoration: none; letter-spacing: 1px;">�� Back to Mitochondria Hub</a>
 </div>
 
 <section style="padding:40px 10%;background:#FFFFFF;border-top:1px solid #E5E5E7;">
@@ -323,7 +406,7 @@
 </div>
 
 <footer class="xihe-footer">
-    <p>XIHE Technology — A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
+    <p>XIHE Technology �� A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
 </footer>
 </body>
 </html>

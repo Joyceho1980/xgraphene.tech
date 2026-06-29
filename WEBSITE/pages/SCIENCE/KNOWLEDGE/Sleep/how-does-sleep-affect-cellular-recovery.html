@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" translate="no">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google" content="notranslate">
   <title>How Does Sleep Affect Cellular Recovery? | XIHE Knowledge</title>
-  <link rel="icon" type="image/svg+xml" href="../../../PICTURE/XIHE_ICON.svg">
+  <link rel="icon" type="image/svg+xml" href="/images/XIHE_ICON.svg">
   <meta name="description" content="Sleep is not only rest. It is a regulated recovery period when the body shifts attention toward repair, energy restoration, immune balance, and nervous system recalibration.">
   <link rel="canonical" href="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Sleep/how-does-sleep-affect-cellular-recovery.html">
   <meta property="og:title" content="How Does Sleep Affect Cellular Recovery? | XIHE Knowledge">
   <meta property="og:description" content="Sleep is not only rest. It is a regulated recovery period when the body shifts attention toward repair, energy restoration, immune balance, and nervous system recalibration.">
-  <meta property="og:image" content="https://www.xgraphene.tech/PICTURE/xihe-og.webp">
+  <meta property="og:image" content="https://www.xgraphene.tech/images/science-hero.png">
   <meta property="og:url" content="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Sleep/how-does-sleep-affect-cellular-recovery.html">
   <meta property="og:type" content="article">
   <meta name="twitter:card" content="summary_large_image">
@@ -89,7 +89,7 @@
   }
   </script>
 
-  <link rel="stylesheet" href="../../../fonts/fonts.css">
+  <link rel="stylesheet" href="/fonts/fonts.css">
   <style>
     :root {
       --bg: #FAF8F5;
@@ -102,6 +102,7 @@
       --card: #FFFFFF;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
+        img { max-width: 100%; height: auto; }
     html { scroll-behavior: smooth; }
     body {
       font-family: 'Inter', sans-serif;
@@ -157,7 +158,60 @@
     }
     .nav-links a:hover,
     .nav-links a.active { color: var(--gold); }
-    .nav-phone {
+    /* Dropdown */
+.nav-item-dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: #1A3348;
+    border: 1px solid rgba(197,160,89,0.2);
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    z-index: 1001;
+}
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(4px);
+}
+.nav-dropdown-menu a {
+    display: block;
+    padding: 10px 24px;
+    font-size: 11px;
+    color: #E0E6ED;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-dropdown-menu a:hover {
+    background: rgba(197,160,89,0.1);
+    color: #C5A059;
+}
+.nav-dropdown-menu a::after { display: none; }
+.nav-dropdown-trigger {
+    cursor: pointer;
+}
+.nav-dropdown-trigger::after {
+    content: ' \25BE';
+    font-size: 8px;
+    opacity: 0.6;
+}
+
+        .nav-phone {
       font-family: 'Urbanist', sans-serif;
       font-size: 11px;
       letter-spacing: 1px;
@@ -245,7 +299,7 @@
       z-index: 0;
       background:
         linear-gradient(180deg, rgba(10,18,31,0.06) 0%, rgba(10,18,31,0.06) 100%),
-        url('../../../PICTURE/hero-mitochondria-energy.webp') center center / cover no-repeat;
+        url('../..//images/hero-mitochondria-energy.webp') center center / cover no-repeat;
       box-shadow: inset 0 0 0 1px rgba(255,255,255,0.04);
     }
     .hero-meta {
@@ -703,7 +757,27 @@
   <nav>
     <a href="/"> style="height: 44px; width: auto; display: block;"></a>
     <div class="nav-links">
-      <a href="/">Home</a><a href="/ABOUT/AboutOrigin.html">About</a><a href="/SCIENCE/Landing.html">Science</a><a href="/applications.html">Applications</a><a href="/PRODUCTS/ProductPage.html">Products</a><a href="/partnership.html">Partnership</a><a href="/CONTACT/index.html">Contact</a>
+      <a href="/">Home</a><a href="/ABOUT/AboutOrigin.html">About</a><div class="nav-item-dropdown">
+            <a href="/SCIENCE/Landing.html" class="nav-dropdown-trigger">Science</a>
+            <div class="nav-dropdown-menu">
+                <a href="/SCIENCE/Landing.html">Science Overview</a>
+                <a href="/SCIENCE/Mechanism.html">Mechanism</a>
+                <a href="/SCIENCE/Technology.html">Technology</a>
+                <a href="/SCIENCE/Evidence.html">Evidence</a>
+                <a href="/SCIENCE/KNOWLEDGE/">Knowledge Hub</a>
+            </div>
+        </div><a href="/applications.html">Applications</a><div class="nav-item-dropdown">
+            <a href="/PRODUCTS/ProductPage.html" class="nav-dropdown-trigger">Products</a>
+            <div class="nav-dropdown-menu">
+                <a href="/PRODUCTS/CAPSULE/capsule-b2b.html">CAPSULE — Full Body Photon Chamber</a>
+                <a href="/PRODUCTS/CABIN/cabin.html">CABIN — Modular Resonance Chamber</a>
+                <a href="/PRODUCTS/FILM/GrapheneFilm.html">Graphene Film — Heating Module</a>
+                <a href="/PRODUCTS/PORTABLES/NeuralResilience.html">Neural Resilience — Wearable</a>
+                <a href="/PRODUCTS/PORTABLES/VisceralVitality.html">Visceral Vitality — Waist Pad</a>
+                <a href="/PRODUCTS/PORTABLES/DeepRecovery.html">Deep Recovery — Lumbar Belt</a>
+                <a href="/technology/xihe-fir-film-performance.html" style="font-size:10px;opacity:0.7;">— FIR Film Performance Data</a>
+            </div>
+        </div><a href="/partnership.html">Partnership</a><a href="/CONTACT/index.html">Contact</a>
       <a href="tel:0086-18688683865" class="nav-phone">+86 186 8868 3865</a>
     </div>
   </nav>
@@ -912,7 +986,27 @@
   </div>
 </div>
 
-  <footer>
+  
+        <!-- CTA Block -->
+        <div class="cta-block" style="text-align:center; margin:3rem 0; padding:1.5rem; border-top:1px solid rgba(212,175,55,0.2);">
+          <p style="color:#888; font-size:0.9rem; margin-bottom:0.75rem;">
+            Ready to explore graphene FIR integration?
+          </p>
+          <a href="/partnership.html" class="btn-cta" style="
+            display:inline-block;
+            background:linear-gradient(135deg, #D4AF37, #C09A2B);
+            color:#0A0A0A;
+            padding:0.75rem 2rem;
+            border-radius:4px;
+            text-decoration:none;
+            font-weight:600;
+            font-size:0.95rem;
+            letter-spacing:0.5px;
+          ">
+            Request Technical Data Sheet →
+          </a>
+        </div>
+<footer>
     <p>XIHE Technology �?A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
 
 <section style="background:#FAF8F5;padding:40px 10%;border-top:1px solid #E5E5E7;">

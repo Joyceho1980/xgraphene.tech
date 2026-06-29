@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://www.xgraphene.tech/images/button-preview.html">
+<title>Button Preview — XIHE</title>
+<link rel="stylesheet" href="../fonts/fonts.css">
+<style>
+    body {
+        font-family: 'Inter', sans-serif;
+        background: #FAF8F5;
+        padding: 60px 10%;
+        color: #1A1D24;
+    }
+    h1 {
+        font-family: 'Urbanist', sans-serif;
+        font-weight: 300;
+        font-size: 28px;
+        letter-spacing: 2px;
+        margin-bottom: 8px;
+    }
+    p.sub {
+        font-family: 'Urbanist', sans-serif;
+        font-size: 12px;
+        color: #888;
+        letter-spacing: 2px;
+        margin-bottom: 50px;
+    }
+    .section {
+        margin-bottom: 50px;
+    }
+    .section h2 {
+        font-family: 'Urbanist', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #C5A059;
+        margin-bottom: 20px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #E5E5E7;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .row .label {
+        font-size: 11px;
+        color: #888;
+        letter-spacing: 1px;
+        min-width: 100px;
+    }
+    .btn {
+        padding: 14px 32px;
+        font-size: 11px;
+        font-family: 'Urbanist', sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        cursor: default;
+        display: inline-block;
+    }
+    /* === STYLE A: Navy bg, gold border, gold text === */
+    .btn-a {
+        background: #1A365D;
+        color: #D4AF37;
+        border: 1px solid #D4AF37;
+    }
+    .btn-a:hover {
+        background: #D4AF37;
+        color: #1A365D;
+    }
+    /* === STYLE B: Navy bg, white text, gold border === */
+    .btn-b {
+        background: #1A365D;
+        color: #FFFFFF;
+        border: 1px solid rgba(255,255,255,0.25);
+    }
+    .btn-b:hover {
+        border-color: #D4AF37;
+        color: #D4AF37;
+    }
+    /* === STYLE C: Gold bg, navy text === */
+    .btn-c {
+        background: #D4AF37;
+        color: #1A365D;
+        border: 1px solid #D4AF37;
+    }
+    .btn-c:hover {
+        opacity: 0.85;
+    }
+    /* === STYLE D: Navy bg, gold text, no border === */
+    .btn-d {
+        background: #1A365D;
+        color: #D4AF37;
+        border: 1px solid transparent;
+    }
+    .btn-d:hover {
+        border-color: #D4AF37;
+    }
+    /* === STYLE E: Navy bg, white text, gold underline === */
+    .btn-e {
+        background: #1A365D;
+        color: rgba(255,255,255,0.85);
+        border: none;
+        border-bottom: 1px solid #D4AF37;
+        padding: 8px 0;
+    }
+    .btn-e:hover {
+        color: #D4AF37;
+    }
+    /* === STYLE F: Transparent, gold border, gold text (current) === */
+    .btn-f {
+        background: transparent;
+        color: #C5A059;
+        border: 1px solid #C5A059;
+    }
+    .btn-f:hover {
+        background: rgba(197,160,89,0.08);
+    }
+    /* === STYLE G: Transparent, light border, white text (hero current) === */
+    .btn-g {
+        background: rgba(255,255,255,0.08);
+        color: #FFFFFF;
+        border: 1px solid rgba(255,255,255,0.2);
+    }
+    .btn-g:hover {
+        background: rgba(255,255,255,0.2);
+        border-color: rgba(255,255,255,0.4);
+    }
+    /* === STYLE H: Gold bg, white text === */
+    .btn-h {
+        background: #D4AF37;
+        color: #FFFFFF;
+        border: 1px solid #D4AF37;
+    }
+    .btn-h:hover {
+        background: #C5A059;
+    }
+    /* === STYLE I: Navy outline, navy text, transparent bg === */
+    .btn-i {
+        background: transparent;
+        color: #1A365D;
+        border: 1px solid #1A365D;
+    }
+    .btn-i:hover {
+        background: #1A365D;
+        color: #FFFFFF;
+    }
+    /* Demo background blocks */
+    .demo-dark {
+        background: #1A365D;
+        padding: 30px;
+        border-radius: 4px;
+    }
+    .demo-light {
+        background: #FFFFFF;
+        padding: 30px;
+        border-radius: 4px;
+        border: 1px solid #E5E5E7;
+    }
+    .demo-cream {
+        background: #FAF8F5;
+        padding: 30px;
+        border-radius: 4px;
+        border: 1px solid #E5E5E7;
+    }
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C7YSVFRQ6R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+  gtag("config", "G-C7YSVFRQ6R");
+</script>
+</head>
+<body>
+
+<h1>Button Style Preview</h1>
+<p class="sub">Testing navigation background color (#1A365D) on buttons</p>
+
+<!-- Section: On Dark Background (Navy) -->
+<div class="section">
+    <h2>On Navy Background (#1A365D)</h2>
+    <div class="demo-dark">
+        <div class="row">
+            <span class="label" style="color:rgba(255,255,255,0.5);">A</span>
+            <a class="btn btn-a">Gold Border + Gold Text</a>
+        </div>
+        <div class="row">
+            <span class="label" style="color:rgba(255,255,255,0.5);">B</span>
+            <a class="btn btn-b">White Text + Subtle Border</a>
+        </div>
+        <div class="row">
+            <span class="label" style="color:rgba(255,255,255,0.5);">C</span>
+            <a class="btn btn-c">Gold Fill + Navy Text</a>
+        </div>
+        <div class="row">
+            <span class="label" style="color:rgba(255,255,255,0.5);">D</span>
+            <a class="btn btn-d">Gold Text, Border on Hover</a>
+        </div>
+        <div class="row">
+            <span class="label" style="color:rgba(255,255,255,0.5);">E</span>
+            <a class="btn btn-e">Gold Underline Link</a>
+        </div>
+    </div>
+</div>
+
+<!-- Section: On Cream/Light Background -->
+<div class="section">
+    <h2>On Cream Background (#FAF8F5)</h2>
+    <div class="demo-cream">
+        <div class="row">
+            <span class="label">A</span>
+            <a class="btn btn-a">Navy + Gold Border/Gold Text</a>
+        </div>
+        <div class="row">
+            <span class="label">F</span>
+            <a class="btn btn-f">Transparent + Gold Border (current)</a>
+        </div>
+        <div class="row">
+            <span class="label">C</span>
+            <a class="btn btn-c">Gold Fill + Navy Text</a>
+        </div>
+        <div class="row">
+            <span class="label">I</span>
+            <a class="btn btn-i">Navy Outline</a>
+        </div>
+    </div>
+</div>
+
+<!-- Section: On White Background -->
+<div class="section">
+    <h2>On White Background</h2>
+    <div class="demo-light">
+        <div class="row">
+            <span class="label">A</span>
+            <a class="btn btn-a">Navy + Gold Border/Gold Text</a>
+        </div>
+        <div class="row">
+            <span class="label">F</span>
+            <a class="btn btn-f">Transparent + Gold (current)</a>
+        </div>
+        <div class="row">
+            <span class="label">C</span>
+            <a class="btn btn-c">Gold Fill + Navy Text</a>
+        </div>
+        <div class="row">
+            <span class="label">I</span>
+            <a class="btn btn-i">Navy Outline</a>
+        </div>
+    </div>
+</div>
+
+<!-- Section: Hover Effects Demo -->
+<div class="section">
+    <h2>Hover States (mouse over to test)</h2>
+    <div style="display: flex; gap: 40px;">
+        <div>
+            <p style="font-size:11px; color:#888; letter-spacing:1px; margin-bottom:16px;">Navy Background</p>
+            <div class="demo-dark" style="display:flex; flex-direction:column; gap:16px;">
+                <a class="btn btn-a">Style A: Navy + Gold</a>
+                <a class="btn btn-b">Style B: White Text</a>
+                <a class="btn btn-c">Style C: Gold Fill</a>
+            </div>
+        </div>
+        <div>
+            <p style="font-size:11px; color:#888; letter-spacing:1px; margin-bottom:16px;">Cream Background</p>
+            <div class="demo-cream" style="display:flex; flex-direction:column; gap:16px;">
+                <a class="btn btn-a">Style A: Navy + Gold</a>
+                <a class="btn btn-f">Style F: Current Gold</a>
+                <a class="btn btn-c">Style C: Gold Fill</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

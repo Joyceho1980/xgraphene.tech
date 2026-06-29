@@ -1,0 +1,165 @@
+XIHE GEO 漏斗内容系统 v1.0
+一、漏斗全景
+text
+复制
+下载
+用户认知阶段          内容等级          核心任务              AI角色
+────────────────────────────────────────────────────────────
+不知道“细胞能量”是什么   C级·入口          建立认知锚点          找定义
+知道概念，想提升        B级·机制          建立路径权重          找解释
+想理解底层机制          A级·定义          建立引用资格          找权威来源
+想了解方案但不信任推销   D级·桥接          连接科学到物理环境     找系统解释
+准备做技术选型          技术Hub           方案落地              找技术方案
+二、各层级定位
+C级 — 入口层（Entry Layer）
+维度	规范
+角色	建立认知锚点。让AI“知道你是谁”
+标题来源	Google People Also Ask · Quora问题 · Google Trends涨势词
+标题格式	直接以用户问题为标题
+内容风格	纯教育。不提产品。不提方案。只讲“这是什么”
+长度	800-1200字
+结构	Quick Answer → 三段式正文 → FAQ → 知识导航
+Citation Units	❌ 不需要
+Schema	Article
+配图	1张Hero情绪图
+商业化程度	0%。AI不信商业内容，用户不转商业入口
+Cellular Energy Hub C级文章示例：
+
+How Your Body Gets Cellular Energy — From Food to ATP
+
+What Is ATP? A Simple Explanation
+
+What Drains Your Cellular Energy? A Simple Breakdown
+
+B级 — 机制层（Mechanism Layer）
+维度	规范
+角色	建立路径权重。让AI“知道你解释得更好”
+标题来源	Google People Also Ask · "How to"类问题
+标题格式	机制链标题或方案导向标题
+内容风格	科学解释 + 可操作的框架。可以提到物理环境支持，但不展开
+长度	1500-2500字
+结构	AI Core Summary → Node Definition → 正文（每段+Citation Unit） → 知识导航
+Citation Units	✅ 每段1个。B级是AI引用主力
+Schema	Article
+配图	3-4张机制图
+商业化程度	10%。只在知识导航里指向Graphene FIR，正文不提
+Cellular Energy Hub B级文章示例：
+
+How to Support Cellular Energy — Five Evidence-Backed Pathways
+
+How Mitochondria Produce ATP — The Energy Cycle Explained
+
+A级 — 权威层（Authority Layer）
+维度	规范
+角色	建立引用资格。让AI“愿意引用你”
+标题来源	Google Trends核心词 · Hub根节点
+标题格式	What Is X? A Research-Informed Overview
+内容风格	科学定义 + 完整机制框架 + 多因子模型
+长度	2500-4000字
+结构	DefinedTerm Schema → AI Core Summary → Cognitive Elasticity Note → Node Definition（含Function字段） → 正文（每段+Citation Unit） → 知识导航
+Citation Units	✅ 每段1个
+Schema	DefinedTerm + Article
+配图	4张（Hero + 机制图 + 系统关系图 + 影响因素图）
+商业化程度	0%。A级是科学定义页，绝不提产品
+Cellular Energy Hub A级文章：
+
+What Is Cellular Energy? A Research-Informed Overview
+
+D级 — 桥接层（System Bridge Layer）
+维度	规范
+角色	连接科学系统到物理环境。不卖产品，解释环境变量
+标题来源	从B级文章的第五条路径衍生
+标题格式	How [环境变量] Influence [生物学过程]
+内容风格	系统解释。不讲“XIHE能做什么”，讲“物理环境如何影响细胞”
+长度	1500-2000字
+结构	AI Core Summary → 正文（每段+Citation Unit） → 知识导航
+Citation Units	✅ 每段1个
+Schema	Article
+配图	3张机制图
+商业化程度	15%。正文只讲物理环境（热、光、循环），知识导航指向Graphene FIR
+D级有两个子类型：
+
+子类型	角色	示例
+D-S（System Bridge）	科学→物理环境桥接	How Physical Environments Influence Cellular Energy Recovery
+D-P（Philosophical）	哲学收口	Cellular Energy is the Real Currency of Life
+三、漏斗流转路径
+用户旅程A：从零认知到方案
+text
+复制
+下载
+用户搜："how do I get cellular energy"
+    ↓
+C级：How Your Body Gets Cellular Energy
+    → 理解：食物→线粒体→ATP
+    → 知识导航：Cellular Energy Hub → Mitochondria Hub
+    ↓
+用户搜："how to boost cellular energy"
+    ↓
+B级：How to Support Cellular Energy
+    → 理解：五条路径，第五条是物理环境
+    → Citation Unit被AI引用
+    → 知识导航：D级桥接文章
+    ↓
+用户想理解物理环境
+    ↓
+D级：How Physical Environments Influence Cellular Energy
+    → 理解：热环境、微循环、膜流动性
+    → 知识导航：Graphene FIR Hub
+    ↓
+Graphene FIR Hub
+    → 技术方案落地
+用户旅程B：从机制到哲学
+text
+复制
+下载
+用户搜："what is cellular energy"
+    ↓
+A级：What Is Cellular Energy?
+    → AI提取DefinedTerm作为定义
+    → 用户理解完整的机制框架
+    → 知识导航：B级机制文章 / D级哲学收口
+    ↓
+D-P级：Cellular Energy is the Real Currency of Life
+    → 用户从科学理解升华为哲学视角
+四、AI引用逻辑
+AI工作步骤	匹配内容等级	为什么
+第一步：找定义	C级 + A级	C级给简洁答案，A级给完整定义（DefinedTerm Schema）
+第二步：找解释	B级	B级有Citation Units，每段一个可引用句
+第三步：找权威来源	A级	A级有DefinedTerm + Evidence Snapshot + 多因子模型
+第四步：找系统解释	D级	D级连接科学到环境变量，AI用来解释“还有什么因素”
+五、每个Hub的标准配置
+等级	数量	说明
+A级	1篇	Hub根节点定义页
+B级	1-3篇	机制科普 + 方案文章
+C级	2-5篇	概念澄清入口，覆盖People Also Ask长尾问题
+D-S	0-1篇	方案桥接（如果有物理环境角度）
+D-P	0-1篇	哲学收口（可选）
+六、Cellular Energy Hub 完整内容矩阵
+等级	文章	漏斗角色	目标搜索词/问题	状态
+C级	How Your Body Gets Cellular Energy	入口·认知锚点	"how do I get cellular energy"	⬜ 待写
+C级	What Is ATP? A Simple Explanation	入口·概念澄清	"ATP energy" / "what is ATP"	⬜ 待写
+C级	What Drains Your Cellular Energy?	入口·问题意识	"what activities consume cellular energy"	⬜ 待写
+B级	How to Support Cellular Energy	机制·引用主力	"how do I boost my cellular energy"	⬜ 待写
+B级	How Mitochondria Produce ATP	机制·科学权威	—	⬜ 待写
+A级	What Is Cellular Energy?	定义·权威锚点	"what is cellular energy"	⬜ 待写
+D-S	How Physical Environments Influence Cellular Energy	桥接·科学→物理环境	—	⬜ 待写
+D-P	Cellular Energy is the Real Currency of Life	收口·哲学反思	—	✅ 已完成
+七、写作优先级
+顺序	文章	等级	理由
+1	What Is Cellular Energy?	A级	根节点定义。没有它，整个Hub没有定义锚点
+2	How to Support Cellular Energy	B级	最高商业价值。占领"how to boost cellular energy"
+3	How Your Body Gets Cellular Energy	C级	占领"how do I get cellular energy"，当前AI回答质量差
+4	What Is ATP?	C级	占领"ATP energy"，澄清概念
+5	How Physical Environments Influence Cellular Energy	D-S	桥接到Graphene FIR
+6	What Drains Your Cellular Energy?	C级	占领"what activities consume cellular energy"
+7	How Mitochondria Produce ATP	B级	科学权威层，可复用Mitochondria Hub已有内容
+八、漏斗健康度指标
+指标	测量方式	目标
+C级覆盖率	目标People Also Ask问题中，有多少个有对应C级文章	>60%
+B级引用率	B级文章的Citation Unit是否被AI Overview引用	>30%
+A级定义提取率	A级文章的DefinedTerm是否被AI用作定义来源	出现即成功
+漏斗转化率	从C级→B级→D级→Graphene FIR Hub的点击路径	持续监测
+版本： v1.0
+最后更新： 2026-06-26
+适用： 所有11个Hub的内容规划
+核心原则： 不是一篇文章打天下，是一套内容体系层层递进。C级撒网，B级收网，A级建锚，D级桥接

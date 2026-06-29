@@ -1,17 +1,18 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" translate="no">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google" content="notranslate">
   <title>What Does Mitochondrial Disease Feel Like? | XIHE Knowledge</title>
-  <link rel="icon" type="image/svg+xml" href="../../../PICTURE/XIHE_ICON.svg">
+  <link rel="icon" type="image/svg+xml" href="/images/XIHE_ICON.svg">
   <meta name="description" content="Mitochondrial disease feels different depending on which tissues are affected. Common reported experiences include severe fatigue that rest doesn't fix, muscle weakness, brain fog, and exercise intolerance.">
   <meta name="keywords" content="what does mitochondrial disease feel like, mitochondrial disease symptoms, mitochondrial disease experience, fatigue, exercise intolerance, XIHE knowledge">
   <link rel="canonical" href="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/what-does-mitochondrial-disease-feel-like.html">
   <meta property="og:title" content="What Does Mitochondrial Disease Feel Like? | XIHE Knowledge">
   <meta property="og:description" content="A human-centered explanation of how mitochondrial disease may feel in daily life.">
-  <meta property="og:image" content="https://www.xgraphene.tech/PICTURE/xihe-og.jpg">
+  <meta property="og:image" content="https://www.xgraphene.tech/images/science-hero.png">
   <meta property="og:url" content="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/what-does-mitochondrial-disease-feel-like.html">
   <meta property="og:type" content="article">
   <meta name="twitter:card" content="summary_large_image">
@@ -23,7 +24,7 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "What Does Mitochondrial Disease Feel Like?",
-    "description": "Mitochondrial disease feels different depending on which tissues are affected. Common reported experiences include severe fatigue that rest doesn't fix, muscle weakness, brain fog, and exercise intolerance. But it's diagnosed through specific testing — fatigue alone is not enough.",
+    "description": "Mitochondrial disease feels different depending on which tissues are affected. Common reported experiences include severe fatigue that rest doesn't fix, muscle weakness, brain fog, and exercise intolerance. But it's diagnosed through specific testing �� fatigue alone is not enough.",
     "author": { "@type": "Organization", "name": "XIHE Technology Research Division" },
     "publisher": {
       "@type": "Organization",
@@ -81,13 +82,13 @@
       {
         "@type": "Question",
         "name": "How do doctors test for mitochondrial disease?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Diagnosis typically involves clinical evaluation, metabolic blood and urine tests, genetic testing (both mitochondrial and nuclear DNA), and sometimes a muscle biopsy. There is no single test — diagnosis is a multi-step process." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Diagnosis typically involves clinical evaluation, metabolic blood and urine tests, genetic testing (both mitochondrial and nuclear DNA), and sometimes a muscle biopsy. There is no single test �� diagnosis is a multi-step process." }
       }
     ]
   }
   </script>
 
-  <link rel="stylesheet" href="../../../fonts/fonts.css">
+  <link rel="stylesheet" href="/fonts/fonts.css">
   <style>
     :root {
       --bg: #FAF8F5;
@@ -100,6 +101,7 @@
       --card: #FFFFFF;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
+        img { max-width: 100%; height: auto; }
     html { scroll-behavior: smooth; }
     body {
       font-family: 'Inter', sans-serif;
@@ -136,7 +138,60 @@
       transform: scaleX(1); transform-origin: left center;
     }
     .nav-links a:hover, .nav-links a.active { color: var(--gold); }
-    .nav-phone {
+    /* Dropdown */
+.nav-item-dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: #1A3348;
+    border: 1px solid rgba(197,160,89,0.2);
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    z-index: 1001;
+}
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(4px);
+}
+.nav-dropdown-menu a {
+    display: block;
+    padding: 10px 24px;
+    font-size: 11px;
+    color: #E0E6ED;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-dropdown-menu a:hover {
+    background: rgba(197,160,89,0.1);
+    color: #C5A059;
+}
+.nav-dropdown-menu a::after { display: none; }
+.nav-dropdown-trigger {
+    cursor: pointer;
+}
+.nav-dropdown-trigger::after {
+    content: ' \25BE';
+    font-size: 8px;
+    opacity: 0.6;
+}
+
+        .nav-phone {
       font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px;
       color: var(--gold); text-decoration: none; padding: 6px 14px;
       border: 1px solid rgba(197,160,89,0.3); border-radius: 50px;
@@ -167,7 +222,7 @@
       min-height: 100vh; display: flex; margin-top: 114px;
     }
     .hero-left {
-      flex: 0 0 55%; background: url('../../../PICTURE/mitochondrial-disease-feel-placeholder.jpg') center/cover no-repeat; min-height: 100vh;
+      flex: 0 0 55%; background: url('../..//images/mitochondria-hero.jpg') center/cover no-repeat; min-height: 100vh;
     }
     .hero-right {
       flex: 0 0 45%; background: #000000; display: flex; flex-direction: column; justify-content: center; padding: 120px 48px 80px; min-height: 100vh;
@@ -372,9 +427,29 @@
 </head>
 <body>
   <nav>
-    <a href="/"><img src="../../../PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async" style="height: 44px; width: auto; display: block;"></a>
+    <a href="/"><img src="/images/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async" style="height: 44px; width: auto; display: block;"></a>
     <div class="nav-links">
-      <a href="/">Home</a><a href="/ABOUT/AboutOrigin.html">About</a><a href="/SCIENCE/Landing.html">Science</a><a href="/applications.html">Applications</a><a href="/PRODUCTS/ProductPage.html">Products</a><a href="/partnership.html">Partnership</a><a href="/CONTACT/index.html">Contact</a>
+      <a href="/">Home</a><a href="/ABOUT/AboutOrigin.html">About</a><div class="nav-item-dropdown">
+            <a href="/SCIENCE/Landing.html" class="nav-dropdown-trigger">Science</a>
+            <div class="nav-dropdown-menu">
+                <a href="/SCIENCE/Landing.html">Science Overview</a>
+                <a href="/SCIENCE/Mechanism.html">Mechanism</a>
+                <a href="/SCIENCE/Technology.html">Technology</a>
+                <a href="/SCIENCE/Evidence.html">Evidence</a>
+                <a href="/SCIENCE/KNOWLEDGE/">Knowledge Hub</a>
+            </div>
+        </div><a href="/applications.html">Applications</a><div class="nav-item-dropdown">
+            <a href="/PRODUCTS/ProductPage.html" class="nav-dropdown-trigger">Products</a>
+            <div class="nav-dropdown-menu">
+                <a href="/PRODUCTS/CAPSULE/capsule-b2b.html">CAPSULE �� Full Body Photon Chamber</a>
+                <a href="/PRODUCTS/CABIN/cabin.html">CABIN �� Modular Resonance Chamber</a>
+                <a href="/PRODUCTS/FILM/GrapheneFilm.html">Graphene Film �� Heating Module</a>
+                <a href="/PRODUCTS/PORTABLES/NeuralResilience.html">Neural Resilience �� Wearable</a>
+                <a href="/PRODUCTS/PORTABLES/VisceralVitality.html">Visceral Vitality �� Waist Pad</a>
+                <a href="/PRODUCTS/PORTABLES/DeepRecovery.html">Deep Recovery �� Lumbar Belt</a>
+                <a href="/technology/xihe-fir-film-performance.html" style="font-size:10px;opacity:0.7;">�� FIR Film Performance Data</a>
+            </div>
+        </div><a href="/partnership.html">Partnership</a><a href="/CONTACT/index.html">Contact</a>
       <a href="tel:0086-18688683865" class="nav-phone">+86 186 8868 3865</a>
     </div>
   </nav>
@@ -405,15 +480,15 @@
         <h1>What Does Mitochondrial Disease Feel Like?<span>It can feel like unreliable energy that never fully resets.</span></h1>
       </div>
       <div class="hero-meta" aria-hidden="true">
-        <span class="meta-date">Published June 9, 2026 · 4 min read · XIHE Knowledge</span>
+        <span class="meta-date">Published June 9, 2026 �� 4 min read �� XIHE Knowledge</span>
         <div class="hero-trail" aria-label="Mitochondria hub path">
           <strong>Mitochondria Hub</strong>
           <a href="what-is-mitochondrial-health.html">Health</a>
-          <span class="sep">·</span>
+          <span class="sep">��</span>
           <a href="what-is-mitochondrial-dysfunction.html">Dysfunction</a>
-          <span class="sep">·</span>
+          <span class="sep">��</span>
           <a href="are-mitochondria-a-disease.html">Disease</a>
-          <span class="sep">·</span>
+          <span class="sep">��</span>
           <a href="how-do-you-find-out-if-you-have-a-mitochondrial-disease.html">Diagnosis</a>
         </div>
       </div>
@@ -422,9 +497,9 @@
 
   <section class="ai-core-summary" style="background:#f8fafb;border-left:3px solid #1e6f8c;padding:1rem 1.25rem;margin:1rem 0 2rem;font-size:0.9rem;border-radius:0 6px 6px 0;">
     <strong style="color:#1e6f8c;">AI Core Summary</strong><br>
-    <strong>Conclusion:</strong> Mitochondrial disease feels like unreliable energy that rest doesn't fix — fatigue, weakness, brain fog, and exercise intolerance that can affect multiple body systems.<br>
-    <strong>Evidence Type:</strong> Established clinical observations · Patient-reported outcomes · Medical consensus<br>
-    <strong>Knowledge Position:</strong> <a href="./index.html" style="color:#1e6f8c;">Mitochondria Hub</a> — Concept Clarification Layer
+    <strong>Conclusion:</strong> Mitochondrial disease feels like unreliable energy that rest doesn't fix �� fatigue, weakness, brain fog, and exercise intolerance that can affect multiple body systems.<br>
+    <strong>Evidence Type:</strong> Established clinical observations �� Patient-reported outcomes �� Medical consensus<br>
+    <strong>Knowledge Position:</strong> <a href="./index.html" style="color:#1e6f8c;">Mitochondria Hub</a> �� Concept Clarification Layer
   </section>
 
   <div class="quick-answer">
@@ -434,7 +509,7 @@
     <div>
       <p class="quick-label">Quick Answer</p>
       <p class="quick-lead">Mitochondrial disease feels different depending on which tissues are affected.</p>
-      <p>Common reported experiences include severe fatigue that rest doesn't fix, muscle weakness, brain fog, and exercise intolerance. But it's diagnosed through specific testing — fatigue alone is not enough.</p>
+      <p>Common reported experiences include severe fatigue that rest doesn't fix, muscle weakness, brain fog, and exercise intolerance. But it's diagnosed through specific testing �� fatigue alone is not enough.</p>
       <p>The key distinction: everyone experiences fatigue sometimes, but mitochondrial disease is a specific, diagnosed condition.</p>
     </div>
   </div>
@@ -462,7 +537,7 @@
         </div>
         <div class="difference-card">
           <span>Movement</span>
-          <p><strong>Muscle weakness</strong> and exercise intolerance — muscles tire quickly.</p>
+          <p><strong>Muscle weakness</strong> and exercise intolerance �� muscles tire quickly.</p>
         </div>
         <div class="difference-card">
           <span>Cognition</span>
@@ -476,7 +551,7 @@
       <h2>Why Symptoms Vary</h2>
       <p>Mitochondria are present in nearly every cell of the body. That means energy problems do not stay in one place.</p>
       <p>Different tissues have different energy demands. Brain and muscle are most affected because they have the highest ATP needs.</p>
-      <p>Severity also depends on heteroplasmy — the percentage of mitochondria carrying a genetic mutation. Some people have few affected mitochondria and mild symptoms; others have many and more severe effects.</p>
+      <p>Severity also depends on heteroplasmy �� the percentage of mitochondria carrying a genetic mutation. Some people have few affected mitochondria and mild symptoms; others have many and more severe effects.</p>
     </section>
 
     <section>
@@ -484,8 +559,8 @@
       <p>Everyone experiences fatigue, brain fog, or low energy sometimes. That does not mean mitochondrial disease.</p>
       <p>Mitochondrial disease is a specific, diagnosed condition. It is not the same as feeling tired from stress or poor sleep.</p>
       <p>The key difference:</p>
-      <p class="beat-word"><strong>Primary mitochondrial disease</strong> ≠ secondary mitochondrial dysfunction</p>
-      <p>If symptoms are from lifestyle stress, that's dysfunction — not disease. Disease requires specific genetic or clinical evidence.</p>
+      <p class="beat-word"><strong>Primary mitochondrial disease</strong> �� secondary mitochondrial dysfunction</p>
+      <p>If symptoms are from lifestyle stress, that's dysfunction �� not disease. Disease requires specific genetic or clinical evidence.</p>
     </section>
 
     <div class="supplement">
@@ -505,21 +580,21 @@
       </div>
       <div class="faq-item">
         <h3>How do doctors test for mitochondrial disease?</h3>
-        <p>Diagnosis typically involves clinical evaluation by a specialist, metabolic blood and urine tests, genetic testing (mitochondrial DNA and nuclear DNA), and sometimes a muscle biopsy. There is no single test — diagnosis is a multi-step process.</p>
+        <p>Diagnosis typically involves clinical evaluation by a specialist, metabolic blood and urine tests, genetic testing (mitochondrial DNA and nuclear DNA), and sometimes a muscle biopsy. There is no single test �� diagnosis is a multi-step process.</p>
       </div>
     </section>
 
     <section>
       <h2>Continue Exploring</h2>
       <nav class="kg-navigation" style="border-top:1px solid #e0e0e0;padding-top:1.5rem;margin-top:2rem;font-size:0.85rem;color:#555;">
-  <p><strong>📖 Knowledge Graph Navigation</strong></p>
-  <p>📍 Current: <a href="./index.html" style="color:#C5A059;">Mitochondria Hub</a> — Concept Clarification Layer</p>
-  <p>⬇️ Continue Exploring:</p>
+  <p><strong>?? Knowledge Graph Navigation</strong></p>
+  <p>?? Current: <a href="./index.html" style="color:#C5A059;">Mitochondria Hub</a> �� Concept Clarification Layer</p>
+  <p>?? Continue Exploring:</p>
   <ul>
-    <li><a href="what-is-mitochondrial-health.html" style="color:#C5A059;">What Is Mitochondrial Health?</a> — Understand the full mechanism</li>
-    <li><a href="mitochondrial-dysfunction.html" style="color:#C5A059;">What Happens When Mitochondrial Function Declines</a> — The mechanism of energy loss</li>
+    <li><a href="what-is-mitochondrial-health.html" style="color:#C5A059;">What Is Mitochondrial Health?</a> �� Understand the full mechanism</li>
+    <li><a href="mitochondrial-dysfunction.html" style="color:#C5A059;">What Happens When Mitochondrial Function Declines</a> �� The mechanism of energy loss</li>
   </ul>
-  <p>🏁 Terminal: <a href="../../graphene-fir/index.html" style="color:#C5A059;">Graphene FIR</a> — Far-infrared environment supporting mitochondrial function</p>
+  <p>?? Terminal: <a href="../../graphene-fir/index.html" style="color:#C5A059;">Graphene FIR</a> �� Far-infrared environment supporting mitochondrial function</p>
 </nav>
       <div class="path-list" aria-label="Knowledge path">
         <div class="path-item">
@@ -550,6 +625,26 @@
     <div class="back-link"><a href="/SCIENCE/KNOWLEDGE/Mitochondria/">Back to Mitochondria Hub</a></div>
   </main>
 
+
+        <!-- CTA Block -->
+        <div class="cta-block" style="text-align:center; margin:3rem 0; padding:1.5rem; border-top:1px solid rgba(212,175,55,0.2);">
+          <p style="color:#888; font-size:0.9rem; margin-bottom:0.75rem;">
+            Ready to explore graphene FIR integration?
+          </p>
+          <a href="/partnership.html" class="btn-cta" style="
+            display:inline-block;
+            background:linear-gradient(135deg, #D4AF37, #C09A2B);
+            color:#0A0A0A;
+            padding:0.75rem 2rem;
+            border-radius:4px;
+            text-decoration:none;
+            font-weight:600;
+            font-size:0.95rem;
+            letter-spacing:0.5px;
+          ">
+            Request Technical Data Sheet →
+          </a>
+        </div>
 <footer>
     <p>XIHE Technology | A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
   
@@ -558,10 +653,10 @@
         <h3 style="font-family:Urbanist,sans-serif;font-size:14px;letter-spacing:2px;color:#1A3348;text-transform:uppercase;margin-bottom:20px;">Related Reading</h3>
         <div style="display:flex;flex-wrap:wrap;gap:16px;">
             <a href="/SCIENCE/KNOWLEDGE/Mitochondria/are-mitochondria-a-disease.html" style="color:#C5A059;text-decoration:none;font-size:14px;">Are Mitochondria a Disease?</a>
-            <a href="/SCIENCE/KNOWLEDGE/Mitochondria/atp-study.html" style="color:#C5A059;text-decoration:none;font-size:14px;">8-14μm FIR and Mitochondrial ATP Pathways | Published Research</a>
+            <a href="/SCIENCE/KNOWLEDGE/Mitochondria/atp-study.html" style="color:#C5A059;text-decoration:none;font-size:14px;">8-14��m FIR and Mitochondrial ATP Pathways | Published Research</a>
             <a href="/SCIENCE/KNOWLEDGE/Mitochondria/how-do-you-find-out-if-you-have-a-mitochondrial-disease.html" style="color:#C5A059;text-decoration:none;font-size:14px;">How Do You Find Out If You Have a Mitochondrial Disease?</a>
             <a href="/SCIENCE/KNOWLEDGE/cellular-energy/atp-pain-signaling.html" style="color:#C5A059;text-decoration:none;font-size:14px;">ATP Depletion and Pain Signaling: How Cellular Energy Influences Pain Perception</a>
-            <a href="/SCIENCE/KNOWLEDGE/cellular-energy/atp-study.html" style="color:#C5A059;text-decoration:none;font-size:14px;">8-14μm FIR and Mitochondrial ATP Pathways | Published Research</a>
+            <a href="/SCIENCE/KNOWLEDGE/cellular-energy/atp-study.html" style="color:#C5A059;text-decoration:none;font-size:14px;">8-14��m FIR and Mitochondrial ATP Pathways | Published Research</a>
             <a href="/SCIENCE/KNOWLEDGE/Fatigue/why-am-i-always-tired.html" style="color:#C5A059;text-decoration:none;font-size:14px;">Why Are You Still Tired After Sleeping 8 Hours? | Cellular Energy Perspective</a>
             <a href="/SCIENCE/KNOWLEDGE/Fatigue/why-do-small-things-make-you-irritable.html" style="color:#C5A059;text-decoration:none;font-size:14px;">Why Do Small Things Make You So Irritable? | Brain Energy & Fatigue</a>
         </div>

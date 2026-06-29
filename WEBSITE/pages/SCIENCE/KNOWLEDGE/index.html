@@ -1,25 +1,80 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" translate="no">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google" content="notranslate">
   <title>Knowledge Hub | XIHE Science</title>
-  <link rel="icon" type="image/svg+xml" href="/PICTURE/XIHE_ICON.svg">
+  <link rel="icon" type="image/svg+xml" href="/images/XIHE_ICON.svg">
   <meta name="description" content="The XIHE Knowledge Hub connects sleep, fatigue, mitochondria, recovery, inflammation, microcirculation, graphene FIR, metabolism, bioenergetics, and healthy aging.">
   <link rel="canonical" href="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/">
   <meta property="og:title" content="Knowledge Hub | XIHE Science">
   <meta property="og:description" content="Explore the XIHE Knowledge Hub: a connected map of sleep, fatigue, mitochondria, recovery, and cellular energy science.">
-  <meta property="og:image" content="https://www.xgraphene.tech/PICTURE/xihe-og.webp">
+  <meta property="og:image" content="https://www.xgraphene.tech/images/article/A%20scientific%20editorial%20illustration%20for%20the%20XIHE%20Knowledge%20Hub%20landing%20page%20Visual%20concept%20a%20constellation%20map%20showing%2012%20interconnected%20knowledge%20nodes%20floating%20in%20a%20deep%20navy%20space.jpg">
   <meta property="og:url" content="https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="../../../fonts/fonts.css">
+  <link rel="stylesheet" href="/fonts/fonts.css">
   <style>
     :root { --bg:#FAF8F5; --n:#1A3348; --t:#1A1D24; --s:#475569; --m:#888; --g:#C5A059; --b:#E5E5E7; }
-    * { margin:0; padding:0; box-sizing:border-box; }
+    * { margin:0; padding:0; 
+        img { max-width: 100%; height: auto; }
     body { font-family:'Inter',sans-serif; background:var(--bg); color:var(--t); line-height:1.75; -webkit-font-smoothing:antialiased; }
-    nav { position:fixed; top:0; left:0; right:0; height:70px; background:var(--n); display:flex; align-items:center; justify-content:space-between; padding:0 10%; z-index:1000; }
+    /* Dropdown */
+.nav-item-dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    background: #1A3348;
+    border: 1px solid rgba(197,160,89,0.2);
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    z-index: 1001;
+}
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(4px);
+}
+.nav-dropdown-menu a {
+    display: block;
+    padding: 10px 24px;
+    font-size: 11px;
+    color: #E0E6ED;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-dropdown-menu a:hover {
+    background: rgba(197,160,89,0.1);
+    color: #C5A059;
+}
+.nav-dropdown-menu a::after { display: none; }
+.nav-dropdown-trigger {
+    cursor: pointer;
+}
+.nav-dropdown-trigger::after {
+    content: ' \25BE';
+    font-size: 8px;
+    opacity: 0.6;
+}
+
+        nav { position:fixed; top:0; left:0; right:0; height:70px; background:var(--n); display:flex; align-items:center; justify-content:space-between; padding:0 10%; z-index:1000; }
     .nl { display:flex; gap:28px; align-items:center; overflow-x:auto; }
     .nl a { font-size:11px; color:#E0E6ED; text-decoration:none; letter-spacing:1px; text-transform:uppercase; position:relative; padding-bottom:4px; white-space:nowrap; }
     .nl a::after { content:''; position:absolute; bottom:0; left:0; width:100%; height:1px; background:var(--g); transform:scaleX(0); transform-origin:right center; transition:transform .3s; }
@@ -27,7 +82,7 @@
     .nl a:hover, .nl a.active { color:var(--g); }
     .np { font-family:'Urbanist',sans-serif; font-size:11px; letter-spacing:1px; color:var(--g); text-decoration:none; padding:6px 14px; border:1px solid rgba(197,160,89,.3); border-radius:50px; transition:all .3s; white-space:nowrap; font-weight:500; }
     .np:hover { background:var(--g); color:var(--n); }
-    .hero { padding:140px 10% 74px; background: linear-gradient(135deg, rgba(26,51,72,0.96), rgba(26,29,36,0.88)), url('/PICTURE/Science Landing Hero.png') center/cover no-repeat; color:#FFF; }
+    .hero { padding:140px 10% 74px; background: linear-gradient(135deg, rgba(26,51,72,0.96), rgba(26,29,36,0.88)), url('/images/article/A%20scientific%20editorial%20illustration%20for%20the%20XIHE%20Knowledge%20Hub%20landing%20page%20Visual%20concept%20a%20constellation%20map%20showing%2012%20interconnected%20knowledge%20nodes%20floating%20in%20a%20deep%20navy%20space.jpg') center/cover no-repeat; color:#FFF; }
     .hero-inner { max-width:860px; }
     .eyebrow { font-family:'Urbanist',sans-serif; font-size:10px; letter-spacing:4px; color:var(--g); text-transform:uppercase; margin-bottom:18px; }
     h1 { font-family:'Urbanist',sans-serif; font-size:48px; font-weight:200; letter-spacing:2px; line-height:1.15; margin-bottom:14px; }
@@ -51,10 +106,39 @@
     .note-box { background:#FAF8F5; border:1px solid var(--b); padding:32px; }
     .note-box h2 { font-family:'Urbanist',sans-serif; font-size:26px; font-weight:300; color:var(--n); margin-bottom:10px; }
     .note-box p { color:var(--s); font-size:15px; line-height:1.8; max-width:860px; }
+    .research-header { text-align:center; margin-bottom:48px; }
+    .research-header .rh-tag { font-family:'Urbanist',sans-serif; font-size:9px; letter-spacing:4px; color:var(--g); text-transform:uppercase; margin-bottom:12px; }
+    .research-header h2 { font-family:'Urbanist',sans-serif; font-size:32px; font-weight:300; color:var(--n); letter-spacing:1.5px; margin-bottom:8px; line-height:1.3; }
+    .research-header p { font-size:15px; color:var(--s); max-width:600px; margin:0 auto; line-height:1.7; }
+    .research-grid { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+    .research-card { background:#FFF; border:1px solid var(--b); overflow:hidden; text-decoration:none; transition:all .25s; display:block; border-radius:4px; }
+    .research-card:hover { border-color:var(--g); box-shadow:0 8px 28px rgba(0,0,0,0.08); transform:translateY(-3px); }
+    .research-card img { width:100%; height:200px; object-fit:cover; display:block; }
+    .research-card-content { padding:24px 28px 28px; }
+    .rc-category { display:flex; align-items:center; gap:8px; margin-bottom:12px; }
+    .rc-category svg { width:16px; height:16px; stroke-width:1.5; fill:none; }
+    .rc-category span { font-family:'Urbanist',sans-serif; font-size:10px; letter-spacing:2px; text-transform:uppercase; color:var(--m); font-weight:500; }
+    .rc-category.red svg, .rc-category.red span { color:#E74C3C; stroke:#E74C3C; }
+    .rc-category.orange svg, .rc-category.orange span { color:#E67E22; stroke:#E67E22; }
+    .rc-category.blue svg, .rc-category.blue span { color:#3498DB; stroke:#3498DB; }
+    .rc-category.purple svg, .rc-category.purple span { color:#9B59B6; stroke:#9B59B6; }
+    .rc-category.teal svg, .rc-category.teal span { color:#16A085; stroke:#16A085; }
+    .rc-category.green svg, .rc-category.green span { color:#27AE60; stroke:#27AE60; }
+    .research-card h3 { font-family:'Inter',sans-serif; font-size:18px; font-weight:500; color:var(--t); margin-bottom:10px; line-height:1.4; letter-spacing:0.3px; }
+    .research-card p { font-size:13px; color:var(--s); line-height:1.65; margin-bottom:16px; }
+    .rc-tags { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px; }
+    .rc-tag-pill { display:inline-block; padding:5px 12px; font-family:'Urbanist',sans-serif; font-size:9px; letter-spacing:1px; text-transform:uppercase; color:var(--n); background:var(--bg); border-radius:20px; border:1px solid var(--b); font-weight:400; }
+    .rc-link { font-family:'Urbanist',sans-serif; font-size:11px; color:var(--n); letter-spacing:1.5px; font-weight:500; text-decoration:none; text-transform:uppercase; transition:color .25s; display:inline-flex; align-items:center; gap:4px; }
+    .rc-link::after { content:'ï¿½ï¿½'; font-size:13px; transition:transform .25s; }
+    .research-card:hover .rc-link { color:var(--g); }
+    .research-card:hover .rc-link::after { transform:translateX(4px); }
+    .view-all-research { text-align:right; margin-top:32px; }
+    .view-all-research a { font-family:'Urbanist',sans-serif; font-size:11px; letter-spacing:2px; text-transform:uppercase; color:var(--g); text-decoration:none; opacity:0.9; transition:opacity .25s; }
+    .view-all-research a:hover { opacity:1; }
     footer { padding:40px 10%; background:var(--n); text-align:center; border-top:2px solid var(--g); }
     footer p { font-size:13px; color:#E0E6ED; }
-    @media (max-width: 900px) { .grid { grid-template-columns:1fr; } h1 { font-size:36px; } .hero { padding:128px 5% 62px; } .quick, .grid, .note { padding-left:16px; padding-right:16px; } }
-    @media (max-width: 600px) { nav { padding:0 5%; } .nl { gap:12px; } h1 { font-size:28px; } h1 span { font-size:16px; } }
+    @media (max-width: 900px) { .grid { grid-template-columns:1fr; } .research-grid { grid-template-columns:repeat(2,1fr); } h1 { font-size:36px; } .hero { padding:128px 5% 62px; } .quick, .grid, .note { padding-left:16px; padding-right:16px; } }
+    @media (max-width: 600px) { nav { padding:0 5%; } .nl { gap:12px; } h1 { font-size:28px; } h1 span { font-size:16px; } .research-grid { grid-template-columns:1fr; } }
   </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-C7YSVFRQ6R"></script>
@@ -90,18 +174,105 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "XIHE Knowledge Hub",
+  "description": "11 interconnected topic hubs covering cellular energy, mitochondria, sleep, fatigue, recovery, inflammation, microcirculation, metabolism, graphene far-infrared, healthy aging, and clinical evidence. Entry point for the XIHE knowledge system.",
+  "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "XIHE Science Platform",
+    "url": "https://www.xgraphene.tech/SCIENCE/Landing.html"
+  },
+  "hasPart": [
+    {"@type": "CollectionPage", "name": "Cellular Energy Hub", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/bioenergetics/"},
+    {"@type": "CollectionPage", "name": "Mitochondria Hub", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/"},
+    {"@type": "CollectionPage", "name": "Sleep Hub", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Sleep/"},
+    {"@type": "CollectionPage", "name": "Fatigue Hub", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Fatigue/"},
+    {"@type": "CollectionPage", "name": "Recovery Hub", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Recovery/"},
+    {"@type": "CollectionPage", "name": "Inflammation Hub", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Inflammation/"},
+    {"@type": "CollectionPage", "name": "Microcirculation Hub", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Microcirculation/"},
+    {"@type": "CollectionPage", "name": "Metabolism Hub", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Metabolism/"},
+    {"@type": "CollectionPage", "name": "Graphene FIR Hub", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/"},
+    {"@type": "CollectionPage", "name": "Healthy Aging Hub", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/healthy-aging/"},
+    {"@type": "CollectionPage", "name": "Clinical Evidence Hub", "url": "https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Clinical-Evidence/"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the XIHE Knowledge Hub?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The XIHE Knowledge Hub is a collection of 11 interconnected topic hubs covering cellular energy, mitochondria, sleep, fatigue, recovery, inflammation, microcirculation, metabolism, graphene far-infrared, healthy aging, and clinical evidence. Each hub contains research-backed articles organized by evidence level."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How are the hubs organized?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hubs are organized from foundational science (Cellular Energy, Mitochondria) to applied topics (Sleep, Fatigue, Recovery) to technology and evidence (Graphene FIR, Clinical Evidence). Start with the topic most relevant to your interest."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What evidence level do the articles use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Articles are classified into four levels: A (Hub Root), B (Mechanism), C (Problem & Symptom), and D (Reflection). Each article includes AI-Citable Statements and citation units for verifiable claims."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <nav>
-  <a href="/"><img src="/PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async"> style="height:44px;width:auto"></a>
+  <a href="/"><img src="/images/XIHE_LOGO_DARK.svg" alt="XIHE" loading="lazy" decoding="async" style="height:44px;width:auto"></a>
   <div class="nl">
     <a href="/">Home</a>
     <a href="/ABOUT/AboutOrigin.html">About</a>
-    <a href="/SCIENCE/Landing.html" class="active">Science</a>
+    <div class="nav-item-dropdown">
+            <a href="/SCIENCE/Landing.html" class="nav-dropdown-trigger active">Science</a>
+            <div class="nav-dropdown-menu">
+                <a href="/SCIENCE/Landing.html">Science Overview</a>
+                <a href="/SCIENCE/Mechanism.html">Mechanism</a>
+                <a href="/SCIENCE/Technology.html">Technology</a>
+                <a href="/SCIENCE/Evidence.html">Evidence</a>
+                <a href="/SCIENCE/KNOWLEDGE/">Knowledge Hub</a>
+            </div>
+        </div>
     <a href="/applications.html">Applications</a>
-    <a href="/PRODUCTS/ProductPage.html">Products</a>
+    <div class="nav-item-dropdown">
+            <a href="/PRODUCTS/ProductPage.html" class="nav-dropdown-trigger">Products</a>
+            <div class="nav-dropdown-menu">
+                <a href="/PRODUCTS/CAPSULE/capsule-b2b.html">CAPSULE ï¿½ï¿½ Full Body Photon Chamber</a>
+                <a href="/PRODUCTS/CABIN/cabin.html">CABIN ï¿½ï¿½ Modular Resonance Chamber</a>
+                <a href="/PRODUCTS/FILM/GrapheneFilm.html">Graphene Film ï¿½ï¿½ Heating Module</a>
+                <a href="/PRODUCTS/PORTABLES/NeuralResilience.html">Neural Resilience ï¿½ï¿½ Wearable</a>
+                <a href="/PRODUCTS/PORTABLES/VisceralVitality.html">Visceral Vitality ï¿½ï¿½ Waist Pad</a>
+                <a href="/PRODUCTS/PORTABLES/DeepRecovery.html">Deep Recovery ï¿½ï¿½ Lumbar Belt</a>
+                <a href="/technology/xihe-fir-film-performance.html" style="font-size:10px;opacity:0.7;">ï¿½ï¿½ FIR Film Performance Data</a>
+            </div>
+        </div>
     <a href="/partnership.html">Partnership</a>
-    <a href="/NEWS/index.html">News</a>
+    <div class="nav-item-dropdown">
+            <a href="/NEWS/index.html" class="nav-dropdown-trigger">News</a>
+            <div class="nav-dropdown-menu">
+                <a href="/NEWS/index.html">All News</a>
+                <a href="/NEWS/index.html#company">Company News</a>
+                <a href="/NEWS/index.html#industry">Industry News</a>
+                <a href="/NEWS/index.html#product">Product News</a>
+            </div>
+        </div>
     <a href="/CONTACT/index.html">Contact</a>
     <a href="tel:0086-18688683865" class="np">+86 186 8868 3865</a>
   </div>
@@ -122,22 +293,13 @@
 </section>
 
 <section class="grid">
-  <a class="card" href="/SCIENCE/KNOWLEDGE/Sleep/">
+  <a class="card" href="/SCIENCE/KNOWLEDGE/bioenergetics/">
     <div class="card-visual"></div>
     <div class="card-body">
       <div class="tag">Topic Hub</div>
-      <h2>Sleep & Recovery</h2>
-      <p>Why sleep can look normal on paper but still fail to restore energy.</p>
-      <div class="meta"><b>4 articles</b> now live</div>
-    </div>
-  </a>
-  <a class="card" href="/SCIENCE/KNOWLEDGE/Fatigue/">
-    <div class="card-visual"></div>
-    <div class="card-body">
-      <div class="tag">Topic Hub</div>
-      <h2>Fatigue</h2>
-      <p>Why some people feel drained even after rest, sleep, and a full night in bed.</p>
-      <div class="meta"><b>Foundation topic</b> for energy loss</div>
+      <h2>Cellular Energy</h2>
+      <p>The bigger energy framework behind ATP, mitochondria, and cellular efficiency.</p>
+      <div class="meta"><b>Energy conversion</b> science</div>
     </div>
   </a>
   <a class="card" href="/SCIENCE/KNOWLEDGE/Mitochondria/">
@@ -149,13 +311,22 @@
       <div class="meta"><b>Cell energy</b> core</div>
     </div>
   </a>
-  <a class="card" href="/SCIENCE/KNOWLEDGE/cellular-energy/">
+  <a class="card" href="/SCIENCE/KNOWLEDGE/Sleep/">
     <div class="card-visual"></div>
     <div class="card-body">
       <div class="tag">Topic Hub</div>
-      <h2>ATP & Energy</h2>
-      <p>A simple look at how the body turns nutrients and oxygen into usable energy.</p>
-      <div class="meta"><b>ATP</b> and recovery</div>
+      <h2>Sleep</h2>
+      <p>Why sleep can look normal on paper but still fail to restore energy.</p>
+      <div class="meta"><b>4 articles</b> now live</div>
+    </div>
+  </a>
+  <a class="card" href="/SCIENCE/KNOWLEDGE/Fatigue/">
+    <div class="card-visual"></div>
+    <div class="card-body">
+      <div class="tag">Topic Hub</div>
+      <h2>Fatigue</h2>
+      <p>Why some people feel drained even after rest, sleep, and a full night in bed.</p>
+      <div class="meta"><b>Foundation topic</b> for energy loss</div>
     </div>
   </a>
   <a class="card" href="/SCIENCE/KNOWLEDGE/Recovery/">
@@ -185,15 +356,6 @@
       <div class="meta"><b>Delivery system</b> for repair</div>
     </div>
   </a>
-  <a class="card" href="/SCIENCE/KNOWLEDGE/graphene-fir/">
-    <div class="card-visual"></div>
-    <div class="card-body">
-      <div class="tag">Topic Hub</div>
-      <h2>Graphene FIR</h2>
-      <p>Far-infrared science, wavelength, and why thermal environments may matter.</p>
-      <div class="meta"><b>Technology</b> layer</div>
-    </div>
-  </a>
   <a class="card" href="/SCIENCE/KNOWLEDGE/Metabolism/">
     <div class="card-visual"></div>
     <div class="card-body">
@@ -203,13 +365,13 @@
       <div class="meta"><b>Fuel use</b> and output</div>
     </div>
   </a>
-  <a class="card" href="/SCIENCE/KNOWLEDGE/bioenergetics/">
+  <a class="card" href="/SCIENCE/KNOWLEDGE/graphene-fir/">
     <div class="card-visual"></div>
     <div class="card-body">
       <div class="tag">Topic Hub</div>
-      <h2>Bioenergetics</h2>
-      <p>The bigger energy framework behind ATP, mitochondria, and cellular efficiency.</p>
-      <div class="meta"><b>Energy conversion</b> science</div>
+      <h2>Graphene FIR</h2>
+      <p>Far-infrared science, wavelength, and why thermal environments may matter.</p>
+      <div class="meta"><b>Technology</b> layer</div>
     </div>
   </a>
   <a class="card" href="/SCIENCE/KNOWLEDGE/healthy-aging/">
@@ -232,6 +394,144 @@
   </a>
 </section>
 
+<!-- Featured Research -->
+<section style="background:#FFF; padding:80px 10%;">
+<div class="research-header">
+    <div class="rh-tag">The Evidence Architecture</div>
+    <h2>From published research to biological mechanisms</h2>
+    <p>Connecting material science to human physiology.</p>
+</div>
+
+<div class="research-grid">
+    <a href="/SCIENCE/Technology.html" class="research-card">
+        <img src="/images/research-cards/Graphene & VESSEL FLOW.webp" alt="Graphene FIR technology enhancing microcirculation and blood flow velocity in capillaries">
+        <div class="research-card-content">
+            <div class="rc-category red">
+                <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                <span>Microcirculation</span>
+            </div>
+            <h3>Graphene FIR and Blood Flow Velocity</h3>
+            <p>64.9% increase in peripheral blood flow velocity reported in a human experimental study.</p>
+            <div class="rc-tags">
+                <span class="rc-tag-pill">Human Study</span>
+                <span class="rc-tag-pill">Level 2 Evidence</span>
+            </div>
+            <div class="rc-link">EXPLORE TECHNOLOGY</div>
+        </div>
+    </a>
+
+    <a href="/SCIENCE/Mechanism.html" class="research-card">
+        <img src="/images/research-cards/HOW FAR INFARE affect ATP.webp" alt="Far infrared radiation influence on mitochondrial ATP production and cellular energy metabolism">
+        <div class="research-card-content">
+            <div class="rc-category orange">
+                <svg viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="10" ry="6"/><path d="M8 14 Q6 18 8 20"/><path d="M16 14 Q18 18 16 20"/><circle cx="12" cy="10" r="2"/></svg>
+                <span>Mitochondria</span>
+            </div>
+            <h3>How Far Infrared May Influence ATP Production</h3>
+            <p>Exploring the relationship between FIR absorption, mitochondrial water layers, and cellular energy metabolism.</p>
+            <div class="rc-tags">
+                <span class="rc-tag-pill">Mechanism Review</span>
+            </div>
+            <div class="rc-link">EXPLORE MECHANISM</div>
+        </div>
+    </a>
+
+    <a href="/SCIENCE/Technology.html" class="research-card">
+        <img src="/images/research-cards/WHY 9.4 Matters.webp" alt="Infrared wavelength spectrum showing why 8-10 micron wavelength matters for biological tissue absorption">
+        <div class="research-card-content">
+            <div class="rc-category blue">
+                <svg viewBox="0 0 24 24"><path d="M3 17h1m16 0h1M5.6 10.6l.7.7m11.4 11.4l.7.7M12 3v1m0 16v1M3 7l1 1m15 15l1 1M8 3l-.7.7m9.4 9.4l.7.7"/><path d="M12 7a5 5 0 100 10 5 5 0 000-10z"/></svg>
+                <span>Biophysics</span>
+            </div>
+            <h3>Why 8ï¿½C14 ï¿½ï¿½m Matters</h3>
+            <p>The wavelength range most readily absorbed by biological tissues and intracellular water.</p>
+            <div class="rc-tags">
+                <span class="rc-tag-pill">Material Science</span>
+            </div>
+            <div class="rc-link">Read Summary</div>
+        </div>
+    </a>
+
+    <a href="/SCIENCE/KNOWLEDGE/Fatigue/why-do-some-people-have-endless-energy.html" class="research-card">
+        <img src="/images/research-cards/Can Celluar Energy affect fatigue.webp" alt="Cellular energy pathways and how mitochondrial efficiency may influence fatigue and recovery">
+        <div class="research-card-content">
+            <div class="rc-category teal">
+                <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 5 21"/><polyline points="17 3 21 7 13 13"/></svg>
+                <span>Recovery</span>
+            </div>
+            <h3>Can Cellular Energy Influence Fatigue?</h3>
+            <p>How mitochondrial efficiency may affect perceived energy, recovery, and resilience.</p>
+            <div class="rc-tags">
+                <span class="rc-tag-pill">Knowledge Hub</span>
+            </div>
+            <div class="rc-link">Read Summary</div>
+        </div>
+    </a>
+
+    <a href="/SCIENCE/KNOWLEDGE/Microcirculation/graphene-fir-microcirculation.html" class="research-card">
+        <img src="/images/research-cards/NITRIC OXIDE.webp" alt="Nitric oxide molecule pathway showing vasodilation effect on microcirculation and blood flow">
+        <div class="research-card-content">
+            <div class="rc-category purple">
+                <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+                <span>Circulation</span>
+            </div>
+            <h3>Nitric Oxide and Vasodilation</h3>
+            <p>The proposed endothelial pathway behind FIR-supported microcirculation.</p>
+            <div class="rc-tags">
+                <span class="rc-tag-pill">Mechanism</span>
+            </div>
+            <div class="rc-link">Read Summary</div>
+        </div>
+    </a>
+
+    <a href="/SCIENCE/Evidence.html" class="research-card">
+        <img src="/images/research-cards/Published Studies.webp" alt="Published scientific research library with clinical studies and evidence on graphene FIR technology">
+        <div class="research-card-content">
+            <div class="rc-category green">
+                <svg viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="12" y2="14"/></svg>
+                <span>Clinical Evidence</span>
+            </div>
+            <h3>Published Studies Library</h3>
+            <p>A growing collection of human, animal, and mechanistic studies related to graphene FIR.</p>
+            <div class="rc-tags">
+                <span class="rc-tag-pill">18+ SCI Papers</span>
+                <span class="rc-tag-pill">8 Clinical Studies</span>
+            </div>
+            <div class="rc-link">Explore Library</div>
+        </div>
+    </a>
+</div>
+
+<div class="view-all-research">
+    <a href="/SCIENCE/Evidence.html">View All Research &rarr;</a>
+</div>
+</section>
+
+<!-- FAQ Section -->
+<section style="background:#FAF8F5; padding:80px 10%;">
+<div style="max-width:860px; margin:0 auto;">
+  <div style="text-align:center; margin-bottom:48px;">
+    <div style="font-family:'Urbanist',sans-serif; font-size:9px; letter-spacing:4px; color:var(--g); text-transform:uppercase; margin-bottom:12px;">FAQ</div>
+    <h2 style="font-family:'Urbanist',sans-serif; font-size:32px; font-weight:300; color:var(--n); letter-spacing:1.5px; margin-bottom:8px;">Frequently Asked Questions</h2>
+  </div>
+
+  <div style="background:#FFF; border:1px solid var(--b); padding:28px 32px; margin-bottom:16px;">
+    <h3 style="font-family:'Urbanist',sans-serif; font-size:18px; font-weight:400; color:var(--t); margin-bottom:12px;">What is the XIHE Knowledge Hub?</h3>
+    <p style="font-size:15px; color:var(--s); line-height:1.8; margin:0;">The XIHE Knowledge Hub is a collection of 11 interconnected topic hubs covering cellular energy, mitochondria, sleep, fatigue, recovery, inflammation, microcirculation, metabolism, graphene far-infrared, healthy aging, and clinical evidence. Each hub contains research-backed articles organized by evidence level.</p>
+  </div>
+
+  <div style="background:#FFF; border:1px solid var(--b); padding:28px 32px; margin-bottom:16px;">
+    <h3 style="font-family:'Urbanist',sans-serif; font-size:18px; font-weight:400; color:var(--t); margin-bottom:12px;">How are the hubs organized?</h3>
+    <p style="font-size:15px; color:var(--s); line-height:1.8; margin:0;">Hubs are organized from foundational science (Cellular Energy, Mitochondria) to applied topics (Sleep, Fatigue, Recovery) to technology and evidence (Graphene FIR, Clinical Evidence). Start with the topic most relevant to your interest.</p>
+  </div>
+
+  <div style="background:#FFF; border:1px solid var(--b); padding:28px 32px;">
+    <h3 style="font-family:'Urbanist',sans-serif; font-size:18px; font-weight:400; color:var(--t); margin-bottom:12px;">What evidence level do the articles use?</h3>
+    <p style="font-size:15px; color:var(--s); line-height:1.8; margin:0;">Articles are classified into four levels: A (Hub Root), B (Mechanism), C (Problem & Symptom), and D (Reflection). Each article includes AI-Citable Statements and citation units for verifiable claims.</p>
+  </div>
+</div>
+</section>
+
 <section class="note">
   <div class="note-box">
     <h2>How to read this hub</h2>
@@ -240,7 +540,7 @@
 </section>
 
 <footer>
-  <p>XIHE Technology â€?A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
+  <p>XIHE Technology ??A Graphene Far-Infrared Medical Technology Platform | Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard | NMPA Class II Medical Device Registered</p>
 </footer>
 </body>
 </html>

@@ -1,0 +1,72 @@
+# XIHE Technology — Graphene Far-Infrared Knowledge Graph
+
+## About
+
+XIHE is a graphene far-infrared technology platform, IKKEM majority-owned (55%),
+lead drafter of China's national standard for graphene electrothermal film.
+NIQS-certified 68% radiant efficiency, 0.88 normal total emissivity, 9.4μm peak wavelength.
+
+## Knowledge Graph
+
+This site contains a structured knowledge graph with 14 interconnected topic hubs
+covering cellular energy, mitochondrial function, sleep, fatigue, recovery,
+inflammation, microcirculation, metabolism, healthy aging, oxidative stress,
+bioenergetics, graphene FIR technology, clinical evidence, and the technology platform.
+
+## Core Pages
+
+- Home: https://www.xgraphene.tech/
+- Science Platform: https://www.xgraphene.tech/SCIENCE/
+- Products: https://www.xgraphene.tech/PRODUCTS/
+- About: https://www.xgraphene.tech/ABOUT/
+- Contact: https://www.xgraphene.tech/CONTACT/
+- News: https://www.xgraphene.tech/NEWS/
+- Partnership: https://www.xgraphene.tech/partnership
+- Applications: https://www.xgraphene.tech/applications
+
+## Knowledge Hubs
+
+- Cellular Energy Hub: https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/cellular-energy/
+- Mitochondria Hub: https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Mitochondria/
+- Graphene FIR Hub: https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/graphene-fir/
+- Sleep Hub: https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Sleep/
+- Fatigue Hub: https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Fatigue/
+- Recovery Hub: https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Recovery/
+- Inflammation Hub: https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Inflammation/
+- Microcirculation Hub: https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Microcirculation/
+- Metabolism Hub: https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Metabolism/
+- Healthy Aging Hub: https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/healthy-aging/
+- Oxidative Stress Hub: https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/oxidative-stress/
+- Bioenergetics Hub: https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/bioenergetics/
+- Clinical Evidence Hub: https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Clinical-Evidence/
+- Technology Platform Hub: https://www.xgraphene.tech/SCIENCE/KNOWLEDGE/Technology-Platform/
+
+## Content Hierarchy
+
+- A-Level: Hub root definition pages (What Is X)
+- B-Level: Mechanism explanation articles (How/Why)
+- C-Level: Entry-level concept clarification (People Also Ask)
+- D-Level: Philosophical reflection and system bridge articles
+
+## Evidence & Credentials
+
+- NIQS Lab Certification: Report (2022)WT-HW-00529
+- 18+ SCI Publications, 40+ Patents
+- NMPA Class II Medical Device Registration
+- Lead Drafter, China Graphene Electrothermal Film Industry Standard
+- Clinical collaborations with 5+ Grade-A tertiary hospitals
+
+## Key Technology Parameters
+
+- Normal Spectral Emissivity: 0.88 (NIQS-tested)
+- Electrothermal Conversion Efficiency: 99.8% / 68% radiant efficiency
+- Peak Wavelength: 9.4μm (within 5–25μm biological resonance band)
+- Thermal Stability: ±0.1°C
+- Operating Lifespan: >10,000 hours continuous operation
+
+## Products
+
+- CABIN (Hyperbaric Oxygen Cabin): https://www.xgraphene.tech/PRODUCTS/
+- CAPSULE (Therapy Capsule): https://www.xgraphene.tech/PRODUCTS/
+- PORTABLES (Portable Devices): https://www.xgraphene.tech/PRODUCTS/
+- FILM (Graphene Film): https://www.xgraphene.tech/PRODUCTS/

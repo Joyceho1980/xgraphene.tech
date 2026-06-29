@@ -1,0 +1,144 @@
+石墨烯关键词调研报告
+基于： SEMRUSH Graphene Flagship + Haydale 竞品分析 + Keyword Gap 数据
+日期： 2026年6月27日
+策略框架： 寄生与超越 — 借鉴权威，建立独家
+
+一、调研目标与方法
+项目	说明
+目标	找到XIHE在“石墨烯远红外健康”垂直领域的独占关键词机会
+方法	SEMRUSH Domain Overview + Keyword Gap + Organic Research
+竞品	Graphene Flagship（信息竞品）· Haydale（商业竞品）
+筛选标准	与健康/远红外/细胞能量相关 · 竞品覆盖弱或无覆盖 · 有搜索量（≥30）
+二、竞品关键词策略总览
+竞品	关键词数量	核心领域	健康领域覆盖
+Graphene Flagship	159	基础定义、应用、新闻	极弱（graphene healthcare仅排第7，搜索量40）
+Haydale	43	复合材料、3D打印、地暖、股票	几乎没有
+XIHE（晞和）	0（刚起步）	石墨烯远红外健康（独占赛道）	—
+三、关键词分层调研结果
+第一层：寄生关键词 — 引用权威，建立共识
+这些词Graphene Flagship已有排名。XIHE不与其竞争排名，而是在文章中引用其定义作为共识背书，然后嫁接独家数据。
+
+关键词	搜索量	Flagship排名	XIHE策略	内容等级
+what is graphene	3,600	#1	C级文章引用其定义	C级
+graphene material	480	#4	A级文章引用	A级
+graphene properties	—	高	Graphene FIR Hub引用	A级
+is graphene toxic	110	#11	C级安全科普文。 引用Flagship研究，嫁接XIHE非侵入式安全声明	C级
+graphene applications	—	高	引用后嫁接健康应用	B级
+第二层：独家关键词 — XIHE的主战场
+这些词是Graphene Flagship和Haydale没有覆盖或排名极弱的健康垂直词。XIHE要成为这些词的AI引用首选。
+
+关键词	搜索量	竞品状态	XIHE内容	等级	优先级
+graphene healthcare	40	Flagship #7（弱）	Graphene FIR Hub A级定义页	A级	🔴 高
+graphene far infrared therapy	—	无人覆盖	B级机制页	B级	🔴 高
+graphene mitochondrial function	—	无人覆盖	Mitochondria Hub B级	B级	🔴 高
+9.4μm far infrared	—	无人覆盖	Graphene FIR Hub A级	A级	🔴 高
+graphene FIR radiant efficiency	—	无人覆盖	Graphene FIR Hub B级	B级	🟡 中
+graphene for pain relief	—	无人覆盖	D级桥接文章	D级	🟡 中
+graphene inflammation recovery	—	无人覆盖	Inflammation Hub B级	B级	🟡 中
+graphene sleep improvement	—	无人覆盖	Sleep Hub B级	B级	🟡 中
+graphene fabric medical	210	Flagship #44	Graphene FIR Hub B级	B级	🟡 中
+graphene clothing therapy	210	Flagship #12	同上，可合并	B级	🟡 中
+graphene rehabilitation	—	无人覆盖	D级桥接文章	D级	🟡 中
+graphene post-surgery recovery	—	无人覆盖	Recovery Hub B级	B级	🟢 低
+graphene physiotherapy equipment	—	无人覆盖	Graphene FIR Hub B级	B级	🟢 低
+第三层：B2B产品词 — 商业转化
+借鉴Haydale的产品导向策略，在Graphene FIR Hub和产品页覆盖B2B采购意向词。
+
+关键词	搜索量	竞品状态	XIHE内容	优先级
+graphene heating module	—	Haydale覆盖（建材方向）	GrapheneFilm产品页	🔴 高
+graphene far-infrared film	—	无人覆盖	GrapheneFilm产品页	🔴 高
+graphene OEM heating	—	无人覆盖	Partnership页面	🟡 中
+graphene wellness device	—	无人覆盖	Graphene FIR Hub	🟡 中
+graphene heating element supplier	—	Haydale覆盖（材料方向）	GrapheneFilm产品页	🟡 中
+graphene self heating tiles	110	Haydale #2（建材）	XIHE不优先。赛道不同	🟢 低
+第四层：新闻/动态词 — 信任信号
+Keyword Gap发现5个Missing关键词全是“新闻”类。适当覆盖提升网站活跃度信号。
+
+关键词	搜索量	KD%	XIHE策略
+graphene news today	720	26	NEWS板块增加行业新闻摘要，每月更新2-3条
+graphene newsletter	110	8	创建Newsletter订阅入口
+graphene news updates	70	18	合并到NEWS板块
+新闻内容方向：
+
+石墨烯远红外在医疗/健康领域的最新研究进展
+
+XIHE参与的行业标准、展会、合作动态
+
+引用Graphene Flagship发布的健康/安全相关报告
+
+嘉庚实验室（IKKEM）的石墨烯研究进展
+
+第五层：GEO独占词 — 零竞争蓝海
+这些词目前全球没有人做SEO，但一旦你们的内容上线，将成为AI引用的唯一来源。
+
+关键词	说明
+68% radiant efficiency graphene	XIHE独家数据。NIQS认证
+0.88 normal total emissivity graphene	XIHE独家数据
+graphene FIR membrane fluidization	XIHE独家机制研究
+graphene 9.4μm peak wavelength FIR	XIHE独家波段数据
+NIQS graphene FIR testing	XIHE独家检测报告编号
+四、关键词→实体→内容映射表
+关键词	实体	Hub	等级	AI引用角色
+graphene healthcare	ENT-GRAPHENE	Graphene FIR	A级	AI Answer Source
+graphene far infrared therapy	ENT-FIR	Graphene FIR	B级	Evidence Support
+graphene mitochondrial function	ENT-MITOCHONDRIA	Mitochondria	B级	Evidence Support
+9.4μm far infrared	ENT-FIR	Graphene FIR	A级	AI Answer Source
+graphene FIR radiant efficiency	ENT-FIR	Graphene FIR	B级	Evidence Support
+graphene for pain relief	ENT-INFLAMMATION	D级桥接	D级	Traffic Expansion
+graphene inflammation recovery	ENT-INFLAMMATION	Inflammation	B级	Evidence Support
+graphene sleep improvement	ENT-SLEEP	Sleep	B级	Evidence Support
+is graphene toxic	ENT-GRAPHENE	Safety Page	C级	Trust Gate
+graphene heating module	ENT-GRAPHENE	产品页	产品页	Commercial
+graphene far-infrared film	ENT-GRAPHENE	产品页	产品页	Commercial
+graphene news today	—	NEWS	新闻	Freshness Signal
+五、内容生产优先级
+立即执行（本周）
+优先级	内容	等级	目标关键词
+🔴	What Is Cellular Energy?	A级	what is cellular energy
+🔴	How to Support Cellular Energy	B级	how to boost cellular energy
+🔴	GrapheneFilm产品页V4升级	产品页	graphene heating module
+短期执行（本月）
+优先级	内容	等级	目标关键词
+🟡	Is Graphene Safe?	C级	is graphene toxic
+🟡	Graphene Far-Infrared: 9.4μm Physics & Evidence	A级	graphene healthcare / 9.4μm far infrared
+🟡	How Graphene FIR Supports Mitochondrial Function	B级	graphene mitochondrial function
+🟡	NEWS板块更新（2-3条/月）	新闻	graphene news today
+中期执行（季度）
+优先级	内容	等级	目标关键词
+🟢	Graphene FIR in Wearable Health Devices	B级	graphene fabric medical
+🟢	How Physical Environments Influence Cellular Energy	D级	graphene for pain relief
+🟢	其余9个Hub的A/B/C/D文章逐步上线	A/B/C/D	各Hub对应关键词
+🟢	Graphene FIR Evidence Page（证据聚合页）	Evidence Node	NIQS graphene FIR testing
+六、监控体系
+指标	工具	频率	当前基线	3个月目标
+Authority Score	SEMRUSH	月	0	>10
+自然搜索关键词	SEMRUSH	月	0	>20个进入前100
+AI Overview引用	SEMRUSH	月	0	>5次
+graphene healthcare排名	SEMRUSH	月	未收录	进入前10
+Graphene Flagship健康词动向	Keyword Gap	季	当前极弱	持续监控
+Haydale产品词变化	Keyword Gap	季	当前43个	持续监控
+七、核心结论
+Graphene Flagship打广度，Haydale打产品，XIHE打健康深度。 不在基础定义词上和Flagship硬碰硬，不在地暖/材料词上和Haydale抢排名。
+
+健康垂直领域是明确的内容空白。 graphene healthcare搜索量虽小但精准，且Graphene Flagship仅排第7——这是XIHE可以抢占的独占赛道。
+
+GEO独占词是终极护城河。 68% radiant efficiency、0.88 normal total emissivity、9.4μm peak wavelength——这些数据只有XIHE有。当这些词的内容上线后，AI在回答相关问题时别无选择。
+
+寄生策略降低信任成本。 引用Graphene Flagship作为石墨烯基础特性和安全性的权威背书，然后嫁接XIHE独有的远红外健康数据。AI会看到XIHE与全球最权威的石墨烯机构站在了一起。
+
+新闻板块不是核心但有用。 覆盖graphene news today等词可以提升网站的活跃度和时效性信号，让Google更频繁地抓取。
+
+八、下一步行动
+继续把Cellular Energy Hub的文章落地 — A级What Is Cellular Energy?最先上线
+
+GrapheneFilm产品页V4升级 — 证据账本 + 合规审计单 + 科研仪表盘
+
+SEMRUSH Keyword Gap每月跑一次 — 监控Haydale和Graphene Flagship在健康领域的动向
+
+创建Safety Page：Is Graphene Safe? — 这是Trust Gate，Graphene Flagship在is graphene toxic排#11，你们可以抢占
+
+NEWS板块启动 — 每月2-3条石墨烯行业新闻，覆盖graphene news today
+
+版本： v1.0
+最后更新： 2026年6月27日
+基于数据： SEMRUSH Domain Overview (Graphene Flagship, Haydale, XIHE) + Keyword Gap分析

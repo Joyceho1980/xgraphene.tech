@@ -1,0 +1,123 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Mitochondria Are Not a Disease</title>
+  <desc id="desc">A split-scene hero illustration showing a person walking in dawn light on the left and a glowing mitochondrial cell scene on the right, representing energy versus disease.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFF6DD"/>
+      <stop offset="55%" stop-color="#F5F1EB"/>
+      <stop offset="100%" stop-color="#E8EEF6"/>
+    </linearGradient>
+    <linearGradient id="dawnGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8D77C" stop-opacity="0.96"/>
+      <stop offset="100%" stop-color="#F8D77C" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="cellBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#18354A"/>
+      <stop offset="100%" stop-color="#0C1B27"/>
+    </linearGradient>
+    <radialGradient id="cellGlow" cx="50%" cy="46%" r="58%">
+      <stop offset="0%" stop-color="#5BB7F1" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#5BB7F1" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="bodyGlow" cx="44%" cy="42%" r="45%">
+      <stop offset="0%" stop-color="#F3C66A" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#F3C66A" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#0A1720" flood-opacity="0.24"/>
+    </filter>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="#F5F1EB"/>
+
+  <g filter="url(#softShadow)">
+    <rect x="70" y="70" width="1460" height="760" rx="34" fill="#FFFFFF"/>
+  </g>
+
+  <clipPath id="clip">
+    <rect x="70" y="70" width="1460" height="760" rx="34"/>
+  </clipPath>
+
+  <g clip-path="url(#clip)">
+    <rect x="70" y="70" width="730" height="760" fill="url(#sky)"/>
+    <rect x="800" y="70" width="730" height="760" fill="url(#cellBg)"/>
+
+    <circle cx="260" cy="170" r="78" fill="url(#dawnGlow)" filter="url(#glow)"/>
+    <circle cx="260" cy="170" r="34" fill="#F4C65A" opacity="0.85"/>
+
+    <path d="M70 640C170 604 255 674 350 642C420 619 486 611 570 634C640 653 695 677 800 645V830H70V640Z" fill="#D6E0EA"/>
+    <path d="M800 638C900 604 985 674 1080 642C1150 619 1216 611 1300 634C1370 653 1425 677 1530 645V830H800V638Z" fill="#0F2433"/>
+
+    <circle cx="525" cy="610" r="130" fill="url(#bodyGlow)"/>
+    <circle cx="1180" cy="412" r="154" fill="url(#cellGlow)"/>
+
+    <g transform="translate(292 190)">
+      <circle cx="0" cy="0" r="20" fill="#1A3348"/>
+      <path d="M0 20V88" stroke="#1A3348" stroke-width="16" stroke-linecap="round"/>
+      <path d="M0 42L-44 82" stroke="#1A3348" stroke-width="16" stroke-linecap="round"/>
+      <path d="M0 46L40 82" stroke="#1A3348" stroke-width="16" stroke-linecap="round"/>
+      <path d="M0 88L-34 155" stroke="#1A3348" stroke-width="16" stroke-linecap="round"/>
+      <path d="M0 88L38 155" stroke="#1A3348" stroke-width="16" stroke-linecap="round"/>
+      <path d="M-44 82C-65 94 -83 103 -98 117" stroke="#1A3348" stroke-width="16" stroke-linecap="round"/>
+      <path d="M40 82C59 94 78 103 94 117" stroke="#1A3348" stroke-width="16" stroke-linecap="round"/>
+      <path d="M-18 60C18 44 48 38 78 38" stroke="#C5A059" stroke-width="5" stroke-linecap="round" stroke-dasharray="1 12"/>
+    </g>
+
+    <path d="M196 590C250 557 310 548 362 570C406 588 452 624 503 631C568 639 629 608 681 586" stroke="#A9BACB" stroke-width="10" stroke-linecap="round" fill="none"/>
+
+    <g transform="translate(1115 280)">
+      <circle cx="0" cy="0" r="146" fill="none" stroke="#5D8FB0" stroke-width="6" opacity="0.55"/>
+      <circle cx="0" cy="0" r="112" fill="none" stroke="#8FC7E8" stroke-width="2.5" stroke-dasharray="4 10" opacity="0.52"/>
+      <ellipse cx="-54" cy="-18" rx="30" ry="18" fill="#C5A059" opacity="0.92"/>
+      <ellipse cx="58" cy="42" rx="30" ry="18" fill="#C5A059" opacity="0.92"/>
+      <ellipse cx="38" cy="-70" rx="30" ry="18" fill="#C5A059" opacity="0.92"/>
+      <ellipse cx="-83" cy="64" rx="30" ry="18" fill="#C5A059" opacity="0.92"/>
+      <path d="M-146 -124C-97 -154 -26 -157 19 -132" stroke="#C5A059" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+      <path d="M-56 -152C11 -183 84 -176 133 -136" stroke="#C5A059" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+      <circle cx="-130" cy="-142" r="7" fill="#C5A059"/>
+      <circle cx="145" cy="-108" r="7" fill="#C5A059"/>
+      <circle cx="116" cy="140" r="7" fill="#C5A059"/>
+      <circle cx="-150" cy="112" r="7" fill="#C5A059"/>
+    </g>
+
+    <g transform="translate(920 505)">
+      <path d="M0 0C34 -21 72 -24 108 -10" stroke="#C5A059" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="1 12"/>
+      <path d="M106 -8L90 0L103 10" fill="none" stroke="#C5A059" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <g transform="translate(1088 604)">
+      <rect x="0" y="0" width="274" height="96" rx="20" fill="rgba(10,23,32,0.32)" stroke="rgba(197,160,89,0.45)"/>
+      <text x="22" y="38" fill="#FFFFFF" font-family="Urbanist, Inter, Arial, sans-serif" font-size="26" font-weight="300" letter-spacing="0.8">
+        Mitochondria Are Not a Disease
+      </text>
+      <text x="22" y="65" fill="#C5A059" font-family="Inter, Arial, sans-serif" font-size="13" letter-spacing="1.1">
+        They are the energy system that makes life possible
+      </text>
+    </g>
+
+    <g transform="translate(142 726)">
+      <text x="0" y="0" fill="#1A3348" font-family="Urbanist, Inter, Arial, sans-serif" font-size="24" font-weight="300" letter-spacing="1">
+        Energy vs Disease
+      </text>
+      <text x="0" y="33" fill="#556476" font-family="Inter, Arial, sans-serif" font-size="14" letter-spacing="0.4">
+        Left: human vitality in the morning light
+      </text>
+    </g>
+
+    <g transform="translate(908 726)">
+      <text x="0" y="0" fill="#FFFFFF" font-family="Urbanist, Inter, Arial, sans-serif" font-size="24" font-weight="300" letter-spacing="1">
+        Cell Energy
+      </text>
+      <text x="0" y="33" fill="#B6C6D5" font-family="Inter, Arial, sans-serif" font-size="14" letter-spacing="0.4">
+        Right: mitochondria inside the body’s energy system
+      </text>
+    </g>
+  </g>
+</svg>

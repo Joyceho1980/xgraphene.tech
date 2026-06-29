@@ -4,19 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News | Company Updates & Industry Research | XIHE</title>
-    <link rel="icon" type="image/svg+xml" href="../PICTURE/XIHE_ICON.svg">
-    <meta name="description" content="XIHE news: company updates, industry developments, and research watch �?the latest from graphene far-infrared technology and cellular energy science.">
+    <link rel="icon" type="image/svg+xml" href="/images/XIHE_ICON.svg">
+    <meta name="description" content="XIHE news: company updates, industry developments, product releases, and research watch — the latest from graphene far-infrared technology and cellular energy science.">
     <link rel="canonical" href="https://www.xgraphene.tech/NEWS/index.html">
     <meta property="og:title" content="News | Company & Industry | XIHE">
-    <meta property="og:description" content="Company updates, industry news, and research watch from XIHE Technology.">
-    <meta property="og:image" content="https://www.xgraphene.tech/PICTURE/xihe-og.jpg">
+    <meta property="og:description" content="Company updates, industry news, product releases, and research watch from XIHE Technology.">
+    <meta property="og:image" content="https://www.xgraphene.tech/images/science-hero.png">
     <meta property="og:url" content="https://www.xgraphene.tech/NEWS/index.html">
     <meta property="og:type" content="website">
-    <link rel="stylesheet" href="../fonts/fonts.css">
+    <link rel="stylesheet" href="/fonts/fonts.css">
     <style>
         :root { --bg: #FAF8F5; --t: #1A1D24; --s: #475569; --m: #94A3B8; --g: #C5A059; --b: #E5E5E7; --n: #1A3348; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * { margin: 0; padding: 0; }
+        img { max-width: 100%; height: auto; }
         body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--t); line-height: 1.8; -webkit-font-smoothing: antialiased; }
+
+        /* Dropdown */
+        .nav-item-dropdown { position: relative; display: inline-flex; align-items: center; }
+        .nav-dropdown-menu {
+            position: absolute; top: 100%; left: 50%;
+            transform: translateX(-50%) translateY(8px);
+            background: #1A3348; border: 1px solid rgba(197,160,89,0.2);
+            border-radius: 8px; padding: 8px 0; min-width: 200px;
+            opacity: 0; visibility: hidden;
+            transition: all 0.25s ease;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3); z-index: 1001;
+        }
+        .nav-item-dropdown:hover .nav-dropdown-menu,
+        .nav-item-dropdown:focus-within .nav-dropdown-menu {
+            opacity: 1; visibility: visible; transform: translateX(-50%) translateY(4px);
+        }
+        .nav-dropdown-menu a {
+            display: block; padding: 10px 24px; font-size: 11px;
+            color: #E0E6ED; text-decoration: none; letter-spacing: 1px;
+            text-transform: uppercase; white-space: nowrap;
+            transition: background 0.2s, color 0.2s;
+        }
+        .nav-dropdown-menu a:hover { background: rgba(197,160,89,0.1); color: #C5A059; }
+        .nav-dropdown-menu a::after { display: none; }
+        .nav-dropdown-trigger { cursor: pointer; }
+        .nav-dropdown-trigger::after { content: ' \25BE'; font-size: 8px; opacity: 0.6; }
+
         nav { position: fixed; top: 0; left: 0; right: 0; height: 70px; background: var(--n); display: flex; align-items: center; justify-content: space-between; padding: 0 10%; z-index: 1000; }
         .nl { display: flex; gap: 28px; align-items: center; }
         .nl a { font-size: 11px; color: #E0E6ED; text-decoration: none; letter-spacing: 1px; text-transform: uppercase; position: relative; padding-bottom: 4px; white-space: nowrap; }
@@ -34,7 +62,6 @@
         .hero p { font-size: 14px; color: rgba(255,255,255,0.65); max-width: 500px; margin: 0 auto; position: relative; }
 
         .inner { max-width: 960px; margin: 0 auto; padding: 0 24px; }
-
         section { padding: 56px 0; }
         section:nth-child(odd) { background: #FFF; }
         section:nth-child(even) { background: var(--bg); }
@@ -42,11 +69,27 @@
         .sec-label { font-family: 'Urbanist', sans-serif; font-size: 10px; letter-spacing: 3px; color: var(--g); text-transform: uppercase; margin-bottom: 8px; }
         .sec-title { font-family: 'Urbanist', sans-serif; font-size: 28px; font-weight: 200; letter-spacing: 2px; margin-bottom: 24px; color: var(--n); }
 
-        .article-list { display: flex; flex-direction: column; gap: 6px; }
-        .article-list a { display: flex; justify-content: space-between; align-items: baseline; padding: 14px 0; border-bottom: 1px solid var(--b); text-decoration: none; transition: all .2s; }
-        .article-list a:hover { border-color: var(--g); }
-        .article-list a .title { font-size: 14px; font-weight: 500; color: var(--t); }
-        .article-list a .meta { font-size: 11px; color: var(--m); white-space: nowrap; margin-left: 16px; }
+        /* Sonka-style card layout */
+        .news-grid { display: flex; flex-direction: column; gap: 20px; }
+        .news-card {
+            display: block; 
+            padding: 24px; 
+            background: #FFF; 
+            border: 1px solid var(--b); 
+            border-radius: 8px; 
+            text-decoration: none; 
+            transition: all 0.2s ease;
+        }
+        .news-card:hover { 
+            border-color: var(--g); 
+            box-shadow: 0 2px 12px rgba(197,160,89,0.08);
+            transform: translateY(-1px);
+        }
+        .news-card .card-date { font-size: 11px; color: var(--m); letter-spacing: 0.5px; margin-bottom: 6px; }
+        .news-card .card-title { font-size: 16px; font-weight: 600; color: var(--t); margin-bottom: 8px; line-height: 1.4; }
+        .news-card .card-excerpt { font-size: 13px; color: var(--s); line-height: 1.6; }
+
+        section:nth-child(even) .news-card { background: #FFF; }
 
         footer { padding: 40px 10%; background: var(--n); text-align: center; border-top: 2px solid var(--g); }
         footer p { font-size: 13px; color: #E0E6ED; }
@@ -54,15 +97,16 @@
         @media (max-width: 600px) {
             nav { padding: 0 5%; } .nl { gap: 10px; overflow-x: auto; } .nl a { font-size: 9px; }
             .hero { padding: 120px 24px 48px; } .hero h1 { font-size: 28px; }
-            .article-list a { flex-direction: column; } .article-list a .meta { margin-left: 0; margin-top: 4px; }
+            .news-card { padding: 16px; }
+            .news-card .card-title { font-size: 14px; }
         }
     </style>
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "WebPage",
-        "name": "XIHE Journal �?Company Updates & Industry Research",
-        "description": "Latest company updates, industry developments, and research from XIHE Technology �?graphene far-infrared innovation, cellular energy science, and precision wellness engineering.",
+        "name": "XIHE Journal — Company Updates & Industry Research",
+        "description": "Latest company updates, industry developments, product releases, and research from XIHE Technology — graphene far-infrared innovation, cellular energy science, and precision wellness engineering.",
         "about": {"@type": "Thing", "name": "Graphene Far-Infrared Technology Research & Industry News"},
         "publisher": {
             "@type": "Organization",
@@ -84,65 +128,139 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {
-  "@type": "ListItem",
-  "position": 1,
-  "name": "Home",
-  "item": "https://www.xgraphene.tech/"
-},
-{
-  "@type": "ListItem",
-  "position": 2,
-  "name": "News",
-  "item": "https://www.xgraphene.tech/NEWS/"
-}
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.xgraphene.tech/" },
+    { "@type": "ListItem", "position": 2, "name": "News", "item": "https://www.xgraphene.tech/NEWS/" }
   ]
 }
 </script>
 </head>
 <body>
 <nav>
-    <a href="/"><img src="../PICTURE/XIHE_LOGO_DARK.svg" alt="XIHE" style="height:44px;width:auto;"></a>
+    <a href="/"><img src="/images/XIHE_LOGO_DARK.svg" alt="XIHE" style="height:44px;width:auto;"></a>
     <div class="nl">
-        <a href="/">Home</a><a href="../ABOUT/AboutOrigin.html">About</a><a href="../SCIENCE/Landing.html">Science</a><a href="../applications.html">Applications</a><a href="../PRODUCTS/ProductPage.html">Products</a><a href="../partnership.html">Partnership</a><a href="/" class="active">News</a><a href="../CONTACT/index.html">Contact</a>
+        <a href="/">Home</a><a href="../ABOUT/AboutOrigin.html">About</a><div class="nav-item-dropdown">
+            <a href="/SCIENCE/Landing.html" class="nav-dropdown-trigger">Science</a>
+            <div class="nav-dropdown-menu">
+                <a href="/SCIENCE/Landing.html">Science Overview</a>
+                <a href="/SCIENCE/Mechanism.html">Mechanism</a>
+                <a href="/SCIENCE/Technology.html">Technology</a>
+                <a href="/SCIENCE/Evidence.html">Evidence</a>
+                <a href="/SCIENCE/KNOWLEDGE/">Knowledge Hub</a>
+            </div>
+        </div><a href="../applications.html">Applications</a><div class="nav-item-dropdown">
+            <a href="/PRODUCTS/ProductPage.html" class="nav-dropdown-trigger">Products</a>
+            <div class="nav-dropdown-menu">
+                <a href="/PRODUCTS/CAPSULE/capsule-b2b.html">CAPSULE — Full Body Photon Chamber</a>
+                <a href="/PRODUCTS/CABIN/cabin.html">CABIN — Modular Resonance Chamber</a>
+                <a href="/PRODUCTS/FILM/GrapheneFilm.html">Graphene Film — Heating Module</a>
+                <a href="/PRODUCTS/PORTABLES/NeuralResilience.html">Neural Resilience — Wearable</a>
+                <a href="/PRODUCTS/PORTABLES/VisceralVitality.html">Visceral Vitality — Waist Pad</a>
+                <a href="/PRODUCTS/PORTABLES/DeepRecovery.html">Deep Recovery — Lumbar Belt</a>
+                <a href="/technology/xihe-fir-film-performance.html" style="font-size:10px;opacity:0.7;">— FIR Film Performance Data</a>
+            </div>
+        </div><a href="../partnership.html">Partnership</a><div class="nav-item-dropdown">
+            <a href="../NEWS/index.html" class="active nav-dropdown-trigger">News</a>
+            <div class="nav-dropdown-menu">
+                <a href="../NEWS/index.html">All News</a>
+                <a href="../NEWS/index.html#company">Company News</a>
+                <a href="../NEWS/index.html#industry">Industry News</a>
+                <a href="../NEWS/index.html#product">Product News</a>
+            </div>
+        </div><a href="../CONTACT/index.html">Contact</a>
         <a href="tel:0086-18688683865" class="np">+86 186 8868 3865</a>
     </div>
 </nav>
 
 <header class="hero">
     <div class="hero-tag">News &amp; Updates</div>
-    <h1>Company. Industry. Research.<br><span>What's happening in graphene far-infrared</span></h1>
-    <p>XIHE milestones, industry developments, and research worth watching.</p>
+    <h1>Company. Industry. Products.<br><span>What's happening in graphene far-infrared</span></h1>
+    <p>XIHE milestones, industry developments, product releases, and research worth watching.</p>
 </header>
 
-<section>
+<section id="company">
 <div class="inner">
     <div class="sec-label">&#127970; Company</div>
-    <h2 class="sec-title">Company Updates</h2>
-    <div class="article-list">
-        <a href="Company-Updates/zheng-nanfeng-neuropsychiatric-research.html"><span class="title">Academician Zheng Nanfeng Launches Neuropsychiatric Research Initiative</span><span class="meta">Jun 2026</span></a>
-        <a href="Company-Updates/graphene-thermal-clinical-research-ethics-approval.html"><span class="title">Graphene Thermal Therapy Receives Clinical Research Ethics Approval</span><span class="meta">2026</span></a>
-        <a href="Company-Updates/ikkem-partnership.html"><span class="title">XIHE &amp; IKKEM Deepen Joint-Equity Collaboration</span><span class="meta">Apr 2026</span></a>
-        <a href="Company-Updates/neural-helmet.html"><span class="title">Introducing Neural Helmet: Cognitive Resonance Platform</span><span class="meta">Mar 2026</span></a>
-        <a href="Company-Updates/national-standard.html"><span class="title">XIHE Leads Graphene Electrothermal Film Industry Standard</span><span class="meta">Jan 2025</span></a>
-        <a href="Company-Updates/novoselov-cas-foreign-member.html"><span class="title">Konstantin Novoselov Elected Foreign Member of CAS</span><span class="meta">Nov 2023</span></a>
+    <h2 class="sec-title">Graphene Company News</h2>
+    <div class="news-grid">
+        <a href="Company-Updates/anta-graphene-heated-apparel.html" class="news-card">
+            <div class="card-date">December 1, 2019</div>
+            <div class="card-title">XIHE Supplies Graphene FIR Modules for Anta's Heated Apparel — 560K Units Delivered</div>
+            <div class="card-excerpt">Landmark commercial deployment: XIHE's graphene far-infrared modules power 560,000 Anta heated jackets, validating mass production capability and safety at scale.</div>
+        </a>
+        <a href="Company-Updates/zheng-nanfeng-neuropsychiatric-research.html" class="news-card">
+            <div class="card-date">June 3, 2026</div>
+            <div class="card-title">Academician Zheng Nanfeng Launches Neuropsychiatric Research Initiative</div>
+            <div class="card-excerpt">Professor Zheng Nanfeng, lead scientist and XIHE's founding advisor, initiates a neuropsychiatric research program exploring graphene FIR applications in cognitive and mental health.</div>
+        </a>
+        <a href="Company-Updates/graphene-thermal-clinical-research-ethics-approval.html" class="news-card">
+            <div class="card-date">December 15, 2025</div>
+            <div class="card-title">Graphene Thermal Therapy Receives Clinical Research Ethics Approval</div>
+            <div class="card-excerpt">A landmark clinical trial evaluating graphene thermal therapy for musculoskeletal conditions receives full ethics committee approval, paving the way for clinical-grade validation.</div>
+        </a>
+        <a href="Company-Updates/ikkem-partnership.html" class="news-card">
+            <div class="card-date">April 28, 2026</div>
+            <div class="card-title">XIHE & IKKEM Deepen Joint-Equity Collaboration</div>
+            <div class="card-excerpt">XIHE and Jiageng Innovation Laboratory (IKKEM) strengthen their partnership, with IKKEM holding 55% equity to accelerate graphene FIR technology from laboratory research to industrial deployment.</div>
+        </a>
+        <a href="Company-Updates/neural-helmet.html" class="news-card">
+            <div class="card-date">March 15, 2026</div>
+            <div class="card-title">Introducing Neural Helmet: Cognitive Resonance Platform</div>
+            <div class="card-excerpt">XIHE unveils the Neural Helmet, a cognitive resonance platform combining graphene FIR emitters with neurostimulation for focus, recovery, and cognitive resilience.</div>
+        </a>
+        <a href="Company-Updates/national-standard.html" class="news-card">
+            <div class="card-date">January 15, 2025</div>
+            <div class="card-title">XIHE Leads Graphene Electrothermal Film Industry Standard</div>
+            <div class="card-excerpt">XIHE is appointed lead drafter of China's graphene electrothermal film industry standard (2024-0923T-YB), setting the benchmark for performance, safety, and testing methodology.</div>
+        </a>
+        <a href="Company-Updates/novoselov-cas-foreign-member.html" class="news-card">
+            <div class="card-date">November 23, 2023</div>
+            <div class="card-title">Konstantin Novoselov Elected Foreign Member of CAS</div>
+            <div class="card-excerpt">Nobel laureate and graphene pioneer Sir Konstantin Novoselov is elected foreign member of the Chinese Academy of Sciences, recognizing his foundational contributions to graphene science.</div>
+        </a>
     </div>
 </div>
 </section>
 
-<section>
+<section id="industry">
 <div class="inner">
-    <div class="sec-label">&#127758; Industry</div>
-    <h2 class="sec-title">Industry News</h2>
-    <div class="article-list">
-        <a href="Industry-News/rise-of-non-pharmacological-healthcare.html"><span class="title">The Rise of Non-Pharmacological Healthcare: From Auxiliary to Core</span><span class="meta">Jun 2026</span></a>
-        <a href="Industry-News/graphene-national-strategic-material.html"><span class="title">Graphene Listed as National Strategic Material</span><span class="meta">Jun 2026</span></a>
+    <div class="sec-label">&#127758; Graphene Industry</div>
+    <h2 class="sec-title">Industry News on Graphene</h2>
+    <div class="news-grid">
+        <a href="Industry-News/prokop-2026-bidirectional-graphene-neural-interface.html" class="news-card">
+            <div class="card-date">May 28, 2026</div>
+            <div class="card-title">Graphene News: Bidirectional Neural Interface Breakthrough — Prokop et al. 2026</div>
+            <div class="card-excerpt">Nature Communications publishes a landmark graphene neural interface that simultaneously records and stimulates brain activity on a single chip. 4,900+ accesses since publication.</div>
+        </a>
+        <a href="Industry-News/rise-of-non-pharmacological-healthcare.html" class="news-card">
+            <div class="card-date">June 5, 2026</div>
+            <div class="card-title">The Rise of Non-Pharmacological Healthcare: From Auxiliary to Core</div>
+            <div class="card-excerpt">Non-pharmacological interventions are shifting from complementary status to mainstream clinical practice, driven by efficacy data, safety profiles, and growing demand for drug-free options.</div>
+        </a>
+        <a href="Industry-News/graphene-national-strategic-material.html" class="news-card">
+            <div class="card-date">June 5, 2026</div>
+            <div class="card-title">Graphene Listed as National Strategic Material</div>
+            <div class="card-excerpt">Graphene is officially designated as a national strategic material, accelerating R&D funding, infrastructure investment, and cross-sector adoption across healthcare, energy, and electronics.</div>
+        </a>
+    </div>
+</div>
+</section>
+
+<section id="product">
+<div class="inner">
+    <div class="sec-label">&#128161; Product</div>
+    <h2 class="sec-title">Product News &amp; Launches</h2>
+    <div class="news-grid">
+        <a href="Product-News/xihe-CABIN-standard-module-release.html" class="news-card">
+            <div class="card-date">June 29, 2026</div>
+            <div class="card-title">CABIN Energy Chamber Enters Standard Module Production</div>
+            <div class="card-excerpt">XIHE's CABIN — the Modular Resonance Chamber — enters standardised production with verified 0.88 NIQS emissivity, precision 9.4μm wavelength targeting, and a modular architecture for clinical integration.</div>
+        </a>
     </div>
 </div>
 </section>
 
 <footer>
-    <p>XIHE Technology �?Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard 2024-0923T-YB</p>
+    <p>XIHE Technology — Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard 2024-0923T-YB</p>
 </footer>
 </body>
 </html>
