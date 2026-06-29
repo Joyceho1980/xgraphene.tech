@@ -46,6 +46,14 @@
         .hero h1 { font-family: 'Urbanist', sans-serif; font-size: 36px; font-weight: 200; color: #FFF; letter-spacing: 2px; position: relative; }
         .back-link { display: inline-block; margin-top: 24px; font-size: 12px; color: rgba(255,255,255,0.5); text-decoration: none; position: relative; }
         .back-link:hover { color: var(--g); }
+
+        .hero-banner { position: relative; width: 100%; max-width: 100%; overflow: hidden; margin: 0; padding: 0; height: 280px; }
+        .hero-banner img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+        .hero-banner .banner-overlay { position: absolute; bottom: 20px; left: 24px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+        .hero-banner .banner-overlay .cat-label { font-size: 10px; color: rgba(255,255,255,0.5); letter-spacing: 2px; text-transform: uppercase; margin-right: 4px; }
+        .hero-banner .banner-overlay .cat-link { font-size: 11px; color: rgba(255,255,255,0.85); text-decoration: none; padding: 4px 14px; border: 1px solid rgba(255,255,255,0.25); border-radius: 20px; letter-spacing: 0.5px; backdrop-filter: blur(4px); transition: all 0.2s; }
+        .hero-banner .banner-overlay .cat-link:hover { border-color: #C5A059; color: #C5A059; }
+        .hero-banner .banner-overlay .cat-link.active { color: #FFF; border-color: #C5A059; background: rgba(197,160,89,0.85); }
         .inner { max-width: 780px; margin: 0 auto; padding: 0 24px; }
         section { padding: 48px 0; }
         .card-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 6px; margin-bottom: 14px; background: #E8ECF1; }
@@ -143,12 +151,20 @@
     </div>
 </nav>
 
-<header class="hero">
-    <div class="hero-tag">Company News</div>
-    <div class="hero-breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/NEWS/">NEWS</a> &rsaquo; <span>Company News</span></div>
-    <h1>XIHE Company Updates</h1>
-    <a href="/NEWS/" class="back-link">&larr; Back to All News</a>
-</header>
+<div class="hero-banner" style="position:relative; width:100%; overflow:hidden; margin:0; padding:0;">
+    <img src="/images/hero/company-news-hero.png" alt="XIHE Company News — Milestones, Partnerships & Corporate Updates" style="width:100%; height:auto; display:block;">
+    <div style="position:absolute; bottom:24px; left:24px; right:24px;">
+        <div style="font-size:12px; color:rgba(255,255,255,0.5); margin-bottom:10px; text-shadow:0 1px 6px rgba(0,0,0,0.6);"><a href="/" style="color:rgba(255,255,255,0.5); text-decoration:none;">Home</a> &rsaquo; <a href="/NEWS/" style="color:rgba(255,255,255,0.5); text-decoration:none;">NEWS</a> &rsaquo; <span style="color:#C5A059;">Company News</span></div>
+        <h1 style="font-family:'Urbanist',sans-serif; font-size:36px; font-weight:200; color:#FFF; letter-spacing:2px; margin:0 0 10px 0; text-shadow:0 2px 12px rgba(0,0,0,0.5);">XIHE Company Updates</h1>
+        <a href="/NEWS/" style="display:inline-block; font-size:12px; color:rgba(255,255,255,0.6); text-decoration:none; margin-bottom:14px; text-shadow:0 1px 6px rgba(0,0,0,0.6);">&larr; Back to All News</a>
+        <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+            <span style="font-size:10px; color:rgba(255,255,255,0.5); letter-spacing:2px; text-transform:uppercase; margin-right:4px;">Category:</span>
+            <a href="../index.html#company" style="font-size:11px; color:#FFF; text-decoration:none; padding:4px 14px; border:1px solid #C5A059; background:rgba(197,160,89,0.85); border-radius:20px; letter-spacing:0.5px; backdrop-filter:blur(4px);">Company News</a>
+            <a href="../index.html#industry" style="font-size:11px; color:rgba(255,255,255,0.85); text-decoration:none; padding:4px 14px; border:1px solid rgba(255,255,255,0.25); border-radius:20px; letter-spacing:0.5px; backdrop-filter:blur(4px); transition:all 0.2s;">Industry News</a>
+            <a href="../index.html#product" style="font-size:11px; color:rgba(255,255,255,0.85); text-decoration:none; padding:4px 14px; border:1px solid rgba(255,255,255,0.25); border-radius:20px; letter-spacing:0.5px; backdrop-filter:blur(4px); transition:all 0.2s;">Product News</a>
+        </div>
+    </div>
+</div>
 
 <section>
 <div class="inner">
@@ -226,15 +242,6 @@
 
     </div>
 </div>
-
-        <nav class="pagination" style="text-align:center; padding:24px 0 48px;">
-            <a href="#" style="display:inline-block; padding:8px 14px; margin:0 4px; border:1px solid #E5E5E7; border-radius:4px; font-size:13px; color:#94A3B8; text-decoration:none;" onclick="return false;">&laquo; PREV</a>
-            <a href="#" style="display:inline-block; padding:8px 14px; margin:0 4px; border:1px solid #C5A059; border-radius:4px; font-size:13px; color:#FFF; background:#C5A059; text-decoration:none;" onclick="return false;">1</a>
-            <span style="font-size:13px; color:#94A3B8; margin:0 6px;">2</span>
-            <span style="font-size:13px; color:#94A3B8; margin:0 6px;">...</span>
-            <a href="#" style="display:inline-block; padding:8px 14px; margin:0 4px; border:1px solid #E5E5E7; border-radius:4px; font-size:13px; color:#94A3B8; text-decoration:none;" onclick="return false;">NEXT &raquo;</a>
-        </nav>
-    </div>
 </section>
 
 <footer>
