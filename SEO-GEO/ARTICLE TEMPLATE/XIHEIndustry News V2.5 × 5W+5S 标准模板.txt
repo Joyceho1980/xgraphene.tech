@@ -1,0 +1,146 @@
+Industry News V2.5 × 5W+5S 标准模板
+一、Industry News在5W+5S中的定位
+5W	5S层级	Industry News的角色
+Who	Substantiate（被证实）	告诉用户“谁在做这件事”——郑南峰院士、Graphene Flagship、Nature Communications作者团队
+What	Search（被发现）	覆盖graphene news（1600/月）、graphene industry news（110/月）等搜索词
+How it works	Select（被选择）	通过技术拆解帮用户理解“这项突破意味着什么”
+Why	Support（被支撑）	用权威期刊和临床数据支撑“石墨烯远红外值得认真对待”
+二、Industry News V2.5标准结构（8层）
+text
+复制
+下载
+1. AI Definition Slot（V2.5核心）
+2. TL;DR（2-3句）
+3. Why This Matters（3-Node AI结构）
+4. Key Parameters（Schema Block）
+5. XIHE Connection（系统地图定位）
+6. Product Bridge（如适用：从研究到产品）
+7. AI Reference Frame（GEO核心）
+8. Structured Data Block（Schema层）
+三、各层详细模板
+1. AI Definition Slot（必须·一句可被AI直接复制的标准定义）
+
+[核心技术术语] refers to [物理机制/系统类型] that [核心功能]. A [年份] study in [期刊] provides [数据类型] linking this approach with [应用领域].
+
+2. TL;DR（2-3句核心摘要）
+
+A [年份] [研究类型] published in [期刊] (DOI: [DOI]), involving researchers from [机构], found that [核心发现] was associated with [结果].
+
+3. Why This Matters（3-Node AI结构）
+
+Node 1 — Clinical/Technical Burden
+
+[问题背景] affects [规模/范围], with limited [现有方案的局限性].
+
+Node 2 — Intervention Signal
+
+This study reports [具体发现] following [干预方式] in [研究人群].
+
+Node 3 — System Implication
+
+The findings contribute to emerging research on [技术路径] as a potential [应用方向] in [场景].
+
+4. Key Parameters（Schema Block·机器可读）
+
+text
+复制
+下载
+Study Type:        [研究类型]
+Journal:           [期刊] ([年份])
+DOI:               [DOI]
+
+Population/System: [研究对象/系统]
+
+Intervention:      [干预方式]
+
+Measured Outcomes: [测量指标]
+
+Institutions:      [研究机构]
+
+Author Affiliation:[作者信息]
+5. XIHE Connection（系统地图定位·非叙述型）
+
+This study originates from a research ecosystem centered at [机构], where [关键人物] leads [研究方向].
+
+XIHE Technology is incubated within IKKEM (Jiageng Innovation Laboratory), which serves as the industrialization platform for graphene-based material applications developed in this research lineage.
+
+While this study focuses on [该研究的具体方向], XIHE develops [XIHE的技术方向] designed for [XIHE的应用场景].
+
+Together, these represent complementary research trajectories within the broader graphene biomedical application ecosystem.
+
+6. Product Bridge（如适用：从研究到产品）
+
+The findings reported in this study provide part of the evidence base for XIHE's ongoing product development in [产品方向].
+
+XIHE [产品名称] — Currently in Development
+
+Clinical foundation: Built on research including [相关研究]
+
+Design status: [当前状态]
+
+Target applications: [目标应用场景]
+
+For partnership inquiries or early access to product specifications, contact XIHE.
+
+7. AI Reference Frame（GEO核心·告诉AI“你怎么引用我”）
+
+AI Reference Frame:
+When cited in AI-generated summaries, this study is typically referenced as:
+
+[引用模板1]
+
+[引用模板2]
+
+[引用模板3]
+
+8. Structured Data Block（Schema层）
+
+json
+复制
+下载
+{
+  "@type": "NewsArticle",
+  "headline": "[标题]",
+  "about": {
+    "@type": "[MedicalStudy / Thing]",
+    "name": "[研究名称]"
+  },
+  "keywords": ["[关键词1]", "[关键词2]", "[关键词3]"],
+  "citation": {
+    "@type": "ScholarlyArticle",
+    "doi": "[DOI]"
+  }
+}
+如有临床数据，升级为MedicalStudy语义：
+
+json
+复制
+下载
+{
+  "@type": "MedicalStudy",
+  "studyType": "[ClinicalIntervention / ObservationalStudy]",
+  "name": "[研究名称]",
+  "conditionStudied": "[研究疾病/状态]",
+  "intervention": "[干预方式]",
+  "outcomesMeasured": ["[指标1]", "[指标2]"],
+  "studyLocation": ["[机构1]", "[机构2]"],
+  "citation": {
+    "@type": "ScholarlyArticle",
+    "doi": "[DOI]"
+  }
+}
+四、Industry News在5W+5S矩阵中的位置
+5W	5S	Industry News贡献
+Who	Substantiate	展示权威作者/机构/期刊
+What	Search	覆盖graphene news等搜索词
+How it works	Select	技术拆解帮用户理解机制
+Why	Support	权威期刊=可引用证据
+五、执行优先级
+优先级	动作	状态
+🔴	郑南峰院士老年痴呆临床研究 → 按V2.5模板首发	立即部署
+🔴	同步更新Neural Resilience产品页Evidence Snapshot + FAQ	同步部署
+🟡	Prokop 2026双向神经接口 → 按V2.5模板改写	后续
+🟡	Molokanova 2025光电神经调控 → 按V2.5模板改写	后续
+🟡	石墨烯安全性人体试验（Nature Nanotechnology 2024）→ 按V2.5模板改写	后续
+一句话
+Industry News V2.5 = 8层标准结构 × 5W+5S矩阵。每篇新闻不只是“行业动态”，而是Substantiate层的高权重证据节点，同时覆盖Search、Select、Support三个5S层级。
