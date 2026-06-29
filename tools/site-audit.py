@@ -936,11 +936,11 @@ def file_to_prod_url(html_file, rewrites):
     # WEBSITE/pages/ files -> use Vercel rewrites in reverse
     if rel.startswith("WEBSITE/pages/"):
         url_part = rel[len("WEBSITE/pages/"):]
-        # Remove index.html for directory-style URLs
+        # Only strip /index.html (directory index), not xxx-index.html (named files)
         if url_part.endswith("/index.html"):
-            url_part = url_part[:-10]  # Remove "index.html", keep trailing /
-        elif url_part.endswith("index.html"):
-            url_part = url_part[:-10]
+            url_part = url_part[:-11]  # Remove "index.html", keep trailing /
+        elif url_part == "index.html":
+            url_part = ""
         url_path = "/" + url_part
 
         # Verify this URL is reachable via a Vercel rewrite
