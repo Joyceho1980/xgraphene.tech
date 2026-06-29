@@ -66,6 +66,10 @@
         .card-accent.industry { background: #5a9e9f; }
         .card-accent.company { background: #C5A059; }
         .card-accent.product { background: #5a7e9f; }
+        
+        .pagination { margin-top: 8px; }
+        .pagination a:hover { border-color: #C5A059; color: #1A3348; }
+
         footer { padding: 40px 10%; background: var(--n); text-align: center; border-top: 2px solid var(--g); }
         footer p { font-size: 13px; color: #E0E6ED; }
         @media (max-width: 600px) {
@@ -135,6 +139,15 @@
     </div>
 </div>
 </section>
+
+        <nav class="pagination" style="text-align:center; padding:24px 0 48px;">
+            <a href="#" style="display:inline-block; padding:8px 14px; margin:0 4px; border:1px solid #E5E5E7; border-radius:4px; font-size:13px; color:#94A3B8; text-decoration:none;" onclick="return false;">&laquo; PREV</a>
+            <a href="#" style="display:inline-block; padding:8px 14px; margin:0 4px; border:1px solid #C5A059; border-radius:4px; font-size:13px; color:#FFF; background:#C5A059; text-decoration:none;" onclick="return false;">1</a>
+            <span style="font-size:13px; color:#94A3B8; margin:0 6px;">2</span>
+            <span style="font-size:13px; color:#94A3B8; margin:0 6px;">...</span>
+            <a href="#" style="display:inline-block; padding:8px 14px; margin:0 4px; border:1px solid #E5E5E7; border-radius:4px; font-size:13px; color:#94A3B8; text-decoration:none;" onclick="return false;">NEXT &raquo;</a>
+        </nav>
+
 
 <footer>
     <p>XIHE Technology — Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard 2024-0923T-YB</p>
