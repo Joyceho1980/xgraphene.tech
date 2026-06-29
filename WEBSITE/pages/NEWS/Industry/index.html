@@ -55,29 +55,8 @@
 
         .card-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 6px; margin-bottom: 14px; background: #E8ECF1; }
         .news-grid { display: flex; flex-direction: column; gap: 24px; }
-        .news-card { background: #FFF; border: 1px solid var(--b); border-radius: 8px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.04); transition: all 0.2s ease; }
-        .news-card:hover { border-color: var(--g); box-shadow: 0 2px 12px rgba(197,160,89,0.08); }
-        .news-card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; flex-wrap: wrap; }
-        .news-tag { display: inline-block; padding: 2px 10px; border-radius: 4px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
-        .news-tag.industry { background: #e8f4f5; color: #5a9e9f; }
-        .news-date { font-size: 12px; color: #999; }
-        .news-card h3 { font-size: 18px; margin: 0 0 8px; color: var(--t); line-height: 1.4; font-weight: 600; }
-        .news-card h3 a { text-decoration: none; color: inherit; }
-        .news-card h3 a:hover { color: var(--g); }
-        .news-card .card-excerpt { font-size: 14px; color: var(--s); line-height: 1.6; margin: 0 0 12px; }
-        .news-card .read-more { font-size: 13px; color: var(--g); text-decoration: none; font-weight: 600; }
-        .news-card .read-more:hover { text-decoration: underline; }
-        .card-accent { width: 4px; min-height: 80px; border-radius: 2px; flex-shrink: 0; }
-        .card-accent.industry { background: #5a9e9f; }
-        .card-accent.company { background: #C5A059; }
-        .card-accent.product { background: #5a7e9f; }
-
         
-        .pagination { margin-top: 8px; }
-        .pagination a:hover { border-color: #C5A059; color: #1A3348; }
-
-        footer { padding: 40px 10%; background: var(--n); text-align: center; border-top: 2px solid var(--g); }
-        footer p { font-size: 13px; color: #E0E6ED; }
+        
 
         @media (max-width: 600px) {
             nav { padding: 0 5%; } .nl { gap: 10px; overflow-x: auto; } .nl a { font-size: 9px; }
@@ -88,30 +67,7 @@
         .hero-breadcrumb span { color: #C5A059; }
 
         .hero { padding: 32px 24px 40px; } .hero h1 { font-size: 26px; }
-            .news-card { padding: 16px; }
-        }
-    </style>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        "name": "Graphene Industry News",
-        "description": "Graphene far-infrared industry breakthroughs, scientific publications, market trends, and regulatory developments.",
-        "about": {"@type": "Thing", "name": "Graphene Far-Infrared Technology Industry News"},
-        "publisher": {
-            "@type": "Organization",
-            "name": "XIHE Technology",
-            "parentOrganization": {"@type": "ResearchOrganization", "name": "Jiageng Innovation Laboratory (IKKEM)"}
-        },
-        "mainEntity": {
-            "@type": "ItemList",
-            "itemListElement": [
-                {"@type": "ListItem", "position": 1, "url": "https://www.xgraphene.tech/NEWS/Industry-News/prokop-2026-bidirectional-graphene-neural-interface.html"},
-                {"@type": "ListItem", "position": 2, "url": "https://www.xgraphene.tech/NEWS/Industry-News/rise-of-non-pharmacological-healthcare.html"},
-                {"@type": "ListItem", "position": 3, "url": "https://www.xgraphene.tech/NEWS/Industry-News/graphene-national-strategic-material.html"}
-            ]
-        }
-    }
+            
     </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C7YSVFRQ6R"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-C7YSVFRQ6R");</script>
@@ -138,27 +94,37 @@
 <section>
 <div class="inner">
     <div class="news-grid">
-        <article class="news-card">
-            <img src="/images/hero/news-hero.png" class="card-img" alt="" loading="lazy">
-            <div class="news-card-header"><span class="news-tag industry">Industry News</span><span class="news-date">2026.05.28</span></div>
-            <h3><a href="/NEWS/Industry-News/prokop-2026-bidirectional-graphene-neural-interface.html">Bidirectional Graphene Neural Interface Breakthrough — Prokop et al. 2026</a></h3>
-            <p class="card-excerpt">Nature Communications publishes a landmark graphene neural interface that simultaneously records and stimulates brain activity on a single chip. 4,900+ accesses since publication.</p>
-            <a href="/NEWS/Industry-News/prokop-2026-bidirectional-graphene-neural-interface.html" class="read-more">Read More &rarr;</a>
-                </article>
-        <article class="news-card">
-            <img src="/images/hero/news-hero.png" class="card-img" alt="" loading="lazy">
-            <div class="news-card-header"><span class="news-tag industry">Industry News</span><span class="news-date">2026.06.05</span></div>
-            <h3><a href="/NEWS/Industry-News/rise-of-non-pharmacological-healthcare.html">The Rise of Non-Pharmacological Healthcare: From Auxiliary to Core</a></h3>
-            <p class="card-excerpt">Non-pharmacological interventions are shifting from complementary status to mainstream clinical practice, driven by efficacy data, safety profiles, and growing demand for drug-free options.</p>
-            <a href="/NEWS/Industry-News/rise-of-non-pharmacological-healthcare.html" class="read-more">Read More &rarr;</a>
-                </article>
-        <article class="news-card">
-            <img src="/images/hero/news-hero.png" class="card-img" alt="" loading="lazy">
-            <div class="news-card-header"><span class="news-tag industry">Industry News</span><span class="news-date">2026.06.05</span></div>
-            <h3><a href="/NEWS/Industry-News/graphene-national-strategic-material.html">Graphene Listed as National Strategic Material</a></h3>
-            <p class="card-excerpt">Graphene is officially designated as a national strategic material, accelerating R&amp;D funding, infrastructure investment, and cross-sector adoption across healthcare, energy, and electronics.</p>
-            <a href="/NEWS/Industry-News/graphene-national-strategic-material.html" class="read-more">Read More &rarr;</a>
-                </article>
+<a href="/NEWS/Industry-News/prokop-2026-bidirectional-graphene-neural-interface.html" class="card">
+<div class="card-arrow">&rarr;</div>
+<div class="card-icon" style="background:linear-gradient(135deg, #e8f4f5 0%, #e8f4f588 100%);"><span style="font-family:'Urbanist',sans-serif; font-size:24px; font-weight:200; color:#5a9e9f;">IN</span></div>
+<div class="card-body">
+<h3>Bidirectional Graphene Neural Interface Breakthrough — Prokop et al. 2026 <span class="tag live">NEW</span></h3>
+<p>Nature Communications publishes landmark graphene neural interface that simultaneously records and stimulates brain activity on a single chip.</p>
+<div class="card-links"><b>2026.05.28</b> &middot; Industry News</div>
+</div>
+<img class="card-img" src="/images/hero/news-hero.png" alt="Bidirectional Graphene Neural Interface Breakthrough — Prokop et al. 2026" loading="lazy">
+</a>
+<a href="/NEWS/Industry-News/rise-of-non-pharmacological-healthcare.html" class="card">
+<div class="card-arrow">&rarr;</div>
+<div class="card-icon" style="background:linear-gradient(135deg, #e8f4f5 0%, #e8f4f588 100%);"><span style="font-family:'Urbanist',sans-serif; font-size:24px; font-weight:200; color:#5a9e9f;">IN</span></div>
+<div class="card-body">
+<h3>The Rise of Non-Pharmacological Healthcare: From Auxiliary to Core <span class="tag live">NEW</span></h3>
+<p>Non-pharmacological interventions shifting from complementary to mainstream clinical practice, driven by efficacy data and safety profiles.</p>
+<div class="card-links"><b>2026.06.05</b> &middot; Industry News</div>
+</div>
+<img class="card-img" src="/images/hero/news-hero.png" alt="The Rise of Non-Pharmacological Healthcare: From Auxiliary to Core" loading="lazy">
+</a>
+<a href="/NEWS/Industry-News/graphene-national-strategic-material.html" class="card">
+<div class="card-arrow">&rarr;</div>
+<div class="card-icon" style="background:linear-gradient(135deg, #e8f4f5 0%, #e8f4f588 100%);"><span style="font-family:'Urbanist',sans-serif; font-size:24px; font-weight:200; color:#5a9e9f;">IN</span></div>
+<div class="card-body">
+<h3>Graphene Listed as National Strategic Material <span class="tag live">NEW</span></h3>
+<p>Graphene officially designated as national strategic material, accelerating R&D funding and cross-sector adoption.</p>
+<div class="card-links"><b>2026.06.05</b> &middot; Industry News</div>
+</div>
+<img class="card-img" src="/images/hero/news-hero.png" alt="Graphene Listed as National Strategic Material" loading="lazy">
+</a>
+
     </div>
 </div>
 </section>
