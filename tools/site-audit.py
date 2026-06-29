@@ -28,6 +28,23 @@ REQUIRED_OG = ["og:title", "og:description", "og:image", "og:url", "og:type"]
 REQUIRED_TWITTER = ["twitter:card", "twitter:title", "twitter:description"]
 
 # ── Helpers ─────────────────────────────────────────────
+def load_rewrites():
+    """Parse vercel.json rewrites into a list of (source_pattern, destination)."""
+    rewrites = []
+    if not VERCEL_CONFIG.exists():
+        return rewrites
+    try:
+        with open(VERCEL_CONFIG, "r", encoding="utf-8") as f:
+            config = json.load(f)
+        for r in config.get("rewrites", []):
+            src = r["source"]
+            dst = r["destination"]
+            rewrites.append((src, dst))
+    except Exception:
+        pass
+    return rewrites
+
+
 def load_redirects():
     """Parse vercel.json redirects into a lookup dict."""
     redirects = {}
@@ -43,6 +60,65 @@ def load_redirects():
     except Exception:
         pass
     return redirects
+
+
+def match_vercel_rewrite(url_path, rewrites):
+    """Check if a URL path matches any Vercel rewrite rule.
+    Returns True if the rewrite destination exists on filesystem."""
+    for src, dst in rewrites:
+        pattern = src.lstrip("/")
+        # Protect :path* placeholder from re.escape
+        pattern = pattern.replace(":path*", "___STAR___")
+        pattern = re.escape(pattern)
+        pattern = pattern.replace("___STAR___", r"(.+)")
+        pattern = f"^{pattern}$"
+
+        url_clean = url_path.lstrip("/")
+        m = re.match(pattern, url_clean)
+        if not m:
+            continue
+
+        # Build destination path by substituting captured group
+        captured = m.group(1) if m.groups() else ""
+        dst_clean = dst.lstrip("/").replace(":path*", captured).rstrip("/")
+
+        # Check if resolved path exists on filesystem
+        fs_path = SITE_ROOT / dst_clean
+        if fs_path.is_file():
+            return True
+        if fs_path.is_dir() and (fs_path / "index.html").is_file():
+            return True
+        if not fs_path.suffix:
+            html_path = fs_path.with_suffix(".html")
+            if html_path.is_file():
+                return True
+
+    return False
+
+
+def check_doctype(html_path):
+    """Check for DOCTYPE issues: missing, duplicate, or malformed.
+    Returns list of issue strings."""
+    issues = []
+    try:
+        with open(html_path, "r", encoding="utf-8", errors="ignore") as f:
+            content = f.read()
+        lines = content.split("\n")
+        doctype_lines = []
+        for i, line in enumerate(lines[:5]):  # Check first 5 lines only
+            stripped = line.strip()
+            if stripped.lower().startswith("<!doctype"):
+                doctype_lines.append((i + 1, stripped))
+
+        if not doctype_lines:
+            issues.append("Missing <!DOCTYPE html>")
+        elif len(doctype_lines) > 1:
+            issues.append(f"Duplicate DOCTYPE on lines {', '.join(str(n) for n, _ in doctype_lines)} (causes quirks mode)")
+        elif doctype_lines[0][1] != "<!DOCTYPE html>":
+            issues.append(f"Non-standard DOCTYPE: {doctype_lines[0][1]}")
+    except Exception:
+        pass
+    return issues
 
 def find_html_files():
     """Yield all .html files, skipping excluded dirs."""
@@ -146,26 +222,44 @@ def resolve_path(html_file, link):
 
     return resolved
 
-def check_file_exists(resolved_path, link):
-    """Check if resolved path points to an existing file or directory (with index.html)."""
+def check_file_exists(resolved_path, link, rewrites=None):
+    """Check if resolved path points to an existing file or directory (with index.html).
+    Also checks Vercel rewrite rules for paths that don't exist directly on filesystem.
+    Returns (exists: bool, through_rewrite: bool)"""
     if resolved_path is None:
-        return True  # anchors, etc. are fine
+        return True, False  # anchors, etc. are fine
 
     # Exact file match
     if resolved_path.is_file():
-        return True
+        return True, False
 
     # Directory with index.html
     if resolved_path.is_dir() and (resolved_path / "index.html").is_file():
-        return True
+        return True, False
 
     # Check with .html appended
     if not resolved_path.suffix:
         html_path = resolved_path.with_suffix(".html")
         if html_path.is_file():
-            return True
+            return True, False
 
-    return False
+    # Check Vercel rewrite rules — convert filesystem path back to URL path
+    if rewrites and resolved_path:
+        try:
+            url_path = "/" + str(resolved_path.relative_to(SITE_ROOT)).replace("\\", "/")
+        except ValueError:
+            url_path = None
+
+        # Also try the original link interpreted as an absolute URL path
+        link_url = link
+        if link_url and not link_url.startswith("/") and not link_url.startswith("http"):
+            link_url = "/" + link_url
+
+        for test_path in [url_path, link_url]:
+            if test_path and match_vercel_rewrite(test_path, rewrites):
+                return True, True
+
+    return False, False
 
 def check_meta_tags(html_path):
     """Check SEO meta tags presence."""
@@ -239,17 +333,40 @@ def check_canonical_redirects(html_path, redirects):
 # ── Main Scan ───────────────────────────────────────────
 def run_audit(check_external=False, lighthouse=False):
     redirects = load_redirects()
+    rewrites = load_rewrites()
     html_files = list(find_html_files())
 
     print(f"\n{'='*60}")
     print(f"  XIHE Webmaster Audit Tool")
     print(f"  Site: {BASE_URL}")
     print(f"  Files: {len(html_files)} HTML pages")
+    print(f"  Rewrites: {len(rewrites)} in vercel.json")
     print(f"  Redirects: {len(redirects)} in vercel.json")
     print(f"{'='*60}\n")
 
+    # ── 0. DOCTYPE Health ──
+    print("─ [0/7] Checking DOCTYPE declarations...")
+    doctype_issues = {}
+    for html_file in html_files:
+        issues = check_doctype(html_file)
+        if issues:
+            rel = html_file.relative_to(SITE_ROOT)
+            doctype_issues[str(rel)] = issues
+
+    if doctype_issues:
+        dup_count = sum(1 for v in doctype_issues.values() if any("Duplicate" in i for i in v))
+        miss_count = sum(1 for v in doctype_issues.values() if any("Missing" in i for i in v))
+        print(f"   [ISSUE] {len(doctype_issues)} pages: {dup_count} duplicate, {miss_count} missing")
+        for page, issues in sorted(doctype_issues.items()):
+            print(f"      {page}:")
+            for i in issues:
+                print(f"         [{i}]")
+    else:
+        print(f"   [OK] All DOCTYPE declarations valid")
+    doctype_count = len(doctype_issues)
+
     # ── 1. Broken Internal Links ──
-    print("─ [1/6] Scanning internal links...")
+    print("\n─ [1/7] Scanning internal links...")
     broken_internal = []
     internal_count = 0
 
@@ -260,25 +377,29 @@ def run_audit(check_external=False, lighthouse=False):
                 continue
             internal_count += 1
             resolved = resolve_path(html_file, url)
-            if resolved is not None and not check_file_exists(resolved, url):
-                rel_path = html_file.relative_to(SITE_ROOT)
-                broken_internal.append({
-                    "source": str(rel_path),
-                    "type": link_type,
-                    "url": url,
-                    "resolved_to": str(resolved)
-                })
+            if resolved is not None:
+                exists, via_rewrite = check_file_exists(resolved, url, rewrites)
+                if not exists:
+                    rel_path = html_file.relative_to(SITE_ROOT)
+                    broken_internal.append({
+                        "source": str(rel_path),
+                        "type": link_type,
+                        "url": url,
+                        "resolved_to": str(resolved)
+                    })
 
     print(f"   Internal links checked: {internal_count}")
     if broken_internal:
         print(f"   [BROKEN] Broken internal links: {len(broken_internal)}")
-        for b in broken_internal:
+        for b in broken_internal[:30]:  # Show first 30, not all 5000
             print(f"      {b['source']} → {b['url']} (type: {b['type']})")
+        if len(broken_internal) > 30:
+            print(f"      ... and {len(broken_internal) - 30} more")
     else:
         print(f"   [OK] No broken internal links")
 
     # ── 2. SEO Baseline ──
-    print("\n─ [2/6] Checking SEO essentials...")
+    print("\n─ [2/7] Checking SEO essentials...")
     seo_issues = {}
     checked = 0
     for html_file in html_files:
@@ -302,7 +423,7 @@ def run_audit(check_external=False, lighthouse=False):
         print(f"   [OK] All pages have essential SEO tags")
 
     # ── 3. Canonical Health ──
-    print("\n─ [3/6] Checking canonical URLs...")
+    print("\n─ [3/7] Checking canonical URLs...")
     canonical_issues = {}
     for html_file in html_files:
         issues = check_canonical_redirects(html_file, redirects)
@@ -320,7 +441,7 @@ def run_audit(check_external=False, lighthouse=False):
         print(f"   [OK] No canonical redirect issues")
 
     # ── 4. Sitemap Consistency ──
-    print("\n─ [4/6] Checking sitemap consistency...")
+    print("\n─ [4/7] Checking sitemap consistency...")
     sitemap_issues = []
     if SITEMAP_FILE.exists():
         with open(SITEMAP_FILE, "r", encoding="utf-8") as f:
@@ -356,7 +477,7 @@ def run_audit(check_external=False, lighthouse=False):
         print(f"   [WARN]  No sitemap.xml found")
 
     # ── 5. External Links ──
-    print("\n─ [5/6] Checking external links...")
+    print("\n─ [5/7] Checking external links...")
     if check_external:
         external_links = {}
         for html_file in html_files:
@@ -404,7 +525,7 @@ def run_audit(check_external=False, lighthouse=False):
         print(f"   (Use --check-external to verify HTTP status)")
 
     # ── 6. GEO & Readability ──
-    print("\n─ [6/6] GEO & Readability analysis...")
+    print("\n─ [6/7] GEO & Readability analysis...")
     geo_results = {}
     # Analyze key pages only (not every KB article, skip admin/redirect pages)
     key_pages = [
@@ -465,6 +586,7 @@ def run_audit(check_external=False, lighthouse=False):
     print(f"  AUDIT SUMMARY")
     print(f"{'='*60}")
     print(f"  Pages scanned:         {len(html_files)}")
+    print(f"  DOCTYPE issues:        {doctype_count}")
     print(f"  Internal links:        {internal_count}")
     print(f"  Broken internal:       {len(broken_internal)}")
     print(f"  SEO issues (pages):    {len(seo_issues)}")
