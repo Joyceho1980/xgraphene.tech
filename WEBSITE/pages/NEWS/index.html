@@ -72,22 +72,33 @@
         /* Sonka-style card layout */
         .news-grid { display: flex; flex-direction: column; gap: 20px; }
         .news-card {
-            display: block; 
-            padding: 24px; 
-            background: #FFF; 
-            border: 1px solid var(--b); 
-            border-radius: 8px; 
-            text-decoration: none; 
+            background: #FFF;
+            border: 1px solid var(--b);
+            border-radius: 8px;
+            padding: 24px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
             transition: all 0.2s ease;
         }
-        .news-card:hover { 
-            border-color: var(--g); 
+        .news-card:hover {
+            border-color: var(--g);
             box-shadow: 0 2px 12px rgba(197,160,89,0.08);
-            transform: translateY(-1px);
         }
-        .news-card .card-date { font-size: 11px; color: var(--m); letter-spacing: 0.5px; margin-bottom: 6px; }
-        .news-card .card-title { font-size: 16px; font-weight: 600; color: var(--t); margin-bottom: 8px; line-height: 1.4; }
-        .news-card .card-excerpt { font-size: 13px; color: var(--s); line-height: 1.6; }
+        .news-card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; }
+        .news-tag {
+            display: inline-block; padding: 2px 10px; border-radius: 4px;
+            font-size: 11px; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .news-tag.industry { background: #e8f4f5; color: #5a9e9f; }
+        .news-tag.company { background: #f5efe0; color: #8b7a4a; }
+        .news-tag.product { background: #e8edf5; color: #5a7e9f; }
+        .news-date { font-size: 12px; color: #999; }
+        .news-card h3 { font-size: 18px; margin: 0 0 8px; color: var(--t); line-height: 1.4; font-weight: 600; }
+        .news-card h3 a { text-decoration: none; color: inherit; }
+        .news-card h3 a:hover { color: var(--g); }
+        .news-card .card-excerpt { font-size: 14px; color: var(--s); line-height: 1.6; margin: 0 0 12px; }
+        .news-card .read-more { font-size: 13px; color: var(--g); text-decoration: none; font-weight: 600; }
+        .news-card .read-more:hover { text-decoration: underline; }
 
         section:nth-child(even) .news-card { background: #FFF; }
 
@@ -205,87 +216,98 @@
 </div>
 </section>
 
-<section id="company">
-<div class="inner">
-    <div class="sec-label">&#127970; Company</div>
-    <h2 class="sec-title">Graphene Company News</h2>
-    <div class="news-grid">
-        <a href="Company-Updates/anta-graphene-heated-apparel.html" class="news-card">
-            <div class="card-date">December 1, 2019</div>
-            <div class="card-title">XIHE Supplies Graphene FIR Modules for Anta's Heated Apparel — 560K Units Delivered</div>
-            <div class="card-excerpt">Landmark commercial deployment: XIHE's graphene far-infrared modules power 560,000 Anta heated jackets, validating mass production capability and safety at scale.</div>
-        </a>
-        <a href="Company-Updates/zheng-nanfeng-neuropsychiatric-research.html" class="news-card">
-            <div class="card-date">June 3, 2026</div>
-            <div class="card-title">Academician Zheng Nanfeng Launches Neuropsychiatric Research Initiative</div>
-            <div class="card-excerpt">Professor Zheng Nanfeng, lead scientist and XIHE's founding advisor, initiates a neuropsychiatric research program exploring graphene FIR applications in cognitive and mental health.</div>
-        </a>
-        <a href="Company-Updates/graphene-thermal-clinical-research-ethics-approval.html" class="news-card">
-            <div class="card-date">December 15, 2025</div>
-            <div class="card-title">Graphene Thermal Therapy Receives Clinical Research Ethics Approval</div>
-            <div class="card-excerpt">A landmark clinical trial evaluating graphene thermal therapy for musculoskeletal conditions receives full ethics committee approval, paving the way for clinical-grade validation.</div>
-        </a>
-        <a href="Company-Updates/ikkem-partnership.html" class="news-card">
-            <div class="card-date">April 28, 2026</div>
-            <div class="card-title">XIHE & IKKEM Deepen Joint-Equity Collaboration</div>
-            <div class="card-excerpt">XIHE and Jiageng Innovation Laboratory (IKKEM) strengthen their partnership, with IKKEM holding 55% equity to accelerate graphene FIR technology from laboratory research to industrial deployment.</div>
-        </a>
-        <a href="Company-Updates/neural-helmet.html" class="news-card">
-            <div class="card-date">March 15, 2026</div>
-            <div class="card-title">Introducing Neural Helmet: Cognitive Resonance Platform</div>
-            <div class="card-excerpt">XIHE unveils the Neural Helmet, a cognitive resonance platform combining graphene FIR emitters with neurostimulation for focus, recovery, and cognitive resilience.</div>
-        </a>
-        <a href="Company-Updates/national-standard.html" class="news-card">
-            <div class="card-date">January 15, 2025</div>
-            <div class="card-title">XIHE Leads Graphene Electrothermal Film Industry Standard</div>
-            <div class="card-excerpt">XIHE is appointed lead drafter of China's graphene electrothermal film industry standard (2024-0923T-YB), setting the benchmark for performance, safety, and testing methodology.</div>
-        </a>
-        <a href="Company-Updates/novoselov-cas-foreign-member.html" class="news-card">
-            <div class="card-date">November 23, 2023</div>
-            <div class="card-title">Konstantin Novoselov Elected Foreign Member of CAS</div>
-            <div class="card-excerpt">Nobel laureate and graphene pioneer Sir Konstantin Novoselov is elected foreign member of the Chinese Academy of Sciences, recognizing his foundational contributions to graphene science.</div>
-        </a>
-    </div>
-</div>
-</section>
+	<section id="company">
+	<div class="inner">
+	    <div class="sec-label">&#127970; Company</div>
+	    <h2 class="sec-title">Graphene Company News</h2>
+	    <div class="news-grid">
+	        <article class="news-card">
+	            <div class="news-card-header"><span class="news-tag company">Company News</span><span class="news-date">2019.12.01</span></div>
+	            <h3><a href="Company-Updates/anta-graphene-heated-apparel.html">XIHE Supplies Graphene FIR Modules for Anta's Heated Apparel — 560K Units Delivered</a></h3>
+	            <p class="card-excerpt">Landmark commercial deployment: XIHE's graphene far-infrared modules power 560,000 Anta heated jackets, validating mass production capability and safety at scale.</p>
+	            <a href="Company-Updates/anta-graphene-heated-apparel.html" class="read-more">Read More &rarr;</a>
+	        </article>
+	        <article class="news-card">
+	            <div class="news-card-header"><span class="news-tag company">Company News</span><span class="news-date">2026.06.03</span></div>
+	            <h3><a href="Company-Updates/zheng-nanfeng-neuropsychiatric-research.html">Academician Zheng Nanfeng Launches Neuropsychiatric Research Initiative</a></h3>
+	            <p class="card-excerpt">Professor Zheng Nanfeng, lead scientist and XIHE's founding advisor, initiates a neuropsychiatric research program exploring graphene FIR applications in cognitive and mental health.</p>
+	            <a href="Company-Updates/zheng-nanfeng-neuropsychiatric-research.html" class="read-more">Read More &rarr;</a>
+	        </article>
+	        <article class="news-card">
+	            <div class="news-card-header"><span class="news-tag company">Company News</span><span class="news-date">2025.12.15</span></div>
+	            <h3><a href="Company-Updates/graphene-thermal-clinical-research-ethics-approval.html">Graphene Thermal Therapy Receives Clinical Research Ethics Approval</a></h3>
+	            <p class="card-excerpt">A landmark clinical trial evaluating graphene thermal therapy for musculoskeletal conditions receives full ethics committee approval, paving the way for clinical-grade validation.</p>
+	            <a href="Company-Updates/graphene-thermal-clinical-research-ethics-approval.html" class="read-more">Read More &rarr;</a>
+	        </article>
+	        <article class="news-card">
+	            <div class="news-card-header"><span class="news-tag company">Company News</span><span class="news-date">2026.04.28</span></div>
+	            <h3><a href="Company-Updates/ikkem-partnership.html">XIHE &amp; IKKEM Deepen Joint-Equity Collaboration</a></h3>
+	            <p class="card-excerpt">XIHE and Jiageng Innovation Laboratory (IKKEM) strengthen their partnership, with IKKEM holding 55% equity to accelerate graphene FIR technology from laboratory research to industrial deployment.</p>
+	            <a href="Company-Updates/ikkem-partnership.html" class="read-more">Read More &rarr;</a>
+	        </article>
+	        <article class="news-card">
+	            <div class="news-card-header"><span class="news-tag company">Company News</span><span class="news-date">2026.03.15</span></div>
+	            <h3><a href="Company-Updates/neural-helmet.html">Introducing Neural Helmet: Cognitive Resonance Platform</a></h3>
+	            <p class="card-excerpt">XIHE unveils the Neural Helmet, a cognitive resonance platform combining graphene FIR emitters with neurostimulation for focus, recovery, and cognitive resilience.</p>
+	            <a href="Company-Updates/neural-helmet.html" class="read-more">Read More &rarr;</a>
+	        </article>
+	        <article class="news-card">
+	            <div class="news-card-header"><span class="news-tag company">Company News</span><span class="news-date">2025.01.15</span></div>
+	            <h3><a href="Company-Updates/national-standard.html">XIHE Leads Graphene Electrothermal Film Industry Standard</a></h3>
+	            <p class="card-excerpt">XIHE is appointed lead drafter of China's graphene electrothermal film industry standard (2024-0923T-YB), setting the benchmark for performance, safety, and testing methodology.</p>
+	            <a href="Company-Updates/national-standard.html" class="read-more">Read More &rarr;</a>
+	        </article>
+	        <article class="news-card">
+	            <div class="news-card-header"><span class="news-tag company">Company News</span><span class="news-date">2023.11.23</span></div>
+	            <h3><a href="Company-Updates/novoselov-cas-foreign-member.html">Konstantin Novoselov Elected Foreign Member of CAS</a></h3>
+	            <p class="card-excerpt">Nobel laureate and graphene pioneer Sir Konstantin Novoselov is elected foreign member of the Chinese Academy of Sciences, recognizing his foundational contributions to graphene science.</p>
+	            <a href="Company-Updates/novoselov-cas-foreign-member.html" class="read-more">Read More &rarr;</a>
+	        </article>
+	    </div>
+	</div>
+	</section>
 
-<section id="industry">
-<div class="inner">
-    <div class="sec-label">&#127758; Graphene Industry</div>
-    <h2 class="sec-title">Industry News on Graphene</h2>
-    <div class="news-grid">
-        <a href="Industry-News/prokop-2026-bidirectional-graphene-neural-interface.html" class="news-card">
-            <div class="card-date">May 28, 2026</div>
-            <div class="card-title">Graphene News: Bidirectional Neural Interface Breakthrough — Prokop et al. 2026</div>
-            <div class="card-excerpt">Nature Communications publishes a landmark graphene neural interface that simultaneously records and stimulates brain activity on a single chip. 4,900+ accesses since publication.</div>
-        </a>
-        <a href="Industry-News/rise-of-non-pharmacological-healthcare.html" class="news-card">
-            <div class="card-date">June 5, 2026</div>
-            <div class="card-title">The Rise of Non-Pharmacological Healthcare: From Auxiliary to Core</div>
-            <div class="card-excerpt">Non-pharmacological interventions are shifting from complementary status to mainstream clinical practice, driven by efficacy data, safety profiles, and growing demand for drug-free options.</div>
-        </a>
-        <a href="Industry-News/graphene-national-strategic-material.html" class="news-card">
-            <div class="card-date">June 5, 2026</div>
-            <div class="card-title">Graphene Listed as National Strategic Material</div>
-            <div class="card-excerpt">Graphene is officially designated as a national strategic material, accelerating R&D funding, infrastructure investment, and cross-sector adoption across healthcare, energy, and electronics.</div>
-        </a>
-    </div>
-</div>
-</section>
+	<section id="industry">
+	<div class="inner">
+	    <div class="sec-label">&#127758; Graphene Industry</div>
+	    <h2 class="sec-title">Industry News on Graphene</h2>
+	    <div class="news-grid">
+	        <article class="news-card">
+	            <div class="news-card-header"><span class="news-tag industry">Industry News</span><span class="news-date">2026.05.28</span></div>
+	            <h3><a href="Industry-News/prokop-2026-bidirectional-graphene-neural-interface.html">Bidirectional Graphene Neural Interface Breakthrough — Prokop et al. 2026</a></h3>
+	            <p class="card-excerpt">Nature Communications publishes a landmark graphene neural interface that simultaneously records and stimulates brain activity on a single chip. 4,900+ accesses since publication.</p>
+	            <a href="Industry-News/prokop-2026-bidirectional-graphene-neural-interface.html" class="read-more">Read More &rarr;</a>
+	        </article>
+	        <article class="news-card">
+	            <div class="news-card-header"><span class="news-tag industry">Industry News</span><span class="news-date">2026.06.05</span></div>
+	            <h3><a href="Industry-News/rise-of-non-pharmacological-healthcare.html">The Rise of Non-Pharmacological Healthcare: From Auxiliary to Core</a></h3>
+	            <p class="card-excerpt">Non-pharmacological interventions are shifting from complementary status to mainstream clinical practice, driven by efficacy data, safety profiles, and growing demand for drug-free options.</p>
+	            <a href="Industry-News/rise-of-non-pharmacological-healthcare.html" class="read-more">Read More &rarr;</a>
+	        </article>
+	        <article class="news-card">
+	            <div class="news-card-header"><span class="news-tag industry">Industry News</span><span class="news-date">2026.06.05</span></div>
+	            <h3><a href="Industry-News/graphene-national-strategic-material.html">Graphene Listed as National Strategic Material</a></h3>
+	            <p class="card-excerpt">Graphene is officially designated as a national strategic material, accelerating R&amp;D funding, infrastructure investment, and cross-sector adoption across healthcare, energy, and electronics.</p>
+	            <a href="Industry-News/graphene-national-strategic-material.html" class="read-more">Read More &rarr;</a>
+	        </article>
+	    </div>
+	</div>
+	</section>
 
-<section id="product">
-<div class="inner">
-    <div class="sec-label">&#128161; Product</div>
-    <h2 class="sec-title">Product News &amp; Launches</h2>
-    <div class="news-grid">
-        <a href="Product-News/xihe-CABIN-standard-module-release.html" class="news-card">
-            <div class="card-date">June 29, 2026</div>
-            <div class="card-title">CABIN Energy Chamber Enters Standard Module Production</div>
-            <div class="card-excerpt">XIHE's CABIN — the Modular Resonance Chamber — enters standardised production with verified 0.88 NIQS emissivity, precision 9.4μm wavelength targeting, and a modular architecture for clinical integration.</div>
-        </a>
-    </div>
-</div>
-</section>
+	<section id="product">
+	<div class="inner">
+	    <div class="sec-label">&#128161; Product</div>
+	    <h2 class="sec-title">Product News &amp; Launches</h2>
+	    <div class="news-grid">
+	        <article class="news-card">
+	            <div class="news-card-header"><span class="news-tag product">Product News</span><span class="news-date">2026.06.29</span></div>
+	            <h3><a href="Product-News/xihe-CABIN-standard-module-release.html">CABIN Energy Chamber Enters Standard Module Production</a></h3>
+	            <p class="card-excerpt">XIHE's CABIN — the Modular Resonance Chamber — enters standardised production with verified 0.88 NIQS emissivity, precision 9.4&mu;m wavelength targeting, and a modular architecture for clinical integration.</p>
+	            <a href="Product-News/xihe-CABIN-standard-module-release.html" class="read-more">Read More &rarr;</a>
+	        </article>
+	    </div>
+	</div>
+	</section>
 
 <footer>
     <p>XIHE Technology — Powered by Jiageng Innovation Laboratory (IKKEM) | Lead Drafter, China Graphene Electrothermal Film Industry Standard 2024-0923T-YB</p>
