@@ -35,12 +35,12 @@
         .np { font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px; color: var(--g); text-decoration: none; padding: 6px 14px; border: 1px solid rgba(197,160,89,.3); border-radius: 50px; transition: all .3s; white-space: nowrap; font-weight: 500; }
         .np:hover { background: var(--g); color: var(--n); }
 
-        .breadcrumb { padding: 90px 10% 0; font-size: 12px; color: #94A3B8; }
-        .breadcrumb a { color: #94A3B8; text-decoration: none; }
-        .breadcrumb a:hover { color: #C5A059; }
-        .breadcrumb span { color: #C5A059; }
+        .hero-breadcrumb { font-size: 12px; color: rgba(255,255,255,0.4); margin-bottom: 20px; position: relative; }
+        .hero-breadcrumb a { color: rgba(255,255,255,0.4); text-decoration: none; }
+        .hero-breadcrumb a:hover { color: #C5A059; }
+        .hero-breadcrumb span { color: #C5A059; }
 
-        .hero { padding: 40px 24px 48px; text-align: center; background: linear-gradient(180deg, #1A3348 0%, #233F5A 100%); position: relative; }
+        .hero { padding: 120px 24px 48px; text-align: center; background: linear-gradient(180deg, #1A3348 0%, #233F5A 100%); position: relative; }
         .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(ellipse at 50% 80%, rgba(197,160,89,0.06) 0%, transparent 60%); pointer-events: none; }
         .hero-tag { font-family: 'Urbanist', sans-serif; font-size: 10px; letter-spacing: 5px; color: var(--g); text-transform: uppercase; margin-bottom: 16px; position: relative; }
         .hero h1 { font-family: 'Urbanist', sans-serif; font-size: 36px; font-weight: 200; color: #FFF; letter-spacing: 2px; position: relative; }
@@ -48,10 +48,10 @@
         .back-link:hover { color: var(--g); }
         .inner { max-width: 780px; margin: 0 auto; padding: 0 24px; }
         section { padding: 48px 0; }
-        .news-grid { display: flex; flex-direction: column; gap: 20px; }
+        .news-grid { display: flex; flex-direction: column; gap: 16px; }
         .news-card { background: #FFF; border: 1px solid var(--b); border-radius: 8px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.04); transition: all 0.2s ease; }
         .news-card:hover { border-color: var(--g); box-shadow: 0 2px 12px rgba(197,160,89,0.08); }
-        .news-card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; }
+        .news-card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; flex-wrap: wrap; }
         .news-tag { display: inline-block; padding: 2px 10px; border-radius: 4px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
         .news-tag.product { background: #e8edf5; color: #5a7e9f; }
         .news-date { font-size: 12px; color: #999; }
@@ -61,15 +61,20 @@
         .news-card .card-excerpt { font-size: 14px; color: var(--s); line-height: 1.6; margin: 0 0 12px; }
         .news-card .read-more { font-size: 13px; color: var(--g); text-decoration: none; font-weight: 600; }
         .news-card .read-more:hover { text-decoration: underline; }
+        .card-accent { width: 4px; min-height: 80px; border-radius: 2px; flex-shrink: 0; }
+        .card-accent.industry { background: #5a9e9f; }
+        .card-accent.company { background: #C5A059; }
+        .card-accent.product { background: #5a7e9f; }
+        .card-content { flex: 1; min-width: 0; }
         footer { padding: 40px 10%; background: var(--n); text-align: center; border-top: 2px solid var(--g); }
         footer p { font-size: 13px; color: #E0E6ED; }
         @media (max-width: 600px) {
             nav { padding: 0 5%; } .nl { gap: 10px; overflow-x: auto; } .nl a { font-size: 9px; }
     
-        .breadcrumb { padding: 90px 10% 0; font-size: 12px; color: #94A3B8; }
-        .breadcrumb a { color: #94A3B8; text-decoration: none; }
-        .breadcrumb a:hover { color: #C5A059; }
-        .breadcrumb span { color: #C5A059; }
+        .hero-breadcrumb { font-size: 12px; color: rgba(255,255,255,0.4); margin-bottom: 20px; position: relative; }
+        .hero-breadcrumb a { color: rgba(255,255,255,0.4); text-decoration: none; }
+        .hero-breadcrumb a:hover { color: #C5A059; }
+        .hero-breadcrumb span { color: #C5A059; }
 
         .hero { padding: 32px 24px 40px; } .hero h1 { font-size: 26px; }
             .news-card { padding: 16px; }
@@ -110,10 +115,9 @@
     </div>
 </nav>
 
-<div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/NEWS/">NEWS</a> &rsaquo; <span>Product News</span></div>
-
 <header class="hero">
     <div class="hero-tag">Product News</div>
+    <div class="hero-breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/NEWS/">NEWS</a> &rsaquo; <span>Product News</span></div>
     <h1>XIHE Product Updates</h1>
     <a href="/NEWS/" class="back-link">&larr; Back to All News</a>
 </header>
@@ -122,10 +126,13 @@
 <div class="inner">
     <div class="news-grid">
         <article class="news-card">
+            <div class="card-accent product"></div>
+            <div class="card-content">
             <div class="news-card-header"><span class="news-tag product">Product News</span><span class="news-date">2026.06.29</span></div>
             <h3><a href="/NEWS/Product-News/xihe-CABIN-standard-module-release.html">CABIN Energy Chamber Enters Standard Module Production</a></h3>
             <p class="card-excerpt">XIHE's CABIN — the Modular Resonance Chamber — enters standardised production with verified 0.88 NIQS emissivity, precision 9.4&mu;m wavelength targeting, and a modular architecture for clinical integration.</p>
             <a href="/NEWS/Product-News/xihe-CABIN-standard-module-release.html" class="read-more">Read More &rarr;</a>
+        </div>
         </article>
     </div>
 </div>
