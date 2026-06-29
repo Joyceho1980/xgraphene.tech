@@ -37,7 +37,13 @@
         .np { font-family: 'Urbanist', sans-serif; font-size: 11px; letter-spacing: 1px; color: var(--g); text-decoration: none; padding: 6px 14px; border: 1px solid rgba(197,160,89,.3); border-radius: 50px; transition: all .3s; white-space: nowrap; font-weight: 500; }
         .np:hover { background: var(--g); color: var(--n); }
 
-        .hero { padding: 120px 24px 48px; text-align: center; background: linear-gradient(180deg, #1A3348 0%, #233F5A 100%); position: relative; }
+
+        .breadcrumb { padding: 90px 10% 0; font-size: 12px; color: #94A3B8; }
+        .breadcrumb a { color: #94A3B8; text-decoration: none; }
+        .breadcrumb a:hover { color: #C5A059; }
+        .breadcrumb span { color: #C5A059; }
+
+        .hero { padding: 40px 24px 48px; text-align: center; background: linear-gradient(180deg, #1A3348 0%, #233F5A 100%); position: relative; }
         .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: radial-gradient(ellipse at 50% 80%, rgba(197,160,89,0.06) 0%, transparent 60%); pointer-events: none; }
         .hero-tag { font-family: 'Urbanist', sans-serif; font-size: 10px; letter-spacing: 5px; color: var(--g); text-transform: uppercase; margin-bottom: 16px; position: relative; }
         .hero h1 { font-family: 'Urbanist', sans-serif; font-size: 36px; font-weight: 200; color: #FFF; letter-spacing: 2px; position: relative; }
@@ -66,7 +72,13 @@
 
         @media (max-width: 600px) {
             nav { padding: 0 5%; } .nl { gap: 10px; overflow-x: auto; } .nl a { font-size: 9px; }
-            .hero { padding: 110px 24px 40px; } .hero h1 { font-size: 26px; }
+    
+        .breadcrumb { padding: 90px 10% 0; font-size: 12px; color: #94A3B8; }
+        .breadcrumb a { color: #94A3B8; text-decoration: none; }
+        .breadcrumb a:hover { color: #C5A059; }
+        .breadcrumb span { color: #C5A059; }
+
+        .hero { padding: 32px 24px 40px; } .hero h1 { font-size: 26px; }
             .news-card { padding: 16px; }
         }
     </style>
@@ -106,6 +118,8 @@
         <a href="tel:0086-18688683865" class="np">+86 186 8868 3865</a>
     </div>
 </nav>
+
+<div class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/NEWS/">NEWS</a> &rsaquo; <span>Industry News</span></div>
 
 <header class="hero">
     <div class="hero-tag">Industry News</div>
