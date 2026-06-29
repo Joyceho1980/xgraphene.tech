@@ -84,6 +84,30 @@
       "destination": "/WEBSITE/pages/CONTACT/:path*"
     },
     {
+      "source": "/NEWS/Industry",
+      "destination": "/WEBSITE/pages/NEWS/Industry/index.html"
+    },
+    {
+      "source": "/NEWS/Industry/",
+      "destination": "/WEBSITE/pages/NEWS/Industry/index.html"
+    },
+    {
+      "source": "/NEWS/Company",
+      "destination": "/WEBSITE/pages/NEWS/Company/index.html"
+    },
+    {
+      "source": "/NEWS/Company/",
+      "destination": "/WEBSITE/pages/NEWS/Company/index.html"
+    },
+    {
+      "source": "/NEWS/Product",
+      "destination": "/WEBSITE/pages/NEWS/Product/index.html"
+    },
+    {
+      "source": "/NEWS/Product/",
+      "destination": "/WEBSITE/pages/NEWS/Product/index.html"
+    },
+    {
       "source": "/news/:path*",
       "destination": "/WEBSITE/pages/NEWS/:path*"
     },
