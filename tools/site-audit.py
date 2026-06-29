@@ -398,6 +398,29 @@ def run_audit(check_external=False, lighthouse=False):
     else:
         print(f"   [OK] No broken internal links")
 
+    # ── 1.5. Fragile Relative Paths ──
+    print("\n─ [1.5/7] Checking for fragile relative paths (../)...")
+    relative_path_issues = {}
+    for html_file in html_files:
+        links = extract_links(html_file)
+        rel_links = [(t, u) for t, u, _ in links if is_internal(u) and "../" in u and t == "href"]
+        if not rel_links:
+            continue
+        # Check if page is in a subdirectory where relative paths could be ambiguous
+        rel = str(html_file.relative_to(SITE_ROOT))
+        depth = rel.count("/")
+        if depth >= 2:  # Pages 2+ levels deep using ../ are fragile
+            relative_path_issues[rel] = [u for _, u in rel_links[:5]]
+
+    if relative_path_issues:
+        print(f"   [WARN]  {len(relative_path_issues)} pages use ../ relative paths (fragile — prefer /absolute):")
+        for page, links in sorted(relative_path_issues.items()):
+            print(f"      {page}:")
+            for l in links[:3]:
+                print(f"         → {l}")
+    else:
+        print(f"   [OK] No fragile relative path usage")
+
     # ── 2. SEO Baseline ──
     print("\n─ [2/7] Checking SEO essentials...")
     seo_issues = {}
@@ -581,12 +604,45 @@ def run_audit(check_external=False, lighthouse=False):
     if lighthouse:
         lighthouse_results = run_lighthouse_audit()
 
+    # ── 7.5 HTTP Status Code Check ──
+    print("\n─ [7/7] Checking live HTTP status codes...")
+    http_4xx = check_http_status(html_files, rewrites)
+
+    # Also check sitemap URLs
+    sitemap_urls = set()
+    if SITEMAP_FILE.exists():
+        with open(SITEMAP_FILE, "r", encoding="utf-8") as f:
+            sitemap_urls = set(re.findall(r'<loc>([^<]+)</loc>', f.read()))
+    sitemap_4xx = []
+    if sitemap_urls:
+        print(f"   Checking {len(sitemap_urls)} sitemap URLs...")
+        with ThreadPoolExecutor(max_workers=15) as executor:
+            futures = {executor.submit(check_url_status, url): url for url in sitemap_urls}
+            for future in as_completed(futures):
+                url = futures[future]
+                try:
+                    status = future.result(timeout=10)
+                    if status and status >= 400:
+                        sitemap_4xx.append((url, status))
+                except Exception:
+                    sitemap_4xx.append((url, "timeout"))
+
+    all_4xx = list(set(http_4xx + sitemap_4xx))
+    if all_4xx:
+        print(f"   [BROKEN] {len(all_4xx)} URLs return 4XX/5XX:")
+        for url, status in sorted(all_4xx):
+            tag = " (sitemap)" if (url, status) in sitemap_4xx and (url, status) not in http_4xx else ""
+            print(f"      {status} → {url}{tag}")
+    else:
+        print(f"   [OK] All pages return HTTP 200")
+
     # ── Summary ──
     print(f"\n{'='*60}")
     print(f"  AUDIT SUMMARY")
     print(f"{'='*60}")
     print(f"  Pages scanned:         {len(html_files)}")
     print(f"  DOCTYPE issues:        {doctype_count}")
+    print(f"  HTTP 4XX/5XX:          {len(all_4xx)}")
     print(f"  Internal links:        {internal_count}")
     print(f"  Broken internal:       {len(broken_internal)}")
     print(f"  SEO issues (pages):    {len(seo_issues)}")
@@ -859,6 +915,97 @@ def check_external_url(url, timeout=5):
         req = urllib.request.Request(url, method="HEAD", headers={"User-Agent": "XIHE-Audit/1.0"})
         resp = urllib.request.urlopen(req, timeout=timeout)
         return resp.status
+    except Exception:
+        return None
+
+
+def file_to_prod_url(html_file, rewrites):
+    """Map an HTML file to its production URL path.
+    Returns the URL path (e.g., /NEWS/) or None if unmapped."""
+    try:
+        rel = str(html_file.relative_to(SITE_ROOT)).replace("\\", "/")
+    except ValueError:
+        return None
+
+    # Direct root files (index.html, robots.txt, etc.)
+    if "/" not in rel:
+        if rel == "index.html":
+            return "/"
+        return f"/{rel}"
+
+    # WEBSITE/pages/ files -> use Vercel rewrites in reverse
+    if rel.startswith("WEBSITE/pages/"):
+        url_part = rel[len("WEBSITE/pages/"):]
+        # Remove index.html for directory-style URLs
+        if url_part.endswith("/index.html"):
+            url_part = url_part[:-10]  # Remove "index.html", keep trailing /
+        elif url_part.endswith("index.html"):
+            url_part = url_part[:-10]
+        url_path = "/" + url_part
+
+        # Verify this URL is reachable via a Vercel rewrite
+        if rewrites and match_vercel_rewrite(url_path, rewrites):
+            return url_path
+        if match_vercel_rewrite(url_path.rstrip("/"), rewrites):
+            return url_path
+        # Also try with trailing slash
+        if match_vercel_rewrite(url_path + "/", rewrites):
+            return url_path + "/"
+
+        # Fallback: return the computed path anyway
+        return url_path
+
+    # Other files in subdirectories (images, output, etc.) - skip
+    return None
+
+
+def check_http_status(html_files, rewrites, max_workers=15):
+    """Check HTTP status codes for all production pages.
+    Returns list of (url, status_code) tuples for 4XX/5XX responses."""
+    import urllib.request
+    import urllib.error
+
+    # Build list of URLs to check
+    url_map = {}  # url -> file_path
+    for html_file in html_files:
+        url = file_to_prod_url(html_file, rewrites)
+        if url:
+            url_map[BASE_URL + url] = html_file
+
+    # Skip utility pages
+    skip_patterns = ["button-preview", "visual-library-contact-sheet"]
+    urls_to_check = {}
+    for url, fpath in url_map.items():
+        if not any(p in str(fpath) for p in skip_patterns) and not any(p in url for p in skip_patterns):
+            urls_to_check[url] = fpath
+
+    print(f"   Checking {len(urls_to_check)} production URLs...")
+
+    broken = []
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {executor.submit(check_url_status, url): url for url in urls_to_check}
+        for future in as_completed(futures):
+            url = futures[future]
+            try:
+                status = future.result(timeout=10)
+                if status and status >= 400:
+                    broken.append((url, status))
+            except Exception:
+                broken.append((url, "timeout"))
+
+    return broken
+
+
+def check_url_status(url, timeout=8):
+    """Check a single URL's HTTP status. Returns status code or None."""
+    try:
+        import urllib.request
+        req = urllib.request.Request(url, method="HEAD",
+                                     headers={"User-Agent": "XIHE-Audit/1.0"})
+        resp = urllib.request.urlopen(req, timeout=timeout)
+        return resp.status
+    except urllib.error.HTTPError as e:
+        return e.code  # 4XX, 5XX
     except Exception:
         return None
 
