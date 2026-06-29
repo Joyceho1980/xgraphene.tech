@@ -222,9 +222,9 @@ def resolve_path(html_file, link):
 
     return resolved
 
-def check_file_exists(resolved_path, link, rewrites=None):
+def check_file_exists(resolved_path, link, rewrites=None, redirects=None, source_file=None):
     """Check if resolved path points to an existing file or directory (with index.html).
-    Also checks Vercel rewrite rules for paths that don't exist directly on filesystem.
+    Also checks Vercel rewrites, redirects, and URL-space resolution.
     Returns (exists: bool, through_rewrite: bool)"""
     if resolved_path is None:
         return True, False  # anchors, etc. are fine
@@ -243,21 +243,63 @@ def check_file_exists(resolved_path, link, rewrites=None):
         if html_path.is_file():
             return True, False
 
-    # Check Vercel rewrite rules — convert filesystem path back to URL path
-    if rewrites and resolved_path:
+    # Build URL-space path candidates (as the browser sees them)
+    url_candidates = []
+
+    # Candidate 1: convert filesystem path to URL path
+    try:
+        url_path = "/" + str(resolved_path.relative_to(SITE_ROOT)).replace("\\", "/")
+        url_candidates.append(url_path)
+    except ValueError:
+        pass
+
+    # Candidate 2: resolve link relative to source page URL path
+    if source_file and link:
         try:
-            url_path = "/" + str(resolved_path.relative_to(SITE_ROOT)).replace("\\", "/")
-        except ValueError:
-            url_path = None
+            src_rel = source_file.relative_to(SITE_ROOT)
+            # Map WEBSITE/pages/XXX to /XXX, strip index.html
+            src_url = "/" + str(src_rel).replace("\\", "/")
+            if src_url.startswith("/WEBSITE/pages/"):
+                src_url = src_url[len("/WEBSITE/pages"):]
+            if src_url.endswith("/index.html"):
+                src_url = src_url[:-10]  # keep trailing /
+            elif src_url.endswith("index.html") and src_url.count("/") > 1:
+                src_url = src_url.rsplit("/", 1)[0] + "/"
 
-        # Also try the original link interpreted as an absolute URL path
-        link_url = link
-        if link_url and not link_url.startswith("/") and not link_url.startswith("http"):
-            link_url = "/" + link_url
+            # Resolve link relative to source URL directory
+            if not link.startswith("/") and not link.startswith("http"):
+                from urllib.parse import urljoin
+                resolved_url = urljoin(src_url, link)
+                if resolved_url.startswith("/"):
+                    url_candidates.append(resolved_url)
+        except (ValueError, Exception):
+            pass
 
-        for test_path in [url_path, link_url]:
-            if test_path and match_vercel_rewrite(test_path, rewrites):
+    # Candidate 3: original link as absolute
+    if link and not link.startswith("/") and not link.startswith("http"):
+        url_candidates.append("/" + link)
+    elif link and link.startswith("/"):
+        url_candidates.append(link)
+
+    # Check all URL candidates against Vercel rewrites
+    if rewrites:
+        for test_path in url_candidates:
+            if match_vercel_rewrite(test_path, rewrites):
                 return True, True
+
+    # Also check Vercel redirects (301/302 = link is valid, just relocated)
+    if redirects:
+        for test_path in url_candidates:
+            # Check exact match
+            if test_path in redirects:
+                return True, True
+            # Check wildcard redirect match
+            for src_pattern in redirects:
+                import fnmatch
+                src_clean = src_pattern.lstrip("/").replace(":path*", "*")
+                test_clean = test_path.lstrip("/")
+                if fnmatch.fnmatch(test_clean, src_clean):
+                    return True, True
 
     return False, False
 
@@ -378,7 +420,7 @@ def run_audit(check_external=False, lighthouse=False):
             internal_count += 1
             resolved = resolve_path(html_file, url)
             if resolved is not None:
-                exists, via_rewrite = check_file_exists(resolved, url, rewrites)
+                exists, via_rewrite = check_file_exists(resolved, url, rewrites, redirects, html_file)
                 if not exists:
                     rel_path = html_file.relative_to(SITE_ROOT)
                     broken_internal.append({
@@ -471,14 +513,32 @@ def run_audit(check_external=False, lighthouse=False):
             sitemap_content = f.read()
         sitemap_urls = set(re.findall(r'<loc>([^<]+)</loc>', sitemap_content))
 
-        # Check all sitemap URLs exist
+        # Check all sitemap URLs exist (filesystem + Vercel rewrites)
         for url in sitemap_urls:
             url_path = url.replace(BASE_URL, "")
             if url_path.startswith("/"):
                 url_path = url_path[1:]
             resolved = SITE_ROOT / url_path
-            if not resolved.is_file() and not (resolved.is_dir() and (resolved / "index.html").is_file()):
-                sitemap_issues.append(f"Sitemap URL not found: {url}")
+            # Direct filesystem match
+            if resolved.is_file() or (resolved.is_dir() and (resolved / "index.html").is_file()):
+                continue
+            # Try Vercel rewrite
+            rewrite_url = "/" + url_path
+            if rewrites and match_vercel_rewrite(rewrite_url, rewrites):
+                continue
+            # Try redirect match
+            if redirects:
+                import fnmatch
+                matched = False
+                rw_clean = rewrite_url.lstrip("/")
+                for src_pattern in redirects:
+                    src_clean = src_pattern.lstrip("/").replace(":path*", "*")
+                    if fnmatch.fnmatch(rw_clean, src_clean):
+                        matched = True
+                        break
+                if matched:
+                    continue
+            sitemap_issues.append(f"Sitemap URL not found: {url}")
 
         # Check important pages are in sitemap
         important = ["ABOUT/AboutOrigin.html", "ABOUT/AboutMission.html", "ABOUT/AboutPhilosophy.html",
