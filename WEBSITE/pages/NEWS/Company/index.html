@@ -48,12 +48,13 @@
         .back-link:hover { color: var(--g); }
         .inner { max-width: 780px; margin: 0 auto; padding: 0 24px; }
         section { padding: 48px 0; }
-        .news-grid { display: flex; flex-direction: column; gap: 16px; }
+        .card-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 6px; margin-bottom: 14px; background: #E8ECF1; }
+        .news-grid { display: flex; flex-direction: column; gap: 24px; }
         .news-card { background: #FFF; border: 1px solid var(--b); border-radius: 8px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.04); transition: all 0.2s ease; }
         .news-card:hover { border-color: var(--g); box-shadow: 0 2px 12px rgba(197,160,89,0.08); }
         .news-card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; flex-wrap: wrap; }
         .news-tag { display: inline-block; padding: 2px 10px; border-radius: 4px; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
-        .news-tag.company { background: #f5efe0; color: #8b7a4a; }
+        .news-tag.company { background: #f5efe0; color: #c8a05e; }
         .news-date { font-size: 12px; color: #999; }
         .news-card h3 { font-size: 18px; margin: 0 0 8px; color: var(--t); line-height: 1.4; font-weight: 600; }
         .news-card h3 a { text-decoration: none; color: inherit; }
@@ -65,7 +66,6 @@
         .card-accent.industry { background: #5a9e9f; }
         .card-accent.company { background: #C5A059; }
         .card-accent.product { background: #5a7e9f; }
-        .card-content { flex: 1; min-width: 0; }
         footer { padding: 40px 10%; background: var(--n); text-align: center; border-top: 2px solid var(--g); }
         footer p { font-size: 13px; color: #E0E6ED; }
         @media (max-width: 600px) {
@@ -132,68 +132,54 @@
 <div class="inner">
     <div class="news-grid">
         <article class="news-card">
-            <div class="card-accent company"></div>
-            <div class="card-content">
+            <img src="/images/hero/news-hero.png" class="card-img" alt="" loading="lazy">
             <div class="news-card-header"><span class="news-tag company">Company News</span><span class="news-date">2019.12.01</span></div>
             <h3><a href="/NEWS/Company-Updates/anta-graphene-heated-apparel.html">XIHE Supplies Graphene FIR Modules for Anta's Heated Apparel — 560K Units Delivered</a></h3>
             <p class="card-excerpt">Landmark commercial deployment: XIHE's graphene far-infrared modules power 560,000 Anta heated jackets, validating mass production capability and safety at scale.</p>
             <a href="/NEWS/Company-Updates/anta-graphene-heated-apparel.html" class="read-more">Read More &rarr;</a>
-        </div>
-        </article>
+                </article>
         <article class="news-card">
-            <div class="card-accent company"></div>
-            <div class="card-content">
+            <img src="/images/hero/news-hero.png" class="card-img" alt="" loading="lazy">
             <div class="news-card-header"><span class="news-tag company">Company News</span><span class="news-date">2026.06.03</span></div>
             <h3><a href="/NEWS/Company-Updates/zheng-nanfeng-neuropsychiatric-research.html">Academician Zheng Nanfeng Launches Neuropsychiatric Research Initiative</a></h3>
             <p class="card-excerpt">Professor Zheng Nanfeng, lead scientist and XIHE's founding advisor, initiates a neuropsychiatric research program exploring graphene FIR applications in cognitive and mental health.</p>
             <a href="/NEWS/Company-Updates/zheng-nanfeng-neuropsychiatric-research.html" class="read-more">Read More &rarr;</a>
-        </div>
-        </article>
+                </article>
         <article class="news-card">
-            <div class="card-accent company"></div>
-            <div class="card-content">
+            <img src="/images/hero/news-hero.png" class="card-img" alt="" loading="lazy">
             <div class="news-card-header"><span class="news-tag company">Company News</span><span class="news-date">2025.12.15</span></div>
             <h3><a href="/NEWS/Company-Updates/graphene-thermal-clinical-research-ethics-approval.html">Graphene Thermal Therapy Receives Clinical Research Ethics Approval</a></h3>
             <p class="card-excerpt">A landmark clinical trial evaluating graphene thermal therapy for musculoskeletal conditions receives full ethics committee approval, paving the way for clinical-grade validation.</p>
             <a href="/NEWS/Company-Updates/graphene-thermal-clinical-research-ethics-approval.html" class="read-more">Read More &rarr;</a>
-        </div>
-        </article>
+                </article>
         <article class="news-card">
-            <div class="card-accent company"></div>
-            <div class="card-content">
+            <img src="/images/hero/news-hero.png" class="card-img" alt="" loading="lazy">
             <div class="news-card-header"><span class="news-tag company">Company News</span><span class="news-date">2026.04.28</span></div>
             <h3><a href="/NEWS/Company-Updates/ikkem-partnership.html">XIHE &amp; IKKEM Deepen Joint-Equity Collaboration</a></h3>
             <p class="card-excerpt">XIHE and Jiageng Innovation Laboratory (IKKEM) strengthen their partnership, with IKKEM holding 55% equity to accelerate graphene FIR technology from laboratory research to industrial deployment.</p>
             <a href="/NEWS/Company-Updates/ikkem-partnership.html" class="read-more">Read More &rarr;</a>
-        </div>
-        </article>
+                </article>
         <article class="news-card">
-            <div class="card-accent company"></div>
-            <div class="card-content">
+            <img src="/images/hero/news-hero.png" class="card-img" alt="" loading="lazy">
             <div class="news-card-header"><span class="news-tag company">Company News</span><span class="news-date">2026.03.15</span></div>
             <h3><a href="/NEWS/Company-Updates/neural-helmet.html">Introducing Neural Helmet: Cognitive Resonance Platform</a></h3>
             <p class="card-excerpt">XIHE unveils the Neural Helmet, a cognitive resonance platform combining graphene FIR emitters with neurostimulation for focus, recovery, and cognitive resilience.</p>
             <a href="/NEWS/Company-Updates/neural-helmet.html" class="read-more">Read More &rarr;</a>
-        </div>
-        </article>
+                </article>
         <article class="news-card">
-            <div class="card-accent company"></div>
-            <div class="card-content">
+            <img src="/images/hero/news-hero.png" class="card-img" alt="" loading="lazy">
             <div class="news-card-header"><span class="news-tag company">Company News</span><span class="news-date">2025.01.15</span></div>
             <h3><a href="/NEWS/Company-Updates/national-standard.html">XIHE Leads Graphene Electrothermal Film Industry Standard</a></h3>
             <p class="card-excerpt">XIHE is appointed lead drafter of China's graphene electrothermal film industry standard (2024-0923T-YB), setting the benchmark for performance, safety, and testing methodology.</p>
             <a href="/NEWS/Company-Updates/national-standard.html" class="read-more">Read More &rarr;</a>
-        </div>
-        </article>
+                </article>
         <article class="news-card">
-            <div class="card-accent company"></div>
-            <div class="card-content">
+            <img src="/images/hero/news-hero.png" class="card-img" alt="" loading="lazy">
             <div class="news-card-header"><span class="news-tag company">Company News</span><span class="news-date">2023.11.23</span></div>
             <h3><a href="/NEWS/Company-Updates/novoselov-cas-foreign-member.html">Konstantin Novoselov Elected Foreign Member of CAS</a></h3>
             <p class="card-excerpt">Nobel laureate and graphene pioneer Sir Konstantin Novoselov is elected foreign member of the Chinese Academy of Sciences, recognizing his foundational contributions to graphene science.</p>
             <a href="/NEWS/Company-Updates/novoselov-cas-foreign-member.html" class="read-more">Read More &rarr;</a>
-        </div>
-        </article>
+                </article>
     </div>
 </div>
 </section>

@@ -53,7 +53,8 @@
         .inner { max-width: 780px; margin: 0 auto; padding: 0 24px; }
         section { padding: 48px 0; }
 
-        .news-grid { display: flex; flex-direction: column; gap: 16px; }
+        .card-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 6px; margin-bottom: 14px; background: #E8ECF1; }
+        .news-grid { display: flex; flex-direction: column; gap: 24px; }
         .news-card { background: #FFF; border: 1px solid var(--b); border-radius: 8px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.04); transition: all 0.2s ease; }
         .news-card:hover { border-color: var(--g); box-shadow: 0 2px 12px rgba(197,160,89,0.08); }
         .news-card-header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; flex-wrap: wrap; }
@@ -70,7 +71,6 @@
         .card-accent.industry { background: #5a9e9f; }
         .card-accent.company { background: #C5A059; }
         .card-accent.product { background: #5a7e9f; }
-        .card-content { flex: 1; min-width: 0; }
 
         footer { padding: 40px 10%; background: var(--n); text-align: center; border-top: 2px solid var(--g); }
         footer p { font-size: 13px; color: #E0E6ED; }
@@ -135,32 +135,26 @@
 <div class="inner">
     <div class="news-grid">
         <article class="news-card">
-            <div class="card-accent industry"></div>
-            <div class="card-content">
+            <img src="/images/hero/news-hero.png" class="card-img" alt="" loading="lazy">
             <div class="news-card-header"><span class="news-tag industry">Industry News</span><span class="news-date">2026.05.28</span></div>
             <h3><a href="/NEWS/Industry-News/prokop-2026-bidirectional-graphene-neural-interface.html">Bidirectional Graphene Neural Interface Breakthrough — Prokop et al. 2026</a></h3>
             <p class="card-excerpt">Nature Communications publishes a landmark graphene neural interface that simultaneously records and stimulates brain activity on a single chip. 4,900+ accesses since publication.</p>
             <a href="/NEWS/Industry-News/prokop-2026-bidirectional-graphene-neural-interface.html" class="read-more">Read More &rarr;</a>
-        </div>
-        </article>
+                </article>
         <article class="news-card">
-            <div class="card-accent industry"></div>
-            <div class="card-content">
+            <img src="/images/hero/news-hero.png" class="card-img" alt="" loading="lazy">
             <div class="news-card-header"><span class="news-tag industry">Industry News</span><span class="news-date">2026.06.05</span></div>
             <h3><a href="/NEWS/Industry-News/rise-of-non-pharmacological-healthcare.html">The Rise of Non-Pharmacological Healthcare: From Auxiliary to Core</a></h3>
             <p class="card-excerpt">Non-pharmacological interventions are shifting from complementary status to mainstream clinical practice, driven by efficacy data, safety profiles, and growing demand for drug-free options.</p>
             <a href="/NEWS/Industry-News/rise-of-non-pharmacological-healthcare.html" class="read-more">Read More &rarr;</a>
-        </div>
-        </article>
+                </article>
         <article class="news-card">
-            <div class="card-accent industry"></div>
-            <div class="card-content">
+            <img src="/images/hero/news-hero.png" class="card-img" alt="" loading="lazy">
             <div class="news-card-header"><span class="news-tag industry">Industry News</span><span class="news-date">2026.06.05</span></div>
             <h3><a href="/NEWS/Industry-News/graphene-national-strategic-material.html">Graphene Listed as National Strategic Material</a></h3>
             <p class="card-excerpt">Graphene is officially designated as a national strategic material, accelerating R&amp;D funding, infrastructure investment, and cross-sector adoption across healthcare, energy, and electronics.</p>
             <a href="/NEWS/Industry-News/graphene-national-strategic-material.html" class="read-more">Read More &rarr;</a>
-        </div>
-        </article>
+                </article>
     </div>
 </div>
 </section>

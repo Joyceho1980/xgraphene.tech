@@ -69,8 +69,11 @@
         .sec-label { font-family: 'Urbanist', sans-serif; font-size: 10px; letter-spacing: 3px; color: var(--g); text-transform: uppercase; margin-bottom: 8px; }
         .sec-title { font-family: 'Urbanist', sans-serif; font-size: 28px; font-weight: 200; letter-spacing: 2px; margin-bottom: 24px; color: var(--n); }
 
+        /* Card image */
+        .card-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 6px; margin-bottom: 14px; background: #E8ECF1; }
+
         /* Sonka-style card layout */
-        .news-grid { display: flex; flex-direction: column; gap: 20px; }
+        .news-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
         .news-card {
             background: #FFF;
             border: 1px solid var(--b);
@@ -90,8 +93,8 @@
             letter-spacing: 0.5px;
         }
         .news-tag.industry { background: #e8f4f5; color: #5a9e9f; }
-        .news-tag.company { background: #f5efe0; color: #8b7a4a; }
-        .news-tag.product { background: #e8edf5; color: #5a7e9f; }
+        .news-tag.company { background: #fdf6ed; color: #c8a05e; }
+        .news-tag.product { background: #e8ecf2; color: #1a2a3a; }
         .news-date { font-size: 12px; color: #999; }
         .news-card h3 { font-size: 18px; margin: 0 0 8px; color: var(--t); line-height: 1.4; font-weight: 600; }
         .news-card h3 a { text-decoration: none; color: inherit; }
@@ -110,6 +113,7 @@
         @media (max-width: 600px) {
             nav { padding: 0 5%; } .nl { gap: 10px; overflow-x: auto; } .nl a { font-size: 9px; }
             .hero { padding: 120px 24px 48px; } .hero h1 { font-size: 28px; }
+            .news-grid { grid-template-columns: 1fr; }
             .news-card { padding: 16px; }
             .news-card .card-title { font-size: 14px; }
             .entry-cards { grid-template-columns: 1fr !important; max-width: 320px !important; }
@@ -198,17 +202,17 @@
         <a href="/NEWS/Industry/" style="display:block; background:#1E2A38; border:1px solid rgba(197,160,89,0.2); border-radius:8px; padding:28px 20px; text-decoration:none; text-align:center; transition:all 0.25s ease;" onmouseover="this.style.borderColor='#C5A059';this.style.background='rgba(197,160,89,0.06)';" onmouseout="this.style.borderColor='rgba(197,160,89,0.15)';this.style.background='rgba(255,255,255,0.04)';">
             <div style="font-size:32px; margin-bottom:10px;">&#127758;</div>
             <div style="font-family:'Urbanist',sans-serif; font-size:13px; font-weight:500; letter-spacing:1.5px; color:#E0E6ED; margin-bottom:6px;">Industry News</div>
-            <div style="font-size:11px; color:#8899AA; line-height:1.5;">Graphene breakthroughs, market trends, scientific publications</div>
+            <div style="font-size:11px; color:#8899AA; line-height:1.5;">Graphene research breakthroughs & peer-reviewed discoveries</div>
         </a>
         <a href="/NEWS/Company/" style="display:block; background:#1E2A38; border:1px solid rgba(197,160,89,0.2); border-radius:8px; padding:28px 20px; text-decoration:none; text-align:center; transition:all 0.25s ease;" onmouseover="this.style.borderColor='#C5A059';this.style.background='rgba(197,160,89,0.06)';" onmouseout="this.style.borderColor='rgba(197,160,89,0.15)';this.style.background='rgba(255,255,255,0.04)';">
             <div style="font-size:32px; margin-bottom:10px;">&#127970;</div>
             <div style="font-family:'Urbanist',sans-serif; font-size:13px; font-weight:500; letter-spacing:1.5px; color:#E0E6ED; margin-bottom:6px;">Company News</div>
-            <div style="font-size:11px; color:#8899AA; line-height:1.5;">XIHE milestones, partnerships, certifications, deployments</div>
+            <div style="font-size:11px; color:#8899AA; line-height:1.5;">XIHE milestones, partnerships & commercial validation</div>
         </a>
         <a href="/NEWS/Product/" style="display:block; background:#1E2A38; border:1px solid rgba(197,160,89,0.2); border-radius:8px; padding:28px 20px; text-decoration:none; text-align:center; transition:all 0.25s ease;" onmouseover="this.style.borderColor='#C5A059';this.style.background='rgba(197,160,89,0.06)';" onmouseout="this.style.borderColor='rgba(197,160,89,0.15)';this.style.background='rgba(255,255,255,0.04)';">
             <div style="font-size:32px; margin-bottom:10px;">&#128161;</div>
             <div style="font-family:'Urbanist',sans-serif; font-size:13px; font-weight:500; letter-spacing:1.5px; color:#E0E6ED; margin-bottom:6px;">Product News</div>
-            <div style="font-size:11px; color:#8899AA; line-height:1.5;">Product launches, technical updates, OEM integration</div>
+            <div style="font-size:11px; color:#8899AA; line-height:1.5;">New releases, technology iterations & OEM integration case studies</div>
         </a>
     </div>
 </div>
@@ -220,12 +224,14 @@
 	    <h2 class="sec-title">Graphene Company News</h2>
 	    <div class="news-grid">
 	        <article class="news-card">
+	            <img src="/images/hero/news-hero.png" class="card-img" alt="" loading="lazy">
 	            <div class="news-card-header"><span class="news-tag company">Company News</span><span class="news-date">2019.12.01</span></div>
 	            <h3><a href="Company-Updates/anta-graphene-heated-apparel.html">XIHE Supplies Graphene FIR Modules for Anta's Heated Apparel — 560K Units Delivered</a></h3>
 	            <p class="card-excerpt">Landmark commercial deployment: XIHE's graphene far-infrared modules power 560,000 Anta heated jackets, validating mass production capability and safety at scale.</p>
 	            <a href="Company-Updates/anta-graphene-heated-apparel.html" class="read-more">Read More &rarr;</a>
 	        </article>
 	        <article class="news-card">
+	            <img src="/images/hero/news-hero.png" class="card-img" alt="" loading="lazy">
 	            <div class="news-card-header"><span class="news-tag company">Company News</span><span class="news-date">2026.06.03</span></div>
 	            <h3><a href="Company-Updates/zheng-nanfeng-neuropsychiatric-research.html">Academician Zheng Nanfeng Launches Neuropsychiatric Research Initiative</a></h3>
 	            <p class="card-excerpt">Professor Zheng Nanfeng, lead scientist and XIHE's founding advisor, initiates a neuropsychiatric research program exploring graphene FIR applications in cognitive and mental health.</p>
@@ -242,12 +248,14 @@
 	    <h2 class="sec-title">Industry News on Graphene</h2>
 	    <div class="news-grid">
 	        <article class="news-card">
+	            <img src="/images/hero/news-hero.png" class="card-img" alt="" loading="lazy">
 	            <div class="news-card-header"><span class="news-tag industry">Industry News</span><span class="news-date">2026.05.28</span></div>
 	            <h3><a href="Industry-News/prokop-2026-bidirectional-graphene-neural-interface.html">Bidirectional Graphene Neural Interface Breakthrough — Prokop et al. 2026</a></h3>
 	            <p class="card-excerpt">Nature Communications publishes a landmark graphene neural interface that simultaneously records and stimulates brain activity on a single chip. 4,900+ accesses since publication.</p>
 	            <a href="Industry-News/prokop-2026-bidirectional-graphene-neural-interface.html" class="read-more">Read More &rarr;</a>
 	        </article>
 	        <article class="news-card">
+	            <img src="/images/hero/news-hero.png" class="card-img" alt="" loading="lazy">
 	            <div class="news-card-header"><span class="news-tag industry">Industry News</span><span class="news-date">2026.06.05</span></div>
 	            <h3><a href="Industry-News/rise-of-non-pharmacological-healthcare.html">The Rise of Non-Pharmacological Healthcare: From Auxiliary to Core</a></h3>
 	            <p class="card-excerpt">Non-pharmacological interventions are shifting from complementary status to mainstream clinical practice, driven by efficacy data, safety profiles, and growing demand for drug-free options.</p>
@@ -264,6 +272,7 @@
 	    <h2 class="sec-title">Product News &amp; Launches</h2>
 	    <div class="news-grid">
 	        <article class="news-card">
+	            <img src="/images/hero/news-hero.png" class="card-img" alt="" loading="lazy">
 	            <div class="news-card-header"><span class="news-tag product">Product News</span><span class="news-date">2026.06.29</span></div>
 	            <h3><a href="Product-News/xihe-CABIN-standard-module-release.html">CABIN Energy Chamber Enters Standard Module Production</a></h3>
 	            <p class="card-excerpt">XIHE's CABIN — the Modular Resonance Chamber — enters standardised production with verified 0.88 NIQS emissivity, precision 9.4&mu;m wavelength targeting, and a modular architecture for clinical integration.</p>
