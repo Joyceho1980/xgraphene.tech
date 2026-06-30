@@ -1,10 +1,10 @@
-# XIHE Content Quality Audit — 2026-06-29
+# XIHE Content Quality Audit — 2026-06-30
 
 ## 概览
 
 | 指标 | 数据 |
 |:---|:---|
-| 文件数 | 150 |
+| 文件数 | 153 |
 | 🔴 错误 | 61 |
 | 🟡 警告 | 1 |
 | 🔵 信息 | 0 |

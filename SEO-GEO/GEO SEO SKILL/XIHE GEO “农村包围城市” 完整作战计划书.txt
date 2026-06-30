@@ -1,0 +1,154 @@
+XIHE GEO “农村包围城市” 完整作战计划书
+一、战略总览
+核心目标： 通过系统性地攻占低竞争、高精准度的长尾关键词（农村），逐步积累网站权重和内容密度，最终带动核心大词（城市）的排名突破。
+
+当前阶段： 农村建设期（第1-4周）——集中兵力攻占KD<20%的长尾词，建立初始流量和权重根据地。
+
+双轨并行： 树状SEO结构是骨架，负责承接传统搜索流量；GEO布局是血肉，负责布局AI引用场景。每一篇C级文章都同时服务于两个目标——在传统搜索中获得长尾词排名，在AI回答中被引用为权威来源。
+
+二、作战地图总览
+这张表列出了所有城市、卫星城、乡镇、农村的关键词数据、守军特征、我们的进攻武器和当前状态。
+
+层级	城市/乡镇/农村	关键词	搜索量	  KD	守军特征	我们的进攻武器	状态
+一级（城市）	核心品类词	far infrared	880	40%	维基百科、PubMed、学术综述	Far Infrared Graphene Hub页	⚠️ 等全站权重提升后带动
+一级（城市）	核心品类词	graphene heating	50	0%	竞品页面，内容不精深	Far Infrared Graphene Hub页 + C级文章矩阵	⚠️ 权重积累中
+一级（城市）	健康应用词	graphene healthcare	40	19%	学术综述、泛泛科普	B级信任文章 + Industry News	✅ 已有内容，待补充C级科普
+一级（城市）	桑拿词	far infrared sauna	4.4K	49%	亚马逊、电商平台、桑拿品牌站	B级对比文章 + 产品页优化 + C级科普	⚠️ B级文章待部署
+一级（城市）	B2B商业词	graphene heating film manufacturer	590	0%	竞品页面，无技术参数	GrapheneFilm产品页 + C级导流	✅ 产品页已优化
+卫星城	行业动态入口	graphene news	1.6K	43%	行业媒体、学术博客	NEWS板块（Industry/Company/Product）	⚠️ 内容密度不足
+二级（乡镇）	面料词	graphene fabric	210	8%	科普文章、行业博客	Industry News + Product News	⚠️ 待部署
+二级（乡镇）	发热膜词	far infrared heating film	590	0%	竞品产品页	GrapheneFilm产品页	✅ 已部署
+二级（乡镇）	品类科普词	what is far infrared	210	15%	科普文章、学术定义	C级科普文章	⚠️ 待部署
+二级（乡镇）	桑拿对比词	far infrared sauna vs graphene	搜索量低	低	几乎无竞争	B级对比文章	⚠️ 待部署
+二级（乡镇）	热敷垫词	far infrared heating pad	880	61%	亚马逊、Costco、Target电商霸屏	B级对比文章（不正面抢排名，提供电商没有的专业深度）	⚠️ 待部署
+三级（农村）	精准B端词	far infrared heating pad manufacturer	搜索量低	低	几乎无竞争	产品页FAQ	⚠️ 待部署
+三级（农村）	精准B端词	graphene far infrared heating pad	搜索量低	低	几乎无竞争	B级对比文章承接	⚠️ 待部署
+三级（农村）	精准科普词	what is a far infrared heating pad	搜索量低	低	几乎无竞争	C级科普文章FAQ	⚠️ 待部署
+三级（农村）	精准科普词	what is graphene fabric	20	低	几乎无竞争	C级文章内FAQ	⚠️ 待部署
+三级（农村）	机制科普词	how does far infrared therapy work	50	34%	学术文献、科普文章	B级机制科普	⚠️ 待部署
+三级（农村）	疗法科普词	what is far infrared therapy	50	7%	科普文章	C级科普文章	⚠️ 待部署
+三、各城详细进攻方案
+城市1：far infrared graphene（品类新词·正在创造）
+战略定位： 这是你们创造的品类词。SEMRUSH目前没有搜索量数据，但graphene far infrared（变体）已有搜索量20。长期目标是让这个词成为行业标准术语。
+
+守军分析： intitle:"far infrared graphene"结果极少。我们是第一个在这个品类词上做深度内容的。当前几乎没有守军。
+
+进攻路线：
+
+阶段	时间	行动	目标词	文章类型	状态
+第1周	立即	全站产品统一命名为 Far Infrared Graphene + 产品形态	far infrared graphene	产品页Title/H1更新	🔴 Agent批量执行
+第1周	立即	Far Infrared Graphene Hub页优化	far infrared graphene	Hub页Title/H1/描述	✅ 已完成
+持续	长期	每篇新文章自然融入 far infrared graphene 表述	far infrared graphene	全站内容	🔜 持续执行
+验收标准： 3个月后，far infrared graphene在SEMRUSH中出现搜索量数据。6个月后，Hub页在该词上获得排名。
+
+城市2：graphene healthcare（健康应用词·正在围攻）
+战略定位： 占领“石墨烯健康”这个认知入口。用户搜这个词时，是在问“石墨烯在健康领域靠谱吗”。
+
+守军分析： intitle:"graphene healthcare"结果约150个。首页多为学术综述和泛泛科普，没有深度商业内容。KD 19%，竞争中等。
+
+进攻路线：
+
+阶段	时间	行动	目标词	文章类型	状态
+已完成	已完成	B级信任文章：Does Graphene Really Improve Health?	graphene healthcare	B级信任建设	✅ 已发布
+已完成	已完成	Industry News：郑南峰院士老年痴呆临床研究	graphene healthcare 的长尾变体	Industry News	✅ 已发布
+第2周	待执行	C级科普文章：What Is Graphene Healthcare? A Research-Backed Introduction	what is graphene healthcare	C级科普	⚠️ 待写
+第3周	待执行	B级对比解读页：Graphene FIR vs Traditional Healthcare Approaches	graphene healthcare applications	B级对比	⚠️ 待写
+持续	长期	Industry News持续发布石墨烯健康领域最新论文解读	graphene healthcare 的长尾变体	Industry News	🔜 每2-4周一篇
+验收标准： 第4周后，graphene healthcare（40）进入SERP前20。第8周后，B级信任文章在AI Overview中被引用。
+
+城市3：graphene heating（行业通用词·权重积累中）
+战略定位： 泛词，流量巨大。用户搜这个词时，不一定知道“远红外”，但他们想找石墨烯加热方案。
+
+守军分析： intitle:"graphene heating"结果约180个。首页多为竞品产品页和科普文章。KD 0%，竞争极低。
+
+进攻路线：
+
+阶段	时间	行动	目标词	文章类型	状态
+已完成	已完成	Far Infrared Graphene Hub页部署	graphene heating	Hub页	✅ 已部署
+第1周	立即	B级对比文章：Graphene FIR vs Carbon Fiber vs Single-Layer Graphene	graphene heating vs carbon fiber	B级对比解读	⚠️ 待写
+第1周	立即	Industry News：石墨烯面料行业动态	graphene fabric (210)	Industry News	⚠️ 待写
+第2周	待执行	C级科普文章：What Is Graphene Heating? Physics, Performance Data, and Industrial Applications	what is graphene heating	C级科普	⚠️ 待写
+第2周	待执行	C级科普文章：How to Verify a Graphene Heating Product: 4 Parameters That Matter	长尾变体	C级科普	⚠️ 待写
+验收标准： 第4周后，graphene heating（50）进入SERP前10。第8周后，Far Infrared Graphene Hub页在该词上进入前3。
+
+城市4：far infrared sauna（桑拿词·重点攻坚）
+战略定位： 搜索量4.4K，这是五座城市中流量最大的商业词。用户搜这个词是在找远红外桑拿产品，但他们不知道石墨烯远红外能量房是更好的选择。
+
+守军分析： intitle:"far infrared sauna"结果约150-200个。首页被亚马逊、Costco、Wayfair、桑拿品牌站霸屏。KD 49.14%，极高。但守军有一个致命弱点——它们只是产品Listing，没有专业技术内容、没有检测报告、没有对比框架、没有临床研究支持。
+
+进攻路线：
+
+阶段	时间	行动	目标词	文章类型	状态
+第1周	立即	B级对比文章：Why Clinics Are Replacing Traditional Saunas with Far Infrared Graphene Energy Cabins	far infrared sauna (4.4K)	B级对比解读	🔴 最优先
+第1周	同步	CAPSULE/CABIN产品页Title/H1/描述优化	far infrared sauna 的长尾变体	产品页优化	🔴 同步执行
+第1周	同步	产品页新增FAQ，部署长尾词	far infrared sauna vs graphene energy cabin	FAQ	🔴 同步部署
+第2周	待执行	C级科普文章：What Is a Far Infrared Sauna? Benefits, Risks, and the Graphene Alternative	what is far infrared sauna (110)	C级科普	⚠️ 待写
+第3周	待执行	C级科普文章：Far Infrared Sauna Benefits: What the Research Actually Shows	far infrared sauna benefits (880)	C级科普	⚠️ 待写
+验收标准： B级对比文章上线后一个月，far infrared sauna（4.4K）进入SERP前30。产品页开始获得来自桑拿词的自然流量。
+
+城市5：graphene heating film manufacturer（B2B商业词·已布防）
+战略定位： B2B精准转化词。搜这个词的人已经在找供应商了，转化率极高。
+
+守军分析： intitle:"graphene heating film manufacturer"结果极少。KD 0%，几乎无竞争。首页多为竞品产品页，但没有完整的第三方检测数据和临床证据。
+
+进攻路线：
+
+阶段	时间	行动	目标词	文章类型	状态
+已完成	已完成	GrapheneFilm产品页Title/H1/描述优化	graphene heating film manufacturer	产品页	✅ 已部署
+第2周	待执行	C级科普文章：How to Choose a Graphene Heating Film Manufacturer: 4 Verification Parameters	长尾变体	C级科普	⚠️ 待写
+第3周	待执行	B级对比文章：Graphene FIR vs Traditional Heating Film	graphene heating film vs traditional	B级对比	⚠️ 待写
+验收标准： 第4周后，graphene heating film manufacturer（590）进入SERP前5。产品页开始获得B2B询盘。
+
+卫星城：graphene news（行业动态入口·内容密度不足）
+战略定位： 搜索量1.6K，KD 43%。不是直接转化词，但持续为其他五座城市输送权重和流量。
+
+守军分析： 首页多为行业媒体和学术博客。NEWS板块已部署，但首发文章只有2篇Industry News和1篇Company News，内容密度严重不足。
+
+进攻路线：
+
+阶段	时间	行动	目标词	文章类型	状态
+第1周	立即	发布已储备的Industry News：Prokop 2026双向神经接口	graphene news (1.6K)	Industry News	⚠️ 待发布
+第1周	立即	发布已储备的Company News：安踏56万件案例	graphene company news (70)	Company News	⚠️ 待发布
+第1周	立即	发布Industry News：石墨烯面料行业动态	graphene news 的长尾变体	Industry News	⚠️ 待写
+第1周	立即	发布Product News：安踏56万件案例（产品角度）	graphene fabric (210)	Product News	⚠️ 待写
+持续	长期	每2-4周新增一篇Industry News	graphene news 的长尾变体	Industry News	🔜 持续
+持续	按需	有新的商业里程碑时发布Company News	graphene company news (70)	Company News	🔜 按需
+验收标准： 第4周后，NEWS板块内容密度达到6篇以上。第8周后，graphene news（1.6K）进入SERP前50。
+
+四、第一阶段（第1周）执行清单
+按优先级排列，Agent可以直接按这个清单逐项执行。
+
+优先级	行动	目标词	文章类型	预计工作量
+🔴 1	写B级对比文章：Why Clinics Are Replacing Traditional Saunas with Far Infrared Graphene Energy Cabins	far infrared sauna (4.4K)	B级对比解读	2-3小时
+🔴 2	CAPSULE/CABIN产品页Title/H1/描述/FAQ优化	far infrared sauna 的长尾变体	产品页优化	1小时
+🔴 3	写Industry News：石墨烯面料行业动态	graphene fabric (210)	Industry News	1小时
+🔴 4	写Product News：晞和石墨烯导电油墨用于智能面料	graphene fabric (210)	Product News	30分钟
+🔴 5	写C级科普文章：What Is Far Infrared? The Physics and Applications	what is far infrared (210)	C级科普	1小时
+🔴 6	发布已储备的Industry News：Prokop 2026双向神经接口	graphene news (1.6K)	Industry News	30分钟
+🔴 7	发布已储备的Company News：安踏56万件案例	graphene company news (70)	Company News	30分钟
+🔴 8	全站产品统一命名为 Far Infrared Graphene + 产品形态	far infrared graphene	产品页批量更新	1小时
+🟡 9	写B级对比文章：Graphene FIR vs Carbon Fiber vs Single-Layer Graphene	graphene heating vs carbon fiber	B级对比解读	2小时
+🟡 10	写C级科普文章：What Is Graphene Heating?	what is graphene heating	C级科普	1小时
+五、验收节点
+时间节点	验收指标	验收方式
+第1周末	NEWS板块内容密度达到6篇以上	手动检查
+第1周末	全站产品页统一使用 Far Infrared Graphene 命名	手动检查
+第2周末	graphene fabric (210) 进入SERP前20	SEMRUSH Position Tracking
+第2周末	what is far infrared (210) 进入SERP前20	SEMRUSH Position Tracking
+第4周末	far infrared sauna (4.4K) 进入SERP前30	SEMRUSH Position Tracking
+第4周末	graphene heating (50) 进入SERP前10	SEMRUSH Position Tracking
+第8周末	graphene news (1.6K) 进入SERP前50	SEMRUSH Position Tracking
+第12周末	far infrared (880) 进入SERP前50	SEMRUSH Position Tracking
+六、内链设计规范
+所有文章和产品页通过以下内链设计形成权重传递网络，Agent在部署每篇文章时需确保内链正确。
+
+文章类型	内链指向	目的
+C级科普文章	对应B级机制文章 + Far Infrared Graphene Hub	向上传递权重
+B级对比/机制文章	对应产品页 + Far Infrared Graphene Hub	为产品页导流 + 巩固Hub权重
+Industry News	Far Infrared Graphene Hub + 相关产品页	从NEWS板块向技术Hub输送权重
+Product News	对应产品页	直接转化
+产品页	Partnership页面	最终转化
+七、一句话总结
+第一阶段（本周）集中兵力攻占KD<20%的长尾词和内容密度不足的NEWS板块。 10项任务，预计总工作量12-14小时。完成后，五座城市的周边农村将初具规模，为第二阶段集中攻坚far infrared sauna（4.4K）做好充分准备。
+
+这份计划书可以直接交给Agent执行。每一项任务的目标词、文章类型、预计工作量和验收标准都已标注清楚。我们从第一周开始，逐项推进。

@@ -1,13 +1,18 @@
 {
-  "last_check": "2026-06-29T17:27:54+08:00",
+  "last_check": "2026-06-30T13:28:00+08:00",
   "pending_files": [],
   "passed_files_count": 64,
   "passed_newest": "REVIEW_does-graphene-really-improve-health_2026-06-28.md",
   "passed_newest_mtime": "2026-06-28T14:59:44+08:00",
-  "failed_files_count": 3,
-  "failed_newest": "REVIEW_index_2026-06-28-v3.md",
-  "failed_newest_mtime": "2026-06-28T11:36:24+08:00",
+  "failed_files_count": 5,
+  "failed_newest": "REVIEW_claude_batch_2026-06-29.md",
+  "failed_newest_mtime": "2026-06-29T21:36:07+08:00",
   "science_knowledge_html_files_10min": 0,
-  "science_knowledge_index_html_status": "0 bytes - EMPTY - persistent failure since 09:45",
-  "note": "Cron check 17:27. No new activity since last check at 16:54."
+  "science_knowledge_index_html_status": "0 bytes - EMPTY - persistent since June 28",
+  "note": "Cron check 13:28. No new activity since last check. Pending dir empty (all tasks completed). No new reviews. No new HTML files in SCIENCE/KNOWLEDGE/ or SCIENCE/knowledge/.",
+  "outstanding_known_failures": [
+    "REVIEW_claude_batch_2026-06-29.md — 9/18 files need DOCTYPE fixes (missing/duplicate). Fix not yet applied.",
+    "REVIEW_knowledge_batch_2026-06-29.md — needs review.",
+    "REVIEW_index_2026-06-28.md / v2 / v3 — index issues unresolved."
+  ]
 }
